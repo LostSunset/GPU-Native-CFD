@@ -1,0 +1,135 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5916a466-20260728 OPENFOAM=2512 version=v2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /home/sclin/OpenFOAM/sclin-v2512/platforms/linux64NvidiaDPInt32Opt/bin/hisa -pool fixedSizeMemoryPool -poolSize 16
+Date   : Oct 23 2026
+Time   : 15:04:06
+Host   : g02
+PID    : 2792076
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/SPUMA-g02/basicFinnerLaminar/spgpu
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Initializing CUDA devices
+
+CUDA Driver Version / Runtime Version:  13.2 / 13.3
+Number of threads per block: 128
+
+Create fixedSizeMemoryPool
+ 
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 9.9999999999999995e-07 (9.9999999999999995e-07 9.9999999999999995e-07 9.9999999999999995e-07) 9.9999999999999995e-07 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting device version of : hePsiThermo
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+forces forces:
+    rho: rho
+    Not including porosity effects
+forceCoeffs forcesNormAxial:
+    rho: rhoInf
+    Freestream density (rhoInf) set to 1.2040847589999999
+    Not including porosity effects
+    magUInf: 1544.5654219999999
+    lRef   : 0.029999999999999999
+    Aref   : 0.00070685834700000001
+    rhoInf : 1.2040847589999999
+    Selecting all coefficients
+    - Drag force: Cd
+    - Drag force front: Cd(f)
+    - Drag force rear: Cd(r)
+    - Lift force: Cl
+    - Lift force front: Cl(f)
+    - Lift force rear: Cl(r)
+    - Pitch moment: CmPitch
+    - Roll moment: CmRoll
+    - Yaw moment: CmYaw
+    - Side force: Cs
+    - Side force front: Cs(f)
+    - Side force rear: Cs(r)
+
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.9052098910856265e-10 Mean: 1.4305044081804267e-06 Max: 6.5516212475567916e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.99999999999983513 (0.99921769801707394 0.00047169235372307238 0.034987679836221065) 0.99999999999982148 
+  GMRES iteration: 1   Residual: 2.6827945653425291e-07 (3.5743885557463481e-07 3.9504989949480347e-08 4.5015691287463019e-08) 3.0579448347757671e-07 
+ExecutionTime = 48.439999999999998 s  ExecutionStepTime = 38.789999999999999 s  ClockTime = 48 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.98559932858720267 Max: 1
+Pseudo deltaT: Min: 9.179844801583493e-11 Mean: 1.4304971916000502e-06 Max: 6.5102310714380428e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.54620530659804722 (0.35251899697876377 0.021587582547074373 0.030049283894586679) 0.31228457659771064 
+  GMRES iteration: 1   Residual: 1.9861874333681633e-09 (1.7204053614094561e-09 2.9474098014484592e-10 3.9101712170083911e-10) 1.1389072186019677e-09 
+ExecutionTime = 100.33 s  ExecutionStepTime = 51.890000000000001 s  ClockTime = 101 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2217889560255812 Max: 1.25
+Pseudo deltaT: Min: 7.7786495330187594e-11 Mean: 1.7881161165801505e-06 Max: 8.1895265594459905e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.32969820751921913 (0.18950883618814818 0.014760638921715277 0.019197397369639397) 0.17127510394681589 
+  GMRES iteration: 1   Residual: 4.9864678866111276e-11 (3.9608126629165681e-11 6.8731015252788996e-12 9.2646643025162672e-12) 2.5503969472859383e-11 
+ExecutionTime = 161.65000000000001 s  ExecutionStepTime = 61.320000000000007 s  ClockTime = 165 s
+
+End
+

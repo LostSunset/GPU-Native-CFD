@@ -1,0 +1,20 @@
+sumbench rc=0 (0: every call identical)
+=== 2026-10-25T02:23:59Z env GNC_SUMTREE_CHECK=1 bash scripts/fast_identity.sh --host-env configs/hosts/g02-l40.env --label N6d-sumcheck-hisa --solver gncHisa --bin-a /ssd/sclin/gpu-native-cfd/build/bin --bin-b /ssd/sclin/gpu-native-cfd/build/bin --case nacaSST=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation --end 20
+nacaSST a rc=0
+nacaSST b rc=0
+nacaSST	8	8	IDENTICAL
+rae2822SA a rc=0
+rae2822SA b rc=0
+rae2822SA	7	7	IDENTICAL
+result: ALL IDENTICAL
+=== exit=0
+=== 2026-10-25T02:24:14Z env GNC_SUMTREE_CHECK=1 bash scripts/fast_identity.sh --host-env configs/hosts/g02-l40.env --label N6d-sumcheck-rho --solver gncRhoSimple --bin-a /ssd/sclin/gpu-native-cfd/build/bin --bin-b /ssd/sclin/gpu-native-cfd/build/bin --case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation --case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4/simulation --end 20
+r1 a rc=0
+r1 b rc=0
+r1	9	9	IDENTICAL
+r4 a rc=0
+r4 b rc=0
+r4	9	9	IDENTICAL
+result: ALL IDENTICAL
+=== exit=0
+=== done 2026-10-25T02:24:31Z

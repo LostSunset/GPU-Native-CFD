@@ -1,0 +1,2 @@
+mesh: nCells 200 wallFaces 0 nUnset 1002
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-walldist-L1/shockTube/gpu.gnc

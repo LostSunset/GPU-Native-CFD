@@ -1,0 +1,7 @@
+label=MUT-gather
+started_utc=2026-10-23T15:14:33Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+dump_steps=1,2,10
+uptime= 23:14:33 up 11 days, 13:50,  9 users,  load average: 104.92, 104.58, 105.45
+finished_utc=2026-10-23T15:14:39Z

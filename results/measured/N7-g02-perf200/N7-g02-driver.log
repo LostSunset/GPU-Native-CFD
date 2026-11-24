@@ -1,0 +1,379 @@
+=== 2026-10-22T18:37:58Z bash scripts/build.sh --host-env configs/hosts/g02-l40.env
+built_utc=2026-10-22T18:38:43Z
+host=g02 profile=g02-l40
+source_dir=/ssd/sclin/gpu-native-cfd/GPU-Native-CFD
+sync_atlas_commit=50b77f0133ed0c175e6dc9b284e737fa89a0e853
+sync_uncommitted_paths=0
+sync_synced_utc=2026-10-22T18:37:57Z
+source_sha256=cb2d509e84d1a6fdad757805707d663b0dea5251612a79e32db9877568dcdb05
+cmake=cmake version 3.28.3
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cuda_archs=89
+gnc_fmad=OFF
+cmake_exit=0 build_exit=0 ref_exit=0
+compiler_warnings=0
+ref_openfoam_bashrc=/opt/atlas-openfoam/current/OpenFOAM-v2606/etc/bashrc
+ref_openfoam_project=/opt/atlas-openfoam/current/OpenFOAM-v2606
+ref_wm_options=linux64GccDPInt32Opt
+ref_wmake_cxx=g++
+ref_wmake_cxxflags=-std=c++17 -m64 -pthread -DOPENFOAM=2606 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -DNoRepository -ftemplate-depth=1000 -fPIC
+geometry_cu_command=/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/gnc.dir/includes_CUDA.rsp -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_89,code=[compute_89,sm_89]" -prec-div=true -prec-sqrt=true --fmad=false -Xcompiler=-ffp-contract=off,-Wall,-Wextra -x cu -c /ssd/sclin/gpu-native-cfd/GPU-Native-CFD/src/mesh/geometry.cu -o CMakeFiles/gnc.dir/src/mesh/geometry.cu.o
+sha256 gncCompare=ec05eeca9d57c24a96c11146e34e6dc4f0e0ec38e346c4900ef8b3458a46a3cd
+sha256 gncFieldDiff=bb476d9b8facda0111c6e89f81b738e703b9130ce9c05a1188fb89b6b6e28528
+sha256 gncGeomL0=28758bc7f1bc29f0841607b949e2ddf860566251d2c8ba22a1ae36d41710ea2b
+sha256 gncGeomRef=35cade17a39263e5e74722dd7b7b2b64ec6b355961c4f98555d5549865acb666
+sha256 gncHisa=60aab60023046f927f5b3642b3572982fc78752e16bf23a1b9d51df9c6ce1fb1
+sha256 gncInitL2=c28a4efbb24edcccbd28e724809f4c5a509b6768e4767232321a107ed329b09c
+sha256 gncOpsL1=b0ca6d40cbb9e459c94f19234ba4b869f787bdf04d2b294e227e08e36d9ed359
+sha256 gncOpsRef=4974130c92b37eb54078d9fd78a319d8625f420e964f1e5a05278d3efa48285c
+sha256 gncOuterL2=e67582a1a1c2d62b745a58291c77b066f3927ea4406d1d31048826d5c7b1d803
+sha256 gncPowCheck=f75e28d7943fcb3ef30ef697ef97ff1eea0ba142660be378beca198e86318d58
+sha256 gncResL2=ecc4c42e61ca5e470464aa5d0c2bc4e9576867cd1fba8120bac5fb81058779db
+sha256 gncRunL3=0aa90268190e4b496333144cad8090306f4b85ce7c753f0eb321a383013a4259
+sha256 gncSumBench=b9c28ae048bd7e16c2aed8d467b706341ed61cfdcf354e2e00e1dced1c1d131b
+sha256 gncTurbL2=486d6521684dabf89f3de04a92a669580f9c52e982563101e2ecf5450d89952e
+sha256 gncWallDistL1=4256a17c9bed1f288fe20b4092c2c15fa0a0978517ceab65bc067fccd352989e
+sha256 libgncHisaDump.so=cefa000ba1cf6cf60d406129515c99f3eae4c8a522b4b4310f916c7d3676ac9f
+sha256 libgncHisaJacobianDump.so=2503a15b6dfa53d16627dfd298c37836772a9a93647f300d2f438a4ed83b3e38
+=== exit=0
+=== 2026-10-22T18:38:44Z bash scripts/pow_check.sh --host-env configs/hosts/g02-l40.env --label N7-g02-powexp
+func  impl   mode  samples    differ   max_ulp
+pow   cuda   sa    100000000  9076238  1
+pow   glibc  sa    100000000  0        0
+pow   cuda   wide  50000000   4964219  1
+pow   glibc  wide  50000000   0        0
+exp   cuda   sa    100000000  3587140  1
+exp   glibc  sa    100000000  0        0
+exp   cuda   wide  50000000   299605   1
+exp   glibc  wide  50000000   0        0
+=== exit=0
+=== 2026-10-22T18:39:07Z env GNC_COOP_LEVELS=0 bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N7-g02-verify-m0 --end-default 50 --time-indices 1,2,10,50 --end oneraM6SA=10 --time-indices-for oneraM6SA=1,2,10 --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+case         nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+forwardStep  36576   50       0    0/0  50       50       5         5        identical
+flatPlateSA  8000    50       0    0/0  50       50       5         5        identical
+rae2822SA    23552   50       0    0/0  50       50       5         5        identical
+oneraM6SA    294912  10       0    0/0  10       10       4         4        identical
+=== exit=0
+=== 2026-10-22T18:41:30Z env GNC_COOP_LEVELS=1 bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N7-g02-verify-m1 --end-default 50 --time-indices 1,2,10,50 --end oneraM6SA=10 --time-indices-for oneraM6SA=1,2,10 --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+case         nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+forwardStep  36576   50       0    0/0  50       50       5         5        identical
+flatPlateSA  8000    50       0    0/0  50       50       5         5        identical
+rae2822SA    23552   50       0    0/0  50       50       5         5        identical
+oneraM6SA    294912  10       0    0/0  10       10       4         4        identical
+=== exit=0
+=== 2026-10-22T18:43:55Z env GNC_COOP_LEVELS=2 bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N7-g02-verify-m2 --end-default 50 --time-indices 1,2,10,50 --end oneraM6SA=10 --time-indices-for oneraM6SA=1,2,10 --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=50 timeIndices=1,2,10,50
+   ref=0 gpu=0/0 end=50/50 bitwise=5/5 gpu1_vs_gpu2=identical
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+case         nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+forwardStep  36576   50       0    0/0  50       50       5         5        identical
+flatPlateSA  8000    50       0    0/0  50       50       5         5        identical
+rae2822SA    23552   50       0    0/0  50       50       5         5        identical
+oneraM6SA    294912  10       0    0/0  10       10       4         4        identical
+=== exit=0
+=== 2026-10-22T18:46:13Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label N7-g02-perf200 --end 200 --variant m0= --variant m1=GNC_COOP_LEVELS=1 --variant m2=GNC_COOP_LEVELS=2 --variant lusgsColor=GNC_LUSGS=color --variant sgsColor=GNC_SGS=color --variant tree=GNC_REDUCE=tree --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=200
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=200
+case         nCells  variant     exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+flatPlateSA  8000    m0          0     13.1963  0.0659815        426               0.00111774     0.0640342
+flatPlateSA  8000    m1          0     16.9531  0.0847655        426               0.00111774     0.0830377
+flatPlateSA  8000    m2          0     10.8338  0.054169         426               0.00111774     0.0523173
+flatPlateSA  8000    lusgsColor  0     5.39719  0.026986         952               0.0011321      0.0253207
+flatPlateSA  8000    sgsColor    0     12.7659  0.0638295        425               0.00109093     0.0622651
+flatPlateSA  8000    tree        0     11.723   0.058615         425               0.00111772     0.0566711
+flatPlateSA  8000    fast        0     2.31978  0.0115989        954               0.00110487     0.0100161
+rae2822SA    23552   m0          0     9.82427  0.0491214        200               0.0064454      0.0469717
+rae2822SA    23552   m1          0     10.5732  0.052866         200               0.0064454      0.0508575
+rae2822SA    23552   m2          0     8.29264  0.0414632        200               0.0064454      0.0394947
+rae2822SA    23552   lusgsColor  0     5.88212  0.0294106        385               0.00831135     0.027174
+rae2822SA    23552   sgsColor    0     9.4959   0.0474795        200               0.00647215     0.0453349
+rae2822SA    23552   tree        0     7.31953  0.0365977        200               0.0064454      0.0347085
+rae2822SA    23552   fast        0     1.87432  0.0093716        385               0.00832218     0.00744703
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fielddiff.m0-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fast/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           2.387713e+00           2.002803e-03           9.466391e-04
+T                8000           6.178373e+00           2.341493e-02           7.470108e-03
+U               24000           2.133393e+01           3.033143e-02           3.594791e-03
+rho              8000           7.863255e-04           1.539660e-02           3.476052e-03
+nuTilda          8000           4.855988e-04           5.383938e-02           5.384363e-02
+nut              8000           4.955637e-04           5.805865e-02           6.694997e-02
+alphat           8000           1.654597e-05           9.442566e-02           6.921102e-02
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fielddiff.m0-lusgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/lusgsColor/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           8.011929e-01           6.720371e-04           3.204062e-04
+T                8000           2.161474e+00           8.191601e-03           3.967084e-03
+U               24000           1.189139e+01           1.690654e-02           2.182053e-03
+rho              8000           3.401314e-04           6.659925e-03           1.380879e-03
+nuTilda          8000           1.746904e-04           1.936829e-02           1.560362e-02
+nut              8000           1.709909e-04           2.003274e-02           1.962871e-02
+alphat           8000           4.471899e-06           2.552054e-02           1.776164e-02
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fielddiff.m0-m1.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m1/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           0.000000e+00           0.000000e+00           0.000000e+00
+T                8000           0.000000e+00           0.000000e+00           0.000000e+00
+U               24000           0.000000e+00           0.000000e+00           0.000000e+00
+rho              8000           0.000000e+00           0.000000e+00           0.000000e+00
+nuTilda          8000           0.000000e+00           0.000000e+00           0.000000e+00
+nut              8000           0.000000e+00           0.000000e+00           0.000000e+00
+alphat           8000           0.000000e+00           0.000000e+00           0.000000e+00
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fielddiff.m0-m2.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m2/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           0.000000e+00           0.000000e+00           0.000000e+00
+T                8000           0.000000e+00           0.000000e+00           0.000000e+00
+U               24000           0.000000e+00           0.000000e+00           0.000000e+00
+rho              8000           0.000000e+00           0.000000e+00           0.000000e+00
+nuTilda          8000           0.000000e+00           0.000000e+00           0.000000e+00
+nut              8000           0.000000e+00           0.000000e+00           0.000000e+00
+alphat           8000           0.000000e+00           0.000000e+00           0.000000e+00
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fielddiff.m0-sgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/sgsColor/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           2.308670e+00           1.936503e-03           7.899910e-04
+T                8000           6.161881e+00           2.335243e-02           5.718037e-03
+U               24000           2.208522e+01           3.139957e-02           3.194297e-03
+rho              8000           6.134088e-04           1.201082e-02           2.527343e-03
+nuTilda          8000           4.014634e-04           4.451110e-02           4.119141e-02
+nut              8000           4.196694e-04           4.916712e-02           4.977829e-02
+alphat           8000           1.381437e-05           7.883683e-02           5.403619e-02
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/fielddiff.m0-tree.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/flatPlateSA/tree/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           3.808498e-03           3.194552e-06           1.530281e-06
+T                8000           7.661003e-03           2.903383e-05           1.476034e-05
+U               24000           4.172317e-02           5.931975e-05           8.002318e-06
+rho              8000           2.227388e-06           4.361325e-05           6.134762e-06
+nuTilda          8000           1.354758e-06           1.502049e-04           9.856380e-05
+nut              8000           1.349185e-06           1.580662e-04           1.337849e-04
+alphat           8000           3.339864e-08           1.906016e-04           1.283229e-04
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fielddiff.m0-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fast/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           3.369840e+04           2.154920e-01           1.690365e-02
+T               23552           2.713695e+01           8.884047e-02           7.292594e-03
+U               70656           8.556194e+01           2.357808e-01           3.740069e-02
+rho             23552           3.507604e-01           1.823753e-01           1.343505e-02
+nuTilda         23552           3.802751e-03           5.923587e-01           3.113335e-01
+nut             23552           3.802966e-03           5.923937e-01           3.127847e-01
+alphat          23552           5.476395e-03           6.116007e-01           3.347798e-01
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fielddiff.m0-lusgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/lusgsColor/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           3.393373e+04           2.169969e-01           1.708561e-02
+T               23552           2.737631e+01           8.962407e-02           7.356806e-03
+U               70656           8.629074e+01           2.377891e-01           3.828950e-02
+rho             23552           3.532703e-01           1.836803e-01           1.359565e-02
+nuTilda         23552           3.798119e-03           5.916373e-01           3.140539e-01
+nut             23552           3.798308e-03           5.916680e-01           3.155031e-01
+alphat          23552           5.462323e-03           6.100292e-01           3.374464e-01
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fielddiff.m0-m1.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m1/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           0.000000e+00           0.000000e+00           0.000000e+00
+T               23552           0.000000e+00           0.000000e+00           0.000000e+00
+U               70656           0.000000e+00           0.000000e+00           0.000000e+00
+rho             23552           0.000000e+00           0.000000e+00           0.000000e+00
+nuTilda         23552           0.000000e+00           0.000000e+00           0.000000e+00
+nut             23552           0.000000e+00           0.000000e+00           0.000000e+00
+alphat          23552           0.000000e+00           0.000000e+00           0.000000e+00
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fielddiff.m0-m2.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m2/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           0.000000e+00           0.000000e+00           0.000000e+00
+T               23552           0.000000e+00           0.000000e+00           0.000000e+00
+U               70656           0.000000e+00           0.000000e+00           0.000000e+00
+rho             23552           0.000000e+00           0.000000e+00           0.000000e+00
+nuTilda         23552           0.000000e+00           0.000000e+00           0.000000e+00
+nut             23552           0.000000e+00           0.000000e+00           0.000000e+00
+alphat          23552           0.000000e+00           0.000000e+00           0.000000e+00
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fielddiff.m0-sgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/sgsColor/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           3.265740e+03           2.088351e-02           1.082962e-03
+T               23552           2.757634e+00           9.027892e-03           3.819272e-04
+U               70656           8.382485e+00           2.309939e-02           2.109830e-03
+rho             23552           3.345015e-02           1.739216e-02           8.388978e-04
+nuTilda         23552           3.045154e-04           4.743471e-02           2.597195e-02
+nut             23552           3.045214e-04           4.743574e-02           2.606566e-02
+alphat          23552           4.405497e-04           4.920035e-02           2.754491e-02
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/fielddiff.m0-tree.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/m0/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf200/rae2822SA/tree/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           7.308123e-05           4.673345e-10           1.982904e-11
+T               23552           4.835027e-08           1.582883e-10           6.624151e-12
+U               70656           1.490271e-07           4.106700e-10           2.387531e-11
+rho             23552           7.192951e-10           3.739921e-10           1.464302e-11
+nuTilda         23552           1.937446e-12           3.017981e-10           1.731633e-10
+nut             23552           1.937513e-12           3.018093e-10           1.738987e-10
+alphat          23552           2.837140e-12           3.168503e-10           1.882366e-10
+=== exit=0
+=== 2026-10-22T18:48:37Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label N7-g02-perf-onera --end 30 --variant m0= --variant m1=GNC_COOP_LEVELS=1 --variant m2=GNC_COOP_LEVELS=2 --variant lusgsColor=GNC_LUSGS=color --variant sgsColor=GNC_SGS=color --variant tree=GNC_REDUCE=tree --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=30
+case       nCells  variant     exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+oneraM6SA  294912  m0          0     8.8056   0.29352          30                0.0421254      0.232039
+oneraM6SA  294912  m1          0     10.0115  0.333717         30                0.0421254      0.280072
+oneraM6SA  294912  m2          0     13.6955  0.456517         30                0.0421254      0.402956
+oneraM6SA  294912  lusgsColor  0     7.26451  0.24215          30                0.0421295      0.183191
+oneraM6SA  294912  sgsColor    0     8.58785  0.286262         30                0.0421254      0.230322
+oneraM6SA  294912  tree        0     4.42971  0.147657         30                0.0421254      0.0934784
+oneraM6SA  294912  fast        0     2.93637  0.097879         30                0.0421295      0.0444462
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fielddiff.m0-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m0/30
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fast/30
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           2.639146e+03           1.202609e-02           7.123955e-05
+T              294912           2.220964e+00           6.260559e-03           1.775557e-05
+U              884736           3.953315e+00           1.467286e-02           4.485010e-05
+rho            294912           2.091356e-02           9.691239e-03           4.181395e-05
+nuTilda        294912           6.025111e-09           4.895840e-05           2.430286e-06
+nut            294912           2.710252e-07           3.868829e-03           6.145340e-05
+alphat         294912           6.543096e-07           8.508073e-03           1.387612e-04
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fielddiff.m0-lusgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m0/30
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/lusgsColor/30
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           2.639146e+03           1.202609e-02           7.123953e-05
+T              294912           2.220964e+00           6.260558e-03           1.775557e-05
+U              884736           3.953315e+00           1.467285e-02           4.485009e-05
+rho            294912           2.091355e-02           9.691237e-03           4.181394e-05
+nuTilda        294912           5.813380e-09           4.723792e-05           2.863968e-07
+nut            294912           2.708686e-07           3.866595e-03           6.028317e-05
+alphat         294912           6.540862e-07           8.505168e-03           1.381173e-04
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fielddiff.m0-m1.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m0/30
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m1/30
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           0.000000e+00           0.000000e+00           0.000000e+00
+T              294912           0.000000e+00           0.000000e+00           0.000000e+00
+U              884736           0.000000e+00           0.000000e+00           0.000000e+00
+rho            294912           0.000000e+00           0.000000e+00           0.000000e+00
+nuTilda        294912           0.000000e+00           0.000000e+00           0.000000e+00
+nut            294912           0.000000e+00           0.000000e+00           0.000000e+00
+alphat         294912           0.000000e+00           0.000000e+00           0.000000e+00
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fielddiff.m0-m2.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m0/30
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m2/30
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           0.000000e+00           0.000000e+00           0.000000e+00
+T              294912           0.000000e+00           0.000000e+00           0.000000e+00
+U              884736           0.000000e+00           0.000000e+00           0.000000e+00
+rho            294912           0.000000e+00           0.000000e+00           0.000000e+00
+nuTilda        294912           0.000000e+00           0.000000e+00           0.000000e+00
+nut            294912           0.000000e+00           0.000000e+00           0.000000e+00
+alphat         294912           0.000000e+00           0.000000e+00           0.000000e+00
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fielddiff.m0-sgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m0/30
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/sgsColor/30
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           4.865655e-03           2.217188e-08           1.764814e-09
+T              294912           8.016015e-06           2.259592e-08           6.023653e-10
+U              884736           9.247163e-06           3.432114e-08           1.404098e-09
+rho            294912           3.663317e-08           1.697563e-08           1.040170e-09
+nuTilda        294912           4.931552e-09           4.007243e-05           2.411083e-06
+nut            294912           2.930806e-09           4.183666e-05           1.168112e-05
+alphat         294912           3.963327e-09           5.153565e-05           1.248682e-05
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/fielddiff.m0-tree.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/m0/30
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-perf-onera/oneraM6SA/tree/30
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           3.256035e-04           1.483714e-09           2.631663e-10
+T              294912           2.839071e-07           8.002908e-10           7.092787e-11
+U              884736           5.797052e-07           2.151595e-09           1.957172e-10
+rho            294912           2.414274e-09           1.118763e-09           1.646490e-10
+nuTilda        294912           1.525934e-13           1.239932e-09           1.862329e-10
+nut            294912           1.973460e-13           2.817075e-09           1.312233e-09
+alphat         294912           2.007039e-13           2.609779e-09           1.290039e-09
+=== exit=0
+=== 2026-10-22T18:50:01Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label N7-g02-conv --end 2000 --variant ref= --variant lusgsColor=GNC_LUSGS=color --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=2000
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=2000
+case         nCells  variant     exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+flatPlateSA  8000    ref         0     114.718  0.057359         3764              1.4085e-05     0.0571132
+flatPlateSA  8000    lusgsColor  0     39.7837  0.0198919        6414              1.45366e-05    0.019704
+flatPlateSA  8000    fast        0     16.393   0.0081965        6407              1.45526e-05    0.00801941
+rae2822SA    23552   ref         0     95.0382  0.0475191        2000              0.00440357     0.0472769
+rae2822SA    23552   lusgsColor  0     58.6526  0.0293263        3985              0.00432242     0.0290926
+rae2822SA    23552   fast        0     14.8706  0.0074353        3985              0.00431084     0.00722636
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/flatPlateSA/fielddiff.ref-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/flatPlateSA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/flatPlateSA/fast/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           3.434748e-01           2.881070e-04           1.247348e-05
+T                8000           1.606661e-02           5.620825e-05           9.647413e-06
+U               24000           3.888818e-02           5.528914e-05           2.648261e-06
+rho              8000           1.496754e-05           2.930717e-04           1.019325e-05
+nuTilda          8000           1.400471e-07           4.638347e-06           2.982604e-06
+nut              8000           3.293815e-07           1.091930e-05           4.837994e-06
+alphat           8000           7.104045e-09           1.043915e-05           9.112478e-06
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/flatPlateSA/fielddiff.ref-lusgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/flatPlateSA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/flatPlateSA/lusgsColor/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           3.229959e-01           2.709292e-04           1.175249e-05
+T                8000           1.622733e-02           5.677052e-05           9.676624e-06
+U               24000           3.649265e-02           5.188330e-05           2.547645e-06
+rho              8000           1.407330e-05           2.755620e-04           9.596977e-06
+nuTilda          8000           1.401820e-07           4.642816e-06           2.935724e-06
+nut              8000           3.345526e-07           1.109073e-05           4.832818e-06
+alphat           8000           7.205729e-09           1.058857e-05           9.179781e-06
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/fielddiff.ref-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/fast/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           1.999911e+03           1.278015e-02           1.812474e-04
+T               23552           2.762771e+00           9.271052e-03           5.788298e-04
+U               70656           8.103751e+00           2.287836e-02           6.302801e-04
+rho             23552           1.718784e-02           8.921935e-03           4.744446e-04
+nuTilda         23552           2.518117e-05           2.931116e-03           1.314993e-03
+nut             23552           2.518175e-05           2.931186e-03           1.317525e-03
+alphat          23552           3.761509e-05           3.000143e-03           1.374741e-03
+-- /ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/fielddiff.ref-lusgsColor.txt
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/lusgsColor/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           1.999789e+03           1.277937e-02           1.816571e-04
+T               23552           2.777745e+00           9.321302e-03           5.800269e-04
+U               70656           8.104235e+00           2.287972e-02           6.301472e-04
+rho             23552           1.718815e-02           8.922092e-03           4.749130e-04
+nuTilda         23552           1.439189e-05           1.675231e-03           8.086467e-04
+nut             23552           1.439221e-05           1.675271e-03           8.118149e-04
+alphat          23552           2.141174e-05           1.707780e-03           8.576670e-04
+=== exit=0
+=== done 2026-10-22T18:55:59Z

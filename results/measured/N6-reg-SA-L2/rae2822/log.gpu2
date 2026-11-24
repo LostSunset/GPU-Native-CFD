@@ -1,0 +1,9 @@
+mesh: 23552 cells; SpalartAllmaras Cw1 3.239092147019031; nuTilda solver tol 1e-10 relTol 0.1 minIter 1; relax 0.5
+step 1: smoothSolver: Solving for nuTilda, initial 0.99999999565586128 final 0.00024797419603232582 iterations 1 bounded 0
+step 1: fw pow(base, 1/6): 0 of 23552 bases differ from host libm (first 0)
+step 2: smoothSolver: Solving for nuTilda, initial 0.0076361150558640067 final 1.643293436448589e-06 iterations 1 bounded 0
+step 2: fw pow(base, 1/6): 0 of 23552 bases differ from host libm (first 0)
+step 3: smoothSolver: Solving for nuTilda, initial 0.0041872843471694576 final 1.2768860813472746e-06 iterations 1 bounded 0
+step 3: fw pow(base, 1/6): 0 of 23552 bases differ from host libm (first 0)
+step 10: smoothSolver: Solving for nuTilda, initial 0.00078626386244285914 final 1.3438526993233265e-06 iterations 1 bounded 0
+step 10: fw pow(base, 1/6): 0 of 23552 bases differ from host libm (first 0)

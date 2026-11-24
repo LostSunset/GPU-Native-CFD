@@ -1,0 +1,71 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "system/fvSchemes"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    location        "system";
+    object          fvSchemes;
+}
+
+fluxScheme      AUSMPlusUp;
+
+lowMachAusm     false;
+
+ddtSchemes
+{
+    default         bounded dualTime rPseudoDeltaT steadyState;
+}
+
+gradSchemes
+{
+    default         faceLeastSquares linear;
+    gradTVD         faceLeastSquares linear;
+    grad(nuTilda)   cellLimited Gauss linear 0.90000000000000002;
+    grad(k)         cellLimited Gauss linear 0.90000000000000002;
+    grad(omega)     cellLimited Gauss linear 0.90000000000000002;
+}
+
+divSchemes
+{
+    default         none;
+    div(tauMC)      Gauss linear;
+    div(phi,nuTilda) bounded Gauss limitedLinear 1;
+    div(phi,k)      bounded Gauss limitedLinear 1;
+    div(phi,omega)  bounded Gauss limitedLinear 1;
+}
+
+laplacianSchemes
+{
+    default         Gauss linear corrected;
+    laplacian(muEff,U) Gauss linear compact;
+    laplacian(alphaEff,e) Gauss linear compact;
+}
+
+interpolationSchemes
+{
+    default         linear;
+    reconstruct(rho) wVanLeer gradTVD;
+    reconstruct(U)  wVanLeer gradTVD;
+    reconstruct(T)  wVanLeer gradTVD;
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+
+wallDist
+{
+    method          Poisson;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

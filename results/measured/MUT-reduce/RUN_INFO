@@ -1,0 +1,7 @@
+label=MUT-reduce
+started_utc=2026-10-23T15:28:13Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+dump_steps=1,2,10
+uptime= 23:28:13 up 11 days, 14:04,  9 users,  load average: 104.05, 104.10, 104.64
+finished_utc=2026-10-23T15:28:21Z

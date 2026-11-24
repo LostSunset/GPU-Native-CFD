@@ -1,0 +1,10 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 294912 nFaces 896256 nInternalFaces 873216 fvBoundaryFaces 23040 nSolutionD 3
+reader: s ascii vs binary: 0 values differ
+reader: v ascii vs binary: 0 values differ
+reader: gamma ascii vs binary: 0 values differ
+reader: phi ascii vs binary: 0 values differ
+grad schemes: s 'faceLeastSquares linear', v 'faceLeastSquares linear'
+boundary conditions: intPatch[s fixedValue, v slip, gamma fixedValue] wing[s zeroGradient, v inletOutlet, gamma zeroGradient] symm[s symmetry, v symmetry, gamma symmetry] farfield[s inletOutlet, v fixedValue, gamma fixedValue]
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L1/oneraM6/gpu1.gnc
+wrote fields to /ssd/sclin/gpu-native-cfd/runs/N4a-L1/oneraM6/case/gncL1out

@@ -1,0 +1,5 @@
+case	nCells	run	exit	cpu_s	wall_s	wall_per_step_s
+basicFinnerLaminar	-	hisa-np1	0	252.93	253	50.6
+basicFinnerLaminar	-	hisa-np8	0	37.01	37	7.4
+basicFinnerLaminar	-	hisa-np32	0	13.19	13	2.6
+basicFinnerLaminar	2179881	gncHisa	0	-	10.2246	2.04492

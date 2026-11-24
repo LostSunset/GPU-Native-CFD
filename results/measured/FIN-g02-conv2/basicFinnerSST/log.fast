@@ -1,0 +1,5014 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+wallDist Poisson: PCG Solving for yPsi, Initial residual = 1, Final residual = 9.69838e-11, No Iterations 584
+multicolor ordering (GNC_LUSGS=color GNC_SGS=color): 7 colors; levels 743/743
+function forces (forces)
+mesh: 2179881 cells; analysis: RAS kOmegaSST; endTime 1000
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 1 (0.999316 0.00046558 0.0347635) 1
+ExecutionTime = 5.50407 s
+
+Time = 2
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 0.54581 (0.352178 0.0213371 0.0298084) 0.314034
+ExecutionTime = 5.82476 s
+
+Time = 3
+Pseudo Courant No: 1.25
+  GMRES iterations: 1   initial residual: 0.329324 (0.188982 0.0146925 0.0191188) 0.171785
+ExecutionTime = 6.14557 s
+
+Time = 4
+Pseudo Courant No: 1.5625
+  GMRES iterations: 1   initial residual: 0.204996 (0.117235 0.0107336 0.0132975) 0.106476
+ExecutionTime = 6.46524 s
+
+Time = 5
+Pseudo Courant No: 1.95312
+  GMRES iterations: 1   initial residual: 0.185693 (0.0927411 0.00956299 0.0115398) 0.0841613
+ExecutionTime = 6.78383 s
+
+Time = 6
+Pseudo Courant No: 2.44141
+  GMRES iterations: 1   initial residual: 0.153398 (0.0851404 0.00979955 0.0115499) 0.0781357
+ExecutionTime = 7.11591 s
+
+Time = 7
+Pseudo Courant No: 3.05176
+  GMRES iterations: 1   initial residual: 0.124209 (0.0732414 0.00924858 0.0107036) 0.0654656
+ExecutionTime = 7.43434 s
+
+Time = 8
+Pseudo Courant No: 3.8147
+  GMRES iterations: 1   initial residual: 0.12678 (0.0771409 0.0100161 0.0115611) 0.067696
+ExecutionTime = 7.75309 s
+
+Time = 9
+Pseudo Courant No: 4.76837
+  GMRES iterations: 1   initial residual: 0.102178 (0.0687412 0.00920787 0.0105694) 0.0597713
+ExecutionTime = 8.07135 s
+
+Time = 10
+Pseudo Courant No: 5.96046
+  GMRES iterations: 1   initial residual: 0.111467 (0.0744177 0.0100863 0.0115317) 0.0632547
+ExecutionTime = 8.39218 s
+
+Time = 11
+Pseudo Courant No: 7.45058
+  GMRES iterations: 1   initial residual: 0.0981828 (0.0698052 0.00924644 0.0106111) 0.0596543
+ExecutionTime = 8.71044 s
+
+Time = 12
+Pseudo Courant No: 9.31323
+  GMRES iterations: 1   initial residual: 0.0799436 (0.0588916 0.00766204 0.00882874) 0.0510741
+ExecutionTime = 9.04851 s
+
+Time = 13
+Pseudo Courant No: 11.6415
+  GMRES iterations: 1   initial residual: 0.0949683 (0.0693559 0.00876576 0.0100871) 0.0592059
+ExecutionTime = 9.36635 s
+
+Time = 14
+Pseudo Courant No: 13.0878
+  GMRES iterations: 1   initial residual: 0.0735578 (0.0545081 0.00668508 0.00776529) 0.04749
+ExecutionTime = 9.68549 s
+
+Time = 15
+Pseudo Courant No: 16.3598
+  GMRES iterations: 1   initial residual: 0.083483 (0.0631854 0.007316 0.00854068) 0.0541709
+ExecutionTime = 10.007 s
+
+Time = 16
+Pseudo Courant No: 14.6262
+  GMRES iterations: 1   initial residual: 0.0550508 (0.0424595 0.00455858 0.00539302) 0.0361746
+ExecutionTime = 10.3321 s
+
+Time = 17
+Pseudo Courant No: 18.2828
+  GMRES iterations: 1   initial residual: 0.0876667 (0.0694689 0.00681679 0.0082477) 0.0598605
+ExecutionTime = 10.6522 s
+
+Time = 18
+Pseudo Courant No: 13.6041
+  GMRES iterations: 1   initial residual: 0.0445254 (0.0354752 0.00325517 0.00403438) 0.0303501
+ExecutionTime = 10.9749 s
+
+Time = 19
+Pseudo Courant No: 17.0051
+  GMRES iterations: 1   initial residual: 0.0817533 (0.0660374 0.00567901 0.0072309) 0.0589615
+ExecutionTime = 11.3011 s
+
+Time = 20
+Pseudo Courant No: 14.3315
+  GMRES iterations: 1   initial residual: 0.0442859 (0.0360572 0.00306413 0.00387243) 0.0315429
+ExecutionTime = 11.6376 s
+
+Time = 21
+Pseudo Courant No: 17.9143
+  GMRES iterations: 1   initial residual: 0.0781964 (0.0637241 0.00522099 0.00652194) 0.0585971
+ExecutionTime = 11.9629 s
+
+Time = 22
+Pseudo Courant No: 14.809
+  GMRES iterations: 1   initial residual: 0.0420191 (0.0344478 0.00285743 0.00351157) 0.0310765
+ExecutionTime = 12.2879 s
+
+Time = 23
+Pseudo Courant No: 18.5112
+  GMRES iterations: 1   initial residual: 0.0766842 (0.0637381 0.00519243 0.0062689) 0.0594387
+ExecutionTime = 12.6459 s
+
+Time = 24
+Pseudo Courant No: 14.8835
+  GMRES iterations: 1   initial residual: 0.0394044 (0.0325164 0.00273766 0.0032204) 0.0301734
+ExecutionTime = 12.9872 s
+
+Time = 25
+Pseudo Courant No: 18.6043
+  GMRES iterations: 1   initial residual: 0.0710009 (0.0592729 0.00498701 0.00573107) 0.0564737
+ExecutionTime = 13.3093 s
+
+Time = 26
+Pseudo Courant No: 15.9435
+  GMRES iterations: 1   initial residual: 0.0390444 (0.032078 0.00279725 0.00314204) 0.0306363
+ExecutionTime = 13.6558 s
+
+Time = 27
+Pseudo Courant No: 19.9293
+  GMRES iterations: 1   initial residual: 0.0662614 (0.0549098 0.00477364 0.00530027) 0.0538718
+ExecutionTime = 13.9752 s
+
+Time = 28
+Pseudo Courant No: 17.0175
+  GMRES iterations: 1   initial residual: 0.0364474 (0.029693 0.00262473 0.00288316) 0.0292533
+ExecutionTime = 14.304 s
+
+Time = 29
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0574225 (0.046904 0.00419217 0.00454655) 0.0474715
+ExecutionTime = 14.6233 s
+
+Time = 30
+Pseudo Courant No: 19.6248
+  GMRES iterations: 1   initial residual: 0.0367899 (0.0297317 0.00275028 0.00293879) 0.0302087
+ExecutionTime = 14.9475 s
+
+Time = 31
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0478805 (0.0383888 0.00366444 0.00386931) 0.0401384
+ExecutionTime = 15.3045 s
+
+Time = 32
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0340562 (0.0272646 0.00272822 0.00284479) 0.0284756
+ExecutionTime = 15.6556 s
+
+Time = 33
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0449865 (0.035683 0.00369749 0.00381691) 0.0382957
+ExecutionTime = 16.0045 s
+
+Time = 34
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0323795 (0.0260246 0.00281686 0.00288783) 0.0275385
+ExecutionTime = 16.3295 s
+
+Time = 35
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0448791 (0.0358166 0.00395132 0.00404006) 0.0387171
+ExecutionTime = 16.6469 s
+
+Time = 36
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0316511 (0.0259125 0.0029632 0.00301495) 0.0272723
+ExecutionTime = 16.9676 s
+
+Time = 37
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0435493 (0.0351998 0.00404963 0.00412853) 0.0379614
+ExecutionTime = 17.285 s
+
+Time = 38
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0304469 (0.0255348 0.00302334 0.00306029) 0.0264832
+ExecutionTime = 17.6063 s
+
+Time = 39
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0410924 (0.033907 0.0040207 0.0040418) 0.0360639
+ExecutionTime = 17.9261 s
+
+Time = 40
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0288033 (0.0249708 0.00303391 0.00298815) 0.0252054
+ExecutionTime = 18.2475 s
+
+Time = 41
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0380094 (0.0321796 0.00391902 0.00377635) 0.0333585
+ExecutionTime = 18.58 s
+
+Time = 42
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0273052 (0.0242885 0.0030273 0.00283466) 0.0238972
+ExecutionTime = 18.903 s
+
+Time = 43
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0342543 (0.0301287 0.00377029 0.00342177) 0.0298572
+ExecutionTime = 19.2217 s
+
+Time = 44
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0258248 (0.0235398 0.00300588 0.00264799) 0.0225649
+ExecutionTime = 19.5418 s
+
+Time = 45
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0304272 (0.0282276 0.00360886 0.00308826) 0.0263105
+ExecutionTime = 19.8614 s
+
+Time = 46
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.023669 (0.0226714 0.00295564 0.00247084) 0.0205744
+ExecutionTime = 20.1825 s
+
+Time = 47
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0280981 (0.0263034 0.00345577 0.00286355) 0.0242107
+ExecutionTime = 20.5012 s
+
+Time = 48
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.023206 (0.0217629 0.00291008 0.00239264) 0.0201522
+ExecutionTime = 20.8208 s
+
+Time = 49
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0262227 (0.0245119 0.00330159 0.0027127) 0.022527
+ExecutionTime = 21.1411 s
+
+Time = 50
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0224228 (0.0206789 0.00282425 0.00233753) 0.0194398
+ExecutionTime = 21.4642 s
+
+Time = 51
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0249236 (0.0230447 0.00316723 0.00263147) 0.0213323
+ExecutionTime = 21.7831 s
+
+Time = 52
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0209886 (0.0196596 0.00277689 0.00229399) 0.0180355
+ExecutionTime = 22.1045 s
+
+Time = 53
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0226182 (0.0214977 0.00308547 0.00254859) 0.0191447
+ExecutionTime = 22.4236 s
+
+Time = 54
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0196068 (0.0188345 0.00278596 0.00227959) 0.0166822
+ExecutionTime = 22.7442 s
+
+Time = 55
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0211396 (0.020487 0.00309928 0.00251259) 0.0177206
+ExecutionTime = 23.0647 s
+
+Time = 56
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0191406 (0.0185411 0.00289745 0.00231286) 0.0161245
+ExecutionTime = 23.3842 s
+
+Time = 57
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0200807 (0.0196071 0.00310852 0.00246205) 0.0168228
+ExecutionTime = 23.7032 s
+
+Time = 58
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0188307 (0.0182777 0.00296756 0.00234212) 0.0159473
+ExecutionTime = 24.0231 s
+
+Time = 59
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0196256 (0.0190895 0.00313922 0.00247725) 0.0166466
+ExecutionTime = 24.3423 s
+
+Time = 60
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0188704 (0.018128 0.00303468 0.00236755) 0.0162781
+ExecutionTime = 24.6785 s
+
+Time = 61
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0209331 (0.0187563 0.00323368 0.00247657) 0.0186872
+ExecutionTime = 24.9979 s
+
+Time = 62
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0228727 (0.0181745 0.00332362 0.00247945) 0.0216197
+ExecutionTime = 25.32 s
+
+Time = 63
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.025327 (0.0182758 0.00348509 0.00253615) 0.0246778
+ExecutionTime = 25.6396 s
+
+Time = 64
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0255327 (0.0172042 0.00347687 0.00243762) 0.0254764
+ExecutionTime = 25.9605 s
+
+Time = 65
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0278889 (0.0168434 0.00359368 0.00246993) 0.0283796
+ExecutionTime = 26.2941 s
+
+Time = 66
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0292719 (0.0155639 0.00373123 0.0024127) 0.0308452
+ExecutionTime = 26.6161 s
+
+Time = 67
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0311947 (0.0146529 0.00380474 0.00239776) 0.033537
+ExecutionTime = 26.9366 s
+
+Time = 68
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0319317 (0.0131241 0.00393419 0.00232514) 0.0351067
+ExecutionTime = 27.2562 s
+
+Time = 69
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0313986 (0.012023 0.0039081 0.00223976) 0.0343948
+ExecutionTime = 27.5761 s
+
+Time = 70
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0296203 (0.0107371 0.00369335 0.00209713) 0.0322729
+ExecutionTime = 27.9172 s
+
+Time = 71
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0289005 (0.00988687 0.00362482 0.00204352) 0.0312163
+ExecutionTime = 28.2371 s
+
+Time = 72
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0272523 (0.00892447 0.00344645 0.00193389) 0.0292721
+ExecutionTime = 28.559 s
+
+Time = 73
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0264284 (0.00828327 0.00335481 0.0018755) 0.0280268
+ExecutionTime = 28.8784 s
+
+Time = 74
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0252198 (0.00760446 0.00320194 0.00179095) 0.0264276
+ExecutionTime = 29.1998 s
+
+Time = 75
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0245694 (0.00715193 0.00309579 0.00174469) 0.0254996
+ExecutionTime = 29.5189 s
+
+Time = 76
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0235306 (0.00670069 0.00294331 0.00167998) 0.0242288
+ExecutionTime = 29.8399 s
+
+Time = 77
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0229438 (0.00641463 0.0028288 0.00165213) 0.0234063
+ExecutionTime = 30.1595 s
+
+Time = 78
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.022114 (0.00613175 0.00269636 0.00161298) 0.0224571
+ExecutionTime = 30.4798 s
+
+Time = 79
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0214983 (0.0059021 0.00258768 0.00158592) 0.0216041
+ExecutionTime = 30.7988 s
+
+Time = 80
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0206894 (0.00561914 0.00248389 0.00155454) 0.0204625
+ExecutionTime = 31.1193 s
+
+Time = 81
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0197147 (0.00533197 0.00235585 0.00151726) 0.0193217
+ExecutionTime = 31.4499 s
+
+Time = 82
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0189129 (0.00511444 0.00226088 0.00149588) 0.0183035
+ExecutionTime = 31.7721 s
+
+Time = 83
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0180281 (0.00491437 0.00215391 0.00146883) 0.017119
+ExecutionTime = 32.0911 s
+
+Time = 84
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0176787 (0.00489058 0.00210384 0.00147201) 0.0164696
+ExecutionTime = 32.4124 s
+
+Time = 85
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0169539 (0.00485218 0.0020249 0.00145009) 0.0155219
+ExecutionTime = 32.7316 s
+
+Time = 86
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0166355 (0.00489822 0.00199649 0.00144788) 0.0149781
+ExecutionTime = 33.0524 s
+
+Time = 87
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0160885 (0.00487669 0.00195141 0.00142734) 0.0142396
+ExecutionTime = 33.3717 s
+
+Time = 88
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0157604 (0.00488506 0.00194143 0.00142691) 0.0137664
+ExecutionTime = 33.6927 s
+
+Time = 89
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.015387 (0.00476447 0.00190106 0.00140299) 0.0132836
+ExecutionTime = 34.0125 s
+
+Time = 90
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0153742 (0.00467967 0.00191464 0.00141606) 0.0131542
+ExecutionTime = 34.3334 s
+
+Time = 91
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0149516 (0.00446698 0.00188004 0.00138394) 0.0126332
+ExecutionTime = 34.6523 s
+
+Time = 92
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0148272 (0.0043668 0.00188987 0.00138545) 0.0123677
+ExecutionTime = 34.9775 s
+
+Time = 93
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0143443 (0.00415512 0.00185343 0.00134895) 0.0117771
+ExecutionTime = 35.297 s
+
+Time = 94
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0141935 (0.00405211 0.00186936 0.00135148) 0.0114171
+ExecutionTime = 35.6159 s
+
+Time = 95
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0138349 (0.00390815 0.00183998 0.00132198) 0.0108705
+ExecutionTime = 35.9351 s
+
+Time = 96
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0135913 (0.00380558 0.00184234 0.00132014) 0.0105471
+ExecutionTime = 36.2556 s
+
+Time = 97
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0131403 (0.00366257 0.00179916 0.00129167) 0.00991652
+ExecutionTime = 36.6111 s
+
+Time = 98
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0131538 (0.0035542 0.00180455 0.00128707) 0.00978055
+ExecutionTime = 36.9323 s
+
+Time = 99
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0129234 (0.00338149 0.00179961 0.00126388) 0.00957463
+ExecutionTime = 37.2518 s
+
+Time = 100
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0131464 (0.00328601 0.00183957 0.00127805) 0.00968568
+ExecutionTime = 37.5875 s
+
+Time = 101
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127961 (0.00314706 0.00180799 0.00125402) 0.0092775
+ExecutionTime = 37.9135 s
+
+Time = 102
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0131538 (0.00305083 0.00186476 0.00126317) 0.00959225
+ExecutionTime = 38.2346 s
+
+Time = 103
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0129332 (0.00291389 0.00183059 0.00126251) 0.00939887
+ExecutionTime = 38.5562 s
+
+Time = 104
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0132109 (0.00282289 0.0018774 0.00124965) 0.00959557
+ExecutionTime = 38.8986 s
+
+Time = 105
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127548 (0.00271551 0.00179818 0.00124483) 0.00913285
+ExecutionTime = 39.2264 s
+
+Time = 106
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0129443 (0.00263179 0.00181914 0.0012463) 0.00920522
+ExecutionTime = 39.5526 s
+
+Time = 107
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127521 (0.00254438 0.00178039 0.00122435) 0.00902621
+ExecutionTime = 39.8763 s
+
+Time = 108
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0128738 (0.00249572 0.00177831 0.00123736) 0.00903703
+ExecutionTime = 40.2359 s
+
+Time = 109
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.012643 (0.00242151 0.00176308 0.00122127) 0.00879291
+ExecutionTime = 40.5717 s
+
+Time = 110
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0128081 (0.00242241 0.00176847 0.0012263) 0.0088817
+ExecutionTime = 40.8962 s
+
+Time = 111
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127055 (0.00235745 0.00176068 0.00121529) 0.00879055
+ExecutionTime = 41.2311 s
+
+Time = 112
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0128591 (0.00236213 0.00177777 0.00121847) 0.00886845
+ExecutionTime = 41.5546 s
+
+Time = 113
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127815 (0.0023459 0.0017637 0.00121107) 0.00874935
+ExecutionTime = 41.8766 s
+
+Time = 114
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0129802 (0.00237664 0.0017909 0.00121358) 0.00884859
+ExecutionTime = 42.2046 s
+
+Time = 115
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127241 (0.00237994 0.00176905 0.00120455) 0.00861384
+ExecutionTime = 42.5279 s
+
+Time = 116
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.012826 (0.00241286 0.00177352 0.00119921) 0.00861128
+ExecutionTime = 42.8869 s
+
+Time = 117
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0125323 (0.00242785 0.00175474 0.00118628) 0.00836597
+ExecutionTime = 43.2362 s
+
+Time = 118
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0125831 (0.00247659 0.00176065 0.00118738) 0.0083338
+ExecutionTime = 43.5786 s
+
+Time = 119
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0125349 (0.00254419 0.00176361 0.00118088) 0.0082826
+ExecutionTime = 43.9045 s
+
+Time = 120
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0123754 (0.0026015 0.00176526 0.00117715) 0.00811351
+ExecutionTime = 44.2257 s
+
+Time = 121
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0123521 (0.00263104 0.00177119 0.00117544) 0.00811304
+ExecutionTime = 44.5462 s
+
+Time = 122
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0123043 (0.00268289 0.00177632 0.00117274) 0.00803913
+ExecutionTime = 44.8661 s
+
+Time = 123
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0123954 (0.00273203 0.00178502 0.00117335) 0.00811149
+ExecutionTime = 45.1892 s
+
+Time = 124
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0122009 (0.0028151 0.0017886 0.00116755) 0.00794886
+ExecutionTime = 45.5126 s
+
+Time = 125
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0124042 (0.00282343 0.00181548 0.00117188) 0.00823125
+ExecutionTime = 45.8334 s
+
+Time = 126
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.012102 (0.0028904 0.00181001 0.00116436) 0.00795134
+ExecutionTime = 46.1549 s
+
+Time = 127
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0124691 (0.00286596 0.00182326 0.00118053) 0.00836839
+ExecutionTime = 46.473 s
+
+Time = 128
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0120504 (0.00287279 0.00179804 0.0011676) 0.00804005
+ExecutionTime = 46.7927 s
+
+Time = 129
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0121907 (0.00281796 0.00180459 0.00116304) 0.00819395
+ExecutionTime = 47.1119 s
+
+Time = 130
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0120272 (0.00276361 0.00178591 0.00115634) 0.00814005
+ExecutionTime = 47.4326 s
+
+Time = 131
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0122078 (0.00268216 0.00182509 0.00115121) 0.00833541
+ExecutionTime = 47.7532 s
+
+Time = 132
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0127377 (0.00260325 0.00189837 0.00116335) 0.00892595
+ExecutionTime = 48.0766 s
+
+Time = 133
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.012839 (0.00256025 0.00191886 0.00115352) 0.00902533
+ExecutionTime = 48.4015 s
+
+Time = 134
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0133214 (0.0024501 0.00189522 0.00117499) 0.00950065
+ExecutionTime = 48.7239 s
+
+Time = 135
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0130853 (0.00236648 0.00187125 0.0011522) 0.00926038
+ExecutionTime = 49.0465 s
+
+Time = 136
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0129702 (0.00223663 0.00183077 0.00116291) 0.00913503
+ExecutionTime = 49.3655 s
+
+Time = 137
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0123523 (0.00212168 0.00177357 0.0011289) 0.00855191
+ExecutionTime = 49.6848 s
+
+Time = 138
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0118969 (0.00200414 0.00172644 0.00112365) 0.00810351
+ExecutionTime = 50.0236 s
+
+Time = 139
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0119305 (0.00190685 0.00172488 0.00111302) 0.00810406
+ExecutionTime = 50.345 s
+
+Time = 140
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0114268 (0.00184591 0.00167663 0.00110619) 0.00764663
+ExecutionTime = 50.6722 s
+
+Time = 141
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0113992 (0.00180604 0.00166685 0.0010974) 0.00756089
+ExecutionTime = 50.9921 s
+
+Time = 142
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0112498 (0.00179353 0.00166313 0.00109266) 0.00742113
+ExecutionTime = 51.3118 s
+
+Time = 143
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0113767 (0.0017792 0.00164472 0.00109228) 0.00750326
+ExecutionTime = 51.6312 s
+
+Time = 144
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0113213 (0.00178353 0.00164875 0.00108978) 0.00744974
+ExecutionTime = 51.9522 s
+
+Time = 145
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111901 (0.0017803 0.00162734 0.00108583) 0.00728439
+ExecutionTime = 52.2724 s
+
+Time = 146
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0110107 (0.00178406 0.00161574 0.00108548) 0.00708397
+ExecutionTime = 52.5931 s
+
+Time = 147
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111109 (0.00181093 0.00162054 0.00108179) 0.00710834
+ExecutionTime = 52.9125 s
+
+Time = 148
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0110633 (0.00183966 0.00162972 0.00107889) 0.0070264
+ExecutionTime = 53.2314 s
+
+Time = 149
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111785 (0.00186911 0.00164748 0.00107578) 0.00712507
+ExecutionTime = 53.5508 s
+
+Time = 150
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0110573 (0.00190015 0.00162675 0.00107318) 0.00701158
+ExecutionTime = 53.8728 s
+
+Time = 151
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0112646 (0.00196165 0.00163419 0.0010797) 0.00714085
+ExecutionTime = 54.193 s
+
+Time = 152
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0113153 (0.00201805 0.00165258 0.00107891) 0.00718153
+ExecutionTime = 54.5141 s
+
+Time = 153
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0113914 (0.00205471 0.0016454 0.00107717) 0.00719124
+ExecutionTime = 54.8337 s
+
+Time = 154
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0113091 (0.00209794 0.00166258 0.00107518) 0.00713248
+ExecutionTime = 55.1543 s
+
+Time = 155
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111979 (0.00213747 0.00164271 0.00107123) 0.00704458
+ExecutionTime = 55.4855 s
+
+Time = 156
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111312 (0.00216847 0.00166669 0.00106383) 0.00702265
+ExecutionTime = 55.8077 s
+
+Time = 157
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111523 (0.00217083 0.00165216 0.00106576) 0.00703724
+ExecutionTime = 56.1266 s
+
+Time = 158
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0111894 (0.00216258 0.0016579 0.00106988) 0.00708149
+ExecutionTime = 56.4476 s
+
+Time = 159
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0112304 (0.00215354 0.00164341 0.00106528) 0.00713669
+ExecutionTime = 56.7668 s
+
+Time = 160
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.011247 (0.00214843 0.00163325 0.00107415) 0.00719736
+ExecutionTime = 57.0981 s
+
+Time = 161
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0114212 (0.00212514 0.00167146 0.00106622) 0.00736879
+ExecutionTime = 57.4175 s
+
+Time = 162
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0114204 (0.00208329 0.00165345 0.0010669) 0.00739517
+ExecutionTime = 57.7388 s
+
+Time = 163
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0117858 (0.00201573 0.00171949 0.00106807) 0.00773549
+ExecutionTime = 58.0584 s
+
+Time = 164
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0115441 (0.00198726 0.00165331 0.001065) 0.00755877
+ExecutionTime = 58.3801 s
+
+Time = 165
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0120871 (0.00190563 0.00173063 0.00106873) 0.00803326
+ExecutionTime = 58.7094 s
+
+Time = 166
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0115797 (0.00185721 0.00162726 0.00105974) 0.0075905
+ExecutionTime = 59.0303 s
+
+Time = 167
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0114382 (0.00176364 0.00164188 0.00105206) 0.00747639
+ExecutionTime = 59.3499 s
+
+Time = 168
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0110217 (0.00168346 0.00156244 0.00104635) 0.00711801
+ExecutionTime = 59.6709 s
+
+Time = 169
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0109916 (0.00161683 0.00158558 0.00104541) 0.0070988
+ExecutionTime = 59.9901 s
+
+Time = 170
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0106501 (0.0015902 0.00151288 0.00103942) 0.00681261
+ExecutionTime = 60.3257 s
+
+Time = 171
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0105224 (0.00154325 0.0015166 0.00103584) 0.00668094
+ExecutionTime = 60.6452 s
+
+Time = 172
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0104057 (0.00151356 0.00151039 0.00103022) 0.00657378
+ExecutionTime = 60.9676 s
+
+Time = 173
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0102623 (0.00148982 0.00149901 0.00102716) 0.00643655
+ExecutionTime = 61.287 s
+
+Time = 174
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.010187 (0.00147328 0.00150285 0.00102526) 0.00634986
+ExecutionTime = 61.608 s
+
+Time = 175
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0100863 (0.00147094 0.0014872 0.00102086) 0.00627952
+ExecutionTime = 61.9381 s
+
+Time = 176
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0101137 (0.00146752 0.00150262 0.00102338) 0.00624678
+ExecutionTime = 62.2598 s
+
+Time = 177
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0100524 (0.00147959 0.00148082 0.00101936) 0.00619535
+ExecutionTime = 62.579 s
+
+Time = 178
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00993087 (0.00149065 0.00148088 0.00101597) 0.00606328
+ExecutionTime = 62.8985 s
+
+Time = 179
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00996787 (0.00150536 0.00148053 0.00101528) 0.00607851
+ExecutionTime = 63.2182 s
+
+Time = 180
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00984941 (0.0015373 0.00147309 0.001013) 0.00595307
+ExecutionTime = 63.5585 s
+
+Time = 181
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0097457 (0.00157083 0.00147659 0.00100837) 0.00586951
+ExecutionTime = 63.8804 s
+
+Time = 182
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00975861 (0.00161152 0.0014818 0.0010087) 0.00583481
+ExecutionTime = 64.2043 s
+
+Time = 183
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00981291 (0.00163344 0.00148421 0.00100869) 0.00589252
+ExecutionTime = 64.5246 s
+
+Time = 184
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00969817 (0.00167213 0.00147491 0.00100527) 0.00578361
+ExecutionTime = 64.8464 s
+
+Time = 185
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00969708 (0.00169533 0.00148456 0.00100276) 0.00578148
+ExecutionTime = 65.1659 s
+
+Time = 186
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00966675 (0.00173889 0.00148231 0.000999873) 0.00575905
+ExecutionTime = 65.4879 s
+
+Time = 187
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0097201 (0.00176762 0.00149019 0.000999306) 0.00584964
+ExecutionTime = 65.8258 s
+
+Time = 188
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00968218 (0.00179168 0.0014858 0.000995558) 0.00580075
+ExecutionTime = 66.147 s
+
+Time = 189
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00978991 (0.00178883 0.00148404 0.000995828) 0.00590221
+ExecutionTime = 66.4671 s
+
+Time = 190
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00976905 (0.00180088 0.0014782 0.000994021) 0.00588917
+ExecutionTime = 66.7863 s
+
+Time = 191
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00990538 (0.00176849 0.00147717 0.000999221) 0.00602339
+ExecutionTime = 67.1055 s
+
+Time = 192
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00977777 (0.00174339 0.00147013 0.000991632) 0.00592447
+ExecutionTime = 67.4328 s
+
+Time = 193
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00996487 (0.00172076 0.00147172 0.000994921) 0.00611498
+ExecutionTime = 67.7528 s
+
+Time = 194
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00981876 (0.00168726 0.00146957 0.000987849) 0.00602871
+ExecutionTime = 68.0753 s
+
+Time = 195
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0100691 (0.00163708 0.00148292 0.000991867) 0.00626431
+ExecutionTime = 68.3981 s
+
+Time = 196
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0101471 (0.0016225 0.00149365 0.000990721) 0.00629562
+ExecutionTime = 68.7195 s
+
+Time = 197
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0101041 (0.00158293 0.00147465 0.000986485) 0.00626255
+ExecutionTime = 69.0385 s
+
+Time = 198
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00986854 (0.00151798 0.00146009 0.000982663) 0.00609653
+ExecutionTime = 69.3607 s
+
+Time = 199
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00972206 (0.00148727 0.00143056 0.000981039) 0.00599209
+ExecutionTime = 69.6798 s
+
+Time = 200
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00933397 (0.0014514 0.00139171 0.000971951) 0.00568923
+ExecutionTime = 70.0048 s
+
+Time = 201
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00938546 (0.00140411 0.00138882 0.000975187) 0.00570975
+ExecutionTime = 70.324 s
+
+Time = 202
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00915586 (0.00137844 0.00136141 0.000965608) 0.00552971
+ExecutionTime = 70.6454 s
+
+Time = 203
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00913525 (0.00134471 0.00135875 0.000967348) 0.00549397
+ExecutionTime = 70.9659 s
+
+Time = 204
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00897369 (0.00132368 0.00135093 0.000961591) 0.00535636
+ExecutionTime = 71.2871 s
+
+Time = 205
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00888263 (0.00130297 0.00133245 0.000959062) 0.00528147
+ExecutionTime = 71.6061 s
+
+Time = 206
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00878199 (0.00128977 0.00133945 0.000953604) 0.00519203
+ExecutionTime = 71.9273 s
+
+Time = 207
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00881178 (0.00128792 0.00133396 0.000957212) 0.00520334
+ExecutionTime = 72.2463 s
+
+Time = 208
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00864023 (0.00127708 0.00132875 0.000949758) 0.00507801
+ExecutionTime = 72.5781 s
+
+Time = 209
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00872624 (0.00127815 0.00133348 0.000953526) 0.00513246
+ExecutionTime = 72.8966 s
+
+Time = 210
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00858136 (0.00128836 0.00133278 0.000947192) 0.00503445
+ExecutionTime = 73.2176 s
+
+Time = 211
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00858959 (0.00131318 0.0013255 0.00095006) 0.00502698
+ExecutionTime = 73.5363 s
+
+Time = 212
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00858299 (0.00132984 0.00133664 0.000943637) 0.00501289
+ExecutionTime = 73.8558 s
+
+Time = 213
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0087038 (0.00136672 0.00133099 0.000948235) 0.00509866
+ExecutionTime = 74.1858 s
+
+Time = 214
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00857562 (0.00138282 0.00133098 0.000941631) 0.00498711
+ExecutionTime = 74.5067 s
+
+Time = 215
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0086427 (0.00139949 0.001342 0.00094611) 0.00501886
+ExecutionTime = 74.8258 s
+
+Time = 216
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00846025 (0.00141357 0.00133159 0.000939203) 0.00487645
+ExecutionTime = 75.146 s
+
+Time = 217
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00845123 (0.00142818 0.00133776 0.00093771) 0.00489073
+ExecutionTime = 75.4647 s
+
+Time = 218
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00842605 (0.00143538 0.00133002 0.000936351) 0.00486569
+ExecutionTime = 75.7992 s
+
+Time = 219
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00855383 (0.00144626 0.00133757 0.00093702) 0.00497781
+ExecutionTime = 76.118 s
+
+Time = 220
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00845583 (0.00146794 0.00132575 0.000932679) 0.00487584
+ExecutionTime = 76.4387 s
+
+Time = 221
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00855186 (0.00146425 0.00134162 0.000932099) 0.00498019
+ExecutionTime = 76.7577 s
+
+Time = 222
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00875958 (0.00145268 0.00134125 0.000937413) 0.00511877
+ExecutionTime = 77.081 s
+
+Time = 223
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00856775 (0.00145463 0.00132554 0.000932606) 0.00501646
+ExecutionTime = 77.4226 s
+
+Time = 224
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00852047 (0.0014242 0.00131087 0.000932361) 0.00496071
+ExecutionTime = 77.7466 s
+
+Time = 225
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00843862 (0.00140814 0.0013101 0.000929989) 0.00494523
+ExecutionTime = 78.0666 s
+
+Time = 226
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00841956 (0.00138789 0.00130484 0.000930041) 0.00491727
+ExecutionTime = 78.3932 s
+
+Time = 227
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0084912 (0.00134975 0.00131486 0.000931589) 0.00500262
+ExecutionTime = 78.7139 s
+
+Time = 228
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00839448 (0.00132709 0.00130151 0.000926739) 0.00491445
+ExecutionTime = 79.0662 s
+
+Time = 229
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00839382 (0.00129095 0.00131512 0.000923929) 0.0049458
+ExecutionTime = 79.4097 s
+
+Time = 230
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00852024 (0.00126124 0.00131726 0.000921697) 0.00502439
+ExecutionTime = 79.7319 s
+
+Time = 231
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00853024 (0.00125923 0.00131127 0.000921208) 0.00505968
+ExecutionTime = 80.0585 s
+
+Time = 232
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00857789 (0.0012247 0.001303 0.000924105) 0.00506166
+ExecutionTime = 80.3801 s
+
+Time = 233
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00838083 (0.00120626 0.00127742 0.00091989) 0.00494217
+ExecutionTime = 80.7039 s
+
+Time = 234
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00818966 (0.00117036 0.00126531 0.000914174) 0.00477659
+ExecutionTime = 81.048 s
+
+Time = 235
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00784717 (0.00115885 0.0012411 0.000907461) 0.00456163
+ExecutionTime = 81.3787 s
+
+Time = 236
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00789664 (0.0011268 0.00123567 0.000909646) 0.00456569
+ExecutionTime = 81.7052 s
+
+Time = 237
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00766889 (0.00111577 0.00122224 0.000903426) 0.00442042
+ExecutionTime = 82.0616 s
+
+Time = 238
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00767126 (0.00109954 0.00121874 0.000902253) 0.00438702
+ExecutionTime = 82.3834 s
+
+Time = 239
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00758144 (0.00110033 0.00121947 0.000902348) 0.00434226
+ExecutionTime = 82.7247 s
+
+Time = 240
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00753246 (0.00108803 0.00121264 0.000898966) 0.00428098
+ExecutionTime = 83.046 s
+
+Time = 241
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00755736 (0.00110045 0.00121192 0.000900744) 0.00429738
+ExecutionTime = 83.3728 s
+
+Time = 242
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00757575 (0.00109853 0.00121159 0.000898587) 0.00429439
+ExecutionTime = 83.7343 s
+
+Time = 243
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00751513 (0.00111975 0.00121223 0.000896758) 0.00424989
+ExecutionTime = 84.0876 s
+
+Time = 244
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00752506 (0.00112175 0.00121007 0.00089339) 0.00426427
+ExecutionTime = 84.4419 s
+
+Time = 245
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00746184 (0.00113863 0.00120625 0.000891452) 0.00420955
+ExecutionTime = 84.766 s
+
+Time = 246
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00750094 (0.00114041 0.00120513 0.000892318) 0.0042267
+ExecutionTime = 85.0857 s
+
+Time = 247
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00740668 (0.00115398 0.00120422 0.000890506) 0.00416727
+ExecutionTime = 85.4037 s
+
+Time = 248
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00738545 (0.00114701 0.00120585 0.000887828) 0.00415276
+ExecutionTime = 85.7307 s
+
+Time = 249
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00728426 (0.0011698 0.00120266 0.000885162) 0.00407749
+ExecutionTime = 86.0558 s
+
+Time = 250
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0074111 (0.00116761 0.00120902 0.00088716) 0.00417149
+ExecutionTime = 86.3796 s
+
+Time = 251
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00740964 (0.00118441 0.00121087 0.000887836) 0.00417372
+ExecutionTime = 86.7009 s
+
+Time = 252
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0074335 (0.0011879 0.00120783 0.000885515) 0.00417701
+ExecutionTime = 87.0216 s
+
+Time = 253
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00736071 (0.00119397 0.00120326 0.000883115) 0.00413872
+ExecutionTime = 87.3403 s
+
+Time = 254
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00742511 (0.00118578 0.00120795 0.000883354) 0.00419394
+ExecutionTime = 87.6604 s
+
+Time = 255
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00750836 (0.00118904 0.00119945 0.000887077) 0.00425708
+ExecutionTime = 87.9818 s
+
+Time = 256
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00747277 (0.0011898 0.00119557 0.000887349) 0.00423265
+ExecutionTime = 88.3012 s
+
+Time = 257
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.007405 (0.00117361 0.00119053 0.000882887) 0.00417886
+ExecutionTime = 88.6227 s
+
+Time = 258
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0072701 (0.00115375 0.00118628 0.000879456) 0.00409192
+ExecutionTime = 88.9455 s
+
+Time = 259
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00723758 (0.00113514 0.00118262 0.00087784) 0.00407786
+ExecutionTime = 89.2648 s
+
+Time = 260
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00722465 (0.00111252 0.00117656 0.000879533) 0.00407912
+ExecutionTime = 89.5861 s
+
+Time = 261
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00732724 (0.00109461 0.00118317 0.00088085) 0.00416168
+ExecutionTime = 89.9069 s
+
+Time = 262
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0071805 (0.0010783 0.00117278 0.000876401) 0.00406035
+ExecutionTime = 90.2285 s
+
+Time = 263
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0071351 (0.00106291 0.00117145 0.000874789) 0.00404075
+ExecutionTime = 90.5475 s
+
+Time = 264
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00714558 (0.00104188 0.00117237 0.000873006) 0.00405377
+ExecutionTime = 90.8684 s
+
+Time = 265
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00713737 (0.00103162 0.00116503 0.00087533) 0.00405842
+ExecutionTime = 91.1995 s
+
+Time = 266
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00714618 (0.00101665 0.0011649 0.000872775) 0.00405779
+ExecutionTime = 91.5194 s
+
+Time = 267
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00710741 (0.00100006 0.0011641 0.000870447) 0.00404893
+ExecutionTime = 91.8388 s
+
+Time = 268
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00698644 (0.000993787 0.00115462 0.00086624) 0.00395565
+ExecutionTime = 92.159 s
+
+Time = 269
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00686258 (0.000977149 0.00114803 0.000863893) 0.00386714
+ExecutionTime = 92.4783 s
+
+Time = 270
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0068721 (0.000965426 0.00114023 0.000864544) 0.00388475
+ExecutionTime = 92.8065 s
+
+Time = 271
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00683882 (0.0009574 0.00114252 0.0008638) 0.00385965
+ExecutionTime = 93.1256 s
+
+Time = 272
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00675645 (0.00095968 0.0011348 0.000860239) 0.0038095
+ExecutionTime = 93.4465 s
+
+Time = 273
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00669145 (0.000951828 0.00112914 0.00086187) 0.00374991
+ExecutionTime = 93.7659 s
+
+Time = 274
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00662718 (0.00095423 0.00112314 0.000860776) 0.00370942
+ExecutionTime = 94.0857 s
+
+Time = 275
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00661486 (0.000953293 0.00112169 0.000859918) 0.00369769
+ExecutionTime = 94.4236 s
+
+Time = 276
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00660633 (0.000956532 0.00112018 0.000860655) 0.00369206
+ExecutionTime = 94.7443 s
+
+Time = 277
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00654464 (0.000952419 0.00111596 0.000859449) 0.00364934
+ExecutionTime = 95.064 s
+
+Time = 278
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00649818 (0.000955371 0.00111382 0.000856966) 0.0036204
+ExecutionTime = 95.3845 s
+
+Time = 279
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00654551 (0.000968266 0.00111478 0.000859768) 0.00363979
+ExecutionTime = 95.7038 s
+
+Time = 280
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00646194 (0.000962955 0.00111195 0.000855448) 0.00361076
+ExecutionTime = 96.0464 s
+
+Time = 281
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00650284 (0.00097163 0.00111653 0.00085769) 0.00361027
+ExecutionTime = 96.3656 s
+
+Time = 282
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0065473 (0.00097357 0.00111971 0.000857892) 0.00364085
+ExecutionTime = 96.6873 s
+
+Time = 283
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00653099 (0.000978904 0.0011189 0.000857673) 0.00362923
+ExecutionTime = 97.0066 s
+
+Time = 284
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00653335 (0.000983631 0.00111934 0.000855814) 0.00363533
+ExecutionTime = 97.3271 s
+
+Time = 285
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00654772 (0.000978093 0.00111802 0.000855808) 0.00364419
+ExecutionTime = 97.6686 s
+
+Time = 286
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00654747 (0.000982649 0.00111583 0.000855751) 0.00363791
+ExecutionTime = 97.9889 s
+
+Time = 287
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00656346 (0.000983161 0.00111251 0.000857198) 0.00365468
+ExecutionTime = 98.3094 s
+
+Time = 288
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0065225 (0.00098738 0.00110993 0.000854801) 0.00362542
+ExecutionTime = 98.6315 s
+
+Time = 289
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00649376 (0.000973635 0.00110566 0.000853932) 0.00361197
+ExecutionTime = 98.9505 s
+
+Time = 290
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00638303 (0.000964829 0.00110071 0.000851114) 0.00354077
+ExecutionTime = 99.3036 s
+
+Time = 291
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00632612 (0.000954764 0.00110048 0.000848741) 0.00351372
+ExecutionTime = 99.6227 s
+
+Time = 292
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00629296 (0.000949728 0.00109539 0.000846887) 0.00347808
+ExecutionTime = 99.9433 s
+
+Time = 293
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00628312 (0.000936166 0.00109097 0.000846256) 0.00348324
+ExecutionTime = 100.265 s
+
+Time = 294
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00638254 (0.000922531 0.00108801 0.00084959) 0.00354992
+ExecutionTime = 100.585 s
+
+Time = 295
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00629533 (0.000916314 0.00108272 0.000848656) 0.00349947
+ExecutionTime = 100.934 s
+
+Time = 296
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00632748 (0.000902321 0.00108383 0.000847762) 0.0035191
+ExecutionTime = 101.254 s
+
+Time = 297
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00623362 (0.000892896 0.00107953 0.000845537) 0.00345696
+ExecutionTime = 101.574 s
+
+Time = 298
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00619607 (0.000884034 0.00107444 0.000842481) 0.00343098
+ExecutionTime = 101.897 s
+
+Time = 299
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00614574 (0.000880963 0.00106891 0.000841077) 0.00341529
+ExecutionTime = 102.216 s
+
+Time = 300
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00620075 (0.000868391 0.00107717 0.00084069) 0.00345536
+ExecutionTime = 102.538 s
+
+Time = 301
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00611702 (0.000865638 0.00106852 0.000839086) 0.0033869
+ExecutionTime = 102.857 s
+
+Time = 302
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00603852 (0.000859743 0.00106091 0.000835484) 0.00334881
+ExecutionTime = 103.179 s
+
+Time = 303
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00604099 (0.000852697 0.00106236 0.000837191) 0.00334862
+ExecutionTime = 103.498 s
+
+Time = 304
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00603267 (0.000851943 0.00106178 0.00083541) 0.00333461
+ExecutionTime = 103.817 s
+
+Time = 305
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00599517 (0.000844637 0.00105729 0.00083598) 0.00331566
+ExecutionTime = 104.137 s
+
+Time = 306
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00592715 (0.000846737 0.00105089 0.000832716) 0.00327243
+ExecutionTime = 104.495 s
+
+Time = 307
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00593436 (0.000845957 0.00104972 0.000835008) 0.00328285
+ExecutionTime = 104.814 s
+
+Time = 308
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00595406 (0.000849894 0.00105294 0.000833365) 0.0033059
+ExecutionTime = 105.136 s
+
+Time = 309
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00587606 (0.000849467 0.00104471 0.000832743) 0.00324407
+ExecutionTime = 105.471 s
+
+Time = 310
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00583445 (0.000847245 0.00104381 0.000831486) 0.0032072
+ExecutionTime = 105.796 s
+
+Time = 311
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.005838 (0.000850011 0.00104212 0.000830533) 0.00322322
+ExecutionTime = 106.117 s
+
+Time = 312
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00584204 (0.000841637 0.00104074 0.000829822) 0.00320248
+ExecutionTime = 106.441 s
+
+Time = 313
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00577029 (0.000853782 0.00103855 0.000827993) 0.00317722
+ExecutionTime = 106.766 s
+
+Time = 314
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0057928 (0.000843232 0.00103736 0.000826625) 0.003181
+ExecutionTime = 107.095 s
+
+Time = 315
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00573601 (0.000857577 0.00103845 0.000825944) 0.0031532
+ExecutionTime = 107.432 s
+
+Time = 316
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00571334 (0.000844769 0.00103554 0.000824244) 0.00312607
+ExecutionTime = 107.757 s
+
+Time = 317
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00566548 (0.000850667 0.00103019 0.000822466) 0.0031074
+ExecutionTime = 108.118 s
+
+Time = 318
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00569355 (0.000836105 0.00103436 0.000822732) 0.00312481
+ExecutionTime = 108.447 s
+
+Time = 319
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00564481 (0.000846941 0.00102902 0.000819891) 0.00310833
+ExecutionTime = 108.769 s
+
+Time = 320
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00564072 (0.000833881 0.00102528 0.000820699) 0.00309974
+ExecutionTime = 109.098 s
+
+Time = 321
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00570133 (0.000838829 0.00103051 0.0008229) 0.00314919
+ExecutionTime = 109.42 s
+
+Time = 322
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00566646 (0.000828302 0.00102693 0.00081867) 0.00311531
+ExecutionTime = 109.746 s
+
+Time = 323
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00560899 (0.000833906 0.00102086 0.000817006) 0.00308792
+ExecutionTime = 110.07 s
+
+Time = 324
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00559401 (0.000825868 0.00101911 0.000815721) 0.00307218
+ExecutionTime = 110.391 s
+
+Time = 325
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00556972 (0.000817904 0.00101536 0.000814929) 0.00306154
+ExecutionTime = 110.736 s
+
+Time = 326
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00557587 (0.00081123 0.00101528 0.000813142) 0.0030564
+ExecutionTime = 111.096 s
+
+Time = 327
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00554862 (0.000803421 0.00101077 0.000812708) 0.00305402
+ExecutionTime = 111.438 s
+
+Time = 328
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00553019 (0.000793658 0.00100935 0.000811576) 0.00303214
+ExecutionTime = 111.766 s
+
+Time = 329
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00547396 (0.000784561 0.001003 0.000809872) 0.00300846
+ExecutionTime = 112.084 s
+
+Time = 330
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0054348 (0.000775491 0.000998229 0.000808307) 0.00296765
+ExecutionTime = 112.404 s
+
+Time = 331
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00539675 (0.000767323 0.000994287 0.000806121) 0.00296735
+ExecutionTime = 112.726 s
+
+Time = 332
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00538807 (0.000756859 0.000990627 0.000807084) 0.00294027
+ExecutionTime = 113.051 s
+
+Time = 333
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00532806 (0.000756848 0.0009857 0.000805919) 0.0029179
+ExecutionTime = 113.372 s
+
+Time = 334
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00533154 (0.000750459 0.000984322 0.000806124) 0.00291911
+ExecutionTime = 113.696 s
+
+Time = 335
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0053082 (0.000752737 0.000981268 0.000804268) 0.0029143
+ExecutionTime = 114.016 s
+
+Time = 336
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00527504 (0.000745028 0.000980414 0.000803895) 0.00288842
+ExecutionTime = 114.337 s
+
+Time = 337
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00521027 (0.000749875 0.000975986 0.000801618) 0.00284093
+ExecutionTime = 114.656 s
+
+Time = 338
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00518609 (0.000745426 0.000974856 0.000800736) 0.00284168
+ExecutionTime = 114.977 s
+
+Time = 339
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00517223 (0.000743908 0.000972877 0.000800652) 0.00282855
+ExecutionTime = 115.298 s
+
+Time = 340
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00514005 (0.000738064 0.000972671 0.000801106) 0.00280548
+ExecutionTime = 115.619 s
+
+Time = 341
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0051637 (0.000739876 0.000974436 0.000798893) 0.00282406
+ExecutionTime = 115.942 s
+
+Time = 342
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00508243 (0.00073782 0.00097005 0.000797056) 0.00277744
+ExecutionTime = 116.264 s
+
+Time = 343
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00513671 (0.000742362 0.000969949 0.000798996) 0.00281436
+ExecutionTime = 116.584 s
+
+Time = 344
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00510646 (0.000741402 0.000970222 0.00079855) 0.00278176
+ExecutionTime = 116.907 s
+
+Time = 345
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00508107 (0.000742075 0.000965512 0.000797396) 0.00277395
+ExecutionTime = 117.226 s
+
+Time = 346
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00508865 (0.000738312 0.000966717 0.000795774) 0.00277845
+ExecutionTime = 117.546 s
+
+Time = 347
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00508274 (0.000735606 0.000962581 0.000795568) 0.00277604
+ExecutionTime = 117.865 s
+
+Time = 348
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00502569 (0.000732292 0.000960658 0.000794546) 0.00273158
+ExecutionTime = 118.195 s
+
+Time = 349
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00502745 (0.000734291 0.000960271 0.000793723) 0.00274171
+ExecutionTime = 118.513 s
+
+Time = 350
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00498944 (0.000721888 0.000957407 0.000793812) 0.00270588
+ExecutionTime = 118.836 s
+
+Time = 351
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00497116 (0.000724695 0.000955807 0.000792829) 0.0026996
+ExecutionTime = 119.155 s
+
+Time = 352
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00502398 (0.000720208 0.000959193 0.000794153) 0.00273055
+ExecutionTime = 119.476 s
+
+Time = 353
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00498925 (0.000717308 0.000956046 0.000793413) 0.00271694
+ExecutionTime = 119.795 s
+
+Time = 354
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00498152 (0.00071266 0.000954357 0.000793655) 0.00270033
+ExecutionTime = 120.116 s
+
+Time = 355
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00492725 (0.000712352 0.000953376 0.0007917) 0.00268117
+ExecutionTime = 120.436 s
+
+Time = 356
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00495276 (0.000703644 0.000952528 0.000791396) 0.00268409
+ExecutionTime = 120.755 s
+
+Time = 357
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00489949 (0.000707002 0.000949784 0.000789561) 0.0026665
+ExecutionTime = 121.075 s
+
+Time = 358
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00492754 (0.000689498 0.000949851 0.000790037) 0.00267233
+ExecutionTime = 121.397 s
+
+Time = 359
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00487823 (0.000692191 0.000947684 0.000789241) 0.00265256
+ExecutionTime = 121.716 s
+
+Time = 360
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00485584 (0.000685341 0.00094854 0.000787517) 0.00263464
+ExecutionTime = 122.037 s
+
+Time = 361
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00481583 (0.000684047 0.000943031 0.000786497) 0.0026166
+ExecutionTime = 122.356 s
+
+Time = 362
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00478916 (0.000677537 0.000941839 0.0007851) 0.00259536
+ExecutionTime = 122.676 s
+
+Time = 363
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00479766 (0.000675022 0.000940252 0.000785436) 0.00259832
+ExecutionTime = 122.995 s
+
+Time = 364
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00477796 (0.000671099 0.000940948 0.000784836) 0.00258245
+ExecutionTime = 123.324 s
+
+Time = 365
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00478249 (0.000665747 0.000937043 0.000783745) 0.00258794
+ExecutionTime = 123.643 s
+
+Time = 366
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00470559 (0.000663217 0.000933335 0.00078052) 0.00253015
+ExecutionTime = 123.963 s
+
+Time = 367
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0047208 (0.000660597 0.000931599 0.000781617) 0.00254816
+ExecutionTime = 124.282 s
+
+Time = 368
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00469165 (0.00065164 0.000927938 0.000780851) 0.00252444
+ExecutionTime = 124.602 s
+
+Time = 369
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00468945 (0.000655654 0.000927894 0.000781849) 0.00252643
+ExecutionTime = 124.924 s
+
+Time = 370
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00462498 (0.0006508 0.000923409 0.000779207) 0.00247852
+ExecutionTime = 125.244 s
+
+Time = 371
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00465374 (0.000655598 0.000921611 0.000779865) 0.00251313
+ExecutionTime = 125.562 s
+
+Time = 372
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00459577 (0.000647839 0.000918842 0.000777812) 0.00247231
+ExecutionTime = 125.883 s
+
+Time = 373
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00461715 (0.00065528 0.000918403 0.000779718) 0.00248707
+ExecutionTime = 126.202 s
+
+Time = 374
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00456007 (0.000649821 0.000915701 0.000777042) 0.00244227
+ExecutionTime = 126.529 s
+
+Time = 375
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00456732 (0.000652904 0.000914029 0.000777601) 0.00245435
+ExecutionTime = 126.848 s
+
+Time = 376
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00451284 (0.000644609 0.000911293 0.000775399) 0.00241634
+ExecutionTime = 127.168 s
+
+Time = 377
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00451414 (0.000647568 0.000911522 0.000775673) 0.00242802
+ExecutionTime = 127.487 s
+
+Time = 378
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00451995 (0.000641638 0.00091073 0.000775483) 0.0024243
+ExecutionTime = 127.809 s
+
+Time = 379
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0044974 (0.000641366 0.000909174 0.000774295) 0.00241778
+ExecutionTime = 128.132 s
+
+Time = 380
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00445823 (0.000638346 0.000906862 0.000773097) 0.00238616
+ExecutionTime = 128.452 s
+
+Time = 381
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00444924 (0.000642705 0.000905052 0.000772194) 0.00238621
+ExecutionTime = 128.771 s
+
+Time = 382
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00442049 (0.000637979 0.000903744 0.000771451) 0.00235925
+ExecutionTime = 129.092 s
+
+Time = 383
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00442404 (0.00063958 0.00090163 0.000769557) 0.00236001
+ExecutionTime = 129.411 s
+
+Time = 384
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00441055 (0.000636846 0.000901751 0.000769884) 0.00234552
+ExecutionTime = 129.741 s
+
+Time = 385
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00443319 (0.000634568 0.000902514 0.000769232) 0.0023627
+ExecutionTime = 130.06 s
+
+Time = 386
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00438871 (0.000633429 0.00089977 0.000767667) 0.00232781
+ExecutionTime = 130.379 s
+
+Time = 387
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00437664 (0.000631208 0.000900783 0.000767709) 0.002333
+ExecutionTime = 130.698 s
+
+Time = 388
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00437146 (0.000627358 0.000897893 0.000766644) 0.00232262
+ExecutionTime = 131.019 s
+
+Time = 389
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.004384 (0.000624873 0.000898758 0.000765047) 0.00233059
+ExecutionTime = 131.362 s
+
+Time = 390
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00440945 (0.000625163 0.000900697 0.000764938) 0.00234409
+ExecutionTime = 131.684 s
+
+Time = 391
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00438029 (0.000619347 0.000898456 0.000763822) 0.002333
+ExecutionTime = 132.002 s
+
+Time = 392
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00435233 (0.000617368 0.000898112 0.000763427) 0.0023187
+ExecutionTime = 132.324 s
+
+Time = 393
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00434343 (0.000614023 0.000897728 0.000762251) 0.00231906
+ExecutionTime = 132.643 s
+
+Time = 394
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0043302 (0.000610471 0.00089732 0.000761558) 0.0022998
+ExecutionTime = 132.964 s
+
+Time = 395
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00430422 (0.000607617 0.000894451 0.000761939) 0.0022869
+ExecutionTime = 133.282 s
+
+Time = 396
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00431763 (0.000607015 0.000896276 0.000761988) 0.00229416
+ExecutionTime = 133.617 s
+
+Time = 397
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00429679 (0.00060043 0.000894533 0.000761568) 0.00228071
+ExecutionTime = 133.936 s
+
+Time = 398
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00426558 (0.000603051 0.000894026 0.000760211) 0.00225865
+ExecutionTime = 134.258 s
+
+Time = 399
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00424996 (0.000591177 0.000891052 0.00076059) 0.00225337
+ExecutionTime = 134.577 s
+
+Time = 400
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00422833 (0.000589255 0.000891151 0.000759447) 0.00223034
+ExecutionTime = 134.898 s
+
+Time = 401
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0042168 (0.000585385 0.000889204 0.000758831) 0.00222862
+ExecutionTime = 135.236 s
+
+Time = 402
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00421885 (0.000585062 0.000889996 0.000758899) 0.0022296
+ExecutionTime = 135.556 s
+
+Time = 403
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00419519 (0.000576843 0.00088745 0.000757909) 0.00221593
+ExecutionTime = 135.875 s
+
+Time = 404
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00415442 (0.000576594 0.000884376 0.000758063) 0.00218844
+ExecutionTime = 136.196 s
+
+Time = 405
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00415535 (0.00057441 0.000884073 0.000757633) 0.00219689
+ExecutionTime = 136.515 s
+
+Time = 406
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00415695 (0.000575566 0.000883242 0.000756982) 0.00219553
+ExecutionTime = 136.844 s
+
+Time = 407
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00413924 (0.000565672 0.000878373 0.000756309) 0.00218542
+ExecutionTime = 137.163 s
+
+Time = 408
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00410457 (0.000571576 0.000877287 0.00075613) 0.0021694
+ExecutionTime = 137.483 s
+
+Time = 409
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00411264 (0.000569289 0.000875322 0.000754997) 0.00216873
+ExecutionTime = 137.802 s
+
+Time = 410
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00407379 (0.000569331 0.000873968 0.000754291) 0.00214512
+ExecutionTime = 138.122 s
+
+Time = 411
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0040768 (0.000569278 0.000870849 0.000753252) 0.00215375
+ExecutionTime = 138.442 s
+
+Time = 412
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00403433 (0.000570933 0.000868951 0.000753724) 0.00212288
+ExecutionTime = 138.762 s
+
+Time = 413
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00404157 (0.000567907 0.00086929 0.000752678) 0.00213639
+ExecutionTime = 139.081 s
+
+Time = 414
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00398912 (0.000565971 0.000867348 0.000752555) 0.00210201
+ExecutionTime = 139.402 s
+
+Time = 415
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00399341 (0.000566183 0.000864962 0.000752154) 0.00210243
+ExecutionTime = 139.721 s
+
+Time = 416
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00395973 (0.000567079 0.000863927 0.000751871) 0.00208179
+ExecutionTime = 140.044 s
+
+Time = 417
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00394146 (0.000559722 0.00086113 0.000751156) 0.00207569
+ExecutionTime = 140.362 s
+
+Time = 418
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00392735 (0.000558953 0.000860651 0.000751331) 0.00206958
+ExecutionTime = 140.681 s
+
+Time = 419
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00392587 (0.000561756 0.000860157 0.000750379) 0.00207069
+ExecutionTime = 141 s
+
+Time = 420
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00390878 (0.00056314 0.000860508 0.000750953) 0.00205835
+ExecutionTime = 141.32 s
+
+Time = 421
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00386554 (0.000565068 0.00085792 0.000748728) 0.00204079
+ExecutionTime = 141.642 s
+
+Time = 422
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00391214 (0.000562001 0.000859682 0.000750718) 0.00206701
+ExecutionTime = 141.963 s
+
+Time = 423
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00387818 (0.000560223 0.000858019 0.000749757) 0.00204756
+ExecutionTime = 142.281 s
+
+Time = 424
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.003878 (0.000560023 0.00085822 0.000750331) 0.00204716
+ExecutionTime = 142.602 s
+
+Time = 425
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00387028 (0.000559759 0.000856909 0.000749038) 0.00204342
+ExecutionTime = 142.93 s
+
+Time = 426
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00387196 (0.000559337 0.000858626 0.000750902) 0.00204291
+ExecutionTime = 143.248 s
+
+Time = 427
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00386519 (0.000558442 0.00085734 0.000749579) 0.00203758
+ExecutionTime = 143.567 s
+
+Time = 428
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00389626 (0.00055802 0.000860989 0.000750029) 0.00205791
+ExecutionTime = 143.889 s
+
+Time = 429
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00387693 (0.000551563 0.000859006 0.000748719) 0.00204746
+ExecutionTime = 144.207 s
+
+Time = 430
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00386827 (0.00055278 0.000859016 0.000749335) 0.00203801
+ExecutionTime = 144.543 s
+
+Time = 431
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00384864 (0.0005503 0.000858131 0.000748893) 0.0020298
+ExecutionTime = 144.862 s
+
+Time = 432
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00386578 (0.000548017 0.000859932 0.00074946) 0.00203646
+ExecutionTime = 145.183 s
+
+Time = 433
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00384296 (0.000545778 0.000858134 0.000747327) 0.00203133
+ExecutionTime = 145.512 s
+
+Time = 434
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00383617 (0.000542949 0.000859405 0.000747907) 0.00201978
+ExecutionTime = 145.854 s
+
+Time = 435
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00383248 (0.000543024 0.000858293 0.000746817) 0.002025
+ExecutionTime = 146.188 s
+
+Time = 436
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00382521 (0.000535579 0.000859859 0.000747113) 0.00202073
+ExecutionTime = 146.535 s
+
+Time = 437
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00378657 (0.000536296 0.00085577 0.000745328) 0.00200041
+ExecutionTime = 146.86 s
+
+Time = 438
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00377589 (0.000529005 0.000856593 0.000745618) 0.00199024
+ExecutionTime = 147.189 s
+
+Time = 439
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00377226 (0.000527056 0.000855556 0.000744904) 0.00199774
+ExecutionTime = 147.509 s
+
+Time = 440
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0037726 (0.000522004 0.000856601 0.000746417) 0.00199564
+ExecutionTime = 147.831 s
+
+Time = 441
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00374154 (0.000518949 0.000853815 0.000745307) 0.00197834
+ExecutionTime = 148.192 s
+
+Time = 442
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0037368 (0.000519215 0.000853093 0.000746741) 0.00196476
+ExecutionTime = 148.541 s
+
+Time = 443
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00368708 (0.000519978 0.000848155 0.000744663) 0.00193856
+ExecutionTime = 148.863 s
+
+Time = 444
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00370405 (0.000513192 0.000847649 0.000745543) 0.00194765
+ExecutionTime = 149.219 s
+
+Time = 445
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00368043 (0.000512772 0.000844525 0.000744158) 0.00193641
+ExecutionTime = 149.54 s
+
+Time = 446
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00368518 (0.00051257 0.000844878 0.000744634) 0.0019339
+ExecutionTime = 149.869 s
+
+Time = 447
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00366213 (0.000508359 0.000842079 0.000744022) 0.00192634
+ExecutionTime = 150.193 s
+
+Time = 448
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0036658 (0.000509926 0.000842719 0.000744267) 0.00192477
+ExecutionTime = 150.516 s
+
+Time = 449
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00363034 (0.00051037 0.000839959 0.000742624) 0.00190982
+ExecutionTime = 150.869 s
+
+Time = 450
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00363469 (0.000509279 0.000839984 0.000744492) 0.00190273
+ExecutionTime = 151.228 s
+
+Time = 451
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00359512 (0.000507591 0.000837303 0.000743167) 0.00188994
+ExecutionTime = 151.572 s
+
+Time = 452
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00358413 (0.000509928 0.000836426 0.000743464) 0.00187603
+ExecutionTime = 151.895 s
+
+Time = 453
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00354677 (0.000512294 0.000833691 0.000741866) 0.00185753
+ExecutionTime = 152.214 s
+
+Time = 454
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00356734 (0.000508737 0.000833692 0.000742166) 0.00186625
+ExecutionTime = 152.532 s
+
+Time = 455
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00353209 (0.000507751 0.000830904 0.000740553) 0.00185765
+ExecutionTime = 152.853 s
+
+Time = 456
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00353744 (0.0005059 0.000830719 0.000740637) 0.00185241
+ExecutionTime = 153.187 s
+
+Time = 457
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00353494 (0.000510572 0.000829794 0.000740434) 0.00186504
+ExecutionTime = 153.509 s
+
+Time = 458
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0035213 (0.000509097 0.000829835 0.00074019) 0.00185082
+ExecutionTime = 153.833 s
+
+Time = 459
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00351205 (0.000509077 0.000827985 0.000739302) 0.00185297
+ExecutionTime = 154.155 s
+
+Time = 460
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00349904 (0.000510088 0.000827111 0.000738943) 0.00183774
+ExecutionTime = 154.475 s
+
+Time = 461
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00349498 (0.000507956 0.000826375 0.000738206) 0.00184266
+ExecutionTime = 154.794 s
+
+Time = 462
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00349055 (0.000508992 0.000825931 0.000738013) 0.00183926
+ExecutionTime = 155.115 s
+
+Time = 463
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00345887 (0.000507445 0.00082476 0.000737547) 0.00182544
+ExecutionTime = 155.434 s
+
+Time = 464
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00346087 (0.000505988 0.000825829 0.000737053) 0.00182619
+ExecutionTime = 155.756 s
+
+Time = 465
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00343909 (0.000502619 0.000824544 0.000736231) 0.00181557
+ExecutionTime = 156.076 s
+
+Time = 466
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0034455 (0.000506267 0.000826123 0.000735048) 0.00181387
+ExecutionTime = 156.399 s
+
+Time = 467
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00343292 (0.000501328 0.000824816 0.000734903) 0.00181558
+ExecutionTime = 156.718 s
+
+Time = 468
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00342664 (0.000501083 0.000825956 0.000733646) 0.0018075
+ExecutionTime = 157.039 s
+
+Time = 469
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00342277 (0.00050241 0.000825014 0.000732844) 0.00181034
+ExecutionTime = 157.358 s
+
+Time = 470
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00343496 (0.000499971 0.000826525 0.000732778) 0.00181531
+ExecutionTime = 157.679 s
+
+Time = 471
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0034007 (0.000493449 0.000825299 0.000731554) 0.00180058
+ExecutionTime = 157.997 s
+
+Time = 472
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00341903 (0.000493448 0.000827506 0.000732281) 0.00180653
+ExecutionTime = 158.318 s
+
+Time = 473
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00340471 (0.000490432 0.000827788 0.000731534) 0.00180171
+ExecutionTime = 158.636 s
+
+Time = 474
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0033859 (0.000484515 0.000826895 0.000731609) 0.00179099
+ExecutionTime = 158.958 s
+
+Time = 475
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00337615 (0.000483227 0.000826054 0.000731632) 0.00178948
+ExecutionTime = 159.277 s
+
+Time = 476
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00335863 (0.000481665 0.00082586 0.000731145) 0.00176995
+ExecutionTime = 159.599 s
+
+Time = 477
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00336137 (0.000477308 0.000825246 0.000730643) 0.0017862
+ExecutionTime = 159.918 s
+
+Time = 478
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.003351 (0.000471475 0.000824938 0.000730339) 0.00177307
+ExecutionTime = 160.238 s
+
+Time = 479
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00333204 (0.000467572 0.000824024 0.000730045) 0.0017679
+ExecutionTime = 160.558 s
+
+Time = 480
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00332687 (0.000465221 0.000824386 0.000730019) 0.00175933
+ExecutionTime = 160.879 s
+
+Time = 481
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00329433 (0.000463756 0.000821417 0.000729588) 0.00174607
+ExecutionTime = 161.198 s
+
+Time = 482
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00329704 (0.000462561 0.000820338 0.000730207) 0.0017409
+ExecutionTime = 161.519 s
+
+Time = 483
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00326293 (0.000463361 0.000818666 0.000729525) 0.00172116
+ExecutionTime = 161.861 s
+
+Time = 484
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00327231 (0.000461313 0.000817997 0.00073) 0.00172489
+ExecutionTime = 162.18 s
+
+Time = 485
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00324678 (0.000462743 0.000815347 0.000729163) 0.00170962
+ExecutionTime = 162.5 s
+
+Time = 486
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00325643 (0.000461203 0.00081512 0.000729693) 0.00171519
+ExecutionTime = 162.821 s
+
+Time = 487
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00321263 (0.00046078 0.000812842 0.00072853) 0.00169446
+ExecutionTime = 163.14 s
+
+Time = 488
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00321233 (0.000459613 0.000813803 0.000729532) 0.001695
+ExecutionTime = 163.464 s
+
+Time = 489
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00320006 (0.000462373 0.000811556 0.000728651) 0.0016875
+ExecutionTime = 163.784 s
+
+Time = 490
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00319587 (0.000459024 0.000810179 0.000729021) 0.0016829
+ExecutionTime = 164.105 s
+
+Time = 491
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00318616 (0.000462699 0.00080912 0.000728264) 0.0016853
+ExecutionTime = 164.426 s
+
+Time = 492
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00319182 (0.000459809 0.000809097 0.000728876) 0.00168677
+ExecutionTime = 164.746 s
+
+Time = 493
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00317222 (0.000464781 0.000806419 0.000727015) 0.00167821
+ExecutionTime = 165.077 s
+
+Time = 494
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00315899 (0.000460287 0.0008062 0.000727416) 0.00167041
+ExecutionTime = 165.4 s
+
+Time = 495
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00315389 (0.000463017 0.000803655 0.000727145) 0.00167223
+ExecutionTime = 165.719 s
+
+Time = 496
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0031365 (0.000461944 0.000803211 0.00072726) 0.00166091
+ExecutionTime = 166.04 s
+
+Time = 497
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00311913 (0.00046609 0.000801454 0.000726507) 0.00165459
+ExecutionTime = 166.36 s
+
+Time = 498
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00310945 (0.00046456 0.00080146 0.000726315) 0.00164967
+ExecutionTime = 166.704 s
+
+Time = 499
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0031056 (0.000465361 0.000799848 0.000725431) 0.00164947
+ExecutionTime = 167.024 s
+
+Time = 500
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0031146 (0.000465776 0.000800544 0.000725667) 0.00165789
+ExecutionTime = 167.346 s
+
+Time = 501
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00310849 (0.000466116 0.000799572 0.00072548) 0.00166028
+ExecutionTime = 167.668 s
+
+Time = 502
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00310379 (0.000462848 0.000799134 0.000725549) 0.00165953
+ExecutionTime = 167.99 s
+
+Time = 503
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00311365 (0.000465809 0.000799116 0.000725255) 0.00167014
+ExecutionTime = 168.332 s
+
+Time = 504
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0031021 (0.000461004 0.000799374 0.000726111) 0.0016646
+ExecutionTime = 168.654 s
+
+Time = 505
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00309247 (0.000465105 0.000798378 0.00072477) 0.00165782
+ExecutionTime = 168.973 s
+
+Time = 506
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00308499 (0.000460974 0.000798783 0.000724585) 0.00165533
+ExecutionTime = 169.296 s
+
+Time = 507
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00308287 (0.000462013 0.000799085 0.000723533) 0.00166094
+ExecutionTime = 169.615 s
+
+Time = 508
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0030648 (0.000457819 0.000799981 0.000723889) 0.00164365
+ExecutionTime = 169.939 s
+
+Time = 509
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00305603 (0.000456281 0.000799821 0.00072285) 0.00164771
+ExecutionTime = 170.259 s
+
+Time = 510
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00303173 (0.00045209 0.00080037 0.000722893) 0.00162612
+ExecutionTime = 170.579 s
+
+Time = 511
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00302355 (0.000453682 0.000799838 0.000721434) 0.00162659
+ExecutionTime = 170.898 s
+
+Time = 512
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00300928 (0.000452028 0.000798858 0.000721065) 0.00161165
+ExecutionTime = 171.219 s
+
+Time = 513
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00299683 (0.000445857 0.000798605 0.000720153) 0.00161184
+ExecutionTime = 171.539 s
+
+Time = 514
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00298963 (0.000444708 0.000799637 0.000720609) 0.00160556
+ExecutionTime = 171.865 s
+
+Time = 515
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00297981 (0.000443298 0.000799259 0.000720161) 0.00160069
+ExecutionTime = 172.185 s
+
+Time = 516
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00296722 (0.000439603 0.000798985 0.000719919) 0.00159
+ExecutionTime = 172.505 s
+
+Time = 517
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00295852 (0.000437373 0.000798154 0.000719295) 0.00159332
+ExecutionTime = 172.827 s
+
+Time = 518
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00294424 (0.000434114 0.00079712 0.000718254) 0.00158018
+ExecutionTime = 173.152 s
+
+Time = 519
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00294416 (0.000432648 0.000796675 0.000718036) 0.00157793
+ExecutionTime = 173.476 s
+
+Time = 520
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00294176 (0.000429755 0.000797289 0.000718105) 0.00157122
+ExecutionTime = 173.801 s
+
+Time = 521
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00293125 (0.000427153 0.000797226 0.000718008) 0.00156953
+ExecutionTime = 174.124 s
+
+Time = 522
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00294128 (0.000426007 0.000799211 0.000718178) 0.00157268
+ExecutionTime = 174.453 s
+
+Time = 523
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00292937 (0.000426087 0.000798574 0.000718088) 0.00156236
+ExecutionTime = 174.807 s
+
+Time = 524
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00293262 (0.000425509 0.000798648 0.00071869) 0.00156264
+ExecutionTime = 175.14 s
+
+Time = 525
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00291738 (0.000423822 0.000797454 0.000719188) 0.00155458
+ExecutionTime = 175.478 s
+
+Time = 526
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00291753 (0.000420917 0.000797944 0.00072038) 0.00155043
+ExecutionTime = 175.8 s
+
+Time = 527
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00290391 (0.000424024 0.0007966 0.000719989) 0.0015434
+ExecutionTime = 176.12 s
+
+Time = 528
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00288803 (0.000420326 0.000796143 0.000720095) 0.00152866
+ExecutionTime = 176.442 s
+
+Time = 529
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00287507 (0.000423934 0.000794763 0.00072006) 0.00152827
+ExecutionTime = 176.768 s
+
+Time = 530
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00287103 (0.000419851 0.000794531 0.000720047) 0.00152462
+ExecutionTime = 177.092 s
+
+Time = 531
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00286407 (0.000423641 0.000792283 0.000719671) 0.00152836
+ExecutionTime = 177.419 s
+
+Time = 532
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00285547 (0.000418372 0.000791837 0.000720442) 0.00151863
+ExecutionTime = 177.74 s
+
+Time = 533
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00285354 (0.000423473 0.000788783 0.00071985) 0.00152343
+ExecutionTime = 178.09 s
+
+Time = 534
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00284986 (0.000421009 0.000787709 0.000720384) 0.00152035
+ExecutionTime = 178.44 s
+
+Time = 535
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00285012 (0.000422984 0.000785484 0.000719097) 0.0015288
+ExecutionTime = 178.776 s
+
+Time = 536
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00284368 (0.000417253 0.000785477 0.000719914) 0.00152268
+ExecutionTime = 179.102 s
+
+Time = 537
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00282865 (0.000421642 0.000783371 0.000718801) 0.00152071
+ExecutionTime = 179.421 s
+
+Time = 538
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0028185 (0.000417821 0.000783628 0.000719014) 0.0015094
+ExecutionTime = 179.74 s
+
+Time = 539
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00278726 (0.000418207 0.000781297 0.000717592) 0.00149753
+ExecutionTime = 180.059 s
+
+Time = 540
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00277355 (0.000418783 0.000781666 0.000718604) 0.00148943
+ExecutionTime = 180.382 s
+
+Time = 541
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00275432 (0.000419254 0.000779826 0.000717266) 0.00148109
+ExecutionTime = 180.707 s
+
+Time = 542
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00276236 (0.000419223 0.000780614 0.000718614) 0.00148579
+ExecutionTime = 181.03 s
+
+Time = 543
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00275324 (0.000421421 0.000779179 0.000717732) 0.00148859
+ExecutionTime = 181.35 s
+
+Time = 544
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00274059 (0.000421391 0.000779797 0.000717692) 0.00147558
+ExecutionTime = 181.671 s
+
+Time = 545
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00273311 (0.000424011 0.000779076 0.000716384) 0.00148032
+ExecutionTime = 181.989 s
+
+Time = 546
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00273658 (0.000423154 0.000779614 0.00071641) 0.00147731
+ExecutionTime = 182.312 s
+
+Time = 547
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00273103 (0.000424962 0.000777664 0.000715327) 0.00148198
+ExecutionTime = 182.637 s
+
+Time = 548
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00274994 (0.000423592 0.000778851 0.000716177) 0.00149462
+ExecutionTime = 182.958 s
+
+Time = 549
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00275022 (0.000423021 0.000777526 0.000715876) 0.00150589
+ExecutionTime = 183.276 s
+
+Time = 550
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00276862 (0.000422339 0.000778429 0.000715919) 0.00151336
+ExecutionTime = 183.597 s
+
+Time = 551
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00275473 (0.000422509 0.000778315 0.000714789) 0.00151407
+ExecutionTime = 183.917 s
+
+Time = 552
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00275154 (0.00042084 0.000779351 0.000715697) 0.00150409
+ExecutionTime = 184.237 s
+
+Time = 553
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00273125 (0.00042001 0.000779044 0.000714302) 0.00150076
+ExecutionTime = 184.558 s
+
+Time = 554
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00274023 (0.000417262 0.000779981 0.000715033) 0.00150208
+ExecutionTime = 184.878 s
+
+Time = 555
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00273455 (0.0004141 0.000780412 0.00071525) 0.00150338
+ExecutionTime = 185.209 s
+
+Time = 556
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00274315 (0.000413376 0.000781275 0.000716328) 0.00150528
+ExecutionTime = 185.531 s
+
+Time = 557
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00271904 (0.000410922 0.000780484 0.000715082) 0.00149639
+ExecutionTime = 185.859 s
+
+Time = 558
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00270196 (0.000406554 0.000779957 0.000714707) 0.00148071
+ExecutionTime = 186.18 s
+
+Time = 559
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00267044 (0.000405816 0.000778383 0.000713566) 0.00146405
+ExecutionTime = 186.499 s
+
+Time = 560
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00265181 (0.000401233 0.000778118 0.000713456) 0.00145272
+ExecutionTime = 186.821 s
+
+Time = 561
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00262429 (0.000398814 0.000776432 0.000711347) 0.00143631
+ExecutionTime = 187.14 s
+
+Time = 562
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0026364 (0.000396695 0.000777317 0.000712139) 0.00144269
+ExecutionTime = 187.467 s
+
+Time = 563
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00261245 (0.000393854 0.000776436 0.00071077) 0.00142749
+ExecutionTime = 187.786 s
+
+Time = 564
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00261545 (0.000394371 0.000777056 0.000711696) 0.00142678
+ExecutionTime = 188.106 s
+
+Time = 565
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00260361 (0.000394236 0.000776437 0.000710655) 0.00142151
+ExecutionTime = 188.425 s
+
+Time = 566
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00260858 (0.000391538 0.000777364 0.000710616) 0.00141617
+ExecutionTime = 188.755 s
+
+Time = 567
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00259364 (0.000391147 0.000776215 0.000709543) 0.00141101
+ExecutionTime = 189.074 s
+
+Time = 568
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00260476 (0.000389985 0.000776893 0.000711467) 0.00141176
+ExecutionTime = 189.395 s
+
+Time = 569
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00258254 (0.000390812 0.000776564 0.000710049) 0.00140313
+ExecutionTime = 189.714 s
+
+Time = 570
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00259377 (0.000388086 0.000776875 0.000711095) 0.00140421
+ExecutionTime = 190.035 s
+
+Time = 571
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00258772 (0.000391261 0.00077586 0.000710637) 0.0014059
+ExecutionTime = 190.355 s
+
+Time = 572
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00260794 (0.000390258 0.000776658 0.000712501) 0.00141366
+ExecutionTime = 190.677 s
+
+Time = 573
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00258851 (0.000390763 0.000775744 0.000711993) 0.00140376
+ExecutionTime = 190.996 s
+
+Time = 574
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00257528 (0.000387975 0.000775133 0.000713224) 0.00139369
+ExecutionTime = 191.316 s
+
+Time = 575
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00255254 (0.000392497 0.00077242 0.000711782) 0.00138619
+ExecutionTime = 191.635 s
+
+Time = 576
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00255613 (0.000390225 0.000771088 0.000712603) 0.00138556
+ExecutionTime = 191.957 s
+
+Time = 577
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00253791 (0.00039126 0.000768861 0.000711786) 0.00138535
+ExecutionTime = 192.276 s
+
+Time = 578
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0025508 (0.000392981 0.000768654 0.00071362) 0.00139015
+ExecutionTime = 192.598 s
+
+Time = 579
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00252817 (0.00039303 0.000766258 0.000712346) 0.00138599
+ExecutionTime = 192.917 s
+
+Time = 580
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00254716 (0.000392628 0.000767286 0.000714109) 0.00139608
+ExecutionTime = 193.237 s
+
+Time = 581
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00252432 (0.000391646 0.000766021 0.000713133) 0.0013904
+ExecutionTime = 193.56 s
+
+Time = 582
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0025289 (0.000392848 0.000766223 0.000714902) 0.00138859
+ExecutionTime = 193.88 s
+
+Time = 583
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00249933 (0.000390918 0.000764217 0.000714343) 0.00137483
+ExecutionTime = 194.199 s
+
+Time = 584
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00249935 (0.000393735 0.000763977 0.000715016) 0.00137424
+ExecutionTime = 194.518 s
+
+Time = 585
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00247546 (0.000391402 0.000762482 0.000714124) 0.00136647
+ExecutionTime = 194.837 s
+
+Time = 586
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00247546 (0.000394528 0.000762411 0.000714459) 0.0013668
+ExecutionTime = 195.165 s
+
+Time = 587
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00245145 (0.000392211 0.000761135 0.000712758) 0.00135939
+ExecutionTime = 195.484 s
+
+Time = 588
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00245388 (0.000393992 0.000761858 0.000713959) 0.00135579
+ExecutionTime = 195.803 s
+
+Time = 589
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00244178 (0.000395946 0.000760883 0.000713226) 0.00135364
+ExecutionTime = 196.123 s
+
+Time = 590
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00245107 (0.000398465 0.00076075 0.000713272) 0.00135328
+ExecutionTime = 196.443 s
+
+Time = 591
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00245928 (0.000397886 0.000760276 0.000712638) 0.00136732
+ExecutionTime = 196.763 s
+
+Time = 592
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00248736 (0.000398429 0.000761959 0.000713824) 0.00138832
+ExecutionTime = 197.083 s
+
+Time = 593
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00249287 (0.000395549 0.000762427 0.000713827) 0.00139408
+ExecutionTime = 197.402 s
+
+Time = 594
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00251553 (0.000398103 0.000764916 0.000715678) 0.00140929
+ExecutionTime = 197.723 s
+
+Time = 595
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00250056 (0.000394189 0.000765361 0.00071461) 0.00140669
+ExecutionTime = 198.042 s
+
+Time = 596
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00251635 (0.000396477 0.00076756 0.000716269) 0.00141213
+ExecutionTime = 198.364 s
+
+Time = 597
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00250097 (0.000393223 0.000767746 0.000715968) 0.0014068
+ExecutionTime = 198.696 s
+
+Time = 598
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00252393 (0.000394637 0.000769002 0.000717217) 0.00141798
+ExecutionTime = 199.016 s
+
+Time = 599
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00250818 (0.000389058 0.000768678 0.000717878) 0.00141217
+ExecutionTime = 199.341 s
+
+Time = 600
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0025012 (0.000385852 0.000770122 0.00071929) 0.00140184
+ExecutionTime = 199.662 s
+
+Time = 601
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00247557 (0.000385453 0.000768126 0.000718103) 0.00139285
+ExecutionTime = 199.981 s
+
+Time = 602
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00246842 (0.000385215 0.00076694 0.000717717) 0.00138384
+ExecutionTime = 200.301 s
+
+Time = 603
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00245006 (0.000384934 0.000764485 0.000716308) 0.00137706
+ExecutionTime = 200.62 s
+
+Time = 604
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0024368 (0.00038259 0.000764302 0.000715354) 0.00136595
+ExecutionTime = 200.946 s
+
+Time = 605
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00241626 (0.00038009 0.000762432 0.000714204) 0.00135605
+ExecutionTime = 201.265 s
+
+Time = 606
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00241482 (0.000381392 0.00076286 0.00071375) 0.00134646
+ExecutionTime = 201.585 s
+
+Time = 607
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00240267 (0.000380308 0.00076103 0.00071208) 0.00134471
+ExecutionTime = 201.904 s
+
+Time = 608
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00239182 (0.000379353 0.000761724 0.000711754) 0.0013332
+ExecutionTime = 202.225 s
+
+Time = 609
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00238543 (0.000381325 0.000760731 0.00071135) 0.00133323
+ExecutionTime = 202.549 s
+
+Time = 610
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00237065 (0.00037897 0.000761914 0.000710695) 0.00131365
+ExecutionTime = 202.87 s
+
+Time = 611
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0023709 (0.000378491 0.000761644 0.00071021) 0.00132479
+ExecutionTime = 203.189 s
+
+Time = 612
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00236687 (0.000377849 0.000763391 0.000710695) 0.00131712
+ExecutionTime = 203.509 s
+
+Time = 613
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00236617 (0.000376906 0.000763553 0.000710931) 0.00131858
+ExecutionTime = 203.853 s
+
+Time = 614
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00236045 (0.000376148 0.000764714 0.000711072) 0.00131256
+ExecutionTime = 204.174 s
+
+Time = 615
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00235315 (0.000376937 0.000763804 0.000710741) 0.00131568
+ExecutionTime = 204.494 s
+
+Time = 616
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0023472 (0.000374427 0.00076514 0.000710934) 0.00130803
+ExecutionTime = 204.813 s
+
+Time = 617
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00234128 (0.000375675 0.000764185 0.000710969) 0.00130639
+ExecutionTime = 205.132 s
+
+Time = 618
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00233747 (0.000376438 0.000764317 0.000711411) 0.00129816
+ExecutionTime = 205.461 s
+
+Time = 619
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00234177 (0.000375553 0.000762826 0.000711873) 0.00130655
+ExecutionTime = 205.78 s
+
+Time = 620
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00234278 (0.00037599 0.000762786 0.00071199) 0.00130517
+ExecutionTime = 206.099 s
+
+Time = 621
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00233962 (0.000375834 0.000761276 0.000712319) 0.00130909
+ExecutionTime = 206.418 s
+
+Time = 622
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0023246 (0.000372966 0.000760738 0.000712482) 0.0012973
+ExecutionTime = 206.738 s
+
+Time = 623
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0023197 (0.000375868 0.00075833 0.000712116) 0.00130111
+ExecutionTime = 207.067 s
+
+Time = 624
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00230236 (0.000375978 0.000757577 0.000711714) 0.0012855
+ExecutionTime = 207.386 s
+
+Time = 625
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00228897 (0.000376011 0.000755324 0.0007112) 0.0012857
+ExecutionTime = 207.705 s
+
+Time = 626
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00228703 (0.000373413 0.000755124 0.000711024) 0.00128109
+ExecutionTime = 208.027 s
+
+Time = 627
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00229071 (0.000375849 0.000753365 0.000710259) 0.00128952
+ExecutionTime = 208.346 s
+
+Time = 628
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00227497 (0.000374657 0.00075302 0.000710372) 0.00127739
+ExecutionTime = 208.67 s
+
+Time = 629
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00226489 (0.000375145 0.000751435 0.000709217) 0.00127888
+ExecutionTime = 208.989 s
+
+Time = 630
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00225578 (0.000375798 0.000750753 0.000708692) 0.00127231
+ExecutionTime = 209.308 s
+
+Time = 631
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00224232 (0.000373361 0.000749276 0.000708696) 0.00127288
+ExecutionTime = 209.627 s
+
+Time = 632
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00222927 (0.000376224 0.000750183 0.000709977) 0.0012602
+ExecutionTime = 209.948 s
+
+Time = 633
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00222284 (0.000374915 0.000748883 0.000709645) 0.00126217
+ExecutionTime = 210.274 s
+
+Time = 634
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00221418 (0.000376115 0.000748679 0.000709779) 0.00125572
+ExecutionTime = 210.594 s
+
+Time = 635
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00221642 (0.000373019 0.000747171 0.000709945) 0.0012629
+ExecutionTime = 210.913 s
+
+Time = 636
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00223362 (0.000380136 0.000747692 0.000710777) 0.00126912
+ExecutionTime = 211.232 s
+
+Time = 637
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00225671 (0.000378789 0.000747341 0.000710068) 0.00128806
+ExecutionTime = 211.552 s
+
+Time = 638
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00228724 (0.000384191 0.000748644 0.000710542) 0.00129886
+ExecutionTime = 211.907 s
+
+Time = 639
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00230129 (0.000377928 0.000749359 0.000711418) 0.0013174
+ExecutionTime = 212.229 s
+
+Time = 640
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00231239 (0.000382223 0.000751586 0.000713344) 0.00131235
+ExecutionTime = 212.549 s
+
+Time = 641
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0023096 (0.000375523 0.000752569 0.000712513) 0.00132039
+ExecutionTime = 212.871 s
+
+Time = 642
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00230386 (0.000380369 0.000754409 0.000713876) 0.00130579
+ExecutionTime = 213.194 s
+
+Time = 643
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00229083 (0.000374797 0.00075474 0.0007133) 0.00131084
+ExecutionTime = 213.514 s
+
+Time = 644
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0022782 (0.000378267 0.000754364 0.000712543) 0.00129545
+ExecutionTime = 213.848 s
+
+Time = 645
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00226814 (0.00037395 0.000753747 0.000712786) 0.00129491
+ExecutionTime = 214.17 s
+
+Time = 646
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00225333 (0.000373125 0.000753295 0.000712064) 0.00128719
+ExecutionTime = 214.493 s
+
+Time = 647
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00225276 (0.000370568 0.000753004 0.000712444) 0.00129126
+ExecutionTime = 214.812 s
+
+Time = 648
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00224929 (0.000372275 0.000752658 0.000712514) 0.00128805
+ExecutionTime = 215.138 s
+
+Time = 649
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00224135 (0.000370423 0.000752387 0.000712316) 0.00128931
+ExecutionTime = 215.468 s
+
+Time = 650
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00224117 (0.000370888 0.000751635 0.000711827) 0.00128371
+ExecutionTime = 215.789 s
+
+Time = 651
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00224439 (0.000370184 0.000751424 0.000711724) 0.00128741
+ExecutionTime = 216.127 s
+
+Time = 652
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00222548 (0.000370149 0.000751258 0.000711056) 0.00127048
+ExecutionTime = 216.481 s
+
+Time = 653
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00220845 (0.00036759 0.000750413 0.000710054) 0.00125953
+ExecutionTime = 216.802 s
+
+Time = 654
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00219664 (0.000372071 0.000749993 0.000708832) 0.00124796
+ExecutionTime = 217.13 s
+
+Time = 655
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00217935 (0.000367163 0.00074929 0.00070817) 0.00124006
+ExecutionTime = 217.668 s
+
+Time = 656
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00213671 (0.000363347 0.000735032 0.000693346) 0.00122003
+ExecutionTime = 217.991 s
+
+Time = 657
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00213858 (0.000362461 0.000741826 0.000700174) 0.00122975
+ExecutionTime = 218.352 s
+
+Time = 658
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00214287 (0.000367086 0.000744854 0.000702363) 0.00122485
+ExecutionTime = 218.695 s
+
+Time = 659
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00214764 (0.000363026 0.000745521 0.000703086) 0.00123252
+ExecutionTime = 219.025 s
+
+Time = 660
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00215345 (0.000365307 0.000747989 0.000704096) 0.00123516
+ExecutionTime = 219.349 s
+
+Time = 661
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00215975 (0.000363011 0.00074856 0.000704451) 0.00124052
+ExecutionTime = 219.668 s
+
+Time = 662
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00217618 (0.000368104 0.000751687 0.000705659) 0.00124684
+ExecutionTime = 219.991 s
+
+Time = 663
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00218801 (0.000365366 0.000752355 0.00070612) 0.0012581
+ExecutionTime = 220.317 s
+
+Time = 664
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00219679 (0.000366613 0.000755198 0.000707871) 0.00125676
+ExecutionTime = 220.64 s
+
+Time = 665
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00219304 (0.000364366 0.000755316 0.000709611) 0.0012575
+ExecutionTime = 220.962 s
+
+Time = 666
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00217805 (0.000365057 0.000755108 0.000709885) 0.00124725
+ExecutionTime = 221.285 s
+
+Time = 667
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00216724 (0.000364989 0.000752813 0.000710098) 0.00124352
+ExecutionTime = 221.605 s
+
+Time = 668
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.00215686 (0.000365049 0.000751837 0.00070902) 0.00123628
+ExecutionTime = 221.923 s
+
+Time = 669
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0021336 (0.000364674 0.000749409 0.000708298) 0.00122594
+ExecutionTime = 222.437 s
+
+Time = 670
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00208668 (0.000355521 0.000733371 0.000692809) 0.00120287
+ExecutionTime = 222.949 s
+
+Time = 671
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00205012 (0.000347762 0.000724727 0.000685826) 0.00118689
+ExecutionTime = 223.461 s
+
+Time = 672
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00201843 (0.000344132 0.000720631 0.000682238) 0.00117502
+ExecutionTime = 223.976 s
+
+Time = 673
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00199762 (0.000342253 0.000715671 0.000679278) 0.00116401
+ExecutionTime = 224.49 s
+
+Time = 674
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00199146 (0.000340366 0.000713594 0.000677604) 0.00116787
+ExecutionTime = 225.004 s
+
+Time = 675
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00197852 (0.000340634 0.000710866 0.000676254) 0.00115981
+ExecutionTime = 225.529 s
+
+Time = 676
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00196862 (0.000340874 0.000710449 0.00067539) 0.00115663
+ExecutionTime = 226.041 s
+
+Time = 677
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195318 (0.000339147 0.000708265 0.000674213) 0.00114903
+ExecutionTime = 226.552 s
+
+Time = 678
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195314 (0.000341002 0.000708305 0.000674776) 0.00115277
+ExecutionTime = 227.065 s
+
+Time = 679
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00194208 (0.000340044 0.000706868 0.000674495) 0.00114924
+ExecutionTime = 227.577 s
+
+Time = 680
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0019417 (0.000341584 0.000707079 0.000674826) 0.00115123
+ExecutionTime = 228.09 s
+
+Time = 681
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00194345 (0.000341184 0.000705706 0.000674175) 0.00115693
+ExecutionTime = 228.603 s
+
+Time = 682
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00194763 (0.000342747 0.000705824 0.00067465) 0.00116149
+ExecutionTime = 229.116 s
+
+Time = 683
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195464 (0.000341929 0.000704815 0.000674357) 0.00117143
+ExecutionTime = 229.628 s
+
+Time = 684
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00196509 (0.000343367 0.000705344 0.000674441) 0.00117543
+ExecutionTime = 230.141 s
+
+Time = 685
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00197003 (0.000342618 0.000704567 0.000673374) 0.00117884
+ExecutionTime = 230.653 s
+
+Time = 686
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00196975 (0.000343182 0.000705179 0.000673211) 0.00118282
+ExecutionTime = 231.166 s
+
+Time = 687
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00196013 (0.000341854 0.000704689 0.000671996) 0.00118239
+ExecutionTime = 231.678 s
+
+Time = 688
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195609 (0.000342401 0.000705387 0.000672026) 0.00117734
+ExecutionTime = 232.192 s
+
+Time = 689
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195106 (0.000340834 0.000704987 0.000671719) 0.00118212
+ExecutionTime = 232.707 s
+
+Time = 690
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195288 (0.000341535 0.000705957 0.000672618) 0.00117727
+ExecutionTime = 233.221 s
+
+Time = 691
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195847 (0.000340582 0.000705952 0.000672202) 0.00118612
+ExecutionTime = 233.734 s
+
+Time = 692
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0019722 (0.000343144 0.000706942 0.000673219) 0.00118304
+ExecutionTime = 234.249 s
+
+Time = 693
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00196846 (0.000339381 0.000706434 0.000672234) 0.00118491
+ExecutionTime = 234.773 s
+
+Time = 694
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0019683 (0.000336643 0.000706991 0.000672453) 0.00118255
+ExecutionTime = 235.286 s
+
+Time = 695
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0019617 (0.000337643 0.000706497 0.000671959) 0.00118084
+ExecutionTime = 235.798 s
+
+Time = 696
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00195072 (0.000336924 0.00070648 0.000672023) 0.00117295
+ExecutionTime = 236.31 s
+
+Time = 697
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00193222 (0.000336896 0.000705625 0.000671395) 0.00115997
+ExecutionTime = 236.821 s
+
+Time = 698
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00193187 (0.000336769 0.000706404 0.000671006) 0.00116235
+ExecutionTime = 237.337 s
+
+Time = 699
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00192999 (0.000338808 0.000705569 0.00067046) 0.00115942
+ExecutionTime = 237.85 s
+
+Time = 700
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00193673 (0.000337987 0.000706864 0.000670894) 0.00115754
+ExecutionTime = 238.363 s
+
+Time = 701
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00191993 (0.000336615 0.000706131 0.000669833) 0.00114927
+ExecutionTime = 238.875 s
+
+Time = 702
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00191963 (0.000336006 0.000707103 0.000670084) 0.00114952
+ExecutionTime = 239.39 s
+
+Time = 703
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00190909 (0.000336144 0.000706702 0.000669607) 0.00114603
+ExecutionTime = 239.909 s
+
+Time = 704
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00190809 (0.000335062 0.00070776 0.000669602) 0.0011446
+ExecutionTime = 240.422 s
+
+Time = 705
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.001909 (0.00033629 0.000707361 0.000669061) 0.00115
+ExecutionTime = 240.935 s
+
+Time = 706
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00190283 (0.000333826 0.000708211 0.000668943) 0.00113973
+ExecutionTime = 241.45 s
+
+Time = 707
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00190441 (0.000334888 0.000707709 0.000668195) 0.00114619
+ExecutionTime = 241.966 s
+
+Time = 708
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00190079 (0.000332901 0.000708668 0.000668565) 0.00114188
+ExecutionTime = 242.482 s
+
+Time = 709
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00188815 (0.000331393 0.000707873 0.0006678) 0.00113512
+ExecutionTime = 243.002 s
+
+Time = 710
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00188237 (0.000330149 0.000708219 0.00066813) 0.0011307
+ExecutionTime = 243.518 s
+
+Time = 711
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00187243 (0.00033022 0.000707155 0.000668016) 0.00112715
+ExecutionTime = 244.041 s
+
+Time = 712
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00186939 (0.000331493 0.00070786 0.00066862) 0.00111858
+ExecutionTime = 244.56 s
+
+Time = 713
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00186392 (0.000333591 0.000707017 0.000668354) 0.00112303
+ExecutionTime = 245.075 s
+
+Time = 714
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00186953 (0.00033405 0.000707323 0.000669385) 0.00112357
+ExecutionTime = 245.598 s
+
+Time = 715
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00186034 (0.000331857 0.00070596 0.000669093) 0.00112023
+ExecutionTime = 246.137 s
+
+Time = 716
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00185593 (0.000332039 0.000706052 0.000669399) 0.00112006
+ExecutionTime = 246.67 s
+
+Time = 717
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00184825 (0.000331711 0.000704834 0.000669508) 0.00111714
+ExecutionTime = 247.188 s
+
+Time = 718
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00183343 (0.000329401 0.000704444 0.000669511) 0.00110709
+ExecutionTime = 247.703 s
+
+Time = 719
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00181177 (0.00032937 0.00070272 0.000669038) 0.00110273
+ExecutionTime = 248.222 s
+
+Time = 720
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00180135 (0.00032994 0.00070286 0.000669031) 0.00109538
+ExecutionTime = 248.738 s
+
+Time = 721
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0017863 (0.000328193 0.000701314 0.000668709) 0.00108612
+ExecutionTime = 249.252 s
+
+Time = 722
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179307 (0.000328642 0.000701603 0.000668634) 0.00108926
+ExecutionTime = 249.764 s
+
+Time = 723
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179631 (0.000328738 0.00070078 0.000669015) 0.00109577
+ExecutionTime = 250.278 s
+
+Time = 724
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0017974 (0.000326159 0.000700963 0.000669408) 0.00109686
+ExecutionTime = 250.793 s
+
+Time = 725
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179923 (0.000327378 0.000699826 0.000669161) 0.00110384
+ExecutionTime = 251.307 s
+
+Time = 726
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00178806 (0.000325 0.000700329 0.000669805) 0.00109309
+ExecutionTime = 251.823 s
+
+Time = 727
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00178021 (0.000326914 0.000699392 0.000669831) 0.00109551
+ExecutionTime = 252.336 s
+
+Time = 728
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00176972 (0.000324887 0.000699631 0.000669975) 0.00109198
+ExecutionTime = 252.85 s
+
+Time = 729
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00176774 (0.000325361 0.0006987 0.000669925) 0.00109007
+ExecutionTime = 253.363 s
+
+Time = 730
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00176547 (0.000325384 0.000699132 0.000670087) 0.0010881
+ExecutionTime = 253.878 s
+
+Time = 731
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00175759 (0.000325234 0.000698099 0.000669781) 0.00108791
+ExecutionTime = 254.39 s
+
+Time = 732
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00175145 (0.000324631 0.000698768 0.000670233) 0.00108168
+ExecutionTime = 254.903 s
+
+Time = 733
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174005 (0.000323479 0.000698158 0.0006693) 0.00108262
+ExecutionTime = 255.417 s
+
+Time = 734
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00173233 (0.000323318 0.000698763 0.000669783) 0.00107462
+ExecutionTime = 255.93 s
+
+Time = 735
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00173258 (0.000324123 0.000698087 0.000669082) 0.00107998
+ExecutionTime = 256.442 s
+
+Time = 736
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00173986 (0.000326242 0.000699706 0.000670299) 0.00108161
+ExecutionTime = 256.955 s
+
+Time = 737
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00173329 (0.000323071 0.000699171 0.00066895) 0.00108687
+ExecutionTime = 257.466 s
+
+Time = 738
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174458 (0.000325312 0.000700871 0.000669761) 0.00108536
+ExecutionTime = 257.981 s
+
+Time = 739
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174903 (0.000325589 0.000700606 0.000669262) 0.00109284
+ExecutionTime = 258.493 s
+
+Time = 740
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0017689 (0.000325987 0.000701951 0.000670365) 0.00110164
+ExecutionTime = 259.007 s
+
+Time = 741
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00177802 (0.000323474 0.000702231 0.000669848) 0.00111272
+ExecutionTime = 259.519 s
+
+Time = 742
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179219 (0.000325206 0.000703279 0.000670963) 0.0011153
+ExecutionTime = 260.031 s
+
+Time = 743
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0017963 (0.000323485 0.000702815 0.00067037) 0.00112171
+ExecutionTime = 260.544 s
+
+Time = 744
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179443 (0.000322918 0.000703672 0.000671211) 0.00111133
+ExecutionTime = 261.057 s
+
+Time = 745
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179133 (0.000323873 0.000702795 0.000670328) 0.00111039
+ExecutionTime = 261.57 s
+
+Time = 746
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00179035 (0.000323745 0.000703179 0.000670293) 0.00110647
+ExecutionTime = 262.091 s
+
+Time = 747
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00178019 (0.000323793 0.000702406 0.000669276) 0.00110259
+ExecutionTime = 262.603 s
+
+Time = 748
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00177484 (0.000324699 0.000702818 0.000669558) 0.00109366
+ExecutionTime = 263.117 s
+
+Time = 749
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00176635 (0.000325029 0.000702036 0.000668543) 0.00109537
+ExecutionTime = 263.657 s
+
+Time = 750
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00176449 (0.000326614 0.000702633 0.000669443) 0.00108654
+ExecutionTime = 264.17 s
+
+Time = 751
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00175911 (0.000324332 0.000701994 0.000668772) 0.00108337
+ExecutionTime = 264.682 s
+
+Time = 752
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00175422 (0.000324705 0.000702295 0.00066954) 0.00107786
+ExecutionTime = 265.196 s
+
+Time = 753
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174188 (0.000322022 0.000701463 0.00066821) 0.00107372
+ExecutionTime = 265.718 s
+
+Time = 754
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174652 (0.00032615 0.000702129 0.000669348) 0.00106996
+ExecutionTime = 266.233 s
+
+Time = 755
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174144 (0.000322423 0.000701372 0.000668329) 0.00106998
+ExecutionTime = 266.745 s
+
+Time = 756
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00174534 (0.000322685 0.000701982 0.000669023) 0.00106977
+ExecutionTime = 267.257 s
+
+Time = 757
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00172965 (0.000318989 0.000701288 0.000667946) 0.00106252
+ExecutionTime = 267.779 s
+
+Time = 758
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00172217 (0.000320239 0.000701616 0.000668437) 0.00105545
+ExecutionTime = 268.293 s
+
+Time = 759
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00171085 (0.000318981 0.000700444 0.00066739) 0.00105139
+ExecutionTime = 268.805 s
+
+Time = 760
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0017134 (0.000320795 0.000700975 0.000668287) 0.00105127
+ExecutionTime = 269.319 s
+
+Time = 761
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00170071 (0.000316887 0.000699928 0.000667238) 0.00104615
+ExecutionTime = 269.872 s
+
+Time = 762
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00170746 (0.000318017 0.000700747 0.000668248) 0.00105003
+ExecutionTime = 270.397 s
+
+Time = 763
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00169902 (0.000315686 0.000699823 0.000667221) 0.00105168
+ExecutionTime = 270.913 s
+
+Time = 764
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0016962 (0.000316464 0.000700388 0.000668066) 0.0010464
+ExecutionTime = 271.461 s
+
+Time = 765
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00168461 (0.000314946 0.000699189 0.000667155) 0.00104515
+ExecutionTime = 271.977 s
+
+Time = 766
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00166845 (0.000315504 0.000699266 0.000667476) 0.00103226
+ExecutionTime = 272.492 s
+
+Time = 767
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00165684 (0.000315236 0.000697856 0.000666536) 0.00103004
+ExecutionTime = 273.009 s
+
+Time = 768
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00165797 (0.000315537 0.000698191 0.000666929) 0.00102814
+ExecutionTime = 273.535 s
+
+Time = 769
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00164982 (0.000312179 0.000696947 0.000666033) 0.00102921
+ExecutionTime = 274.088 s
+
+Time = 770
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00165257 (0.000313596 0.000697479 0.000666496) 0.00102796
+ExecutionTime = 274.641 s
+
+Time = 771
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00163982 (0.000311331 0.000696056 0.000665866) 0.00102303
+ExecutionTime = 275.159 s
+
+Time = 772
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00163267 (0.00031253 0.000695866 0.000666277) 0.00101857
+ExecutionTime = 275.672 s
+
+Time = 773
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00161573 (0.000310875 0.000694921 0.000664867) 0.0010167
+ExecutionTime = 276.187 s
+
+Time = 774
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0016118 (0.000312124 0.000695059 0.000665065) 0.00100994
+ExecutionTime = 276.703 s
+
+Time = 775
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158803 (0.00030869 0.00069374 0.000664177) 0.0010001
+ExecutionTime = 277.217 s
+
+Time = 776
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158714 (0.000310082 0.000694061 0.000664612) 0.00100025
+ExecutionTime = 277.732 s
+
+Time = 777
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157532 (0.000307827 0.000693171 0.00066382) 0.00100016
+ExecutionTime = 278.245 s
+
+Time = 778
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158045 (0.000309701 0.000693625 0.00066473) 0.00100014
+ExecutionTime = 278.759 s
+
+Time = 779
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157663 (0.000308478 0.000692969 0.000664275) 0.00100573
+ExecutionTime = 279.272 s
+
+Time = 780
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157788 (0.000310123 0.000693649 0.000665018) 0.00100327
+ExecutionTime = 279.788 s
+
+Time = 781
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157351 (0.000309235 0.000693445 0.00066424) 0.00100385
+ExecutionTime = 280.301 s
+
+Time = 782
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157807 (0.000310433 0.000694534 0.000665124) 0.00100505
+ExecutionTime = 280.815 s
+
+Time = 783
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157537 (0.000309339 0.000694158 0.000664101) 0.0010102
+ExecutionTime = 281.329 s
+
+Time = 784
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157826 (0.000309391 0.00069518 0.000664573) 0.00101176
+ExecutionTime = 281.842 s
+
+Time = 785
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157082 (0.000308434 0.000694951 0.000664083) 0.0010064
+ExecutionTime = 282.354 s
+
+Time = 786
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00156111 (0.000306758 0.000695349 0.000664447) 0.00100241
+ExecutionTime = 282.868 s
+
+Time = 787
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00155693 (0.000307613 0.000695219 0.00066367) 0.00100402
+ExecutionTime = 283.381 s
+
+Time = 788
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00154961 (0.00030639 0.00069538 0.000664127) 0.000996372
+ExecutionTime = 283.894 s
+
+Time = 789
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00155943 (0.00030795 0.000695076 0.000663547) 0.00100658
+ExecutionTime = 284.408 s
+
+Time = 790
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157234 (0.000307749 0.000695735 0.000664391) 0.00101448
+ExecutionTime = 284.922 s
+
+Time = 791
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157698 (0.000308134 0.000695645 0.000663989) 0.00102016
+ExecutionTime = 285.434 s
+
+Time = 792
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0015828 (0.00030851 0.000696159 0.000664505) 0.00102495
+ExecutionTime = 285.949 s
+
+Time = 793
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00159169 (0.000309125 0.000695828 0.000663955) 0.00103399
+ExecutionTime = 286.461 s
+
+Time = 794
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00159057 (0.000307422 0.000696063 0.000664435) 0.00103319
+ExecutionTime = 286.975 s
+
+Time = 795
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158539 (0.000307621 0.000695414 0.000664048) 0.0010275
+ExecutionTime = 287.488 s
+
+Time = 796
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158814 (0.000307771 0.000696421 0.000664796) 0.00102501
+ExecutionTime = 288.001 s
+
+Time = 797
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00159028 (0.000309355 0.000695469 0.000663884) 0.00102994
+ExecutionTime = 288.515 s
+
+Time = 798
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158572 (0.000309086 0.00069586 0.000664339) 0.00102134
+ExecutionTime = 289.029 s
+
+Time = 799
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158968 (0.000309762 0.000695762 0.000663758) 0.00102214
+ExecutionTime = 289.557 s
+
+Time = 800
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00159235 (0.000309144 0.000696178 0.000663848) 0.00102458
+ExecutionTime = 290.078 s
+
+Time = 801
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00158095 (0.000307252 0.000695432 0.000663145) 0.00101992
+ExecutionTime = 290.591 s
+
+Time = 802
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00157273 (0.000308122 0.000695478 0.000662951) 0.00101037
+ExecutionTime = 291.105 s
+
+Time = 803
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00156144 (0.000307403 0.000694999 0.000662907) 0.00100592
+ExecutionTime = 291.618 s
+
+Time = 804
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00154674 (0.000306594 0.000694862 0.000663071) 0.000992887
+ExecutionTime = 292.131 s
+
+Time = 805
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00153428 (0.000305344 0.00069382 0.000662552) 0.000986923
+ExecutionTime = 292.644 s
+
+Time = 806
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00153984 (0.000305566 0.000694459 0.00066337) 0.000987579
+ExecutionTime = 293.166 s
+
+Time = 807
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00154115 (0.00030514 0.00069392 0.000662914) 0.000992954
+ExecutionTime = 293.679 s
+
+Time = 808
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00154563 (0.000304174 0.000693979 0.000662862) 0.000994579
+ExecutionTime = 294.193 s
+
+Time = 809
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00154057 (0.0003021 0.000692946 0.000662007) 0.000995633
+ExecutionTime = 294.724 s
+
+Time = 810
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00154228 (0.000302789 0.000694103 0.000662595) 0.000989511
+ExecutionTime = 295.238 s
+
+Time = 811
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00153277 (0.000301616 0.000693518 0.000661935) 0.000987441
+ExecutionTime = 295.751 s
+
+Time = 812
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00153158 (0.000301168 0.000693697 0.000662057) 0.000985586
+ExecutionTime = 296.264 s
+
+Time = 813
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00152578 (0.000300986 0.000693118 0.000661906) 0.000983087
+ExecutionTime = 296.776 s
+
+Time = 814
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00152781 (0.000301839 0.00069311 0.000662188) 0.000978668
+ExecutionTime = 297.29 s
+
+Time = 815
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0015175 (0.000300121 0.000692214 0.00066124) 0.000979753
+ExecutionTime = 297.802 s
+
+Time = 816
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00152081 (0.000300883 0.000693258 0.000662307) 0.000977043
+ExecutionTime = 298.321 s
+
+Time = 817
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00150402 (0.000298028 0.000691867 0.000661341) 0.000974421
+ExecutionTime = 298.833 s
+
+Time = 818
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00150515 (0.000299549 0.000691845 0.000661821) 0.000972864
+ExecutionTime = 299.349 s
+
+Time = 819
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00149239 (0.000296929 0.000690561 0.000660722) 0.00097186
+ExecutionTime = 299.861 s
+
+Time = 820
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.001491 (0.000298353 0.000691423 0.000661715) 0.000967862
+ExecutionTime = 300.375 s
+
+Time = 821
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00147821 (0.000297424 0.000690084 0.000660647) 0.00096481
+ExecutionTime = 300.89 s
+
+Time = 822
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00147112 (0.000297412 0.000689914 0.00066126) 0.000959823
+ExecutionTime = 301.404 s
+
+Time = 823
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00146656 (0.000296004 0.000689474 0.000660891) 0.000960963
+ExecutionTime = 301.916 s
+
+Time = 824
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00146396 (0.000296698 0.000690177 0.000661459) 0.000958972
+ExecutionTime = 302.429 s
+
+Time = 825
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00144313 (0.000294874 0.000688658 0.000660347) 0.000951593
+ExecutionTime = 302.95 s
+
+Time = 826
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00143811 (0.000295033 0.000689156 0.000661092) 0.000944982
+ExecutionTime = 303.464 s
+
+Time = 827
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00142542 (0.000294645 0.000688207 0.000660451) 0.000944974
+ExecutionTime = 303.976 s
+
+Time = 828
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00141529 (0.000292305 0.000688089 0.000660492) 0.000938559
+ExecutionTime = 304.49 s
+
+Time = 829
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00140317 (0.000290262 0.000687075 0.000659743) 0.000933697
+ExecutionTime = 305.002 s
+
+Time = 830
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00139562 (0.000289691 0.000687986 0.000660154) 0.00092949
+ExecutionTime = 305.517 s
+
+Time = 831
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00138203 (0.000288927 0.000687229 0.00065949) 0.000927691
+ExecutionTime = 306.029 s
+
+Time = 832
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00137142 (0.000288504 0.000687338 0.000659349) 0.000917409
+ExecutionTime = 306.549 s
+
+Time = 833
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00136253 (0.00028696 0.000686685 0.00065861) 0.000920279
+ExecutionTime = 307.061 s
+
+Time = 834
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00136346 (0.000286706 0.000687818 0.000659803) 0.000919049
+ExecutionTime = 307.575 s
+
+Time = 835
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00135425 (0.000284495 0.00068704 0.000658888) 0.000917519
+ExecutionTime = 308.103 s
+
+Time = 836
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00134624 (0.000283865 0.000687111 0.000659219) 0.000912477
+ExecutionTime = 308.62 s
+
+Time = 837
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00134163 (0.00028386 0.000686752 0.00065862) 0.000915737
+ExecutionTime = 309.149 s
+
+Time = 838
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00134107 (0.000282679 0.000687233 0.000659165) 0.000911765
+ExecutionTime = 309.666 s
+
+Time = 839
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00133438 (0.000282458 0.000686761 0.000658465) 0.000914229
+ExecutionTime = 310.181 s
+
+Time = 840
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00133313 (0.000281851 0.000687374 0.000658835) 0.000907851
+ExecutionTime = 310.735 s
+
+Time = 841
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00132957 (0.000281199 0.000686967 0.000658066) 0.000909531
+ExecutionTime = 311.277 s
+
+Time = 842
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0013313 (0.000279587 0.000687326 0.000658666) 0.000909151
+ExecutionTime = 311.831 s
+
+Time = 843
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00132166 (0.000278534 0.000686982 0.000658075) 0.000907834
+ExecutionTime = 312.349 s
+
+Time = 844
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131839 (0.000278232 0.000687257 0.000658481) 0.000902019
+ExecutionTime = 312.912 s
+
+Time = 845
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131625 (0.000278151 0.000686529 0.000657704) 0.000905744
+ExecutionTime = 313.456 s
+
+Time = 846
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131977 (0.000277814 0.000687039 0.000658348) 0.000903063
+ExecutionTime = 313.985 s
+
+Time = 847
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0013193 (0.000277542 0.000686752 0.000657557) 0.00090334
+ExecutionTime = 314.577 s
+
+Time = 848
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131828 (0.000276617 0.000687254 0.000657892) 0.000900993
+ExecutionTime = 315.148 s
+
+Time = 849
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131261 (0.00027653 0.000686646 0.000657418) 0.000901211
+ExecutionTime = 315.668 s
+
+Time = 850
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00132037 (0.000276936 0.000687432 0.000657529) 0.0009013
+ExecutionTime = 316.182 s
+
+Time = 851
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131921 (0.000276105 0.000686834 0.000656761) 0.000903425
+ExecutionTime = 316.695 s
+
+Time = 852
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00131645 (0.000275573 0.000687645 0.00065734) 0.000899734
+ExecutionTime = 317.217 s
+
+Time = 853
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00130668 (0.000275145 0.00068685 0.00065664) 0.000892798
+ExecutionTime = 317.731 s
+
+Time = 854
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00130323 (0.000273863 0.000687197 0.000656824) 0.000889595
+ExecutionTime = 318.246 s
+
+Time = 855
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00129493 (0.000272232 0.00068596 0.00065602) 0.000885395
+ExecutionTime = 318.76 s
+
+Time = 856
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00129285 (0.000270743 0.0006866 0.000656416) 0.000882723
+ExecutionTime = 319.277 s
+
+Time = 857
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00128779 (0.00027063 0.000685866 0.000655504) 0.000880956
+ExecutionTime = 319.795 s
+
+Time = 858
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00129146 (0.000268583 0.000686227 0.000656095) 0.000879862
+ExecutionTime = 320.309 s
+
+Time = 859
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00128623 (0.000267523 0.000685619 0.000655289) 0.000880182
+ExecutionTime = 320.824 s
+
+Time = 860
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00129248 (0.000267791 0.000686439 0.000655611) 0.000880633
+ExecutionTime = 321.339 s
+
+Time = 861
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00129364 (0.000267269 0.000686466 0.000655224) 0.000881868
+ExecutionTime = 321.86 s
+
+Time = 862
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00129696 (0.000266299 0.000686987 0.000655721) 0.000881529
+ExecutionTime = 322.393 s
+
+Time = 863
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00128917 (0.000264749 0.000686218 0.000655132) 0.000881449
+ExecutionTime = 322.906 s
+
+Time = 864
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0012851 (0.0002649 0.000686754 0.000655575) 0.000874455
+ExecutionTime = 323.419 s
+
+Time = 865
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00127314 (0.000264162 0.000685514 0.000654881) 0.000867029
+ExecutionTime = 323.949 s
+
+Time = 866
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00126982 (0.000264501 0.000686494 0.000656205) 0.000859712
+ExecutionTime = 324.463 s
+
+Time = 867
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0012623 (0.000264057 0.000685581 0.00065529) 0.000862532
+ExecutionTime = 324.975 s
+
+Time = 868
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0012606 (0.000262258 0.000686269 0.000655976) 0.000854538
+ExecutionTime = 325.489 s
+
+Time = 869
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00125385 (0.000261674 0.000685285 0.000655309) 0.000853286
+ExecutionTime = 326.006 s
+
+Time = 870
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00125094 (0.000261874 0.000686063 0.000655977) 0.000850867
+ExecutionTime = 326.52 s
+
+Time = 871
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00124819 (0.000261965 0.000685061 0.000655354) 0.000854173
+ExecutionTime = 327.032 s
+
+Time = 872
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00124156 (0.000261575 0.000686045 0.000656016) 0.000844382
+ExecutionTime = 327.547 s
+
+Time = 873
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0012341 (0.000260375 0.000684963 0.000655063) 0.000841496
+ExecutionTime = 328.06 s
+
+Time = 874
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00122662 (0.0002601 0.000685458 0.000655622) 0.000833779
+ExecutionTime = 328.575 s
+
+Time = 875
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00122249 (0.000259963 0.000684516 0.000654823) 0.000837595
+ExecutionTime = 329.087 s
+
+Time = 876
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00121756 (0.000258946 0.000685069 0.000655058) 0.000832391
+ExecutionTime = 329.602 s
+
+Time = 877
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00120914 (0.000257956 0.000684303 0.000654337) 0.000830068
+ExecutionTime = 330.114 s
+
+Time = 878
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0012041 (0.00025844 0.000685157 0.000655371) 0.000824967
+ExecutionTime = 330.629 s
+
+Time = 879
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0012034 (0.000259444 0.00068467 0.000654566) 0.000829696
+ExecutionTime = 331.141 s
+
+Time = 880
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011977 (0.00025831 0.000684975 0.000654752) 0.000821861
+ExecutionTime = 331.654 s
+
+Time = 881
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00119667 (0.000258544 0.000684719 0.000654522) 0.000826303
+ExecutionTime = 332.174 s
+
+Time = 882
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011886 (0.000257854 0.000684909 0.000654775) 0.000818746
+ExecutionTime = 332.686 s
+
+Time = 883
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00117978 (0.000257484 0.000684412 0.000654154) 0.000817723
+ExecutionTime = 333.198 s
+
+Time = 884
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00117303 (0.000258002 0.000684704 0.000654731) 0.000814785
+ExecutionTime = 333.724 s
+
+Time = 885
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116686 (0.000256682 0.000684055 0.000653864) 0.00081391
+ExecutionTime = 334.238 s
+
+Time = 886
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116864 (0.000256997 0.000684901 0.000654669) 0.000810799
+ExecutionTime = 334.752 s
+
+Time = 887
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116403 (0.000256943 0.000683972 0.000653943) 0.000814122
+ExecutionTime = 335.301 s
+
+Time = 888
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011673 (0.000257461 0.000685141 0.000654698) 0.000815591
+ExecutionTime = 335.813 s
+
+Time = 889
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116203 (0.000256854 0.000684573 0.000653907) 0.00081373
+ExecutionTime = 336.334 s
+
+Time = 890
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116509 (0.000255771 0.000685132 0.000654161) 0.00081498
+ExecutionTime = 336.902 s
+
+Time = 891
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116472 (0.000255785 0.000684623 0.00065361) 0.000820819
+ExecutionTime = 337.458 s
+
+Time = 892
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00116368 (0.000254733 0.000685351 0.000654488) 0.000818267
+ExecutionTime = 337.994 s
+
+Time = 893
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011604 (0.000254937 0.00068472 0.000653925) 0.000817417
+ExecutionTime = 338.516 s
+
+Time = 894
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00115971 (0.0002542 0.000685403 0.000654221) 0.00081859
+ExecutionTime = 339.07 s
+
+Time = 895
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00115477 (0.000254772 0.000684642 0.000653774) 0.00081954
+ExecutionTime = 339.589 s
+
+Time = 896
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00115472 (0.000254007 0.00068529 0.000654234) 0.00081995
+ExecutionTime = 340.111 s
+
+Time = 897
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00115146 (0.000254111 0.000684548 0.00065392) 0.000819136
+ExecutionTime = 340.627 s
+
+Time = 898
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00114662 (0.000252492 0.000685227 0.000654003) 0.000817432
+ExecutionTime = 341.17 s
+
+Time = 899
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00114246 (0.000254153 0.000684657 0.000653756) 0.000819994
+ExecutionTime = 341.748 s
+
+Time = 900
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113909 (0.00025263 0.000685098 0.000654122) 0.000817556
+ExecutionTime = 342.309 s
+
+Time = 901
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00114187 (0.000254285 0.000684821 0.000653716) 0.000820552
+ExecutionTime = 342.824 s
+
+Time = 902
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011388 (0.000252305 0.000685251 0.000654023) 0.000820332
+ExecutionTime = 343.339 s
+
+Time = 903
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113719 (0.000252835 0.000684832 0.000653687) 0.000823678
+ExecutionTime = 343.866 s
+
+Time = 904
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113912 (0.000252338 0.000685407 0.000653878) 0.000825349
+ExecutionTime = 344.384 s
+
+Time = 905
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113562 (0.000252238 0.000684606 0.00065367) 0.000824793
+ExecutionTime = 344.9 s
+
+Time = 906
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113669 (0.000251307 0.000685307 0.000654198) 0.000822545
+ExecutionTime = 345.412 s
+
+Time = 907
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113628 (0.000252252 0.000684819 0.000653906) 0.000824912
+ExecutionTime = 345.925 s
+
+Time = 908
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113454 (0.000250878 0.000685201 0.000654411) 0.00082539
+ExecutionTime = 346.446 s
+
+Time = 909
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113113 (0.000252097 0.000684637 0.000653902) 0.000823976
+ExecutionTime = 346.961 s
+
+Time = 910
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113433 (0.00025152 0.000685627 0.000654843) 0.000824207
+ExecutionTime = 347.475 s
+
+Time = 911
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113549 (0.000252277 0.000684906 0.000654156) 0.00082729
+ExecutionTime = 347.989 s
+
+Time = 912
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113585 (0.000251658 0.00068558 0.000654473) 0.00082723
+ExecutionTime = 348.503 s
+
+Time = 913
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113226 (0.00025204 0.000684915 0.000654069) 0.000825125
+ExecutionTime = 349.015 s
+
+Time = 914
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00113324 (0.000251188 0.000685258 0.000654303) 0.000824097
+ExecutionTime = 349.531 s
+
+Time = 915
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00112882 (0.000251715 0.000684571 0.000653841) 0.000826042
+ExecutionTime = 350.043 s
+
+Time = 916
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00112548 (0.00025046 0.000685267 0.000654374) 0.00081834
+ExecutionTime = 350.558 s
+
+Time = 917
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00112311 (0.000250816 0.000684528 0.000654056) 0.000822032
+ExecutionTime = 351.072 s
+
+Time = 918
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00112385 (0.000251226 0.000685348 0.000654582) 0.000820959
+ExecutionTime = 351.584 s
+
+Time = 919
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011149 (0.000249753 0.000684615 0.000653707) 0.000816694
+ExecutionTime = 352.097 s
+
+Time = 920
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00111131 (0.000249781 0.000684908 0.000654332) 0.000814093
+ExecutionTime = 352.616 s
+
+Time = 921
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110506 (0.000248434 0.000684281 0.000653406) 0.000811121
+ExecutionTime = 353.128 s
+
+Time = 922
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110538 (0.000248374 0.000685033 0.000653931) 0.000809963
+ExecutionTime = 353.642 s
+
+Time = 923
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00111141 (0.000249158 0.000684453 0.000653894) 0.00081747
+ExecutionTime = 354.171 s
+
+Time = 924
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110786 (0.000249046 0.000685404 0.000654147) 0.000811595
+ExecutionTime = 354.684 s
+
+Time = 925
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110579 (0.000247794 0.000684531 0.000653718) 0.000815503
+ExecutionTime = 355.197 s
+
+Time = 926
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110968 (0.000248552 0.000685478 0.000654598) 0.000813316
+ExecutionTime = 355.723 s
+
+Time = 927
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110343 (0.000247299 0.000684619 0.000653864) 0.000811683
+ExecutionTime = 356.236 s
+
+Time = 928
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0011048 (0.000247704 0.000685496 0.000654346) 0.00081187
+ExecutionTime = 356.75 s
+
+Time = 929
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110122 (0.000246116 0.000684519 0.000653622) 0.000813291
+ExecutionTime = 357.281 s
+
+Time = 930
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00110183 (0.000246583 0.00068499 0.000654148) 0.000812444
+ExecutionTime = 357.795 s
+
+Time = 931
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00109576 (0.000245882 0.000684072 0.000653511) 0.00080902
+ExecutionTime = 358.307 s
+
+Time = 932
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00109174 (0.000245977 0.00068467 0.000654021) 0.000808513
+ExecutionTime = 358.869 s
+
+Time = 933
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00108363 (0.00024554 0.000683602 0.00065341) 0.000804696
+ExecutionTime = 359.381 s
+
+Time = 934
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00108182 (0.000245068 0.000684066 0.0006538) 0.000803148
+ExecutionTime = 359.894 s
+
+Time = 935
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00108305 (0.000243974 0.000682889 0.000652968) 0.00080789
+ExecutionTime = 360.406 s
+
+Time = 936
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00107776 (0.000242969 0.000683434 0.000653599) 0.000806309
+ExecutionTime = 360.921 s
+
+Time = 937
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00107653 (0.000242476 0.000682645 0.000653328) 0.000803936
+ExecutionTime = 361.433 s
+
+Time = 938
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00107437 (0.000242921 0.000683322 0.000653873) 0.000803715
+ExecutionTime = 361.947 s
+
+Time = 939
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00106675 (0.000241546 0.000682262 0.000653315) 0.000801222
+ExecutionTime = 362.489 s
+
+Time = 940
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00106132 (0.000241741 0.000682604 0.000653575) 0.000791321
+ExecutionTime = 363.003 s
+
+Time = 941
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00105617 (0.000239699 0.000681519 0.000653003) 0.000792542
+ExecutionTime = 363.518 s
+
+Time = 942
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00105107 (0.000238535 0.000681935 0.000653499) 0.000792666
+ExecutionTime = 364.041 s
+
+Time = 943
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00104716 (0.000239005 0.000681224 0.000653336) 0.000788354
+ExecutionTime = 364.588 s
+
+Time = 944
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00104199 (0.000237363 0.000681827 0.000653408) 0.000786033
+ExecutionTime = 365.106 s
+
+Time = 945
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00104051 (0.000237121 0.000680923 0.000652929) 0.000785565
+ExecutionTime = 365.635 s
+
+Time = 946
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00103444 (0.000236509 0.000681067 0.000653576) 0.000780739
+ExecutionTime = 366.168 s
+
+Time = 947
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00102814 (0.000235805 0.000679985 0.000652502) 0.000778974
+ExecutionTime = 366.686 s
+
+Time = 948
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00102394 (0.000235088 0.000680308 0.000652903) 0.00077982
+ExecutionTime = 367.202 s
+
+Time = 949
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00101995 (0.000234314 0.000679432 0.000652348) 0.000775513
+ExecutionTime = 367.716 s
+
+Time = 950
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0010193 (0.000234154 0.000679813 0.000652564) 0.000773376
+ExecutionTime = 368.238 s
+
+Time = 951
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.0010178 (0.00023401 0.000679182 0.000652147) 0.000776048
+ExecutionTime = 368.8 s
+
+Time = 952
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00101008 (0.00023224 0.000679659 0.000652569) 0.000767617
+ExecutionTime = 369.364 s
+
+Time = 953
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00100693 (0.000231204 0.000678665 0.000651923) 0.000766661
+ExecutionTime = 369.88 s
+
+Time = 954
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00100677 (0.000231514 0.000679232 0.000652439) 0.000766946
+ExecutionTime = 370.396 s
+
+Time = 955
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.00100325 (0.000230664 0.000678373 0.000651756) 0.000766549
+ExecutionTime = 370.913 s
+
+Time = 956
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000999493 (0.000230153 0.000679071 0.000651993) 0.000762094
+ExecutionTime = 371.43 s
+
+Time = 957
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000996808 (0.000229182 0.0006778 0.000651348) 0.000763199
+ExecutionTime = 371.945 s
+
+Time = 958
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000992357 (0.00022833 0.000678219 0.000651826) 0.000755902
+ExecutionTime = 372.459 s
+
+Time = 959
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000992223 (0.000228194 0.000677342 0.000650961) 0.000756955
+ExecutionTime = 372.972 s
+
+Time = 960
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000987634 (0.000227534 0.000677754 0.000651425) 0.000756266
+ExecutionTime = 373.487 s
+
+Time = 961
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000985389 (0.000227071 0.000677055 0.000651098) 0.000753244
+ExecutionTime = 374.006 s
+
+Time = 962
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000982678 (0.00022655 0.000677195 0.000651005) 0.000751575
+ExecutionTime = 374.519 s
+
+Time = 963
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000981139 (0.000226107 0.000676587 0.000650358) 0.000753393
+ExecutionTime = 375.032 s
+
+Time = 964
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000979639 (0.000225837 0.000676857 0.000650409) 0.000751393
+ExecutionTime = 375.546 s
+
+Time = 965
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000978872 (0.000224848 0.000676337 0.000650241) 0.000754053
+ExecutionTime = 376.06 s
+
+Time = 966
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000979605 (0.000225164 0.000677177 0.000650788) 0.000753782
+ExecutionTime = 376.576 s
+
+Time = 967
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000974394 (0.000224386 0.00067618 0.000650146) 0.000749783
+ExecutionTime = 377.088 s
+
+Time = 968
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000973103 (0.000224418 0.000676622 0.000650432) 0.000750584
+ExecutionTime = 377.603 s
+
+Time = 969
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000972112 (0.000223559 0.000675799 0.000649865) 0.000751783
+ExecutionTime = 378.115 s
+
+Time = 970
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000970168 (0.00022374 0.000676487 0.000650243) 0.000747098
+ExecutionTime = 378.445 s
+
+Time = 971
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000948726 (0.000219675 0.000660939 0.000635095) 0.000735458
+ExecutionTime = 378.764 s
+
+Time = 972
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000953363 (0.000218831 0.00065252 0.000626656) 0.000734781
+ExecutionTime = 379.278 s
+
+Time = 973
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000970413 (0.000220086 0.000662615 0.000636591) 0.000745952
+ExecutionTime = 379.791 s
+
+Time = 974
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000969617 (0.000221197 0.000667554 0.000641526) 0.00074697
+ExecutionTime = 380.304 s
+
+Time = 975
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000963557 (0.000221654 0.000668887 0.000643008) 0.000745255
+ExecutionTime = 380.83 s
+
+Time = 976
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000962067 (0.000221759 0.000670902 0.000644839) 0.000745699
+ExecutionTime = 381.348 s
+
+Time = 977
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000957922 (0.000220729 0.000671358 0.000645382) 0.000743764
+ExecutionTime = 381.683 s
+
+Time = 978
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000938258 (0.000217199 0.00065571 0.000629872) 0.000729633
+ExecutionTime = 382.004 s
+
+Time = 979
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.0009409 (0.000215604 0.000647311 0.000621681) 0.000727465
+ExecutionTime = 382.323 s
+
+Time = 980
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000943182 (0.000215128 0.000645806 0.000620137) 0.000729079
+ExecutionTime = 382.642 s
+
+Time = 981
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000944672 (0.000213768 0.00064165 0.000616056) 0.000731198
+ExecutionTime = 382.976 s
+
+Time = 982
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000943426 (0.000213639 0.000639543 0.000613987) 0.000725899
+ExecutionTime = 383.298 s
+
+Time = 983
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000940203 (0.000212737 0.000638537 0.00061304) 0.000727059
+ExecutionTime = 383.617 s
+
+Time = 984
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000940314 (0.000212684 0.000635866 0.000610646) 0.000726793
+ExecutionTime = 384.132 s
+
+Time = 985
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000957262 (0.000215254 0.000648903 0.000623087) 0.000737708
+ExecutionTime = 384.648 s
+
+Time = 986
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000949686 (0.000216082 0.000656034 0.000630479) 0.000738331
+ExecutionTime = 384.969 s
+
+Time = 987
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000925643 (0.000212221 0.000641332 0.000616456) 0.000723718
+ExecutionTime = 385.289 s
+
+Time = 988
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000926657 (0.000211611 0.000636132 0.000610959) 0.000719307
+ExecutionTime = 385.804 s
+
+Time = 989
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000943131 (0.000213559 0.00064917 0.000623878) 0.000734102
+ExecutionTime = 386.317 s
+
+Time = 990
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000942951 (0.000214334 0.000655496 0.000630155) 0.00073539
+ExecutionTime = 386.83 s
+
+Time = 991
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000938103 (0.000214985 0.000658653 0.000633343) 0.000733199
+ExecutionTime = 387.149 s
+
+Time = 992
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000917446 (0.000211691 0.000644336 0.000618772) 0.000719987
+ExecutionTime = 387.51 s
+
+Time = 993
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000919264 (0.000209863 0.000636715 0.000611392) 0.000715304
+ExecutionTime = 387.83 s
+
+Time = 994
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000917826 (0.000208382 0.000634391 0.000609502) 0.000713724
+ExecutionTime = 388.15 s
+
+Time = 995
+Pseudo Courant No: 20
+  GMRES iterations: 1   initial residual: 0.000926369 (0.000209442 0.00063222 0.000607504) 0.000722885
+ExecutionTime = 388.472 s
+
+Time = 996
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000921953 (0.000208672 0.000632691 0.000607523) 0.00071726
+ExecutionTime = 388.985 s
+
+Time = 997
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000937868 (0.000211204 0.000645261 0.000619499) 0.000729212
+ExecutionTime = 389.502 s
+
+Time = 998
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000934846 (0.000212086 0.000652331 0.000627086) 0.00072995
+ExecutionTime = 390.026 s
+
+Time = 999
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000933866 (0.000213729 0.00065597 0.000630594) 0.000733999
+ExecutionTime = 390.539 s
+
+Time = 1000
+Pseudo Courant No: 20
+  GMRES iterations: 2   initial residual: 0.000930515 (0.000213701 0.000659595 0.000633752) 0.000728763
+Writing fields to 1000
+ExecutionTime = 397.62 s
+
+profile: 1000 outer iterations, mean wall time per iteration 0.381057 s
+  flux 0.0188736  residual 0.0191904  pseudoTime 0.000839694  jacobian 0.0158501  gmres 0.266394  update 0.00448433  turbulence 0.055425
+  gmres parts per iteration (GNC_PROFILE_GMRES=1): precondition 0 s (11853 calls)  matrixMul 0 s (12853)  reductions 0 s (25706 batches)
+End

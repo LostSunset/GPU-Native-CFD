@@ -1,0 +1,9 @@
+label=CPU2-g02-gncfast-onera
+started_utc=2026-10-23T06:14:27Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 14:14:27 up 11 days,  4:50,  9 users,  load average: 109.27, 106.80, 105.04
+endTime=20
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+uptime_after= 14:14:38 up 11 days,  4:50,  9 users,  load average: 108.53, 106.72, 105.03
+finished_utc=2026-10-23T06:14:38Z

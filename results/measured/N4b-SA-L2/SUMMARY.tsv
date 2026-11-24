@@ -1,0 +1,4 @@
+case	nCells	ref	gpu	compared	bitwise	gpu1_vs_gpu2
+flatPlate	8000	0	0	7	7	same
+oneraM6	294912	0	0	7	7	same
+rae2822	23552	0	0	7	7	same

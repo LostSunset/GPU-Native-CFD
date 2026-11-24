@@ -1,0 +1,3 @@
+case	nCells	method	ref	gpu	compare
+nacaAirfoil	40000	Poisson	0	0	POISSON
+basicFinner	2179881	Poisson	0	0	POISSON

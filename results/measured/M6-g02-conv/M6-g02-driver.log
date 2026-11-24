@@ -1,0 +1,65 @@
+=== 2026-10-23T06:19:56Z bash scripts/make_onera_forces_case.sh --host-env configs/hosts/g02-l40.env --src /home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --dest /ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation
+functions
+{
+    forceCoeffsWing
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        patches         ( wing );
+        p               p;
+        U               U;
+        rho             rhoInf;
+        rhoInf          1.09753;
+        magUInf         269.038;
+        lRef            0.64607;
+        Aref            0.7532;
+        CofR            ( 0 0 0 );
+        liftDir         ( -0.0533829 0.998574 0 );
+        dragDir         ( 0.998574 0.0533829 0 );
+        pitchAxis       ( 0 0 1 );
+        writeControl    timeStep;
+        writeInterval   1;
+        executeControl  timeStep;
+        executeInterval 1;
+        log             off;
+    }
+}
+created /ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation
+=== exit=0
+=== 2026-10-23T06:19:56Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label M6-g02-L3-forces --end-default 10 --time-indices 1,2,10 --case oneraM6SA=/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation --forces oneraM6SA=forceCoeffsWing
+== oneraM6SA (/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+case       nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+oneraM6SA  294912  10       0    0/0  10       10       4         4        identical
+=== exit=0
+=== 2026-10-23T06:21:00Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label M6-g02-conv --end 2000 --variant ref= --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case oneraM6SA=/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation --forces oneraM6SA=forceCoeffsWing
+== oneraM6SA (/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation) endTime=2000
+case       nCells  variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+oneraM6SA  294912  ref      0     464.472  0.232236         2000              0.00127128     0.230639
+oneraM6SA  294912  fast     0     51.0071  0.0255035        2196              0.00125196     0.0238645
+-- /ssd/sclin/gpu-native-cfd/runs/M6-g02-conv/oneraM6SA/fielddiff.ref-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/M6-g02-conv/oneraM6SA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/M6-g02-conv/oneraM6SA/fast/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           4.251075e+02           3.510447e-03           8.639974e-05
+T              294912           1.838591e+01           4.758027e-02           3.617771e-04
+U              884736           6.552314e+01           1.479702e-01           1.340113e-03
+rho            294912           5.752635e-02           3.897525e-02           2.823172e-04
+nuTilda        294912           2.872895e-04           8.868076e-03           3.989510e-03
+nut            294912           2.872941e-04           8.868217e-03           3.990421e-03
+alphat         294912           3.109064e-04           8.940845e-03           4.006474e-03
+-- /ssd/sclin/gpu-native-cfd/runs/M6-g02-conv/oneraM6SA/coeffs.txt
+variant	quantity	steps	final	tail_mean	tail_std	final-ref	tail_mean-ref
+ref	Cd	2000	0.01662559911	0.01662713668	2.84e-06	0	0
+ref	Cl	2000	0.2627347835	0.2627329417	1.67e-06	0	0
+ref	CmPitch	2000	-0.1855068278	-0.1855046945	1.4e-06	0	0
+fast	Cd	2000	0.01662547739	0.01662465324	4.89e-06	-1.22e-07	-2.48e-06
+fast	Cl	2000	0.2627276731	0.2627295461	1.59e-05	-7.11e-06	-3.4e-06
+fast	CmPitch	2000	-0.1854961343	-0.1855017515	1.62e-05	1.07e-05	2.94e-06
+=== exit=0
+=== 2026-10-23T06:29:53Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label M6-g02-hisa32 --end 2000 --np-list 32 --no-serial --no-gnc --case oneraM6SA=/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation
+== oneraM6SA (/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation) endTime=2000
+case       nCells  run        exit  cpu_s   wall_s  wall_per_step_s  shell_wall_s  loop_per_step_s
+oneraM6SA  -       hisa-np32  0     375.73  376     0.188            381.026       0.187814
+=== exit=1
+=== done 2026-10-23T06:36:25Z

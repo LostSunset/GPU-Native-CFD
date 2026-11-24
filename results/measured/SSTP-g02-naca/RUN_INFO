@@ -1,0 +1,9 @@
+label=SSTP-g02-naca
+started_utc=2026-10-23T09:10:24Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+cpu=AMD EPYC 9684X 96-Core Processor nproc=192
+uptime_before= 17:10:24 up 11 days,  7:46, 10 users,  load average: 111.80, 112.17, 112.04
+endTime=200 np_list=8,32 mpirun_opts=--bind-to none decomp=metis
+uptime_after= 17:12:26 up 11 days,  7:48, 10 users,  load average: 113.81, 112.63, 112.21
+finished_utc=2026-10-23T09:12:26Z

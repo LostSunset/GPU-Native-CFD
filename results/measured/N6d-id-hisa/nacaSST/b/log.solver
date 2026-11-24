@@ -1,0 +1,111 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+wallDist Poisson: PCG Solving for yPsi, Initial residual = 1, Final residual = 9.97072e-11, No Iterations 12897
+multicolor ordering (GNC_LUSGS=color GNC_SGS=color): 2 colors; levels 499/499
+function forces (forceCoeffs)
+mesh: 40000 cells; analysis: RAS kOmegaSST; endTime 20
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 1 (0.970793 0.239827 2.11368e-14) 1
+ExecutionTime = 0.810061 s
+
+Time = 2
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 0.628427 (0.300081 0.110302 1.09137e-14) 0.368002
+ExecutionTime = 0.815001 s
+
+Time = 3
+Pseudo Courant No: 1.2
+  GMRES iterations: 1   initial residual: 0.413163 (0.167109 0.0740087 6.64853e-15) 0.210476
+ExecutionTime = 0.820007 s
+
+Time = 4
+Pseudo Courant No: 1.44
+  GMRES iterations: 1   initial residual: 0.284812 (0.104535 0.051607 4.63569e-15) 0.135028
+ExecutionTime = 0.82496 s
+
+Time = 5
+Pseudo Courant No: 1.728
+  GMRES iterations: 1   initial residual: 0.220606 (0.0795862 0.0434532 4.01291e-15) 0.105015
+ExecutionTime = 0.82993 s
+
+Time = 6
+Pseudo Courant No: 2.0736
+  GMRES iterations: 1   initial residual: 0.218613 (0.086538 0.0518591 5.05434e-15) 0.119044
+ExecutionTime = 0.834912 s
+
+Time = 7
+Pseudo Courant No: 2.48832
+  GMRES iterations: 1   initial residual: 0.18413 (0.0735871 0.0487589 4.90356e-15) 0.106806
+ExecutionTime = 0.839887 s
+
+Time = 8
+Pseudo Courant No: 2.98598
+  GMRES iterations: 1   initial residual: 0.166983 (0.0642881 0.0474312 4.86469e-15) 0.0966442
+ExecutionTime = 0.844916 s
+
+Time = 9
+Pseudo Courant No: 3.58318
+  GMRES iterations: 1   initial residual: 0.144121 (0.0551761 0.0453509 4.83693e-15) 0.0896058
+ExecutionTime = 0.849957 s
+
+Time = 10
+Pseudo Courant No: 4.29982
+  GMRES iterations: 1   initial residual: 0.14389 (0.0535977 0.0491124 5.25712e-15) 0.0936659
+ExecutionTime = 0.854996 s
+
+Time = 11
+Pseudo Courant No: 5.15978
+  GMRES iterations: 1   initial residual: 0.126535 (0.0443822 0.0466313 4.94734e-15) 0.0830348
+ExecutionTime = 0.860102 s
+
+Time = 12
+Pseudo Courant No: 6.19174
+  GMRES iterations: 1   initial residual: 0.107968 (0.0361845 0.0436273 4.56424e-15) 0.0736091
+ExecutionTime = 0.865221 s
+
+Time = 13
+Pseudo Courant No: 7.43008
+  GMRES iterations: 1   initial residual: 0.11441 (0.0400619 0.0507769 5.18951e-15) 0.0808044
+ExecutionTime = 0.870361 s
+
+Time = 14
+Pseudo Courant No: 8.9161
+  GMRES iterations: 1   initial residual: 0.111688 (0.0425888 0.0539007 5.40309e-15) 0.0815449
+ExecutionTime = 0.875516 s
+
+Time = 15
+Pseudo Courant No: 10.6993
+  GMRES iterations: 1   initial residual: 0.106455 (0.0465743 0.0559756 5.54783e-15) 0.0802195
+ExecutionTime = 0.880693 s
+
+Time = 16
+Pseudo Courant No: 11.4033
+  GMRES iterations: 1   initial residual: 0.0780499 (0.0422134 0.0457423 4.4739e-15) 0.0591421
+ExecutionTime = 0.88592 s
+
+Time = 17
+Pseudo Courant No: 13.684
+  GMRES iterations: 1   initial residual: 0.0816119 (0.0522798 0.0521245 5.15602e-15) 0.0623299
+ExecutionTime = 0.891088 s
+
+Time = 18
+Pseudo Courant No: 13.6948
+  GMRES iterations: 1   initial residual: 0.0748656 (0.0535241 0.0500199 4.91013e-15) 0.0584876
+ExecutionTime = 0.896298 s
+
+Time = 19
+Pseudo Courant No: 14.4374
+  GMRES iterations: 1   initial residual: 0.0627014 (0.0572319 0.0485769 4.88954e-15) 0.0484884
+ExecutionTime = 0.901477 s
+
+Time = 20
+Pseudo Courant No: 15.8657
+  GMRES iterations: 1   initial residual: 0.0633372 (0.0659154 0.0524229 5.32674e-15) 0.0491881
+Writing fields to 20
+ExecutionTime = 1.02432 s
+
+End

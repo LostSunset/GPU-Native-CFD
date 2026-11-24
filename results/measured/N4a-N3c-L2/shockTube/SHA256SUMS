@@ -1,0 +1,8 @@
+f54a29c6dacc294258bbe087f68cc337c58f83199aebc51081b1348dac426bb8  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/gpu1.gnc
+e3fe7c26be2c3ebcd8738783652bf555b1c9c5a5bf36f80f1b9616305d0820f4  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/gpu1.state.gnc
+f54a29c6dacc294258bbe087f68cc337c58f83199aebc51081b1348dac426bb8  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/gpu2.gnc
+e3fe7c26be2c3ebcd8738783652bf555b1c9c5a5bf36f80f1b9616305d0820f4  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/gpu2.state.gnc
+1727ac2097141df1922a16026970b97c4bf42a553c0c80419beaf01fb23512c7  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/ref/1.jacobian.gnc
+a7126703d8ae6ab3819472b4af05e3cc8ed558ca400346479f38a0e895645655  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/ref/1.precondition.gnc
+625c3206e987360f3fdb03c4e8ce2ee7723b5c9c3b5ea5fc86a6f45a0b6d0f7b  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/ref/1.solve.gnc
+ff675d5d08ce51c8d2e1c95cb741e22a64963db64bd0e8df7516d4d5c1769cfc  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/shockTube/ref/state/1.gnc

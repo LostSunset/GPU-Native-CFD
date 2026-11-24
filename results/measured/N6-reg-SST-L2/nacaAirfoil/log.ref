@@ -1,0 +1,230 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 21:42:19
+Host   : g02
+PID    : 3419897
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-L2/nacaAirfoil/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0.01 (0.01 0.01 0.01) 0.01 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 2.01512e-08 Mean: 1.96395e-05 Max: 0.000692452
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.970793 0.239827 2.11368e-14) 1 
+  GMRES iteration: 1   Residual: 8.13248e-08 (8.07252e-08 3.83722e-08 0) 7.52671e-08 
+smoothSolver:  Solving for omega, Initial residual = 0.80396, Final residual = 3.54886e-12, No Iterations 3
+smoothSolver:  Solving for k, Initial residual = 1, Final residual = 8.67876e-12, No Iterations 3
+ExecutionTime = 0.36 s  ExecutionStepTime = 0.29 s  ClockTime = 0 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-L2/nacaAirfoil/ref/state/1.gnc"
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.994919 Max: 1
+Pseudo deltaT: Min: 9.65085e-09 Mean: 1.96394e-05 Max: 0.000692452
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.628427 (0.300081 0.110302 1.09662e-14) 0.368002 
+  GMRES iteration: 1   Residual: 1.43025e-09 (9.16882e-10 5.15341e-10 0) 7.74508e-10 
+smoothSolver:  Solving for omega, Initial residual = 0.260366, Final residual = 3.97781e-12, No Iterations 3
+smoothSolver:  Solving for k, Initial residual = 0.297939, Final residual = 8.30829e-12, No Iterations 3
+ExecutionTime = 0.7 s  ExecutionStepTime = 0.34 s  ClockTime = 0 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-L2/nacaAirfoil/ref/state/2.gnc"
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.2
+Damped pseudo Courant No: Min: 0.3 Mean: 1.19283 Max: 1.2
+Pseudo deltaT: Min: 5.67654e-09 Mean: 2.35672e-05 Max: 0.000830942
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.413163 (0.167109 0.0740087 6.70851e-15) 0.210476 
+  GMRES iteration: 1   Residual: 1.37176e-09 (7.58e-10 5.30979e-10 0) 7.74848e-10 
+smoothSolver:  Solving for omega, Initial residual = 0.122632, Final residual = 1.01227e-11, No Iterations 3
+smoothSolver:  Solving for k, Initial residual = 0.143918, Final residual = 1.97388e-11, No Iterations 3
+ExecutionTime = 1.05 s  ExecutionStepTime = 0.35 s  ClockTime = 1 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-L2/nacaAirfoil/ref/state/3.gnc"
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.44
+Damped pseudo Courant No: Min: 0.18 Mean: 1.43061 Max: 1.44
+Pseudo deltaT: Min: 3.3861e-09 Mean: 2.82807e-05 Max: 0.000997131
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.284812 (0.104535 0.051607 4.67933e-15) 0.135028 
+  GMRES iteration: 1   Residual: 1.57327e-09 (8.53003e-10 5.07073e-10 0) 6.87348e-10 
+smoothSolver:  Solving for omega, Initial residual = 0.0688791, Final residual = 2.58859e-11, No Iterations 3
+smoothSolver:  Solving for k, Initial residual = 0.0848697, Final residual = 4.75335e-11, No Iterations 3
+ExecutionTime = 1.43 s  ExecutionStepTime = 0.38 s  ClockTime = 1 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.728
+Damped pseudo Courant No: Min: 0.12 Mean: 1.71749 Max: 1.728
+Pseudo deltaT: Min: 2.27137e-09 Mean: 3.39368e-05 Max: 0.00119656
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.220606 (0.0795862 0.0434532 4.0166e-15) 0.105015 
+  GMRES iteration: 1   Residual: 4.29378e-09 (2.02692e-09 1.60875e-09 0) 1.78797e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.0442155, Final residual = 6.22209e-11, No Iterations 3
+smoothSolver:  Solving for k, Initial residual = 0.0571138, Final residual = 8.15358e-13, No Iterations 4
+ExecutionTime = 1.87 s  ExecutionStepTime = 0.44 s  ClockTime = 2 s
+
+Time = 6
+
+pseudoTime: iteration 6
+Pseudo Courant No: 2.0736
+Damped pseudo Courant No: Min: 0.12 Mean: 2.05976 Max: 2.0736
+Pseudo deltaT: Min: 2.29915e-09 Mean: 4.07242e-05 Max: 0.00143587
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.218613 (0.086538 0.0518591 5.01166e-15) 0.119044 
+  GMRES iteration: 1   Residual: 6.7936e-09 (3.89326e-09 2.40774e-09 0) 3.76474e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.0315565, Final residual = 1.37684e-12, No Iterations 4
+smoothSolver:  Solving for k, Initial residual = 0.0422591, Final residual = 2.08083e-12, No Iterations 4
+ExecutionTime = 2.26 s  ExecutionStepTime = 0.39 s  ClockTime = 2 s
+
+Time = 7
+
+pseudoTime: iteration 7
+Pseudo Courant No: 2.48832
+Damped pseudo Courant No: Min: 0.12 Mean: 2.47167 Max: 2.48832
+Pseudo deltaT: Min: 2.3274e-09 Mean: 4.8869e-05 Max: 0.00172304
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.18413 (0.0735871 0.0487589 4.89596e-15) 0.106806 
+  GMRES iteration: 1   Residual: 1.59179e-08 (9.05071e-09 5.76747e-09 0) 8.65719e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.0244256, Final residual = 3.32074e-12, No Iterations 4
+smoothSolver:  Solving for k, Initial residual = 0.0334423, Final residual = 4.89842e-12, No Iterations 4
+ExecutionTime = 2.59 s  ExecutionStepTime = 0.33 s  ClockTime = 2 s
+
+Time = 8
+
+pseudoTime: iteration 8
+Pseudo Courant No: 2.98598
+Damped pseudo Courant No: Min: 0.12 Mean: 2.96397 Max: 2.98598
+Pseudo deltaT: Min: 2.3183e-09 Mean: 5.86428e-05 Max: 0.00206765
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.166983 (0.064288 0.0474312 4.89067e-15) 0.0966442 
+  GMRES iteration: 1   Residual: 6.09325e-08 (3.83755e-08 2.08925e-08 0) 3.15831e-08 
+smoothSolver:  Solving for omega, Initial residual = 0.0200768, Final residual = 7.35829e-12, No Iterations 4
+smoothSolver:  Solving for k, Initial residual = 0.0277312, Final residual = 1.06792e-11, No Iterations 4
+ExecutionTime = 2.94 s  ExecutionStepTime = 0.35 s  ClockTime = 3 s
+
+Time = 9
+
+pseudoTime: iteration 9
+Pseudo Courant No: 3.58318
+Damped pseudo Courant No: Min: 0.12 Mean: 3.54663 Max: 3.58318
+Pseudo deltaT: Min: 2.36766e-09 Mean: 7.03711e-05 Max: 0.00248118
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.144121 (0.0551761 0.0453509 4.83241e-15) 0.0896058 
+  GMRES iteration: 1   Residual: 5.3078e-08 (3.85232e-08 2.23411e-08 0) 2.93568e-08 
+smoothSolver:  Solving for omega, Initial residual = 0.0170393, Final residual = 1.49531e-11, No Iterations 4
+smoothSolver:  Solving for k, Initial residual = 0.0237454, Final residual = 2.16588e-11, No Iterations 4
+ExecutionTime = 3.4 s  ExecutionStepTime = 0.46 s  ClockTime = 3 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-L2/nacaAirfoil/ref/state/9.gnc"
+Time = 10
+
+pseudoTime: iteration 10
+Pseudo Courant No: 4.29982
+Damped pseudo Courant No: Min: 0.12 Mean: 4.25662 Max: 4.29982
+Pseudo deltaT: Min: 2.41175e-09 Mean: 8.44453e-05 Max: 0.00297742
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.14389 (0.0535976 0.0491124 5.25446e-15) 0.0936658 
+  GMRES iteration: 1   Residual: 2.00627e-07 (1.46643e-07 7.40613e-08 0) 1.29036e-07 
+smoothSolver:  Solving for omega, Initial residual = 0.014907, Final residual = 2.83745e-11, No Iterations 4
+smoothSolver:  Solving for k, Initial residual = 0.0207972, Final residual = 4.1073e-11, No Iterations 4
+ExecutionTime = 3.77 s  ExecutionStepTime = 0.37 s  ClockTime = 4 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-L2/nacaAirfoil/ref/state/10.gnc"
+End
+

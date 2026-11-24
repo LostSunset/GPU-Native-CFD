@@ -1,0 +1,93 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa -postProcess -dict system/gncDumpDict -time 0
+Date   : Oct 23 2026
+Time   : 16:38:30
+Host   : g02
+PID    : 2941726
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4b-SA-L2/flatPlate/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Time = 0
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-08 (1e-08 1e-08 1e-08) 1e-08 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmaras
+Selecting patchDistMethod meshWave
+ft2 term: inactive
+RAS
+{
+    RASModel        SpalartAllmaras;
+    turbulence      on;
+    ft2Term         false;
+    printCoeffs     on;
+    sigmaNut        0.66666;
+    kappa           0.41;
+    Cb1             0.1355;
+    Cb2             0.622;
+    Cw2             0.3;
+    Cw3             2;
+    Cv1             7.1;
+    Cs              0.3;
+    ck              0.07;
+    ft2             false;
+    Ct3             1.2;
+    Ct4             0.5;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 10 Mean: 10 Max: 10
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-SA-L2/flatPlate/ref/state/0.gnc"
+
+End
+

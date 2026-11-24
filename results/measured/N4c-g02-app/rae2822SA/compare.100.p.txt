@@ -1,0 +1,12 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4c-g02-app/rae2822SA/ref/100/p
+test: /ssd/sclin/gpu-native-cfd/runs/N4c-g02-app/rae2822SA/gnc/100/p
+internalField                         23552  BITWISE
+patch back                                -  (no value: empty / empty)
+patch front                               -  (no value: empty / empty)
+patch outlet1                            64  BITWISE
+patch outlet2                            64  BITWISE
+patch intPatch1                           -  (no value: zeroGradient / zeroGradient)
+patch intPatch2                           -  (no value: zeroGradient / zeroGradient)
+patch airfoil                           304  BITWISE
+patch farfield                          368  BITWISE
+result: ALL BITWISE IDENTICAL

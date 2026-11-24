@@ -1,0 +1,23 @@
+solver          GMRESGPU;
+GMRESGPU
+{
+    inviscidJacobian LaxFriedrichs;
+    viscousJacobian laplacian;
+    preconditioner  LUSGS;
+    maxIter         20;
+    nKrylov         8;
+    solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
+}
+inviscidJacobian LaxFriedrichsGPU;
+viscousJacobian laplacianGPU;
+preconditioner  MCBSGS;
+matrixPrecision double;
+packing         gpu;
+device          0;
+libs            ( "libhisaGpuSolver.so" );
+=== 2026-10-23T06:55:13Z env CUDA_VISIBLE_DEVICES=3 bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label HYB-g02-onera --end 50 --no-gnc --case oneraM6Hybrid=/ssd/sclin/gpu-native-cfd/cases/oneraM6-hybrid-MCBSGS-jgpu/simulation
+== oneraM6Hybrid (/ssd/sclin/gpu-native-cfd/cases/oneraM6-hybrid-MCBSGS-jgpu/simulation) endTime=50
+case           nCells  run       exit  cpu_s  wall_s  wall_per_step_s  shell_wall_s  loop_per_step_s
+oneraM6Hybrid  -       hisa-np1  0     39.96  40      0.8              41.2153       0.752245
+=== exit=0
+=== done 2026-10-23T06:56:01Z

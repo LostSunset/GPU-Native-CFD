@@ -1,0 +1,6 @@
+label=N6d-perf-conv
+started_utc=2026-10-25T02:20:00Z
+host=g02 profile=g02-l40 gpu_device=3
+iters=1000 variants=gnc,gncamg core=157
+uptime= 10:20:00 up 13 days, 56 min,  7 users,  load average: 101.48, 101.61, 100.98
+finished_utc=2026-10-25T02:20:34Z

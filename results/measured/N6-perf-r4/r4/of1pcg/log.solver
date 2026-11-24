@@ -1,0 +1,380 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoSimpleFoam
+Date   : Oct 23 2026
+Time   : 21:57:30
+Host   : g02
+PID    : 3507519
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N6-perf-r4/r4/of1pcg
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 0.0001
+    field "(k|omega|e)"	 tolerance 0.0001
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.84999999999999998;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.85599999999999998;
+    gamma1          0.55555555555555558;
+    gamma2          0.44;
+    beta1           0.074999999999999997;
+    beta2           0.082799999999999999;
+    betaStar        0.089999999999999997;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+No MRF models present
+
+Creating finite-volume options from "system/fvOptions"
+
+Selecting finite volume options type limitTemperature
+    Source: limitT
+    State: active
+    - selecting all cells
+    - selected 256000 cell(s) with volume 2.1001178760091204
+
+Starting time loop
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.99999999890592772, Final residual = 0.073514762536328104, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.065051147454129765, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99996124980003198, Final residual = 0.096147272693982308, No Iterations 2
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=298
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298
+DICPCG:  Solving for p, Initial residual = 0.9999999999959398, Final residual = 0.0097367207078289473, No Iterations 360
+time step continuity errors : sum local = 0.032450517002427286, global = 0.00011880720627040767, cumulative = 0.00011880720627040767
+pressureControl: p max 9287078.0298416913
+pressureControl: p min -1304857.6439745154
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0023342473639366692, Final residual = 0.00013902567812086177, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.99999999081629298, Final residual = 0.048286698816383117, No Iterations 1
+ExecutionTime = 3.1400000000000001 s  ClockTime = 3 s
+
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1475268200114763, Final residual = 0.00038982933848909982, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.11425391548987869, Final residual = 0.00013674452126212635, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99985720094392927, Final residual = 0.03275892927154727, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=297.82768699214881
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298.01570561213151
+DICPCG:  Solving for p, Initial residual = 0.20081868556897628, Final residual = 0.0020015037737772571, No Iterations 327
+time step continuity errors : sum local = 0.077855835570902643, global = 0.0013521585943234028, cumulative = 0.0014709658005938105
+pressureControl: p max 1162598.1740214124
+pressureControl: p min -99833.121118912779
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0013428072633630188, Final residual = 0.00011972195384923141, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.21506989102237353, Final residual = 0.0070474270871123835, No Iterations 1
+ExecutionTime = 4.9299999999999997 s  ClockTime = 5 s
+
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.087840848704707972, Final residual = 0.00027073811911886253, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.084024521592793777, Final residual = 0.000265841695906617, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.31048450610370237, Final residual = 0.012302630363712735, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=291.10259933139253
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=364.1109643206438
+DICPCG:  Solving for p, Initial residual = 0.090044648660545568, Final residual = 0.00087840714811449473, No Iterations 303
+time step continuity errors : sum local = 0.05777683463650795, global = 0.0026742341600843266, cumulative = 0.0041451999606781373
+pressureControl: p max 417268.52206488996
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0015080242550894669, Final residual = 1.4250473666850093e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.10223159523486375, Final residual = 0.0036908545524308787, No Iterations 1
+ExecutionTime = 6.5899999999999999 s  ClockTime = 6 s
+
+Time = 4
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.088891126279266264, Final residual = 0.00013382152861515155, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.062769464860811086, Final residual = 0.00012460233480404045, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.25533044605887012, Final residual = 0.0061783744115395545, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=284.07315584410935
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=357.4813138018348
+DICPCG:  Solving for p, Initial residual = 0.035107797371405278, Final residual = 0.00034144810262180206, No Iterations 299
+time step continuity errors : sum local = 0.044777508649134976, global = 0.00061258447208369603, cumulative = 0.0047577844327618335
+pressureControl: p min -21418.252522590483
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0015387227798902945, Final residual = 0.00014869696945025074, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.061655852841192599, Final residual = 0.0023792937031334384, No Iterations 1
+ExecutionTime = 8.2100000000000009 s  ClockTime = 8 s
+
+Time = 5
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11724508226409738, Final residual = 0.00026963777242632503, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.077796688744336068, Final residual = 0.00013653365452425987, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.2882408712512024, Final residual = 0.008664633918142586, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=277.72822078808343
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=351.23244900036434
+DICPCG:  Solving for p, Initial residual = 0.47864263340185809, Final residual = 0.0045361508140480417, No Iterations 326
+time step continuity errors : sum local = 0.033646431653712922, global = -0.00059508180904416176, cumulative = 0.004162702623717672
+pressureControl: p min -80099.239859530135
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0014175947213529612, Final residual = 6.428996818608654e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.041386949312045791, Final residual = 0.0017312762927486067, No Iterations 1
+ExecutionTime = 10.039999999999999 s  ClockTime = 10 s
+
+Time = 6
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.1043360547497767, Final residual = 0.00015345308297326312, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.055570964968623821, Final residual = 0.00010994703581637013, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.33562389891051242, Final residual = 0.0080785530462747449, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=270.58627123111273
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=344.01770891386673
+DICPCG:  Solving for p, Initial residual = 0.031555065068948417, Final residual = 0.00030794038875182547, No Iterations 312
+time step continuity errors : sum local = 0.03582889062364613, global = -0.00096571070258124052, cumulative = 0.0031969919211364316
+pressureControl: p max 202215.38809370625
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0012811342983488096, Final residual = 4.032482042225398e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.032644649052906927, Final residual = 0.0013211188038748216, No Iterations 1
+ExecutionTime = 11.75 s  ClockTime = 12 s
+
+Time = 7
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11524009057005451, Final residual = 0.0002436794259661731, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.070539380619398712, Final residual = 9.6855525631938522e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.42246503415535802, Final residual = 0.011532420473505594, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=265.41773445318927
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.21691769236907
+DICPCG:  Solving for p, Initial residual = 0.063808259885138274, Final residual = 0.0006356313843642917, No Iterations 326
+time step continuity errors : sum local = 0.029695951979911234, global = 0.0016820044445909458, cumulative = 0.0048789963657273772
+pressureControl: p max 347072.44502706756
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0011418743451483424, Final residual = 2.4704155945043573e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.029217429203990036, Final residual = 0.0011794145019430728, No Iterations 1
+ExecutionTime = 13.48 s  ClockTime = 13 s
+
+Time = 8
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.082400433086383312, Final residual = 0.0001995349411831283, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.052532992658695529, Final residual = 8.6110579534441677e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.27183775430954682, Final residual = 0.008849535118442442, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=266.74302038439146
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.14881041108538
+DICPCG:  Solving for p, Initial residual = 0.0301865140656059, Final residual = 0.00029162418861482687, No Iterations 331
+time step continuity errors : sum local = 0.03324784791180295, global = -0.0012789362489155638, cumulative = 0.0036000601168118132
+pressureControl: p max 246839.7444414935
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0010837139940775677, Final residual = 1.8206749389975931e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.028056395081407212, Final residual = 0.0012395209169104317, No Iterations 1
+ExecutionTime = 15.27 s  ClockTime = 15 s
+
+Time = 9
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.099560690152457887, Final residual = 0.0001587305070927616, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.057207801428048093, Final residual = 8.4902916490195267e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.26680300125025896, Final residual = 0.0060968865981253584, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=262.91993798599862
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.8380475867292
+DICPCG:  Solving for p, Initial residual = 0.028850434768104449, Final residual = 0.00028133795113714533, No Iterations 325
+time step continuity errors : sum local = 0.031038882203090593, global = -0.00094056334005537714, cumulative = 0.002659496776756436
+pressureControl: p min -43594.81463116029
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.001048589948468744, Final residual = 1.5146812496187376e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.027758186507971842, Final residual = 0.0012923563606737657, No Iterations 1
+ExecutionTime = 17.010000000000002 s  ClockTime = 17 s
+
+Time = 10
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11876580029630923, Final residual = 0.00032465224114470781, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.062380679837961438, Final residual = 6.9131205527114939e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.30007864277203972, Final residual = 0.0098696258038128582, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=263.36843768913866
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=332.43265619846272
+DICPCG:  Solving for p, Initial residual = 0.047281716887336712, Final residual = 0.00045914301976176798, No Iterations 328
+time step continuity errors : sum local = 0.031887359970104001, global = 0.00022078772143287035, cumulative = 0.0028802844981893065
+pressureControl: p min -65384.190622977607
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0010464647565433724, Final residual = 1.5774036229997899e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.028904599170645216, Final residual = 0.0013104052071917891, No Iterations 1
+ExecutionTime = 18.82 s  ClockTime = 19 s
+
+Time = 11
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10179779082882642, Final residual = 0.00015395707134153842, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.054955190467275289, Final residual = 9.569115459091669e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.35511800394667997, Final residual = 0.008297492730994999, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.97223653461816
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=330.93670918150195
+DICPCG:  Solving for p, Initial residual = 0.029149387163343896, Final residual = 0.00028876632806843226, No Iterations 311
+time step continuity errors : sum local = 0.033464342648989558, global = -2.0657105287005011e-05, cumulative = 0.0028596273929023014
+pressureControl: p max 274365.35561511538
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0010729262452886963, Final residual = 1.8486939805539735e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.032259971490972462, Final residual = 0.0015556234379487351, No Iterations 1
+ExecutionTime = 20.559999999999999 s  ClockTime = 20 s
+
+Time = 12
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10476880674192633, Final residual = 0.00026477318336195495, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.062384643073533377, Final residual = 7.1770097547312349e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.39857957648268239, Final residual = 0.012519921605402291, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=262.44257417800389
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=329.70486608221933
+DICPCG:  Solving for p, Initial residual = 0.12172370779488, Final residual = 0.0011946786624441826, No Iterations 322
+time step continuity errors : sum local = 0.031324670386038214, global = 0.00081546813321455535, cumulative = 0.0036750955261168569
+pressureControl: p max 291560.58630278485
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0010778577727090853, Final residual = 2.9016714224844304e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.038342435571753597, Final residual = 0.0017867302380034959, No Iterations 1
+ExecutionTime = 22.300000000000001 s  ClockTime = 22 s
+
+Time = 13
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.077483499025767025, Final residual = 0.00012240190507758025, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.048034737179315307, Final residual = 9.5725961732738947e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.25249883867929357, Final residual = 0.0061933654327060977, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.56896908569712
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=330.64119873026129
+DICPCG:  Solving for p, Initial residual = 0.026024710265449585, Final residual = 0.00025345648586344273, No Iterations 328
+time step continuity errors : sum local = 0.033024141092352507, global = -0.0010578413908813201, cumulative = 0.0026172541352355366
+pressureControl: p max 203605.67569398336
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.001078107407999664, Final residual = 3.1924588612193432e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.048192939206721797, Final residual = 0.0021284021818038, No Iterations 1
+ExecutionTime = 24.059999999999999 s  ClockTime = 24 s
+
+Time = 14
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11329555640027607, Final residual = 0.00023807148582129977, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.061727408081350493, Final residual = 7.2826027500149927e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.28632423483809216, Final residual = 0.0076266674579454118, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.90830132492005
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=329.84237213805659
+DICPCG:  Solving for p, Initial residual = 0.050315503648215278, Final residual = 0.0004907650993160918, No Iterations 325
+time step continuity errors : sum local = 0.028977305172303132, global = -0.0013579240765003891, cumulative = 0.0012593300587351475
+pressureControl: p min -83411.238882883714
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0011043168112970687, Final residual = 4.2419197001398709e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.058393395996793475, Final residual = 0.001865493000937556, No Iterations 1
+ExecutionTime = 25.809999999999999 s  ClockTime = 26 s
+
+Time = 15
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10632106965012836, Final residual = 0.00023456477745486195, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.057281645930364486, Final residual = 9.3476565162981461e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.29062724668498924, Final residual = 0.0085008235581252416, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.9597231835711
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=327.7426633515658
+DICPCG:  Solving for p, Initial residual = 0.032187639849528209, Final residual = 0.00031964392568914398, No Iterations 329
+time step continuity errors : sum local = 0.032705871496494489, global = 0.00067428143899522916, cumulative = 0.0019336114977303767
+pressureControl: p min -31358.110950468144
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0012089603626192962, Final residual = 5.9743395253197278e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.056996715494690986, Final residual = 0.0015255751526617152, No Iterations 1
+ExecutionTime = 27.57 s  ClockTime = 27 s
+
+Time = 16
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10556409630922756, Final residual = 0.00016844173587446978, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.059977476783237921, Final residual = 8.1679679347294743e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.38405384654461416, Final residual = 0.0088899250200763051, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.32878344341168
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=326.94997828465722
+DICPCG:  Solving for p, Initial residual = 0.034482834305958887, Final residual = 0.00033938234779531663, No Iterations 325
+time step continuity errors : sum local = 0.032390361798589853, global = 0.0010953093951549301, cumulative = 0.0030289208928853065
+pressureControl: p max 325893.21539094532
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0016511652225173685, Final residual = 7.7401049148587638e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.049995847154499583, Final residual = 0.0014700243092720087, No Iterations 1
+ExecutionTime = 29.32 s  ClockTime = 29 s
+
+Time = 17
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.093162867703953808, Final residual = 0.00025504280801236229, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.056069380026477447, Final residual = 6.8714100845857076e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.36139329283157873, Final residual = 0.012315782843219585, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.89132511388874
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=326.28442709309269
+DICPCG:  Solving for p, Initial residual = 0.042419221452003206, Final residual = 0.00042022096136222687, No Iterations 330
+time step continuity errors : sum local = 0.032819104536696564, global = -0.00042747674469835868, cumulative = 0.002601444148186948
+pressureControl: p max 269253.44226540858
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0023415987957681843, Final residual = 0.00011300228164046402, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.041669342976065706, Final residual = 0.0013103951241739925, No Iterations 1
+ExecutionTime = 31.109999999999999 s  ClockTime = 31 s
+
+Time = 18
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.081768524794370939, Final residual = 0.00012169165940913114, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.048619872182398903, Final residual = 9.0067523114808283e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.2509692517924435, Final residual = 0.0059677896627347363, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.08038897924479
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=328.01014829423235
+DICPCG:  Solving for p, Initial residual = 0.025200205430227045, Final residual = 0.00024368791767872758, No Iterations 319
+time step continuity errors : sum local = 0.032117471802049803, global = -0.0010661316057104977, cumulative = 0.0015353125424764503
+pressureControl: p min -13381.456266900816
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0029517477284152311, Final residual = 0.00014721818733671739, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.03331428874745767, Final residual = 0.001070482411230789, No Iterations 1
+ExecutionTime = 32.899999999999999 s  ClockTime = 33 s
+
+Time = 19
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.11857811758416713, Final residual = 0.0002919285632472101, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.06140687005118034, Final residual = 6.1031575041165895e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.28368552034363154, Final residual = 0.0083647234149265837, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.47699494312354
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=327.39282410987033
+DICPCG:  Solving for p, Initial residual = 0.17291708337484654, Final residual = 0.0016739173606738159, No Iterations 325
+time step continuity errors : sum local = 0.030017014340563471, global = -0.001140809972738108, cumulative = 0.00039450256973834236
+pressureControl: p min -96857.477420211566
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0031646428307556839, Final residual = 0.00015778632608679511, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.026095050989765622, Final residual = 0.00082973495840121196, No Iterations 1
+ExecutionTime = 34.990000000000002 s  ClockTime = 35 s
+
+Time = 20
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.10067444506814789, Final residual = 0.00015033648915915851, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.050278868812824021, Final residual = 0.00010081111446477546, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.28209915971259747, Final residual = 0.0065751659118841177, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.41123214900267
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=324.94147161623732
+DICPCG:  Solving for p, Initial residual = 0.027676116897249869, Final residual = 0.00027247531218832326, No Iterations 317
+time step continuity errors : sum local = 0.032181155810204844, global = 3.1221390868927046e-05, cumulative = 0.00042572396060726943
+pressureControl: p min 3639.4946294876136
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0030044408980433313, Final residual = 0.00014037811878072636, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.020700294198470921, Final residual = 0.00065828766932673631, No Iterations 1
+ExecutionTime = 36.859999999999999 s  ClockTime = 37 s
+
+End
+

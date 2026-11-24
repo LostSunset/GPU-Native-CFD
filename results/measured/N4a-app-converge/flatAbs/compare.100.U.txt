@@ -1,0 +1,10 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-app-converge/flatAbs/ref/100/U
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-app-converge/flatAbs/gnc/100/U
+internalField                         24000  BITWISE
+patch freestream                        240  BITWISE
+patch inlet                             300  BITWISE
+patch outlet                              -  (no value: zeroGradient / zeroGradient)
+patch inviscidWall                        -  (no value: slip / slip)
+patch viscousWall                       180  BITWISE
+patch frontAndBack                        -  (no value: empty / empty)
+result: ALL BITWISE IDENTICAL

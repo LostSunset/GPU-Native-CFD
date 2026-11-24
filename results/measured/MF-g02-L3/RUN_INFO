@@ -1,0 +1,7 @@
+label=MF-g02-L3
+started_utc=2026-10-25T08:46:53Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime= 16:46:53 up 13 days,  7:22, 10 users,  load average: 120.14, 119.64, 119.41
+finished_utc=2026-10-25T09:23:59Z
+overall_exit=0

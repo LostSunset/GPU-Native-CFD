@@ -1,0 +1,61 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/MUT-gather/aerofoilNACA0012/ref/dump/1.p.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/MUT-gather/aerofoilNACA0012/gpu1/dump/1.p.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="1" test="1"
+p.i                            f64        16000    1       10704    5.178e-05    1.067e-09      6354960  DIFF
+    first at value 0 (tuple 0 comp 0): ref 163997.00148122659 test 163997.00148660742
+p.b                            f64          480    1         262    1.737e-05    9.753e-10      4774408  DIFF
+    first at value 0 (tuple 0 comp 0): ref 163997.00148122659 test 163997.00148660742
+T.i                            f64        16000    1        1401    1.137e-13    3.816e-16            2  DIFF
+    first at value 3 (tuple 3 comp 0): ref 298.00000009983853 test 298.00000009983859
+T.b                            f64          480    1          34    1.137e-13    3.816e-16            2  DIFF
+    first at value 4 (tuple 4 comp 0): ref 298.00495488597124 test 298.00495488597119
+U.i                            f64        16000    3       39868    2.021e-06    2.114e-03 10084859425023  DIFF
+    first at value 0 (tuple 0 comp 0): ref 275.95957170540532 test 275.9595717028057
+U.b                            f64          480    3         814    1.495e-06    4.017e-04 2205349902953  DIFF
+    first at value 360 (tuple 120 comp 0): ref 250.04856620976241 test 250.04856620941518
+e.i                            f64        16000    1        4138    8.731e-11    1.016e-15            6  DIFF
+    first at value 3 (tuple 3 comp 0): ref -85884.731929030007 test -85884.731929029993
+e.b                            f64          480    1          68    8.731e-11    1.016e-15            6  DIFF
+    first at value 1 (tuple 1 comp 0): ref -85880.787076661625 test -85880.78707666164
+h.missing                      text  ref="h" test="h"
+thermo:psi.i                   f64        16000    1        1401    6.776e-21    5.809e-16            4  DIFF
+    first at value 3 (tuple 3 comp 0): ref 1.1663986395236543e-05 test 1.1663986395236541e-05
+thermo:psi.b                   f64          480    1          34    6.776e-21    5.809e-16            4  DIFF
+    first at value 4 (tuple 4 comp 0): ref 1.1663792463702534e-05 test 1.1663792463702537e-05
+thermo:alpha.i                 f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:alpha.b                 f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.i                    f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.b                    f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.i                          f64        16000    1       10699    6.040e-12    5.184e-12        27201  DIFF
+    first at value 0 (tuple 0 comp 0): ref 1.1738628903428345 test 1.1738628903434623
+rho.b                          f64          480    1         212    2.026e-12    1.751e-12         9124  DIFF
+    first at value 0 (tuple 0 comp 0): ref 1.1738628903428345 test 1.1738628903434623
+phi.i                          f64        31760    1       31760    4.968e-08    9.549e-03 61011721715712  DIFF
+    first at value 0 (tuple 0 comp 0): ref -0.0007937855862756079 test -0.00079378558742046988
+phi.b                          f64          480    1         360    2.483e-11    1.098e-07    723267584  DIFF
+    first at value 120 (tuple 120 comp 0): ref -0.010071215627244756 test -0.010071215618208567
+k.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.b                        f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+rAU.i                          f64        16000    1         488    2.711e-20    6.017e-16            4  DIFF
+    first at value 31 (tuple 31 comp 0): ref 2.0057513891650761e-05 test 2.0057513891650758e-05
+rAU.b                          f64          480    1          26    1.355e-20    4.320e-16            3  DIFF
+    first at value 18 (tuple 18 comp 0): ref 3.9400005285479064e-06 test 3.9400005285479073e-06
+HbyA.i                         f64        16000    3        2122    1.137e-13    1.257e-13          706  DIFF
+    first at value 59 (tuple 19 comp 2): ref 1.9862684841179902e-14 test 1.9862684841179905e-14
+HbyA.b                         f64          480    3          14    3.944e-31    4.031e-16            3  DIFF
+    first at value 404 (tuple 134 comp 2): ref -4.299291744565073e-16 test -4.299291744565072e-16
+phiHbyA.i                      f64        31760    1        1242    8.882e-16    5.651e-15           41  DIFF
+    first at value 55 (tuple 55 comp 0): ref -0.15061821807158232 test -0.15061821807158235
+phiHbyA.b                      f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhorAUf.i                      f64        31760    1        1231    2.033e-20    5.708e-16            4  DIFF
+    first at value 93 (tuple 93 comp 0): ref 2.3488145233068162e-05 test 2.3488145233068159e-05
+rhorAUf.b                      f64          480    1          26    2.711e-20    4.938e-16            4  DIFF
+    first at value 18 (tuple 18 comp 0): ref 4.5956112577604181e-06 test 4.5956112577604198e-06
+result: DIFFERENCES

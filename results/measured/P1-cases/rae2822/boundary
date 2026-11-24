@@ -1,0 +1,82 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       polyBoundaryMesh;
+    location    "constant/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+8
+(
+    back
+    {
+        type            empty;
+        physicalType    empty;
+        inGroups        1(empty);
+        nFaces          23552;
+        startFace       46704;
+    }
+    front
+    {
+        type            empty;
+        physicalType    empty;
+        inGroups        1(empty);
+        nFaces          23552;
+        startFace       70256;
+    }
+    outlet1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          64;
+        startFace       93808;
+    }
+    outlet2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          64;
+        startFace       93872;
+    }
+    intPatch1
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          0;
+        startFace       93936;
+    }
+    intPatch2
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          0;
+        startFace       93936;
+    }
+    airfoil
+    {
+        type            wall;
+        physicalType    wall;
+        inGroups        1(wall);
+        nFaces          304;
+        startFace       93936;
+    }
+    farfield
+    {
+        type            patch;
+        physicalType    patch;
+        nFaces          368;
+        startFace       94240;
+    }
+)
+
+// ************************************************************************* //

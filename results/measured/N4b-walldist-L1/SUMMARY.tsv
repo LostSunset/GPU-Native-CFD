@@ -1,0 +1,3 @@
+case	nCells	method	ref	gpu	compare
+nacaAirfoil	40000	meshWave	0	0	BITWISE
+basicFinner	2179881	meshWave	0	0	BITWISE

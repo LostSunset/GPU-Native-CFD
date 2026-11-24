@@ -1,0 +1,7 @@
+case	nCells	nFaces	format	ref_exit	gpu_exit	compare	gpu1_vs_gpu2	repeat	sumV_ref	sumV_tree	geometryScheme	pointsInstance
+shockTube	200	1001	ascii	0	0/0	BITWISE	identical	2/2	39.999999999999957	40	basic	constant
+forwardStep	36576	146816	ascii	0	0/0	BITWISE	identical	2/2	0.25200000000004275	0.252	basic	constant
+nacaAirfoil	40000	160430	binary	0	0/0	BITWISE	identical	2/2	370.88168509584114	370.88168509584239	basic	constant
+flatPlate	8000	32180	ascii	0	0/0	BITWISE	identical	2/2	0.11767718400000017	0.11767718399999999	basic	constant
+oneraM6	294912	896256	ascii	0	0/0	BITWISE	identical	2/2	1518.2520957940478	1518.2520957940942	basic	constant
+basicFinner	2179881	6388379	ascii	0	0/0	BITWISE	identical	2/2	63.501028670689728	63.50102867068891	basic	constant

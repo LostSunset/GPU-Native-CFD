@@ -1,0 +1,29 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forces
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forcesNormAxial
+startFrom       startTime;
+startTime       0;
+endTime         10;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+simulationType  laminar;
+laminar=1
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-L3/basicFinnerLaminar/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda nut alphat );
+        timeIndices     ( 1 2 10 );
+        atEnd           true;
+    }
+}

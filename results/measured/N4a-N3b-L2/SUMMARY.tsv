@@ -1,0 +1,7 @@
+case	nCells	ref	gpu	compare	gpu1_vs_gpu2	nocompat
+shockTube	200	0	0/0	BITWISE	identical	-
+forwardStep	36576	0	0/0	BITWISE	identical	-
+nacaAirfoilLaminar	40000	0	0/0	BITWISE	identical	DIFF
+flatPlateLaminar	8000	0	0/0	BITWISE	identical	BITWISE
+oneraM6Laminar	294912	0	0/0	BITWISE	identical	DIFF
+basicFinnerLaminar	2179881	0	0/0	BITWISE	identical	DIFF

@@ -1,0 +1,6 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 40000 fvBoundaryFaces 860
+thermo: RR 8314.4700665054497 Tstd 298.14999999999998 W 28.966000000000001 R 287.0423968275029 Cp 1005 transport sutherland
+analysis: viscous
+boundary conditions: inlet_1[p characteristicFarfieldPressure, T characteristicFarfieldTemperature, U characteristicFarfieldVelocity, e mixedEnergy] outlet_2[p characteristicFarfieldPressure, T characteristicFarfieldTemperature, U characteristicFarfieldVelocity, e mixedEnergy] symplane_3[p empty, T empty, U empty, e empty] wall_4[p characteristicWallPressure, T characteristicWallTemperature, U boundaryCorrectedFixedValue, e fixedEnergy]
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-N3a-L2/nacaAirfoil/gpu2.gnc

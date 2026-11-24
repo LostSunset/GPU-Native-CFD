@@ -1,0 +1,7 @@
+mesh: 2179881 cells; kOmegaSST betaStar 0.089999999999999997; omegaWall cells 37279; k solver tol 1e-10 relTol 0.1; relax k 0.5 omega 0.5
+step 1: smoothSolver: Solving for omega, initial 0.00087680076919463112 final 2.1962435762732951e-06 iterations 1 bounded 1
+step 1: smoothSolver: Solving for k, initial 0.99999999999999956 final 0.0039623229743299543 iterations 1 bounded 0
+step 2: smoothSolver: Solving for omega, initial 0.00045395074133984894 final 1.5925355699479762e-06 iterations 1 bounded 1
+step 2: smoothSolver: Solving for k, initial 0.19871225067399534 final 0.00080608124359630464 iterations 1 bounded 0
+step 3: smoothSolver: Solving for omega, initial 0.00026334209363830454 final 1.3370097427363883e-06 iterations 1 bounded 1
+step 3: smoothSolver: Solving for k, initial 0.09605512503121004 final 0.00056669006485969868 iterations 1 bounded 0

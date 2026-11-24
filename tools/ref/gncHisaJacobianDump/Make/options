@@ -1,0 +1,20 @@
+/* wmake 會先用 cpp 處理本檔：只能用 C 式註解。
+   HISA_DIR 由 scripts/build.sh 設為 $WM_PROJECT_DIR/src/hisa。 */
+include $(HISA_DIR)/buildDefs.include
+
+EXE_INC = \
+    $(FOAM_VERSION) \
+    -I$(HISA_DIR)/src/include \
+    -I$(HISA_DIR)/src/preconditioners/lnInclude \
+    -I$(HISA_DIR)/src/finiteVolume/lnInclude \
+    -I$(HISA_DIR)/src/finiteVolume/jacobians/jacobianMatrix \
+    -I$(LIB_SRC)/finiteVolume/lnInclude \
+    -I$(LIB_SRC)/meshTools/lnInclude \
+    -I$(GNC_SRC)
+
+LIB_LIBS = \
+    -lfiniteVolume \
+    -lmeshTools \
+    -L$(FOAM_LIBBIN) \
+    -lhisaFiniteVolume \
+    -lhisaPreconditioners

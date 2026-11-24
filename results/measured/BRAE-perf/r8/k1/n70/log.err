@@ -1,0 +1,21 @@
+brae NOTICE [approximated] solvers/p solver: case asks 'GAMG', brae runs PCG preconditioned with GAMG (same linear system and tolerance -- iteration count and cost differ)
+brae NOTICE [ignored] solvers/p smoother: 'GaussSeidel' -- brae is not running a smoothSolver on this field
+brae NOTICE [approximated] solvers/k preconditioner: case asks 'DILU', brae preconditions with a degree-6 truncated Neumann series -- the same linear system and tolerance, a different iterate at a loose relTol; DILU's apply is a sequential level walk where the series is 6 sparse products (FP-2, aerofoilNACA0012: the DILU k/omega solves were 74% of the turbulence phase). BRAE_DILU_KE=1 keeps DILU
+brae NOTICE [approximated] solvers/omega preconditioner: case asks 'DILU', brae preconditions with a degree-6 truncated Neumann series -- the same linear system and tolerance, a different iterate at a loose relTol; DILU's apply is a sequential level walk where the series is 6 sparse products (FP-2, aerofoilNACA0012: the DILU k/omega solves were 74% of the turbulence phase). BRAE_DILU_KE=1 keeps DILU
+brae NOTICE [approximated] solvers/e preconditioner: case asks 'DILU', brae preconditions with a degree-6 truncated Neumann series -- the same linear system and tolerance, a different iterate at a loose relTol; DILU's apply is a sequential level walk where the series is 6 sparse products (FP-2, aerofoilNACA0012: the DILU k/omega solves were 74% of the turbulence phase). BRAE_DILU_HE=1 keeps DILU
+brae NOTICE [approximated] solvers/U solver: case asks 'PBiCGStab' with preconditioner 'DILU', brae runs a multicolour symGaussSeidel smoothSolver to the same tolerance, relTol, maxIter and minIter, nSweeps 1 -- a different solver: the converged answer is the same, the iterate under relTol is not. BRAE_U_SOLVER=ofOrder runs the case's own solver instead
+brae NOTICE [unread] constant/thermophysicalProperties -- 1 entry brae never looked at:
+brae NOTICE [unread]   thermoType/specie
+brae NOTICE [unread]   (an entry here is EVIDENCE of an unimplemented input, not proof --
+brae NOTICE [unread]    some belong to other tools. Set BRAE_DICT_AUDIT=0 to silence.)
+brae NOTICE [unread] constant/turbulenceProperties -- 1 entry brae never looked at:
+brae NOTICE [unread]   RAS/printCoeffs
+brae NOTICE [unread]   (an entry here is EVIDENCE of an unimplemented input, not proof --
+brae NOTICE [unread]    some belong to other tools. Set BRAE_DICT_AUDIT=0 to silence.)
+brae NOTICE [unread] system/fvSchemes -- 3 entries brae never looked at:
+brae NOTICE [unread]   divSchemes/div(phid,p)
+brae NOTICE [unread]   divSchemes/div((phi|interpolate(rho)),p)
+brae NOTICE [unread]   divSchemes/div(((rho*nuEff)*dev2(T(grad(U)))))
+brae NOTICE [unread]   (divSchemes is audited per ENTRY -- its consumption has a single choke
+brae NOTICE [unread]    point. Other blocks are audited whole: fvSchemes is text-parsed, so their
+brae NOTICE [unread]    individual entries are not tracked.)

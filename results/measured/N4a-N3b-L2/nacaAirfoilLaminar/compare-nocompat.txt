@@ -1,0 +1,22 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/nacaAirfoilLaminar/ref/1.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/nacaAirfoilLaminar/gpu-nocompat.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncHisaDump" test="gncResL2"
+time                           text  ref="1" test="(none)"
+timeIndex                      text  ref="1" test="(none)"
+RR                             f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+Tstd                           f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoR.i                         f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoR.b                         f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoUR.i                        f64        40000    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoUR.b                        f64          860    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoER.i                        f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoER.b                        f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64        79570    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+tauMC.i                        f64        40000    9        7515    1.890e-10    1.000e+00 4461371659534103399  DIFF
+    first at value 78 (tuple 8 comp 6): ref -3.588099961449501e-18 test 0
+tauMC.b                        f64          860    9           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+foamCompat                     text  test only: "off"
+result: DIFFERENCES

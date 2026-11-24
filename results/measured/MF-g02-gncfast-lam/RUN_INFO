@@ -1,0 +1,9 @@
+label=MF-g02-gncfast-lam
+started_utc=2026-10-25T09:50:03Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 17:50:03 up 13 days,  8:26, 10 users,  load average: 128.77, 124.39, 122.57
+endTime=5
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+uptime_after= 17:50:28 up 13 days,  8:26, 10 users,  load average: 125.79, 124.04, 122.50
+finished_utc=2026-10-25T09:50:28Z

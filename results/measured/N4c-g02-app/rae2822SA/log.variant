@@ -1,0 +1,33 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         200;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   100;
+writeFormat     binary;
+writePrecision  17;
+forces=forceCoeffsCompressible
+functions
+{
+    forceCoeffsCompressible
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        writeControl    timeStep;
+        executeControl  timeStep;
+        executeInterval 10;
+        log             off;
+        patches         ( airfoil );
+        magUInf         233.622;
+        rho             rhoInf;
+        rhoInf          1.48571;
+        lRef            0.3048;
+        Aref            0.3048;
+        liftDir         ( -0.0403062 0 0.999187 );
+        dragDir         ( 0.999187 0 0.0403062 );
+        CofR            ( 0.07585 0 0 );
+        pitchAxis       ( 0 1 0 );
+        writeInterval   10;
+    }
+}

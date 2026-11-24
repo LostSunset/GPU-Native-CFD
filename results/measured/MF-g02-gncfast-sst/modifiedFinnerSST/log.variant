@@ -1,0 +1,19 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forces
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forcesNormAxial
+startFrom       startTime;
+startTime       0;
+endTime         5;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   5;
+writePrecision  17;
+functions
+{
+}

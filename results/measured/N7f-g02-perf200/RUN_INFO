@@ -1,0 +1,12 @@
+label=N7f-g02-perf200
+started_utc=2026-10-22T20:36:01Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 04:36:01 up 10 days, 19:12, 10 users,  load average: 104.44, 104.03, 103.98
+endTime=200
+variant ref: 
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree
+variant fast32: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=float
+variant fastauto: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+uptime_after= 04:36:49 up 10 days, 19:12, 10 users,  load average: 104.24, 104.04, 103.99
+finished_utc=2026-10-22T20:36:49Z

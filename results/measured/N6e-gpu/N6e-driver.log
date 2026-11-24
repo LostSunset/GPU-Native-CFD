@@ -1,0 +1,86 @@
+=== 2026-10-25T16:30:06Z waiting for pid 893617
+=== 2026-10-25T17:15:06Z waiting up to 1200 s for 'n1[1]_g02' to start
+=== 2026-10-25T17:15:06Z waiting for 'n1[1]_g02' to finish (1029974 1029976 )
+=== 2026-10-25T17:30:08Z GPU3 free; load 103.20 103.64 103.95
+=== 2026-10-25T17:30:08Z build
+=== 2026-10-25T17:30:59Z bash scripts/make_aerofoil_meshes.sh --host-env configs/hosts/g02-paper.env --src /ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation --out-root /ssd/sclin/gpu-native-cfd/cases 16 32
+    zCells  1280; // aerofoil to far field
+    xUCells 480; // upstream
+    xMCells 480; // middle
+    xDCells 640; // downstream
+    cells:            4096000
+p
+{
+    solver          PCG;
+    preconditioner  DIC;
+    tolerance       1e-06;
+    relTol          0.01;
+}
+    zCells  2560; // aerofoil to far field
+    xUCells 960; // upstream
+    xMCells 960; // middle
+    xDCells 1280; // downstream
+    cells:            16384000
+p
+{
+    solver          PCG;
+    preconditioner  DIC;
+    tolerance       1e-06;
+    relTol          0.01;
+}
+=== exit=0
+/dev/nvme0n1p1  1.9T  1.8T   71G   97% /ssd
+=== 2026-10-25T17:47:04Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-paper.env --label N6e-perf-r16 --iters 20 --iters-for gnc=5 --iters-for of1=5 --variants gnc,gncamg,of1,of32 --case r16=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r16-pcg/simulation --gamg-case r16=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r16/simulation
+== r16 gnc (5 iterations) start_epoch=1792950424.988778725
+   rc=0 iterations=5 per_iter=32.290093 s clock=- s wall=172.78 s p_iters=980.2 end_epoch=1792950602.832369691
+== r16 gncamg (20 iterations) start_epoch=1792950602.834195295
+   rc=0 iterations=20 per_iter=0.457240 s clock=- s wall=19.74 s p_iters=68.5 end_epoch=1792950628.460679032
+== r16 of1 (5 iterations) start_epoch=1792950628.462653658
+   rc=0 iterations=5 per_iter=98.657500 s clock=98.750 s wall=595.98 s p_iters=310.4 end_epoch=1792951227.503052985
+== r16 of32 (20 iterations) start_epoch=1792951227.506287042
+   rc=0 iterations=20 per_iter=5.161579 s clock=5.211 s wall=112.36 s p_iters=384.9 end_epoch=1792951402.648269076
+case  variant  nCells   iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r16   gnc      4096000  5           32.290093   -                 172.78  980.2
+r16   gncamg   4096000  20          0.457240    -                 19.74   68.5
+r16   of1      -        5           98.657500   98.750            595.98  310.4
+r16   of32     -        20          5.161579    5.211             112.36  384.9
+=== exit=0
+=== 2026-10-25T18:03:22Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-paper.env --label N6e-perf-r32 --iters 10 --iters-for gnc=3 --iters-for of1=3 --variants gnc,gncamg,of1,of32 --case r32=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r32-pcg/simulation --gamg-case r32=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r32/simulation
+== r32 gnc (3 iterations) start_epoch=1792951402.993135246
+   rc=0 iterations=3 per_iter=103.042033 s clock=- s wall=353.31 s p_iters=1000.0 end_epoch=1792951761.481735870
+== r32 gncamg (10 iterations) start_epoch=1792951761.484114837
+   rc=0 iterations=10 per_iter=3.396902 s clock=- s wall=78.95 s p_iters=88.7 end_epoch=1792951845.584732721
+== r32 of1 (3 iterations) start_epoch=1792951845.586886974
+   rc=0 iterations=3 per_iter=810.415000 s clock=810.500 s wall=3106.55 s p_iters=685.0 end_epoch=1792954955.143795445
+== r32 of32 (10 iterations) start_epoch=1792954955.145541991
+   rc=0 iterations=10 per_iter=29.266667 s clock=29.333 s wall=334.15 s p_iters=552.0 end_epoch=1792955533.116576642
+case  variant  nCells    iterations  per_iter_s  per_iter_clock_s  wall_s   p_iters_mean
+r32   gnc      16384000  3           103.042033  -                 353.31   1000.0
+r32   gncamg   16384000  10          3.396902    -                 78.95    88.7
+r32   of1      -         3           810.415000  810.500           3106.55  685.0
+r32   of32     -         10          29.266667   29.333            334.15   552.0
+=== exit=0
+=== 2026-10-25T19:12:13Z env LABEL=N6e-brae BRAE_MESHES=16 32 BRAE_CONV=0 REPEAT=3 bash scripts/brae_g02.sh
+== r16 brae repeat 1, 5 iterations
+== r16 brae repeat 1, 35 iterations
+== r16 brae repeat 2, 5 iterations
+== r16 brae repeat 2, 35 iterations
+== r16 brae repeat 3, 5 iterations
+== r16 brae repeat 3, 35 iterations
+== r32 brae repeat 1, 3 iterations
+WARNING: r32 k1 n3 reached 
+== r32 brae repeat 1, 23 iterations
+WARNING: r32 k1 n23 reached 
+== r32 brae repeat 2, 3 iterations
+WARNING: r32 k2 n3 reached 
+== r32 brae repeat 2, 23 iterations
+WARNING: r32 k2 n23 reached 
+== r32 brae repeat 3, 3 iterations
+WARNING: r32 k3 n3 reached 
+== r32 brae repeat 3, 23 iterations
+WARNING: r32 k3 n23 reached 
+case	nCells	n1	n2	repeats	per_iter_each_s	per_iter_s	p_iters_mean
+r16	4096000	5	35	3	0.431133,0.514133,0.501200	0.501200	102.3
+r32	16384000	3	23	3	0.049050,-0.064350,0.064800	0.049050	
+=== done 2026-10-25T19:29:50Z
+=== exit=0

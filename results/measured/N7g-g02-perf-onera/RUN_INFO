@@ -1,0 +1,12 @@
+label=N7g-g02-perf-onera
+started_utc=2026-10-23T10:46:12Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 18:46:12 up 11 days,  9:22,  9 users,  load average: 112.09, 113.44, 122.35
+endTime=30
+variant ref: 
+variant graph: GNC_GRAPH=1
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+variant fastgraph: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto GNC_GRAPH=1
+uptime_after= 18:46:52 up 11 days,  9:22,  9 users,  load average: 112.04, 113.26, 121.91
+finished_utc=2026-10-23T10:46:52Z

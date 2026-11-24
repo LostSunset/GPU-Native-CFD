@@ -1,0 +1,50 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "0/p"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           volScalarField;
+    object          p;
+}
+
+U               ( -1543.624515 0 -53.904555870000003 );
+
+p               101325;
+
+T               293.14999999999998;
+
+dimensions      [ 1 -1 -2 0 0 0 0 ];
+
+internalField   uniform 101325;
+
+boundaryField
+{
+    "(body|base|fin1|fin2|fin3|fin4)"
+    {
+        type            characteristicWallPressure;
+        value           uniform 101325;
+    }
+    "(farfield)"
+    {
+        type            characteristicFarfieldPressure;
+        U               ( -1543.624515 0 -53.904555870000003 );
+        p               101325;
+        T               293.14999999999998;
+        value           uniform 101325;
+    }
+    "(symm)"
+    {
+        type            symmetry;
+        value           uniform 101325;
+    }
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

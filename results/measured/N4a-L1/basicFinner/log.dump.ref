@@ -1,0 +1,30 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /ssd/sclin/gpu-native-cfd/build/bin/gncOpsRef -case /ssd/sclin/gpu-native-cfd/runs/N4a-L1/basicFinner/case -dump-fields gncL1 -out /ssd/sclin/gpu-native-cfd/runs/N4a-L1/basicFinner/fields.ref.gnc
+Date   : Oct 23 2026
+Time   : 00:40:54
+Host   : g02
+PID    : 1148134
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4a-L1/basicFinner/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-L1/basicFinner/fields.ref.gnc"
+End
+

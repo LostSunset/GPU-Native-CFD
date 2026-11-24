@@ -1,0 +1,7 @@
+case	nCells	gradScheme	generate	ref	gpu	compare	gpu1_vs_gpu2	reader_ascii_vs_binary	fields_readback
+shockTube	200	faceLeastSquares linear	0	0	0/0	BITWISE	identical	4/4	BITWISE
+forwardStep	36576	faceLeastSquares linear	0	0	0/0	BITWISE	identical	4/4	BITWISE
+nacaAirfoil	40000	faceLeastSquares linear	0	0	0/0	BITWISE	identical	4/4	BITWISE
+flatPlate	8000	Gauss linear	0	0	0/0	BITWISE	identical	4/4	BITWISE
+oneraM6	294912	faceLeastSquares linear	0	0	0/0	BITWISE	identical	4/4	BITWISE
+basicFinner	2179881	faceLeastSquares linear	0	0	0/0	BITWISE	identical	4/4	BITWISE

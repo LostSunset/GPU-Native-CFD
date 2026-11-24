@@ -1,0 +1,5 @@
+case	nCells	variant	exit	wall_s	wall_per_step_s	gmres_iter_total	final_res_rho	profile_mean_s
+flatPlateSA	8000	ref	0	10.6619	0.0533095	426	0.00111774	0.0515386
+flatPlateSA	8000	fast	0	2.32632	0.0116316	954	0.00110487	0.00970721
+rae2822SA	23552	ref	0	8.2234	0.041117	200	0.0064454	0.0390677
+rae2822SA	23552	fast	0	1.74215	0.00871075	385	0.00832218	0.00683601

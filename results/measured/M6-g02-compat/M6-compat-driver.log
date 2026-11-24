@@ -1,0 +1,65 @@
+=== 2026-10-23T06:43:40Z bash scripts/build.sh --host-env configs/hosts/g02-l40.env
+built_utc=2026-10-23T06:44:17Z
+host=g02 profile=g02-l40
+source_dir=/ssd/sclin/gpu-native-cfd/GPU-Native-CFD
+sync_atlas_commit=c1d06b28e9683f4ade5f943521541c3d838cf17d
+sync_uncommitted_paths=0
+sync_synced_utc=2026-10-23T06:43:37Z
+source_sha256=6971ed907be168625a3bb53b690f6904218f1f7afc957b0ac94bc833ddeed274
+cmake=cmake version 3.28.3
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cuda_archs=89
+gnc_fmad=OFF
+cmake_exit=0 build_exit=0 ref_exit=0
+compiler_warnings=0
+ref_openfoam_bashrc=/opt/atlas-openfoam/current/OpenFOAM-v2606/etc/bashrc
+ref_openfoam_project=/opt/atlas-openfoam/current/OpenFOAM-v2606
+ref_wm_options=linux64GccDPInt32Opt
+ref_wmake_cxx=g++
+ref_wmake_cxxflags=-std=c++17 -m64 -pthread -DOPENFOAM=2606 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -DNoRepository -ftemplate-depth=1000 -fPIC
+geometry_cu_command=/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/gnc.dir/includes_CUDA.rsp -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_89,code=[compute_89,sm_89]" -prec-div=true -prec-sqrt=true --fmad=false -Xcompiler=-ffp-contract=off,-Wall,-Wextra -x cu -c /ssd/sclin/gpu-native-cfd/GPU-Native-CFD/src/mesh/geometry.cu -o CMakeFiles/gnc.dir/src/mesh/geometry.cu.o
+sha256 gncCompare=ec05eeca9d57c24a96c11146e34e6dc4f0e0ec38e346c4900ef8b3458a46a3cd
+sha256 gncFieldDiff=36c6763f7b115f3f4520688b83f726e34f4a568270c01ddcc77beb27ea102411
+sha256 gncGeomL0=7727124c05d616f6c0f49ccd8bc4159efc7cfbc9802c4e91dd512d94f2e74a61
+sha256 gncGeomRef=35cade17a39263e5e74722dd7b7b2b64ec6b355961c4f98555d5549865acb666
+sha256 gncHisa=d9521b8269ce0b51e3ea83900b678a7c31191c1f3360d956de73f24824351cdd
+sha256 gncInitL2=18308bf74cf8d55460eacdfd2c997c3fcaf46ad61d479c2ffdcdf97671286e07
+sha256 gncOpsL1=c9d26338ef13908e9961cfe65092d556c5aeb7c29e49760abf056a3d12d5975b
+sha256 gncOpsRef=4974130c92b37eb54078d9fd78a319d8625f420e964f1e5a05278d3efa48285c
+sha256 gncOuterL2=f2150c609bde2c5a38d2f18fce614af40297068357e844516642cc13c88275cc
+sha256 gncPowCheck=4993a47cd1c0181c963f0d5e3538329c49111413197cb21b988317d9f338a66b
+sha256 gncResL2=f6638498913abce7c0499b710a9bfcbdfbba89a3ed8a7b12ae2c97e570c0c923
+sha256 gncRunL3=a2699a823c8b74141886a9733638d6d4e083f035394511f98cf87f749a4c8dc3
+sha256 gncSumBench=bdfc12bcc5e527689af9f319b85e27ac7102c0c616d892c9b47ee0dc2263489f
+sha256 gncTurbL2=87ad01c55f4095886f6d13ef3ff3dba6eeb28e1b24d1c1fb5aa6dbb5646abd71
+sha256 gncWallDistL1=8ba3fc0882b1ce7fa3d2c185132cb5c318e6887f02e6d7c515e3c888aa931e0f
+sha256 libgncHisaDump.so=cbb8b732f431cbfc7574825e457fad975253826eef425cec8565522aaee68007
+sha256 libgncHisaJacobianDump.so=2503a15b6dfa53d16627dfd298c37836772a9a93647f300d2f438a4ed83b3e38
+=== exit=0
+=== 2026-10-23T06:44:17Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label M6-g02-compat --end 2000 --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --variant fastFixed=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto GNC_FOAM_COMPAT=off --case oneraM6SA=/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation --forces oneraM6SA=forceCoeffsWing
+== oneraM6SA (/ssd/sclin/gpu-native-cfd/cases/oneraM6-forces/simulation) endTime=2000
+case       nCells  variant    exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+oneraM6SA  294912  fast       0     50.8072  0.0254036        2196              0.00125196     0.0238979
+oneraM6SA  294912  fastFixed  0     51.0486  0.0255243        2198              0.00122356     0.0240146
+-- /ssd/sclin/gpu-native-cfd/runs/M6-g02-compat/oneraM6SA/fielddiff.fast-fastFixed.txt
+A=/ssd/sclin/gpu-native-cfd/runs/M6-g02-compat/oneraM6SA/fast/2000
+B=/ssd/sclin/gpu-native-cfd/runs/M6-g02-compat/oneraM6SA/fastFixed/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           5.359191e+02           4.425510e-03           8.423378e-05
+T              294912           3.101729e+00           8.042933e-03           2.863205e-04
+U              884736           1.273427e+01           2.876562e-02           7.566063e-04
+rho            294912           1.204847e-02           8.163260e-03           2.281028e-04
+nuTilda        294912           1.883986e-04           5.818643e-03           8.486773e-04
+nut            294912           1.883987e-04           5.818646e-03           8.483725e-04
+alphat         294912           2.036068e-04           5.857465e-03           8.430981e-04
+-- /ssd/sclin/gpu-native-cfd/runs/M6-g02-compat/oneraM6SA/coeffs.txt
+variant	quantity	steps	final	tail_mean	tail_std	final-ref	tail_mean-ref
+fast	Cd	2000	0.01662547739	0.01662465324	4.89e-06	0	0
+fast	Cl	2000	0.2627276731	0.2627295461	1.59e-05	0	0
+fast	CmPitch	2000	-0.1854961343	-0.1855017515	1.62e-05	0	0
+fastFixed	Cd	2000	0.01662873149	0.01662429191	4.62e-06	3.25e-06	-3.61e-07
+fastFixed	Cl	2000	0.2627369295	0.2627380994	1.59e-05	9.26e-06	8.55e-06
+fastFixed	CmPitch	2000	-0.1855052628	-0.1855106011	1.62e-05	-9.13e-06	-8.85e-06
+=== exit=0
+=== done 2026-10-23T06:46:15Z

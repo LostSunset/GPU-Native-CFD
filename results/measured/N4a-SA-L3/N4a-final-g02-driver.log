@@ -1,0 +1,251 @@
+=== 2026-10-22T16:38:08Z bash scripts/build.sh --host-env configs/hosts/g02-l40.env
+built_utc=2026-10-22T16:38:42Z
+host=g02 profile=g02-l40
+source_dir=/ssd/sclin/gpu-native-cfd/GPU-Native-CFD
+sync_atlas_commit=c73ca45203b85be6cf2d2a443546547a96776f42
+sync_uncommitted_paths=0
+sync_synced_utc=2026-10-22T16:38:07Z
+source_sha256=f949b0c314b9bf4ed0801a9b13e30c4e45752af3a195353251280da7053756bb
+cmake=cmake version 3.28.3
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cuda_archs=89
+gnc_fmad=OFF
+cmake_exit=0 build_exit=0 ref_exit=0
+compiler_warnings=0
+ref_openfoam_bashrc=/opt/atlas-openfoam/current/OpenFOAM-v2606/etc/bashrc
+ref_openfoam_project=/opt/atlas-openfoam/current/OpenFOAM-v2606
+ref_wm_options=linux64GccDPInt32Opt
+ref_wmake_cxx=g++
+ref_wmake_cxxflags=-std=c++17 -m64 -pthread -DOPENFOAM=2606 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -DNoRepository -ftemplate-depth=1000 -fPIC
+geometry_cu_command=/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/gnc.dir/includes_CUDA.rsp -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_89,code=[compute_89,sm_89]" -prec-div=true -prec-sqrt=true --fmad=false -Xcompiler=-ffp-contract=off,-Wall,-Wextra -x cu -c /ssd/sclin/gpu-native-cfd/GPU-Native-CFD/src/mesh/geometry.cu -o CMakeFiles/gnc.dir/src/mesh/geometry.cu.o
+sha256 gncCompare=ec05eeca9d57c24a96c11146e34e6dc4f0e0ec38e346c4900ef8b3458a46a3cd
+sha256 gncFieldDiff=bb476d9b8facda0111c6e89f81b738e703b9130ce9c05a1188fb89b6b6e28528
+sha256 gncGeomL0=d27665e5bbf14ab67f5ed1d10eeaf5478597239e5745474cf8201811009d34f1
+sha256 gncGeomRef=35cade17a39263e5e74722dd7b7b2b64ec6b355961c4f98555d5549865acb666
+sha256 gncHisa=d75b161d50e949b08911fb41218139dcf5ae97dd79c2d1a3ff513cbe1ca0066f
+sha256 gncInitL2=f6992189caa480db7b915b2e68d62bb2f7565aa6b157b2bb397444e95b60ed6f
+sha256 gncOpsL1=b0ca6d40cbb9e459c94f19234ba4b869f787bdf04d2b294e227e08e36d9ed359
+sha256 gncOpsRef=4974130c92b37eb54078d9fd78a319d8625f420e964f1e5a05278d3efa48285c
+sha256 gncOuterL2=74cd8db86daafb3cb117c1478fce1ca49547552a7a28273292a4f30535218d7e
+sha256 gncPowCheck=0b89977db917ec048c071948e306bae697788aaf82271641ad575c0bd3b15b18
+sha256 gncResL2=282d8a7f23b1b5bbf7fb57d1d1e1e44695934102bc3f8083e4dbe0c2699a269e
+sha256 gncRunL3=47d0c499b8915242d6bea585e5cf6a94917693a6c4e09aca61cdd522e58ffd2b
+sha256 gncTurbL2=b89cdc0ab8cbd5a068d79c319ae03c32301928c29f477ac0e947034836a8efe2
+sha256 gncWallDistL1=4256a17c9bed1f288fe20b4092c2c15fa0a0978517ceab65bc067fccd352989e
+sha256 libgncHisaDump.so=cefa000ba1cf6cf60d406129515c99f3eae4c8a522b4b4310f916c7d3676ac9f
+sha256 libgncHisaJacobianDump.so=2503a15b6dfa53d16627dfd298c37836772a9a93647f300d2f438a4ed83b3e38
+=== exit=0
+=== 2026-10-22T16:38:42Z bash scripts/l0_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-L0 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoil=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlate=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinner=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical repeat=2/2
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical repeat=2/2
+== nacaAirfoil (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical repeat=2/2
+== flatPlate (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical repeat=2/2
+== oneraM6 (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical repeat=2/2
+== basicFinner (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical repeat=2/2
+case         nCells   nFaces   format  ref_exit  gpu_exit  compare  gpu1_vs_gpu2  repeat  sumV_ref             sumV_tree            geometryScheme  pointsInstance
+shockTube    200      1001     ascii   0         0/0       BITWISE  identical     2/2     39.999999999999957   40                   basic           constant
+forwardStep  36576    146816   ascii   0         0/0       BITWISE  identical     2/2     0.25200000000004275  0.252                basic           constant
+nacaAirfoil  40000    160430   binary  0         0/0       BITWISE  identical     2/2     370.88168509584114   370.88168509584239   basic           constant
+flatPlate    8000     32180    ascii   0         0/0       BITWISE  identical     2/2     0.11767718400000017  0.11767718399999999  basic           constant
+oneraM6      294912   896256   ascii   0         0/0       BITWISE  identical     2/2     1518.2520957940478   1518.2520957940942   basic           constant
+basicFinner  2179881  6388379  ascii   0         0/0       BITWISE  identical     2/2     63.501028670689728   63.50102867068891    basic           constant
+=== exit=0
+=== 2026-10-22T16:39:15Z bash scripts/l1_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-L1 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoil=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlate=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinner=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared)
+   generate=0 ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical reader=4/4 readback=BITWISE
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation)
+   generate=0 ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical reader=4/4 readback=BITWISE
+== nacaAirfoil (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation)
+   generate=0 ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical reader=4/4 readback=BITWISE
+== flatPlate (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation)
+   generate=0 ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical reader=4/4 readback=BITWISE
+== oneraM6 (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation)
+   generate=0 ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical reader=4/4 readback=BITWISE
+== basicFinner (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation)
+   generate=0 ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical reader=4/4 readback=BITWISE
+case         nCells   gradScheme               generate  ref  gpu  compare  gpu1_vs_gpu2  reader_ascii_vs_binary  fields_readback
+shockTube    200      faceLeastSquares linear  0         0    0/0  BITWISE  identical     4/4                     BITWISE
+forwardStep  36576    faceLeastSquares linear  0         0    0/0  BITWISE  identical     4/4                     BITWISE
+nacaAirfoil  40000    faceLeastSquares linear  0         0    0/0  BITWISE  identical     4/4                     BITWISE
+flatPlate    8000     Gauss linear             0         0    0/0  BITWISE  identical     4/4                     BITWISE
+oneraM6      294912   faceLeastSquares linear  0         0    0/0  BITWISE  identical     4/4                     BITWISE
+basicFinner  2179881  faceLeastSquares linear  0         0    0/0  BITWISE  identical     4/4                     BITWISE
+=== exit=0
+=== 2026-10-22T16:41:21Z bash scripts/l2_init_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-N3a-L2 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoil=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlate=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinner=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical
+== nacaAirfoil (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical
+== flatPlate (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical
+== oneraM6 (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical
+== basicFinner (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical
+case         nCells   analysis  ref  gpu  compare  gpu1_vs_gpu2
+shockTube    200      inviscid  0    0/0  BITWISE  identical
+forwardStep  36576    inviscid  0    0/0  BITWISE  identical
+nacaAirfoil  40000    viscous   0    0/0  BITWISE  identical
+flatPlate    8000     viscous   0    0/0  BITWISE  identical
+oneraM6      294912   viscous   0    0/0  BITWISE  identical
+basicFinner  2179881  viscous   0    0/0  BITWISE  identical
+=== exit=0
+=== 2026-10-22T16:42:21Z bash scripts/l2_res_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-N3b-L2 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoilLaminar=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlateLaminar=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6Laminar=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinnerLaminar=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation --laminar nacaAirfoilLaminar --laminar flatPlateLaminar --laminar oneraM6Laminar --laminar basicFinnerLaminar
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical nocompat=-
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical nocompat=-
+== nacaAirfoilLaminar (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical nocompat=DIFF
+== flatPlateLaminar (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical nocompat=BITWISE
+== oneraM6Laminar (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical nocompat=DIFF
+== basicFinnerLaminar (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation)
+   ref=0 gpu=0/0 compare=BITWISE gpu1_vs_gpu2=identical nocompat=DIFF
+case                nCells   ref  gpu  compare  gpu1_vs_gpu2  nocompat
+shockTube           200      0    0/0  BITWISE  identical     -
+forwardStep         36576    0    0/0  BITWISE  identical     -
+nacaAirfoilLaminar  40000    0    0/0  BITWISE  identical     DIFF
+flatPlateLaminar    8000     0    0/0  BITWISE  identical     BITWISE
+oneraM6Laminar      294912   0    0/0  BITWISE  identical     DIFF
+basicFinnerLaminar  2179881  0    0/0  BITWISE  identical     DIFF
+=== exit=0
+=== 2026-10-22T16:44:50Z bash scripts/l2_outer_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-N3c-L2 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoilLaminar=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlateLaminar=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6Laminar=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinnerLaminar=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation --laminar nacaAirfoilLaminar --laminar flatPlateLaminar --laminar oneraM6Laminar --laminar basicFinnerLaminar
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared)
+   ref=0 gpu=0/0 jacobian=BITWISE precondition=BITWISE solve=BITWISE state=BITWISE gpu1_vs_gpu2=identical
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation)
+   ref=0 gpu=0/0 jacobian=BITWISE precondition=BITWISE solve=BITWISE state=BITWISE gpu1_vs_gpu2=identical
+== nacaAirfoilLaminar (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation)
+   ref=0 gpu=0/0 jacobian=BITWISE precondition=BITWISE solve=BITWISE state=BITWISE gpu1_vs_gpu2=identical
+== flatPlateLaminar (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation)
+   ref=0 gpu=0/0 jacobian=BITWISE precondition=BITWISE solve=BITWISE state=BITWISE gpu1_vs_gpu2=identical
+== oneraM6Laminar (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation)
+   ref=0 gpu=0/0 jacobian=BITWISE precondition=BITWISE solve=BITWISE state=BITWISE gpu1_vs_gpu2=identical
+== basicFinnerLaminar (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation)
+   ref=0 gpu=0/0 jacobian=BITWISE precondition=BITWISE solve=BITWISE state=BITWISE gpu1_vs_gpu2=identical
+case                nCells   ref  gpu  jacobian  precondition  solve    state    gpu1_vs_gpu2
+shockTube           200      0    0/0  BITWISE   BITWISE       BITWISE  BITWISE  identical
+forwardStep         36576    0    0/0  BITWISE   BITWISE       BITWISE  BITWISE  identical
+nacaAirfoilLaminar  40000    0    0/0  BITWISE   BITWISE       BITWISE  BITWISE  identical
+flatPlateLaminar    8000     0    0/0  BITWISE   BITWISE       BITWISE  BITWISE  identical
+oneraM6Laminar      294912   0    0/0  BITWISE   BITWISE       BITWISE  BITWISE  identical
+basicFinnerLaminar  2179881  0    0/0  BITWISE   BITWISE       BITWISE  BITWISE  identical
+=== exit=0
+=== 2026-10-22T16:49:43Z bash scripts/l1_walldist_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-walldist-L1 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoil=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlate=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinner=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation --meshwave nacaAirfoil --meshwave basicFinner
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared)
+   method= ref=0 gpu=0 compare=BITWISE
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation)
+   method= ref=0 gpu=0 compare=BITWISE
+== nacaAirfoil (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation)
+   method=meshWave ref=0 gpu=0 compare=BITWISE
+== flatPlate (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation)
+   method=meshWave ref=0 gpu=0 compare=BITWISE
+== oneraM6 (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation)
+   method=meshWave ref=0 gpu=0 compare=BITWISE
+== basicFinner (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation)
+   method=meshWave ref=0 gpu=0 compare=BITWISE
+case         nCells   method    ref  gpu  compare
+shockTube    200                0    0    BITWISE
+forwardStep  36576              0    0    BITWISE
+nacaAirfoil  40000    meshWave  0    0    BITWISE
+flatPlate    8000     meshWave  0    0    BITWISE
+oneraM6      294912   meshWave  0    0    BITWISE
+basicFinner  2179881  meshWave  0    0    BITWISE
+=== exit=0
+=== 2026-10-22T16:50:16Z bash scripts/pow_check.sh --host-env configs/hosts/g02-l40.env --label N4a-powexp
+func  impl   mode  samples    differ   max_ulp
+pow   cuda   sa    100000000  9076238  1
+pow   glibc  sa    100000000  0        0
+pow   cuda   wide  50000000   4964219  1
+pow   glibc  wide  50000000   0        0
+exp   cuda   sa    100000000  3587140  1
+exp   glibc  sa    100000000  0        0
+exp   cuda   wide  50000000   299605   1
+exp   glibc  wide  50000000   0        0
+=== exit=0
+=== 2026-10-22T16:50:39Z bash scripts/l2_turb_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-SA-L2 --steps 1,2,3,10,30,100 --case flatPlate=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case rae2822=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== flatPlate (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) steps=1,2,3,10,30,100 timeIndices= 1 2 3 9 10 29 30 99 100 
+   ref=0 gpu=0 bitwise=7/7 gpu1_vs_gpu2=same
+== oneraM6 (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) steps=1,2,3,10,30,100 timeIndices= 1 2 3 9 10 29 30 99 100 
+   ref=0 gpu=0 bitwise=7/7 gpu1_vs_gpu2=same
+== rae2822 (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) steps=1,2,3,10,30,100 timeIndices= 1 2 3 9 10 29 30 99 100 
+   ref=0 gpu=0 bitwise=7/7 gpu1_vs_gpu2=same
+case       nCells  ref  gpu  compared  bitwise  gpu1_vs_gpu2
+flatPlate  8000    0    0    7         7        same
+oneraM6    294912  0    0    7         7        same
+rae2822    23552   0    0    7         7        same
+=== exit=0
+=== 2026-10-22T16:58:26Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-L3 --end-default 200 --time-indices 1,2,10,50,100,200 --end nacaAirfoilLaminar=150 --end flatPlateLaminar=800 --time-indices-for flatPlateLaminar=1,2,10,100,400,800 --end oneraM6Laminar=30 --time-indices-for oneraM6Laminar=1,2,10,30 --end basicFinnerLaminar=10 --time-indices-for basicFinnerLaminar=1,2,10 --case shockTube=/home/sclin/hisa-gpu-research-cases/shockTube-prepared --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoilLaminar=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --case flatPlateLaminar=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6Laminar=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case basicFinnerLaminar=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation --laminar nacaAirfoilLaminar --laminar flatPlateLaminar --laminar oneraM6Laminar --laminar basicFinnerLaminar
+== shockTube (/home/sclin/hisa-gpu-research-cases/shockTube-prepared) endTime=200 timeIndices=1,2,10,50,100,200
+   ref=0 gpu=0/0 end=200/200 bitwise=7/7 gpu1_vs_gpu2=identical
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation) endTime=200 timeIndices=1,2,10,50,100,200
+   ref=0 gpu=0/0 end=200/200 bitwise=7/7 gpu1_vs_gpu2=identical
+== nacaAirfoilLaminar (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation) endTime=150 timeIndices=1,2,10,50,100,200
+   ref=0 gpu=0/0 end=150/150 bitwise=6/6 gpu1_vs_gpu2=identical
+== flatPlateLaminar (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=800 timeIndices=1,2,10,100,400,800
+   ref=0 gpu=0/0 end=800/800 bitwise=7/7 gpu1_vs_gpu2=identical
+== oneraM6Laminar (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=30 timeIndices=1,2,10,30
+   ref=0 gpu=0/0 end=30/30 bitwise=5/5 gpu1_vs_gpu2=identical
+== basicFinnerLaminar (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+case                nCells   endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+shockTube           200      200      0    0/0  200      200      7         7        identical
+forwardStep         36576    200      0    0/0  200      200      7         7        identical
+nacaAirfoilLaminar  40000    150      0    0/0  150      150      6         6        identical
+flatPlateLaminar    8000     800      0    0/0  800      800      7         7        identical
+oneraM6Laminar      294912   30       0    0/0  30       30       5         5        identical
+basicFinnerLaminar  2179881  10       0    0/0  10       10       4         4        identical
+=== exit=0
+=== 2026-10-22T17:39:58Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-SA-L3 --end-default 800 --time-indices 1,2,10,100,400,800 --end oneraM6SA=30 --time-indices-for oneraM6SA=1,2,10,30 --end rae2822SA=200 --time-indices-for rae2822SA=1,2,10,50,100,200 --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=800 timeIndices=1,2,10,100,400,800
+   ref=0 gpu=0/0 end=800/800 bitwise=7/7 gpu1_vs_gpu2=identical
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=30 timeIndices=1,2,10,30
+   ref=0 gpu=0/0 end=30/30 bitwise=5/5 gpu1_vs_gpu2=identical
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=200 timeIndices=1,2,10,50,100,200
+   ref=0 gpu=0/0 end=200/200 bitwise=7/7 gpu1_vs_gpu2=identical
+case         nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+flatPlateSA  8000    800      0    0/0  800      800      7         7        identical
+oneraM6SA    294912  30       0    0/0  30       30       5         5        identical
+rae2822SA    23552   200      0    0/0  200      200      7         7        identical
+=== exit=0
+=== 2026-10-22T18:01:35Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-L3-converge --end-default 800 --time-indices 1,50,100 --pseudo-tol flatAbs=1e-3 --pseudo-tol-rel flatRel=2e4 --case flatAbs=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case flatRel=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --laminar flatAbs --laminar flatRel
+== flatAbs (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=800 timeIndices=1,50,100
+   ref=0 gpu=0/0 end=111/111 bitwise=4/4 gpu1_vs_gpu2=identical
+== flatRel (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=800 timeIndices=1,50,100
+   ref=0 gpu=0/0 end=100/100 bitwise=4/4 gpu1_vs_gpu2=identical
+case     nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+flatAbs  8000    800      0    0/0  111      111      4         4        identical
+flatRel  8000    800      0    0/0  100      100      4         4        identical
+=== exit=0
+=== 2026-10-22T18:03:58Z bash scripts/app_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-app --end 20 --write-interval 10 --case forwardStep=/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation --case nacaAirfoilLaminar=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --laminar nacaAirfoilLaminar
+== forwardStep (/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation) endTime=20 writeInterval=10
+   ref=0 gnc=0 dirs ref=[10 20 ] gnc=[10 20 ] bitwise=8/8
+== nacaAirfoilLaminar (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation) endTime=20 writeInterval=10
+   ref=0 gnc=0 dirs ref=[10 20 ] gnc=[10 20 ] bitwise=8/8
+case                nCells  ref  gnc  ref_dirs  gnc_dirs  compared  bitwise
+forwardStep         36576   0    0    10 20     10 20     8         8
+nacaAirfoilLaminar  40000   0    0    10 20     10 20     8         8
+=== exit=0
+=== 2026-10-22T18:04:47Z bash scripts/app_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-app-converge --end 800 --write-interval 50 --pseudo-tol flatAbs=1e-3 --case flatAbs=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --laminar flatAbs
+== flatAbs (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=800 writeInterval=50
+   ref=0 gnc=0 dirs ref=[50 100 111 ] gnc=[50 100 111 ] bitwise=12/12
+case     nCells  ref  gnc  ref_dirs     gnc_dirs     compared  bitwise
+flatAbs  8000    0    0    50 100 111   50 100 111   12        12
+=== exit=0
+=== 2026-10-22T18:05:33Z bash scripts/app_verify.sh --host-env configs/hosts/g02-l40.env --label N4a-app-SA --end 100 --write-interval 50 --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=100 writeInterval=50
+   ref=0 gnc=0 dirs ref=[50 100 ] gnc=[50 100 ] bitwise=14/14
+case         nCells  ref  gnc  ref_dirs  gnc_dirs  compared  bitwise
+flatPlateSA  8000    0    0    50 100    50 100    14        14
+=== exit=0
+=== done 2026-10-22T18:06:14Z

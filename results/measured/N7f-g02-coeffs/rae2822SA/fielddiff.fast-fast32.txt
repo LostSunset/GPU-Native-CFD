@@ -1,0 +1,10 @@
+A=/ssd/sclin/gpu-native-cfd/runs/N7f-g02-coeffs/rae2822SA/fast/4000
+B=/ssd/sclin/gpu-native-cfd/runs/N7f-g02-coeffs/rae2822SA/fast32/4000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           2.618893e+00           1.673422e-05           4.792912e-07
+T               23552           3.575643e-02           1.198876e-04           3.027966e-06
+U               70656           4.531849e-03           1.279421e-05           7.411701e-07
+rho             23552           1.217852e-04           6.316145e-05           2.252508e-06
+nuTilda         23552           4.213236e-08           4.904179e-06           1.042653e-06
+nut             23552           4.213286e-08           4.904242e-06           1.062210e-06
+alphat          23552           4.928321e-08           3.931941e-06           1.150075e-06

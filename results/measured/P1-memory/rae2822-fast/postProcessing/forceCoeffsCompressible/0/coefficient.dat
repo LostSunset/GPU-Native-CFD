@@ -1,0 +1,13 @@
+# Force and moment coefficients
+# dragDir     : (9.991874e-01 0.000000e+00 4.030618e-02)
+# sideDir     : (0.000000e+00 1.000000e+00 -0.000000e+00)
+# liftDir     : (-4.030618e-02 0.000000e+00 9.991874e-01)
+# rollAxis    : (9.991874e-01 0.000000e+00 4.030618e-02)
+# pitchAxis   : (0.000000e+00 1.000000e+00 -0.000000e+00)
+# yawAxis     : (-4.030618e-02 0.000000e+00 9.991874e-01)
+# magUInf     : 2.336216e+02
+# lRef        : 3.048000e-01
+# Aref        : 3.048000e-01
+# CofR        : (7.585000e-02 0.000000e+00 0.000000e+00)
+#
+# Time        	Cd            	Cd(f)         	Cd(r)         	Cl            	Cl(f)         	Cl(r)         	CmPitch       	CmRoll        	CmYaw         	Cs            	Cs(f)         	Cs(r)         

@@ -1,0 +1,2 @@
+case	nCells	run	exit	cpu_s	wall_s	wall_per_step_s	shell_wall_s	loop_per_step_s
+modifiedFinnerSST	-	hisa-np32	0	4528.61	4534	4.534	4539.3	4.52671

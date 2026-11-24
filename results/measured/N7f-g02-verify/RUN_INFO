@@ -1,0 +1,7 @@
+label=N7f-g02-verify
+started_utc=2026-10-22T20:33:08Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime= 04:33:08 up 10 days, 19:09, 10 users,  load average: 103.64, 103.65, 103.86
+finished_utc=2026-10-22T20:35:26Z
+overall_exit=0

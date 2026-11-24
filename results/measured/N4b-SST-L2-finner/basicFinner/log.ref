@@ -1,0 +1,141 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 16:22:33
+Host   : g02
+PID    : 2911471
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2-finner/basicFinner/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    nutMaxCoeff     10000;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.55555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.5721183e-10 Mean: 1.4305044e-06 Max: 7.4587218e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.999316 0.0004655801 0.034763518) 1 
+  GMRES iteration: 1   Residual: 2.5686279e-07 (3.1038968e-07 3.5141177e-08 4.1977658e-08) 2.9097352e-07 
+smoothSolver:  Solving for omega, Initial residual = 0.00087680077, Final residual = 2.1962436e-06, No Iterations 1
+bounding omega, min: -60046403 max: 3.9075899e+11 average: 1.1255338e+08
+smoothSolver:  Solving for k, Initial residual = 1, Final residual = 0.003962323, No Iterations 1
+ExecutionTime = 64.96 s  ExecutionStepTime = 52.53 s  ClockTime = 65 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2-finner/basicFinner/ref/state/1.gnc"
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.98509173 Max: 1
+Pseudo deltaT: Min: 7.77689e-11 Mean: 1.4304969e-06 Max: 7.4587218e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.54581047 (0.35217978 0.02133717 0.029808447) 0.31403453 
+  GMRES iteration: 1   Residual: 1.9611382e-09 (1.6996586e-09 2.8318786e-10 3.4088233e-10) 1.119729e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.00045395074, Final residual = 1.5925356e-06, No Iterations 1
+bounding omega, min: -196102.44 max: 3.8795633e+11 average: 1.1720233e+08
+smoothSolver:  Solving for k, Initial residual = 0.19871225, Final residual = 0.00080608124, No Iterations 1
+ExecutionTime = 116.14 s  ExecutionStepTime = 51.18 s  ClockTime = 116 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2-finner/basicFinner/ref/state/2.gnc"
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.221551 Max: 1.25
+Pseudo deltaT: Min: 4.8589664e-11 Mean: 1.788116e-06 Max: 9.3234022e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.32932391 (0.18898135 0.01469246 0.019118823) 0.17178492 
+  GMRES iteration: 1   Residual: 4.9402031e-11 (3.8959862e-11 6.5577142e-12 8.6563503e-12) 2.5042317e-11 
+smoothSolver:  Solving for omega, Initial residual = 0.00026334209, Final residual = 1.3370097e-06, No Iterations 1
+bounding omega, min: -479480.9 max: 3.9179587e+11 average: 1.2131723e+08
+smoothSolver:  Solving for k, Initial residual = 0.096055125, Final residual = 0.00056669006, No Iterations 1
+ExecutionTime = 167.45 s  ExecutionStepTime = 51.31 s  ClockTime = 167 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2-finner/basicFinner/ref/state/3.gnc"
+End
+

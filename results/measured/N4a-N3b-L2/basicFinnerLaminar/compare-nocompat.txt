@@ -1,0 +1,26 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/basicFinnerLaminar/ref/1.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/basicFinnerLaminar/gpu-nocompat.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncHisaDump" test="gncResL2"
+time                           text  ref="1" test="(none)"
+timeIndex                      text  ref="1" test="(none)"
+RR                             f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+Tstd                           f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoR.i                         f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoR.b                         f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoUR.i                        f64      2179881    3     2121640    6.084e+10    2.000e+00 9516886427145574900  DIFF
+    first at value 0 (tuple 0 comp 0): ref 8.8992188622139485e-07 test 9.0639126300623647e-07
+rhoUR.b                        f64        41029    3       40724    6.084e+10    1.995e+00 9516886427145574900  DIFF
+    first at value 0 (tuple 0 comp 0): ref -9.9392223729722311e-09 test -9.9392399637847665e-09
+rhoER.i                        f64      2179881    1     2123640    9.392e+13    2.000e+00 9615143857936216807  DIFF
+    first at value 0 (tuple 0 comp 0): ref -0.0014353938536880496 test -0.0014608163874399031
+rhoER.b                        f64        41029    1       40725    9.392e+13    1.975e+00 9615143857936216807  DIFF
+    first at value 0 (tuple 0 comp 0): ref 3.7009500179095064e-06 test 3.7009771715189738e-06
+phi.i                          f64      6347350    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+tauMC.i                        f64      2179881    9      861090    5.585e+04    2.000e+00 9317890576115608302  DIFF
+    first at value 6 (tuple 0 comp 6): ref 1.1373788859561453e-11 test 0
+tauMC.b                        f64        41029    9           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+foamCompat                     text  test only: "off"
+result: DIFFERENCES

@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "system/controlDict"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    location        "system";
+    object          controlDict;
+}
+
+application     hisa;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         3;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   1000000;
+
+purgeWrite      2;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+graphFormat     raw;
+
+runTimeModifiable yes;
+
+functions
+{
+    forceCoeffsCompressible
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        writeControl    timeStep;
+        executeControl  timeStep;
+        executeInterval 10;
+        log             off;
+        patches         ( airfoil );
+        magUInf         233.621595211;
+        rho             rhoInf;
+        rhoInf          1.48571291822;
+        lRef            0.30480000000000002;
+        Aref            0.30480000000000002;
+        liftDir         ( -0.040306184241054401 0 0.99918737557673643 );
+        dragDir         ( 0.99918737557673643 0 0.040306184241054401 );
+        CofR            ( 0.075850000000000001 0 0 );
+        pitchAxis       ( 0 1 0 );
+        writeInterval   10;
+    }
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

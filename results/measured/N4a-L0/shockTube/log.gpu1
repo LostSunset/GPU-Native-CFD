@@ -1,0 +1,6 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: /home/sclin/hisa-gpu-research-cases/shockTube-prepared/constant/polyMesh (ascii) nPoints 804 nCells 200 nFaces 1001 nInternalFaces 199 patches 3 fvBoundaryFaces 2
+time_s: read 0.000 gather 0.000 upload 0.143 geometry 0.000492 (informational; not a recorded measurement)
+repeat: 2/2 bitwise identical to the first run
+sum(V): sequential 39.999999999999957 tree 40
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L0/shockTube/gpu1.gnc

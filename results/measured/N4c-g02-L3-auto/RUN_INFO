@@ -1,0 +1,7 @@
+label=N4c-g02-L3-auto
+started_utc=2026-10-22T19:42:27Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime= 03:42:27 up 10 days, 18:18, 10 users,  load average: 104.07, 104.00, 105.04
+finished_utc=2026-10-22T19:43:57Z
+overall_exit=0

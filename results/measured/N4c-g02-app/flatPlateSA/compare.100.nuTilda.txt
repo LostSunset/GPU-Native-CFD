@@ -1,0 +1,10 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4c-g02-app/flatPlateSA/ref/100/nuTilda
+test: /ssd/sclin/gpu-native-cfd/runs/N4c-g02-app/flatPlateSA/gnc/100/nuTilda
+internalField                          8000  BITWISE
+patch freestream                         80  BITWISE
+patch inlet                             100  BITWISE
+patch outlet                              -  (no value: zeroGradient / zeroGradient)
+patch inviscidWall                        -  (no value: zeroGradient / zeroGradient)
+patch viscousWall                        60  BITWISE
+patch frontAndBack                        -  (no value: empty / empty)
+result: ALL BITWISE IDENTICAL

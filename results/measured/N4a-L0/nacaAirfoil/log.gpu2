@@ -1,0 +1,5 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: /home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation/constant/polyMesh (binary) nPoints 80860 nCells 40000 nFaces 160430 nInternalFaces 79570 patches 4 fvBoundaryFaces 860
+time_s: read 0.010 gather 0.001 upload 0.109 geometry 0.004461 (informational; not a recorded measurement)
+sum(V): sequential 370.88168509584114 tree 370.88168509584239
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L0/nacaAirfoil/gpu2.gnc

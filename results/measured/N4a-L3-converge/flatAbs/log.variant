@@ -1,0 +1,23 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         800;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+simulationType  laminar;
+laminar=1
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda nut alphat );
+        timeIndices     ( 1 50 100 );
+        atEnd           true;
+    }
+}
+pseudoTol       0.001 ( 0.001 0.001 0.001 ) 0.001;
+pseudoTol=1e-3

@@ -1,0 +1,142 @@
+=== 2026-10-23T17:20:17Z bash scripts/build.sh --host-env configs/hosts/g02-l40.env
+built_utc=2026-10-23T17:21:20Z
+host=g02 profile=g02-l40
+source_dir=/ssd/sclin/gpu-native-cfd/GPU-Native-CFD
+sync_atlas_commit=7d3fc31b22ec5749058f2ebeb318af1629ab6573
+sync_uncommitted_paths=7
+sync_synced_utc=2026-10-23T17:20:16Z
+source_sha256=587a0b4fbd34b91a834ca913771c2f7c68bc791bdb25757e31496640ffd6e399
+cmake=cmake version 3.28.3
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cuda_archs=89
+gnc_fmad=OFF
+cmake_exit=0 build_exit=0 ref_exit=0
+compiler_warnings=0
+ref_openfoam_bashrc=/opt/atlas-openfoam/current/OpenFOAM-v2606/etc/bashrc
+ref_openfoam_project=/opt/atlas-openfoam/current/OpenFOAM-v2606
+ref_wm_options=linux64GccDPInt32Opt
+ref_wmake_cxx=g++
+ref_wmake_cxxflags=-std=c++17 -m64 -pthread -DOPENFOAM=2606 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -DNoRepository -ftemplate-depth=1000 -fPIC
+geometry_cu_command=/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/gnc.dir/includes_CUDA.rsp -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_89,code=[compute_89,sm_89]" -prec-div=true -prec-sqrt=true --default-stream per-thread --fmad=false -Xcompiler=-ffp-contract=off,-Wall,-Wextra -x cu -c /ssd/sclin/gpu-native-cfd/GPU-Native-CFD/src/mesh/geometry.cu -o CMakeFiles/gnc.dir/src/mesh/geometry.cu.o
+sha256 gncCompare=ec05eeca9d57c24a96c11146e34e6dc4f0e0ec38e346c4900ef8b3458a46a3cd
+sha256 gncFieldDiff=32a43a727c68e4d70a61ba313422d39966458290e23529b6f04c38a7460ef09f
+sha256 gncGeomL0=4b25851b5276ba18ac1b7cd2f67e9411f2f6cb74a837aa20d2d7c172e415a183
+sha256 gncGeomRef=35cade17a39263e5e74722dd7b7b2b64ec6b355961c4f98555d5549865acb666
+sha256 gncHisa=f80b614d5a097277709ab170a33705aef27c91933abc828727959b337fc79115
+sha256 gncInitL2=94f1e807e5b10fd0884afe2260380cbc769265d4d4c427d58d07b4fd181d0607
+sha256 gncOpsL1=9791ce47ad21835d9241e09548d872c356113970f5fcfe9760e4891930f0dee7
+sha256 gncOpsRef=4974130c92b37eb54078d9fd78a319d8625f420e964f1e5a05278d3efa48285c
+sha256 gncOuterL2=ac2a1455097a3fb1573485bb85437b4a388ba11c7c1d7a7a17adaaf244d6e0df
+sha256 gncPowCheck=34738bffe5ce49cfa1920f62b33177cf00d439293990b29b72470b9419fa138d
+sha256 gncResL2=e9a85c728f4c6f334fb7713b75971cdaa1b9843f1e8f69b2336d3e418a5424c6
+sha256 gncRhoSimple=0ae847dccb95b1c8cebd6955724aad8adccc61b43fa8f6ba76386458de7bb118
+sha256 gncRhoSimpleRef=8c8009b85ea0eaf42fb17dfaaac60183035055461d9eb23e1e1251767ef1fae3
+sha256 gncRunL3=067742d0c5300941509f1b8032168fdbba504508ed678ec2ba85ec2979462b12
+sha256 gncSumBench=89880cb2508fe5850333ce9d43b7e1f1197d8e96be80be2f030e8b6c000c4f76
+sha256 gncTurbL2=3f694b274b95853d5dc576edd3bceff18acdd2d8dcf5c01b170d722a2c43ab26
+sha256 gncWallDistL1=c9257f7e3b855a52f921c70c85657593db676a21d335e2da262417ecf4b7d814
+sha256 libgncHisaDump.so=cbb8b732f431cbfc7574825e457fad975253826eef425cec8565522aaee68007
+sha256 libgncHisaJacobianDump.so=2503a15b6dfa53d16627dfd298c37836772a9a93647f300d2f438a4ed83b3e38
+=== exit=0
+sumbench rc=0 (0: every call identical)
+=== 2026-10-23T17:21:21Z bash scripts/rhosimple_verify.sh --host-env configs/hosts/g02-l40.env --label N6c-L3 --dump-steps 1,2,10,100,668 --case aerofoilNACA0012=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation
+== aerofoilNACA0012 (/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation)
+   ref rc=0 gpu exit=0; dumps 21/21 bitwise; fields 126/126 bitwise; gpu1 vs gpu2 identical
+case              nCells  last_ref  last_gpu  dumps  dumps_bitwise  fields  fields_bitwise  gpu1_vs_gpu2
+aerofoilNACA0012  16000   668       668       21     21             126     126             identical
+=== exit=0
+=== 2026-10-23T17:22:37Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N6c-reg-SST-L3 --end-default 200 --time-indices 1,2,10,50,100,200 --case nacaAirfoilSST=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation --meshwave nacaAirfoilSST
+== nacaAirfoilSST (/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation) endTime=200 timeIndices=1,2,10,50,100,200
+   ref=0 gpu=0/0 end=200/200 bitwise=7/7 gpu1_vs_gpu2=identical
+case            nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+nacaAirfoilSST  40000   200      0    0/0  200      200      7         7        identical
+=== exit=0
+=== 2026-10-23T17:24:29Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label N6c-reg-SA-L3 --end-default 200 --time-indices 1,2,10,50,100,200 --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=200 timeIndices=1,2,10,50,100,200
+   ref=0 gpu=0/0 end=200/200 bitwise=7/7 gpu1_vs_gpu2=identical
+case       nCells  endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+rae2822SA  23552   200      0    0/0  200      200      7         7        identical
+=== exit=0
+=== 2026-10-23T17:25:30Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6c-perf-r1 --iters 200 --variants gnc,gncfast,gncamg --case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation --gamg-case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation
+== r1 gnc (200 iterations)
+   rc=0 iterations=200 per_iter=0.032241 s clock=- s wall=6.76 s p_iters=61.0
+== r1 gncfast (200 iterations)
+   rc=0 iterations=200 per_iter=0.014369 s clock=- s wall=3.2 s p_iters=169.7
+== r1 gncamg (200 iterations)
+   rc=0 iterations=200 per_iter=0.005357 s clock=- s wall=1.39 s p_iters=11.0
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r1    gnc      16000   200         0.032241    -                 6.76    61.0
+r1    gncfast  16000   200         0.014369    -                 3.2     169.7
+r1    gncamg   16000   200         0.005357    -                 1.39    11.0
+=== exit=0
+=== 2026-10-23T17:25:57Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6c-perf-r2 --iters 100 --variants gnc,gncfast,gncamg --case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2-pcg/simulation --gamg-case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2/simulation
+== r2 gnc (100 iterations)
+   rc=0 iterations=100 per_iter=0.180219 s clock=- s wall=18.43 s p_iters=137.6
+== r2 gncfast (100 iterations)
+   rc=0 iterations=100 per_iter=0.032790 s clock=- s wall=3.69 s p_iters=428.4
+== r2 gncamg (100 iterations)
+   rc=0 iterations=100 per_iter=0.008859 s clock=- s wall=1.29 s p_iters=18.9
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r2    gnc      64000   100         0.180219    -                 18.43   137.6
+r2    gncfast  64000   100         0.032790    -                 3.69    428.4
+r2    gncamg   64000   100         0.008859    -                 1.29    18.9
+=== exit=0
+=== 2026-10-23T17:26:36Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6c-perf-r4 --iters 50 --variants gnc,gncfast,gncamg --case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4-pcg/simulation --gamg-case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4/simulation
+== r4 gnc (50 iterations)
+   rc=0 iterations=50 per_iter=1.391792 s clock=- s wall=70.43 s p_iters=324.5
+== r4 gncfast (50 iterations)
+   rc=0 iterations=50 per_iter=0.094244 s clock=- s wall=5.54 s p_iters=980.6
+== r4 gncamg (50 iterations)
+   rc=0 iterations=50 per_iter=0.019068 s clock=- s wall=1.77 s p_iters=31.7
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r4    gnc      256000  50          1.391792    -                 70.43   324.5
+r4    gncfast  256000  50          0.094244    -                 5.54    980.6
+r4    gncamg   256000  50          0.019068    -                 1.77    31.7
+=== exit=0
+=== 2026-10-23T17:28:10Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6c-perf-r8 --iters 30 --iters-for gnc=10 --variants gnc,gncfast,gncamg --case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8-pcg/simulation --gamg-case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8/simulation
+== r8 gnc (10 iterations)
+   rc=0 iterations=10 per_iter=7.669603 s clock=- s wall=79.26 s p_iters=646.2
+== r8 gncfast (30 iterations)
+   rc=0 iterations=30 per_iter=0.295819 s clock=- s wall=11.48 s p_iters=1000.0
+== r8 gncamg (30 iterations)
+   rc=0 iterations=30 per_iter=0.076535 s clock=- s wall=5.07 s p_iters=44.7
+case  variant  nCells   iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r8    gnc      1024000  10          7.669603    -                 79.26   646.2
+r8    gncfast  1024000  30          0.295819    -                 11.48   1000.0
+r8    gncamg   1024000  30          0.076535    -                 5.07    44.7
+=== exit=0
+=== 2026-10-23T17:30:02Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6c-perf-conv --iters 1000 --variants gnc,gncamg --case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation --gamg-case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation
+== r1 gnc (1000 iterations)
+   rc=0 iterations=668 per_iter=0.030095 s clock=- s wall=20.4 s p_iters=54.7
+== r1 gncamg (1000 iterations)
+   rc=0 iterations=678 per_iter=0.005418 s clock=- s wall=4 s p_iters=11.2
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r1    gnc      16000   668         0.030095    -                 20.4    54.7
+r1    gncamg   16000   678         0.005418    -                 4       11.2
+=== exit=0
+--- of1 (668) vs gnc (668)
+A=/ssd/sclin/gpu-native-cfd/runs/N6-perf-conv/r1/of1/668
+B=/ssd/sclin/gpu-native-cfd/runs/N6c-perf-conv/r1/gnc/668
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               16000           8.956357e-01           6.237889e-06           8.877478e-07
+T               16000           1.066052e-03           3.252096e-06           2.500490e-07
+U               48000           2.778786e-03           8.033075e-06           8.435183e-07
+rho             16000           9.250895e-06           6.068387e-06           6.962045e-07
+k               16000           3.808311e-03           4.144132e-06           3.557409e-06
+omega           16000           4.666637e-01           4.192687e-06           4.026297e-06
+nut             16000           5.822758e-08           3.528772e-06           2.953440e-06
+alphat          16000           6.744113e-08           3.295107e-06           2.917375e-06
+--- of1 (668) vs gncamg (678)
+A=/ssd/sclin/gpu-native-cfd/runs/N6-perf-conv/r1/of1/668
+B=/ssd/sclin/gpu-native-cfd/runs/N6c-perf-conv/r1/gncamg/678
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               16000           3.186085e+01           2.219032e-04           7.377697e-05
+T               16000           4.797170e-02           1.463423e-04           3.398232e-05
+U               48000           1.160985e-01           3.356243e-04           8.987183e-05
+rho             16000           3.976005e-04           2.608173e-04           8.411669e-05
+k               16000           6.692969e-01           7.283164e-04           5.876708e-04
+omega           16000           6.861391e+01           6.164537e-04           3.924465e-04
+nut             16000           7.018189e-06           4.253241e-04           4.512007e-04
+alphat          16000           1.019104e-05           4.979242e-04           4.824460e-04
+=== done 2026-10-23T17:30:38Z

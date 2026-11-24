@@ -1,0 +1,7 @@
+run	loop iterations	loop s	s per iteration	mean power W	above idle W	J per iteration
+idle				34.6		
+finnerSST-fast	64	21.0	0.3280	235.9	201.3	76.864
+m6-fast	1049	25.6	0.0244	230.9	196.2	5.606
+m6-ref	109	22.8	0.2088	118.1	83.4	24.555
+rho-r8-fast	330	19.0	0.0577	231.8	197.2	13.308
+rho-r8-ref	25	190.0	7.6012	103.0	68.4	782.430

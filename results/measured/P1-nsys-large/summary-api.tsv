@@ -1,0 +1,13 @@
+run	API	calls per iteration	ms per iteration
+gncRhoSimple -fast, 4,096,000 cells	cudaStreamSynchronize_ptsz	85.6	349.343
+gncRhoSimple -fast, 4,096,000 cells	cudaMemcpy_ptds	13.0	18.502
+gncRhoSimple -fast, 4,096,000 cells	cudaLaunchKernel_ptsz	1185.0	4.354
+gncRhoSimple -fast, 4,096,000 cells	cudaGraphLaunch_v10000	68.6	3.499
+gncRhoSimple -fast, 4,096,000 cells	cuKernelGetName	1185.0	0.212
+gncRhoSimple -fast, 4,096,000 cells	cudaMemset_ptds	2.0	0.027
+gncRhoSimple -fast, 16,384,000 cells	cudaMemcpy_ptds	500.2	1997.474
+gncRhoSimple -fast, 16,384,000 cells	cudaStreamSynchronize_ptsz	3.0	23.078
+gncRhoSimple -fast, 16,384,000 cells	cudaLaunchKernel_ptsz	2227.6	9.982
+gncRhoSimple -fast, 16,384,000 cells	cudaGraphLaunch_v10000	84.8	7.387
+gncRhoSimple -fast, 16,384,000 cells	cuKernelGetName	2227.6	0.546
+gncRhoSimple -fast, 16,384,000 cells	cudaMemset_ptds	2.0	0.021

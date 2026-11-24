@@ -1,0 +1,9 @@
+label=HYB-g02-finner
+started_utc=2026-10-23T07:09:24Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+cpu=AMD EPYC 9684X 96-Core Processor nproc=192
+uptime_before= 15:09:24 up 11 days,  5:45,  9 users,  load average: 103.32, 103.91, 105.09
+endTime=5 np_list=none mpirun_opts=--bind-to none decomp=metis
+uptime_after= 15:10:40 up 11 days,  5:46,  9 users,  load average: 104.24, 104.07, 105.05
+finished_utc=2026-10-23T07:10:40Z

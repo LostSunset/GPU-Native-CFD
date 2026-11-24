@@ -1,0 +1,89 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "0/k"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           volScalarField;
+    object          k;
+}
+
+kInlet          0.01;
+
+dimensions      [ 0 2 -2 0 0 0 0 ];
+
+internalField   uniform 0.01;
+
+boundaryField
+{
+    freestream
+    {
+        type            inletOutlet;
+        inletValue      uniform 0.01;
+        value           uniform 0.01;
+    }
+    wall
+    {
+        type            kqRWallFunction;
+        value           uniform 0.01;
+    }
+    cyclic
+    {
+        type            cyclic;
+    }
+    cyclicAMI
+    {
+        type            cyclicAMI;
+        value           uniform 0.01;
+    }
+    cyclicACMI
+    {
+        type            cyclicACMI;
+        value           uniform 0.01;
+    }
+    cyclicSlip
+    {
+        type            cyclicSlip;
+    }
+    empty
+    {
+        type            empty;
+    }
+    nonuniformTransformCyclic
+    {
+        type            nonuniformTransformCyclic;
+    }
+    processor
+    {
+        type            processor;
+    }
+    processorCyclic
+    {
+        type            processorCyclic;
+    }
+    symmetryPlane
+    {
+        type            symmetryPlane;
+    }
+    symmetry
+    {
+        type            symmetry;
+    }
+    wedge
+    {
+        type            wedge;
+    }
+    overset
+    {
+        type            overset;
+    }
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

@@ -1,0 +1,41 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/MUT-fmad/aerofoilNACA0012/ref/dump/1.E.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/MUT-fmad/aerofoilNACA0012/gpu1/dump/1.E.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="1" test="1"
+p.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+p.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.i                            f64        16000    1        2141    1.137e-13    3.816e-16            2  DIFF
+    first at value 2 (tuple 2 comp 0): ref 298.00000501049016 test 298.00000501049021
+T.b                            f64          480    1          33    1.137e-13    3.816e-16            2  DIFF
+    first at value 16 (tuple 16 comp 0): ref 298.00268560377577 test 298.00268560377583
+U.i                            f64        16000    3       20795    8.527e-14    1.771e+00 8769381074270872459  DIFF
+    first at value 2 (tuple 0 comp 2): ref -0.00012864236259818194 test -0.00012864236256424346
+U.b                            f64          480    3         439    5.684e-14    1.771e+00 8758090902336261589  DIFF
+    first at value 362 (tuple 120 comp 2): ref 1.1265033364071016e-16 test -9.0064850476353187e-16
+e.i                            f64        16000    1        6755    5.821e-11    6.775e-16            4  DIFF
+    first at value 0 (tuple 0 comp 0): ref -85880.808269343033 test -85880.808269343019
+e.b                            f64          480    1          85    5.821e-11    6.775e-16            4  DIFF
+    first at value 0 (tuple 0 comp 0): ref -85880.808269343033 test -85880.808269343019
+h.missing                      text  ref="h" test="h"
+thermo:psi.i                   f64        16000    1        2141    6.776e-21    5.809e-16            4  DIFF
+    first at value 2 (tuple 2 comp 0): ref 1.1663986203029251e-05 test 1.1663986203029249e-05
+thermo:psi.b                   f64          480    1          33    6.776e-21    5.809e-16            4  DIFF
+    first at value 16 (tuple 16 comp 0): ref 1.1663881283159032e-05 test 1.1663881283159028e-05
+thermo:alpha.i                 f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:alpha.b                 f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.i                    f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.b                    f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.i                          f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64        31760    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64          480    1          16    0.000e+00    0.000e+00            0  DIFF
+    first at value 93 (tuple 93 comp 0): ref 0 test -0
+k.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.b                        f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+result: DIFFERENCES

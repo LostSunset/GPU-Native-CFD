@@ -1,0 +1,123 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 00:42:53
+Host   : g02
+PID    : 1183723
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/nacaAirfoilLaminar/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0.01 (0.01 0.01 0.01) 0.01 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+forceCoeffs forces:
+    rho: rhoInf
+    Freestream density (rhoInf) set to 1
+    Not including porosity effects
+    magUInf: 618.022
+    lRef   : 1
+    Aref   : 1
+    rhoInf : 1
+    Selecting all coefficients
+    - Drag force: Cd
+    - Drag force front: Cd(f)
+    - Drag force rear: Cd(r)
+    - Lift force: Cl
+    - Lift force front: Cl(f)
+    - Lift force rear: Cl(r)
+    - Pitch moment: CmPitch
+    - Roll moment: CmRoll
+    - Yaw moment: CmYaw
+    - Side force: Cs
+    - Side force front: Cs(f)
+    - Side force rear: Cs(r)
+
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 2.01512e-08 Mean: 1.96395e-05 Max: 0.000692452
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.97078 0.239814 1.66038e-14) 1 
+  GMRES iteration: 1   Residual: 8.51946e-08 (7.97637e-08 3.97183e-08 0) 7.67758e-08 
+ExecutionTime = 0.43 s  ExecutionStepTime = 0.37 s  ClockTime = 1 s
+
+forceCoeffs forces write:
+    Coefficient	Total	Pressure	Viscous	Internal
+    Cd:	0.129831	0.123621	0.00620958	0
+    Cd(f):	-0.10134	-0.104255	0.00291497	0
+    Cd(r):	0.231171	0.227876	0.00329462	0
+    Cl:	0.332511	0.332131	0.000379651	0
+    Cl(f):	-0.024687	-0.0240577	-0.000629335	0
+    Cl(r):	0.357198	0.356189	0.00100899	0
+    CmPitch:	-0.190942	-0.190123	-0.00081916	0
+    CmRoll:	-0.166255	-0.166065	-0.000189825	0
+    CmYaw:	0.0649153	0.0618105	0.00310479	0
+    Cs:	-4.82828e-15	-2.86497e-21	-4.82828e-15	0
+    Cs(f):	0.0649153	0.0618105	0.00310479	0
+    Cs(r):	-0.0649153	-0.0618105	-0.00310479	0
+
+    writing force and moment coefficient files.
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/nacaAirfoilLaminar/ref/1.gnc"
+End
+

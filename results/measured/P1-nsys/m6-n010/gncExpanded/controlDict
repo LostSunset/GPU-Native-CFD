@@ -1,0 +1,51 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "system/controlDict"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    location        "system";
+    object          controlDict;
+}
+
+application     hisa;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         10;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   1000000;
+
+purgeWrite      4;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+graphFormat     raw;
+
+runTimeModifiable yes;
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

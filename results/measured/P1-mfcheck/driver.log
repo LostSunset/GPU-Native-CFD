@@ -1,0 +1,21 @@
+=== 2026-10-26T07:39:36Z waiting for pid 1645505
+=== 2026-10-26T13:22:37Z GPU3 free
+=== 2026-10-26T13:22:37Z build
+=== 2026-10-26T13:23:28Z P1-mfcheck
+== modifiedFinnerSST (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=5
+case               nCells   variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+modifiedFinnerSST  3940188  ref      0     36.2279  7.24558          5                 0.227791       2.77958
+modifiedFinnerSST  3940188  fast     0     24.1074  4.82148          5                 0.227788       0.587114
+-- /ssd/sclin/gpu-native-cfd/runs/P1-mfcheck/modifiedFinnerSST/fielddiff.ref-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/P1-mfcheck/modifiedFinnerSST/ref/5
+B=/ssd/sclin/gpu-native-cfd/runs/P1-mfcheck/modifiedFinnerSST/fast/5
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p             3940188           1.842647e+03           1.116433e-02           4.462134e-05
+T             3940188           7.547453e+00           2.017270e-02           4.493662e-05
+U            11820564           1.808042e+01           1.401439e-02           3.766063e-05
+rho           3940188           1.400389e-02           9.112163e-03           2.660407e-05
+k             3940188           5.400373e+02           1.342851e-01           2.866491e-03
+omega         3940188           5.110608e+09           7.207481e-04           8.631123e-04
+nut           3940188           7.851500e-04           6.080179e-01           1.129219e-02
+alphat        3940188           9.440422e-04           6.071199e-01           1.115387e-02
+=== 2026-10-26T13:25:28Z done

@@ -1,0 +1,172 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 25 2026
+Time   : 17:50:41
+Host   : g02
+PID    : 454943
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/MF-g02-hyb-sst/modifiedFinnerSSTHybrid/hisa-np1
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod Poisson
+GAMG:  Solving for yPsi, Initial residual = 1, Final residual = 8.8846005e-07, No Iterations 19
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.55555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.1539603e-12 Mean: 1.0611705e-06 Max: 0.00016154144
+GMRESGPU: device 0 NVIDIA L40 (sm_89), libhisaGpuKernels API 11, fmad 0
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 1 (0.9997667 0.0013085982 0.017647514) 1 
+  GMRES iteration: 1   Residual: 1.3906948e-06 (1.9323548e-06 9.4062629e-07 9.4253769e-07) 1.6993733e-05 
+  GMRESGPU timing: pack_s 0.12693577 upload_s 0.29840592 setup_s 0.31912498 begin_s 0.017350076 solve_s 0.26957944 download_s 0.096689915 cycles 1 colours 7 h2d_MB 706.01596 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.40672452 normFactor gpu assembly gpu-whole lf_s 2.3623484 lf_kernel_s 0.2280985
+smoothSolver:  Solving for omega, Initial residual = 0.00016749633, Final residual = 6.9406274e-07, No Iterations 1
+bounding omega, min: -5.9778087e+08 max: 6.1626306e+12 average: 1.3157729e+08
+smoothSolver:  Solving for k, Initial residual = 1, Final residual = 0.0069789032, No Iterations 1
+ExecutionTime = 68.8 s  ExecutionStepTime = 36.5 s  ClockTime = 69 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.99189334 Max: 1
+Pseudo deltaT: Min: 6.010487e-13 Mean: 1.0611643e-06 Max: 0.00016154144
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.5117985 (0.314343 0.05592839 0.059857796) 0.34266475 
+  GMRES iteration: 1   Residual: 1.0225183e-08 (8.8114456e-09 2.2427699e-10 3.1694523e-10) 1.0105229e-08 
+  GMRESGPU timing: pack_s 0.072260765 upload_s 0.39992394 setup_s 0.00974208 begin_s 0.016600073 solve_s 0.26910873 download_s 0.058854365 cycles 1 colours 7 h2d_MB 567.41606 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.31467375 normFactor gpu assembly gpu-whole lf_s 0.56923054 lf_kernel_s 0.2269983
+smoothSolver:  Solving for omega, Initial residual = 7.3705224e-05, Final residual = 2.9801385e-07, No Iterations 1
+bounding omega, min: -679128.56 max: 6.4068186e+12 average: 1.3412676e+08
+smoothSolver:  Solving for k, Initial residual = 0.22344384, Final residual = 0.0012713349, No Iterations 1
+ExecutionTime = 107.26 s  ExecutionStepTime = 38.46 s  ClockTime = 107 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2295363 Max: 1.25
+Pseudo deltaT: Min: 3.8148976e-13 Mean: 1.3264469e-06 Max: 0.0002019268
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.3095412 (0.19135922 0.04404868 0.04625271) 0.2064343 
+  GMRES iteration: 1   Residual: 3.1328006e-08 (2.6028657e-08 1.0321175e-09 1.2797561e-09) 3.0125429e-08 
+  GMRESGPU timing: pack_s 0.16960989 upload_s 0.58874742 setup_s 0.009841612 begin_s 0.10293332 solve_s 0.2695184 download_s 0.079320277 cycles 1 colours 7 h2d_MB 567.41606 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.47539188 normFactor gpu assembly gpu-whole lf_s 0.43000895 lf_kernel_s 0.22770874
+smoothSolver:  Solving for omega, Initial residual = 5.3486907e-05, Final residual = 2.8929076e-07, No Iterations 1
+bounding omega, min: -1577362.2 max: 6.6566606e+12 average: 1.3895767e+08
+smoothSolver:  Solving for k, Initial residual = 0.11554629, Final residual = 0.00085798295, No Iterations 1
+ExecutionTime = 142.4 s  ExecutionStepTime = 35.14 s  ClockTime = 142 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.5625
+Damped pseudo Courant No: Min: 0.1953125 Mean: 1.5507944 Max: 1.5625
+Pseudo deltaT: Min: 2.4014219e-13 Mean: 1.6580705e-06 Max: 0.00025240849
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.25784426 (0.16327484 0.040710363 0.042164541) 0.16778662 
+  GMRES iteration: 1   Residual: 1.0138273e-07 (8.4952425e-08 3.8700198e-09 4.7725839e-09) 9.7975105e-08 
+  GMRESGPU timing: pack_s 0.15756022 upload_s 0.56023391 setup_s 0.009782471 begin_s 0.013888952 solve_s 0.26929979 download_s 0.055638428 cycles 1 colours 7 h2d_MB 567.41606 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.35756859 normFactor gpu assembly gpu-whole lf_s 0.41665046 lf_kernel_s 0.2273434
+smoothSolver:  Solving for omega, Initial residual = 4.2312811e-05, Final residual = 3.1023373e-07, No Iterations 1
+bounding omega, min: -9102046.9 max: 6.9124459e+12 average: 1.4380596e+08
+smoothSolver:  Solving for k, Initial residual = 0.071033704, Final residual = 0.00071563332, No Iterations 1
+ExecutionTime = 172.97 s  ExecutionStepTime = 30.57 s  ClockTime = 173 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.953125
+Damped pseudo Courant No: Min: 0.125 Mean: 1.9216512 Max: 1.953125
+Pseudo deltaT: Min: 6.0292976e-13 Mean: 2.072574e-06 Max: 0.00031551062
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.22779062 (0.14175816 0.036101161 0.037102422) 0.15334812 
+  GMRES iteration: 1   Residual: 2.5365613e-07 (2.0823816e-07 9.7780484e-09 1.1665089e-08) 2.5990622e-07 
+  GMRESGPU timing: pack_s 0.072104653 upload_s 0.29392347 setup_s 0.009764151 begin_s 0.014537735 solve_s 0.26933143 download_s 0.056474097 cycles 1 colours 7 h2d_MB 567.41606 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.3099967 normFactor gpu assembly gpu-whole lf_s 0.3522393 lf_kernel_s 0.22706804
+smoothSolver:  Solving for omega, Initial residual = 3.7488194e-05, Final residual = 3.2738689e-07, No Iterations 1
+bounding omega, min: -1911882.1 max: 7.0906987e+12 average: 1.5019907e+08
+smoothSolver:  Solving for k, Initial residual = 0.045039969, Final residual = 0.00060633772, No Iterations 1
+ExecutionTime = 202.89 s  ExecutionStepTime = 29.92 s  ClockTime = 203 s
+
+End
+

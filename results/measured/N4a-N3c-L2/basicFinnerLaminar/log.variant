@@ -1,0 +1,34 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forces
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forcesNormAxial
+startFrom       startTime;
+startTime       0;
+endTime         1;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+simulationType  laminar;
+laminar=1
+libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaJacobianDump.so" );
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/basicFinnerLaminar/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping );
+    }
+}
+solver=GMRES
+preconditioner  gncLUSGSDump;
+gncLUSGSDump
+{
+    outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/basicFinnerLaminar/ref";
+}

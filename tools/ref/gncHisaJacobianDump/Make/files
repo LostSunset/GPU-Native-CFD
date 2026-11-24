@@ -1,0 +1,3 @@
+gncLusgsDump.C
+
+LIB = $(GNC_REF_LIB)/libgncHisaJacobianDump

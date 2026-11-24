@@ -1,0 +1,2 @@
+mesh: nCells 8000 wallFaces 80 nUnset 0
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-walldist-L1/flatPlate/gpu.gnc

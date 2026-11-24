@@ -1,0 +1,8 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-app/nacaAirfoilLaminar/ref/20/T
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-app/nacaAirfoilLaminar/gnc/20/T
+internalField                         40000  BITWISE
+patch inlet_1                           400  BITWISE
+patch outlet_2                          200  BITWISE
+patch symplane_3                          -  (no value: empty / empty)
+patch wall_4                            260  BITWISE
+result: ALL BITWISE IDENTICAL

@@ -1,0 +1,119 @@
+source=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+variant=MCBSGS-jgpu (HiSA-GPU-Research G2-CLEAN-2)
+--- /home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation/system/fvSolution	2026-04-01 20:20:43.000000000 +0800
++++ /ssd/sclin/gpu-native-cfd/cases/oneraM6-hybrid-MCBSGS-jgpu/simulation/system/fvSolution	2026-10-23 14:55:13.126733121 +0800
+@@ -1,19 +1,19 @@
+ /*--------------------------------*- C++ -*----------------------------------*\
+-|                                                                             |
+-|    HiSA: High Speed Aerodynamic solver                                      |
+-|    Copyright (C) 2014-2017 Johan Heyns - CSIR, South Africa                 |
+-|    Copyright (C) 2014-2017 Oliver Oxtoby - CSIR, South Africa               |
+-|                                                                             |
++| =========                 |                                                 |
++| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
++|  \\    /   O peration     | Version:  2606                                  |
++|   \\  /    A nd           | Website:  www.openfoam.com                      |
++|    \\/     M anipulation  |                                                 |
+ \*---------------------------------------------------------------------------*/
++// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ FoamFile
+ {
+-    version     2.0;
+-    format      ascii;
+-    class       dictionary;
+-    location    "system";
+-    object      fvSolution;
++    version         2;
++    format          ascii;
++    class           dictionary;
++    location        "system";
++    object          fvSolution;
+ }
+-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+ solvers
+ {
+@@ -21,19 +21,19 @@
+     {
+         solver          smoothSolver;
+         smoother        symGaussSeidel;
+-        tolerance       1e-6;
++        tolerance       1e-06;
+         relTol          0.1;
+         minIter         1;
+     }
+-
+     "(k|omega|nuTilda|rPseudoDeltaT)Final"
+     {
+-        $nuTilda;
+-        tolerance       1e-6;
+-        reltol          0.1;
++        solver          smoothSolver;
++        smoother        symGaussSeidel;
++        tolerance       1e-06;
++        relTol          0.1;
+         minIter         1;
++        reltol          0.1;
+     }
+-
+     yPsi
+     {
+         solver          GAMG;
+@@ -42,7 +42,7 @@
+         nCellsInCoarsestLevel 10;
+         agglomerator    faceAreaPair;
+         mergeLevels     1;
+-        tolerance       1e-8;
++        tolerance       1e-08;
+         relTol          0;
+     }
+ }
+@@ -57,25 +57,37 @@
+ 
+ flowSolver
+ {
+-    solver            GMRES;
++    solver          GMRESGPU;
+     GMRES
+     {
+         inviscidJacobian LaxFriedrichs;
+-        viscousJacobian  laplacian;
+-        preconditioner   LUSGS;
+-
+-        maxIter          20;
+-        nKrylov          8;
+-        solverTolRel     1e-1 (1e-1 1e-1 1e-1) 1e-1;
++        viscousJacobian laplacian;
++        preconditioner  LUSGS;
++        maxIter         20;
++        nKrylov         8;
++        solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
++    }
++    GMRESGPU
++    {
++        inviscidJacobian LaxFriedrichsGPU;
++        viscousJacobian laplacianGPU;
++        preconditioner  MCBSGS;
++        maxIter         20;
++        nKrylov         8;
++        solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
++        matrixPrecision double;
++        packing         gpu;
++        device          0;
+     }
+ }
+ 
+ pseudoTime
+ {
+-    pseudoTol          1e-6 (1e-6 1e-6 1e-6) 1e-6;
+-    pseudoCoNum        0.1;
+-    pseudoCoNumMax     20;
+-    localTimestepping  true;
++    pseudoTol       1e-06 ( 1e-06 1e-06 1e-06 ) 1e-06;
++    pseudoCoNum     0.1;
++    pseudoCoNumMax  20;
++    localTimestepping true;
+ }
+ 
++
+ // ************************************************************************* //

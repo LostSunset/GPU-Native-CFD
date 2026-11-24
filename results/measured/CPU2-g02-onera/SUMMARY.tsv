@@ -1,0 +1,5 @@
+case	nCells	run	exit	cpu_s	wall_s	wall_per_step_s
+oneraM6SA	-	hisa-np1	0	76.88	77	3.85
+oneraM6SA	-	hisa-np8	0	12.74	13	0.65
+oneraM6SA	-	hisa-np32	0	3.63	4	0.2
+oneraM6SA	294912	gncHisa	0	-	5.47298	0.273649

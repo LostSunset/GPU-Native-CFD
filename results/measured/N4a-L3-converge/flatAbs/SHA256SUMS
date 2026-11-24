@@ -1,0 +1,12 @@
+ff8e0bfa12b3a3381303c0cb5175b2a62e3a682a2522b4f897a8e34a41f8ed05  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/ref/state/100.gnc
+1d5324daef5f17a5d60012f7fd37139acb7d12aed0cfff28ad216cd392b4f7e5  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/ref/state/1.gnc
+61452600b267b5925c5be06dc603b9a7e99732c5d36743549c7078e48ba2662d  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/ref/state/50.gnc
+5298cdb0dfa3eb6e270dd53a9a66c4cd48af2952ae697af40da35ce2fd06e7d6  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/ref/state/end.gnc
+8909e170871f87aa304a0ff927c6b73fe9c194f8b29d4a18bba80fb436f21a03  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu1/100.gnc
+2b071c308e9399a249cf6a1f0f6bd59d85a150c7c95b87cd3b7b68027caf6ef4  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu1/1.gnc
+9aacd28b766f3ea3c843ae87e22e404b365bae6b30d8cdcfe648dcf62be08a4f  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu1/50.gnc
+5fcadde7f3288b7c25891a20e026abb57433ce19e8c64f3ca0926a3e84434cf1  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu1/end.gnc
+8909e170871f87aa304a0ff927c6b73fe9c194f8b29d4a18bba80fb436f21a03  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu2/100.gnc
+2b071c308e9399a249cf6a1f0f6bd59d85a150c7c95b87cd3b7b68027caf6ef4  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu2/1.gnc
+9aacd28b766f3ea3c843ae87e22e404b365bae6b30d8cdcfe648dcf62be08a4f  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu2/50.gnc
+5fcadde7f3288b7c25891a20e026abb57433ce19e8c64f3ca0926a3e84434cf1  /ssd/sclin/gpu-native-cfd/runs/N4a-L3-converge/flatAbs/gpu2/end.gnc

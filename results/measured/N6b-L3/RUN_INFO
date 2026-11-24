@@ -1,0 +1,7 @@
+label=N6b-L3
+started_utc=2026-10-23T15:18:45Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+dump_steps=1,2,10,100,668
+uptime= 23:18:45 up 11 days, 13:54,  9 users,  load average: 103.84, 104.30, 105.15
+finished_utc=2026-10-23T15:19:59Z

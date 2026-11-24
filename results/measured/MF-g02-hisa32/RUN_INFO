@@ -1,0 +1,9 @@
+label=MF-g02-hisa32
+started_utc=2026-10-25T11:10:20Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+cpu=AMD EPYC 9684X 96-Core Processor nproc=192
+uptime_before= 19:10:20 up 13 days,  9:46, 10 users,  load average: 120.05, 120.22, 120.31
+endTime=1000 np_list=32 mpirun_opts=--bind-to none decomp=metis
+uptime_after= 20:27:00 up 13 days, 11:03, 11 users,  load average: 151.35, 151.45, 151.20
+finished_utc=2026-10-25T12:27:00Z

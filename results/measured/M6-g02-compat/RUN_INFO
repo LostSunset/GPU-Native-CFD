@@ -1,0 +1,10 @@
+label=M6-g02-compat
+started_utc=2026-10-23T06:44:17Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 14:44:17 up 11 days,  5:20,  9 users,  load average: 105.25, 108.40, 110.21
+endTime=2000
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+variant fastFixed: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto GNC_FOAM_COMPAT=off
+uptime_after= 14:46:15 up 11 days,  5:22,  9 users,  load average: 104.30, 107.05, 109.51
+finished_utc=2026-10-23T06:46:15Z

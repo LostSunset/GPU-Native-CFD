@@ -1,0 +1,12 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4b-poisson-L1/nacaAirfoil/ref/0.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4b-poisson-L1/nacaAirfoil/gpu.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncHisaDump" test="gncWallDistL1 (Poisson)"
+time                           text  ref="0" test="(none)"
+timeIndex                      text  ref="0" test="(none)"
+yWall.i                        f64        40000    1       39951    1.136e+01    7.564e-01 9171767133846680  DIFF
+    first at value 0 (tuple 0 comp 0): ref 20.088612518226164 test 20.432204625085223
+yWall.b                        f64          860    1         600    1.506e+00    1.919e-01 1618387087709280  DIFF
+    first at value 0 (tuple 0 comp 0): ref 20.088612518226164 test 20.432204625085223
+yWall.nUnset                   i32            1    1  test only
+result: DIFFERENCES

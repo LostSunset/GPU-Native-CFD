@@ -1,0 +1,7 @@
+# 全部檔案都在 Linux（g02、WSL ext4）上使用：不論 Windows checkout 的
+# core.autocrlf，一律保持 LF（sync_g02.sh 直接把工作目錄打包送到 g02）。
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.pptx binary
+*.pdf binary

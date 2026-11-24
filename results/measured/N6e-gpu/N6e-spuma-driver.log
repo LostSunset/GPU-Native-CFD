@@ -1,0 +1,28 @@
+=== 2026-10-26T00:53:27Z waiting for pid 1159290
+=== 2026-10-26T01:35:27Z waiting up to 120 s for 'n1[2]_g02' to start
+=== 2026-10-26T01:37:28Z waiting for 'n1[2]_g02' to finish ()
+=== 2026-10-26T01:40:29Z GPU3 free; load 103.11 104.77 105.03
+=== 2026-10-26T01:40:29Z build
+=== 2026-10-26T01:41:18Z bash scripts/paper_extra_g02.sh --phases nsyslarge --no-gpu-wait
+=== 2026-10-26T01:41:18Z GPU3 free
+=== 2026-10-26T01:41:18Z build
+=== 2026-10-26T01:42:10Z P1-nsys-large
+rho-r16-n010 rc=0
+rho-r16-n020 rc=0
+rho-r32-n005 rc=0
+rho-r32-n010 rc=0
+=== 2026-10-26T01:45:40Z done
+=== exit=0
+=== 2026-10-26T01:45:40Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-paper.env --label N6e-spuma-r16 --iters 3 --variants spuma --spuma-pool 16 --case r16=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r16-pcg/simulation --gamg-case r16=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r16/simulation
+== r16 spuma (3 iterations) start_epoch=1792979140.575658855
+   rc=0 iterations=3 per_iter=376.395000 s clock=940.500 s wall=3519.58 s p_iters=355.7 end_epoch=1792982663.188740808
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s   p_iters_mean
+r16   spuma    -       3           376.395000  940.500           3519.58  355.7
+=== exit=0
+=== 2026-10-26T02:44:23Z bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-paper.env --label N6e-spuma-r32 --iters 3 --variants spuma --spuma-pool 40 --case r32=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r32-pcg/simulation --gamg-case r32=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r32/simulation
+== r32 spuma (3 iterations) start_epoch=1792982663.620587936
+   rc=0 iterations=3 per_iter=2160.635000 s clock=3807.000 s wall=14578 s p_iters=705.7 end_epoch=1792997244.912405374
+case  variant  nCells  iterations  per_iter_s   per_iter_clock_s  wall_s  p_iters_mean
+r32   spuma    -       3           2160.635000  3807.000          14578   705.7
+=== exit=0
+=== 2026-10-26T06:47:25Z done

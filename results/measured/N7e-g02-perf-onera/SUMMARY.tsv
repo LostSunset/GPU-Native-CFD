@@ -1,0 +1,3 @@
+case	nCells	variant	exit	wall_s	wall_per_step_s	gmres_iter_total	final_res_rho	profile_mean_s
+oneraM6SA	294912	ref	0	8.50868	0.283623	30	0.0421254	0.230647
+oneraM6SA	294912	fast	0	2.48811	0.082937	30	0.0421295	0.0321142

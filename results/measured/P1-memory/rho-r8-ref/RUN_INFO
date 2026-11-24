@@ -1,0 +1,6 @@
+case=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8-pcg/simulation
+solver=gncRhoSimple
+flags=
+pid=1121112
+rc=0
+peak_MiB=2092

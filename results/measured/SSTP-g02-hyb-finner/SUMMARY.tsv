@@ -1,0 +1,2 @@
+case	nCells	run	exit	cpu_s	wall_s	wall_per_step_s	shell_wall_s	loop_per_step_s
+basicFinnerSSTHybrid	-	hisa-np1	0	96.65	96	19.2	98.4457	15.79

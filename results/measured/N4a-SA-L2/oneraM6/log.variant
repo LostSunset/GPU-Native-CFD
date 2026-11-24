@@ -1,0 +1,18 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         100;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-SA-L2/oneraM6/ref/state";
+        fields          ( U rho thermo:mu phi rPseudoDeltaT nuTilda nut alphat );
+        timeIndices     ( 1 2 3 9 10 29 30 99 100 );
+    }
+}

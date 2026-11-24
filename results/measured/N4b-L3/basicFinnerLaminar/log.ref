@@ -1,0 +1,265 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 17:00:53
+Host   : g02
+PID    : 3020987
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4b-L3/basicFinnerLaminar/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.5721183e-10 Mean: 1.4305044e-06 Max: 7.4587218e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.99929004 0.00046877859 0.034771541) 1 
+  GMRES iteration: 1   Residual: 2.6996284e-07 (3.5343411e-07 3.8067063e-08 4.4300812e-08) 2.9872187e-07 
+ExecutionTime = 64.36 s  ExecutionStepTime = 54.59 s  ClockTime = 65 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field k not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field omega not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-L3/basicFinnerLaminar/ref/state/1.gnc"
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.98560116 Max: 1
+Pseudo deltaT: Min: 7.7777669e-11 Mean: 1.4304972e-06 Max: 7.4587218e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.5461725 (0.35328117 0.021520045 0.029956812) 0.31507157 
+  GMRES iteration: 1   Residual: 2.0074344e-09 (1.7316566e-09 2.9062327e-10 3.8539479e-10) 1.1468408e-09 
+ExecutionTime = 115.77 s  ExecutionStepTime = 51.41 s  ClockTime = 116 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field k not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field omega not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-L3/basicFinnerLaminar/ref/state/2.gnc"
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2217898 Max: 1.25
+Pseudo deltaT: Min: 4.8594384e-11 Mean: 1.7881161e-06 Max: 9.3234022e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.32965208 (0.1894704 0.01473372 0.019164218) 0.17222243 
+  GMRES iteration: 1   Residual: 5.0942837e-11 (4.0224255e-11 6.8543923e-12 9.3893571e-12) 2.6101613e-11 
+ExecutionTime = 164.15 s  ExecutionStepTime = 48.38 s  ClockTime = 165 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.5625
+Damped pseudo Courant No: Min: 0.1953125 Mean: 1.527643 Max: 1.5625
+Pseudo deltaT: Min: 3.049682e-11 Mean: 2.235146e-06 Max: 0.00011654253
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.20534295 (0.11758825 0.010744524 0.01332021) 0.10679489 
+  GMRES iteration: 1   Residual: 8.5801723e-11 (5.4131936e-11 1.3428709e-11 1.6495664e-11) 4.5567942e-11 
+ExecutionTime = 211.17 s  ExecutionStepTime = 47.02 s  ClockTime = 212 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.953125
+Damped pseudo Courant No: Min: 0.125 Mean: 1.9111929 Max: 1.953125
+Pseudo deltaT: Min: 1.9532289e-11 Mean: 2.7939318e-06 Max: 0.00014567816
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.18654221 (0.093162728 0.0095757265 0.011568243) 0.084510474 
+  GMRES iteration: 1   Residual: 5.957008e-10 (3.455952e-10 4.8525659e-11 7.6180898e-11) 2.8913435e-10 
+ExecutionTime = 258.15 s  ExecutionStepTime = 46.98 s  ClockTime = 259 s
+
+Time = 6
+
+pseudoTime: iteration 6
+Pseudo Courant No: 2.4414062
+Damped pseudo Courant No: Min: 0.125 Mean: 2.3843167 Max: 2.4414062
+Pseudo deltaT: Min: 1.9522343e-11 Mean: 3.4924153e-06 Max: 0.0001820977
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.15347309 (0.085379194 0.0097737675 0.011539558) 0.078254827 
+  GMRES iteration: 1   Residual: 9.500006e-09 (5.4568639e-09 5.2165289e-10 6.1506201e-10) 4.8178e-09 
+ExecutionTime = 306.9 s  ExecutionStepTime = 48.75 s  ClockTime = 307 s
+
+Time = 7
+
+pseudoTime: iteration 7
+Pseudo Courant No: 3.0517578
+Damped pseudo Courant No: Min: 0.125 Mean: 2.9739997 Max: 3.0517578
+Pseudo deltaT: Min: 1.951406e-11 Mean: 4.3654985e-06 Max: 0.00022762212
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.12424804 (0.073483803 0.0092174969 0.010687013) 0.065597234 
+  GMRES iteration: 1   Residual: 6.4242866e-08 (3.6764321e-08 8.972487e-09 1.0188488e-08) 4.002248e-08 
+ExecutionTime = 354.9 s  ExecutionStepTime = 48 s  ClockTime = 355 s
+
+Time = 8
+
+pseudoTime: iteration 8
+Pseudo Courant No: 3.8146973
+Damped pseudo Courant No: Min: 0.125 Mean: 3.7043799 Max: 3.8146973
+Pseudo deltaT: Min: 1.9507521e-11 Mean: 5.4568694e-06 Max: 0.00028452766
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.1269551 (0.07747716 0.009986685 0.011550542) 0.067921376 
+  GMRES iteration: 1   Residual: 4.2369857e-07 (2.5576341e-07 2.868892e-08 3.6257431e-08) 2.334224e-07 
+ExecutionTime = 404.38 s  ExecutionStepTime = 49.48 s  ClockTime = 405 s
+
+Time = 9
+
+pseudoTime: iteration 9
+Pseudo Courant No: 4.7683716
+Damped pseudo Courant No: Min: 0.125 Mean: 4.5991496 Max: 4.7683716
+Pseudo deltaT: Min: 1.9502675e-11 Mean: 6.8209887e-06 Max: 0.00035565957
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.10223948 (0.068948019 0.0091702962 0.010546875) 0.059921812 
+  GMRES iteration: 1   Residual: 7.570534e-07 (4.3680847e-07 9.202059e-08 1.1215486e-07) 4.3957278e-07 
+ExecutionTime = 454.13 s  ExecutionStepTime = 49.75 s  ClockTime = 455 s
+
+Time = 10
+
+pseudoTime: iteration 10
+Pseudo Courant No: 5.9604645
+Damped pseudo Courant No: Min: 0.125 Mean: 5.770279 Max: 5.9604645
+Pseudo deltaT: Min: 1.9499462e-11 Mean: 8.5263042e-06 Max: 0.00044457446
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.11178803 (0.074740309 0.010052555 0.011515007) 0.063564294 
+  GMRES iteration: 1   Residual: 2.7884219e-06 (1.7903025e-06 2.1603368e-07 2.665191e-07) 1.6029145e-06 
+ExecutionTime = 504.39 s  ExecutionStepTime = 50.26 s  ClockTime = 505 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field k not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field omega not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-L3/basicFinnerLaminar/ref/state/10.gnc"
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field k not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field omega not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4b-L3/basicFinnerLaminar/ref/state/end.gnc"
+End
+

@@ -1,0 +1,6 @@
+case=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation
+solver=gncHisa
+flags=-fast
+pid=1125325
+rc=0
+peak_MiB=492

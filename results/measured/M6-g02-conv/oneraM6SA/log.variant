@@ -1,0 +1,39 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         2000;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   2000;
+writePrecision  17;
+functions
+{
+    forceCoeffsWing
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        patches         ( wing );
+        p               p;
+        U               U;
+        rho             rhoInf;
+        rhoInf          1.09753;
+        magUInf         269.038;
+        lRef            0.64607;
+        Aref            0.7532;
+        CofR            ( 0 0 0 );
+        liftDir         ( -0.0533829 0.998574 0 );
+        dragDir         ( 0.998574 0.0533829 0 );
+        pitchAxis       ( 0 0 1 );
+        writeControl    timeStep;
+        writeInterval   1;
+        executeControl  timeStep;
+        executeInterval 1;
+        log             off;
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+writeControl    timeStep;
+writeInterval   1;
+log             off;
+forces=forceCoeffsWing

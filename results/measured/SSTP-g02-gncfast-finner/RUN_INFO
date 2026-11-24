@@ -1,0 +1,9 @@
+label=SSTP-g02-gncfast-finner
+started_utc=2026-10-23T09:19:47Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 17:19:47 up 11 days,  7:55, 10 users,  load average: 117.61, 114.33, 112.88
+endTime=5
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+uptime_after= 17:20:08 up 11 days,  7:56, 10 users,  load average: 116.01, 114.18, 112.86
+finished_utc=2026-10-23T09:20:09Z

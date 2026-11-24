@@ -1,0 +1,7 @@
+label=N6-perf-of32
+started_utc=2026-10-23T14:35:14Z
+host=g02 profile=g02-l40 gpu_device=3
+iters=200 variants=of32 core=157
+iters_for of32=200
+uptime= 22:35:14 up 11 days, 13:11, 12 users,  load average: 114.38, 113.52, 113.24
+finished_utc=2026-10-23T14:35:56Z

@@ -1,0 +1,3 @@
+wallDist Poisson: PCG Solving for yPsi, Initial residual = 1, Final residual = 9.69838e-11, No Iterations 584
+mesh: nCells 2179881 (Poisson)
+wrote /ssd/sclin/gpu-native-cfd/runs/N4b-poisson-L1/basicFinner/gpu.gnc

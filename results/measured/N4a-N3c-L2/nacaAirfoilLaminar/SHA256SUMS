@@ -1,0 +1,8 @@
+bea6d5601e00b1d76016b68a650899d9b093cd924aa7e8c1a5bc6483d174b94f  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/gpu1.gnc
+aa6dba0263cdb208d1a51244c8054bd1789e143070dcbb6526526f69364c5d0c  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/gpu1.state.gnc
+bea6d5601e00b1d76016b68a650899d9b093cd924aa7e8c1a5bc6483d174b94f  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/gpu2.gnc
+aa6dba0263cdb208d1a51244c8054bd1789e143070dcbb6526526f69364c5d0c  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/gpu2.state.gnc
+9fdaa7a1eb595e947bd414f3095fd114ec259fe254960de2ff51aefcfd84ca00  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/1.jacobian.gnc
+eadd746c4cc4f5d253f85fdda9e3c99891147a91db57f1be7de6b6cf155e7c32  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/1.precondition.gnc
+8bd876ab1596ea319de6ec8a4594494090072e391147edf226945b42dff48d4a  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/1.solve.gnc
+b9fdc103f7890b149dc57f10b0401b4f968e0e38676a9ac3d63dbc99f8a6fb53  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/state/1.gnc

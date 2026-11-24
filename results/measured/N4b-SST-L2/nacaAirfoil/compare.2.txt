@@ -1,0 +1,29 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2/nacaAirfoil/gpu1/2.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2/nacaAirfoil/ref/state/2.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="2" test="2"
+omega.solve                    text  ref="initial 0.26036614135881919 final 3.9778124698350812e-12 iterations 3 bounded 0" test="(none)"
+k.solve                        text  ref="initial 0.29793911483673552 final 8.3082940328939993e-12 iterations 3 bounded 0" test="(none)"
+k.i                            f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.b                        f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+producer                       text  test only: "gncHisaDump"
+time                           text  test only: "2"
+RR                             f64            1    1  test only
+Tstd                           f64            1    1  test only
+U.i                            f64        40000    3  test only
+U.b                            f64          860    3  test only
+rho.i                          f64        40000    1  test only
+rho.b                          f64          860    1  test only
+mu.i                           f64        40000    1  test only
+mu.b                           f64          860    1  test only
+phi.i                          f64        79570    1  test only
+phi.b                          f64          860    1  test only
+rPseudoDeltaT.i                f64        40000    1  test only
+rPseudoDeltaT.b                f64          860    1  test only
+result: ALL BITWISE IDENTICAL

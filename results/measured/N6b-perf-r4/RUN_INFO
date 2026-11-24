@@ -1,0 +1,6 @@
+label=N6b-perf-r4
+started_utc=2026-10-23T15:24:05Z
+host=g02 profile=g02-l40 gpu_device=3
+iters=50 variants=gnc,gncfast,gncamg core=157
+uptime= 23:24:05 up 11 days, 14:00,  9 users,  load average: 104.06, 104.13, 104.82
+finished_utc=2026-10-23T15:25:42Z

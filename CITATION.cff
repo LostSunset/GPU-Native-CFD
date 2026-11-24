@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, please cite the software (this version) and the paper describing it.
+type: software
+title: "GPU-Native-CFD"
+abstract: >-
+  A from-scratch CUDA reimplementation of two OpenFOAM-family finite-volume solvers (gncHisa, following the
+  density-based coupled solver HiSA, and gncRhoSimple, following rhoSimpleFoam) whose whole iteration runs on the
+  GPU. In its reference mode every reduction, recurrence and expression is evaluated in the order of the CPU
+  original, so that both solvers are bitwise identical to their CPU counterparts over entire runs; a performance
+  mode converges to the same discrete solutions. Includes the measurement records behind the accompanying paper.
+authors:
+  - family-names: Lin
+    given-names: Shang-Chih
+    affiliation: "Department of Aeronautics and Astronautics, National Cheng Kung University, Tainan, Taiwan"
+version: 1.0.0
+license: GPL-3.0-or-later
+keywords:
+  - GPU computing
+  - CUDA
+  - bitwise reproducibility
+  - OpenFOAM
+  - computational fluid dynamics
+  - density-based solver
+  - SIMPLE algorithm
+preferred-citation:
+  type: article
+  status: submitted
+  title: >-
+    Bitwise-reproducible GPU-native rewrites of OpenFOAM solvers: a verification baseline and a comparison of GPU
+    porting routes
+  authors:
+    - family-names: Lin
+      given-names: Shang-Chih
+      affiliation: "Department of Aeronautics and Astronautics, National Cheng Kung University, Tainan, Taiwan"
+    - family-names: Chen
+      given-names: Ray-Bing
+      affiliation: "Institute of Statistics and Data Science, National Tsing Hua University, Hsinchu, Taiwan"
+    - family-names: Wu
+      given-names: Chih-Yung
+      affiliation: "Department of Aeronautics and Astronautics, National Cheng Kung University, Tainan, Taiwan"

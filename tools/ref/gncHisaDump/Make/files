@@ -1,0 +1,3 @@
+gncHisaDump.C
+
+LIB = $(GNC_REF_LIB)/libgncHisaDump

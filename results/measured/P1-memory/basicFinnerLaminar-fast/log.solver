@@ -1,0 +1,25 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+multicolor ordering (GNC_LUSGS=color GNC_SGS=color): 7 colors; levels 743/743
+function forces (forces)
+function forcesNormAxial (forceCoeffs)
+mesh: 2179881 cells; analysis: laminar; endTime 3
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 1 (0.99929 0.000468779 0.0347715) 1
+ExecutionTime = 2.91942 s
+
+Time = 2
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 0.546173 (0.353281 0.02152 0.0299568) 0.315071
+ExecutionTime = 3.19225 s
+
+Time = 3
+Pseudo Courant No: 1.25
+  GMRES iterations: 1   initial residual: 0.329652 (0.18947 0.0147337 0.0191642) 0.172222
+ExecutionTime = 3.46495 s
+
+End

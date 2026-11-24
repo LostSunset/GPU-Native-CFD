@@ -1,0 +1,5 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: /home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation/constant/polyMesh (ascii) nPoints 306577 nCells 294912 nFaces 896256 nInternalFaces 873216 patches 4 fvBoundaryFaces 23040
+time_s: read 0.273 gather 0.014 upload 0.176 geometry 0.001002 (informational; not a recorded measurement)
+sum(V): sequential 1518.2520957940478 tree 1518.2520957940942
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L0/oneraM6/gpu2.gnc

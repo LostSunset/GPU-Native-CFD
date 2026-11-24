@@ -1,0 +1,42 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : foamToVTK -ascii -no-internal -no-fields -patches (body fin1 fin2) -time 0
+Date   : Oct 25 2026
+Time   : 21:39:37
+Host   : g02
+PID    : 733442
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/P1-geometry/work-basicFinner
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Including patches (body fin1 fin2)
+
+Field conversion disabled with the '-no-fields' option
+Create time
+
+Initial memory 1510024 kB
+Create mesh for time = 0
+
+VTK mesh topology: 6.21 s, 1906840 kB
+Time: 0
+    Boundary  : "VTK/work-basicFinner_0/boundary/body.vtp"
+    Boundary  : "VTK/work-basicFinner_0/boundary/fin1.vtp"
+    Boundary  : "VTK/work-basicFinner_0/boundary/fin2.vtp"
+Wrote in 0.04 s, 1910188 kB
+
+End: 6.25 s, 1914632 kB (peak)
+

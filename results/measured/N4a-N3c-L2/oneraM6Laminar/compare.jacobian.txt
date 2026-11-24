@@ -1,0 +1,53 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/oneraM6Laminar/ref/1.jacobian.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/oneraM6Laminar/gpu1.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncLUSGSDump" test="gncOuterL2"
+time                           text  ref="1" test="(none)"
+J.SS00.diag                    f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS00.upper                   f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS00.lower                   f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS01.diag                    f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SV00.diag                    f64       294912    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.SV00.upper                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.SV00.lower                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS10.diag                    f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS10.upper                   f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS10.lower                   f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS11.diag                    f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS11.upper                   f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SS11.lower                   f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+J.SV10.diag                    f64       294912    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.SV10.upper                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.SV10.lower                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VS00.diag                    f64       294912    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VS00.upper                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VS00.lower                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VS01.diag                    f64       294912    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VS01.upper                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VS01.lower                   f64       873216    3           0    0.000e+00    0.000e+00            0  BITWISE
+J.VV00.diag                    f64       294912    9           0    0.000e+00    0.000e+00            0  BITWISE
+J.VV00.upper                   f64       873216    9           0    0.000e+00    0.000e+00            0  BITWISE
+J.VV00.lower                   f64       873216    9           0    0.000e+00    0.000e+00            0  BITWISE
+rPseudoDeltaT                  f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+rDiagCoeff                     f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+V                              f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.U.b                        f64        23040    3           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.p.b                        f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.T.b                        f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.rho.b                      f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.rhoE.b                     f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.e.b                        f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.psi.b                      f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.rhoU.b                     f64        23040    3           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.phi.b                      f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+dbg.p.gradient                 f64         4608    1           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+P.in                           f64       294912    5  test only
+P.out                          f64       294912    5  test only
+rho.i                          f64       294912    1  test only
+rho.b                          f64        23040    1  test only
+rhoE.i                         f64       294912    1  test only
+rhoE.b                         f64        23040    1  test only
+rhoU.i                         f64       294912    3  test only
+rhoU.b                         f64        23040    3  test only
+result: ALL BITWISE IDENTICAL

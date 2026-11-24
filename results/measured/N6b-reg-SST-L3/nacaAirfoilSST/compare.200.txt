@@ -1,0 +1,44 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N6b-reg-SST-L3/nacaAirfoilSST/ref/state/200.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N6b-reg-SST-L3/nacaAirfoilSST/gpu1/200.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncHisaDump" test="gncRunL3"
+time                           text  ref="200" test="(none)"
+timeIndex                      text  ref="200" test="200"
+RR                             f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+Tstd                           f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+p.i                            f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+p.b                            f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.i                            f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.b                            f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+U.i                            f64        40000    3           0    0.000e+00    0.000e+00            0  BITWISE
+U.b                            f64          860    3           0    0.000e+00    0.000e+00            0  BITWISE
+e.i                            f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+e.b                            f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+psi.i                          f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+psi.b                          f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+mu.i                           f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+mu.b                           f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+alpha.i                        f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alpha.b                        f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.i                          f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.b                          f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoU.i                         f64        40000    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoU.b                         f64          860    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoE.i                         f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoE.b                         f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64        79570    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+pseudoCoDamping.i              f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+pseudoCoDamping.b              f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+pseudoCoNum                    f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+nuTilda.missing                text  ref="nuTilda" test="(none)"
+k.i                            f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.b                        f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        40000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          860    1           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+result: ALL BITWISE IDENTICAL

@@ -1,0 +1,10 @@
+label=FIN-g02-conv2
+started_utc=2026-10-23T10:57:19Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 18:57:19 up 11 days,  9:33,  9 users,  load average: 112.20, 112.37, 117.13
+endTime=1000
+variant ref: 
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+uptime_after= 19:36:49 up 11 days, 10:12,  9 users,  load average: 112.90, 112.40, 112.61
+finished_utc=2026-10-23T11:36:49Z

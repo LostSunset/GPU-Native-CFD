@@ -1,0 +1,51 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : decomposePar -force
+Date   : Oct 23 2026
+Time   : 21:50:06
+Host   : g02
+PID    : 3482549
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N6-perf-r1/r1/of32
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+
+
+Decomposing mesh
+
+Create mesh
+
+Calculating distribution of cells
+Decomposition method scotch [32] (region region0)
+
+
+--> FOAM FATAL ERROR: (openfoam-2606)
+Attempted to use <scotch> without the scotchDecomp library loaded.
+This message is from the dummy scotchDecomp stub library instead.
+
+Please install <scotch> and ensure libscotch.so is in LD_LIBRARY_PATH.
+The scotchDecomp library can then be built from src/parallel/decompose/scotchDecomp.
+Dynamically loading or linking this library will add <scotch> as a decomposition method.
+
+
+    From virtual Foam::labelList Foam::scotchDecomp::decompose(const Foam::polyMesh&, const Foam::pointField&, const Foam::scalarField&) const
+    in file dummyScotchDecomp.cxx at line 102.
+
+FOAM exiting
+

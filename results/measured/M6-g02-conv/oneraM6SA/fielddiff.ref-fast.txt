@@ -1,0 +1,10 @@
+A=/ssd/sclin/gpu-native-cfd/runs/M6-g02-conv/oneraM6SA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/M6-g02-conv/oneraM6SA/fast/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p              294912           4.251075e+02           3.510447e-03           8.639974e-05
+T              294912           1.838591e+01           4.758027e-02           3.617771e-04
+U              884736           6.552314e+01           1.479702e-01           1.340113e-03
+rho            294912           5.752635e-02           3.897525e-02           2.823172e-04
+nuTilda        294912           2.872895e-04           8.868076e-03           3.989510e-03
+nut            294912           2.872941e-04           8.868217e-03           3.990421e-03
+alphat         294912           3.109064e-04           8.940845e-03           4.006474e-03

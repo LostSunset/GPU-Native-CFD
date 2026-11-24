@@ -1,0 +1,3 @@
+profile: 200 outer iterations, mean wall time per iteration 0.00891823 s
+  flux 0.000433197  residual 0.000603786  pseudoTime 3.6397e-05  jacobian 0.000425399  gmres 0.00623964  update 0.000371603  turbulence 0.000808205
+  gmres parts per iteration (GNC_PROFILE_GMRES=1): precondition 0 s (8640 calls)  matrixMul 0 s (8840)  reductions 0 s (17680 batches)

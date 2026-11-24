@@ -1,0 +1,79 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa -postProcess -dict system/gncDumpDict -time 0
+Date   : Oct 23 2026
+Time   : 00:49:47
+Host   : g02
+PID    : 1260767
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4a-walldist-L1/forwardStep/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Time = 0
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Transient analysis detected
+
+pseudoTime: max iterations = 1000, tolerance = 0.005 (0.005 0.005 0.005) 0.005 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Inviscid analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 2 Mean: 2 Max: 2
+
+--> FOAM Warning : 
+--> FOAM FATAL IO ERROR: (openfoam-2606)
+Entry 'method' not found in dictionary "/ssd/sclin/gpu-native-cfd/runs/N4a-walldist-L1/forwardStep/case/system/fvSchemes/wallDist"
+
+
+file: system/fvSchemes/wallDist
+
+    From bool Foam::dictionary::readEntry(const Foam::word&, T&, Foam::keyType::option, Foam::IOobjectOption::readOption) const [with T = Foam::word]
+    in file /ssd/sclin/atlas-rel/v2606.0.2/ordinary/Atlas-GPU-Accelerated-OpenFOAM-OpenFOAM-v2606.0.2/workspace/src/OpenFOAM/lnInclude/dictionaryTemplates.C at line 327.
+
+End
+

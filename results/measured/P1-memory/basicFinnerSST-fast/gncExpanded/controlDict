@@ -1,0 +1,86 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "system/controlDict"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    location        "system";
+    object          controlDict;
+}
+
+application     hisa;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         3;
+
+deltaT          1;
+
+writeControl    timeStep;
+
+writeInterval   1000000;
+
+purgeWrite      1;
+
+writeFormat     ascii;
+
+writePrecision  8;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   6;
+
+graphFormat     raw;
+
+runTimeModifiable yes;
+
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            ( "libforces.so" );
+        patches         ( body fin1 fin2 );
+        rho             rho;
+        log             off;
+        writeControl    timeStep;
+        writeInterval   10;
+        CofR            ( -0.16500000000000001 0 0 );
+    }
+    forcesNormAxial
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        writeControl    timeStep;
+        executeControl  timeStep;
+        executeInterval 1;
+        log             off;
+        patches         ( body fin1 fin2 );
+        writeInterval   10;
+        magUInf         1544.5654219999999;
+        rho             rhoInf;
+        rhoInf          1.2040847589999999;
+        lRef            0.029999999999999999;
+        Aref            0.00070685834700000001;
+        liftDir         ( 0 0 -1 );
+        dragDir         ( -1 0 0 );
+        CofR            ( -0.16500000000000001 0 0 );
+        pitchAxis       ( 0 1 0 );
+    }
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

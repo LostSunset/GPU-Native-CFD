@@ -1,0 +1,8 @@
+label=N6e-perf-r32
+started_utc=2026-10-25T18:03:22Z
+host=g02 profile=g02-paper gpu_device=3
+iters=10 variants=gnc,gncamg,of1,of32 core=157 spuma_pool_gb=8
+iters_for of1=3
+iters_for gnc=3
+uptime= 02:03:22 up 13 days, 16:39, 11 users,  load average: 130.35, 113.99, 107.78
+finished_utc=2026-10-25T19:12:13Z

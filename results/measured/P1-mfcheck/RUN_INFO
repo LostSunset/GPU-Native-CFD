@@ -1,0 +1,10 @@
+label=P1-mfcheck
+started_utc=2026-10-26T13:23:29Z
+host=g02 profile=g02-paper
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 21:23:29 up 14 days, 11:59, 14 users,  load average: 103.57, 103.67, 103.90
+endTime=5
+variant ref: 
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto
+uptime_after= 21:25:28 up 14 days, 12:01, 14 users,  load average: 104.65, 104.14, 104.05
+finished_utc=2026-10-26T13:25:28Z

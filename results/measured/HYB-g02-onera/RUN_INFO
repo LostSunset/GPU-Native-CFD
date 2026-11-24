@@ -1,0 +1,9 @@
+label=HYB-g02-onera
+started_utc=2026-10-23T06:55:13Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+cpu=AMD EPYC 9684X 96-Core Processor nproc=192
+uptime_before= 14:55:13 up 11 days,  5:31,  9 users,  load average: 103.57, 103.90, 106.73
+endTime=50 np_list=none mpirun_opts=--bind-to none decomp=metis
+uptime_after= 14:56:01 up 11 days,  5:32,  9 users,  load average: 103.92, 103.95, 106.60
+finished_utc=2026-10-23T06:56:01Z

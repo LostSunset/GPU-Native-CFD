@@ -1,0 +1,24 @@
+/ssd/sclin/gpu-platform/src/spuma-0.3-v2512/etc/config.sh/setup: 第 146 列： .: /usr/bin/time: 無法執行二進位檔案
+	Command being timed: "taskset -c 157 rhoSimpleFoam -pool fixedSizeMemoryPool -poolSize 8"
+	User time (seconds): 271.02
+	System time (seconds): 164.90
+	Percent of CPU this job got: 39%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 18:25.92
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1463264
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 7113769
+	Minor (reclaiming a frame) page faults: 423444
+	Voluntary context switches: 969551
+	Involuntary context switches: 14855
+	Swaps: 0
+	File system inputs: 96
+	File system outputs: 64
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

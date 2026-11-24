@@ -1,0 +1,8 @@
+run	iterations	wall s (incl. start-up)	mean power W	energy J	J per iteration	energy above idle J
+idle			34.8			
+m6-fast	50	1.95	162.1	308.8	6.177	240.8
+m6-ref	10	2.94	102.2	297.1	29.714	194.9
+rho-r1-fast-conv	677	2.89	95.4	268.1	0.396	167.4
+rho-r1-ref-conv	668	20.04	93.9	1874.6	2.806	1176.7
+rho-r8-fast	30	4.55	125.1	564.3	18.811	405.9
+rho-r8-ref	10	79.67	103.8	8258.1	825.813	5483.1

@@ -1,0 +1,44 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         20;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+functions
+{
+    forceCoeffsCompressible
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        writeControl    timeStep;
+        executeControl  timeStep;
+        executeInterval 10;
+        log             off;
+        patches         ( airfoil );
+        magUInf         233.622;
+        rho             rhoInf;
+        rhoInf          1.48571;
+        lRef            0.3048;
+        Aref            0.3048;
+        liftDir         ( -0.0403062 0 0.999187 );
+        dragDir         ( 0.999187 0 0.0403062 );
+        CofR            ( 0.07585 0 0 );
+        pitchAxis       ( 0 1 0 );
+        writeInterval   10;
+    }
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/home/satoshi/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/home/satoshi/gpu-native-cfd/runs/N4c-wsl-dev3/rae2822SA/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda nut alphat force moment );
+        timeIndices     ( 1 2 10 20 );
+        atEnd           true;
+        forceObjects    ( forceCoeffsCompressible );
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+log             off;
+forces=forceCoeffsCompressible

@@ -1,0 +1,9 @@
+label=N6-perf-r4
+started_utc=2026-10-23T13:54:58Z
+host=g02 profile=g02-l40 gpu_device=3
+iters=50 variants=gnc,gncfast,gncamg,of1,of1pcg,of32,spuma core=157
+iters_for spuma=10
+iters_for of1pcg=20
+iters_for of1=20
+uptime= 21:54:58 up 11 days, 12:30, 12 users,  load average: 112.56, 112.31, 112.09
+finished_utc=2026-10-23T14:05:53Z

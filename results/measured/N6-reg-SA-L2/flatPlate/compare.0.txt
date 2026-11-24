@@ -1,0 +1,25 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/flatPlate/gpu1/0.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/flatPlate/ref/state/0.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="0" test="0"
+nut.i                          f64         8000    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          360    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64         8000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          360    1           0    0.000e+00    0.000e+00            0  BITWISE
+producer                       text  test only: "gncHisaDump"
+time                           text  test only: "0"
+RR                             f64            1    1  test only
+Tstd                           f64            1    1  test only
+U.i                            f64         8000    3  test only
+U.b                            f64          360    3  test only
+rho.i                          f64         8000    1  test only
+rho.b                          f64          360    1  test only
+mu.i                           f64         8000    1  test only
+mu.b                           f64          360    1  test only
+phi.i                          f64        15820    1  test only
+phi.b                          f64          360    1  test only
+rPseudoDeltaT.i                f64         8000    1  test only
+rPseudoDeltaT.b                f64          360    1  test only
+nuTilda.i                      f64         8000    1  test only
+nuTilda.b                      f64          360    1  test only
+result: ALL BITWISE IDENTICAL

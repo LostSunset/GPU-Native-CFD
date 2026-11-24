@@ -1,0 +1,6 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 200 fvBoundaryFaces 2
+thermo: RR 8314.4700665054497 Tstd 298.14999999999998 W 28.960000000000001 R 287.10186693734289 Cp 1004.5 transport const
+analysis: inviscid
+boundary conditions: side1[p zeroGradient, T zeroGradient, U zeroGradient, e gradientEnergy] side2[p zeroGradient, T zeroGradient, U zeroGradient, e gradientEnergy] empty[p empty, T empty, U empty, e empty]
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-N3a-L2/shockTube/gpu2.gnc

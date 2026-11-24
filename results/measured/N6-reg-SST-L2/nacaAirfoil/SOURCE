@@ -1,0 +1,3 @@
+source=/home/sclin/hisa-gpu-research-cases/nacaAirfoil-prepared/simulation
+model=kOmegaSST
+meshwave=1

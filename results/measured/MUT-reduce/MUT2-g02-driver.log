@@ -1,0 +1,15 @@
+=== 2026-10-23T15:28:13Z env GNC_REDUCE=tree bash ./scripts/rhosimple_verify.sh --host-env configs/hosts/g02-l40.env --label MUT-reduce --dump-steps 1,2,10 --end aerofoilNACA0012=10 --case aerofoilNACA0012=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation
+== aerofoilNACA0012 (/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation)
+endTime         10;
+   ref rc=0 gpu exit=0; dumps 1/13 bitwise; fields 0/0 bitwise; gpu1 vs gpu2 identical
+case              nCells  last_ref  last_gpu  dumps  dumps_bitwise  fields  fields_bitwise  gpu1_vs_gpu2
+aerofoilNACA0012  16000                       13     1              0       0               identical
+=== exit=1
+=== 2026-10-23T15:28:21Z env GNC_ILU=color bash ./scripts/rhosimple_verify.sh --host-env configs/hosts/g02-l40.env --label MUT-ilu --dump-steps 1,2,10 --end aerofoilNACA0012=10 --case aerofoilNACA0012=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation
+== aerofoilNACA0012 (/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation)
+endTime         10;
+   ref rc=0 gpu exit=0; dumps 1/13 bitwise; fields 0/0 bitwise; gpu1 vs gpu2 identical
+case              nCells  last_ref  last_gpu  dumps  dumps_bitwise  fields  fields_bitwise  gpu1_vs_gpu2
+aerofoilNACA0012  16000                       13     1              0       0               identical
+=== exit=1
+=== done 2026-10-23T15:28:28Z

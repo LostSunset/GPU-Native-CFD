@@ -1,0 +1,7 @@
+case	nCells	method	ref	gpu	compare
+shockTube	200		0	0	BITWISE
+forwardStep	36576		0	0	BITWISE
+nacaAirfoil	40000	meshWave	0	0	BITWISE
+flatPlate	8000	meshWave	0	0	BITWISE
+oneraM6	294912	meshWave	0	0	BITWISE
+basicFinner	2179881	meshWave	0	0	BITWISE

@@ -1,0 +1,52 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/flatPlateLaminar/ref/1.solve.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/flatPlateLaminar/gpu1.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncLUSGSDump" test="gncOuterL2"
+rho.i                          f64         8000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.b                          f64          360    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoE.i                         f64         8000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoE.b                         f64          360    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoU.i                         f64         8000    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoU.b                         f64          360    3           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+J.SS00.diag                    f64         8000    1  test only
+J.SS00.upper                   f64        15820    1  test only
+J.SS00.lower                   f64        15820    1  test only
+J.SS01.diag                    f64         8000    1  test only
+J.SV00.diag                    f64         8000    3  test only
+J.SV00.upper                   f64        15820    3  test only
+J.SV00.lower                   f64        15820    3  test only
+J.SS10.diag                    f64         8000    1  test only
+J.SS10.upper                   f64        15820    1  test only
+J.SS10.lower                   f64        15820    1  test only
+J.SS11.diag                    f64         8000    1  test only
+J.SS11.upper                   f64        15820    1  test only
+J.SS11.lower                   f64        15820    1  test only
+J.SV10.diag                    f64         8000    3  test only
+J.SV10.upper                   f64        15820    3  test only
+J.SV10.lower                   f64        15820    3  test only
+J.VS00.diag                    f64         8000    3  test only
+J.VS00.upper                   f64        15820    3  test only
+J.VS00.lower                   f64        15820    3  test only
+J.VS01.diag                    f64         8000    3  test only
+J.VS01.upper                   f64        15820    3  test only
+J.VS01.lower                   f64        15820    3  test only
+J.VV00.diag                    f64         8000    9  test only
+J.VV00.upper                   f64        15820    9  test only
+J.VV00.lower                   f64        15820    9  test only
+rPseudoDeltaT                  f64         8000    1  test only
+rDiagCoeff                     f64         8000    1  test only
+V                              f64         8000    1  test only
+dbg.U.b                        f64          360    3  test only
+dbg.p.b                        f64          360    1  test only
+dbg.T.b                        f64          360    1  test only
+dbg.rho.b                      f64          360    1  test only
+dbg.rhoE.b                     f64          360    1  test only
+dbg.e.b                        f64          360    1  test only
+dbg.psi.b                      f64          360    1  test only
+dbg.rhoU.b                     f64          360    3  test only
+dbg.phi.b                      f64          360    1  test only
+dbg.p.gradient                 f64           60    1  test only
+P.in                           f64         8000    5  test only
+P.out                          f64         8000    5  test only
+result: ALL BITWISE IDENTICAL

@@ -1,0 +1,32 @@
+=== 2026-10-25T15:59:12Z waiting for pid 801582
+=== 2026-10-25T17:08:12Z GPU3 free
+=== 2026-10-25T17:08:12Z build
+=== 2026-10-25T17:09:04Z P1-energy
+rho-r8-ref rc=0
+rho-r8-fast rc=0
+rho-r1-ref-conv rc=0
+rho-r1-fast-conv rc=0
+m6-ref rc=0
+m6-fast rc=0
+=== 2026-10-25T17:12:07Z P1-memory
+rho-r1-ref rc=0 peak_MiB=460
+rho-r1-fast rc=0 peak_MiB=458
+rho-r2-ref rc=0 peak_MiB=556
+rho-r2-fast rc=0 peak_MiB=524
+rho-r4-ref rc=0 peak_MiB=844
+rho-r4-fast rc=0 peak_MiB=908
+rho-r8-ref rc=0 peak_MiB=2092
+rho-r8-fast rc=0 peak_MiB=2316
+flatPlate-ref rc=0 peak_MiB=460
+flatPlate-fast rc=0 peak_MiB=460
+rae2822-ref rc=0 peak_MiB=524
+rae2822-fast rc=0 peak_MiB=492
+nacaAirfoil-ref rc=0 peak_MiB=588
+nacaAirfoil-fast rc=0 peak_MiB=492
+oneraM6-ref rc=0 peak_MiB=1516
+oneraM6-fast rc=0 peak_MiB=1708
+basicFinnerLaminar-ref rc=0 peak_MiB=7820
+basicFinnerLaminar-fast rc=0 peak_MiB=9164
+basicFinnerSST-ref rc=0 peak_MiB=8364
+basicFinnerSST-fast rc=0 peak_MiB=9708
+=== 2026-10-25T17:14:17Z done

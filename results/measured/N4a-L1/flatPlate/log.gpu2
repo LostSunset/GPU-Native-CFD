@@ -1,0 +1,10 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 8000 nFaces 32180 nInternalFaces 15820 fvBoundaryFaces 360 nSolutionD 2
+reader: s ascii vs binary: 0 values differ
+reader: v ascii vs binary: 0 values differ
+reader: gamma ascii vs binary: 0 values differ
+reader: phi ascii vs binary: 0 values differ
+grad schemes: s 'Gauss linear', v 'Gauss linear'
+boundary conditions: freestream[s fixedValue, v slip, gamma fixedValue] inlet[s zeroGradient, v inletOutlet, gamma zeroGradient] outlet[s inletOutlet, v fixedValue, gamma fixedValue] inviscidWall[s slip, v zeroGradient, gamma zeroGradient] viscousWall[s fixedValue, v slip, gamma fixedValue] frontAndBack[s empty, v empty, gamma empty]
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L1/flatPlate/gpu2.gnc
+wrote fields to /ssd/sclin/gpu-native-cfd/runs/N4a-L1/flatPlate/case/gncL1out2

@@ -1,0 +1,9 @@
+func	impl	mode	samples	differ	max_ulp
+pow	cuda	sa	100000000	9076238	1
+pow	glibc	sa	100000000	0	0
+pow	cuda	wide	50000000	4964219	1
+pow	glibc	wide	50000000	0	0
+exp	cuda	sa	100000000	3587140	1
+exp	glibc	sa	100000000	0	0
+exp	cuda	wide	50000000	299605	1
+exp	glibc	wide	50000000	0	0

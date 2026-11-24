@@ -1,0 +1,23 @@
+=== 2026-10-25T13:38:18Z waiting for pid 498220
+=== 2026-10-25T15:46:19Z GPU3 free
+=== 2026-10-25T15:46:19Z build
+=== 2026-10-25T15:47:10Z P1-nsys
+rho-r1-n050 rc=0
+rho-r1-n100 rc=0
+rho-r8-n010 rc=0
+rho-r8-n020 rc=0
+m6-n010 rc=0
+m6-n020 rc=0
+=== 2026-10-25T15:48:11Z P1-energy
+rho-r8-ref rc=2
+rho-r8-fast rc=2
+rho-r1-ref-conv rc=2
+rho-r1-fast-conv rc=2
+m6-ref rc=2
+m6-fast rc=2
+=== 2026-10-25T15:49:21Z P1-ofprof
+r1-np1 rc=0 50 iterations
+r1-np32 rc=0 50 iterations
+r8-np1 rc=0 10 iterations
+r8-np32 rc=0 10 iterations
+=== 2026-10-25T15:53:15Z done

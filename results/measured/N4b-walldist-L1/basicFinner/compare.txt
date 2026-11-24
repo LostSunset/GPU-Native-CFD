@@ -1,0 +1,10 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4b-walldist-L1/basicFinner/ref/0.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4b-walldist-L1/basicFinner/gpu.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncHisaDump" test="gncWallDistL1"
+time                           text  ref="0" test="(none)"
+timeIndex                      text  ref="0" test="(none)"
+yWall.i                        f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+yWall.b                        f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+yWall.nUnset                   i32            1    1  test only
+result: ALL BITWISE IDENTICAL

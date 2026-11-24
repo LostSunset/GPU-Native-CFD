@@ -1,0 +1,4 @@
+case	variant	nCells	iterations	per_iter_s	per_iter_clock_s	wall_s	p_iters_mean
+r4	gnc	256000	50	1.391085	-	70.37	324.5
+r4	gncfast	256000	50	0.119801	-	6.87	980.6
+r4	gncamg	256000	50	0.031329	-	2.38	29.6

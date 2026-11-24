@@ -1,0 +1,460 @@
+  kOmegaSSTCoeffs (case): betaStar=0.09 a1=0.31 gamma1=0.5556 beta1=0.075 Prt=1
+brae rhoSimpleFoam (OF-mirror, CUDA): 256000 cells, start 0, kOmegaSST
+  fvOption limitTemperature [101, 1000]
+  fvOptions: 1 option(s), all implemented
+  schemes: div(phi,U) lu=1 bounded=1 | div(phi,e) lu=1 bounded=1 | div(phi,Ekp) lu=1 bounded=1 | grad(U) cellLimited k=1 | grad(e) k=1 | grad(Ekp) k=1 | laplacian corrected=1 limited=0
+  relaxation: equations U 0.3 | e 0.7 | p none | k 0.7 | epsilon none | omega 0.7 ; fields p 0.7 | rho 0.01
+  linear solver (from fvSolution): p tol 1.0e-06 relTol 0.01 maxIter 1000 minIter 0
+  linear solver (from fvSolution): U tol 1.0e-06 relTol 0.1 maxIter 1000 minIter 0
+  linear solver (from fvSolution): e tol 1.0e-06 relTol 0.1 maxIter 1000 minIter 0
+  linear solver (from fvSolution): k|omega tol 1.0e-06 relTol 0.1 maxIter 1000 minIter 0
+  fvOption limitTemperature [101, 1000] K
+  momentum: multicolour Gauss-Seidel smoothSolver, 4 colours (sizes 127760 127760 320 160), tolerance/relTol/maxIter/minIter/nSweeps from the case's U entry, symGaussSeidel (ascending then descending) sweeps
+  residualControl=on
+  normFactor: device-resident, never read by the host; BRAE_NORMFACTOR_HOST=1 restores the read
+  scalar read-back: mailbox, host spins on a published sequence number; BRAE_READ_SCALAR_SYNC=1 restores the blocking copy
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=298
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298
+  grad(U): shared across the sites of an iteration that see the same U (fingerprinted inputs); BRAE_GRADU_MEMO=0 recomputes at every site
+Time = 1   U 1.0000e+00   e 1.0000e+00   p 1.0000e+00   k 1.0000e+00   omega 2.3351e-03   pIters 52
+time step continuity errors : sum local = 0.0290481, global = -3.07487e-05, cumulative = -3.07487e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=297.83801628444718
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298.01567047910873
+Time = 2   U 1.4749e-01   e 9.9986e-01   p 2.0002e-01   k 1.8630e-01   omega 1.3123e-03   pIters 44
+time step continuity errors : sum local = 0.0703231, global = 8.51299e-05, cumulative = 5.43812e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=290.68180147582984
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=368.12625858112324
+Time = 3   U 8.8696e-02   e 3.1185e-01   p 9.0888e-02   k 9.3662e-02   omega 1.4923e-03   pIters 43
+time step continuity errors : sum local = 0.0500666, global = -9.88821e-05, cumulative = -4.45009e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=283.42766862322236
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=364.67009340922027
+Time = 4   U 8.8269e-02   e 2.5295e-01   p 3.4723e-02   k 5.9541e-02   omega 1.5282e-03   pIters 41
+time step continuity errors : sum local = 0.0384703, global = -9.02475e-06, cumulative = -5.35256e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=276.49542033639483
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=359.9805668561678
+Time = 5   U 1.1777e-01   e 2.8780e-01   p 3.4369e-01   k 4.1169e-02   omega 1.4076e-03   pIters 46
+time step continuity errors : sum local = 0.0313218, global = 6.70936e-05, cumulative = 1.3568e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=268.79660917602052
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=353.59550295200438
+Time = 6   U 1.0487e-01   e 3.2533e-01   p 3.1635e-02   k 3.2050e-02   omega 1.3174e-03   pIters 44
+time step continuity errors : sum local = 0.0320746, global = 1.4738e-05, cumulative = 2.8306e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=263.11732800041995
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=350.95783599015135
+Time = 7   U 1.1619e-01   e 4.1472e-01   p 5.3089e-02   k 2.8411e-02   omega 1.1726e-03   pIters 47
+time step continuity errors : sum local = 0.0250226, global = 7.96556e-05, cumulative = 0.000107962
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=263.51190594092537
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=349.85100076387994
+Time = 8   U 8.4457e-02   e 2.7788e-01   p 3.1349e-02   k 2.7425e-02   omega 1.0981e-03   pIters 44
+time step continuity errors : sum local = 0.0299171, global = 5.18027e-05, cumulative = 0.000159764
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.34249896399376
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=347.2297597060309
+Time = 9   U 9.6392e-02   e 2.5973e-01   p 2.7399e-02   k 2.7249e-02   omega 1.0719e-03   pIters 46
+time step continuity errors : sum local = 0.0295372, global = 7.3447e-05, cumulative = 0.000233211
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.30095227009934
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=344.7972365625883
+Time = 10   U 1.2168e-01   e 2.8821e-01   p 5.4084e-02   k 2.8262e-02   omega 1.0699e-03   pIters 45
+time step continuity errors : sum local = 0.0318609, global = 5.31208e-05, cumulative = 0.000286332
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.89822724368798
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.81320165009561
+Time = 11   U 1.0264e-01   e 3.3219e-01   p 2.8352e-02   k 3.1111e-02   omega 1.1017e-03   pIters 43
+time step continuity errors : sum local = 0.029288, global = -8.76491e-08, cumulative = 0.000286244
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.03901044899402
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.55622228982651
+Time = 12   U 1.0838e-01   e 3.9540e-01   p 3.1418e-01   k 3.6356e-02   omega 1.0937e-03   pIters 47
+time step continuity errors : sum local = 0.0259444, global = 5.62727e-05, cumulative = 0.000342517
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.69818814730712
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.12079342979473
+Time = 13   U 7.8392e-02   e 2.5361e-01   p 2.6615e-02   k 4.4924e-02   omega 1.0974e-03   pIters 45
+time step continuity errors : sum local = 0.0295716, global = 2.54787e-07, cumulative = 0.000342772
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.31779720123637
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=341.98121843269661
+Time = 14   U 1.0907e-01   e 2.7492e-01   p 3.8195e-02   k 5.5088e-02   omega 1.1191e-03   pIters 47
+time step continuity errors : sum local = 0.0270735, global = -7.78564e-05, cumulative = 0.000264915
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.26333013259455
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.50993142191726
+Time = 15   U 1.1005e-01   e 2.8487e-01   p 3.5851e-02   k 5.7589e-02   omega 1.2260e-03   pIters 44
+time step continuity errors : sum local = 0.0331573, global = -7.6647e-05, cumulative = 0.000188268
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.43636151515375
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.80875733201924
+Time = 16   U 1.0249e-01   e 3.4919e-01   p 3.1505e-02   k 5.1407e-02   omega 1.6524e-03   pIters 45
+time step continuity errors : sum local = 0.0322907, global = -2.22533e-05, cumulative = 0.000166015
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.61801965774418
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.9908717856415
+Time = 17   U 9.8218e-02   e 3.5843e-01   p 5.6424e-02   k 4.3230e-02   omega 2.4445e-03   pIters 45
+time step continuity errors : sum local = 0.0324564, global = -9.70397e-05, cumulative = 6.89754e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.69467252755635
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.34371544869754
+Time = 18   U 7.8258e-02   e 2.4099e-01   p 2.5351e-02   k 3.4615e-02   omega 3.1652e-03   pIters 44
+time step continuity errors : sum local = 0.0295915, global = -5.66706e-05, cumulative = 1.23048e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.89388863336634
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.63403109499399
+Time = 19   U 1.1669e-01   e 2.7619e-01   p 1.2553e-01   k 2.6945e-02   omega 3.4070e-03   pIters 47
+time step continuity errors : sum local = 0.0258045, global = -6.6725e-05, cumulative = -5.44201e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.08089907523069
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.79933639106457
+Time = 20   U 1.0200e-01   e 2.6313e-01   p 2.8682e-02   k 2.1154e-02   omega 3.1980e-03   pIters 45
+time step continuity errors : sum local = 0.0294233, global = -1.4816e-05, cumulative = -6.92361e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=254.98679844814342
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.33003004176925
+Time = 21   U 1.0975e-01   e 3.5114e-01   p 4.0269e-02   k 1.6772e-02   omega 2.8027e-03   pIters 47
+time step continuity errors : sum local = 0.0283654, global = 9.50296e-05, cumulative = 2.57935e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.4786453598274
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.02133072956269
+Time = 22   U 8.7856e-02   e 3.1566e-01   p 3.4726e-02   k 1.2955e-02   omega 2.3456e-03   pIters 44
+time step continuity errors : sum local = 0.0304022, global = 2.71684e-05, cumulative = 5.29619e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.07376966086372
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.59027473258749
+Time = 23   U 8.6538e-02   e 2.4638e-01   p 2.6129e-02   k 9.7962e-03   omega 1.8910e-03   pIters 44
+time step continuity errors : sum local = 0.0303542, global = -1.90582e-05, cumulative = 3.39037e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=254.90493605511494
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.18293224065019
+Time = 24   U 1.1804e-01   e 2.6927e-01   p 7.9820e-02   k 7.5077e-03   omega 1.5505e-03   pIters 46
+time step continuity errors : sum local = 0.0309457, global = 0.000113576, cumulative = 0.00014748
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.06553180488788
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.33347763796542
+Time = 25   U 9.9217e-02   e 2.5620e-01   p 2.6925e-02   k 6.0467e-03   omega 1.3108e-03   pIters 45
+time step continuity errors : sum local = 0.0283998, global = 3.1455e-05, cumulative = 0.000178935
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.21650451910398
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.99210922582034
+Time = 26   U 1.1050e-01   e 3.4593e-01   p 1.0796e-01   k 4.9310e-03   omega 1.1336e-03   pIters 47
+time step continuity errors : sum local = 0.0257178, global = 6.80358e-05, cumulative = 0.000246971
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.75720907442428
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.11158487085822
+Time = 27   U 7.8535e-02   e 2.7033e-01   p 2.7151e-02   k 3.7767e-03   omega 9.8931e-04   pIters 45
+time step continuity errors : sum local = 0.0299116, global = -1.29928e-06, cumulative = 0.000245672
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.55712418807525
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.95330765948086
+Time = 28   U 9.9832e-02   e 2.6083e-01   p 3.1798e-02   k 2.9180e-03   omega 8.5924e-04   pIters 47
+time step continuity errors : sum local = 0.0282594, global = -9.34485e-05, cumulative = 0.000152223
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.20902693175421
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.18136319213676
+Time = 29   U 1.0938e-01   e 2.4418e-01   p 4.0892e-02   k 2.7179e-03   omega 7.6000e-04   pIters 44
+time step continuity errors : sum local = 0.0316068, global = -3.68601e-05, cumulative = 0.000115363
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.51470736538985
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.94427571564381
+Time = 30   U 9.7347e-02   e 2.5928e-01   p 2.8336e-02   k 2.5593e-03   omega 7.0122e-04   pIters 43
+time step continuity errors : sum local = 0.02944, global = -8.01116e-05, cumulative = 3.52515e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.86928795978824
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.00487608988902
+Time = 31   U 1.0012e-01   e 3.2215e-01   p 9.2884e-02   k 2.4377e-03   omega 6.6124e-04   pIters 46
+time step continuity errors : sum local = 0.0296778, global = -0.000134968, cumulative = -9.97164e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.28718270738489
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.80081136940765
+Time = 32   U 7.4503e-02   e 2.4451e-01   p 2.4769e-02   k 2.4571e-03   omega 6.2512e-04   pIters 45
+time step continuity errors : sum local = 0.0283892, global = -2.20622e-05, cumulative = -0.000121779
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.36590515707894
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.61674037202675
+Time = 33   U 1.1061e-01   e 2.6331e-01   p 5.7957e-02   k 2.5046e-03   omega 5.8637e-04   pIters 47
+time step continuity errors : sum local = 0.0254707, global = -7.57085e-05, cumulative = -0.000197487
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=255.74424574338144
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.48570406731221
+Time = 34   U 9.9760e-02   e 2.2395e-01   p 3.0153e-02   k 2.3514e-03   omega 5.5670e-04   pIters 45
+time step continuity errors : sum local = 0.0286843, global = 1.31513e-05, cumulative = -0.000184336
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=256.31471874877201
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.28985735920389
+Time = 35   U 1.0280e-01   e 2.6243e-01   p 3.3472e-02   k 2.2420e-03   omega 5.5097e-04   pIters 47
+time step continuity errors : sum local = 0.0283895, global = 9.84406e-05, cumulative = -8.58951e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.37310600525035
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.13390820301339
+Time = 36   U 9.0694e-02   e 2.7871e-01   p 4.1831e-02   k 2.2318e-03   omega 5.4611e-04   pIters 44
+time step continuity errors : sum local = 0.0329636, global = 5.57046e-05, cumulative = -3.01905e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.61105143144329
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.02255736857416
+Time = 37   U 7.8687e-02   e 2.2699e-01   p 2.4627e-02   k 2.2553e-03   omega 5.3083e-04   pIters 43
+time step continuity errors : sum local = 0.0280503, global = 2.90176e-05, cumulative = -1.17285e-06
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.08059591443077
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.13041753558633
+Time = 38   U 1.1484e-01   e 2.4607e-01   p 1.8935e-01   k 2.2488e-03   omega 5.1542e-04   pIters 47
+time step continuity errors : sum local = 0.0267042, global = -4.98636e-05, cumulative = -5.10365e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.56638496177925
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.61125829035183
+Time = 39   U 9.6458e-02   e 2.0012e-01   p 2.6984e-02   k 2.0411e-03   omega 5.1252e-04   pIters 45
+time step continuity errors : sum local = 0.0287796, global = -4.75458e-07, cumulative = -5.1512e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.97687468307839
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.51591478258342
+Time = 40   U 1.1041e-01   e 2.6165e-01   p 5.4668e-02   k 1.8644e-03   omega 5.1804e-04   pIters 47
+time step continuity errors : sum local = 0.0265136, global = 8.41286e-05, cumulative = 3.26167e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.55353773631293
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.19682554009381
+Time = 41   U 8.1520e-02   e 2.4514e-01   p 2.9484e-02   k 1.8651e-03   omega 5.0658e-04   pIters 45
+time step continuity errors : sum local = 0.027226, global = -2.97008e-05, cumulative = 2.91589e-06
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.70318159422976
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.3651567856914
+Time = 42   U 9.1157e-02   e 2.2294e-01   p 2.8652e-02   k 1.8500e-03   omega 4.6990e-04   pIters 46
+time step continuity errors : sum local = 0.0300307, global = 8.55324e-05, cumulative = 8.84483e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.26223323918947
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.55636569664398
+Time = 43   U 1.1175e-01   e 2.1889e-01   p 5.3964e-02   k 1.7176e-03   omega 4.3110e-04   pIters 45
+time step continuity errors : sum local = 0.0315241, global = 7.21303e-05, cumulative = 0.000160579
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.79769794577629
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.57490589195299
+Time = 44   U 9.5275e-02   e 1.9803e-01   p 2.7135e-02   k 1.5494e-03   omega 3.8184e-04   pIters 43
+time step continuity errors : sum local = 0.0295754, global = -6.0911e-06, cumulative = 0.000154488
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.29031697817305
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.76694757613956
+Time = 45   U 1.0411e-01   e 2.5614e-01   p 3.0688e-01   k 1.4614e-03   omega 3.7685e-04   pIters 47
+time step continuity errors : sum local = 0.0265347, global = 5.6272e-05, cumulative = 0.000210759
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.06453969822121
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.96767456113361
+Time = 46   U 7.4618e-02   e 2.2010e-01   p 2.5513e-02   k 1.5707e-03   omega 3.5028e-04   pIters 45
+time step continuity errors : sum local = 0.0295606, global = 2.99134e-06, cumulative = 0.000213751
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.10708546983898
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.47909257322232
+Time = 47   U 1.0463e-01   e 2.3266e-01   p 4.0412e-02   k 1.6664e-03   omega 3.4794e-04   pIters 47
+time step continuity errors : sum local = 0.0279429, global = -8.0856e-05, cumulative = 0.000132895
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.17992377650643
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.19124754411376
+Time = 48   U 1.0159e-01   e 2.0074e-01   p 3.4390e-02   k 1.5507e-03   omega 3.7406e-04   pIters 44
+time step continuity errors : sum local = 0.0311314, global = -5.11284e-05, cumulative = 8.17664e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.57636575157557
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.30860573594441
+Time = 49   U 9.7763e-02   e 2.1664e-01   p 3.0221e-02   k 1.4789e-03   omega 3.7931e-04   pIters 45
+time step continuity errors : sum local = 0.031504, global = -3.11987e-05, cumulative = 5.05676e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.98880202039993
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.03261429622427
+Time = 50   U 9.5472e-02   e 2.4876e-01   p 5.5806e-02   k 1.5537e-03   omega 3.7011e-04   pIters 46
+time step continuity errors : sum local = 0.0295853, global = -0.000136157, cumulative = -8.55893e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.38353554948247
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.38458473079572
+Time = 51   U 7.5324e-02   e 2.1206e-01   p 2.4645e-02   k 1.6932e-03   omega 3.5124e-04   pIters 44
+time step continuity errors : sum local = 0.031005, global = -5.80336e-05, cumulative = -0.000143623
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.76188309225637
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.53078247630316
+Time = 52   U 1.1299e-01   e 2.3453e-01   p 1.4882e-01   k 1.7143e-03   omega 3.3870e-04   pIters 47
+time step continuity errors : sum local = 0.0270276, global = -6.56344e-05, cumulative = -0.000209257
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.39681420292845
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.81365404922468
+Time = 53   U 9.5865e-02   e 1.8876e-01   p 2.7967e-02   k 1.4816e-03   omega 3.3144e-04   pIters 45
+time step continuity errors : sum local = 0.0289692, global = -2.64655e-05, cumulative = -0.000235723
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.91479699108004
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=341.25310835023964
+Time = 54   U 1.0717e-01   e 2.3134e-01   p 3.9899e-02   k 1.3389e-03   omega 3.2772e-04   pIters 47
+time step continuity errors : sum local = 0.0287338, global = 8.71688e-05, cumulative = -0.000148554
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.0574306515058
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.4745379302812
+Time = 55   U 8.6374e-02   e 2.2096e-01   p 3.3873e-02   k 1.4481e-03   omega 3.3491e-04   pIters 44
+time step continuity errors : sum local = 0.029075, global = 2.73127e-05, cumulative = -0.000121241
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.11235501337171
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.40667967919961
+Time = 56   U 8.4576e-02   e 2.0292e-01   p 2.6180e-02   k 1.5230e-03   omega 3.3003e-04   pIters 44
+time step continuity errors : sum local = 0.0300202, global = -2.28939e-05, cumulative = -0.000144135
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.07302078632318
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.92747251303456
+Time = 57   U 1.1470e-01   e 2.1904e-01   p 7.8542e-02   k 1.4163e-03   omega 3.1976e-04   pIters 46
+time step continuity errors : sum local = 0.0324417, global = 0.000136821, cumulative = -7.31375e-06
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.46506471631261
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.86886249877011
+Time = 58   U 9.4706e-02   e 1.7798e-01   p 2.6704e-02   k 1.1874e-03   omega 2.8284e-04   pIters 45
+time step continuity errors : sum local = 0.0288663, global = 1.87852e-05, cumulative = 1.14714e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.751232079445
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.90827762561497
+Time = 59   U 1.0894e-01   e 2.2581e-01   p 1.1179e-01   k 1.0957e-03   omega 2.7157e-04   pIters 47
+time step continuity errors : sum local = 0.0271431, global = 6.20239e-05, cumulative = 7.34954e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.10721615168677
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.71114918390475
+Time = 60   U 7.7960e-02   e 1.9556e-01   p 2.6476e-02   k 1.2425e-03   omega 2.6820e-04   pIters 45
+time step continuity errors : sum local = 0.0287536, global = 1.40158e-05, cumulative = 8.75111e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.8797216531276
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.52750327060539
+Time = 61   U 9.9022e-02   e 1.9754e-01   p 3.3520e-02   k 1.3135e-03   omega 2.7096e-04   pIters 47
+time step continuity errors : sum local = 0.030027, global = -9.24237e-05, cumulative = -4.91262e-06
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.22714067548623
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.00879576976081
+Time = 62   U 1.0653e-01   e 1.8722e-01   p 4.1531e-02   k 1.1332e-03   omega 2.4842e-04   pIters 44
+time step continuity errors : sum local = 0.0316389, global = -1.71685e-05, cumulative = -2.20812e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.67349610169686
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.77779083718514
+Time = 63   U 9.5077e-02   e 1.7935e-01   p 2.8243e-02   k 9.6855e-04   omega 2.4558e-04   pIters 43
+time step continuity errors : sum local = 0.0298417, global = -7.2575e-05, cumulative = -9.46562e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.28638312502346
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.79339564843423
+Time = 64   U 1.0035e-01   e 2.1327e-01   p 8.8782e-02   k 9.7798e-04   omega 2.5027e-04   pIters 46
+time step continuity errors : sum local = 0.0322942, global = -0.000163584, cumulative = -0.00025824
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.21964542932568
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.60846464003396
+Time = 65   U 7.4988e-02   e 1.8179e-01   p 2.4679e-02   k 1.1310e-03   omega 2.4557e-04   pIters 45
+time step continuity errors : sum local = 0.0300464, global = -1.80772e-05, cumulative = -0.000276317
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.38037119361201
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.46856237194891
+Time = 66   U 1.1154e-01   e 2.0617e-01   p 6.3544e-02   k 1.1946e-03   omega 2.4742e-04   pIters 47
+time step continuity errors : sum local = 0.0281044, global = -6.90465e-05, cumulative = -0.000345364
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.9517750100523
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.20659961475519
+Time = 67   U 9.7822e-02   e 1.7402e-01   p 3.0732e-02   k 9.8061e-04   omega 2.3046e-04   pIters 45
+time step continuity errors : sum local = 0.026965, global = -2.6553e-06, cumulative = -0.000348019
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.54437304792151
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.64636963682375
+Time = 68   U 1.0242e-01   e 1.9975e-01   p 3.3749e-02   k 8.6514e-04   omega 2.5818e-04   pIters 47
+time step continuity errors : sum local = 0.0295402, global = 9.42291e-05, cumulative = -0.00025379
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.13990571592819
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.16797250888709
+Time = 69   U 9.1621e-02   e 2.0056e-01   p 4.1286e-02   k 9.8720e-04   omega 2.5041e-04   pIters 45
+time step continuity errors : sum local = 0.0295445, global = -6.92905e-05, cumulative = -0.00032308
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.54093109397229
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.31617440127758
+Time = 70   U 8.0452e-02   e 1.8510e-01   p 2.4659e-02   k 1.1185e-03   omega 2.4280e-04   pIters 43
+time step continuity errors : sum local = 0.031594, global = 2.98129e-05, cumulative = -0.000293267
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.00852038849325
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.03532642890036
+Time = 71   U 1.1592e-01   e 2.1313e-01   p 1.5205e-01   k 1.1098e-03   omega 2.3393e-04   pIters 47
+time step continuity errors : sum local = 0.0288422, global = -3.3741e-05, cumulative = -0.000327008
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.20314490146734
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.33328646847275
+Time = 72   U 9.3812e-02   e 1.6761e-01   p 2.6810e-02   k 9.0053e-04   omega 2.3033e-04   pIters 45
+time step continuity errors : sum local = 0.0286017, global = -3.46089e-06, cumulative = -0.000330469
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.81005381462654
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=333.48188877074773
+Time = 73   U 1.1032e-01   e 2.1883e-01   p 5.6403e-02   k 8.1177e-04   omega 2.4967e-04   pIters 47
+time step continuity errors : sum local = 0.0275277, global = 7.72914e-05, cumulative = -0.000253178
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.04576179047228
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=333.1203700586513
+Time = 74   U 8.2370e-02   e 1.8821e-01   p 2.8865e-02   k 9.9127e-04   omega 2.2537e-04   pIters 44
+time step continuity errors : sum local = 0.0309432, global = 6.19159e-05, cumulative = -0.000191262
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.05342036784185
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.38311624349399
+Time = 75   U 9.3337e-02   e 1.8994e-01   p 2.9757e-02   k 1.0923e-03   omega 2.2481e-04   pIters 46
+time step continuity errors : sum local = 0.0309506, global = 9.06963e-05, cumulative = -0.000100566
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.10561164711288
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.17227049299464
+Time = 76   U 1.0960e-01   e 2.0242e-01   p 5.1911e-02   k 9.6180e-04   omega 2.0901e-04   pIters 45
+time step continuity errors : sum local = 0.0330052, global = 7.91047e-05, cumulative = -2.1461e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.41180349944125
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.69440541677579
+Time = 77   U 9.2124e-02   e 1.6731e-01   p 2.7130e-02   k 8.0127e-04   omega 2.2647e-04   pIters 43
+time step continuity errors : sum local = 0.0303031, global = -2.61092e-05, cumulative = -4.75701e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.70618473757582
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=334.37330625947408
+Time = 78   U 1.0350e-01   e 2.1331e-01   p 2.2652e-01   k 8.0259e-04   omega 2.3423e-04   pIters 47
+time step continuity errors : sum local = 0.0270506, global = 4.04899e-05, cumulative = -7.0802e-06
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.23869754015709
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.05708104189142
+Time = 79   U 7.5647e-02   e 1.7255e-01   p 2.5129e-02   k 9.3646e-04   omega 2.0610e-04   pIters 45
+time step continuity errors : sum local = 0.0295223, global = 5.94787e-06, cumulative = -1.13233e-06
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.11644258623704
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.67547618714786
+Time = 80   U 1.0664e-01   e 1.9474e-01   p 4.5355e-02   k 1.0130e-03   omega 2.0678e-04   pIters 47
+time step continuity errors : sum local = 0.0294007, global = -7.03677e-05, cumulative = -7.15001e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.10942723274059
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.33362275163836
+Time = 81   U 9.7546e-02   e 1.7878e-01   p 3.4190e-02   k 8.1732e-04   omega 1.9874e-04   pIters 44
+time step continuity errors : sum local = 0.0307526, global = -6.22e-05, cumulative = -0.0001337
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.40002420772453
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.66721560836254
+Time = 82   U 9.5222e-02   e 1.7809e-01   p 3.0587e-02   k 7.1423e-04   omega 2.2332e-04   pIters 46
+time step continuity errors : sum local = 0.0291803, global = -9.25825e-05, cumulative = -0.000226282
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.68833435718727
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=335.40942496246299
+Time = 83   U 9.5244e-02   e 1.9779e-01   p 5.2671e-02   k 7.7475e-04   omega 2.1372e-04   pIters 45
+time step continuity errors : sum local = 0.0330524, global = -0.000108209, cumulative = -0.000334491
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.39960281687007
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.73923107173033
+Time = 84   U 7.7299e-02   e 1.7289e-01   p 2.4070e-02   k 8.8252e-04   omega 1.9345e-04   pIters 44
+time step continuity errors : sum local = 0.0321366, global = -6.38363e-05, cumulative = -0.000398327
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.25178934667923
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.20092382770821
+Time = 85   U 1.1531e-01   e 2.0167e-01   p 2.2988e-01   k 9.0795e-04   omega 1.9654e-04   pIters 47
+time step continuity errors : sum local = 0.0280338, global = -5.17914e-05, cumulative = -0.000450119
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.01258729002188
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.76540951027772
+Time = 86   U 9.0664e-02   e 1.6493e-01   p 2.8270e-02   k 6.9466e-04   omega 1.9103e-04   pIters 45
+time step continuity errors : sum local = 0.0294692, global = -3.31322e-05, cumulative = -0.000483251
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.3840344008637
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.41115215499008
+Time = 87   U 1.0488e-01   e 1.9611e-01   p 4.2100e-02   k 6.8063e-04   omega 2.1652e-04   pIters 47
+time step continuity errors : sum local = 0.0288284, global = 9.02244e-05, cumulative = -0.000393027
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.71202728441614
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.990159605401
+Time = 88   U 8.5608e-02   e 1.7982e-01   p 3.2887e-02   k 7.3950e-04   omega 1.8765e-04   pIters 44
+time step continuity errors : sum local = 0.028713, global = 2.39002e-05, cumulative = -0.000369126
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.68863298198085
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.09120612244095
+Time = 89   U 8.7284e-02   e 1.8481e-01   p 2.6654e-02   k 8.3805e-04   omega 1.8825e-04   pIters 44
+time step continuity errors : sum local = 0.0314178, global = -3.07429e-05, cumulative = -0.000399869
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.72760345454759
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.92440407561077
+Time = 90   U 1.1169e-01   e 2.0451e-01   p 6.6936e-02   k 7.5273e-04   omega 1.8181e-04   pIters 46
+time step continuity errors : sum local = 0.032702, global = 0.000147983, cumulative = -0.000251886
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.41882699636386
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.97824432107677
+Time = 91   U 8.7535e-02   e 1.6194e-01   p 2.7339e-02   k 6.2811e-04   omega 1.8981e-04   pIters 45
+time step continuity errors : sum local = 0.0291259, global = 2.30521e-05, cumulative = -0.000228834
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=257.82195119630023
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.92746914442029
+Time = 92   U 1.0449e-01   e 2.0694e-01   p 1.4619e-01   k 6.4804e-04   omega 2.0617e-04   pIters 47
+time step continuity errors : sum local = 0.0271438, global = 5.03354e-05, cumulative = -0.000178498
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.63366247282295
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.87932621892537
+Time = 93   U 7.6648e-02   e 1.6626e-01   p 2.6257e-02   k 6.9232e-04   omega 1.7102e-04   pIters 45
+time step continuity errors : sum local = 0.029641, global = 2.41816e-05, cumulative = -0.000154317
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.7610039432314
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.49472385003367
+Time = 94   U 9.9372e-02   e 1.8649e-01   p 3.6445e-02   k 7.8151e-04   omega 1.8155e-04   pIters 47
+time step continuity errors : sum local = 0.030318, global = -9.07523e-05, cumulative = -0.000245069
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.34494077081609
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.21176110327553
+Time = 95   U 9.7328e-02   e 1.9324e-01   p 3.8426e-02   k 6.2603e-04   omega 1.6874e-04   pIters 44
+time step continuity errors : sum local = 0.0310417, global = -1.83374e-05, cumulative = -0.000263406
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=258.77346787787076
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.71846366911899
+Time = 96   U 8.7337e-02   e 1.6316e-01   p 2.8866e-02   k 6.0203e-04   omega 1.8982e-04   pIters 44
+time step continuity errors : sum local = 0.0284713, global = 1.4034e-05, cumulative = -0.000249373
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.15164540380187
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.73482558193592
+Time = 97   U 9.5909e-02   e 1.9855e-01   p 7.3085e-02   k 6.0698e-04   omega 1.8818e-04   pIters 46
+time step continuity errors : sum local = 0.0309769, global = -0.000161357, cumulative = -0.00041073
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.71590553826223
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.31742518525817
+Time = 98   U 7.4178e-02   e 1.5939e-01   p 2.4595e-02   k 6.6495e-04   omega 1.6162e-04   pIters 45
+time step continuity errors : sum local = 0.0296691, global = -3.03554e-05, cumulative = -0.000441085
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.8516768195928
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=340.48101287900641
+Time = 99   U 1.0803e-01   e 1.9315e-01   p 8.8512e-02   k 7.2143e-04   omega 1.6899e-04   pIters 47
+time step continuity errors : sum local = 0.0275371, global = -6.9705e-05, cumulative = -0.00051079
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.29464694758815
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.56124071232438
+Time = 100   U 8.7037e-02   e 1.7800e-01   p 2.9101e-02   k 5.4773e-04   omega 1.5882e-04   pIters 45
+time step continuity errors : sum local = 0.0288962, global = -1.66451e-06, cumulative = -0.000512455
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.71782597759034
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.35734266276222
+Time = 101   U 9.5502e-02   e 1.7327e-01   p 3.6430e-02   k 5.8436e-04   omega 1.8715e-04   pIters 47
+time step continuity errors : sum local = 0.0296962, global = 8.79737e-05, cumulative = -0.000424481
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.13272209728638
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.74233083420853
+Time = 102   U 8.6617e-02   e 1.7965e-01   p 3.7201e-02   k 5.6928e-04   omega 1.6231e-04   pIters 44
+time step continuity errors : sum local = 0.0305196, global = 1.72824e-05, cumulative = -0.000407199
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.97172537824196
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=337.94258508018243
+Time = 103   U 8.0635e-02   e 1.6323e-01   p 2.4830e-02   k 6.5709e-04   omega 1.5595e-04   pIters 43
+time step continuity errors : sum local = 0.0306918, global = 6.20793e-05, cumulative = -0.000345119
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=262.06133997563472
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=341.31729511453216
+Time = 104   U 1.0742e-01   e 1.9390e-01   p 9.0954e-02   k 6.2169e-04   omega 1.5322e-04   pIters 47
+time step continuity errors : sum local = 0.0277691, global = -1.39297e-05, cumulative = -0.000359049
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.02330974082253
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.89376672136746
+Time = 105   U 8.2049e-02   e 1.6615e-01   p 2.6990e-02   k 5.3067e-04   omega 1.5916e-04   pIters 45
+time step continuity errors : sum local = 0.0301449, global = 1.46108e-05, cumulative = -0.000344438
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=260.49811864243418
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.06130800844005
+Time = 106   U 1.0148e-01   e 1.8335e-01   p 7.6169e-02   k 5.5349e-04   omega 1.7967e-04   pIters 47
+time step continuity errors : sum local = 0.0268823, global = 7.36704e-05, cumulative = -0.000270768
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.71080210010047
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.89196539248809
+Time = 107   U 7.6953e-02   e 1.6216e-01   p 2.7477e-02   k 5.4132e-04   omega 1.4292e-04   pIters 45
+time step continuity errors : sum local = 0.0293025, global = -1.69595e-05, cumulative = -0.000287727
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=261.85241287110597
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=338.79769992873651
+Time = 108   U 9.2552e-02   e 1.7695e-01   p 3.1826e-02   k 6.3353e-04   omega 1.5416e-04   pIters 47
+time step continuity errors : sum local = 0.0300971, global = -9.54946e-05, cumulative = -0.000383222
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=262.06687872561531
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=342.04370441707061
+Time = 109   U 9.5732e-02   e 1.8442e-01   p 4.2691e-02   k 5.1555e-04   omega 1.4245e-04   pIters 44
+time step continuity errors : sum local = 0.0328836, global = 1.33575e-06, cumulative = -0.000381886
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=259.85601859899168
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.94101757358203
+Time = 110   U 8.0342e-02   e 1.6542e-01   p 2.8013e-02   k 5.1052e-04   omega 1.6111e-04   pIters 42
+time step continuity errors : sum local = 0.0325263, global = -1.27202e-05, cumulative = -0.000394606
+SIMPLE reached endTime (110 iterations)
+written /ssd/sclin/gpu-native-cfd/runs/BRAE-perf/r4/k1/n110/110
+End
+rc=0

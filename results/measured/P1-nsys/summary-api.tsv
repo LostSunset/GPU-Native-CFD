@@ -1,0 +1,19 @@
+run	API	calls per iteration	ms per iteration
+gncRhoSimple -fast, 16,000 cells	cudaLaunchKernel_ptsz	714.8	1.422
+gncRhoSimple -fast, 16,000 cells	cudaStreamSynchronize_ptsz	28.8	1.339
+gncRhoSimple -fast, 16,000 cells	cudaGraphLaunch_v10000	11.2	0.103
+gncRhoSimple -fast, 16,000 cells	cudaMemcpy_ptds	11.0	0.057
+gncRhoSimple -fast, 16,000 cells	cuKernelGetName	714.8	0.051
+gncRhoSimple -fast, 16,000 cells	cudaMemset_ptds	2.0	0.000
+gncRhoSimple -fast, 1,024,000 cells	cudaStreamSynchronize_ptsz	70.4	51.718
+gncRhoSimple -fast, 1,024,000 cells	cudaLaunchKernel_ptsz	1059.4	4.183
+gncRhoSimple -fast, 1,024,000 cells	cudaGraphLaunch_v10000	53.2	1.926
+gncRhoSimple -fast, 1,024,000 cells	cudaMemcpy_ptds	12.2	0.759
+gncRhoSimple -fast, 1,024,000 cells	cuKernelGetName	1059.4	0.163
+gncRhoSimple -fast, 1,024,000 cells	cudaMemset_ptds	2.0	0.025
+gncHisa -fast, ONERA M6	cudaMemcpy_ptds	17.0	13.010
+gncHisa -fast, ONERA M6	cudaDeviceSynchronize	10.0	5.155
+gncHisa -fast, ONERA M6	cudaLaunchKernel_ptsz	556.0	4.014
+gncHisa -fast, ONERA M6	cudaStreamSynchronize_ptsz	5.0	0.506
+gncHisa -fast, ONERA M6	cuKernelGetName	556.0	0.224
+gncHisa -fast, ONERA M6	cudaMemset_ptds	10.0	0.110

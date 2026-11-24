@@ -1,0 +1,37 @@
+built_utc=2026-10-23T10:37:29Z
+host=g02 profile=g02-l40
+source_dir=/ssd/sclin/gpu-native-cfd/GPU-Native-CFD
+sync_atlas_commit=5bd58fc323bad62379efc122a4c322a795f972e8
+sync_uncommitted_paths=0
+sync_synced_utc=2026-10-23T10:36:55Z
+source_sha256=900cbf00d60bd47bb45c9e1d7c90b5601aec37157ef68efba98cb8aea3187dd5
+cmake=cmake version 3.28.3
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cuda_archs=89
+gnc_fmad=OFF
+cmake_exit=0 build_exit=0 ref_exit=0
+compiler_warnings=0
+ref_openfoam_bashrc=/opt/atlas-openfoam/current/OpenFOAM-v2606/etc/bashrc
+ref_openfoam_project=/opt/atlas-openfoam/current/OpenFOAM-v2606
+ref_wm_options=linux64GccDPInt32Opt
+ref_wmake_cxx=g++
+ref_wmake_cxxflags=-std=c++17 -m64 -pthread -DOPENFOAM=2606 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -DNoRepository -ftemplate-depth=1000 -fPIC
+geometry_cu_command=/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/gnc.dir/includes_CUDA.rsp -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_89,code=[compute_89,sm_89]" -prec-div=true -prec-sqrt=true --default-stream per-thread --fmad=false -Xcompiler=-ffp-contract=off,-Wall,-Wextra -x cu -c /ssd/sclin/gpu-native-cfd/GPU-Native-CFD/src/mesh/geometry.cu -o CMakeFiles/gnc.dir/src/mesh/geometry.cu.o
+sha256 gncCompare=ec05eeca9d57c24a96c11146e34e6dc4f0e0ec38e346c4900ef8b3458a46a3cd
+sha256 gncFieldDiff=36c6763f7b115f3f4520688b83f726e34f4a568270c01ddcc77beb27ea102411
+sha256 gncGeomL0=cb593bd00d96f065e4ade400187760917c4108165441c278a6438fe59c057345
+sha256 gncGeomRef=35cade17a39263e5e74722dd7b7b2b64ec6b355961c4f98555d5549865acb666
+sha256 gncHisa=3980c3657ad8ad09173f820cdc466a28de903c1e96b6c9988130b907556b9b81
+sha256 gncInitL2=4451fde1d925545a5d2f8747673796783452705d50c70aaaf52eb53a6da5ad88
+sha256 gncOpsL1=75c8b718d1fdebb8effca8fad48626039af1993a79163fcfeeec3e51b6b22ad9
+sha256 gncOpsRef=4974130c92b37eb54078d9fd78a319d8625f420e964f1e5a05278d3efa48285c
+sha256 gncOuterL2=85f055e26a04ef33d0d63554735f24c6ff91d584fa9fefd3fc0a1703904d1797
+sha256 gncPowCheck=34738bffe5ce49cfa1920f62b33177cf00d439293990b29b72470b9419fa138d
+sha256 gncResL2=dca8502517e82208e6ff8cba2da5c44aea18d11ac35e344d21590cdb0160d35f
+sha256 gncRunL3=2be632177d5ec5ec4dae8ec160cdae36e46990ea393394597c7be899f14b479d
+sha256 gncSumBench=72b471a634578f4ccecfd33b28871dd8bd77254da20da3a269fe0db461b04fa7
+sha256 gncTurbL2=fa81fd0f662ecfe4f18660df76313b8f756b6974e4049e748d259dfd56473881
+sha256 gncWallDistL1=7de820b3697f0cc1c82845c4d5ebf78ed30f78287d31dfe6961130a55128f99a
+sha256 libgncHisaDump.so=cbb8b732f431cbfc7574825e457fad975253826eef425cec8565522aaee68007
+sha256 libgncHisaJacobianDump.so=2503a15b6dfa53d16627dfd298c37836772a9a93647f300d2f438a4ed83b3e38

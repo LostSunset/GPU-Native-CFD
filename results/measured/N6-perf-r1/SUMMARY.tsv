@@ -1,0 +1,8 @@
+case	variant	nCells	iterations	per_iter_s	per_iter_clock_s	wall_s	p_iters_mean
+r1	gnc	16000	200	0.032610	-	6.89	61.0
+r1	gncfast	16000	200	0.019067	-	4.14	169.7
+r1	gncamg	16000	200	0.009948	-	2.31	26.1
+r1	of1	-	200	0.037337	0.035	7.96	14.5
+r1	of1pcg	-	200	0.040000	0.040	8.58	61.0
+r1	of32	-	?	?	?	?	nan
+r1	spuma	-	50	0.834082	1.163	59.18	20.4

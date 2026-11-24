@@ -1,0 +1,6 @@
+label=N6e-spuma-r32
+started_utc=2026-10-26T02:44:23Z
+host=g02 profile=g02-paper gpu_device=3
+iters=3 variants=spuma core=157 spuma_pool_gb=40
+uptime= 10:44:23 up 14 days,  1:20,  9 users,  load average: 104.39, 104.33, 104.39
+finished_utc=2026-10-26T06:47:24Z

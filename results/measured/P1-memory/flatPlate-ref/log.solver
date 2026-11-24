@@ -1,0 +1,23 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+function forces (forces)
+mesh: 8000 cells; analysis: RAS SpalartAllmaras; endTime 3
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 10
+  GMRES iterations: 20   initial residual: 6.20367e-08 (0.999873 0.000253166 0) 6.08063e-07
+ExecutionTime = 0.578951 s
+
+Time = 2
+Pseudo Courant No: 10
+  GMRES iterations: 1   initial residual: 0.761129 (0.533121 0.0686821 0) 0.50244
+ExecutionTime = 0.603701 s
+
+Time = 3
+Pseudo Courant No: 9.44497
+  GMRES iterations: 1   initial residual: 0.319509 (0.25796 0.0416695 0) 0.219059
+ExecutionTime = 0.628409 s
+
+End

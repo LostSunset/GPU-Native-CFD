@@ -1,0 +1,10 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 40000 fvBoundaryFaces 860
+analysis: laminar
+pseudoCoNum 1
+LU-SGS levels: forward 499 reverse 499
+GMRES iterations 1
+GMRES initial residual 0.99999999997695987 (0.97077953650625703 0.23981382011694291 1.6603834955416296e-14) 0.99999999999086275
+GMRES final residual 8.5194583838283453e-08 (7.9763703402493903e-08 3.9718278764275891e-08 0) 7.6775760847929507e-08
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/gpu2.gnc
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/gpu2.state.gnc

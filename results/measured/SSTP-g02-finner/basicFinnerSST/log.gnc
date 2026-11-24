@@ -1,0 +1,36 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+wallDist Poisson: PCG Solving for yPsi, Initial residual = 1, Final residual = 9.69838e-11, No Iterations 584
+mesh: 2179881 cells; analysis: RAS kOmegaSST; endTime 5
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 1 (0.999316 0.00046558 0.0347635) 1
+ExecutionTime = 7.06911 s
+
+Time = 2
+Pseudo Courant No: 1
+  GMRES iterations: 1   initial residual: 0.54581 (0.35218 0.0213372 0.0298085) 0.314034
+ExecutionTime = 8.97627 s
+
+Time = 3
+Pseudo Courant No: 1.25
+  GMRES iterations: 1   initial residual: 0.329324 (0.188981 0.0146925 0.0191188) 0.171785
+ExecutionTime = 10.8831 s
+
+Time = 4
+Pseudo Courant No: 1.5625
+  GMRES iterations: 1   initial residual: 0.204996 (0.117235 0.0107336 0.0132975) 0.106476
+ExecutionTime = 12.8049 s
+
+Time = 5
+Pseudo Courant No: 1.95312
+  GMRES iterations: 1   initial residual: 0.185692 (0.0927409 0.00956298 0.0115398) 0.0841614
+ExecutionTime = 14.7161 s
+
+profile: 5 outer iterations, mean wall time per iteration 1.91333 s
+  flux 0.0193493  residual 0.0192555  pseudoTime 0.000851391  jacobian 0.0167262  gmres 1.4423  update 0.00458873  turbulence 0.410254
+  gmres parts per iteration (GNC_PROFILE_GMRES=1): precondition 0 s (45 calls)  matrixMul 0 s (50)  reductions 0 s (100 batches)
+End

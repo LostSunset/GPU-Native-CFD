@@ -1,0 +1,123 @@
+source=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation
+variant=MCBSGS-jgpu (HiSA-GPU-Research G2-CLEAN-2)
+--- /home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation/system/fvSolution	2026-04-01 20:20:43.000000000 +0800
++++ /ssd/sclin/gpu-native-cfd/cases/basicFinnerSSTHybrid-MCBSGS-jgpu/simulation/system/fvSolution	2026-10-23 17:20:15.140117489 +0800
+@@ -1,19 +1,19 @@
+ /*--------------------------------*- C++ -*----------------------------------*\
+-|                                                                             |
+-|    HiSA: High Speed Aerodynamic solver                                      |
+-|    Copyright (C) 2014-2017 Johan Heyns - CSIR, South Africa                 |
+-|    Copyright (C) 2014-2017 Oliver Oxtoby - CSIR, South Africa               |
+-|                                                                             |
++| =========                 |                                                 |
++| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
++|  \\    /   O peration     | Version:  2606                                  |
++|   \\  /    A nd           | Website:  www.openfoam.com                      |
++|    \\/     M anipulation  |                                                 |
+ \*---------------------------------------------------------------------------*/
++// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ FoamFile
+ {
+-    version     2.0;
+-    format      ascii;
+-    class       dictionary;
+-    location    "system";
+-    object      fvSolution;
++    version         2;
++    format          ascii;
++    class           dictionary;
++    location        "system";
++    object          fvSolution;
+ }
+-// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+ 
+ solvers
+ {
+@@ -25,7 +25,6 @@
+         relTol          0.1;
+         minIter         1;
+     }
+-
+     yPsi
+     {
+         solver          GAMG;
+@@ -34,7 +33,7 @@
+         nCellsInCoarsestLevel 10;
+         agglomerator    faceAreaPair;
+         mergeLevels     1;
+-        tolerance       1e-6;
++        tolerance       1e-06;
+         relTol          0;
+     }
+ }
+@@ -43,39 +42,49 @@
+ {
+     equations
+     {
+-        nuTilda    0.5;
+-        k          0.5;
+-        omega      0.5;
++        nuTilda         0.5;
++        k               0.5;
++        omega           0.5;
+     }
+ }
+ 
+ flowSolver
+ {
+-    solver            GMRES;
++    solver          GMRESGPU;
+     GMRES
+     {
+-        inviscidJacobian  LaxFriedrichs;
+-        viscousJacobian   laplacian;
+-        preconditioner    LUSGS;
+-
+-        maxIter           20;
+-        nKrylov           8;
+-        solverTolRel      1e-1 (1e-1 1e-1 1e-1) 1e-1;
++        inviscidJacobian LaxFriedrichs;
++        viscousJacobian laplacian;
++        preconditioner  LUSGS;
++        maxIter         20;
++        nKrylov         8;
++        solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
++    }
++    GMRESGPU
++    {
++        inviscidJacobian LaxFriedrichsGPU;
++        viscousJacobian laplacianGPU;
++        preconditioner  MCBSGS;
++        maxIter         20;
++        nKrylov         8;
++        solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
++        matrixPrecision double;
++        packing         gpu;
++        device          0;
+     }
+ }
+ 
+ pseudoTime
+ {
+-    pseudoTol          1e-6 (1e-6 1e-6 1e-6) 1e-6;
+-    pseudoCoNum        1;
+-    pseudoCoNumMax     20.0;
+-
+-    pseudoCoNumMaxIncreaseFactor  1.25;
+-    pseudoCoNumMin                0.1;
+-
+-    localTimestepping             true;
+-    localTimesteppingBounding     true;
+-    localTimesteppingLowerBound   0.95;
++    pseudoTol       1e-06 ( 1e-06 1e-06 1e-06 ) 1e-06;
++    pseudoCoNum     1;
++    pseudoCoNumMax  20;
++    pseudoCoNumMaxIncreaseFactor 1.25;
++    pseudoCoNumMin  0.1;
++    localTimestepping true;
++    localTimesteppingBounding true;
++    localTimesteppingLowerBound 0.95;
+ }
+ 
++
+ // ************************************************************************* //

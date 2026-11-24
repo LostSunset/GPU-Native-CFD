@@ -1,0 +1,19 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/forwardStep/ref/1.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/forwardStep/gpu1.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncHisaDump" test="gncResL2"
+time                           text  ref="1" test="(none)"
+timeIndex                      text  ref="1" test="(none)"
+RR                             f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+Tstd                           f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoR.i                         f64        36576    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoR.b                         f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoUR.i                        f64        36576    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoUR.b                        f64          976    3           0    0.000e+00    0.000e+00            0  BITWISE
+rhoER.i                        f64        36576    1           0    0.000e+00    0.000e+00            0  BITWISE
+rhoER.b                        f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64        72688    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+foamCompat                     text  test only: "transposeAliasing"
+result: ALL BITWISE IDENTICAL

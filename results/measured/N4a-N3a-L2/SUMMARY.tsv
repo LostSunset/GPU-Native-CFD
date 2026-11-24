@@ -1,0 +1,7 @@
+case	nCells	analysis	ref	gpu	compare	gpu1_vs_gpu2
+shockTube	200	inviscid	0	0/0	BITWISE	identical
+forwardStep	36576	inviscid	0	0/0	BITWISE	identical
+nacaAirfoil	40000	viscous	0	0/0	BITWISE	identical
+flatPlate	8000	viscous	0	0/0	BITWISE	identical
+oneraM6	294912	viscous	0	0/0	BITWISE	identical
+basicFinner	2179881	viscous	0	0/0	BITWISE	identical

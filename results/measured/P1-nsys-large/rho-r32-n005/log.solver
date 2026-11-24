@@ -1,0 +1,76 @@
+gncRhoSimple (GPU-Native-CFD; algorithm after rhoSimpleFoam, not an official OpenFOAM build)
+device: NVIDIA L40 (sm_89)
+performance options: GNC_ILU=color GNC_REDUCE=tree GNC_GAMG=amg GNC_PCG_PRECOND=- (not bitwise to rhoSimpleFoam)
+mesh: 16384000 cells; RAS kOmegaSST; endTime 5
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Starting time loop
+
+Time = 1
+
+PBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.0782079, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.0664669, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 1, Final residual = 0.0626467, No Iterations 2
+limitTemperature: lower 0, upper 0
+AMG hierarchy: 11 levels (mergeLevels 2, FP32, omega 1.6, sweeps 2, Jacobi 1 from level 1, block from level 7): 16384000/2c 4095695/6c 1023658/6c 255619/6c 63687/6c 15804/6c 3896/6c 946/6c 226/6c 53/5c 13/4c
+pressureControl: p max 8.13554e+07
+pressureControl: p min -1.28311e+07
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.00949753, No Iterations 110
+PBiCGStab:  Solving for omega, Initial residual = 0.0138115, Final residual = 0.000908499, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 1, Final residual = 0.0875889, No Iterations 1
+
+Time = 2
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0281488, Final residual = 0.00176371, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0197233, Final residual = 0.00122786, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.999767, Final residual = 0.0783142, No Iterations 1
+limitTemperature: lower 0, upper 0
+pressureControl: p max 8.57604e+06
+pressureControl: p min -1.2919e+06
+GAMG:  Solving for p, Initial residual = 0.154234, Final residual = 0.00141022, No Iterations 95
+PBiCGStab:  Solving for omega, Initial residual = 0.000467179, Final residual = 4.22615e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.174771, Final residual = 0.00902834, No Iterations 1
+
+Time = 3
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0194074, Final residual = 0.00119229, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0193447, Final residual = 0.00120192, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.316296, Final residual = 0.0264179, No Iterations 1
+limitTemperature: lower 0, upper 0
+pressureControl: p max 2.86226e+06
+GAMG:  Solving for p, Initial residual = 0.0787443, Final residual = 0.000730658, No Iterations 92
+PBiCGStab:  Solving for omega, Initial residual = 0.000294895, Final residual = 2.92399e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.143341, Final residual = 0.00559937, No Iterations 1
+
+Time = 4
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.013356, Final residual = 0.000826729, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0174569, Final residual = 0.00108337, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.191586, Final residual = 0.0166996, No Iterations 1
+limitTemperature: lower 0, upper 0
+pressureControl: p max 899407
+pressureControl: p min -134814
+GAMG:  Solving for p, Initial residual = 0.0364207, Final residual = 0.000362166, No Iterations 83
+PBiCGStab:  Solving for omega, Initial residual = 0.000258324, Final residual = 1.92203e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.135098, Final residual = 0.00455764, No Iterations 1
+
+Time = 5
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0213022, Final residual = 0.00130877, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0210836, Final residual = 0.00130709, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.275885, Final residual = 0.0202607, No Iterations 1
+limitTemperature: lower 0, upper 0
+pressureControl: p min -1.67364e+06
+GAMG:  Solving for p, Initial residual = 0.0442648, Final residual = 0.000395635, No Iterations 83
+PBiCGStab:  Solving for omega, Initial residual = 0.000204225, Final residual = 1.56201e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.133586, Final residual = 0.00420727, No Iterations 1
+
+iterations 5; setup 44.457 s; loop 22.187 s (4.437391 s/iteration)
+End
+Collecting data...
+Generating '/tmp/nsys-report-9eb5.qdstrm'
+[1/1] [0%                          ] prof.nsys-rep[1/1] [0%                          ] prof.nsys-rep[1/1] [8%                          ] prof.nsys-rep[1/1] [==19%                       ] prof.nsys-rep[1/1] [==21%                       ] prof.nsys-rep[1/1] [===22%                      ] prof.nsys-rep[1/1] [===23%                      ] prof.nsys-rep[1/1] [===24%                      ] prof.nsys-rep[1/1] [====25%                     ] prof.nsys-rep[1/1] [====26%                     ] prof.nsys-rep[1/1] [====27%                     ] prof.nsys-rep[1/1] [=======38%                  ] prof.nsys-rep[1/1] [==========49%               ] prof.nsys-rep[1/1] [=============58%            ] prof.nsys-rep[1/1] [========================100%] prof.nsys-rep[1/1] [========================100%] prof.nsys-rep
+Generated:
+	/ssd/sclin/gpu-native-cfd/runs/P1-nsys-large/rho-r32-n005/prof.nsys-rep

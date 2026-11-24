@@ -1,0 +1,40 @@
+  kOmegaSSTCoeffs (case): betaStar=0.09 a1=0.31 gamma1=0.5556 beta1=0.075 Prt=1
+brae rhoSimpleFoam (OF-mirror, CUDA): 4096000 cells, start 0, kOmegaSST
+  fvOption limitTemperature [101, 1000]
+  fvOptions: 1 option(s), all implemented
+  schemes: div(phi,U) lu=1 bounded=1 | div(phi,e) lu=1 bounded=1 | div(phi,Ekp) lu=1 bounded=1 | grad(U) cellLimited k=1 | grad(e) k=1 | grad(Ekp) k=1 | laplacian corrected=1 limited=0
+  relaxation: equations U 0.3 | e 0.7 | p none | k 0.7 | epsilon none | omega 0.7 ; fields p 0.7 | rho 0.01
+  linear solver (from fvSolution): p tol 1.0e-06 relTol 0.01 maxIter 1000 minIter 0
+  linear solver (from fvSolution): U tol 1.0e-06 relTol 0.1 maxIter 1000 minIter 0
+  linear solver (from fvSolution): e tol 1.0e-06 relTol 0.1 maxIter 1000 minIter 0
+  linear solver (from fvSolution): k|omega tol 1.0e-06 relTol 0.1 maxIter 1000 minIter 0
+  fvOption limitTemperature [101, 1000] K
+  momentum: multicolour Gauss-Seidel smoothSolver, 4 colours (sizes 2047040 2047040 1280 640), tolerance/relTol/maxIter/minIter/nSweeps from the case's U entry, symGaussSeidel (ascending then descending) sweeps
+  residualControl=on
+  normFactor: device-resident, never read by the host; BRAE_NORMFACTOR_HOST=1 restores the read
+  scalar read-back: mailbox, host spins on a published sequence number; BRAE_READ_SCALAR_SYNC=1 restores the blocking copy
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=298
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298
+  grad(U): shared across the sites of an iteration that see the same U (fingerprinted inputs); BRAE_GRADU_MEMO=0 recomputes at every site
+Time = 1   U 1.0000e+00   e 1.0000e+00   p 1.0000e+00   k 1.0000e+00   omega 7.3630e-03   pIters 122
+time step continuity errors : sum local = 0.0321612, global = 9.22782e-05, cumulative = 9.22782e-05
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=297.65549667809466
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298.04254163835105
+Time = 2   U 5.2077e-02   e 9.9976e-01   p 1.5959e-01   k 1.4973e-01   omega 4.1381e-04   pIters 110
+time step continuity errors : sum local = 0.0817806, global = 3.64607e-05, cumulative = 0.000128739
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=291.99199334966818
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=372.70750240690563
+Time = 3   U 3.4276e-02   e 2.9928e-01   p 8.2250e-02   k 9.7644e-02   omega 3.0102e-04   pIters 108
+time step continuity errors : sum local = 0.0633505, global = 1.66363e-05, cumulative = 0.000145375
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=289.34811365405773
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=369.46259152920226
+Time = 4   U 2.9264e-02   e 2.0376e-01   p 3.3688e-02   k 8.2603e-02   omega 2.9240e-04   pIters 93
+time step continuity errors : sum local = 0.0565378, global = 3.72909e-06, cumulative = 0.000149104
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=288.01683867679526
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=361.38614539646284
+Time = 5   U 4.2488e-02   e 2.9969e-01   p 4.8219e-02   k 7.7297e-02   omega 2.5524e-04   pIters 109
+time step continuity errors : sum local = 0.0542967, global = -3.60875e-05, cumulative = 0.000113017
+SIMPLE reached endTime (5 iterations)
+written /ssd/sclin/gpu-native-cfd/runs/N6e-brae/r16/k3/n5/5
+End
+rc=0

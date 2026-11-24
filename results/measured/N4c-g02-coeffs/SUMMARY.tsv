@@ -1,0 +1,4 @@
+case	nCells	variant	exit	wall_s	wall_per_step_s	gmres_iter_total	final_res_rho	profile_mean_s
+rae2822SA	23552	ref	0	163.182	0.0407955	4000	0.00434111	0.0402811
+rae2822SA	23552	lusgsColor	0	114.167	0.0285418	7985	0.00426048	0.028054
+rae2822SA	23552	fast	0	30.8293	0.00770733	7985	0.00425645	0.00727351

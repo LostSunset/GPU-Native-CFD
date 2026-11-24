@@ -1,0 +1,9 @@
+mesh	variant	iterations	wall s	peak MiB	mean power W	energy J	loop mean power W
+r16	gnc	5	177.8	7130	106.2	18866	111.5
+r16	gncamg	20	25.6	8026	113.2	2833	201.2
+r16	of1	5	599.0	73	35.0	20975	
+r16	of32	20	175.1	73	34.5	6032	
+r32	gnc	3	358.5	27002	107.5	38466	115.1
+r32	gncamg	10	84.1	30618	111.2	9292	178.8
+r32	of1	3	3109.6	73	34.6	107428	
+r32	of32	10	578.0	73	34.4	19896	

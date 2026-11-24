@@ -1,0 +1,1 @@
+func exp impl cuda mode wide: 50000000 samples, 299605 differ from host libm (5.992e-03), max 1 ulp (x = 0.33206524352960359, y = 0)

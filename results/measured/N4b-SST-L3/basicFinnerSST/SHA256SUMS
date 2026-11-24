@@ -1,0 +1,12 @@
+e94b1a3ded72c9acb783b70c08dec30c89b8a3a80c6494a0c2918ba46ba4b7ca  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/ref/state/10.gnc
+3d6edcc8a41a294e4409cc15e07b4c1d42a34e0d6e4edb88507d19fa8b625d1b  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/ref/state/1.gnc
+9185396910b13c265afc1235c1906b62bcca4be3de3d5d023fa476ee78e37a28  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/ref/state/2.gnc
+e94b1a3ded72c9acb783b70c08dec30c89b8a3a80c6494a0c2918ba46ba4b7ca  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/ref/state/end.gnc
+a276beee8c7dadf6b9b3cc2a45c9e9760529d2e74335388b93415466613b84a1  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu1/10.gnc
+aebf25449bd7ab0d7c7c61b5e5711a26fdfa97df2a5890026874043a4bd8e68c  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu1/1.gnc
+a7886f2c1d0e532d9833e288711eda5c9a5cda0deec0309a7c29266e5a95220d  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu1/2.gnc
+a276beee8c7dadf6b9b3cc2a45c9e9760529d2e74335388b93415466613b84a1  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu1/end.gnc
+a276beee8c7dadf6b9b3cc2a45c9e9760529d2e74335388b93415466613b84a1  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu2/10.gnc
+aebf25449bd7ab0d7c7c61b5e5711a26fdfa97df2a5890026874043a4bd8e68c  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu2/1.gnc
+a7886f2c1d0e532d9833e288711eda5c9a5cda0deec0309a7c29266e5a95220d  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu2/2.gnc
+a276beee8c7dadf6b9b3cc2a45c9e9760529d2e74335388b93415466613b84a1  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L3/basicFinnerSST/gpu2/end.gnc

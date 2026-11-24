@@ -1,0 +1,5 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: /home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation/constant/polyMesh (ascii) nPoints 2027760 nCells 2179881 nFaces 6388379 nInternalFaces 6347350 patches 4 fvBoundaryFaces 41029
+time_s: read 1.815 gather 0.090 upload 0.322 geometry 0.005405 (informational; not a recorded measurement)
+sum(V): sequential 63.501028670689728 tree 63.50102867068891
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L0/basicFinner/gpu2.gnc

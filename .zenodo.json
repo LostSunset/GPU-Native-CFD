@@ -1,0 +1,22 @@
+{
+  "title": "GPU-Native-CFD: bitwise-reproducible GPU-native rewrites of OpenFOAM-family solvers",
+  "upload_type": "software",
+  "version": "1.0.0",
+  "description": "<p>A from-scratch CUDA reimplementation of two OpenFOAM-family finite-volume solvers whose whole iteration runs on the GPU: <code>gncHisa</code>, following the density-based coupled implicit solver HiSA, and <code>gncRhoSimple</code>, following OpenFOAM's <code>rhoSimpleFoam</code>. In the reference mode every reduction, recurrence and expression is evaluated in the order of the CPU original, including ports of the glibc transcendental functions, so that both solvers are bitwise identical to their CPU counterparts over entire runs; the performance mode converges to the same discrete solutions.</p><p>This version is the code that produced the results of the accompanying paper (source hash 1bf4bc6daf538373ee5ce3d15a39c75667f81e22cec9d754db00c7edde099372, recorded in the BUILD_INFO of every measurement record) together with the measurement records, driver scripts and plotting scripts behind every table and figure.</p>",
+  "creators": [
+    {
+      "name": "Lin, Shang-Chih",
+      "affiliation": "Department of Aeronautics and Astronautics, National Cheng Kung University"
+    }
+  ],
+  "license": "gpl-3.0-or-later",
+  "keywords": [
+    "GPU computing",
+    "CUDA",
+    "bitwise reproducibility",
+    "OpenFOAM",
+    "computational fluid dynamics",
+    "density-based solver",
+    "SIMPLE algorithm"
+  ]
+}

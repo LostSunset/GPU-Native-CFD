@@ -1,0 +1,2515 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 03:44:07
+Host   : g02
+PID    : 1851959
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4c-g02-app/rae2822SA/ref
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-08 (1e-08 1e-08 1e-08) 1e-08 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmaras
+Selecting patchDistMethod meshWave
+ft2 term: inactive
+RAS
+{
+    RASModel        SpalartAllmaras;
+    turbulence      on;
+    printCoeffs     on;
+    sigmaNut        0.66666000000000003;
+    kappa           0.40999999999999998;
+    Cb1             0.13550000000000001;
+    Cb2             0.622;
+    Cw2             0.29999999999999999;
+    Cw3             2;
+    Cv1             7.0999999999999996;
+    Cs              0.29999999999999999;
+    ck              0.070000000000000007;
+    ft2             false;
+    Ct3             1.2;
+    Ct4             0.5;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+forceCoeffs forceCoeffsCompressible:
+    rho: rhoInf
+    Freestream density (rhoInf) set to 1.4857100000000001
+    Not including porosity effects
+    magUInf: 233.62200000000001
+    lRef   : 0.30480000000000002
+    Aref   : 0.30480000000000002
+    rhoInf : 1.4857100000000001
+    Selecting all coefficients
+    - Drag force: Cd
+    - Drag force front: Cd(f)
+    - Drag force rear: Cd(r)
+    - Lift force: Cl
+    - Lift force front: Cl(f)
+    - Lift force rear: Cl(r)
+    - Pitch moment: CmPitch
+    - Roll moment: CmRoll
+    - Yaw moment: CmYaw
+    - Side force: Cs
+    - Side force front: Cs(f)
+    - Side force rear: Cs(r)
+
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 5.4610913821777545e-09 Mean: 1.803709185295556e-05 Max: 0.0024073844918058316
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.99999999996581979 (0.99805564278494296 3.3061366027195056e-12 0.04212620126330071) 0.99999999997562605 
+  GMRES iteration: 1   Residual: 1.4496140109523609e-07 (2.1624224301114062e-07 0 1.2721978215944731e-07) 1.2864961238345264e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.99999999565586128, Final residual = 0.00024797419603232582, No Iterations 1
+ExecutionTime = 0.28000000000000003 s  ExecutionStepTime = 0.17000000000000004 s  ClockTime = 1 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.99580715013586951 Max: 1
+Pseudo deltaT: Min: 2.5430212042464174e-09 Mean: 1.7205415887178691e-05 Max: 0.002239423041657715
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.49651903176283751 (0.24274395786043845 1.1083448244948716e-12 0.34004231365003729) 0.46754633333762502 
+  GMRES iteration: 1   Residual: 3.0335405342872267e-08 (2.9044835936223965e-08 0 1.6813345550866816e-08) 2.3978568093814484e-08 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0076361150558640067, Final residual = 1.643293436448589e-06, No Iterations 1
+ExecutionTime = 0.42999999999999999 s  ExecutionStepTime = 0.14999999999999997 s  ClockTime = 1 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.2
+Damped pseudo Courant No: Min: 0.29999999999999999 Mean: 1.1983695652178679 Max: 1.2
+Pseudo deltaT: Min: 1.5741696908803495e-09 Mean: 2.1622120590290782e-05 Max: 0.0028357148936387611
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.36841889226945779 (0.18791587733897594 8.0207900154884024e-13 0.31766067882567739) 0.34038586995828102 
+  GMRES iteration: 1   Residual: 6.6021290265689366e-08 (5.7754763000804738e-08 0 5.4161644208794645e-08) 5.8869644360428463e-08 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0041872843471694576, Final residual = 1.2768860813472746e-06, No Iterations 1
+ExecutionTime = 0.58999999999999997 s  ExecutionStepTime = 0.15999999999999998 s  ClockTime = 1 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.4399999999999999
+Damped pseudo Courant No: Min: 0.17999999999999999 Mean: 1.4377826723840346 Max: 1.4399999999999999
+Pseudo deltaT: Min: 9.6183043222418571e-10 Mean: 2.5961934781183419e-05 Max: 0.0034081771873031223
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.27112272624449979 (0.15055545670620715 5.6381005281410048e-13 0.25297884753263189) 0.25142032688502458 
+  GMRES iteration: 1   Residual: 1.0644487110324386e-07 (1.0549846072382545e-07 0 9.9918910225693121e-08) 9.4749983183386897e-08 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0026945597937013312, Final residual = 1.0723733338487745e-06, No Iterations 1
+ExecutionTime = 0.73999999999999999 s  ExecutionStepTime = 0.15000000000000002 s  ClockTime = 1 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.728
+Damped pseudo Courant No: Min: 0.12000000000000001 Mean: 1.7259245393172968 Max: 1.728
+Pseudo deltaT: Min: 6.7476919856123884e-10 Mean: 3.1170997289580631e-05 Max: 0.0040862553357330026
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.22122462713659682 (0.14643589959655884 4.5288177847511167e-13 0.21307960197166892) 0.20818300472776877 
+  GMRES iteration: 1   Residual: 2.2149783899662758e-07 (1.7523111761593519e-07 0 2.0132722117397334e-07) 1.9794768691708381e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0019385559892466382, Final residual = 1.0027877272011905e-06, No Iterations 1
+ExecutionTime = 0.89000000000000001 s  ExecutionStepTime = 0.15000000000000002 s  ClockTime = 1 s
+
+Time = 6
+
+pseudoTime: iteration 6
+Pseudo Courant No: 2.0735999999999999
+Damped pseudo Courant No: Min: 0.14579999999999999 Mean: 2.0703818274465875 Max: 2.0735999999999999
+Pseudo deltaT: Min: 8.2095538325642563e-10 Mean: 3.7419652429606999e-05 Max: 0.0049294537160763418
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.19055045395741485 (0.13454587753360825 3.3129465587642547e-13 0.17348168352749097) 0.18082839796989764 
+  GMRES iteration: 1   Residual: 1.5710198673689775e-07 (1.1819733341308304e-07 0 1.2425865573575425e-07) 1.4586170809905784e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0012485079040958523, Final residual = 9.5663617513505741e-07, No Iterations 1
+ExecutionTime = 1.03 s  ExecutionStepTime = 0.14000000000000001 s  ClockTime = 1 s
+
+Time = 7
+
+pseudoTime: iteration 7
+Pseudo Courant No: 2.4883199999999999
+Damped pseudo Courant No: Min: 0.13122 Mean: 2.4848660130762101 Max: 2.4883199999999999
+Pseudo deltaT: Min: 7.5021537722383774e-10 Mean: 4.4913820018337123e-05 Max: 0.0059592289612699391
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.1620208598407849 (0.12033450310854849 2.386994790912675e-13 0.14700803600536477) 0.15478821664323378 
+  GMRES iteration: 1   Residual: 1.9835676899946377e-07 (1.7673644901162562e-07 0 2.2106084577009379e-07) 1.8609374205272599e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.001015657594298074, Final residual = 1.0096642040228557e-06, No Iterations 1
+ExecutionTime = 1.1699999999999999 s  ExecutionStepTime = 0.1399999999999999 s  ClockTime = 1 s
+
+Time = 8
+
+pseudoTime: iteration 8
+Pseudo Courant No: 2.9859839999999997
+Damped pseudo Courant No: Min: 0.12 Mean: 2.9792706468233852 Max: 2.9859839999999997
+Pseudo deltaT: Min: 6.9474432149292621e-10 Mean: 5.3901737089787438e-05 Max: 0.0071745749629267292
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.13485214350549427 (0.10142220431841588 1.5664507510025127e-13 0.12228135609744127) 0.1299825663245702 
+  GMRES iteration: 1   Residual: 2.2711720967766299e-07 (2.2225108684866562e-07 0 3.2312418109413974e-07) 2.2203949893951431e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.000932774550195235, Final residual = 1.1109089682172323e-06, No Iterations 1
+ExecutionTime = 1.3200000000000001 s  ExecutionStepTime = 0.15000000000000013 s  ClockTime = 2 s
+
+Time = 9
+
+pseudoTime: iteration 9
+Pseudo Courant No: 3.5831807999999996
+Damped pseudo Courant No: Min: 0.12 Mean: 3.5737073601294265 Max: 3.5831807999999996
+Pseudo deltaT: Min: 7.0182343893799851e-10 Mean: 6.4683026504745329e-05 Max: 0.0086177979416660003
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.11580965600486921 (0.088718676612953892 9.3136802193100177e-14 0.099876292011597201) 0.11221680221281288 
+  GMRES iteration: 1   Residual: 3.1822091362398178e-07 (2.2920369061273607e-07 0 5.1679305456704343e-07) 3.197078192366244e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00085665402668791705, Final residual = 1.2277246540278424e-06, No Iterations 1
+ExecutionTime = 1.48 s  ExecutionStepTime = 0.15999999999999992 s  ClockTime = 2 s
+
+Time = 10
+
+pseudoTime: iteration 10
+Pseudo Courant No: 4.2998169599999994
+Damped pseudo Courant No: Min: 0.22394879999999998 Mean: 4.2845627162053459 Max: 4.2998169599999994
+Pseudo deltaT: Min: 1.4525842097441569e-09 Mean: 7.7617957060155667e-05 Max: 0.010343017727546483
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.10131240253855234 (0.081252317277241526 6.1331506609576887e-14 0.085060504130309328) 0.09981935907077373 
+  GMRES iteration: 1   Residual: 1.3711305489059059e-06 (1.444243512886018e-06 0 1.8731174842098039e-06) 1.4147861915253906e-06 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00078626386244285914, Final residual = 1.3438526993233265e-06, No Iterations 1
+ExecutionTime = 1.6200000000000001 s  ExecutionStepTime = 0.14000000000000012 s  ClockTime = 2 s
+
+Time = 11
+
+pseudoTime: iteration 11
+Pseudo Courant No: 5.1597803519999994
+Damped pseudo Courant No: Min: 0.53747711999999992 Mean: 5.1408181074859849 Max: 5.1597803519999994
+Pseudo deltaT: Min: 3.5376870552971289e-09 Mean: 9.3138627499133141e-05 Max: 0.012413948094317473
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.087057201846606008 (0.075427068492255542 4.8117029731073473e-14 0.069298455382571233) 0.086428648794858676 
+  GMRES iteration: 1   Residual: 3.9410672748492428e-06 (4.8667773224792354e-06 0 3.3504363404207402e-06) 4.0318615063595056e-06 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00071876813316449489, Final residual = 1.4961990838244412e-06, No Iterations 1
+ExecutionTime = 1.78 s  ExecutionStepTime = 0.15999999999999992 s  ClockTime = 2 s
+
+Time = 12
+
+pseudoTime: iteration 12
+Pseudo Courant No: 6.1917364223999991
+Damped pseudo Courant No: Min: 0.41471999999999998 Mean: 6.1576063727794184 Max: 6.1917364223999991
+Pseudo deltaT: Min: 2.5250928551911863e-09 Mean: 0.00011176266162298195 Max: 0.014902417536406217
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.069745422890995598 (0.065388488552519511 4.1762553661185861e-14 0.053931251259140174) 0.069289059161221397 
+  GMRES iteration: 1   Residual: 6.4695920996270027e-06 (7.9663522949361531e-06 0 4.157289415594697e-06) 6.5718241764012928e-06 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00065822319046446114, Final residual = 1.7113852684829978e-06, No Iterations 1
+ExecutionTime = 1.9199999999999999 s  ExecutionStepTime = 0.1399999999999999 s  ClockTime = 2 s
+
+Time = 13
+
+pseudoTime: iteration 13
+Pseudo Courant No: 7.4300837068799988
+Damped pseudo Courant No: Min: 0.41841412811999995 Mean: 7.3879344706429615 Max: 7.4300837068799988
+Pseudo deltaT: Min: 2.9354619521481462e-09 Mean: 0.00013411165416664876 Max: 0.017891493558372919
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.057293936800827595 (0.058423650712748326 3.9301930114128433e-14 0.042011806723221821) 0.057831105884847939 
+  GMRES iteration: 1   Residual: 8.5492343634642067e-06 (9.8399341215673037e-06 0 7.8614384750925093e-06) 8.6543396464980828e-06 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00060362483155198393, Final residual = 1.9727955810683237e-06, No Iterations 1
+ExecutionTime = 2.0699999999999998 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 2 s
+
+Time = 14
+
+pseudoTime: iteration 14
+Pseudo Courant No: 8.9161004482559978
+Damped pseudo Courant No: Min: 0.83588441702399985 Mean: 8.8514662340940706 Max: 8.9161004482559978
+Pseudo deltaT: Min: 7.0588612615215201e-09 Mean: 0.00016092753170302032 Max: 0.021477973195662969
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.053330118232953257 (0.059391444488666699 4.3076283574842858e-14 0.036261399172737782) 0.053964930258930108 
+  GMRES iteration: 1   Residual: 1.7710904617940138e-05 (1.4701044171609748e-05 0 1.5418272021370432e-05) 1.748023378061669e-05 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00055543846457750971, Final residual = 2.3004658882494196e-06, No Iterations 1
+ExecutionTime = 2.2400000000000002 s  ExecutionStepTime = 0.17000000000000037 s  ClockTime = 3 s
+
+Time = 15
+
+pseudoTime: iteration 15
+Pseudo Courant No: 10.699320537907196
+Damped pseudo Courant No: Min: 0.5015306502143998 Mean: 10.627291603490576 Max: 10.699320537907196
+Pseudo deltaT: Min: 4.4890275008837285e-09 Mean: 0.00019310754623816424 Max: 0.025778445453794856
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.041810577026527539 (0.05384852889732665 4.067539656017582e-14 0.027578510713736248) 0.042585752372961999 
+  GMRES iteration: 1   Residual: 3.4125432393168751e-05 (2.3048664015355894e-05 0 2.6731130630592927e-05) 3.3618430749744517e-05 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00050364217786664589, Final residual = 2.6002173980083872e-06, No Iterations 1
+ExecutionTime = 2.3900000000000001 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 3 s
+
+Time = 16
+
+pseudoTime: iteration 16
+Pseudo Courant No: 12.839184645488634
+Damped pseudo Courant No: Min: 0.67706637778943968 Mean: 12.689352210863232 Max: 12.839184645488634
+Pseudo deltaT: Min: 1.0222403166025404e-08 Mean: 0.00023169311244841141 Max: 0.030934656573409786
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.036853358387780921 (0.053852069767705485 4.2102681998928848e-14 0.023320526648250638) 0.03763865566273291 
+  GMRES iteration: 1   Residual: 7.7306330202759702e-05 (7.1666557528630902e-05 0 8.0428307948501006e-05) 7.8241947861335386e-05 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00045205163148146914, Final residual = 2.8960758638994523e-06, No Iterations 1
+ExecutionTime = 2.54 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 3 s
+
+Time = 17
+
+pseudoTime: iteration 17
+Pseudo Courant No: 15.407021574586361
+Damped pseudo Courant No: Min: 0.60935974001049575 Mean: 15.291158907348107 Max: 15.407021574586361
+Pseudo deltaT: Min: 9.2993819762306165e-09 Mean: 0.0002780412631068181 Max: 0.037119803186549255
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.035227215555326284 (0.054063506373960603 4.2637801944262301e-14 0.020300833244242814) 0.036264438689305539 
+  GMRES iteration: 1   Residual: 0.00022474956248423378 (0.00020151018416521857 0 0.00020676554697466798) 0.00023833295926282237 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00040624628951477253, Final residual = 3.234947439719161e-06, No Iterations 1
+ExecutionTime = 2.6899999999999999 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 3 s
+
+Time = 18
+
+pseudoTime: iteration 18
+Pseudo Courant No: 18.488425889503631
+Damped pseudo Courant No: Min: 0.54842376600944609 Mean: 18.230274455128459 Max: 18.488425889503631
+Pseudo deltaT: Min: 8.4192321205570863e-09 Mean: 0.00033349637669419821 Max: 0.044542547649310892
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.031978527123659117 (0.051521179954756538 4.3408314938529896e-14 0.016722369220332458) 0.03251881657823457 
+  GMRES iteration: 1   Residual: 0.00033305673171894209 (0.00023253053566360196 0 0.0003657237871987814) 0.0003445545707716847 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00037326103075159106, Final residual = 3.7229613295102547e-06, No Iterations 1
+ExecutionTime = 2.8399999999999999 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 3 s
+
+Time = 19
+
+pseudoTime: iteration 19
+Pseudo Courant No: 22.186111067404358
+Damped pseudo Courant No: Min: 0.65810851921133529 Mean: 21.988287577108135 Max: 22.186111067404358
+Pseudo deltaT: Min: 1.3175782835359295e-08 Mean: 0.00040032171026090074 Max: 0.053453361055942269
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.033877594552251061 (0.051608465081371485 5.1238875931825541e-14 0.015567680403198218) 0.033709822364925361 
+  GMRES iteration: 1   Residual: 0.00061394205034735055 (0.0003797192902820164 0 0.00056300251522739271) 0.00060817289376002837 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00035475471308640772, Final residual = 4.6667609058876133e-06, No Iterations 1
+ExecutionTime = 2.98 s  ExecutionStepTime = 0.14000000000000012 s  ClockTime = 3 s
+
+Time = 20
+
+pseudoTime: iteration 20
+Pseudo Courant No: 24.034288100886698
+Damped pseudo Courant No: Min: 0.53469836503742685 Mean: 23.696393733881727 Max: 24.034288100886698
+Pseudo deltaT: Min: 1.3720217374517933e-08 Mean: 0.00043337371851306732 Max: 0.057913514034413471
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.039923445566493243 (0.049137183398158625 6.8519500588290517e-14 0.014116010716871526) 0.039147326858526996 
+  GMRES iteration: 1   Residual: 0.00059429315301575368 (0.00034641516659282611 0 0.00063290421332709264) 0.00058480747606711044 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0003383990602511563, Final residual = 5.5646448552261449e-06, No Iterations 1
+ExecutionTime = 3.1400000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 3 s
+
+Time = 21
+
+pseudoTime: iteration 21
+Pseudo Courant No: 22.853218189734704
+Damped pseudo Courant No: Min: 0.90386263348071827 Mean: 22.634587278141112 Max: 22.853218189734704
+Pseudo deltaT: Min: 2.6291515182775908e-08 Mean: 0.00041236142738207101 Max: 0.055076034198820872
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.047501709128258969 (0.047656179366045978 8.7895227042475052e-14 0.012987717822245155) 0.045860949714103705 
+  GMRES iteration: 1   Residual: 0.00067051338281439658 (0.00036642051144535813 0 0.00049161304940327467) 0.00064700963031930818 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0003195328781154724, Final residual = 5.895290855850879e-06, No Iterations 1
+ExecutionTime = 3.2799999999999998 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 4 s
+
+Time = 22
+
+pseudoTime: iteration 22
+Pseudo Courant No: 20.997690396174221
+Damped pseudo Courant No: Min: 0.70071333154957616 Mean: 20.841307676623249 Max: 20.997690396174221
+Pseudo deltaT: Min: 2.4842358798613189e-08 Mean: 0.00037886482421529874 Max: 0.050608521740675191
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.053158372036079683 (0.046000664644717353 1.0012859309768376e-13 0.0125766455453903) 0.050899169390118411 
+  GMRES iteration: 1   Residual: 0.00053427328665958695 (0.00030633475550535864 0 0.0003366396005867887) 0.00051590524086548336 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00030515466990022581, Final residual = 5.93794353346033e-06, No Iterations 1
+ExecutionTime = 3.4300000000000002 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 4 s
+
+Time = 23
+
+pseudoTime: iteration 23
+Pseudo Courant No: 19.743442546305616
+Damped pseudo Courant No: Min: 0.78086857727087644 Mean: 19.649999011422587 Max: 19.743442546305616
+Pseudo deltaT: Min: 2.8416796800825785e-08 Mean: 0.00035635938535382794 Max: 0.047583433734148139
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.057587712683805553 (0.04644734527795788 1.0396416823206152e-13 0.012699139410917697) 0.055143044385605217 
+  GMRES iteration: 1   Residual: 0.00063696085547069081 (0.00036698001995276328 0 0.00025851070516849206) 0.00061228059236952375 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00030064108826887922, Final residual = 6.0655489538745156e-06, No Iterations 1
+ExecutionTime = 3.5800000000000001 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 4 s
+
+Time = 24
+
+pseudoTime: iteration 24
+Pseudo Courant No: 18.58895429133975
+Damped pseudo Courant No: Min: 1.4704153296860545 Mean: 18.543564899835815 Max: 18.58895429133975
+Pseudo deltaT: Min: 5.3489416026841042e-08 Mean: 0.00033555282987546059 Max: 0.044793508095490576
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.061865919355896089 (0.046697713181093628 9.713607622122683e-14 0.013054881793905076) 0.059380594773303402 
+  GMRES iteration: 1   Residual: 0.00063064700667569268 (0.00037840848680846154 0 0.00019857822533611723) 0.00060322551118068045 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0003001203864054702, Final residual = 6.1360728704482918e-06, No Iterations 1
+ExecutionTime = 3.7200000000000002 s  ExecutionStepTime = 0.14000000000000012 s  ClockTime = 4 s
+
+Time = 25
+
+pseudoTime: iteration 25
+Pseudo Courant No: 17.576000141541616
+Damped pseudo Courant No: Min: 2.7805781473923261 Mean: 17.525365104598073 Max: 17.576000141541616
+Pseudo deltaT: Min: 5.3481467066567678e-08 Mean: 0.00031728463181667269 Max: 0.042342575488695147
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.065889427043434007 (0.046255599516500288 8.4722674642941431e-14 0.012540774721649696) 0.063918933984889043 
+  GMRES iteration: 1   Residual: 0.00051744568157612155 (0.00033542771761436475 0 0.00015446613128394294) 0.00049802479788877601 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00030184505076644744, Final residual = 6.1355618072035465e-06, No Iterations 1
+ExecutionTime = 3.8700000000000001 s  ExecutionStepTime = 0.14999999999999991 s  ClockTime = 4 s
+
+Time = 26
+
+pseudoTime: iteration 26
+Pseudo Courant No: 16.719815536506154
+Damped pseudo Courant No: Min: 1.9838453004741188 Mean: 16.646032881744876 Max: 16.719815536506154
+Pseudo deltaT: Min: 3.862300749493675e-08 Mean: 0.00030183257641798434 Max: 0.040269985492940648
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.069835640784906131 (0.044312498185247358 7.209884808320267e-14 0.012096754665939992) 0.06865110278788468 
+  GMRES iteration: 1   Residual: 0.00040909146098505882 (0.00025211503556879554 0 0.0001734596589499482) 0.00039852170847142008 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0003075402582508366, Final residual = 6.1119608028541031e-06, No Iterations 1
+ExecutionTime = 4.0199999999999996 s  ExecutionStepTime = 0.14999999999999947 s  ClockTime = 4 s
+
+Time = 27
+
+pseudoTime: iteration 27
+Pseudo Courant No: 16.007237364529203
+Damped pseudo Courant No: Min: 1.0683541295234793 Mean: 15.886707079308554 Max: 16.007237364529203
+Pseudo deltaT: Min: 1.8746168416085366e-08 Mean: 0.00028896993297355689 Max: 0.038545366386895159
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.06984745469310101 (0.040282237578503778 6.012388069622417e-14 0.011461254801268916) 0.069131751530138508 
+  GMRES iteration: 1   Residual: 0.00031672355906305722 (0.00019413965932734296 0 0.00014657827301287949) 0.00031056505829579626 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00031390975820540381, Final residual = 6.0150789334777553e-06, No Iterations 1
+ExecutionTime = 4.1799999999999997 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 4 s
+
+Time = 28
+
+pseudoTime: iteration 28
+Pseudo Courant No: 16.207988880254469
+Damped pseudo Courant No: Min: 1.0817526758153235 Mean: 16.115075375835865 Max: 16.207988880254469
+Pseudo deltaT: Min: 1.4483469135479435e-08 Mean: 0.00029259307296898086 Max: 0.039022197613107247
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.072995893799137013 (0.03956477195367912 5.5330707814821991e-14 0.011983867646205645) 0.072353761441338052 
+  GMRES iteration: 1   Residual: 0.00029854047276259976 (0.00017404351831442689 0 0.00011567468821491513) 0.00029077310263910151 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00032489271567344999, Final residual = 6.237549813183631e-06, No Iterations 1
+ExecutionTime = 4.3700000000000001 s  ExecutionStepTime = 0.19000000000000039 s  ClockTime = 5 s
+
+Time = 29
+
+pseudoTime: iteration 29
+Pseudo Courant No: 15.629394751613697
+Damped pseudo Courant No: Min: 0.78235213444013574 Mean: 15.502878453715205 Max: 15.629394751613697
+Pseudo deltaT: Min: 7.0795730527804517e-09 Mean: 0.00028215096724821582 Max: 0.037624701813248888
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.070444500054028802 (0.035629529085895451 4.6487150062514445e-14 0.010889262795660055) 0.069850866349776733 
+  GMRES iteration: 1   Residual: 0.00024622093600102811 (0.00012321021118298953 0 0.00010780429575486377) 0.00024251402735421258 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0003307158717696649, Final residual = 6.0448484043683373e-06, No Iterations 1
+ExecutionTime = 4.5300000000000002 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 5 s
+
+Time = 30
+
+pseudoTime: iteration 30
+Pseudo Courant No: 16.33900016557353
+Damped pseudo Courant No: Min: 0.6134043507747341 Mean: 16.251173694601817 Max: 16.33900016557353
+Pseudo deltaT: Min: 1.4931112934880854e-08 Mean: 0.00029496518495375631 Max: 0.039330075022782379
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.071742192826508705 (0.035440366421086909 4.6248435212973432e-14 0.011342175702337375) 0.071029378724901865 
+  GMRES iteration: 1   Residual: 0.00022260182001002736 (0.00010904334634247792 0 8.9786693899234496e-05) 0.00021482842505390039 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0003469719006518875, Final residual = 6.4466190845884029e-06, No Iterations 1
+ExecutionTime = 4.6600000000000001 s  ExecutionStepTime = 0.12999999999999989 s  ClockTime = 5 s
+
+Time = 31
+
+pseudoTime: iteration 31
+Pseudo Courant No: 16.092145289429066
+Damped pseudo Courant No: Min: 0.4531026302316174 Mean: 15.96692443594733 Max: 16.092145289429066
+Pseudo deltaT: Min: 7.4910207818320655e-09 Mean: 0.0002905140080191104 Max: 0.038734374565912291
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.069064004641634882 (0.031742377028287257 4.2840347428463879e-14 0.010129418756408465) 0.068190703485636703 
+  GMRES iteration: 1   Residual: 0.00023970827966562759 (9.8431869541645305e-05 0 0.00010539500881343502) 0.00023766352067443295 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00035640550389243745, Final residual = 6.394665565219104e-06, No Iterations 1
+ExecutionTime = 4.8200000000000003 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 5 s
+
+Time = 32
+
+pseudoTime: iteration 32
+Pseudo Courant No: 16.873057823579572
+Damped pseudo Courant No: Min: 0.42230275108530263 Mean: 16.790619286036584 Max: 16.873057823579572
+Pseudo deltaT: Min: 9.7012731400766721e-09 Mean: 0.00030462236119405459 Max: 0.040613729650488206
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.068455527409264222 (0.030343107802091863 4.3526005058072581e-14 0.010087216004566807) 0.06729015657382148 
+  GMRES iteration: 1   Residual: 0.00025426272213534528 (0.00010182725696079028 0 9.0236938944207292e-05) 0.00024785732249158691 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00037384688659160867, Final residual = 6.822080177813431e-06, No Iterations 1
+ExecutionTime = 4.9900000000000002 s  ExecutionStepTime = 0.16999999999999993 s  ClockTime = 5 s
+
+Time = 33
+
+pseudoTime: iteration 33
+Pseudo Courant No: 17.11316628253379
+Damped pseudo Courant No: Min: 0.32123418039237267 Mean: 17.003276549920308 Max: 17.11316628253379
+Pseudo deltaT: Min: 8.2177817162972541e-09 Mean: 0.00030896777572546363 Max: 0.041192318141185742
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.065257018720360049 (0.026822059795875902 4.1007414116190735e-14 0.0088749347167121125) 0.063950351129961489 
+  GMRES iteration: 1   Residual: 0.0002880162611336969 (0.00010062363249107919 0 8.2540326062935284e-05) 0.00028394642527794018 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00038706488355423163, Final residual = 6.9404419149422673e-06, No Iterations 1
+ExecutionTime = 5.1299999999999999 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 5 s
+
+Time = 34
+
+pseudoTime: iteration 34
+Pseudo Courant No: 18.104427157381689
+Damped pseudo Courant No: Min: 0.25488098125844749 Mean: 18.034576177945656 Max: 18.104427157381689
+Pseudo deltaT: Min: 6.668030501824827e-09 Mean: 0.00032687920860884431 Max: 0.043579571355946152
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.063238284551634938 (0.025788977834225658 4.2966575866000455e-14 0.0090543689033379653) 0.061752342813877273 
+  GMRES iteration: 1   Residual: 0.00030069765566950708 (0.00011462293984892354 0 7.1867298195938355e-05) 0.00029129853263722534 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00040971366507054684, Final residual = 7.5181975392814631e-06, No Iterations 1
+ExecutionTime = 5.2800000000000002 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 6 s
+
+Time = 35
+
+pseudoTime: iteration 35
+Pseudo Courant No: 18.714748481245948
+Damped pseudo Courant No: Min: 0.1976049869780109 Mean: 18.627616175726143 Max: 18.714748481245948
+Pseudo deltaT: Min: 7.8010023134764205e-09 Mean: 0.00033791375606182064 Max: 0.045050253572444493
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.057574102197738071 (0.022841525487087642 4.0697237949960803e-14 0.0083293774890984568) 0.056114878298135933 
+  GMRES iteration: 1   Residual: 0.0003015646969866001 (0.0001176268305183212 0 5.9876820550952808e-05) 0.00029417297265796767 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0004319730153960849, Final residual = 7.9487332847354133e-06, No Iterations 1
+ExecutionTime = 5.4199999999999999 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 6 s
+
+Time = 36
+
+pseudoTime: iteration 36
+Pseudo Courant No: 20.614194754586205
+Damped pseudo Courant No: Min: 0.43532165982612159 Mean: 20.560247618773577 Max: 20.614194754586205
+Pseudo deltaT: Min: 1.7246349484308548e-08 Mean: 0.00037222834833026172 Max: 0.049624543925930409
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.055327962239396525 (0.022690984244669594 4.2810984652262271e-14 0.0085816315714527039) 0.05364339861539142 
+  GMRES iteration: 1   Residual: 0.00036768720325734195 (0.00016229227679479775 0 6.8963380624396839e-05) 0.00035559465190916178 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00046626801429571705, Final residual = 9.0197998485430818e-06, No Iterations 1
+ExecutionTime = 5.5599999999999996 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 6 s
+
+Time = 37
+
+pseudoTime: iteration 37
+Pseudo Courant No: 21.430893537589611
+Damped pseudo Courant No: Min: 0.64437954795546104 Mean: 21.370578901475415 Max: 21.430893537589611
+Pseudo deltaT: Min: 1.1058255766669046e-08 Mean: 0.00038699381722149032 Max: 0.051592691024775282
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.050066128880654794 (0.020810617199959913 4.0352667039197071e-14 0.0071152981355290358) 0.048382120294229725 
+  GMRES iteration: 1   Residual: 0.00039868766549233707 (0.00017414239383188639 0 8.0155186924495801e-05) 0.00038801064977447532 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00049625893194203089, Final residual = 9.661744735768881e-06, No Iterations 1
+ExecutionTime = 5.7000000000000002 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 6 s
+
+Time = 38
+
+pseudoTime: iteration 38
+Pseudo Courant No: 23.713580071060644
+Damped pseudo Courant No: Min: 1.4260297621089608 Mean: 23.672286922626277 Max: 23.713580071060644
+Pseudo deltaT: Min: 2.4709626066147914e-08 Mean: 0.00042823346093889922 Max: 0.057090276726563464
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.047875647882844721 (0.020587591787515885 3.9425872351227028e-14 0.0062341103411979754) 0.046206410703256109 
+  GMRES iteration: 1   Residual: 0.00049609177913336779 (0.00021905257272087354 0 0.00012185727245811616) 0.00047897319846417321 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00054083111872614759, Final residual = 1.1111920474659345e-05, No Iterations 1
+ExecutionTime = 5.8399999999999999 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 6 s
+
+Time = 39
+
+pseudoTime: iteration 39
+Pseudo Courant No: 24.760604830492969
+Damped pseudo Courant No: Min: 2.9779863951620174 Mean: 24.731926032600175 Max: 24.760604830492969
+Pseudo deltaT: Min: 2.5363562984538099e-08 Mean: 0.00044716008243917451 Max: 0.059613149047452269
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.04396477904269621 (0.020111772037697092 3.6937212121407841e-14 0.0052135977914168829) 0.042438788755564921 
+  GMRES iteration: 1   Residual: 0.00048240922277442667 (0.00022772156921282023 0 0.00010646341879326568) 0.0004597719657805877 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0005853652502166431, Final residual = 1.2201915712701198e-05, No Iterations 1
+ExecutionTime = 5.9699999999999998 s  ExecutionStepTime = 0.12999999999999989 s  ClockTime = 6 s
+
+Time = 40
+
+pseudoTime: iteration 40
+Pseudo Courant No: 26.826753940079797
+Damped pseudo Courant No: Min: 1.8862561364118609 Mean: 26.766592764007324 Max: 26.826753940079797
+Pseudo deltaT: Min: 1.3585342408846085e-08 Mean: 0.0004844889311535323 Max: 0.064589659638921951
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.046211395825951108 (0.018735710473051576 3.3034494583146609e-14 0.0048080788902703986) 0.044663812597036036 
+  GMRES iteration: 1   Residual: 0.00053747927688489012 (0.00021654838461427237 0 0.00012830749736923665) 0.00051404500186826778 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00064602565791176169, Final residual = 1.405355926556704e-05, No Iterations 1
+ExecutionTime = 6.0999999999999996 s  ExecutionStepTime = 0.12999999999999989 s  ClockTime = 6 s
+
+Time = 41
+
+pseudoTime: iteration 41
+Pseudo Courant No: 25.797928242075599
+Damped pseudo Courant No: Min: 0.90695841476047034 Mean: 25.730498976726384 Max: 25.797928242075599
+Pseudo deltaT: Min: 6.534735747924017e-09 Mean: 0.00046591951826492151 Max: 0.062114138186514581
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.046854287588724765 (0.0164561908988432 3.0651425891240766e-14 0.0045922157289641774) 0.045957054606699917 
+  GMRES iteration: 1   Residual: 0.00035545539336518978 (0.0001496738722644954 0 9.1744181805879021e-05) 0.00033668783137848554 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00069807479657398985, Final residual = 1.4718512358542144e-05, No Iterations 1
+ExecutionTime = 6.25 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 7 s
+
+Time = 42
+
+pseudoTime: iteration 42
+Pseudo Courant No: 25.530738686406941
+Damped pseudo Courant No: Min: 0.67317377395799549 Mean: 25.465910504549189 Max: 25.530738686406941
+Pseudo deltaT: Min: 4.8176782594663266e-09 Mean: 0.00046109812781143066 Max: 0.061471365523054385
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.044548915408531634 (0.014674892474023456 2.9444618167070681e-14 0.0047700960060600506) 0.044025722397124087 
+  GMRES iteration: 1   Residual: 0.0002990183076606344 (0.00011255634556911302 0 8.7053504002894075e-05) 0.00028273977207819245 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00076260404580783577, Final residual = 1.5966697695949347e-05, No Iterations 1
+ExecutionTime = 6.4400000000000004 s  ExecutionStepTime = 0.19000000000000039 s  ClockTime = 7 s
+
+Time = 43
+
+pseudoTime: iteration 43
+Pseudo Courant No: 26.841711144515134
+Damped pseudo Courant No: Min: 1.0616106458524053 Mean: 26.781401528866493 Max: 26.841711144515134
+Pseudo deltaT: Min: 8.1460132729425449e-09 Mean: 0.00048477202970967473 Max: 0.06462692654714787
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.042509185828442285 (0.014137184005609475 3.0059051537468069e-14 0.0048315170289556985) 0.042279695541957263 
+  GMRES iteration: 1   Residual: 0.00032654432937551353 (0.00011667878933289139 0 9.3497202634886616e-05) 0.00030914647105034646 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00085075722095415769, Final residual = 1.8349059950518596e-05, No Iterations 1
+ExecutionTime = 6.5899999999999999 s  ExecutionStepTime = 0.14999999999999947 s  ClockTime = 7 s
+
+Time = 44
+
+pseudoTime: iteration 44
+Pseudo Courant No: 28.022110106678568
+Damped pseudo Courant No: Min: 0.73886423132843881 Mean: 27.968089103116956 Max: 28.022110106678568
+Pseudo deltaT: Min: 5.1935162069992306e-09 Mean: 0.00050607969742541298 Max: 0.067466298549067855
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.038049899864498353 (0.013241824112635581 2.928896204414988e-14 0.0046094900833033164) 0.037879132553094427 
+  GMRES iteration: 1   Residual: 0.00036023188040181821 (0.00012974407965949463 0 0.00010704393439225941) 0.00034675831101848773 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00095092125191837892, Final residual = 2.0950406049268781e-05, No Iterations 1
+ExecutionTime = 6.71 s  ExecutionStepTime = 0.12000000000000011 s  ClockTime = 7 s
+
+Time = 45
+
+pseudoTime: iteration 45
+Pseudo Courant No: 31.202377384328344
+Damped pseudo Courant No: Min: 1.6454378698766901 Mean: 31.154442338524557 Max: 31.202377384328344
+Pseudo deltaT: Min: 1.1510604244883772e-08 Mean: 0.00056349422111945228 Max: 0.07511821951939314
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.037277049753481249 (0.013890164089146404 2.9727605605123802e-14 0.0046905990244694822) 0.037112421052710128 
+  GMRES iteration: 1   Residual: 0.00048558346661930742 (0.0001903113056521044 0 0.00014032735670374349) 0.0004631655583437506 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0010871512290707578, Final residual = 2.5245169700875358e-05, No Iterations 1
+ExecutionTime = 6.8600000000000003 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 7 s
+
+Time = 46
+
+pseudoTime: iteration 46
+Pseudo Courant No: 31.707721021677198
+Damped pseudo Courant No: Min: 1.114724567168339 Mean: 31.672423867461465 Max: 31.707721021677198
+Pseudo deltaT: Min: 7.901363586802129e-09 Mean: 0.00057258902051640886 Max: 0.07632797723091686
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.033986429459868545 (0.015002811254915802 2.9411069749169092e-14 0.0046604835631187808) 0.033456902968468219 
+  GMRES iteration: 1   Residual: 0.00053339558903671739 (0.00021086964209766332 0 0.00014512732860781858) 0.00050958524835393562 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0012195126285575067, Final residual = 2.8100283904330707e-05, No Iterations 1
+ExecutionTime = 7 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 7 s
+
+Time = 47
+
+pseudoTime: iteration 47
+Pseudo Courant No: 34.482615197740849
+Damped pseudo Courant No: Min: 2.4245588810911536 Mean: 34.46231156280038 Max: 34.482615197740849
+Pseudo deltaT: Min: 1.7141306949526286e-08 Mean: 0.00062265644908999259 Max: 0.082998733026264482
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.033192630984405086 (0.015775994371937226 2.9216574408500032e-14 0.004574175910465) 0.032291919989598857 
+  GMRES iteration: 1   Residual: 0.00065344127294482434 (0.00028410159940144702 0 0.00015615508604330936) 0.00062918170932610158 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0013913541736492365, Final residual = 3.2958343756212465e-05, No Iterations 1
+ExecutionTime = 7.1600000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 7 s
+
+Time = 48
+
+pseudoTime: iteration 48
+Pseudo Courant No: 35.237902865962589
+Damped pseudo Courant No: Min: 4.9553300905259894 Mean: 35.227416245971305 Max: 35.237902865962589
+Pseudo deltaT: Min: 3.5073870373836567e-08 Mean: 0.00063624257515995338 Max: 0.084806186191639182
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.035743623256814232 (0.015557957292000416 2.9580310123944014e-14 0.0046410111505326658) 0.034688395885884848 
+  GMRES iteration: 1   Residual: 0.00055252374673950765 (0.00029118788917850452 0 0.00015459839477951093) 0.00055066801945856674 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0015703280118613307, Final residual = 3.6713948718943763e-05, No Iterations 1
+ExecutionTime = 7.2999999999999998 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 8 s
+
+Time = 49
+
+pseudoTime: iteration 49
+Pseudo Courant No: 33.050478720842371
+Damped pseudo Courant No: Min: 9.2954471402369165 Mean: 33.045426201402059 Max: 33.050478720842371
+Pseudo deltaT: Min: 6.6251672387680049e-08 Mean: 0.0005966938801873873 Max: 0.079531523714381852
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.037033119325214435 (0.01484746769270032 2.8874365441541451e-14 0.004626195033653433) 0.035829489190002999 
+  GMRES iteration: 1   Residual: 0.00038032156909363629 (0.00020321492472643262 0 0.00011191010363041544) 0.00037742741231045591 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0017374623257726462, Final residual = 3.8149328469567413e-05, No Iterations 1
+ExecutionTime = 7.4500000000000002 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 8 s
+
+Time = 50
+
+pseudoTime: iteration 50
+Pseudo Courant No: 32.168409492284034
+Damped pseudo Courant No: Min: 18.094730339409768 Mean: 32.166809658974771 Max: 32.168409492284034
+Pseudo deltaT: Min: 1.3033578104454269e-07 Mean: 0.00058071823913451246 Max: 0.077399587926744451
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.035509409249176359 (0.014134182695266128 2.7058367223129289e-14 0.0047948290898119899) 0.034342125921371827 
+  GMRES iteration: 1   Residual: 0.0003166835512368634 (0.00018370462165674748 0 0.00010622186415225847) 0.00031762888329090789 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0019480480961163533, Final residual = 4.1197951890412114e-05, No Iterations 1
+ExecutionTime = 7.5899999999999999 s  ExecutionStepTime = 0.13999999999999968 s  ClockTime = 8 s
+
+Time = 51
+
+pseudoTime: iteration 51
+Pseudo Courant No: 33.551884553229506
+Damped pseudo Courant No: Min: 33.551884553229506 Mean: 33.551884553242026 Max: 33.551884553229506
+Pseudo deltaT: Min: 1.812469636056351e-07 Mean: 0.00060564234577140466 Max: 0.080719803798659548
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.031458519467048765 (0.013705336596336885 2.4969888037872506e-14 0.0048140629324163403) 0.030187534049319016 
+  GMRES iteration: 1   Residual: 0.00030833313539453542 (0.000201668903309965 0 0.00013025193961603091) 0.0003088359021581657 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0022284155706616734, Final residual = 4.7311564563488469e-05, No Iterations 1
+ExecutionTime = 7.7400000000000002 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 8 s
+
+Time = 52
+
+pseudoTime: iteration 52
+Pseudo Courant No: 37.676220747512168
+Damped pseudo Courant No: Min: 37.676220747512168 Mean: 37.676220747523679 Max: 37.676220747512168
+Pseudo deltaT: Min: 2.0336072459926665e-07 Mean: 0.00068003402335676134 Max: 0.090634420497033255
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.027441800806693905 (0.01335035616599576 2.2862116242803701e-14 0.0047252246314910809) 0.026232447978568173 
+  GMRES iteration: 1   Residual: 0.00041527263811554874 (0.00025653678474616358 0 0.00017631182674542501) 0.00040866276450819765 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0026669655379571236, Final residual = 5.9421195003504303e-05, No Iterations 1
+ExecutionTime = 7.8899999999999997 s  ExecutionStepTime = 0.14999999999999947 s  ClockTime = 8 s
+
+Time = 53
+
+pseudoTime: iteration 53
+Pseudo Courant No: 42.732061644428207
+Damped pseudo Courant No: Min: 42.732061644428207 Mean: 42.73206164443355 Max: 42.732061644428207
+Pseudo deltaT: Min: 2.3064330828587086e-07 Mean: 0.0007712245056280385 Max: 0.10279024011130164
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.024519902002342261 (0.012544161899682773 2.0935495245289202e-14 0.0045417383559519849) 0.023614777033464537 
+  GMRES iteration: 1   Residual: 0.00059296047425370089 (0.0003265278499806132 0 0.00020240295424319587) 0.00057666846825969135 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0033853835347224664, Final residual = 7.9356432180327215e-05, No Iterations 1
+ExecutionTime = 8.0999999999999996 s  ExecutionStepTime = 0.20999999999999996 s  ClockTime = 8 s
+
+Time = 54
+
+pseudoTime: iteration 54
+Pseudo Courant No: 47.354774759311113
+Damped pseudo Courant No: Min: 47.354774759311113 Mean: 47.354774759300078 Max: 47.354774759311113
+Pseudo deltaT: Min: 2.5576780692058008e-07 Mean: 0.00085458268963011755 Max: 0.1139054536540887
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.024274878750389021 (0.012138809010851575 2.0200765948225468e-14 0.0043621896671714551) 0.023581883477286836 
+  GMRES iteration: 1   Residual: 0.00065414714805843638 (0.00036388944931279297 0 0.00019207554273971371) 0.00063792219425920667 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.004778514207505938, Final residual = 0.00011666640114809308, No Iterations 1
+ExecutionTime = 8.25 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 9 s
+
+Time = 55
+
+pseudoTime: iteration 55
+Pseudo Courant No: 47.805907551779946
+Damped pseudo Courant No: Min: 47.805907551779946 Mean: 47.805907551773259 Max: 47.805907551779946
+Pseudo deltaT: Min: 2.5849171846279897e-07 Mean: 0.0008626520638454092 Max: 0.11498872405455199
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.02368262009498524 (0.012140159411811804 1.9685403605806698e-14 0.0042897676574432057) 0.023103082587201638 
+  GMRES iteration: 1   Residual: 0.00064702748367456134 (0.00034039458384871297 0 0.00017025364292603051) 0.00062600255975707713 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0085834800989987858, Final residual = 0.00021031895814760957, No Iterations 1
+ExecutionTime = 8.3800000000000008 s  ExecutionStepTime = 0.13000000000000078 s  ClockTime = 9 s
+
+Time = 56
+
+pseudoTime: iteration 56
+Pseudo Courant No: 48.770010803713554
+Damped pseudo Courant No: Min: 48.770010803713554 Mean: 48.770010803720197 Max: 48.770010803713554
+Pseudo deltaT: Min: 2.6431008549131834e-07 Mean: 0.00087997890288990261 Max: 0.11730800292587706
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023328724227946972 (0.01212041012185963 1.9830970907558658e-14 0.0042452703546380756) 0.022655706033798056 
+  GMRES iteration: 1   Residual: 0.00062386986715919036 (0.00031780915390830727 0 0.00015705076183734527) 0.00059226822210231035 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.022580868245236769, Final residual = 0.00055996433255505395, No Iterations 1
+ExecutionTime = 8.5099999999999998 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 9 s
+
+Time = 57
+
+pseudoTime: iteration 57
+Pseudo Courant No: 49.521588987417012
+Damped pseudo Courant No: Min: 24.760794493708506 Mean: 49.494780212823706 Max: 49.521588987417012
+Pseudo deltaT: Min: 1.9094394741882263e-07 Mean: 0.00089346981141854773 Max: 0.11911761823753723
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023102670850171279 (0.012358352196858869 2.0332777309225014e-14 0.0043630973260175747) 0.022516620170453753 
+  GMRES iteration: 1   Residual: 0.00058134720490437587 (0.00030228849476147441 0 0.00014935104616982872) 0.00054138215464528256 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0073986962944446941, Final residual = 0.0001850268770681917, No Iterations 1
+ExecutionTime = 8.6500000000000004 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 9 s
+
+Time = 58
+
+pseudoTime: iteration 58
+Pseudo Courant No: 49.724162213365034
+Damped pseudo Courant No: Min: 49.724162213365034 Mean: 49.724162213369588 Max: 49.724162213365034
+Pseudo deltaT: Min: 2.713857184130548e-07 Mean: 0.00089705446016271251 Max: 0.11960719454394235
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022382563219360642 (0.012181211017586657 1.9879422651981765e-14 0.0045960722716032404) 0.021835648722707286 
+  GMRES iteration: 1   Residual: 0.00059243584282373527 (0.00028299215286766582 0 0.00014359055661747775) 0.0005548950297509205 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.004253491930043438, Final residual = 0.00010457971631359191, No Iterations 1
+ExecutionTime = 8.7899999999999991 s  ExecutionStepTime = 0.13999999999999879 s  ClockTime = 9 s
+
+Time = 59
+
+pseudoTime: iteration 59
+Pseudo Courant No: 51.117902198017518
+Damped pseudo Courant No: Min: 25.558951099008759 Mean: 51.041394638039968 Max: 51.117902198017518
+Pseudo deltaT: Min: 1.9591941136132748e-07 Mean: 0.00092211676790903395 Max: 0.12296223758530084
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022353469562330509 (0.011742479774101269 1.8909057095558796e-14 0.0045673932948908751) 0.021578142409186818 
+  GMRES iteration: 1   Residual: 0.00060159715678041173 (0.00027738398823692651 0 0.00014359006310616317) 0.00056875005502654823 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0029459985140700279, Final residual = 7.2612396393873687e-05, No Iterations 1
+ExecutionTime = 8.9399999999999995 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 9 s
+
+Time = 60
+
+pseudoTime: iteration 60
+Pseudo Courant No: 51.643634270212978
+Damped pseudo Courant No: Min: 25.821817135106489 Mean: 51.617869464547141 Max: 51.643634270212978
+Pseudo deltaT: Min: 2.0678987641039846e-07 Mean: 0.00093153076544436812 Max: 0.12422993039906695
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022101227231515228 (0.01107586847674974 1.7434258512476903e-14 0.0045073774617661122) 0.02107226013610658 
+  GMRES iteration: 1   Residual: 0.00066092345472364242 (0.00028014496571452155 0 0.0001574306393525805) 0.00063363339507317186 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0022257384715949403, Final residual = 5.4434460455936571e-05, No Iterations 1
+ExecutionTime = 9.0899999999999999 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 9 s
+
+Time = 61
+
+pseudoTime: iteration 61
+Pseudo Courant No: 52.796299431305663
+Damped pseudo Courant No: Min: 26.398149715652831 Mean: 52.691500390960258 Max: 52.796299431305663
+Pseudo deltaT: Min: 2.0132127620208465e-07 Mean: 0.00095223002299681038 Max: 0.1270069861095274
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022495672636302696 (0.010919754875203892 1.6896522526490142e-14 0.004467090531558803) 0.02136315064230887 
+  GMRES iteration: 1   Residual: 0.00068307029857783729 (0.0002889372697121199 0 0.0001638357766720306) 0.00065602933500198788 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0017534495331620495, Final residual = 4.2696323624875785e-05, No Iterations 1
+ExecutionTime = 9.2300000000000004 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 9 s
+
+Time = 62
+
+pseudoTime: iteration 62
+Pseudo Courant No: 52.166160699004365
+Damped pseudo Courant No: Min: 26.083080349502183 Mean: 52.114663448805487 Max: 52.166160699004365
+Pseudo deltaT: Min: 2.0700475607489763e-07 Mean: 0.00094079719828257021 Max: 0.12549714698030282
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022586877649077432 (0.01078314222113907 1.6508958788515594e-14 0.0044725641673791427) 0.021556999700161769 
+  GMRES iteration: 1   Residual: 0.00070646351955242837 (0.00028388154185353935 0 0.00016556300650916127) 0.00067758607758155705 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0014387830509469785, Final residual = 3.4505020236089228e-05, No Iterations 1
+ExecutionTime = 9.3499999999999996 s  ExecutionStepTime = 0.11999999999999922 s  ClockTime = 10 s
+
+Time = 63
+
+pseudoTime: iteration 63
+Pseudo Courant No: 51.942306592967277
+Damped pseudo Courant No: Min: 25.971153296483639 Mean: 51.844716279331195 Max: 51.942306592967277
+Pseudo deltaT: Min: 1.974558153875112e-07 Mean: 0.00093667713762974442 Max: 0.12496677590170994
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023226470844540801 (0.010592562367025535 1.6297997846021872e-14 0.0043896625876838234) 0.022272920398712964 
+  GMRES iteration: 1   Residual: 0.00068226595291057558 (0.00028251571392312678 0 0.00016054574286783466) 0.00065290994751841911 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0012037136776359074, Final residual = 2.8269304315733023e-05, No Iterations 1
+ExecutionTime = 9.5099999999999998 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 10 s
+
+Time = 64
+
+pseudoTime: iteration 64
+Pseudo Courant No: 50.683667492612749
+Damped pseudo Courant No: Min: 25.341833746306374 Mean: 50.607809846571264 Max: 50.683667492612749
+Pseudo deltaT: Min: 2.0025600291832114e-07 Mean: 0.00091391608241502139 Max: 0.12194879772403729
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023235557665513874 (0.010467533988796752 1.6311626959145707e-14 0.0044544954908825674) 0.022296119763715462 
+  GMRES iteration: 1   Residual: 0.00066631953565733757 (0.0002679318314913106 0 0.0001563961599897975) 0.00063673362608796717 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0010147176035214939, Final residual = 2.3476661517388726e-05, No Iterations 1
+ExecutionTime = 9.6999999999999993 s  ExecutionStepTime = 0.1899999999999995 s  ClockTime = 10 s
+
+Time = 65
+
+pseudoTime: iteration 65
+Pseudo Courant No: 50.696778661589178
+Damped pseudo Courant No: Min: 25.348389330794589 Mean: 50.625206485519222 Max: 50.696778661589178
+Pseudo deltaT: Min: 1.9249313361874328e-07 Mean: 0.00091409681687069856 Max: 0.12199210629921158
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023823863895157525 (0.010283584953910846 1.6252725903659114e-14 0.0044550986027290553) 0.022868841287625993 
+  GMRES iteration: 1   Residual: 0.00068342726893552859 (0.00027632688397274301 0 0.00015454784050779601) 0.00064913926658656832 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00087653621493406764, Final residual = 2.0091372031792378e-05, No Iterations 1
+ExecutionTime = 9.8499999999999996 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 10 s
+
+Time = 66
+
+pseudoTime: iteration 66
+Pseudo Courant No: 49.649215644079
+Damped pseudo Courant No: Min: 24.8246078220395 Mean: 49.559095740511474 Max: 49.649215644079
+Pseudo deltaT: Min: 1.9670693809795147e-07 Mean: 0.00089514434899822665 Max: 0.11948390007402448
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023744039572676307 (0.010114435681929481 1.6413482936301855e-14 0.0044963657738276751) 0.022794601320556947 
+  GMRES iteration: 1   Residual: 0.00066038332741979913 (0.00026367146473085654 0 0.0001480296381957451) 0.00062496850903172622 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00076797566684576519, Final residual = 1.7294241637854536e-05, No Iterations 1
+ExecutionTime = 9.9800000000000004 s  ExecutionStepTime = 0.13000000000000078 s  ClockTime = 10 s
+
+Time = 67
+
+pseudoTime: iteration 67
+Pseudo Courant No: 49.86014630392615
+Damped pseudo Courant No: Min: 24.930073151963075 Mean: 49.846385648726155 Max: 49.86014630392615
+Pseudo deltaT: Min: 2.3916044509093122e-07 Mean: 0.00089891381330253328 Max: 0.12000459767705067
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.024060939879759373 (0.010020745141586471 1.6378029856523736e-14 0.0044725312814396763) 0.023085626186386897 
+  GMRES iteration: 1   Residual: 0.00069540104838400861 (0.00028048005818631666 0 0.0001502573127833072) 0.00065564292416145115 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0006814578012940101, Final residual = 1.5228490769511209e-05, No Iterations 1
+ExecutionTime = 10.130000000000001 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 10 s
+
+Time = 68
+
+pseudoTime: iteration 68
+Pseudo Courant No: 49.32313651921055
+Damped pseudo Courant No: Min: 24.661568259605275 Mean: 49.232561381013483 Max: 49.32313651921055
+Pseudo deltaT: Min: 1.9510795548038589e-07 Mean: 0.00088917164962353044 Max: 0.11872500859043129
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023838226093282355 (0.0098387163635278579 1.6331634897677578e-14 0.004501419646402674) 0.022829992885397478 
+  GMRES iteration: 1   Residual: 0.00061873434546603839 (0.00026053909498466223 0 0.0001302166339465765) 0.00058783965112476093 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00060696154933754739, Final residual = 1.3336417716968975e-05, No Iterations 1
+ExecutionTime = 10.279999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 11 s
+
+Time = 69
+
+pseudoTime: iteration 69
+Pseudo Courant No: 49.846913515603589
+Damped pseudo Courant No: Min: 12.461728378900897 Mean: 49.820590019207145 Max: 49.846913515603589
+Pseudo deltaT: Min: 1.0073152293240592e-07 Mean: 0.00089859279708593711 Max: 0.11999838767294065
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.024024275700298813 (0.0097168874019230665 1.6165021893881887e-14 0.0045223803768792955) 0.022998517791159783 
+  GMRES iteration: 1   Residual: 0.00063115024693118494 (0.00027450948619216881 0 0.0001388827670092306) 0.00059695005379627793 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00054673609863898232, Final residual = 1.1981645018629013e-05, No Iterations 1
+ExecutionTime = 10.42 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 11 s
+
+Time = 70
+
+pseudoTime: iteration 70
+Pseudo Courant No: 49.551382662508395
+Damped pseudo Courant No: Min: 9.2908842492203245 Mean: 49.475181527103025 Max: 49.551382662508395
+Pseudo deltaT: Min: 7.4182660705761306e-08 Mean: 0.00089322186467596378 Max: 0.11929865927240003
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023639240638596803 (0.0096542267071617199 1.6094128852586139e-14 0.0045341681783886241) 0.022579408002033757 
+  GMRES iteration: 1   Residual: 0.00057247573639298925 (0.00025989897154964455 0 0.00012580578161062168) 0.00054786336882828442 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00049307954686771745, Final residual = 1.0705368502900412e-05, No Iterations 1
+ExecutionTime = 10.57 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 11 s
+
+Time = 71
+
+pseudoTime: iteration 71
+Pseudo Courant No: 50.352899748311138
+Damped pseudo Courant No: Min: 18.882337405616678 Mean: 50.335929803463252 Max: 50.352899748311138
+Pseudo deltaT: Min: 1.4931471670367991e-07 Mean: 0.00090764854603740468 Max: 0.12123913830525139
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.023721547161244635 (0.0095771020607548444 1.5893372803402904e-14 0.0045582095202086059) 0.022683429296493387 
+  GMRES iteration: 1   Residual: 0.00062550495492014928 (0.00028368411834962061 0 0.00013619885670984952) 0.00059576759777230667 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00044859754293298721, Final residual = 9.7679774492805485e-06, No Iterations 1
+ExecutionTime = 10.720000000000001 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 11 s
+
+Time = 72
+
+pseudoTime: iteration 72
+Pseudo Courant No: 50.19729863476541
+Damped pseudo Courant No: Min: 9.4119934940185139 Mean: 50.118305879145566 Max: 50.19729863476541
+Pseudo deltaT: Min: 8.1281189655247505e-08 Mean: 0.00090481021048524613 Max: 0.12087390434865705
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022745486891134162 (0.0094107384672039475 1.549307499159637e-14 0.0045996244520986503) 0.021735020283763114 
+  GMRES iteration: 1   Residual: 0.00055249389204598302 (0.00026128760285640588 0 0.00012039362633225501) 0.00052989743877792912 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00040961461614229895, Final residual = 8.795451284111637e-06, No Iterations 1
+ExecutionTime = 10.859999999999999 s  ExecutionStepTime = 0.13999999999999879 s  ClockTime = 11 s
+
+Time = 73
+
+pseudoTime: iteration 73
+Pseudo Courant No: 52.217107274308489
+Damped pseudo Courant No: Min: 19.581415227865683 Mean: 52.202418995810966 Max: 52.217107274308489
+Pseudo deltaT: Min: 1.6727994700092207e-07 Mean: 0.00094120043909102363 Max: 0.12574599241947848
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.022482195463401907 (0.0093419209150180649 1.4939797761662464e-14 0.0046682964095430901) 0.021543630327610929 
+  GMRES iteration: 1   Residual: 0.00062283299697128355 (0.0002946406847256768 0 0.00013567394130751227) 0.00059429531748147048 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00037918997246029815, Final residual = 8.2433662717026637e-06, No Iterations 1
+ExecutionTime = 11 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 11 s
+
+Time = 74
+
+pseudoTime: iteration 74
+Pseudo Courant No: 52.719252186759121
+Damped pseudo Courant No: Min: 9.8848597850173352 Mean: 52.644020311902629 Max: 52.719252186759121
+Pseudo deltaT: Min: 8.3334126241458485e-08 Mean: 0.00095022325413677503 Max: 0.12696224778266929
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.021360061596154646 (0.0092109397464963886 1.4471303184173115e-14 0.0047201262100944339) 0.020429286433360904 
+  GMRES iteration: 1   Residual: 0.00057333345420225814 (0.00027712063933421513 0 0.00012319555949871869) 0.00054837128810484117 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00034992148405972205, Final residual = 7.5320883161359147e-06, No Iterations 1
+ExecutionTime = 11.140000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 11 s
+
+Time = 75
+
+pseudoTime: iteration 75
+Pseudo Courant No: 55.288310614305722
+Damped pseudo Courant No: Min: 20.733116480364647 Mean: 55.278407100378082 Max: 55.288310614305722
+Pseudo deltaT: Min: 1.7381908313478487e-07 Mean: 0.00099651350932362069 Max: 0.13315504016247243
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.02108309742375505 (0.0091722726568755786 1.4006159075159233e-14 0.004791372988133819) 0.020150214576817777 
+  GMRES iteration: 1   Residual: 0.00064007487400541418 (0.00030775686494733144 0 0.0001407063709570203) 0.0006059124755789534 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00032661572839607023, Final residual = 7.1522848843626952e-06, No Iterations 1
+ExecutionTime = 11.33 s  ExecutionStepTime = 0.1899999999999995 s  ClockTime = 12 s
+
+Time = 76
+
+pseudoTime: iteration 76
+Pseudo Courant No: 55.951551049467056
+Damped pseudo Courant No: Min: 15.73637373266261 Mean: 55.878870692611216 Max: 55.951551049467056
+Pseudo deltaT: Min: 1.3171495143677526e-07 Mean: 0.0010084402470337921 Max: 0.13475663039905239
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.020201489659075061 (0.009060032283152622 1.3722253279965221e-14 0.0048249024439883702) 0.019232211220297099 
+  GMRES iteration: 1   Residual: 0.00059100646017479555 (0.00029134008697636135 0 0.00013219565813560715) 0.00055522991131350715 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00030453149774353462, Final residual = 6.6408862321668031e-06, No Iterations 1
+ExecutionTime = 11.51 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 12 s
+
+Time = 77
+
+pseudoTime: iteration 77
+Pseudo Courant No: 58.256365090506783
+Damped pseudo Courant No: Min: 32.769205363410066 Mean: 58.250954263475762 Max: 58.256365090506783
+Pseudo deltaT: Min: 2.7504870450849492e-07 Mean: 0.0010499668266367491 Max: 0.14031067139470335
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.020078214469118106 (0.0090538716354987524 1.3417760133469125e-14 0.0048979493726928917) 0.019131980755547433 
+  GMRES iteration: 1   Residual: 0.00064256398226092502 (0.00031411455550884741 0 0.00014814249108908959) 0.0005991576023348953 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00028635740894290053, Final residual = 6.3835826179431747e-06, No Iterations 1
+ExecutionTime = 11.66 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 12 s
+
+Time = 78
+
+pseudoTime: iteration 78
+Pseudo Courant No: 58.529062349630856
+Damped pseudo Courant No: Min: 29.264531174815428 Mean: 58.471283787288861 Max: 58.529062349630856
+Pseudo deltaT: Min: 2.3742411247694991e-07 Mean: 0.0010548582859796537 Max: 0.14096932141853905
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.019433714039781988 (0.0090114661316277999 1.3345153895693206e-14 0.0049098265953451186) 0.018502842737897946 
+  GMRES iteration: 1   Residual: 0.00057429492502948122 (0.00030531235493529016 0 0.000149271815354891) 0.00052795202240030648 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00026933308710921098, Final residual = 6.0601310600393907e-06, No Iterations 1
+ExecutionTime = 11.800000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 12 s
+
+Time = 79
+
+pseudoTime: iteration 79
+Pseudo Courant No: 60.268734748469733
+Damped pseudo Courant No: Min: 60.268734748469733 Mean: 60.268734748474934 Max: 60.268734748469733
+Pseudo deltaT: Min: 3.2845608819777511e-07 Mean: 0.0010861959827896187 Max: 0.14516062881366662
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.019767421288536417 (0.0090207584636236241 1.3197553843263279e-14 0.0050036517179428888) 0.018856475064662443 
+  GMRES iteration: 1   Residual: 0.00060326486623901113 (0.00031240030368361624 0 0.00014132387356425354) 0.00055334153548067732 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0002555140171638478, Final residual = 5.9015628303217942e-06, No Iterations 1
+ExecutionTime = 11.94 s  ExecutionStepTime = 0.13999999999999879 s  ClockTime = 12 s
+
+Time = 80
+
+pseudoTime: iteration 80
+Pseudo Courant No: 59.292874929458456
+Damped pseudo Courant No: Min: 29.646437464729228 Mean: 59.259517652269189 Max: 59.292874929458456
+Pseudo deltaT: Min: 2.4647111926708092e-07 Mean: 0.0010685907784333652 Max: 0.14281121637730837
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.019179373559321096 (0.0089331050764925556 1.3139128537819299e-14 0.0050178970667541139) 0.018218333420495874 
+  GMRES iteration: 1   Residual: 0.00052634609531160325 (0.00030061820908394818 0 0.00014449112637420923) 0.00047731760884756904 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00024201325606164142, Final residual = 5.5899966608587432e-06, No Iterations 1
+ExecutionTime = 12.08 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 12 s
+
+Time = 81
+
+pseudoTime: iteration 81
+Pseudo Courant No: 61.035314918021371
+Damped pseudo Courant No: Min: 61.035314918021371 Mean: 61.035314918029037 Max: 61.035314918021371
+Pseudo deltaT: Min: 3.3249118301331942e-07 Mean: 0.0010999816313775317 Max: 0.14700920905196871
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.019417968242414888 (0.0089436716653712601 1.3127900723451275e-14 0.0051044627424355182) 0.018429263296958556 
+  GMRES iteration: 1   Residual: 0.00055470039779807398 (0.00031621054992636322 0 0.00013231116746544218) 0.00050839627972961679 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.0002317750931508568, Final residual = 5.483748932735647e-06, No Iterations 1
+ExecutionTime = 12.220000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 12 s
+
+Time = 82
+
+pseudoTime: iteration 82
+Pseudo Courant No: 60.363791069679358
+Damped pseudo Courant No: Min: 60.363791069679358 Mean: 60.363791069697932 Max: 60.363791069679358
+Pseudo deltaT: Min: 3.2863932937325831e-07 Mean: 0.0010878715490896663 Max: 0.14539333539034283
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.018532407559233518 (0.0089386992406432289 1.3143691905549533e-14 0.0051207132804793705) 0.017491410456317923 
+  GMRES iteration: 1   Residual: 0.0005139129812148747 (0.00031382919285009213 0 0.00013240570913799514) 0.00047493796135587011 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00022104091128309083, Final residual = 5.2344248477726349e-06, No Iterations 1
+ExecutionTime = 12.359999999999999 s  ExecutionStepTime = 0.13999999999999879 s  ClockTime = 13 s
+
+Time = 83
+
+pseudoTime: iteration 83
+Pseudo Courant No: 62.991851835514126
+Damped pseudo Courant No: Min: 62.991851835514126 Mean: 62.991851835511696 Max: 62.991851835514126
+Pseudo deltaT: Min: 3.4290975376081881e-07 Mean: 0.0011352330989090821 Max: 0.15172543996183926
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.018664739735925039 (0.0089731690645892103 1.3213820379243375e-14 0.0052373772027922635) 0.017571956651930357 
+  GMRES iteration: 1   Residual: 0.00052028513831275816 (0.00034149445797806646 0 0.00013633107724742214) 0.00049104892587143595 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00021293783341526319, Final residual = 5.1907653585091577e-06, No Iterations 1
+ExecutionTime = 12.52 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 13 s
+
+Time = 84
+
+pseudoTime: iteration 84
+Pseudo Courant No: 62.596551850440136
+Damped pseudo Courant No: Min: 62.596551850440136 Mean: 62.596551850438189 Max: 62.596551850440136
+Pseudo deltaT: Min: 3.4088381800631839e-07 Mean: 0.0011281149760053273 Max: 0.15077566413225865
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.017782526433890583 (0.0089726097479574159 1.3257033468101934e-14 0.005288127828614226) 0.0166364440972924 
+  GMRES iteration: 1   Residual: 0.00052211656267020816 (0.00034248620675818775 0 0.00014974631280721297) 0.00050116221588798358 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00020464457816034187, Final residual = 4.9778863961500718e-06, No Iterations 1
+ExecutionTime = 12.67 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 13 s
+
+Time = 85
+
+pseudoTime: iteration 85
+Pseudo Courant No: 65.374125364383019
+Damped pseudo Courant No: Min: 65.374125364383019 Mean: 65.374125364404961 Max: 65.374125364383019
+Pseudo deltaT: Min: 3.5629280720525587e-07 Mean: 0.0011781874357310528 Max: 0.1574684573598184
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0177885191668701 (0.0089709814409940948 1.3216294271308044e-14 0.0053382419685252102) 0.01662541764385413 
+  GMRES iteration: 1   Residual: 0.00051647990006979834 (0.00035817186166832074 0 0.00015526841415071434) 0.00050549009794035118 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00019798300003822842, Final residual = 4.9203546800003459e-06, No Iterations 1
+ExecutionTime = 12.81 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 13 s
+
+Time = 86
+
+pseudoTime: iteration 86
+Pseudo Courant No: 65.357834972448444
+Damped pseudo Courant No: Min: 65.357834972448444 Mean: 65.357834972441509 Max: 65.357834972448444
+Pseudo deltaT: Min: 3.5635795453991446e-07 Mean: 0.0011779166686817517 Max: 0.15743142605051957
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.017127467316915307 (0.0090226040250929035 1.325573123819697e-14 0.0053834510263677483) 0.016033145565424234 
+  GMRES iteration: 1   Residual: 0.00048820465235615277 (0.00034794658625833709 0 0.00015653132184214607) 0.00047996543665721522 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00019061002165600451, Final residual = 4.7354002784567735e-06, No Iterations 1
+ExecutionTime = 12.94 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 13 s
+
+Time = 87
+
+pseudoTime: iteration 87
+Pseudo Courant No: 67.355418139379879
+Damped pseudo Courant No: Min: 67.355418139379879 Mean: 67.355418139371125 Max: 67.355418139379879
+Pseudo deltaT: Min: 3.6737148495414251e-07 Mean: 0.0012139492794614062 Max: 0.16224472955625288
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.017480644756288067 (0.0090535120446390543 1.3211268580424494e-14 0.0054609805153575212) 0.016426532991262528 
+  GMRES iteration: 1   Residual: 0.00047936220953643334 (0.00035569083183984172 0 0.0001613007369260363) 0.00047047706059846436 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00018421282790413859, Final residual = 4.6556314195337312e-06, No Iterations 1
+ExecutionTime = 13.15 s  ExecutionStepTime = 0.21000000000000085 s  ClockTime = 13 s
+
+Time = 88
+
+pseudoTime: iteration 88
+Pseudo Courant No: 66.049369538599734
+Damped pseudo Courant No: Min: 66.049369538599734 Mean: 66.049369538608701 Max: 66.049369538599734
+Pseudo deltaT: Min: 3.604246553087497e-07 Mean: 0.0011904457301534152 Max: 0.15909910079153272
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.016778788599018338 (0.0090893463251278724 1.310432995704408e-14 0.0054903497049935994) 0.015822026943278372 
+  GMRES iteration: 1   Residual: 0.00044543862988050034 (0.00033598982109710299 0 0.00015085056512169589) 0.00043589632730902647 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00017725854472506593, Final residual = 4.4378890221214888e-06, No Iterations 1
+ExecutionTime = 13.31 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 14 s
+
+Time = 89
+
+pseudoTime: iteration 89
+Pseudo Courant No: 68.195299367091181
+Damped pseudo Courant No: Min: 68.195299367091181 Mean: 68.195299367115382 Max: 68.195299367091181
+Pseudo deltaT: Min: 3.7232844022592879e-07 Mean: 0.0012291632092508227 Max: 0.16426695844912231
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.016760934699564925 (0.0090694574724318033 1.2804257766768423e-14 0.0055464723806287934) 0.015876658553668536 
+  GMRES iteration: 1   Residual: 0.00043328390487901684 (0.00033741348054120666 0 0.0001443301993113989) 0.00042494996023853066 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00017188284395336468, Final residual = 4.3739241099996258e-06, No Iterations 1
+ExecutionTime = 13.44 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 14 s
+
+Time = 90
+
+pseudoTime: iteration 90
+Pseudo Courant No: 68.121830559720536
+Damped pseudo Courant No: Min: 68.121830559720536 Mean: 68.121830559739777 Max: 68.121830559720536
+Pseudo deltaT: Min: 3.7210276737943548e-07 Mean: 0.0012278802775348844 Max: 0.16408679773015059
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.016219439144590776 (0.0090336967037326198 1.265296563996174e-14 0.0055263886424127221) 0.015424720773145675 
+  GMRES iteration: 1   Residual: 0.00041891881560619646 (0.00032874596075461451 0 0.00014418675733396933) 0.0004104451307074864 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00016615116649431049, Final residual = 4.2284965523960477e-06, No Iterations 1
+ExecutionTime = 13.58 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 14 s
+
+Time = 91
+
+pseudoTime: iteration 91
+Pseudo Courant No: 69.924230018177568
+Damped pseudo Courant No: Min: 69.924230018177568 Mean: 69.924230018166071 Max: 69.924230018177568
+Pseudo deltaT: Min: 3.8208874773194648e-07 Mean: 0.0012604102986155758 Max: 0.1684229777784802
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.016007037792724856 (0.0089507278232059291 1.2473000943223491e-14 0.005594832183796466) 0.015304814077798733 
+  GMRES iteration: 1   Residual: 0.00042431329625253374 (0.0003324621153582613 0 0.00014181577422397545) 0.0004179164880404048 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00016144014688709634, Final residual = 4.1735451048482587e-06, No Iterations 1
+ExecutionTime = 13.720000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 14 s
+
+Time = 92
+
+pseudoTime: iteration 92
+Pseudo Courant No: 70.575306141922752
+Damped pseudo Courant No: Min: 70.575306141922752 Mean: 70.575306141926774 Max: 70.575306141922752
+Pseudo deltaT: Min: 3.8574717731924704e-07 Mean: 0.0012721867069228425 Max: 0.16998395412768974
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.015344764912174269 (0.0089111402351703829 1.2420495855252242e-14 0.0055827698827589185) 0.014739627499471317 
+  GMRES iteration: 1   Residual: 0.00042986749757524366 (0.00032766828534792279 0 0.00013686376499369437) 0.00042117532886828593 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00015690060444015216, Final residual = 4.0736251599450801e-06, No Iterations 1
+ExecutionTime = 13.869999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 14 s
+
+Time = 93
+
+pseudoTime: iteration 93
+Pseudo Courant No: 72.952502809875085
+Damped pseudo Courant No: Min: 72.952502809875085 Mean: 72.952502809912886 Max: 72.952502809875085
+Pseudo deltaT: Min: 3.9881242190732396e-07 Mean: 0.0013150770268730242 Max: 0.17570042960433443
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.014871770125715755 (0.0088252034898809607 1.2204724626788228e-14 0.0057039780035190203) 0.014327246583522718 
+  GMRES iteration: 1   Residual: 0.00044020398925619981 (0.00033723557632847558 0 0.00013982776036122751) 0.00043520113476985535 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00015252727758458746, Final residual = 4.018030070692266e-06, No Iterations 1
+ExecutionTime = 14.02 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 14 s
+
+Time = 94
+
+pseudoTime: iteration 94
+Pseudo Courant No: 74.727018510795261
+Damped pseudo Courant No: Min: 74.727018510795261 Mean: 74.727018510758299 Max: 74.727018510795261
+Pseudo deltaT: Min: 4.0850817256211545e-07 Mean: 0.0013471019874877108 Max: 0.1799636156795546
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.014132488563597839 (0.0087823049269899426 1.2248444746774269e-14 0.0056831191613039419) 0.013659389272979178 
+  GMRES iteration: 1   Residual: 0.00045415401777160674 (0.00033931159680190707 0 0.00013889906737732049) 0.00044593011262426227 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00014791510936931643, Final residual = 3.9358654479003473e-06, No Iterations 1
+ExecutionTime = 14.16 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 14 s
+
+Time = 95
+
+pseudoTime: iteration 95
+Pseudo Courant No: 77.76496216101701
+Damped pseudo Courant No: Min: 77.76496216101701 Mean: 77.764962160976481 Max: 77.76496216101701
+Pseudo deltaT: Min: 4.2462912931524457e-07 Mean: 0.0014019032961181924 Max: 0.18726792202818951
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.013676407538515187 (0.0086135894772433486 1.1960419817627519e-14 0.0057055650060383436) 0.013221925893976727 
+  GMRES iteration: 1   Residual: 0.00047160133108200793 (0.00034560418318136505 0 0.00014529090629870602) 0.00046702382314184972 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00014353053625742822, Final residual = 3.8959004661886461e-06, No Iterations 1
+ExecutionTime = 14.32 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 15 s
+
+Time = 96
+
+pseudoTime: iteration 96
+Pseudo Courant No: 79.983730665188048
+Damped pseudo Courant No: Min: 79.983730665188048 Mean: 79.983730665176239 Max: 79.983730665188048
+Pseudo deltaT: Min: 4.3634802263703726e-07 Mean: 0.0014419379779335988 Max: 0.19259825476616199
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.013238481277287566 (0.0085688859675665998 1.1948708974587936e-14 0.0056656947885088465) 0.012808596213696104 
+  GMRES iteration: 1   Residual: 0.00049247953504999312 (0.0003446090334299126 0 0.00014183417321016333) 0.00048441207073932139 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00013919242030363706, Final residual = 3.8415675595812073e-06, No Iterations 1
+ExecutionTime = 14.460000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 15 s
+
+Time = 97
+
+pseudoTime: iteration 97
+Pseudo Courant No: 82.09264231561923
+Damped pseudo Courant No: Min: 82.09264231561923 Mean: 82.092642315648604 Max: 82.09264231561923
+Pseudo deltaT: Min: 4.4757589206830009e-07 Mean: 0.0014799933309400299 Max: 0.19766331284166233
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012827936831982941 (0.008443577723953365 1.1744045749092959e-14 0.0057176922285161295) 0.012384745996185661 
+  GMRES iteration: 1   Residual: 0.00048916355457694365 (0.00035235904852637818 0 0.00014701233612441061) 0.00048728851460775631 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00013537889479839723, Final residual = 3.787321056584741e-06, No Iterations 1
+ExecutionTime = 14.609999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 15 s
+
+Time = 98
+
+pseudoTime: iteration 98
+Pseudo Courant No: 84.292853765678473
+Damped pseudo Courant No: Min: 84.292853765678473 Mean: 84.292853765658933 Max: 84.292853765678473
+Pseudo deltaT: Min: 4.594288513685913e-07 Mean: 0.0015196944006052671 Max: 0.20294788271407205
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012673013916871976 (0.0083954767143009108 1.1801737307598181e-14 0.0056388198396612899) 0.012242950542949755 
+  GMRES iteration: 1   Residual: 0.00049920651120715254 (0.00034334318450595356 0 0.0001378366364281568) 0.00049118272483606612 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00013179817263073176, Final residual = 3.7386857336411723e-06, No Iterations 1
+ExecutionTime = 14.85 s  ExecutionStepTime = 0.24000000000000021 s  ClockTime = 15 s
+
+Time = 99
+
+pseudoTime: iteration 99
+Pseudo Courant No: 85.221838728044872
+Damped pseudo Courant No: Min: 85.221838728044872 Mean: 85.221838728058131 Max: 85.221838728044872
+Pseudo deltaT: Min: 4.6448304590516982e-07 Mean: 0.001536473960929549 Max: 0.20517177277596235
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012459598983703656 (0.0082935933650925293 1.156806275150515e-14 0.0056695283631553453) 0.012010898882630655 
+  GMRES iteration: 1   Residual: 0.00049818646654027686 (0.00034765248252342047 0 0.00014495801559400809) 0.00049072577576849546 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00012823792860459853, Final residual = 3.6701509628973618e-06, No Iterations 1
+ExecutionTime = 15 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 15 s
+
+Time = 100
+
+pseudoTime: iteration 100
+Pseudo Courant No: 86.525521696213715
+Damped pseudo Courant No: Min: 86.525521696213715 Mean: 86.525521696255325 Max: 86.525521696213715
+Pseudo deltaT: Min: 4.7169593303088217e-07 Mean: 0.0015600036742116205 Max: 0.20829838384384286
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012361193709295885 (0.0082025914153847339 1.1568763682412687e-14 0.0055781686101776104) 0.011912693269134463 
+  GMRES iteration: 1   Residual: 0.00050402310705348254 (0.00033773848991099629 0 0.0001384463847307262) 0.00048721070556529783 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00012482687640636805, Final residual = 3.6162108004683275e-06, No Iterations 1
+ExecutionTime = 15.140000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 15 s
+
+Time = 101
+
+pseudoTime: iteration 101
+Pseudo Courant No: 87.327467408201372
+Damped pseudo Courant No: Min: 87.327467408201372 Mean: 87.327467408219363 Max: 87.327467408201372
+Pseudo deltaT: Min: 4.7626770326088789e-07 Mean: 0.0015744839153621364 Max: 0.21021850147437859
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.01227540804210663 (0.0081388536132616374 1.1347715574066218e-14 0.0056184366148097345) 0.011781817774557996 
+  GMRES iteration: 1   Residual: 0.00051756227317261609 (0.00033612545471500187 0 0.00013667942152669025) 0.00049405006966815016 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00012145968426862106, Final residual = 3.5583534671646877e-06, No Iterations 1
+ExecutionTime = 15.289999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 16 s
+
+Time = 102
+
+pseudoTime: iteration 102
+Pseudo Courant No: 87.979496724703878
+Damped pseudo Courant No: Min: 87.979496724703878 Mean: 87.979496724681979 Max: 87.979496724703878
+Pseudo deltaT: Min: 4.8008794235514213e-07 Mean: 0.0015862597634896608 Max: 0.21178024550698896
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012362688624649218 (0.0081162192308474445 1.1513309133737483e-14 0.0055645915876410702) 0.011870238983867926 
+  GMRES iteration: 1   Residual: 0.000526205114585174 (0.0003263977391159893 0 0.00013182972274229483) 0.00048956090046026462 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00011831005998357472, Final residual = 3.5052223089199518e-06, No Iterations 1
+ExecutionTime = 15.43 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 16 s
+
+Time = 103
+
+pseudoTime: iteration 103
+Pseudo Courant No: 87.610237836465302
+Damped pseudo Courant No: Min: 87.610237836465302 Mean: 87.610237836427785 Max: 87.610237836465302
+Pseudo deltaT: Min: 4.7837442126523239e-07 Mean: 0.0015796210237229496 Max: 0.2108868581358993
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012328137890946774 (0.0080856584913954321 1.1420073702663524e-14 0.0056409585972261155) 0.011813989840097778 
+  GMRES iteration: 1   Residual: 0.00051307488979852791 (0.00031603381467084648 0 0.00012578719858903124) 0.00047447760718844444 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00011523171214417963, Final residual = 3.4416392806571404e-06, No Iterations 1
+ExecutionTime = 15.58 s  ExecutionStepTime = 0.15000000000000036 s  ClockTime = 16 s
+
+Time = 104
+
+pseudoTime: iteration 104
+Pseudo Courant No: 87.815608286313307
+Damped pseudo Courant No: Min: 87.815608286313307 Mean: 87.815608286299735 Max: 87.815608286313307
+Pseudo deltaT: Min: 4.7981352576700526e-07 Mean: 0.0015833418821962974 Max: 0.21137997846180503
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.01222825275830647 (0.0081044853105783129 1.1579842977312257e-14 0.0056410719481592405) 0.011714657338419194 
+  GMRES iteration: 1   Residual: 0.00050701198707800671 (0.00032477749190421977 0 0.0001367572917769853) 0.00045750040562004613 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00011265030364421787, Final residual = 3.4029333485581209e-06, No Iterations 1
+ExecutionTime = 15.720000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 16 s
+
+Time = 105
+
+pseudoTime: iteration 105
+Pseudo Courant No: 88.326467632353584
+Damped pseudo Courant No: Min: 88.326467632353584 Mean: 88.326467632327763 Max: 88.326467632353584
+Pseudo deltaT: Min: 4.8293383400177367e-07 Mean: 0.0015925686100305887 Max: 0.21261110501068481
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.01226764432032035 (0.0080674365271486571 1.1411015709581445e-14 0.0056855501265015923) 0.011738007106549297 
+  GMRES iteration: 1   Residual: 0.00050012295744298154 (0.00031745800783006766 0 0.00011199634947910651) 0.0004531301723655971 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00011038508120372058, Final residual = 3.3841407858747643e-06, No Iterations 1
+ExecutionTime = 15.869999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 16 s
+
+Time = 106
+
+pseudoTime: iteration 106
+Pseudo Courant No: 88.16404229840083
+Damped pseudo Courant No: Min: 88.16404229840083 Mean: 88.164042298435248 Max: 88.16404229840083
+Pseudo deltaT: Min: 4.8237797140337293e-07 Mean: 0.0015896525732470859 Max: 0.2122232272721887
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012115784668988537 (0.0080729100375525314 1.1567772051107189e-14 0.0056609309699836036) 0.01159814938864594 
+  GMRES iteration: 1   Residual: 0.00048993421324665496 (0.00031700099462498812 0 0.00011411517806248048) 0.00043785232826837523 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00010838623716241018, Final residual = 3.3651835510342597e-06, No Iterations 1
+ExecutionTime = 16.030000000000001 s  ExecutionStepTime = 0.16000000000000192 s  ClockTime = 16 s
+
+Time = 107
+
+pseudoTime: iteration 107
+Pseudo Courant No: 88.993688428684436
+Damped pseudo Courant No: Min: 88.993688428684436 Mean: 88.993688428719821 Max: 88.993688428684436
+Pseudo deltaT: Min: 4.8689808211500079e-07 Mean: 0.0016046201042145733 Max: 0.2142242641662879
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.012250950581930948 (0.0080881977912018177 1.1484119293448405e-14 0.0057512638775809302) 0.011702186996672494 
+  GMRES iteration: 1   Residual: 0.00048666610515519224 (0.00033661763356372958 0 0.00010931738247452983) 0.00043869634784843775 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00010651999683163373, Final residual = 3.3582532502468988e-06, No Iterations 1
+ExecutionTime = 16.18 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 16 s
+
+Time = 108
+
+pseudoTime: iteration 108
+Pseudo Courant No: 88.182560560743667
+Damped pseudo Courant No: Min: 88.182560560743667 Mean: 88.182560560756386 Max: 88.182560560743667
+Pseudo deltaT: Min: 4.823548310272306e-07 Mean: 0.0015899995226366533 Max: 0.21227605081099812
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.011878030888087789 (0.0081674788524508535 1.1712458482597472e-14 0.0057968160686696626) 0.011347333204101674 
+  GMRES iteration: 1   Residual: 0.00047719994625964002 (0.0003365454525171436 0 0.00012372910174730185) 0.00042717654763894572 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00010457618774102082, Final residual = 3.3228705167875007e-06, No Iterations 1
+ExecutionTime = 16.379999999999999 s  ExecutionStepTime = 0.19999999999999929 s  ClockTime = 17 s
+
+Time = 109
+
+pseudoTime: iteration 109
+Pseudo Courant No: 89.993855869481962
+Damped pseudo Courant No: Min: 89.993855869481962 Mean: 89.993855869444261 Max: 89.993855869481962
+Pseudo deltaT: Min: 4.9223434776332534e-07 Mean: 0.0016226589666051624 Max: 0.21664091102604377
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.011772557801505736 (0.0081292474571631329 1.148660627931649e-14 0.0058476449673140257) 0.011216571738491402 
+  GMRES iteration: 1   Residual: 0.0004843520018187735 (0.00035806989130116198 0 0.00011197916225591517) 0.0004427414862528729 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00010293055271846402, Final residual = 3.3361664527173414e-06, No Iterations 1
+ExecutionTime = 16.539999999999999 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 17 s
+
+Time = 110
+
+pseudoTime: iteration 110
+Pseudo Courant No: 90.667019861547899
+Damped pseudo Courant No: Min: 90.667019861547899 Mean: 90.667019861532381 Max: 90.667019861547899
+Pseudo deltaT: Min: 4.9597305934444869e-07 Mean: 0.0016347933860310893 Max: 0.21826616010391794
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.011677997080078328 (0.0081898982957797194 1.1780083213423613e-14 0.0058404825609150637) 0.011140738876731027 
+  GMRES iteration: 1   Residual: 0.0004664914269604199 (0.0003541981789542838 0 0.00010611620011343004) 0.00042767517594055789 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00010123417941876123, Final residual = 3.3343010205705414e-06, No Iterations 1
+ExecutionTime = 16.68 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 17 s
+
+Time = 111
+
+pseudoTime: iteration 111
+Pseudo Courant No: 91.043127530894864
+Damped pseudo Courant No: Min: 91.043127530894864 Mean: 91.04312753093356 Max: 91.043127530894864
+Pseudo deltaT: Min: 4.981700290648198e-07 Mean: 0.0016415671835307503 Max: 0.21917609719296596
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.011770871695514927 (0.0081582359277745497 1.1633967320663018e-14 0.0058896904280024663) 0.011213241096103584 
+  GMRES iteration: 1   Residual: 0.00046837701269000645 (0.00036696127392164043 0 0.0001086543799697856) 0.00043708898409524526 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.9659836840225807e-05, Final residual = 3.331472342981995e-06, No Iterations 1
+ExecutionTime = 16.84 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 17 s
+
+Time = 112
+
+pseudoTime: iteration 112
+Pseudo Courant No: 90.561386949032041
+Damped pseudo Courant No: Min: 90.561386949032041 Mean: 90.561386948974274 Max: 90.561386949032041
+Pseudo deltaT: Min: 4.9574850954489467e-07 Mean: 0.0016328693830601237 Max: 0.21802015919101775
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.011215932010681022 (0.0081858420216867935 1.1737272380184407e-14 0.0058853795665701099) 0.010704559885784604 
+  GMRES iteration: 1   Residual: 0.00044757094185371806 (0.00034503437490410497 0 0.00011649499229735914) 0.00041300986082815284 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.8159672929206031e-05, Final residual = 3.3181270706975179e-06, No Iterations 1
+ExecutionTime = 16.98 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 17 s
+
+Time = 113
+
+pseudoTime: iteration 113
+Pseudo Courant No: 93.621468095315876
+Damped pseudo Courant No: Min: 93.621468095315876 Mean: 93.621468095326904 Max: 93.621468095315876
+Pseudo deltaT: Min: 5.1279424167020599e-07 Mean: 0.0016880271424754298 Max: 0.22538994306468652
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.010862904396484161 (0.0081599482517830616 1.1479626828881302e-14 0.0059411008845238755) 0.010365947844803996 
+  GMRES iteration: 1   Residual: 0.00043943120522860283 (0.00037455155120833948 0 0.00010796197749060818) 0.00041492594642637771 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.6917960814643715e-05, Final residual = 3.3637538573877599e-06, No Iterations 1
+ExecutionTime = 17.120000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 17 s
+
+Time = 114
+
+pseudoTime: iteration 114
+Pseudo Courant No: 95.699633290138948
+Damped pseudo Courant No: Min: 95.699633290138948 Mean: 95.699633290103222 Max: 95.699633290138948
+Pseudo deltaT: Min: 5.2453863710954295e-07 Mean: 0.0017254754846859962 Max: 0.23039479643183244
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.010613468701462105 (0.0080871014378251557 1.1660595085369992e-14 0.0058488070373296239) 0.010158699669895715 
+  GMRES iteration: 1   Residual: 0.00040225078803784271 (0.00035745748050460593 0 9.7113127951388203e-05) 0.00037469957477212306 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.5746633624741814e-05, Final residual = 3.3908937605299316e-06, No Iterations 1
+ExecutionTime = 17.27 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 18 s
+
+Time = 115
+
+pseudoTime: iteration 115
+Pseudo Courant No: 97.485350339833445
+Damped pseudo Courant No: Min: 97.485350339833445 Mean: 97.485350339843748 Max: 97.485350339833445
+Pseudo deltaT: Min: 5.347566958937252e-07 Mean: 0.0017576445985596737 Max: 0.23469467316746492
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.010679780909181702 (0.0080506891419804723 1.1513941206169798e-14 0.0059012518684229912) 0.010208169448253602 
+  GMRES iteration: 1   Residual: 0.00039093262957746213 (0.00036349883554776506 0 0.0001012729086938093) 0.00036962177593863934 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.4476823781348984e-05, Final residual = 3.4048049025599949e-06, No Iterations 1
+ExecutionTime = 17.420000000000002 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 18 s
+
+Time = 116
+
+pseudoTime: iteration 116
+Pseudo Courant No: 97.10925857613465
+Damped pseudo Courant No: Min: 97.10925857613465 Mean: 97.109258576123622 Max: 97.10925857613465
+Pseudo deltaT: Min: 5.3316716888918348e-07 Mean: 0.0017508315284634757 Max: 0.23378959756408907
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.010148714191585782 (0.0080299374781559515 1.1689730544408439e-14 0.0059343236989786987) 0.0097079385352211115 
+  GMRES iteration: 1   Residual: 0.00037255436692371243 (0.00032880888669721965 0 0.00010101167534253699) 0.0003450011387152209 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.3079946563115075e-05, Final residual = 3.3848652407529904e-06, No Iterations 1
+ExecutionTime = 17.559999999999999 s  ExecutionStepTime = 0.13999999999999702 s  ClockTime = 18 s
+
+Time = 117
+
+pseudoTime: iteration 117
+Pseudo Courant No: 100.47915736775609
+Damped pseudo Courant No: Min: 100.47915736775609 Mean: 100.47915736773106 Max: 100.47915736775609
+Pseudo deltaT: Min: 5.5201889437700462e-07 Mean: 0.001811550666998352 Max: 0.24190312833735161
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0097886319822605376 (0.0078504105131155487 1.1457685698916191e-14 0.0058651156307681553) 0.0093339035693060426 
+  GMRES iteration: 1   Residual: 0.00037624565205977839 (0.00033603367565336931 0 8.8513298524642395e-05) 0.00035452016585198112 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.2076386704560413e-05, Final residual = 3.4274934890863184e-06, No Iterations 1
+ExecutionTime = 17.710000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 18 s
+
+Time = 118
+
+pseudoTime: iteration 118
+Pseudo Courant No: 103.66471113298127
+Damped pseudo Courant No: Min: 103.66471113298127 Mean: 103.66471113296049 Max: 103.66471113298127
+Pseudo deltaT: Min: 5.69519147782472e-07 Mean: 0.001868939806303676 Max: 0.24957356596181357
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0099448428925186117 (0.0077273060527653283 1.1759293178439928e-14 0.0057375165529533903) 0.0095153872130619103 
+  GMRES iteration: 1   Residual: 0.00036292631861174063 (0.00031550453880883011 0 8.0215390645381647e-05) 0.00033534839397578707 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.1153371197679649e-05, Final residual = 3.4703747966793889e-06, No Iterations 1
+ExecutionTime = 17.879999999999999 s  ExecutionStepTime = 0.16999999999999815 s  ClockTime = 18 s
+
+Time = 119
+
+pseudoTime: iteration 119
+Pseudo Courant No: 103.09252606891548
+Damped pseudo Courant No: Min: 103.09252606891548 Mean: 103.09252606891111 Max: 103.09252606891548
+Pseudo deltaT: Min: 5.6638648309692067e-07 Mean: 0.0018585765586038882 Max: 0.24819816382012008
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0099446743964518199 (0.0076644230445368266 1.1625104838388245e-14 0.005770008198320198) 0.0094890793310411781 
+  GMRES iteration: 1   Residual: 0.00033837612141854648 (0.00031349162067100911 0 8.8499905214647171e-05) 0.00031574413756237703 
+smoothSolver:  Solving for nuTilda, Initial residual = 9.0032715991211857e-05, Final residual = 3.4521496845020489e-06, No Iterations 1
+ExecutionTime = 18.129999999999999 s  ExecutionStepTime = 0.25 s  ClockTime = 18 s
+
+Time = 120
+
+pseudoTime: iteration 120
+Pseudo Courant No: 103.29363437095803
+Damped pseudo Courant No: Min: 103.29363437095803 Mean: 103.29363437091324 Max: 103.29363437095803
+Pseudo deltaT: Min: 5.6749174753464158e-07 Mean: 0.0018621520985529849 Max: 0.24868539923863295
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0097156975702711677 (0.0076457392341814983 1.1808998532243373e-14 0.0057839314641767682) 0.0092873040712048941 
+  GMRES iteration: 1   Residual: 0.00032590689622197239 (0.00028142512516933667 0 8.3693762210910449e-05) 0.00030157628504113822 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.9000056167354562e-05, Final residual = 3.4490677673564067e-06, No Iterations 1
+ExecutionTime = 18.289999999999999 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 19 s
+
+Time = 121
+
+pseudoTime: iteration 121
+Pseudo Courant No: 104.87615897196108
+Damped pseudo Courant No: Min: 104.87615897196108 Mean: 104.87615897196328 Max: 104.87615897196108
+Pseudo deltaT: Min: 5.7614095162718574e-07 Mean: 0.0018906294771126111 Max: 0.2524993255040624
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0093617237108605672 (0.0074860239372838266 1.1465410866354554e-14 0.0057146292370562615) 0.0089887106354065559 
+  GMRES iteration: 1   Residual: 0.0003278222537872375 (0.00030559119310221653 0 9.116500774248436e-05) 0.00030926366111811869 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.8076134458423794e-05, Final residual = 3.4714077551467296e-06, No Iterations 1
+ExecutionTime = 18.420000000000002 s  ExecutionStepTime = 0.13000000000000256 s  ClockTime = 19 s
+
+Time = 122
+
+pseudoTime: iteration 122
+Pseudo Courant No: 107.97571833864596
+Damped pseudo Courant No: Min: 107.97571833864596 Mean: 107.9757183386546 Max: 107.97571833864596
+Pseudo deltaT: Min: 5.9312381703128917e-07 Mean: 0.0019464541773179138 Max: 0.25996644774951727
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0097097142651567086 (0.0074053335041895582 1.1683188013850948e-14 0.0056148778144594529) 0.0094043895731010588 
+  GMRES iteration: 1   Residual: 0.00031065548382449318 (0.00030240438454631757 0 8.8228182879916393e-05) 0.00029999254438136844 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.7334162266442688e-05, Final residual = 3.518215441317512e-06, No Iterations 1
+ExecutionTime = 18.550000000000001 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 19 s
+
+Time = 123
+
+pseudoTime: iteration 123
+Pseudo Courant No: 105.55080180467903
+Damped pseudo Courant No: Min: 105.55080180467903 Mean: 105.55080180471569 Max: 105.55080180467903
+Pseudo deltaT: Min: 5.7976101078736303e-07 Mean: 0.0019026926257765299 Max: 0.2541330630582137
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.009758491424323593 (0.0073653149691662459 1.1419434429552826e-14 0.0056238796456052681) 0.0094679420279597699 
+  GMRES iteration: 1   Residual: 0.00031219687071969751 (0.00031165256479698803 0 9.9412543274028103e-05) 0.00030055002044501868 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.6283524073095983e-05, Final residual = 3.4880096753169631e-06, No Iterations 1
+ExecutionTime = 18.710000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 19 s
+
+Time = 124
+
+pseudoTime: iteration 124
+Pseudo Courant No: 105.22691179632673
+Damped pseudo Courant No: Min: 105.22691179632673 Mean: 105.22691179629456 Max: 105.22691179632673
+Pseudo deltaT: Min: 5.7794178165275784e-07 Mean: 0.0018968108921268503 Max: 0.25335831934612513
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0094609447229459746 (0.0073737152266866689 1.143665151764053e-14 0.0056420027279306282) 0.0091883536259705755 
+  GMRES iteration: 1   Residual: 0.00028727906066792276 (0.00027580167120784299 0 7.7201848011442407e-05) 0.00027897742480322663 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.544243827102616e-05, Final residual = 3.4930283692687938e-06, No Iterations 1
+ExecutionTime = 18.890000000000001 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 19 s
+
+Time = 125
+
+pseudoTime: iteration 125
+Pseudo Courant No: 107.35071299380952
+Damped pseudo Courant No: Min: 107.35071299380952 Mean: 107.35071299380408 Max: 107.35071299380952
+Pseudo deltaT: Min: 5.8956719974175211e-07 Mean: 0.0019350558340436588 Max: 0.25847695128599207
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0091949575696915406 (0.0072492101189662829 1.0993782866189554e-14 0.0056003512085806059) 0.008923736815742659 
+  GMRES iteration: 1   Residual: 0.00031008960510707533 (0.00031365617082238049 0 0.00010028028098115388) 0.00029930244406469923 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.4776937708303302e-05, Final residual = 3.5338066653225056e-06, No Iterations 1
+ExecutionTime = 19.050000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 19 s
+
+Time = 126
+
+pseudoTime: iteration 126
+Pseudo Courant No: 109.9255257357575
+Damped pseudo Courant No: Min: 109.9255257357575 Mean: 109.92552573574908 Max: 109.9255257357575
+Pseudo deltaT: Min: 6.0367064663568559e-07 Mean: 0.0019814356552036363 Max: 0.26468137699173661
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0094584575711139773 (0.0071781221420332527 1.1135332831089292e-14 0.0054880389051854316) 0.0091968016473475585 
+  GMRES iteration: 1   Residual: 0.00029860575516960883 (0.00030195154244876701 0 9.0108511018424189e-05) 0.00028996090416586503 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.4188172722390157e-05, Final residual = 3.5819504008331783e-06, No Iterations 1
+ExecutionTime = 19.23 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 19 s
+
+Time = 127
+
+pseudoTime: iteration 127
+Pseudo Courant No: 108.2811850251972
+Damped pseudo Courant No: Min: 108.2811850251972 Mean: 108.28118502519651 Max: 108.2811850251972
+Pseudo deltaT: Min: 5.946059950927837e-07 Mean: 0.0019517712209246533 Max: 0.26072624749617257
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.009404474987738453 (0.0071751848485619302 1.0810326500542873e-14 0.0055348277107164119) 0.0091151253259558231 
+  GMRES iteration: 1   Residual: 0.00033891920630359516 (0.00032094583173145552 0 0.00010738585829512479) 0.00031870831295323376 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.3434012205474832e-05, Final residual = 3.5690069996518758e-06, No Iterations 1
+ExecutionTime = 19.449999999999999 s  ExecutionStepTime = 0.21999999999999886 s  ClockTime = 20 s
+
+Time = 128
+
+pseudoTime: iteration 128
+Pseudo Courant No: 108.71581864333741
+Damped pseudo Courant No: Min: 108.71581864333741 Mean: 108.71581864337925 Max: 108.71581864333741
+Pseudo deltaT: Min: 5.9696082676534864e-07 Mean: 0.0019595886109599172 Max: 0.26177622629301506
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0088423982455571766 (0.0072882355138084321 1.09231192863168e-14 0.0056487823107396161) 0.0085513395134355543 
+  GMRES iteration: 1   Residual: 0.00032131686910235577 (0.00027978571008094424 0 8.1442476691332685e-05) 0.00029653433856945924 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.2817040245718789e-05, Final residual = 3.5853179354073171e-06, No Iterations 1
+ExecutionTime = 19.629999999999999 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 20 s
+
+Time = 129
+
+pseudoTime: iteration 129
+Pseudo Courant No: 112.62601520594731
+Damped pseudo Courant No: Min: 112.62601520594731 Mean: 112.62601520590444 Max: 112.62601520594731
+Pseudo deltaT: Min: 6.1840126582656219e-07 Mean: 0.0020300599218216276 Max: 0.2711942934447874
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0085785802462170473 (0.0073411242280750433 1.07602780945212e-14 0.0057236110970821747) 0.0082120892093747958 
+  GMRES iteration: 1   Residual: 0.00034904926257022244 (0.00034127721126834263 0 0.00012368569396135082) 0.00032131287676133706 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.2380863337195822e-05, Final residual = 3.6450736722124687e-06, No Iterations 1
+ExecutionTime = 19.84 s  ExecutionStepTime = 0.21000000000000085 s  ClockTime = 20 s
+
+Time = 130
+
+pseudoTime: iteration 130
+Pseudo Courant No: 114.74749425149376
+Damped pseudo Courant No: Min: 114.74749425149376 Mean: 114.74749425147007 Max: 114.74749425149376
+Pseudo deltaT: Min: 6.3002226392629276e-07 Mean: 0.0020682961937174586 Max: 0.27630451073855489
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0089487592110895804 (0.0073100350231403649 1.0987640876117311e-14 0.0056712891156743394) 0.0085428118043917659 
+  GMRES iteration: 1   Residual: 0.00031956686943993413 (0.00030413520750788455 0 9.949786182394424e-05) 0.00028810434102353441 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.182776025593545e-05, Final residual = 3.6754544386309632e-06, No Iterations 1
+ExecutionTime = 20.07 s  ExecutionStepTime = 0.23000000000000043 s  ClockTime = 20 s
+
+Time = 131
+
+pseudoTime: iteration 131
+Pseudo Courant No: 112.07737575040987
+Damped pseudo Courant No: Min: 112.07737575040987 Mean: 112.07737575047686 Max: 112.07737575040987
+Pseudo deltaT: Min: 6.1533803328918823e-07 Mean: 0.0020201718353373183 Max: 0.26987595026363803
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0090185602800688831 (0.0072971293586959153 1.0812837430651713e-14 0.0056868599740711647) 0.0085636830155694215 
+  GMRES iteration: 1   Residual: 0.00034847703601386 (0.00031944616281971998 0 0.00011639090070045872) 0.0003099352530872654 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.1004095926663815e-05, Final residual = 3.6394220467063153e-06, No Iterations 1
+ExecutionTime = 20.239999999999998 s  ExecutionStepTime = 0.16999999999999815 s  ClockTime = 21 s
+
+Time = 132
+
+pseudoTime: iteration 132
+Pseudo Courant No: 111.70367885332602
+Damped pseudo Courant No: Min: 111.70367885332602 Mean: 111.70367885334194 Max: 111.70367885332602
+Pseudo deltaT: Min: 6.1326643791644722e-07 Mean: 0.0020134450458120195 Max: 0.26897625971179701
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0086385981193916987 (0.007418229768680654 1.1107901796451925e-14 0.0058243685235850216) 0.0081518938923649097 
+  GMRES iteration: 1   Residual: 0.00032192236567643654 (0.00027853525983934519 0 8.3909356021235685e-05) 0.00028054556861551491 
+smoothSolver:  Solving for nuTilda, Initial residual = 8.0237959290534809e-05, Final residual = 3.6327403874348701e-06, No Iterations 1
+ExecutionTime = 20.469999999999999 s  ExecutionStepTime = 0.23000000000000043 s  ClockTime = 21 s
+
+Time = 133
+
+pseudoTime: iteration 133
+Pseudo Courant No: 114.15989260187786
+Damped pseudo Courant No: Min: 114.15989260187786 Mean: 114.15989260189164 Max: 114.15989260187786
+Pseudo deltaT: Min: 6.2673520408486972e-07 Mean: 0.0020577310989041524 Max: 0.27489020560968314
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0084707333956529074 (0.0073334218429019146 1.078065327602342e-14 0.0057780727545634451) 0.0079641658320952369 
+  GMRES iteration: 1   Residual: 0.00034037449178650139 (0.00032218837745772675 0 0.00011793446885968701) 0.00029678409399570583 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.9640881440888408e-05, Final residual = 3.6623328139313682e-06, No Iterations 1
+ExecutionTime = 20.649999999999999 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 21 s
+
+Time = 134
+
+pseudoTime: iteration 134
+Pseudo Courant No: 116.11617246913949
+Damped pseudo Courant No: Min: 116.11617246913949 Mean: 116.11617246918495 Max: 116.11617246913949
+Pseudo deltaT: Min: 6.3746331056089064e-07 Mean: 0.0020930078578840251 Max: 0.27959975855893304
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0087323788502559514 (0.0072779082420856567 1.1105708429243948e-14 0.0057034897550096841) 0.0082260619520958499 
+  GMRES iteration: 1   Residual: 0.00029548873828751153 (0.00027993723190492198 0 8.6228977556753117e-05) 0.00025384317540254342 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.9010887821187367e-05, Final residual = 3.6868202716113261e-06, No Iterations 1
+ExecutionTime = 20.800000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 21 s
+
+Time = 135
+
+pseudoTime: iteration 135
+Pseudo Courant No: 114.31202589423074
+Damped pseudo Courant No: Min: 114.31202589423074 Mean: 114.31202589424072 Max: 114.31202589423074
+Pseudo deltaT: Min: 6.2755167652027016e-07 Mean: 0.0020605047452698475 Max: 0.27525405669643771
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0088933321148784942 (0.0072297263764890237 1.0917270102678019e-14 0.0057045827002083389) 0.0083779517731533918 
+  GMRES iteration: 1   Residual: 0.00031211350761276891 (0.00030050289342769605 0 0.00010739111033628536) 0.00026713620927189643 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.8237260331770846e-05, Final residual = 3.6652406895963482e-06, No Iterations 1
+ExecutionTime = 21 s  ExecutionStepTime = 0.19999999999999929 s  ClockTime = 21 s
+
+Time = 136
+
+pseudoTime: iteration 136
+Pseudo Courant No: 113.16547344374825
+Damped pseudo Courant No: Min: 113.16547344374825 Mean: 113.16547344377281 Max: 113.16547344374825
+Pseudo deltaT: Min: 6.2125551355160699e-07 Mean: 0.0020398549333611794 Max: 0.27249163486891886
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0084374044448235729 (0.0072542585522833644 1.1128458269823302e-14 0.0057789818000624372) 0.0079336209839628736 
+  GMRES iteration: 1   Residual: 0.00028672069369428758 (0.00025251290282832939 0 6.8772736027886058e-05) 0.00024198948406118975 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.750615833783667e-05, Final residual = 3.6522152089977816e-06, No Iterations 1
+ExecutionTime = 21.18 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 21 s
+
+Time = 137
+
+pseudoTime: iteration 137
+Pseudo Courant No: 116.69318318237086
+Damped pseudo Courant No: Min: 116.69318318237086 Mean: 116.69318318231527 Max: 116.69318318237086
+Pseudo deltaT: Min: 6.4062590592996076e-07 Mean: 0.0021034616288485631 Max: 0.28098441354851716
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0081866775202592036 (0.0072192534015684375 1.0959110574644476e-14 0.0057587030937904966) 0.0076982775259482371 
+  GMRES iteration: 1   Residual: 0.00029927369163101013 (0.00029109717409599742 0 9.8443529356267187e-05) 0.00025543417721290713 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.6947527722967925e-05, Final residual = 3.6957497705328235e-06, No Iterations 1
+ExecutionTime = 21.359999999999999 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 22 s
+
+Time = 138
+
+pseudoTime: iteration 138
+Pseudo Courant No: 119.03795411617192
+Damped pseudo Courant No: Min: 119.03795411617192 Mean: 119.03795411620693 Max: 119.03795411617192
+Pseudo deltaT: Min: 6.5350779213861712e-07 Mean: 0.0021457454965511141 Max: 0.28662896019927853
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0083445142851782412 (0.0070935042381171072 1.1300301690414421e-14 0.0056428723486432247) 0.0078629590446958643 
+  GMRES iteration: 1   Residual: 0.00026304132701058408 (0.00025381743210695361 0 6.904097974459958e-05) 0.00021981790601470887 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.6422823136657639e-05, Final residual = 3.7255989937604683e-06, No Iterations 1
+ExecutionTime = 21.620000000000001 s  ExecutionStepTime = 0.26000000000000156 s  ClockTime = 22 s
+
+Time = 139
+
+pseudoTime: iteration 139
+Pseudo Courant No: 118.46500198478689
+Damped pseudo Courant No: Min: 118.46500198478689 Mean: 118.46500198480095 Max: 118.46500198478689
+Pseudo deltaT: Min: 6.5037785873937029e-07 Mean: 0.0021354362599832091 Max: 0.28524831433623088
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0084016783379443575 (0.0070206643297192808 1.1080591695400322e-14 0.0056145969476611097) 0.0079152989096598313 
+  GMRES iteration: 1   Residual: 0.00026335835940585761 (0.00026749345739322317 0 8.5636999377919319e-05) 0.0002224296716501963 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.5838975283272952e-05, Final residual = 3.7228316508022054e-06, No Iterations 1
+ExecutionTime = 21.800000000000001 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 22 s
+
+Time = 140
+
+pseudoTime: iteration 140
+Pseudo Courant No: 118.34408975718534
+Damped pseudo Courant No: Min: 118.34408975718534 Mean: 118.34408975718542 Max: 118.34408975718534
+Pseudo deltaT: Min: 6.4973532466938539e-07 Mean: 0.0021332755217319324 Max: 0.28495645664017416
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0079508931478435955 (0.0070573075789092136 1.1406730699819274e-14 0.0056951490375590939) 0.007485775166805016 
+  GMRES iteration: 1   Residual: 0.00025396462172578134 (0.00023572877643078559 0 5.8551562253222031e-05) 0.00021448493433619129 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.5352042967577216e-05, Final residual = 3.7285445543226446e-06, No Iterations 1
+ExecutionTime = 21.98 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 22 s
+
+Time = 141
+
+pseudoTime: iteration 141
+Pseudo Courant No: 121.9767147369208
+Damped pseudo Courant No: Min: 121.9767147369208 Mean: 121.97671473691199 Max: 121.9767147369208
+Pseudo deltaT: Min: 6.6970715821326653e-07 Mean: 0.00219877739579754 Max: 0.29370291585817981
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0077242731982720405 (0.0070398952510423458 1.1088316855069933e-14 0.0056874019061873733) 0.0072459553361296104 
+  GMRES iteration: 1   Residual: 0.00025795837523682721 (0.00026709586372279616 0 7.9772909333531496e-05) 0.00022234975511373391 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.5031676861455794e-05, Final residual = 3.7755110244241702e-06, No Iterations 1
+ExecutionTime = 22.16 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 22 s
+
+Time = 142
+
+pseudoTime: iteration 142
+Pseudo Courant No: 124.28625550867567
+Damped pseudo Courant No: Min: 124.28625550867567 Mean: 124.28625550866192 Max: 124.28625550867567
+Pseudo deltaT: Min: 6.8242027089899394e-07 Mean: 0.0022404298396129208 Max: 0.29926388628025818
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0078822300436316717 (0.0068946198850148264 1.1336313269828058e-14 0.0055447779657691008) 0.0074045493210256937 
+  GMRES iteration: 1   Residual: 0.00025702375116273807 (0.00023865877295664188 0 6.0083268039792246e-05) 0.00022133240079161428 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.4722978508639926e-05, Final residual = 3.8054007915840911e-06, No Iterations 1
+ExecutionTime = 22.379999999999999 s  ExecutionStepTime = 0.21999999999999886 s  ClockTime = 23 s
+
+Time = 143
+
+pseudoTime: iteration 143
+Pseudo Courant No: 123.91574321630029
+Damped pseudo Courant No: Min: 123.91574321630029 Mean: 123.91574321636526 Max: 123.91574321630029
+Pseudo deltaT: Min: 6.8030599277296256e-07 Mean: 0.0022337714849852749 Max: 0.2983719625199287
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0079839309908773803 (0.0068782909760165779 1.1002474388514005e-14 0.0055583684081868942) 0.0074993746725028655 
+  GMRES iteration: 1   Residual: 0.00026044487920668486 (0.00024995175154308091 0 7.2389833424806301e-05) 0.00022655313286442516 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.4341801920773884e-05, Final residual = 3.8067625874409489e-06, No Iterations 1
+ExecutionTime = 22.550000000000001 s  ExecutionStepTime = 0.17000000000000171 s  ClockTime = 23 s
+
+Time = 144
+
+pseudoTime: iteration 144
+Pseudo Courant No: 122.98915642664892
+Damped pseudo Courant No: Min: 122.98915642664892 Mean: 122.98915642669543 Max: 122.98915642664892
+Pseudo deltaT: Min: 6.7515902343591865e-07 Mean: 0.0022170889675660506 Max: 0.29614129735960393
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.007542766901026769 (0.0068773542531692022 1.1232953917373765e-14 0.005601272895561245) 0.0070909276130754493 
+  GMRES iteration: 1   Residual: 0.0002487129755768347 (0.00022902228337778202 0 5.9076098802666503e-05) 0.00021809672209276829 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.395475223591164e-05, Final residual = 3.8011507485940189e-06, No Iterations 1
+ExecutionTime = 22.710000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 23 s
+
+Time = 145
+
+pseudoTime: iteration 145
+Pseudo Courant No: 127.00775094795733
+Damped pseudo Courant No: Min: 127.00775094795733 Mean: 127.00775094795968 Max: 127.00775094795733
+Pseudo deltaT: Min: 6.9717876400860989e-07 Mean: 0.002289552453321385 Max: 0.30581807057269672
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0073823056468244764 (0.0068327907728605785 1.0788433265655161e-14 0.0055599739389921646) 0.0069315479084042968 
+  GMRES iteration: 1   Residual: 0.00025545358086187547 (0.00025690671994906683 0 7.7565298897017143e-05) 0.00022675454733161148 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.3746605691090309e-05, Final residual = 3.8436371200531478e-06, No Iterations 1
+ExecutionTime = 22.890000000000001 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 23 s
+
+Time = 146
+
+pseudoTime: iteration 146
+Pseudo Courant No: 129.002033750371
+Damped pseudo Courant No: Min: 129.002033750371 Mean: 129.00203375039803 Max: 129.002033750371
+Pseudo deltaT: Min: 7.0810578216273499e-07 Mean: 0.0023255244697783502 Max: 0.31062054507653319
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0076016282500455347 (0.0067266460616280995 1.1050409158713683e-14 0.005443314226216309) 0.0071655753484119837 
+  GMRES iteration: 1   Residual: 0.00026171887068868882 (0.00022505418081554006 0 6.1600834469958431e-05) 0.0002323928452731426 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.3482769648473194e-05, Final residual = 3.864919535039068e-06, No Iterations 1
+ExecutionTime = 23.059999999999999 s  ExecutionStepTime = 0.16999999999999815 s  ClockTime = 23 s
+
+Time = 147
+
+pseudoTime: iteration 147
+Pseudo Courant No: 127.64090463727474
+Damped pseudo Courant No: Min: 127.64090463727474 Mean: 127.64090463721544 Max: 127.64090463727474
+Pseudo deltaT: Min: 7.0063310930833021e-07 Mean: 0.0023010088403501603 Max: 0.30734341464566722
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0076950886533323397 (0.0067361832701882457 1.0730081813136419e-14 0.0054702588258824713) 0.0072743643529596912 
+  GMRES iteration: 1   Residual: 0.00025752667814134256 (0.00023373464351791952 0 7.178008038593354e-05) 0.00022445002250469598 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.3119145088776377e-05, Final residual = 3.8529652968093075e-06, No Iterations 1
+ExecutionTime = 23.23 s  ExecutionStepTime = 0.17000000000000171 s  ClockTime = 23 s
+
+Time = 148
+
+pseudoTime: iteration 148
+Pseudo Courant No: 126.46999555269359
+Damped pseudo Courant No: Min: 126.46999555269359 Mean: 126.469995552676 Max: 126.46999555269359
+Pseudo deltaT: Min: 6.9422253143087047e-07 Mean: 0.0022799222019447272 Max: 0.30452399509783423
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0074200344389261036 (0.0067977604114429603 1.1018355938327102e-14 0.0055650336818821805) 0.0070248023375182912 
+  GMRES iteration: 1   Residual: 0.00024313701856818715 (0.00021307933104711114 0 5.6841451926934406e-05) 0.00021197506379557024 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.2755510912374301e-05, Final residual = 3.8421512941929575e-06, No Iterations 1
+ExecutionTime = 23.379999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 24 s
+
+Time = 149
+
+pseudoTime: iteration 149
+Pseudo Courant No: 128.48994626534045
+Damped pseudo Courant No: Min: 128.48994626534045 Mean: 128.48994626527772 Max: 128.48994626534045
+Pseudo deltaT: Min: 7.0534371606821635e-07 Mean: 0.0023163588853490165 Max: 0.3093874374192967
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0073868037928382013 (0.0068329236297448243 1.0761079773761394e-14 0.0055884039208043161) 0.0069758381316022558 
+  GMRES iteration: 1   Residual: 0.00026345065666792618 (0.00024946998711388748 0 8.5372657956454465e-05) 0.00022785001562002121 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.2484548152872057e-05, Final residual = 3.8609864291244873e-06, No Iterations 1
+ExecutionTime = 23.629999999999999 s  ExecutionStepTime = 0.25 s  ClockTime = 24 s
+
+Time = 150
+
+pseudoTime: iteration 150
+Pseudo Courant No: 128.64505586656799
+Damped pseudo Courant No: Min: 128.64505586656799 Mean: 128.6450558666391 Max: 128.64505586656799
+Pseudo deltaT: Min: 7.0624167614373323e-07 Mean: 0.0023191775957323384 Max: 0.30976027824228186
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0077003895325631682 (0.0067574073923138871 1.1057393419353823e-14 0.005504026053785244) 0.0073118366408565852 
+  GMRES iteration: 1   Residual: 0.0002716773197693809 (0.00021530760745535187 0 6.7942328882587025e-05) 0.00023615760239023976 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.2162494074752497e-05, Final residual = 3.8618104124034834e-06, No Iterations 1
+ExecutionTime = 23.82 s  ExecutionStepTime = 0.19000000000000128 s  ClockTime = 24 s
+
+Time = 151
+
+pseudoTime: iteration 151
+Pseudo Courant No: 126.03863157595238
+Damped pseudo Courant No: Min: 126.03863157595238 Mean: 126.0386315759804 Max: 126.03863157595238
+Pseudo deltaT: Min: 6.9199097215436929e-07 Mean: 0.0022722130304981309 Max: 0.30348349908373545
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0078606637613767311 (0.0067512733842835819 1.0880913854021158e-14 0.0055146886888216328) 0.0074765880556173702 
+  GMRES iteration: 1   Residual: 0.0002698033259880652 (0.00022646304735225796 0 7.971196207990066e-05) 0.00022781942048511627 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.173353855550145e-05, Final residual = 3.8351400560154469e-06, No Iterations 1
+ExecutionTime = 24.09 s  ExecutionStepTime = 0.26999999999999957 s  ClockTime = 24 s
+
+Time = 152
+
+pseudoTime: iteration 152
+Pseudo Courant No: 124.4126213435146
+Damped pseudo Courant No: Min: 124.4126213435146 Mean: 124.41262134350852 Max: 124.4126213435146
+Pseudo deltaT: Min: 6.8313220712660878e-07 Mean: 0.0022429238225997765 Max: 0.29956728557356321
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.007558185118879561 (0.0068269594480136978 1.1251361875819464e-14 0.0055910451662606452) 0.0072071041876436703 
+  GMRES iteration: 1   Residual: 0.00026180455252142372 (0.00020092899944400955 0 6.3178858837436549e-05) 0.00022126649547600443 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.1322383329090725e-05, Final residual = 3.8159273931791626e-06, No Iterations 1
+ExecutionTime = 24.350000000000001 s  ExecutionStepTime = 0.26000000000000156 s  ClockTime = 25 s
+
+Time = 153
+
+pseudoTime: iteration 153
+Pseudo Courant No: 126.637325282676
+Damped pseudo Courant No: Min: 126.637325282676 Mean: 126.6373252826743 Max: 126.637325282676
+Pseudo deltaT: Min: 6.9542656107304203e-07 Mean: 0.0022830571060268447 Max: 0.30492295100864342
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0076177288929279172 (0.0068732159090883725 1.11346922069809e-14 0.0056192806212043154) 0.007250541262025784 
+  GMRES iteration: 1   Residual: 0.00027307991110514637 (0.00024856052830722652 0 9.5541321873776668e-05) 0.00022948334475457081 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.112338343467094e-05, Final residual = 3.8332222031496184e-06, No Iterations 1
+ExecutionTime = 24.579999999999998 s  ExecutionStepTime = 0.22999999999999687 s  ClockTime = 25 s
+
+Time = 154
+
+pseudoTime: iteration 154
+Pseudo Courant No: 125.80494494420898
+Damped pseudo Courant No: Min: 125.80494494420898 Mean: 125.804944944143 Max: 125.80494494420898
+Pseudo deltaT: Min: 6.909382681103193e-07 Mean: 0.00226807685607667 Max: 0.30291759033380028
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0079283189979647492 (0.0068001802636557529 1.1447502207190099e-14 0.0055392327537397779) 0.0075599200454236201 
+  GMRES iteration: 1   Residual: 0.00025790543268119882 (0.00020513196086182354 0 6.046462292145641e-05) 0.00021867610623834628 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.0822499558462435e-05, Final residual = 3.8182049100632754e-06, No Iterations 1
+ExecutionTime = 24.760000000000002 s  ExecutionStepTime = 0.18000000000000327 s  ClockTime = 25 s
+
+Time = 155
+
+pseudoTime: iteration 155
+Pseudo Courant No: 123.38008473451256
+Damped pseudo Courant No: Min: 123.38008473451256 Mean: 123.38008473445142 Max: 123.38008473451256
+Pseudo deltaT: Min: 6.7770593617045291e-07 Mean: 0.0022243869500304025 Max: 0.29707782911794245
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.008159624790839929 (0.0067927322957144643 1.128123161603958e-14 0.0055521606991899312) 0.0077741946111752414 
+  GMRES iteration: 1   Residual: 0.00026516596437661918 (0.00023517086276386882 0 9.0804589951347031e-05) 0.00022101681559743452 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.0525143377719114e-05, Final residual = 3.7878748263526856e-06, No Iterations 1
+ExecutionTime = 24.899999999999999 s  ExecutionStepTime = 0.13999999999999702 s  ClockTime = 25 s
+
+Time = 156
+
+pseudoTime: iteration 156
+Pseudo Courant No: 121.22952688867744
+Damped pseudo Courant No: Min: 121.22952688867744 Mean: 121.22952688861984 Max: 121.22952688867744
+Pseudo deltaT: Min: 6.6597683424814454e-07 Mean: 0.0021856417648777422 Max: 0.29189858063732338
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0077412031795735248 (0.0068835250360032045 1.1601404931795295e-14 0.0056527389503693466) 0.007375398788179127 
+  GMRES iteration: 1   Residual: 0.00027167955350414902 (0.00020165127634534397 0 6.5729171945000861e-05) 0.00023105979141491078 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.0231564056673004e-05, Final residual = 3.7577850714791352e-06, No Iterations 1
+ExecutionTime = 25.079999999999998 s  ExecutionStepTime = 0.17999999999999972 s  ClockTime = 25 s
+
+Time = 157
+
+pseudoTime: iteration 157
+Pseudo Courant No: 124.41961685216195
+Damped pseudo Courant No: Min: 124.41961685216195 Mean: 124.41961685211972 Max: 124.41961685216195
+Pseudo deltaT: Min: 6.8358298740037269e-07 Mean: 0.0022431832696716675 Max: 0.29957860975242651
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0076576537499139265 (0.0068602449752432912 1.1303778184394608e-14 0.0056206527043920511) 0.0072520055202974099 
+  GMRES iteration: 1   Residual: 0.00028851319540480736 (0.00025507796080966272 0 0.00010184216517775737) 0.00024570625017798542 
+smoothSolver:  Solving for nuTilda, Initial residual = 7.0156097940918963e-05, Final residual = 3.7751198282143197e-06, No Iterations 1
+ExecutionTime = 25.210000000000001 s  ExecutionStepTime = 0.13000000000000256 s  ClockTime = 25 s
+
+Time = 158
+
+pseudoTime: iteration 158
+Pseudo Courant No: 125.64968840996006
+Damped pseudo Courant No: Min: 125.64968840996006 Mean: 125.64968840997554 Max: 125.64968840996006
+Pseudo deltaT: Min: 6.9041421611096724e-07 Mean: 0.0022653875252587998 Max: 0.30253918656123208
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0078582861075646871 (0.0068345026489868609 1.1583258013400527e-14 0.0055773733796664155) 0.0074481302057296346 
+  GMRES iteration: 1   Residual: 0.00024839011471427505 (0.00021342424450528948 0 6.4476580339079876e-05) 0.00020958474622913422 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.9990154119559277e-05, Final residual = 3.7684365909422494e-06, No Iterations 1
+ExecutionTime = 25.34 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 26 s
+
+Time = 159
+
+pseudoTime: iteration 159
+Pseudo Courant No: 123.97685309917779
+Damped pseudo Courant No: Min: 123.97685309917779 Mean: 123.97685309918548 Max: 123.97685309917779
+Pseudo deltaT: Min: 6.812850115827252e-07 Mean: 0.0022352543840656936 Max: 0.2985100556888452
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0079971584617129568 (0.0068044368103647385 1.1301991670194471e-14 0.0055716402936317258) 0.0075791770742934675 
+  GMRES iteration: 1   Residual: 0.00025126834460710963 (0.00023095856206580001 0 8.5402220357256822e-05) 0.00021049511697142525 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.9589572978444951e-05, Final residual = 3.72865355742173e-06, No Iterations 1
+ExecutionTime = 25.469999999999999 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 26 s
+
+Time = 160
+
+pseudoTime: iteration 160
+Pseudo Courant No: 122.81827430999633
+Damped pseudo Courant No: Min: 122.81827430999633 Mean: 122.81827430998743 Max: 122.81827430999633
+Pseudo deltaT: Min: 6.7496608003425135e-07 Mean: 0.0022143913122297789 Max: 0.29571912604060407
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0074535196664296758 (0.006917286437821784 1.1597980849523706e-14 0.0056851830470279431) 0.007054736129336197 
+  GMRES iteration: 1   Residual: 0.00024979347140562336 (0.00020242447811733027 0 6.6083650941518783e-05) 0.00021137957536045561 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.9098191934693231e-05, Final residual = 3.6907382368365842e-06, No Iterations 1
+ExecutionTime = 25.609999999999999 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 26 s
+
+Time = 161
+
+pseudoTime: iteration 161
+Pseudo Courant No: 127.12834828611274
+Damped pseudo Courant No: Min: 127.12834828611274 Mean: 127.12834828613357 Max: 127.12834828611274
+Pseudo deltaT: Min: 6.9868685998769447e-07 Mean: 0.0022921265801165692 Max: 0.30609546285665179
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0072883202657890627 (0.0068948950470294791 1.119402206644767e-14 0.0056657234789475848) 0.0068649599394958009 
+  GMRES iteration: 1   Residual: 0.00024901262890122949 (0.00023885889435231998 0 8.4450403553496846e-05) 0.00021169320165423887 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.879773788005526e-05, Final residual = 3.6990889958421831e-06, No Iterations 1
+ExecutionTime = 25.75 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 26 s
+
+Time = 162
+
+pseudoTime: iteration 162
+Pseudo Courant No: 129.09445463107036
+Damped pseudo Courant No: Min: 129.09445463107036 Mean: 129.09445463108656 Max: 129.09445463107036
+Pseudo deltaT: Min: 7.0951227826424835e-07 Mean: 0.0023275993175797464 Max: 0.31082800624303331
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0074655161389705965 (0.0068206241401744631 1.1382963430858547e-14 0.0055761204819401444) 0.0070592479395159393 
+  GMRES iteration: 1   Residual: 0.00022784082813587621 (0.00020904330454412422 0 5.6429381011246606e-05) 0.00019340044842769671 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.8458725229738528e-05, Final residual = 3.6870219129419497e-06, No Iterations 1
+ExecutionTime = 25.899999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 26 s
+
+Time = 163
+
+pseudoTime: iteration 163
+Pseudo Courant No: 127.92860820539877
+Damped pseudo Courant No: Min: 127.92860820539877 Mean: 127.92860820533147 Max: 127.92860820539877
+Pseudo deltaT: Min: 7.031125277930111e-07 Mean: 0.0023066015092668667 Max: 0.30801952267331201
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0075211095045338043 (0.0068168951224389669 1.119626214993195e-14 0.0056156088552226915) 0.0071167119485761737 
+  GMRES iteration: 1   Residual: 0.00022989955623104109 (0.00022100016537366111 0 7.332849613723843e-05) 0.00019512847054567781 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.8117324178659365e-05, Final residual = 3.6544888524050835e-06, No Iterations 1
+ExecutionTime = 26.050000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 26 s
+
+Time = 164
+
+pseudoTime: iteration 164
+Pseudo Courant No: 127.22255680743251
+Damped pseudo Courant No: Min: 127.22255680743251 Mean: 127.22255680744227 Max: 127.22255680743251
+Pseudo deltaT: Min: 6.9923049402791205e-07 Mean: 0.0022938921914650778 Max: 0.30631809512244995
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0069050576380836779 (0.0068470916153999944 1.1347287268156911e-14 0.005647855456776615) 0.0065428053201438728 
+  GMRES iteration: 1   Residual: 0.00021692684074066203 (0.0001997613297964054 0 6.0659881268301731e-05) 0.00018375168911649386 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.7815552775036018e-05, Final residual = 3.6261414612268763e-06, No Iterations 1
+ExecutionTime = 26.199999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 26 s
+
+Time = 165
+
+pseudoTime: iteration 165
+Pseudo Courant No: 133.08191329192948
+Damped pseudo Courant No: Min: 133.08191329192948 Mean: 133.0819132919417 Max: 133.08191329192948
+Pseudo deltaT: Min: 7.3142707656049797e-07 Mean: 0.0023995595097711345 Max: 0.3204243843833543
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067103650030859736 (0.0068521948103192187 1.1103598817646789e-14 0.0056579812350775931) 0.0063521056585730765 
+  GMRES iteration: 1   Residual: 0.00021022035574446576 (0.00022230247898960019 0 6.7903483540434029e-05) 0.00017895183682393504 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.7679751703384733e-05, Final residual = 3.6445753327041089e-06, No Iterations 1
+ExecutionTime = 26.350000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 27 s
+
+Time = 166
+
+pseudoTime: iteration 166
+Pseudo Courant No: 135.06146779454249
+Damped pseudo Courant No: Min: 135.06146779454249 Mean: 135.06146779457853 Max: 135.06146779454249
+Pseudo deltaT: Min: 7.4229876355122017e-07 Mean: 0.0024352701102192571 Max: 0.32518915006081428
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0069016632183823614 (0.0067341212579936022 1.1247619633015947e-14 0.0055389344897968321) 0.0065771863984252117 
+  GMRES iteration: 1   Residual: 0.00020605775153449113 (0.00020221723626398644 0 5.3304465890357451e-05) 0.00017710928501986809 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.7447138093942402e-05, Final residual = 3.6337265161921266e-06, No Iterations 1
+ExecutionTime = 26.5 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 27 s
+
+Time = 167
+
+pseudoTime: iteration 167
+Pseudo Courant No: 134.01486049693651
+Damped pseudo Courant No: Min: 134.01486049693651 Mean: 134.01486049688756 Max: 134.01486049693651
+Pseudo deltaT: Min: 7.3654136084766649e-07 Mean: 0.0024164148600981099 Max: 0.32266787021551435
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0068732876059421494 (0.0067011675281850409 1.1032700092067e-14 0.0055527259495182918) 0.0065544297692525953 
+  GMRES iteration: 1   Residual: 0.00019252150674389088 (0.000201450926795477 0 5.3629811054697338e-05) 0.00016536291967468429 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.7086823280145975e-05, Final residual = 3.6008683764275312e-06, No Iterations 1
+ExecutionTime = 26.66 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 27 s
+
+Time = 168
+
+pseudoTime: iteration 168
+Pseudo Courant No: 134.40979383400133
+Damped pseudo Courant No: Min: 134.40979383400133 Mean: 134.40979383405502 Max: 134.40979383400133
+Pseudo deltaT: Min: 7.3871274086192343e-07 Mean: 0.0024235500755695983 Max: 0.32361756576256306
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0063003630006941451 (0.0067452095994870766 1.1143571761189987e-14 0.0055961929350510711) 0.0060452689648322257 
+  GMRES iteration: 1   Residual: 0.00018574555735584121 (0.00020477140257934084 0 5.8651783528845908e-05) 0.0001623046694655684 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.6737187762415379e-05, Final residual = 3.5765561373373595e-06, No Iterations 1
+ExecutionTime = 26.809999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 27 s
+
+Time = 169
+
+pseudoTime: iteration 169
+Pseudo Courant No: 139.953560371186
+Damped pseudo Courant No: Min: 139.953560371186 Mean: 139.95356037126942 Max: 139.953560371186
+Pseudo deltaT: Min: 7.6919077678967312e-07 Mean: 0.0025235230407015296 Max: 0.33696427560913533
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0061235891850624016 (0.0067624966392835079 1.0909661621436115e-14 0.0056050720773050781) 0.0058460154566217443 
+  GMRES iteration: 1   Residual: 0.00018477946578547311 (0.00021190005521837428 0 5.6392267148913788e-05) 0.00016303473729972087 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.6455500077059813e-05, Final residual = 3.5828666930776139e-06, No Iterations 1
+ExecutionTime = 26.949999999999999 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 27 s
+
+Time = 170
+
+pseudoTime: iteration 170
+Pseudo Courant No: 141.92980977392082
+Damped pseudo Courant No: Min: 141.92980977392082 Mean: 141.92980977384298 Max: 141.92980977392082
+Pseudo deltaT: Min: 7.8007194883514785e-07 Mean: 0.0025591690092468867 Max: 0.34172177421197936
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0064335768905396176 (0.0066180253303390621 1.1109332618057406e-14 0.0054646291409916484) 0.0061962340723339402 
+  GMRES iteration: 1   Residual: 0.00019554685622397565 (0.00020035429565948694 0 5.1142870796721622e-05) 0.00017660106242779001 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.6015575250246455e-05, Final residual = 3.5616808307431582e-06, No Iterations 1
+ExecutionTime = 27.09 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 27 s
+
+Time = 171
+
+pseudoTime: iteration 171
+Pseudo Courant No: 139.77578347809765
+Damped pseudo Courant No: Min: 139.77578347809765 Mean: 139.77578347814287 Max: 139.77578347809765
+Pseudo deltaT: Min: 7.6826220550519123e-07 Mean: 0.0025203402121997741 Max: 0.33653519447383357
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065840981833692452 (0.0065996808069105628 1.1011127521925683e-14 0.0054845784269219816) 0.0063093555057999948 
+  GMRES iteration: 1   Residual: 0.00018515433171246079 (0.00019655088174949341 0 4.8225344483953895e-05) 0.00016370479263082971 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.5449298886596763e-05, Final residual = 3.5108077444390456e-06, No Iterations 1
+ExecutionTime = 27.23 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 28 s
+
+Time = 172
+
+pseudoTime: iteration 172
+Pseudo Courant No: 138.27451067548103
+Damped pseudo Courant No: Min: 138.27451067548103 Mean: 138.27451067554028 Max: 138.27451067548103
+Pseudo deltaT: Min: 7.6004799738030071e-07 Mean: 0.0024932803071875055 Max: 0.33292052773050518
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0062591476905440799 (0.0066326618363935766 1.1192402634833459e-14 0.005524656855228972) 0.0060185900810706579 
+  GMRES iteration: 1   Residual: 0.00018615475591114553 (0.00020064380347776839 0 5.2368123499663876e-05) 0.00016880007642926023 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.486436202130373e-05, Final residual = 3.4603610890484496e-06, No Iterations 1
+ExecutionTime = 27.379999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 28 s
+
+Time = 173
+
+pseudoTime: iteration 173
+Pseudo Courant No: 141.41196554365666
+Damped pseudo Courant No: Min: 141.41196554365666 Mean: 141.4119655437251 Max: 141.41196554365666
+Pseudo deltaT: Min: 7.7733695853340203e-07 Mean: 0.0025498625640043098 Max: 0.34047468122979541
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0062424454981360265 (0.0066168805992782133 1.1036941093094827e-14 0.0055204103534278581) 0.0059737031999045733 
+  GMRES iteration: 1   Residual: 0.00018982617624371234 (0.00020757079000692771 0 5.3487111949213346e-05) 0.00017292945825314224 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.4454342456981043e-05, Final residual = 3.4457978651119145e-06, No Iterations 1
+ExecutionTime = 27.530000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 28 s
+
+Time = 174
+
+pseudoTime: iteration 174
+Pseudo Courant No: 141.88745647091503
+Damped pseudo Courant No: Min: 141.88745647091503 Mean: 141.887456470963 Max: 141.88745647091503
+Pseudo deltaT: Min: 7.7999762066722881e-07 Mean: 0.0025584461745685088 Max: 0.34161989107235935
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065674826005523044 (0.006551078975166465 1.1329158669312734e-14 0.0054082283301687814) 0.0063526444719226504 
+  GMRES iteration: 1   Residual: 0.00019730764071841365 (0.0002043311149127612 0 5.7536273149076931e-05) 0.00018714968734865665 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.3968815411631454e-05, Final residual = 3.4172617353577749e-06, No Iterations 1
+ExecutionTime = 27.670000000000002 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 28 s
+
+Time = 175
+
+pseudoTime: iteration 175
+Pseudo Courant No: 138.78048277432822
+Damped pseudo Courant No: Min: 138.78048277432822 Mean: 138.78048277427663 Max: 138.78048277432822
+Pseudo deltaT: Min: 7.629661619445202e-07 Mean: 0.0025024332407801663 Max: 0.33413977395213462
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065612441962482736 (0.0065519681780947915 1.1231364748686272e-14 0.0054295369014482229) 0.0063386382019260008 
+  GMRES iteration: 1   Residual: 0.00017647872536108425 (0.00018553453394218921 0 4.4359591686811058e-05) 0.00016458840955377269 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.3388168134269199e-05, Final residual = 3.3670346261520222e-06, No Iterations 1
+ExecutionTime = 27.809999999999999 s  ExecutionStepTime = 0.13999999999999702 s  ClockTime = 28 s
+
+Time = 176
+
+pseudoTime: iteration 176
+Pseudo Courant No: 138.78809376630323
+Damped pseudo Courant No: Min: 138.78809376630323 Mean: 138.78809376623443 Max: 138.78809376630323
+Pseudo deltaT: Min: 7.6305678120494267e-07 Mean: 0.0025025815309353107 Max: 0.33415861741645353
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0063374991595256556 (0.0066419159630632897 1.1564001715785309e-14 0.0055272327561307804) 0.0061677449577319026 
+  GMRES iteration: 1   Residual: 0.00017715962963730443 (0.00019295195428268886 0 5.3289491302923811e-05) 0.00017012073622491578 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.2833494507349917e-05, Final residual = 3.3334026167103556e-06, No Iterations 1
+ExecutionTime = 27.969999999999999 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 28 s
+
+Time = 177
+
+pseudoTime: iteration 177
+Pseudo Courant No: 140.03810720049381
+Damped pseudo Courant No: Min: 140.03810720049381 Mean: 140.03810720051871 Max: 140.03810720049381
+Pseudo deltaT: Min: 7.699736607405483e-07 Mean: 0.0025251331146694798 Max: 0.33716877245828636
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0064225457532902722 (0.0066708980954064039 1.1567507948273403e-14 0.0055606121876724725) 0.0062275317731677578 
+  GMRES iteration: 1   Residual: 0.00019331275495302616 (0.00020592182138742275 0 5.8445907452935224e-05) 0.00018291388029594303 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.234280837371071e-05, Final residual = 3.3063734878798977e-06, No Iterations 1
+ExecutionTime = 28.109999999999999 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 28 s
+
+Time = 178
+
+pseudoTime: iteration 178
+Pseudo Courant No: 138.87015464626484
+Damped pseudo Courant No: Min: 138.87015464626484 Mean: 138.87015464623275 Max: 138.87015464626484
+Pseudo deltaT: Min: 7.6358898137886262e-07 Mean: 0.002504084968901601 Max: 0.33435718130679437
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0066704205459799434 (0.0065693013174844671 1.1872114785342603e-14 0.0054386160566510548) 0.0065326618231458669 
+  GMRES iteration: 1   Residual: 0.00019109268336500214 (0.00018638963425055227 0 4.9728252191097712e-05) 0.00018620447102740017 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.1841188281435818e-05, Final residual = 3.2647353646583519e-06, No Iterations 1
+ExecutionTime = 28.25 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 29 s
+
+Time = 179
+
+pseudoTime: iteration 179
+Pseudo Courant No: 136.92336235775784
+Damped pseudo Courant No: Min: 136.92336235775784 Mean: 136.92336235769153 Max: 136.92336235775784
+Pseudo deltaT: Min: 7.529134847854001e-07 Mean: 0.0024689932625112849 Max: 0.32967034654783306
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0066797359852938214 (0.0065651886852442489 1.1920990280419983e-14 0.0054301840950716235) 0.0065424565723389561 
+  GMRES iteration: 1   Residual: 0.00019123817624754815 (0.00018394496055209762 0 4.9512602173455939e-05) 0.00017852143355705745 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.1347143666481591e-05, Final residual = 3.2179162021105063e-06, No Iterations 1
+ExecutionTime = 28.399999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 29 s
+
+Time = 180
+
+pseudoTime: iteration 180
+Pseudo Courant No: 136.87767369351445
+Damped pseudo Courant No: Min: 136.87767369351445 Mean: 136.87767369347594 Max: 136.87767369351445
+Pseudo deltaT: Min: 7.5268230581755026e-07 Mean: 0.0024681819636369908 Max: 0.32956076782484861
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0064840103650541841 (0.0066689672110185443 1.2327752304258869e-14 0.0055491047534095882) 0.0063744659193347058 
+  GMRES iteration: 1   Residual: 0.00018806108581884132 (0.00018519649862441316 0 5.1550590711454597e-05) 0.00017925410412735998 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.0868280469598671e-05, Final residual = 3.1808879537575682e-06, No Iterations 1
+ExecutionTime = 28.550000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 29 s
+
+Time = 181
+
+pseudoTime: iteration 181
+Pseudo Courant No: 137.77055377093069
+Damped pseudo Courant No: Min: 137.77055377093069 Mean: 137.77055377094027 Max: 137.77055377093069
+Pseudo deltaT: Min: 7.5760204234643304e-07 Mean: 0.0024842947645965217 Max: 0.33171097493062296
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065501224269350379 (0.0066500509799052093 1.2282454260837345e-14 0.0055651535670507906) 0.0064335398607541835 
+  GMRES iteration: 1   Residual: 0.00020128831013635785 (0.00019605754854658676 0 5.7720977223713289e-05) 0.00019009375970523973 
+smoothSolver:  Solving for nuTilda, Initial residual = 6.041805113575562e-05, Final residual = 3.1469476756451026e-06, No Iterations 1
+ExecutionTime = 28.690000000000001 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 29 s
+
+Time = 182
+
+pseudoTime: iteration 182
+Pseudo Courant No: 137.10172880839261
+Damped pseudo Courant No: Min: 137.10172880839261 Mean: 137.1017288084515 Max: 137.10172880839261
+Pseudo deltaT: Min: 7.5392498976354071e-07 Mean: 0.0024722466916310957 Max: 0.33010106385986548
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067055223241613421 (0.0065426623494477193 1.2508926710986099e-14 0.0054308743581318875) 0.0066345206405012437 
+  GMRES iteration: 1   Residual: 0.00020436203456915283 (0.00017974236849555226 0 5.6767081733135736e-05) 0.00019924034929930026 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.9946284715625112e-05, Final residual = 3.1080615876733527e-06, No Iterations 1
+ExecutionTime = 28.850000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 29 s
+
+Time = 183
+
+pseudoTime: iteration 183
+Pseudo Courant No: 136.33747599058594
+Damped pseudo Courant No: Min: 136.33747599058594 Mean: 136.33747599055346 Max: 136.33747599058594
+Pseudo deltaT: Min: 7.4971432618554519e-07 Mean: 0.0024584781710826325 Max: 0.32826141659065478
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067472991057733649 (0.0065125268223559969 1.2594924877197253e-14 0.0054438421830229206) 0.0066824542020620277 
+  GMRES iteration: 1   Residual: 0.00020422815605238169 (0.00016392390063921063 0 4.8043984301630769e-05) 0.00019009353697882256 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.9516794793111077e-05, Final residual = 3.0725826693641447e-06, No Iterations 1
+ExecutionTime = 29.010000000000002 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 29 s
+
+Time = 184
+
+pseudoTime: iteration 184
+Pseudo Courant No: 135.93856814213541
+Damped pseudo Courant No: Min: 135.93856814213541 Mean: 135.93856814220507 Max: 135.93856814213541
+Pseudo deltaT: Min: 7.475038353146634e-07 Mean: 0.0024512972848638724 Max: 0.32730147691262568
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065130167270981794 (0.0065728441304356428 1.2986768824885349e-14 0.0055197584042570276) 0.0064706572300502595 
+  GMRES iteration: 1   Residual: 0.00019735112268417845 (0.00016270178633031191 0 5.1605145944721286e-05) 0.00018725553485048088 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.9101230706791862e-05, Final residual = 3.0399670169253571e-06, No Iterations 1
+ExecutionTime = 29.149999999999999 s  ExecutionStepTime = 0.13999999999999702 s  ClockTime = 29 s
+
+Time = 185
+
+pseudoTime: iteration 185
+Pseudo Courant No: 137.76405085925842
+Damped pseudo Courant No: Min: 137.76405085925842 Mean: 137.7640508591771 Max: 137.76405085925842
+Pseudo deltaT: Min: 7.5751817721310335e-07 Mean: 0.0024842266709806725 Max: 0.33169734783765586
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065399615719390512 (0.0066164070001765163 1.3207318549439162e-14 0.0055515505628220812) 0.0064734874721064468 
+  GMRES iteration: 1   Residual: 0.0002194723085990239 (0.00018586288017578958 0 6.4640040418986305e-05) 0.0002021151941038601 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.8752906836964891e-05, Final residual = 3.0160524628674951e-06, No Iterations 1
+ExecutionTime = 29.300000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 30 s
+
+Time = 186
+
+pseudoTime: iteration 186
+Pseudo Courant No: 137.19421505452624
+Damped pseudo Courant No: Min: 137.19421505452624 Mean: 137.19421505458789 Max: 137.19421505452624
+Pseudo deltaT: Min: 7.5435716849032639e-07 Mean: 0.0024739617588715721 Max: 0.33032609076044328
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067649786456243878 (0.0065130648600555136 1.3375328844934739e-14 0.0054307196761358006) 0.0067335863451572549 
+  GMRES iteration: 1   Residual: 0.00021663236956278006 (0.0001632869070740945 0 5.6546783733852282e-05) 0.00020837337959821582 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.837998347437696e-05, Final residual = 2.9803690523108431e-06, No Iterations 1
+ExecutionTime = 29.469999999999999 s  ExecutionStepTime = 0.16999999999999815 s  ClockTime = 30 s
+
+Time = 187
+
+pseudoTime: iteration 187
+Pseudo Courant No: 135.60912369723184
+Damped pseudo Courant No: Min: 135.60912369723184 Mean: 135.60912369718397 Max: 135.60912369723184
+Pseudo deltaT: Min: 7.4561055639602874e-07 Mean: 0.0024453888723232516 Max: 0.32651048434395008
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067436750484041116 (0.0064477740843020227 1.3199077433884563e-14 0.0054025579670075787) 0.006726699890691073 
+  GMRES iteration: 1   Residual: 0.00022034982627293834 (0.0001602754856565963 0 5.7266415864749867e-05) 0.00020136904627665703 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.7986089093174309e-05, Final residual = 2.9417299660298801e-06, No Iterations 1
+ExecutionTime = 29.600000000000001 s  ExecutionStepTime = 0.13000000000000256 s  ClockTime = 30 s
+
+Time = 188
+
+pseudoTime: iteration 188
+Pseudo Courant No: 136.25076497745764
+Damped pseudo Courant No: Min: 136.25076497745764 Mean: 136.250764977508 Max: 136.25076497745764
+Pseudo deltaT: Min: 7.4910474897624001e-07 Mean: 0.002456969203186582 Max: 0.32805635664778554
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0064735728548818055 (0.0065270861811744891 1.3521323921305074e-14 0.0055008409233919245) 0.0064595004299802788 
+  GMRES iteration: 1   Residual: 0.00022199394811922278 (0.00015337257405435026 0 5.0198810312803852e-05) 0.00020629363819721919 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.7644997114481368e-05, Final residual = 2.9160555919682212e-06, No Iterations 1
+ExecutionTime = 29.73 s  ExecutionStepTime = 0.12999999999999901 s  ClockTime = 30 s
+
+Time = 189
+
+pseudoTime: iteration 189
+Pseudo Courant No: 138.40711888431335
+Damped pseudo Courant No: Min: 138.40711888431335 Mean: 138.40711888435234 Max: 138.40711888431335
+Pseudo deltaT: Min: 7.6092711000916878e-07 Mean: 0.0024958632540274602 Max: 0.33324934031035253
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065299599910447403 (0.006568727267586498 1.3587667018060376e-14 0.0055403661826760476) 0.0064682454703737851 
+  GMRES iteration: 1   Residual: 0.00024361529230802864 (0.00018275312622300949 0 7.5314278147273867e-05) 0.00021821752769164024 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.7340398039041712e-05, Final residual = 2.8979478881906615e-06, No Iterations 1
+ExecutionTime = 29.879999999999999 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 30 s
+
+Time = 190
+
+pseudoTime: iteration 190
+Pseudo Courant No: 137.60576356396172
+Damped pseudo Courant No: Min: 137.60576356396172 Mean: 137.60576356391633 Max: 137.60576356396172
+Pseudo deltaT: Min: 7.5649164667948184e-07 Mean: 0.0024814205395515812 Max: 0.33132096066772648
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067633682411526522 (0.0064359969445729652 1.3709085448720538e-14 0.0053979644674141992) 0.0067321253001049004 
+  GMRES iteration: 1   Residual: 0.00023155828168744006 (0.00014405198015545294 0 5.0398909392354193e-05) 0.00021811500434837518 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.6977250303637843e-05, Final residual = 2.864479177250989e-06, No Iterations 1
+ExecutionTime = 30.030000000000001 s  ExecutionStepTime = 0.15000000000000213 s  ClockTime = 30 s
+
+Time = 191
+
+pseudoTime: iteration 191
+Pseudo Courant No: 136.19272412043156
+Damped pseudo Courant No: Min: 136.19272412043156 Mean: 136.19272412037336 Max: 136.19272412043156
+Pseudo deltaT: Min: 7.486962924834408e-07 Mean: 0.0024559471307692591 Max: 0.32791981367358647
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067473486162453787 (0.0063619586092025695 1.345668821996795e-14 0.0053560601581883593) 0.0067393817414639961 
+  GMRES iteration: 1   Residual: 0.00024353763302611939 (0.00015847301750728378 0 6.5534975935639851e-05) 0.00021633428172172911 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.6603654247945933e-05, Final residual = 2.8286945826499417e-06, No Iterations 1
+ExecutionTime = 30.190000000000001 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 30 s
+
+Time = 192
+
+pseudoTime: iteration 192
+Pseudo Courant No: 136.8363476673683
+Damped pseudo Courant No: Min: 136.8363476673683 Mean: 136.83634766738496 Max: 136.8363476673683
+Pseudo deltaT: Min: 7.5221047840492937e-07 Mean: 0.0024675610032483856 Max: 0.3294706345001589
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0064944187832877091 (0.0064661768175448596 1.3787342310300273e-14 0.0054864849461434984) 0.0064772797986683683 
+  GMRES iteration: 1   Residual: 0.0002288126305127512 (0.00014652392028102068 0 4.9817894459975177e-05) 0.00020565195880451232 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.6286097414686889e-05, Final residual = 2.8041570357695894e-06, No Iterations 1
+ExecutionTime = 30.34 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 31 s
+
+Time = 193
+
+pseudoTime: iteration 193
+Pseudo Courant No: 138.60601448403608
+Damped pseudo Courant No: Min: 138.60601448403608 Mean: 138.60601448406649 Max: 138.60601448403608
+Pseudo deltaT: Min: 7.6191968621645441e-07 Mean: 0.0024994803134793563 Max: 0.33373265018178822
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.006565887334954534 (0.0065328245890973399 1.374159256910706e-14 0.00554481416971404) 0.0064834144302184024 
+  GMRES iteration: 1   Residual: 0.00024375526952374464 (0.00017131464751908546 0 7.3009878417981032e-05) 0.00021104111597661961 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.5999705727652448e-05, Final residual = 2.7833651266665228e-06, No Iterations 1
+ExecutionTime = 30.48 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 31 s
+
+Time = 194
+
+pseudoTime: iteration 194
+Pseudo Courant No: 137.49903115177392
+Damped pseudo Courant No: Min: 137.49903115177392 Mean: 137.49903115175854 Max: 137.49903115177392
+Pseudo deltaT: Min: 7.5582173819178552e-07 Mean: 0.002479524310973087 Max: 0.33106822781317552
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067689747903683954 (0.0063983923470226807 1.384150003245002e-14 0.0054023800951766105) 0.0066954345059788891 
+  GMRES iteration: 1   Residual: 0.00022851533339018898 (0.00013029171510625933 0 4.2491839339994863e-05) 0.00020651969553486072 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.5667676724262857e-05, Final residual = 2.750026963767325e-06, No Iterations 1
+ExecutionTime = 30.649999999999999 s  ExecutionStepTime = 0.16999999999999815 s  ClockTime = 31 s
+
+Time = 195
+
+pseudoTime: iteration 195
+Pseudo Courant No: 136.55300705879
+Damped pseudo Courant No: Min: 136.55300705879 Mean: 136.55300705879878 Max: 136.55300705879
+Pseudo deltaT: Min: 7.5061374952450532e-07 Mean: 0.0024624708366691134 Max: 0.32879120060869033
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0068201806732303156 (0.0063175082154542008 1.3462966509533759e-14 0.0053573283086740635) 0.0067354355850940753 
+  GMRES iteration: 1   Residual: 0.00023305736996144421 (0.00014999739767842258 0 6.0313485720786397e-05) 0.00020338237638639397 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.5342156923449807e-05, Final residual = 2.7180953464974219e-06, No Iterations 1
+ExecutionTime = 30.82 s  ExecutionStepTime = 0.17000000000000171 s  ClockTime = 31 s
+
+Time = 196
+
+pseudoTime: iteration 196
+Pseudo Courant No: 136.67214211453265
+Damped pseudo Courant No: Min: 136.67214211453265 Mean: 136.67214211449797 Max: 136.67214211453265
+Pseudo deltaT: Min: 7.5126605762843716e-07 Mean: 0.0024646256683406071 Max: 0.32907867244089067
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065713203399432466 (0.0064460295441189407 1.3640148529516854e-14 0.0055150373870156118) 0.006482079545318902 
+  GMRES iteration: 1   Residual: 0.00020834789778114584 (0.0001351281228746587 0 4.1971492622549126e-05) 0.00018834191320004013 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.5035263639071753e-05, Final residual = 2.6944788326641709e-06, No Iterations 1
+ExecutionTime = 30.98 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 31 s
+
+Time = 197
+
+pseudoTime: iteration 197
+Pseudo Courant No: 138.11084324528036
+Damped pseudo Courant No: Min: 138.11084324528036 Mean: 138.11084324529267 Max: 138.11084324528036
+Pseudo deltaT: Min: 7.5917751922748684e-07 Mean: 0.0024905763415111215 Max: 0.33254316753269575
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0065410770259755995 (0.0064663169007071067 1.3282530471467253e-14 0.0055102974359910652) 0.0063799926834260355 
+  GMRES iteration: 1   Residual: 0.00022131627198526406 (0.00017110088009710783 0 7.438987251142217e-05) 0.00019237385210731545 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.4792556584159932e-05, Final residual = 2.6796503751636015e-06, No Iterations 1
+ExecutionTime = 31.18 s  ExecutionStepTime = 0.19999999999999929 s  ClockTime = 31 s
+
+Time = 198
+
+pseudoTime: iteration 198
+Pseudo Courant No: 138.77462601402797
+Damped pseudo Courant No: Min: 138.77462601402797 Mean: 138.77462601396991 Max: 138.77462601402797
+Pseudo deltaT: Min: 7.6283397343467139e-07 Mean: 0.0025025519497062494 Max: 0.33414161460462566
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0068332861889207419 (0.0063726208369729318 1.3182829025328573e-14 0.0053934927508794139) 0.006694935410162358 
+  GMRES iteration: 1   Residual: 0.0002077627376888612 (0.00013107436045258386 0 4.4353376278997734e-05) 0.00019192962159238254 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.4564388870286911e-05, Final residual = 2.6612189229270656e-06, No Iterations 1
+ExecutionTime = 31.329999999999998 s  ExecutionStepTime = 0.14999999999999858 s  ClockTime = 32 s
+
+Time = 199
+
+pseudoTime: iteration 199
+Pseudo Courant No: 136.36525381662989
+Damped pseudo Courant No: Min: 136.36525381662989 Mean: 136.36525381667997 Max: 136.36525381662989
+Pseudo deltaT: Min: 7.4960204664071997e-07 Mean: 0.0024591086358853307 Max: 0.3283403085898528
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0067467467109187827 (0.0063195103783058038 1.2630085453768533e-14 0.0053678009742518214) 0.0066165972178915521 
+  GMRES iteration: 1   Residual: 0.00022499221418642606 (0.00014952262013056395 0 5.8169902955425178e-05) 0.00019855422491969283 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.4291459928281074e-05, Final residual = 2.6316038563777521e-06, No Iterations 1
+ExecutionTime = 31.469999999999999 s  ExecutionStepTime = 0.14000000000000057 s  ClockTime = 32 s
+
+Time = 200
+
+pseudoTime: iteration 200
+Pseudo Courant No: 137.72541162579458
+Damped pseudo Courant No: Min: 137.72541162579458 Mean: 137.72541162572773 Max: 137.72541162579458
+Pseudo deltaT: Min: 7.5709559479243111e-07 Mean: 0.0024836423180164607 Max: 0.33161505016139847
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0064454012887219664 (0.0064383318334553484 1.2870268829319281e-14 0.0055161066347613327) 0.0063411118298646726 
+  GMRES iteration: 1   Residual: 0.0001988704640307852 (0.00014029542135932764 0 4.2771379111178479e-05) 0.0001821297137538272 
+smoothSolver:  Solving for nuTilda, Initial residual = 5.4103639769598559e-05, Final residual = 2.6191764183150646e-06, No Iterations 1
+ExecutionTime = 31.629999999999999 s  ExecutionStepTime = 0.16000000000000014 s  ClockTime = 32 s
+
+End
+

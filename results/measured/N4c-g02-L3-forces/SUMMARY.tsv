@@ -1,0 +1,4 @@
+case	nCells	endTime	ref	gpu	end_ref	end_gpu	compared	bitwise	gpu1_vs_gpu2
+rae2822SA	23552	200	0	0/0	200	200	7	7	identical
+flatPlateSA	8000	800	0	0/0	800	800	7	7	identical
+flatPlateLaminar	8000	100	0	0/0	100	100	5	5	identical

@@ -1,0 +1,10 @@
+label=N4a-powexp
+started_utc=2026-10-22T16:50:16Z
+host=g02 profile=g02-l40
+gpu_device=3
+cpu=AMD EPYC 9684X 96-Core Processor
+cpu_fma=fma cpu_avx2=avx2
+glibc=ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39
+libm=/usr/lib/x86_64-linux-gnu/libm.so.6 sha256=fce00b6f25f459cf4ae0b7fae4257909a1a8a86f9149e7c029a5d617baf1ccd0
+finished_utc=2026-10-22T16:50:39Z
+overall_exit=0

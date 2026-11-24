@@ -1,0 +1,81 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "system/fvSolution"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           dictionary;
+    location        "system";
+    object          fvSolution;
+}
+
+solvers
+{
+    "(k|omega|nuTilda|rPseudoDeltaT)"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       9.9999999999999995e-07;
+        relTol          0.10000000000000001;
+        minIter         1;
+    }
+    "(k|omega|nuTilda|rPseudoDeltaT)Final"
+    {
+        solver          smoothSolver;
+        smoother        symGaussSeidel;
+        tolerance       9.9999999999999995e-07;
+        relTol          0.10000000000000001;
+        minIter         1;
+        reltol          0.10000000000000001;
+    }
+    yPsi
+    {
+        solver          GAMG;
+        smoother        GaussSeidel;
+        cacheAgglomeration true;
+        nCellsInCoarsestLevel 10;
+        agglomerator    faceAreaPair;
+        mergeLevels     1;
+        tolerance       1e-08;
+        relTol          0;
+    }
+}
+
+relaxationFactors
+{
+    equations
+    {
+        nuTilda         0.5;
+    }
+}
+
+flowSolver
+{
+    solver          GMRES;
+    GMRES
+    {
+        inviscidJacobian LaxFriedrichs;
+        viscousJacobian laplacian;
+        preconditioner  LUSGS;
+        maxIter         20;
+        nKrylov         8;
+        solverTolRel    0.10000000000000001 ( 0.10000000000000001 0.10000000000000001 0.10000000000000001 ) 0.10000000000000001;
+    }
+}
+
+pseudoTime
+{
+    pseudoTol       9.9999999999999995e-07 ( 9.9999999999999995e-07 9.9999999999999995e-07 9.9999999999999995e-07 ) 9.9999999999999995e-07;
+    pseudoCoNum     0.10000000000000001;
+    pseudoCoNumMax  20;
+    localTimestepping true;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

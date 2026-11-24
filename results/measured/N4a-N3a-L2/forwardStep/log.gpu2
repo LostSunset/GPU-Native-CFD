@@ -1,0 +1,6 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 36576 fvBoundaryFaces 976
+thermo: RR 8314.4700665054497 Tstd 298.14999999999998 W 11640.299999999999 R 0.71428314274593008 Cp 2.5 transport const
+analysis: inviscid
+boundary conditions: inlet[p fixedValue, T fixedValue, U fixedValue, e fixedEnergy] outlet[p zeroGradient, T inletOutlet, U inletOutlet, e mixedEnergy] bottom[p symmetryPlane, T symmetryPlane, U symmetryPlane, e symmetryPlane] top[p symmetryPlane, T symmetryPlane, U symmetryPlane, e symmetryPlane] obstacle[p characteristicWallPressure, T characteristicWallTemperature, U slip, e fixedEnergy] defaultFaces[p empty, T empty, U empty, e empty]
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-N3a-L2/forwardStep/gpu2.gnc

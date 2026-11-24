@@ -1,0 +1,34 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-L0/forwardStep/ref.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-L0/forwardStep/gpu1.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncGeomRef" test="gncGeomL0"
+case                           text  ref="/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation" test="/home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation"
+openfoam                       text  ref="v2606 api 2606 build v2606" test="(none)"
+pointsInstance                 text  ref="constant" test="(none)"
+facesInstance                  text  ref="constant" test="(none)"
+geometryScheme                 text  ref="basic" test="(none)"
+dims                           i32            4    1           0    0.000e+00    0.000e+00            0  BITWISE
+fvPatchSizes                   i32            6    1           0    0.000e+00    0.000e+00            0  BITWISE
+points                         f64        74178    3           0    0.000e+00    0.000e+00            0  BITWISE
+owner                          i32       146816    1           0    0.000e+00    0.000e+00            0  BITWISE
+neighbour                      i32        72688    1           0    0.000e+00    0.000e+00            0  BITWISE
+faceOffsets                    i32       146817    1           0    0.000e+00    0.000e+00            0  BITWISE
+faceLabels                     i32       587360    1           0    0.000e+00    0.000e+00            0  BITWISE
+Cf                             f64       146816    3           0    0.000e+00    0.000e+00            0  BITWISE
+Sf                             f64       146816    3           0    0.000e+00    0.000e+00            0  BITWISE
+C                              f64        36576    3           0    0.000e+00    0.000e+00            0  BITWISE
+V                              f64        36576    1           0    0.000e+00    0.000e+00            0  BITWISE
+magSf.i                        f64        72688    1           0    0.000e+00    0.000e+00            0  BITWISE
+magSf.b                        f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+weights.i                      f64        72688    1           0    0.000e+00    0.000e+00            0  BITWISE
+weights.b                      f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+deltaCoeffs.i                  f64        72688    1           0    0.000e+00    0.000e+00            0  BITWISE
+deltaCoeffs.b                  f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+nonOrthDeltaCoeffs.i           f64        72688    1           0    0.000e+00    0.000e+00            0  BITWISE
+nonOrthDeltaCoeffs.b           f64          976    1           0    0.000e+00    0.000e+00            0  BITWISE
+nonOrthCorrectionVectors.i     f64        72688    3           0    0.000e+00    0.000e+00            0  BITWISE
+nonOrthCorrectionVectors.b     f64          976    3           0    0.000e+00    0.000e+00            0  BITWISE
+sumV                           f64            1    1           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+sumV.tree                      f64            1    1  test only
+result: ALL BITWISE IDENTICAL

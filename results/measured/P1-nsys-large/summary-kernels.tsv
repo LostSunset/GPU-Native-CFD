@@ -1,0 +1,23 @@
+run	category	ms per iteration	share %	kernels per iteration
+gncRhoSimple -fast, 4,096,000 cells	AMG preconditioner	158.3155	44.4	2978.8
+gncRhoSimple -fast, 4,096,000 cells	linear solvers and preconditioners	83.4294	23.4	290.8
+gncRhoSimple -fast, 4,096,000 cells	discrete operators (gradients, fluxes)	46.0871	12.9	102.0
+gncRhoSimple -fast, 4,096,000 cells	element-wise operations	28.3870	8.0	182.0
+gncRhoSimple -fast, 4,096,000 cells	reductions	17.9046	5.0	238.8
+gncRhoSimple -fast, 4,096,000 cells	matrix assembly	11.8236	3.3	85.0
+gncRhoSimple -fast, 4,096,000 cells	turbulence and thermodynamics	5.3575	1.5	29.0
+gncRhoSimple -fast, 4,096,000 cells	solver updates	4.8232	1.4	35.2
+gncRhoSimple -fast, 4,096,000 cells	boundary conditions	0.3106	0.1	56.0
+gncRhoSimple -fast, 4,096,000 cells	other	-0.0171	-0.0	0.0
+gncRhoSimple -fast, 4,096,000 cells	total	356.4212	100.0	3997.6
+gncRhoSimple -fast, 16,384,000 cells	AMG preconditioner	991.7504	48.3	4187.2
+gncRhoSimple -fast, 16,384,000 cells	linear solvers and preconditioners	432.3374	21.0	343.0
+gncRhoSimple -fast, 16,384,000 cells	reductions	227.2213	11.1	1193.8
+gncRhoSimple -fast, 16,384,000 cells	discrete operators (gradients, fluxes)	179.9093	8.8	102.0
+gncRhoSimple -fast, 16,384,000 cells	element-wise operations	128.3510	6.2	182.0
+gncRhoSimple -fast, 16,384,000 cells	matrix assembly	51.7549	2.5	85.0
+gncRhoSimple -fast, 16,384,000 cells	solver updates	21.1535	1.0	35.2
+gncRhoSimple -fast, 16,384,000 cells	turbulence and thermodynamics	20.9037	1.0	29.0
+gncRhoSimple -fast, 16,384,000 cells	boundary conditions	0.4619	0.0	56.0
+gncRhoSimple -fast, 16,384,000 cells	other	0.2758	0.0	0.0
+gncRhoSimple -fast, 16,384,000 cells	total	2054.1191	100.0	6213.2

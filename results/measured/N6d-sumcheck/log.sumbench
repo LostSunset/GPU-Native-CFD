@@ -1,0 +1,11 @@
+=== 2026-10-25T02:23:59Z env CUDA_VISIBLE_DEVICES=3 GNC_SUMTREE_CHECK=1 /ssd/sclin/gpu-native-cfd/build/bin/gncSumBench --n 1,7,2048,2049,16000,2179881,4194304,4194305 --repeat 3
+n 1: sumSequential 0.011 ms (repeatable 1)  sumTree 0.522 ms  rel diff 0.000e+00
+n 7: sumSequential 0.013 ms (repeatable 1)  sumTree 0.029 ms  rel diff 0.000e+00
+n 2048: sumSequential 0.010 ms (repeatable 1)  sumTree 0.028 ms  rel diff 2.166e-16
+n 2049: sumSequential 0.009 ms (repeatable 1)  sumTree 0.033 ms  rel diff 2.166e-16
+n 16000: sumSequential 0.025 ms (repeatable 1)  sumTree 0.032 ms  rel diff -6.927e-16
+n 2179881: sumSequential 2.501 ms (repeatable 1)  sumTree 0.056 ms  rel diff 4.730e-14
+n 4194304: sumSequential 4.828 ms (repeatable 1)  sumTree 0.074 ms  rel diff 6.151e-14
+n 4194305: sumSequential 4.775 ms (repeatable 1)  sumTree 0.045 ms  rel diff 6.151e-14
+=== exit=0
+sumbench rc=0 (0: every call identical)

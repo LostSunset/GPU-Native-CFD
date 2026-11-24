@@ -1,0 +1,10 @@
+A=/ssd/sclin/gpu-native-cfd/runs/N7e-g02-perf200/flatPlateSA/ref/200
+B=/ssd/sclin/gpu-native-cfd/runs/N7e-g02-perf200/flatPlateSA/fast/200
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p                8000           2.436900e+00           2.044061e-03           9.661617e-04
+T                8000           6.328290e+00           2.398309e-02           7.615724e-03
+U               24000           2.185281e+01           3.106915e-02           3.654095e-03
+rho              8000           7.998616e-04           1.566165e-02           3.545072e-03
+nuTilda          8000           4.990975e-04           5.533600e-02           5.525225e-02
+nut              8000           5.071898e-04           5.942074e-02           6.869154e-02
+alphat           8000           1.692726e-05           9.660163e-02           7.087258e-02

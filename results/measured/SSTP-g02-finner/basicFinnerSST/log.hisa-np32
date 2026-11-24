@@ -1,0 +1,311 @@
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa -parallel
+Date   : Oct 23 2026
+Time   : 17:19:03
+Host   : g02
+PID    : 3047667
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/SSTP-g02-finner/basicFinnerSST/hisa-np32
+nProcs : 32
+Hosts  :
+(
+    (g02 32)
+)
+Pstream initialized with:
+    node communication : off [type=host] (32 ranks, 1 nodes)
+    topology controls  : none
+    consensus exchange : 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod Poisson
+GAMG:  Solving for yPsi, Initial residual = 1, Final residual = 8.1428855e-07, No Iterations 27
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    nutMaxCoeff     10000;
+    alphaK1         0.85;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.856;
+    gamma1          0.55555556;
+    gamma2          0.44;
+    beta1           0.075;
+    beta2           0.0828;
+    betaStar        0.09;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.5721188e-10 Mean: 1.4305044e-06 Max: 7.4587219e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.99931584 0.0004656072 0.03476549) 1 
+  GMRES iteration: 1   Residual: 2.5652713e-07 (3.1021001e-07 3.4421302e-08 4.1785569e-08) 2.9125492e-07 
+smoothSolver:  Solving for omega, Initial residual = 0.00087681281, Final residual = 2.2429364e-06, No Iterations 1
+bounding omega, min: -60015758 max: 3.9054512e+11 average: 1.1255765e+08
+smoothSolver:  Solving for k, Initial residual = 1, Final residual = 0.0040350862, No Iterations 1
+ExecutionTime = 4.74 s  ExecutionStepTime = 3.68 s  ClockTime = 5 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.98509104 Max: 1
+Pseudo deltaT: Min: 7.7784678e-11 Mean: 1.430497e-06 Max: 7.4587219e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.54581643 (0.35216514 0.021338092 0.02980961) 0.31404752 
+  GMRES iteration: 1   Residual: 3.3391985e-09 (3.1435879e-09 5.8712935e-10 6.1740706e-10) 1.9853231e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.00045380959, Final residual = 1.6265195e-06, No Iterations 1
+bounding omega, min: -165557.26 max: 3.8774163e+11 average: 1.17208e+08
+smoothSolver:  Solving for k, Initial residual = 0.19883601, Final residual = 0.00083595601, No Iterations 1
+ExecutionTime = 7.01 s  ExecutionStepTime = 2.27 s  ClockTime = 7 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2215507 Max: 1.25
+Pseudo deltaT: Min: 4.8599149e-11 Mean: 1.788116e-06 Max: 9.3234023e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.3293254 (0.18898651 0.014693393 0.01912016) 0.17181298 
+  GMRES iteration: 1   Residual: 2.2396459e-09 (1.4321958e-09 1.2427309e-10 1.9198714e-10) 1.2602807e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.00026331172, Final residual = 1.3746337e-06, No Iterations 1
+bounding omega, min: -480526.31 max: 3.9157738e+11 average: 1.2132346e+08
+smoothSolver:  Solving for k, Initial residual = 0.095978304, Final residual = 0.00058203804, No Iterations 1
+ExecutionTime = 9.19 s  ExecutionStepTime = 2.18 s  ClockTime = 9 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.5625
+Damped pseudo Courant No: Min: 0.1953125 Mean: 1.5273423 Max: 1.5625
+Pseudo deltaT: Min: 3.050002e-11 Mean: 2.2351458e-06 Max: 0.00011654253
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.20497693 (0.1172428 0.010733993 0.013298008) 0.10650035 
+  GMRES iteration: 1   Residual: 2.2913785e-09 (1.3731367e-09 2.8411163e-10 3.4992395e-10) 1.175144e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.00016943412, Final residual = 1.2788517e-06, No Iterations 1
+bounding omega, min: -742012 max: 3.9938345e+11 average: 1.2633467e+08
+smoothSolver:  Solving for k, Initial residual = 0.055431718, Final residual = 0.00047212204, No Iterations 1
+ExecutionTime = 11.06 s  ExecutionStepTime = 1.87 s  ClockTime = 11 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.953125
+Damped pseudo Courant No: Min: 0.125 Mean: 1.9106439 Max: 1.953125
+Pseudo deltaT: Min: 1.9534428e-11 Mean: 2.7939315e-06 Max: 0.00014567816
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.18564259 (0.092730392 0.0095615831 0.011537722) 0.084167453 
+  GMRES iteration: 1   Residual: 6.420895e-09 (3.5345922e-09 4.0289006e-10 5.5460813e-10) 2.7885141e-09 
+smoothSolver:  Solving for omega, Initial residual = 0.00011612795, Final residual = 1.2195677e-06, No Iterations 1
+bounding omega, min: -483382.38 max: 4.0961335e+11 average: 1.3067369e+08
+smoothSolver:  Solving for k, Initial residual = 0.035094727, Final residual = 0.00042315203, No Iterations 1
+ExecutionTime = 13.15 s  ExecutionStepTime = 2.09 s  ClockTime = 13 s
+
+End
+
+Finalising parallel run

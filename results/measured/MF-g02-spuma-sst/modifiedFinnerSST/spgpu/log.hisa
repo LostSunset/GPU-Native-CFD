@@ -1,0 +1,166 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5916a466-20260728 OPENFOAM=2512 version=v2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /home/sclin/OpenFOAM/sclin-v2512/platforms/linux64NvidiaDPInt32Opt/bin/hisa -pool fixedSizeMemoryPool -poolSize 16
+Date   : Oct 25 2026
+Time   : 18:00:09
+Host   : g02
+PID    : 458737
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/MF-g02-spuma-sst/modifiedFinnerSST/spgpu
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Initializing CUDA devices
+
+CUDA Driver Version / Runtime Version:  13.2 / 13.3
+Number of threads per block: 128
+
+Create fixedSizeMemoryPool
+ 
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 9.9999999999999995e-07 (9.9999999999999995e-07 9.9999999999999995e-07 9.9999999999999995e-07) 9.9999999999999995e-07 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting device version of : hePsiThermo
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod Poisson
+GAMG:  Solving for yPsi, Initial residual = 1.0000000000000002, Final residual = 8.8846005223409204e-07, No Iterations 19
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.84999999999999998;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.85599999999999998;
+    gamma1          0.55555555555555558;
+    gamma2          0.44;
+    beta1           0.074999999999999997;
+    beta2           0.082799999999999999;
+    betaStar        0.089999999999999997;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+forces forces:
+    rho: rho
+    Not including porosity effects
+forceCoeffs forcesNormAxial:
+    rho: rhoInf
+    Freestream density (rhoInf) set to 1.2040847589999999
+    Not including porosity effects
+    magUInf: 858.09190130000002
+    lRef   : 0.029999999999999999
+    Aref   : 0.00070685834700000001
+    rhoInf : 1.2040847589999999
+    Selecting all coefficients
+    - Drag force: Cd
+    - Drag force front: Cd(f)
+    - Drag force rear: Cd(r)
+    - Lift force: Cl
+    - Lift force front: Cl(f)
+    - Lift force rear: Cl(r)
+    - Pitch moment: CmPitch
+    - Roll moment: CmRoll
+    - Yaw moment: CmYaw
+    - Side force: Cs
+    - Side force front: Cs(f)
+    - Side force rear: Cs(r)
+
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 2.2939332613459305e-10 Mean: 1.0611705205965254e-06 Max: 0.00014319048697609477
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.99999999999962519 (0.99972140978281443 0.0013260562881330707 0.017882950907102135) 0.99999999999987899 
+  GMRES iteration: 1   Residual: 4.1858158074758244e-05 (2.9824603736858071e-05 5.5329314497962136e-06 5.6757284325214254e-06) 5.0753103015849391e-05 
+smoothSolver:  Solving for omega, Initial residual = 0.00016749707734462147, Final residual = 6.9406844830753262e-07, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.99999999999999944, Final residual = 0.006976271327555684, No Iterations 1
+ExecutionTime = 139.19999999999999 s  ExecutionStepTime = 88.269999999999982 s  ClockTime = 168 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.99195983795697062 Max: 1
+Pseudo deltaT: Min: 1.1596335901911298e-10 Mean: 1.0611643353153489e-06 Max: 0.00012635424168893405
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.51227604794897452 (0.31404109300234656 0.056158634379985438 0.060121639593870735) 0.34033757644104723 
+  GMRES iteration: 1   Residual: 6.4170223075931105e-06 (4.7411139236004125e-06 4.4386967401725491e-07 4.3548717513985066e-07) 3.4144132871060768e-06 
+smoothSolver:  Solving for omega, Initial residual = 7.3826906799650377e-05, Final residual = 3.0237565085024647e-07, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.22339187928489521, Final residual = 0.0012725882699775926, No Iterations 1
+ExecutionTime = 233.25 s  ExecutionStepTime = 94.050000000000011 s  ClockTime = 265 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2294008084132027 Max: 1.25
+Pseudo deltaT: Min: 6.6786289094349597e-11 Mean: 1.3264468060193732e-06 Max: 0.00016362482697630814
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.30939035221202293 (0.19696623565775598 0.043686070581142156 0.045946809366085133) 0.21538046030788918 
+  GMRES iteration: 1   Residual: 9.117431031996763e-05 (7.0210970713710091e-05 7.918839210878269e-06 1.6995004926611821e-05) 0.00011536041767433902 
+smoothSolver:  Solving for omega, Initial residual = 5.3518776052321748e-05, Final residual = 2.8962420184528199e-07, No Iterations 1
+smoothSolver:  Solving for k, Initial residual = 0.11548611303124146, Final residual = 0.00085912637084375131, No Iterations 1
+ExecutionTime = 342.13999999999999 s  ExecutionStepTime = 108.88999999999999 s  ClockTime = 380 s
+
+End
+

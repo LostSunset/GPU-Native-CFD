@@ -1,0 +1,26 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4b-SA-L2/rae2822/gpu1/1.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4b-SA-L2/rae2822/ref/state/1.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="1" test="1"
+nuTilda.solve                  text  ref="initial 0.99999999565586128 final 0.00024797419603232582 iterations 1 bounded 0" test="(none)"
+nuTilda.i                      f64        23552    1           0    0.000e+00    0.000e+00            0  BITWISE
+nuTilda.b                      f64          800    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        23552    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          800    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        23552    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          800    1           0    0.000e+00    0.000e+00            0  BITWISE
+producer                       text  test only: "gncHisaDump"
+time                           text  test only: "1"
+RR                             f64            1    1  test only
+Tstd                           f64            1    1  test only
+U.i                            f64        23552    3  test only
+U.b                            f64          800    3  test only
+rho.i                          f64        23552    1  test only
+rho.b                          f64          800    1  test only
+mu.i                           f64        23552    1  test only
+mu.b                           f64          800    1  test only
+phi.i                          f64        46704    1  test only
+phi.b                          f64          800    1  test only
+rPseudoDeltaT.i                f64        23552    1  test only
+rPseudoDeltaT.b                f64          800    1  test only
+result: ALL BITWISE IDENTICAL

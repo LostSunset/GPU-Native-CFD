@@ -1,0 +1,7 @@
+label=N6c-perf-r8
+started_utc=2026-10-23T17:28:10Z
+host=g02 profile=g02-l40 gpu_device=3
+iters=30 variants=gnc,gncfast,gncamg core=157
+iters_for gnc=10
+uptime= 01:28:10 up 11 days, 16:04,  9 users,  load average: 104.07, 104.10, 104.08
+finished_utc=2026-10-23T17:30:02Z

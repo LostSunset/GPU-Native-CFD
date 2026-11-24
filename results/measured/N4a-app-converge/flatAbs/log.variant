@@ -1,0 +1,15 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         800;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   50;
+writeFormat     binary;
+writePrecision  17;
+functions
+{
+}
+simulationType  laminar;
+laminar=1
+pseudoTol       0.001 ( 0.001 0.001 0.001 ) 0.001;

@@ -1,0 +1,1 @@
+func tanh impl cuda mode wide: 50000000 samples, 4986838 differ from host libm (9.974e-02), max 3 ulp (x = -0.54561749313155183, y = 0)

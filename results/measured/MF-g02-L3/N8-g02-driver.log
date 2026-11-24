@@ -1,0 +1,192 @@
+=== 2026-10-25T08:45:56Z bash scripts/build.sh --host-env configs/hosts/g02-l40.env
+built_utc=2026-10-25T08:46:52Z
+host=g02 profile=g02-l40
+source_dir=/ssd/sclin/gpu-native-cfd/GPU-Native-CFD
+sync_atlas_commit=6c0b7d68265602ec2ec39b750aace8fec08de533
+sync_uncommitted_paths=2
+sync_synced_utc=2026-10-25T08:45:54Z
+source_sha256=1bf4bc6daf538373ee5ce3d15a39c75667f81e22cec9d754db00c7edde099372
+cmake=cmake version 3.28.3
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cuda_archs=89
+gnc_fmad=OFF
+cmake_exit=0 build_exit=0 ref_exit=0
+compiler_warnings=0
+ref_openfoam_bashrc=/opt/atlas-openfoam/current/OpenFOAM-v2606/etc/bashrc
+ref_openfoam_project=/opt/atlas-openfoam/current/OpenFOAM-v2606
+ref_wm_options=linux64GccDPInt32Opt
+ref_wmake_cxx=g++
+ref_wmake_cxxflags=-std=c++17 -m64 -pthread -DOPENFOAM=2606 -DWM_DP -DWM_LABEL_SIZE=32 -Wall -Wextra -Wold-style-cast -Wnon-virtual-dtor -Wno-unused-parameter -Wno-invalid-offsetof -Wno-attributes -Wno-unknown-pragmas -O3 -DNoRepository -ftemplate-depth=1000 -fPIC
+geometry_cu_command=/usr/local/cuda/bin/nvcc -forward-unknown-to-host-compiler  --options-file CMakeFiles/gnc.dir/includes_CUDA.rsp -O3 -DNDEBUG -std=c++17 "--generate-code=arch=compute_89,code=[compute_89,sm_89]" -prec-div=true -prec-sqrt=true --default-stream per-thread --fmad=false -Xcompiler=-ffp-contract=off,-Wall,-Wextra -x cu -c /ssd/sclin/gpu-native-cfd/GPU-Native-CFD/src/mesh/geometry.cu -o CMakeFiles/gnc.dir/src/mesh/geometry.cu.o
+sha256 gncCompare=ec05eeca9d57c24a96c11146e34e6dc4f0e0ec38e346c4900ef8b3458a46a3cd
+sha256 gncFieldDiff=32a43a727c68e4d70a61ba313422d39966458290e23529b6f04c38a7460ef09f
+sha256 gncGeomL0=b4d55aa1eb1fcc75286b0ca997049f9c62d8865a8d9dc8c84e99a35961c683e8
+sha256 gncGeomRef=35cade17a39263e5e74722dd7b7b2b64ec6b355961c4f98555d5549865acb666
+sha256 gncHisa=ec3b4068c26781e1f6fb808bd087e529b3924d4489d30824fbfbb7c8d2aea731
+sha256 gncInitL2=3725b1cac634b5d3892398b4c01679b776a45247fac21f1c5a7798a89b303661
+sha256 gncOpsL1=1d189d49275673d9443a3cde91380f366f5da42ee10891aaba1a1f812d70c3f8
+sha256 gncOpsRef=4974130c92b37eb54078d9fd78a319d8625f420e964f1e5a05278d3efa48285c
+sha256 gncOuterL2=8017ae1003c71300d5ce87d504933ca61cec433ab7ca91c3135f4b9f067f4b87
+sha256 gncPowCheck=34738bffe5ce49cfa1920f62b33177cf00d439293990b29b72470b9419fa138d
+sha256 gncResL2=0178affbe1d3e47a143acf4d71ddca789a52c143a568e69799f6a57b02bf19e0
+sha256 gncRhoSimple=3c25759b18c822cb8319b991ed46a03928ee851d69da6f1b27bd6830c9996c55
+sha256 gncRhoSimpleRef=8c8009b85ea0eaf42fb17dfaaac60183035055461d9eb23e1e1251767ef1fae3
+sha256 gncRunL3=00ab1896f92ac948599ebafee50056643db3011a7724eb3e77c575bdc3310510
+sha256 gncSumBench=72d400c3a9a9bfc7b2ae815ff47fff89da1f5528c1851e5a26edc0c096d9ebcd
+sha256 gncTurbL2=a92c1adc14b68bc4f01194c30c48a7f737ba42b885fae3e051c5a7a2de0a31a3
+sha256 gncWallDistL1=10bdd2a858d774272719c9760772542131702907600efb3ec139273f079b2ebf
+sha256 libgncHisaDump.so=cbb8b732f431cbfc7574825e457fad975253826eef425cec8565522aaee68007
+sha256 libgncHisaJacobianDump.so=2503a15b6dfa53d16627dfd298c37836772a9a93647f300d2f438a4ed83b3e38
+=== exit=0
+=== 2026-10-25T08:46:53Z bash scripts/l3_steady_verify.sh --host-env configs/hosts/g02-l40.env --label MF-g02-L3 --end-default 10 --time-indices 1,2,10 --case modifiedFinnerSST=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation --meshwave modifiedFinnerSST --forces modifiedFinnerSST=forces --case modifiedFinnerLaminar=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation --laminar modifiedFinnerLaminar
+== modifiedFinnerSST (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+== modifiedFinnerLaminar (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=10 timeIndices=1,2,10
+   ref=0 gpu=0/0 end=10/10 bitwise=4/4 gpu1_vs_gpu2=identical
+case                   nCells   endTime  ref  gpu  end_ref  end_gpu  compared  bitwise  gpu1_vs_gpu2
+modifiedFinnerSST      3940188  10       0    0/0  10       10       4         4        identical
+modifiedFinnerLaminar  3940188  10       0    0/0  10       10       4         4        identical
+=== exit=0
+=== 2026-10-25T09:23:59Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-sst --end 5 --np-list 8,32 --case modifiedFinnerSST=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation
+== modifiedFinnerSST (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=5
+case               nCells   run        exit  cpu_s   wall_s  wall_per_step_s  shell_wall_s  loop_per_step_s
+modifiedFinnerSST  -        hisa-np1   0     546.57  547     109.4            550.002       101.393
+modifiedFinnerSST  -        hisa-np8   0     86.16   86      17.2             89.7221       16.1925
+modifiedFinnerSST  -        hisa-np32  0     25.86   26      5.2              30.942        4.495
+modifiedFinnerSST  3940188  gncHisa    0     -       26.306  5.2612           26.306        2.78939
+-- /ssd/sclin/gpu-native-cfd/runs/MF-g02-sst/modifiedFinnerSST/profile.txt
+profile: 5 outer iterations, mean wall time per iteration 2.78939 s
+  flux 0.0342646  residual 0.0351692  pseudoTime 0.00155712  jacobian 0.0296988  gmres 2.51089  update 0.00819096  turbulence 0.169615
+=== exit=0
+=== 2026-10-25T09:37:14Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-gncfast-sst --end 5 --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case modifiedFinnerSST=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation
+== modifiedFinnerSST (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=5
+case               nCells   variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+modifiedFinnerSST  3940188  fast     0     26.6404  5.32808          5                 0.227788       0.590761
+=== exit=0
+=== 2026-10-25T09:37:50Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-lam --end 5 --np-list 8,32 --case modifiedFinnerLaminar=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation --laminar modifiedFinnerLaminar
+== modifiedFinnerLaminar (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=5
+case                   nCells   run        exit  cpu_s   wall_s   wall_per_step_s  shell_wall_s  loop_per_step_s
+modifiedFinnerLaminar  -        hisa-np1   0     498.92  499      99.8             503.133       95.6025
+modifiedFinnerLaminar  -        hisa-np8   0     82.2    82       16.4             85.3978       15.45
+modifiedFinnerLaminar  -        hisa-np32  0     24.58   25       5                30.0573       4.705
+modifiedFinnerLaminar  3940188  gncHisa    0     -       18.2812  3.65624          18.2812       2.61994
+-- /ssd/sclin/gpu-native-cfd/runs/MF-g02-lam/modifiedFinnerLaminar/profile.txt
+profile: 5 outer iterations, mean wall time per iteration 2.61994 s
+  flux 0.0347567  residual 0.0350678  pseudoTime 0.00157061  jacobian 0.0296917  gmres 2.51062  update 0.00823018  turbulence 8.4e-07
+=== exit=0
+=== 2026-10-25T09:50:03Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-gncfast-lam --end 5 --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case modifiedFinnerLaminar=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation --laminar modifiedFinnerLaminar
+== modifiedFinnerLaminar (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=5
+case                   nCells   variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+modifiedFinnerLaminar  3940188  fast     0     15.3557  3.07114          5                 0.242027       0.493343
+=== exit=0
+=== 2026-10-25T09:50:28Z env HYBRID_PREFIX=MF-g02-hyb HYBRID_SRC=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation HYBRID_NAME=modifiedFinnerSSTHybrid HYBRID_TAG=sst HYBRID_END=5 bash scripts/hybrid_onera_g02.sh
+solver          GMRESGPU;
+GMRESGPU
+{
+    inviscidJacobian LaxFriedrichs;
+    viscousJacobian laplacian;
+    preconditioner  LUSGS;
+    maxIter         20;
+    nKrylov         8;
+    solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
+}
+inviscidJacobian LaxFriedrichsGPU;
+viscousJacobian laplacianGPU;
+preconditioner  MCBSGS;
+matrixPrecision double;
+packing         gpu;
+device          0;
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forces
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forcesNormAxial
+libs            ( "libhisaGpuSolver.so" );
+=== 2026-10-25T09:50:35Z env CUDA_VISIBLE_DEVICES=3 bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-hyb-sst --end 5 --no-gnc --case modifiedFinnerSSTHybrid=/ssd/sclin/gpu-native-cfd/cases/modifiedFinnerSSTHybrid-MCBSGS-jgpu/simulation
+== modifiedFinnerSSTHybrid (/ssd/sclin/gpu-native-cfd/cases/modifiedFinnerSSTHybrid-MCBSGS-jgpu/simulation) endTime=5
+case                     nCells  run       exit  cpu_s   wall_s  wall_per_step_s  shell_wall_s  loop_per_step_s
+modifiedFinnerSSTHybrid  -       hisa-np1  0     202.89  203     40.6             205.611       33.5225
+=== exit=0
+=== done 2026-10-25T09:54:06Z
+=== exit=0
+=== 2026-10-25T09:54:06Z env SPUMA_PREFIX=MF-g02-spuma-sst SPUMA_NAME=modifiedFinnerSST SPUMA_SRC=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation bash scripts/spuma_sst_g02.sh
+=== 2026-10-25T09:54:06Z bash /ssd/sclin/gpu-platform/scripts/p1_runs.sh /ssd/sclin/gpu-native-cfd/runs/MF-g02-spuma-sst/modifiedFinnerSST /home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation 3 16
+ref (v2606 CPU) exit 0 	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:01.49  	Maximum resident set size (kbytes): 16916712
+spgpu (SPUMA GPU3) exit 0 	Elapsed (wall clock) time (h:mm:ss or m:ss): 6:25.43  	Maximum resident set size (kbytes): 8632508  nvidia-smi: 250859, .venv/bin/python, 15406 MiB 239423, .venv/bin/python, 12512 MiB 239424, .venv/bin/python, 13524 MiB 458737, /home/sclin/OpenFOAM/sclin-v2512/platforms/linux64NvidiaDPInt32Opt/bin/hisa, 504 MiB 
+== ref: ExecutionTime per step
+  step 1 (incl. setup): 133.03
+  step 2: 106.67 s
+  step 3: 118.44 s
+6
+== spgpu: ExecutionTime per step
+  step 1 (incl. setup): 139.19999999999999
+  step 2: 94.05 s
+  step 3: 108.89 s
+6
+== GMRES lines: first difference
+2,3c2,3
+<   GMRES iteration: 0   Residual: 0.99999999766516112 (0.99976670407870671 0.0013085981626749597 0.017647513610938737) 0.99999999747779045 
+<   GMRES iteration: 1   Residual: 4.1801061947056156e-05 (2.9538984493074785e-05 5.4022186077434349e-06 5.5632377120176979e-06) 4.9603025455917382e-05 
+---
+>   GMRES iteration: 0   Residual: 0.99999999999962519 (0.99972140978281443 0.0013260562881330707 0.017882950907102135) 0.99999999999987899 
+>   GMRES iteration: 1   Residual: 4.1858158074758244e-05 (2.9824603736858071e-05 5.5329314497962136e-06 5.6757284325214254e-06) 5.0753103015849391e-05 
+5,6c5,6
+<   GMRES iteration: 0   Residual: 0.5118017149725208 (0.31434204255560699 0.055928358067284245 0.059857754081182192) 0.34266505609009118 
+<   GMRES iteration: 1   Residual: 2.6532650431760779e-08 (1.6056707603635736e-08 3.9670863412259284e-09 3.5361709527627333e-09) 1.6798779817992985e-08 
+---
+>   GMRES iteration: 0   Residual: 0.51227604794897452 (0.31404109300234656 0.056158634379985438 0.060121639593870735) 0.34033757644104723 
+>   GMRES iteration: 1   Residual: 6.4170223075931105e-06 (4.7411139236004125e-06 4.4386967401725491e-07 4.3548717513985066e-07) 3.4144132871060768e-06 
+fields at the latest common time 3 (ref latest 3.0, cmp latest 3.0)
+  T            n=3940188 max|d| 3.325e+01  max|d|/max|a| 9.799e-02  rms(d)/rms(a) 4.306e-04  identical False
+  U            n=3940188 max|d| 1.957e+02  max|d|/max|a| 1.462e-01  rms(d)/rms(a) 9.079e-04  identical False
+  alphat       n=3940188 max|d| 3.972e-01  max|d|/max|a| 2.840e+02  rms(d)/rms(a) 3.644e-01  identical False
+  k            n=3940188 max|d| 3.000e+02  max|d|/max|a| 2.034e-01  rms(d)/rms(a) 1.362e-02  identical False
+  nut          n=3940188 max|d| 3.271e-01  max|d|/max|a| 2.816e+02  rms(d)/rms(a) 3.612e-01  identical False
+  omega        n=3940188 max|d| 5.478e+09  max|d|/max|a| 8.229e-04  rms(d)/rms(a) 2.106e-03  identical False
+  p            n=3940188 max|d| 1.124e+04  max|d|/max|a| 8.277e-02  rms(d)/rms(a) 4.743e-04  identical False
+  pseudoCoField n=3940188 max|d| 9.375e-01  max|d|/max|a| 7.500e-01  rms(d)/rms(a) 7.148e-03  identical False
+  rho          n=3940188 max|d| 3.920e-02  max|d|/max|a| 2.812e-02  rms(d)/rms(a) 1.349e-04  identical False
+smoothSolver:  Solving for k, Initial residual = 0.11548611303124146, Final residual = 0.00085912637084375131, No Iterations 1
+ExecutionTime = 342.13999999999999 s  ExecutionStepTime = 108.88999999999999 s  ClockTime = 380 s
+
+End
+
+=== exit=0
+=== done 2026-10-25T10:07:44Z
+=== exit=0
+=== 2026-10-25T10:07:44Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-conv --end 1000 --variant ref= --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case modifiedFinnerSST=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation --forces modifiedFinnerSST=forces
+== modifiedFinnerSST (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=1000
+case               nCells   variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+modifiedFinnerSST  3940188  ref      0     2812.46  2.81246          1000              0.00125495     2.78119
+modifiedFinnerSST  3940188  fast     0     877.534  0.877534         1703              0.00126553     0.845595
+-- /ssd/sclin/gpu-native-cfd/runs/MF-g02-conv/modifiedFinnerSST/fielddiff.ref-fast.txt
+A=/ssd/sclin/gpu-native-cfd/runs/MF-g02-conv/modifiedFinnerSST/ref/1000
+B=/ssd/sclin/gpu-native-cfd/runs/MF-g02-conv/modifiedFinnerSST/fast/1000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p             3940188           9.402541e+03           1.269043e-02           6.494284e-04
+T             3940188           5.135466e+01           3.765078e-02           3.498038e-03
+U            11820564           9.427126e+01           9.811560e-02           8.165192e-04
+rho           3940188           8.432870e-02           2.134049e-02           1.147992e-03
+k             3940188           6.652648e+02           1.789314e-02           4.176998e-03
+omega         3940188           1.973402e+11           5.839683e-03           5.233330e-03
+nut           3940188           5.053054e-03           3.727190e-02           3.983459e-03
+alphat        3940188           6.431057e-03           8.050542e-02           5.839415e-03
+-- /ssd/sclin/gpu-native-cfd/runs/MF-g02-conv/modifiedFinnerSST/coeffs.txt
+variant	quantity	steps	final	tail_mean	tail_std	final-ref	tail_mean-ref
+ref	Fx	1000	-104.2822046	-104.2253398	0.0809	0	0
+ref	Fy	1000	-0.06583182156	-0.06836049005	0.00203	0	0
+ref	Fz	1000	-33.43326411	-33.42646656	0.00695	0	0
+fast	Fx	1000	-104.2814976	-104.1919567	0.0535	0.000707	0.0334
+fast	Fy	1000	-0.05006733775	-0.04832182254	0.00174	0.0158	0.02
+fast	Fz	1000	-33.43882512	-33.4255629	0.00888	-0.00556	0.000904
+=== exit=0
+=== 2026-10-25T11:10:20Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label MF-g02-hisa32 --end 1000 --np-list 32 --no-serial --no-gnc --case modifiedFinnerSST=/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation --forces modifiedFinnerSST=forces
+== modifiedFinnerSST (/home/sclin/hisa-gpu-research-cases/modifiedFinner-seq8/simulation) endTime=1000
+case               nCells  run        exit  cpu_s    wall_s  wall_per_step_s  shell_wall_s  loop_per_step_s
+modifiedFinnerSST  -       hisa-np32  0     4528.61  4534    4.534            4539.3        4.52671
+=== exit=0
+=== done 2026-10-25T12:27:00Z

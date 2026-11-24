@@ -1,0 +1,31 @@
+solver          GMRESGPU;
+GMRESGPU
+{
+    inviscidJacobian LaxFriedrichs;
+    viscousJacobian laplacian;
+    preconditioner  LUSGS;
+    maxIter         20;
+    nKrylov         8;
+    solverTolRel    0.1 ( 0.1 0.1 0.1 ) 0.1;
+}
+inviscidJacobian LaxFriedrichsGPU;
+viscousJacobian laplacianGPU;
+preconditioner  MCBSGS;
+matrixPrecision double;
+packing         gpu;
+device          0;
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forces
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forcesNormAxial
+libs            ( "libhisaGpuSolver.so" );
+=== 2026-10-23T07:09:24Z env CUDA_VISIBLE_DEVICES=3 bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label HYB-g02-finner --end 5 --no-gnc --case basicFinnerLaminarHybrid=/ssd/sclin/gpu-native-cfd/cases/basicFinnerLaminarHybrid-MCBSGS-jgpu/simulation
+== basicFinnerLaminarHybrid (/ssd/sclin/gpu-native-cfd/cases/basicFinnerLaminarHybrid-MCBSGS-jgpu/simulation) endTime=5
+case                      nCells  run       exit  cpu_s  wall_s  wall_per_step_s  shell_wall_s  loop_per_step_s
+basicFinnerLaminarHybrid  -       hisa-np1  0     68.86  69      13.8             70.3344       11.78
+=== exit=0
+=== done 2026-10-23T07:10:40Z

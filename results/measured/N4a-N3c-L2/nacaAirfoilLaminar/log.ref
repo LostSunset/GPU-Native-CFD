@@ -1,0 +1,86 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 00:45:36
+Host   : g02
+PID    : 1228578
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0.01 (0.01 0.01 0.01) 0.01 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 2.01512e-08 Mean: 1.96395e-05 Max: 0.000692452
+gncLUSGSDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/1.jacobian.gnc"
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.97078 0.239814 1.66038e-14) 1 
+gncLUSGSDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/1.precondition.gnc"
+  GMRES iteration: 1   Residual: 8.51946e-08 (7.97637e-08 3.97183e-08 0) 7.67758e-08 
+gncLUSGSDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/1.solve.gnc"
+ExecutionTime = 0.35 s  ExecutionStepTime = 0.29 s  ClockTime = 0 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/state/1.gnc"
+End
+

@@ -1,0 +1,19 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         200;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L3/rae2822SA/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda k omega nut alphat );
+        timeIndices     ( 1 2 10 50 100 200 );
+        atEnd           true;
+    }
+}

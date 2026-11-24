@@ -1,0 +1,35 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/MUT-tanh/aerofoilNACA0012/ref/dump/10.turb.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/MUT-tanh/aerofoilNACA0012/gpu1/dump/10.turb.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="10" test="10"
+p.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+p.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+U.i                            f64        16000    3           0    0.000e+00    0.000e+00            0  BITWISE
+U.b                            f64          480    3           0    0.000e+00    0.000e+00            0  BITWISE
+e.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+e.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+h.missing                      text  ref="h" test="h"
+thermo:psi.i                   f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:psi.b                   f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:alpha.i                 f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:alpha.b                 f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.i                    f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.b                    f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.i                          f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64        31760    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64        16000    1          80    2.842e-14    4.023e-16            3  DIFF
+    first at value 904 (tuple 904 comp 0): ref 17.46627275594177 test 17.466272755941766
+omega.b                        f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        16000    1          34    1.626e-19    7.035e-16            5  DIFF
+    first at value 1387 (tuple 1387 comp 0): ref 6.2311407488267969e-06 test 6.2311407488267977e-06
+nut.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        16000    1          33    2.168e-19    7.276e-16            6  DIFF
+    first at value 1387 (tuple 1387 comp 0): ref 7.4495768076835556e-06 test 7.4495768076835565e-06
+alphat.b                       f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+result: DIFFERENCES

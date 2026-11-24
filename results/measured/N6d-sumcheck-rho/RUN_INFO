@@ -1,0 +1,5 @@
+solver=gncRhoSimple end=20
+bin_a=/ssd/sclin/gpu-native-cfd/build/bin sha256=3c25759b18c822cb8319b991ed46a03928ee851d69da6f1b27bd6830c9996c55
+bin_b=/ssd/sclin/gpu-native-cfd/build/bin sha256=3c25759b18c822cb8319b991ed46a03928ee851d69da6f1b27bd6830c9996c55
+bin_a_source_sha256=1bf4bc6daf538373ee5ce3d15a39c75667f81e22cec9d754db00c7edde099372
+bin_b_source_sha256=1bf4bc6daf538373ee5ce3d15a39c75667f81e22cec9d754db00c7edde099372

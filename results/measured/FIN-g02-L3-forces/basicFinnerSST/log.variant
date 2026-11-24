@@ -1,0 +1,37 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         10;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+method          meshWave;
+meshwave=1
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            ( "libforces.so" );
+        patches         ( body fin1 fin2 );
+        rho             rho;
+        log             off;
+        writeControl    timeStep;
+        writeInterval   10;
+        CofR            ( -0.165 0 0 );
+    }
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/FIN-g02-L3-forces/basicFinnerSST/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda k omega nut alphat force moment );
+        timeIndices     ( 1 2 10 );
+        atEnd           true;
+        forceObjects    ( forces );
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+log             off;
+forces=forces

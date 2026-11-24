@@ -1,0 +1,40 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-L1/basicFinner/ref.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-L1/basicFinner/gpu1.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncOpsRef" test="gncOpsL1"
+s.i                            f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+s.b                            f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+v.i                            f64      2179881    3           0    0.000e+00    0.000e+00            0  BITWISE
+v.b                            f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+gamma.i                        f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+gamma.b                        f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64      6347350    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+snGradBC.s                     f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+snGradBC.v                     f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+interp.s.i                     f64      6347350    1           0    0.000e+00    0.000e+00            0  BITWISE
+interp.s.b                     f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+interp.v.i                     f64      6347350    3           0    0.000e+00    0.000e+00            0  BITWISE
+interp.v.b                     f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+div.phi                        f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+div.phiv                       f64      2179881    3           0    0.000e+00    0.000e+00            0  BITWISE
+gaussGrad.s.i                  f64      2179881    3           0    0.000e+00    0.000e+00            0  BITWISE
+gaussGrad.s.b                  f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+gaussGrad.v.i                  f64      2179881    9           0    0.000e+00    0.000e+00            0  BITWISE
+gaussGrad.v.b                  f64        41029    9           0    0.000e+00    0.000e+00            0  BITWISE
+ls.P.i                         f64      6347350    3           0    0.000e+00    0.000e+00            0  BITWISE
+ls.P.b                         f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+ls.N.i                         f64      6347350    3           0    0.000e+00    0.000e+00            0  BITWISE
+lsGrad.s.i                     f64      2179881    3           0    0.000e+00    0.000e+00            0  BITWISE
+lsGrad.s.b                     f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+lsGrad.v.i                     f64      2179881    9           0    0.000e+00    0.000e+00            0  BITWISE
+lsGrad.v.b                     f64        41029    9           0    0.000e+00    0.000e+00            0  BITWISE
+snGradCompact.s.i              f64      6347350    1           0    0.000e+00    0.000e+00            0  BITWISE
+snGradCompact.s.b              f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+snGradCompact.v.i              f64      6347350    3           0    0.000e+00    0.000e+00            0  BITWISE
+snGradCompact.v.b              f64        41029    3           0    0.000e+00    0.000e+00            0  BITWISE
+laplacian.s                    f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+laplacian.v                    f64      2179881    3           0    0.000e+00    0.000e+00            0  BITWISE
+div.lsGradV                    f64      2179881    3           0    0.000e+00    0.000e+00            0  BITWISE
+device                         text  test only: "NVIDIA L40 0000:C3:00.0"
+result: ALL BITWISE IDENTICAL

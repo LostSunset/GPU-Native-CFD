@@ -1,0 +1,1 @@
+func log impl cuda mode wide: 50000000 samples, 858 differ from host libm (1.716e-05), max 1 ulp (x = 1.4583255916908255, y = 0)

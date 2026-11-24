@@ -1,0 +1,217 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 21:45:25
+Host   : g02
+PID    : 3446121
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/rae2822/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-08 (1e-08 1e-08 1e-08) 1e-08 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model SpalartAllmaras
+Selecting patchDistMethod meshWave
+ft2 term: inactive
+RAS
+{
+    RASModel        SpalartAllmaras;
+    turbulence      on;
+    printCoeffs     on;
+    sigmaNut        0.66666;
+    kappa           0.41;
+    Cb1             0.1355;
+    Cb2             0.622;
+    Cw2             0.3;
+    Cw3             2;
+    Cv1             7.1;
+    Cs              0.3;
+    ck              0.07;
+    ft2             false;
+    Ct3             1.2;
+    Ct4             0.5;
+}
+
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 5.46109e-09 Mean: 1.80371e-05 Max: 0.00240738
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.998056 3.30614e-12 0.0421262) 1 
+  GMRES iteration: 1   Residual: 1.44961e-07 (2.16242e-07 0 1.2722e-07) 1.2865e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 1, Final residual = 0.000247974, No Iterations 1
+ExecutionTime = 0.38 s  ExecutionStepTime = 0.26 s  ClockTime = 1 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/rae2822/ref/state/1.gnc"
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.995807 Max: 1
+Pseudo deltaT: Min: 2.54302e-09 Mean: 1.72054e-05 Max: 0.00223942
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.496519 (0.242744 1.10834e-12 0.340042) 0.467546 
+  GMRES iteration: 1   Residual: 3.03354e-08 (2.90448e-08 0 1.68133e-08) 2.39786e-08 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00763612, Final residual = 1.64329e-06, No Iterations 1
+ExecutionTime = 0.53 s  ExecutionStepTime = 0.15 s  ClockTime = 1 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/rae2822/ref/state/2.gnc"
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.2
+Damped pseudo Courant No: Min: 0.3 Mean: 1.19837 Max: 1.2
+Pseudo deltaT: Min: 1.57417e-09 Mean: 2.16221e-05 Max: 0.00283571
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.368419 (0.187916 8.02079e-13 0.317661) 0.340386 
+  GMRES iteration: 1   Residual: 6.60213e-08 (5.77548e-08 0 5.41616e-08) 5.88696e-08 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00418728, Final residual = 1.27689e-06, No Iterations 1
+ExecutionTime = 0.68 s  ExecutionStepTime = 0.15 s  ClockTime = 1 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/rae2822/ref/state/3.gnc"
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.44
+Damped pseudo Courant No: Min: 0.18 Mean: 1.43778 Max: 1.44
+Pseudo deltaT: Min: 9.6183e-10 Mean: 2.59619e-05 Max: 0.00340818
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.271123 (0.150555 5.6381e-13 0.252979) 0.25142 
+  GMRES iteration: 1   Residual: 1.06445e-07 (1.05498e-07 0 9.99189e-08) 9.475e-08 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00269456, Final residual = 1.07237e-06, No Iterations 1
+ExecutionTime = 0.83 s  ExecutionStepTime = 0.15 s  ClockTime = 1 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.728
+Damped pseudo Courant No: Min: 0.12 Mean: 1.72592 Max: 1.728
+Pseudo deltaT: Min: 6.74769e-10 Mean: 3.1171e-05 Max: 0.00408626
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.221225 (0.146436 4.52882e-13 0.21308) 0.208183 
+  GMRES iteration: 1   Residual: 2.21498e-07 (1.75231e-07 0 2.01327e-07) 1.97948e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00193856, Final residual = 1.00279e-06, No Iterations 1
+ExecutionTime = 0.97 s  ExecutionStepTime = 0.14 s  ClockTime = 1 s
+
+Time = 6
+
+pseudoTime: iteration 6
+Pseudo Courant No: 2.0736
+Damped pseudo Courant No: Min: 0.1458 Mean: 2.07038 Max: 2.0736
+Pseudo deltaT: Min: 8.20955e-10 Mean: 3.74197e-05 Max: 0.00492945
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.19055 (0.134546 3.31295e-13 0.173482) 0.180828 
+  GMRES iteration: 1   Residual: 1.57102e-07 (1.18197e-07 0 1.24259e-07) 1.45862e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00124851, Final residual = 9.56636e-07, No Iterations 1
+ExecutionTime = 1.11 s  ExecutionStepTime = 0.14 s  ClockTime = 1 s
+
+Time = 7
+
+pseudoTime: iteration 7
+Pseudo Courant No: 2.48832
+Damped pseudo Courant No: Min: 0.13122 Mean: 2.48487 Max: 2.48832
+Pseudo deltaT: Min: 7.50215e-10 Mean: 4.49138e-05 Max: 0.00595923
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.162021 (0.120335 2.38699e-13 0.147008) 0.154788 
+  GMRES iteration: 1   Residual: 1.98357e-07 (1.76736e-07 0 2.21061e-07) 1.86094e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.00101566, Final residual = 1.00966e-06, No Iterations 1
+ExecutionTime = 1.25 s  ExecutionStepTime = 0.14 s  ClockTime = 2 s
+
+Time = 8
+
+pseudoTime: iteration 8
+Pseudo Courant No: 2.98598
+Damped pseudo Courant No: Min: 0.12 Mean: 2.97927 Max: 2.98598
+Pseudo deltaT: Min: 6.94744e-10 Mean: 5.39017e-05 Max: 0.00717457
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.134852 (0.101422 1.56645e-13 0.122281) 0.129983 
+  GMRES iteration: 1   Residual: 2.27117e-07 (2.22251e-07 0 3.23124e-07) 2.22039e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.000932775, Final residual = 1.11091e-06, No Iterations 1
+ExecutionTime = 1.4 s  ExecutionStepTime = 0.15 s  ClockTime = 2 s
+
+Time = 9
+
+pseudoTime: iteration 9
+Pseudo Courant No: 3.58318
+Damped pseudo Courant No: Min: 0.12 Mean: 3.57371 Max: 3.58318
+Pseudo deltaT: Min: 7.01823e-10 Mean: 6.4683e-05 Max: 0.0086178
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.11581 (0.0887187 9.31368e-14 0.0998763) 0.112217 
+  GMRES iteration: 1   Residual: 3.18221e-07 (2.29204e-07 0 5.16793e-07) 3.19708e-07 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.000856654, Final residual = 1.22772e-06, No Iterations 1
+ExecutionTime = 1.53 s  ExecutionStepTime = 0.13 s  ClockTime = 2 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/rae2822/ref/state/9.gnc"
+Time = 10
+
+pseudoTime: iteration 10
+Pseudo Courant No: 4.29982
+Damped pseudo Courant No: Min: 0.223949 Mean: 4.28456 Max: 4.29982
+Pseudo deltaT: Min: 1.45258e-09 Mean: 7.7618e-05 Max: 0.010343
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.101312 (0.0812523 6.13315e-14 0.0850605) 0.0998194 
+  GMRES iteration: 1   Residual: 1.37113e-06 (1.44424e-06 0 1.87312e-06) 1.41479e-06 
+smoothSolver:  Solving for nuTilda, Initial residual = 0.000786264, Final residual = 1.34385e-06, No Iterations 1
+ExecutionTime = 1.68 s  ExecutionStepTime = 0.15 s  ClockTime = 2 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N6-reg-SA-L2/rae2822/ref/state/10.gnc"
+End
+

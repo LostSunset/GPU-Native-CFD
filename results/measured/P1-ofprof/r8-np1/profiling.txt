@@ -1,0 +1,255 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "10/uniform";
+    object      profiling;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+profiling
+{
+    trigger0
+    {
+        id              0;
+        description     "application::main";
+        calls           1;
+        totalTime       183.23218678500001;
+        childTime       177.92915004900004;
+        active          true;
+    }
+
+    trigger3
+    {
+        id              3;
+        parentId        0;
+        description     "time.run() r8-np1";
+        calls           10;
+        totalTime       177.92900252700002;
+        childTime       157.55212155899994;
+        active          true;
+    }
+
+    trigger1
+    {
+        id              1;
+        parentId        0;
+        description     "functionObjects.start()";
+        calls           1;
+        totalTime       0.00012945099999999999;
+        childTime       2.7251e-05;
+        active          false;
+    }
+
+    trigger2
+    {
+        id              2;
+        parentId        1;
+        description     "functionObjects::read";
+        calls           1;
+        totalTime       2.7251e-05;
+        childTime       0;
+        active          false;
+    }
+
+    trigger4
+    {
+        id              4;
+        parentId        3;
+        description     "fvMatrix::solve.U";
+        calls           10;
+        totalTime       1.0812802559999999;
+        childTime       0.95584691600000005;
+        active          false;
+    }
+
+    trigger5
+    {
+        id              5;
+        parentId        4;
+        description     "lduMatrix::solver.Ux";
+        calls           10;
+        totalTime       0.49845541900000001;
+        childTime       0;
+        active          false;
+    }
+
+    trigger6
+    {
+        id              6;
+        parentId        4;
+        description     "lduMatrix::solver.Uz";
+        calls           10;
+        totalTime       0.45739149699999998;
+        childTime       0;
+        active          false;
+    }
+
+    trigger7
+    {
+        id              7;
+        parentId        3;
+        description     "fvOption().limitT";
+        calls           10;
+        totalTime       2.6510000000000002e-05;
+        childTime       0;
+        active          false;
+    }
+
+    trigger8
+    {
+        id              8;
+        parentId        3;
+        description     "fvOption::constrain.e";
+        calls           10;
+        totalTime       3.3751999999999998e-05;
+        childTime       0;
+        active          false;
+    }
+
+    trigger9
+    {
+        id              9;
+        parentId        3;
+        description     "fvMatrix::solve.e";
+        calls           10;
+        totalTime       0.529408612;
+        childTime       0.51398239200000007;
+        active          false;
+    }
+
+    trigger10
+    {
+        id              10;
+        parentId        9;
+        description     "lduMatrix::solver.e";
+        calls           10;
+        totalTime       0.51398239200000007;
+        childTime       0;
+        active          false;
+    }
+
+    trigger11
+    {
+        id              11;
+        parentId        3;
+        description     "fvOption::correct.limitT";
+        calls           10;
+        totalTime       0.059220235000000003;
+        childTime       0;
+        active          false;
+    }
+
+    trigger12
+    {
+        id              12;
+        parentId        3;
+        description     "fvMatrix::solve.p";
+        calls           10;
+        totalTime       154.87717093799998;
+        childTime       154.85551073400001;
+        active          false;
+    }
+
+    trigger13
+    {
+        id              13;
+        parentId        12;
+        description     "lduMatrix::solver.p";
+        calls           10;
+        totalTime       154.85551073400001;
+        childTime       154.68457414899999;
+        active          false;
+    }
+
+    trigger14
+    {
+        id              14;
+        parentId        13;
+        description     "lduMatrix::solver.coarsestLevelCorr";
+        calls           10;
+        totalTime       154.68457414899999;
+        childTime       0;
+        active          false;
+    }
+
+    trigger15
+    {
+        id              15;
+        parentId        3;
+        description     "fvMatrix::solve.omega";
+        calls           10;
+        totalTime       0.53501999;
+        childTime       0.509927723;
+        active          false;
+    }
+
+    trigger16
+    {
+        id              16;
+        parentId        15;
+        description     "lduMatrix::solver.omega";
+        calls           10;
+        totalTime       0.509927723;
+        childTime       0;
+        active          false;
+    }
+
+    trigger17
+    {
+        id              17;
+        parentId        3;
+        description     "fvMatrix::solve.k";
+        calls           10;
+        totalTime       0.46949557999999997;
+        childTime       0.45220336;
+        active          false;
+    }
+
+    trigger18
+    {
+        id              18;
+        parentId        17;
+        description     "lduMatrix::solver.k";
+        calls           10;
+        totalTime       0.45220336;
+        childTime       0;
+        active          false;
+    }
+
+    trigger19
+    {
+        id              19;
+        parentId        0;
+        description     "functionObjects.execute()";
+        calls           9;
+        totalTime       1.8071e-05;
+        childTime       0;
+        active          false;
+    }
+
+    trigger20
+    {
+        id              20;
+        parentId        3;
+        description     "objectRegistry::writeObject";
+        calls           1;
+        totalTime       0.00046568599999999999;
+        childTime       0;
+        active          false;
+    }
+}
+
+host            "g02";
+
+
+// ************************************************************************* //

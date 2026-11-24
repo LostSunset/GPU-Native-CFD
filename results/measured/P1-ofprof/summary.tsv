@@ -1,0 +1,5 @@
+run	iterations	s per iteration	solve s per iteration...
+r1-np1	50	0.0435	U=0.0013	e=0.0007	k=0.0008	omega=0.0007	p=0.0204	all solves=0.0238
+r1-np32	50	0.0359	U=0.0004	e=0.0002	k=0.0002	omega=0.0002	p=0.0327	all solves=0.0337
+r8-np1	10	17.2911	U=0.1081	e=0.0529	k=0.0469	omega=0.0535	p=15.4877	all solves=15.7492
+r8-np32	10	1.1256	U=0.0045	e=0.0020	k=0.0027	omega=0.0029	p=1.0648	all solves=1.0769

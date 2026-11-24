@@ -1,0 +1,9 @@
+label=CPU2-g02-onera
+started_utc=2026-10-23T06:05:37Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+cpu=AMD EPYC 9684X 96-Core Processor nproc=192
+uptime_before= 14:05:37 up 11 days,  4:41,  9 users,  load average: 107.63, 104.85, 103.81
+endTime=20 np_list=8,32 mpirun_opts=--bind-to none decomp=metis
+uptime_after= 14:07:46 up 11 days,  4:43,  9 users,  load average: 108.00, 105.59, 104.20
+finished_utc=2026-10-23T06:07:46Z

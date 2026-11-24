@@ -1,0 +1,60 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+mesh: 294912 cells; analysis: RAS SpalartAllmaras; endTime 10
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 0.1
+  GMRES iterations: 1   initial residual: 1 (0.998472 0.0535785 0.000180329) 1
+ExecutionTime = 0.851382 s
+
+Time = 2
+Pseudo Courant No: 0.1
+  GMRES iterations: 1   initial residual: 0.49427 (0.237973 0.299319 0.163837) 0.494665
+ExecutionTime = 1.05972 s
+
+Time = 3
+Pseudo Courant No: 0.12
+  GMRES iterations: 1   initial residual: 0.365506 (0.194002 0.259553 0.142925) 0.36581
+ExecutionTime = 1.26853 s
+
+Time = 4
+Pseudo Courant No: 0.144
+  GMRES iterations: 1   initial residual: 0.2995 (0.16011 0.217287 0.119998) 0.299716
+ExecutionTime = 1.47687 s
+
+Time = 5
+Pseudo Courant No: 0.1728
+  GMRES iterations: 1   initial residual: 0.259916 (0.139262 0.18931 0.104692) 0.260009
+ExecutionTime = 1.68521 s
+
+Time = 6
+Pseudo Courant No: 0.20736
+  GMRES iterations: 1   initial residual: 0.225603 (0.123098 0.167431 0.0926793) 0.225504
+ExecutionTime = 1.89349 s
+
+Time = 7
+Pseudo Courant No: 0.248832
+  GMRES iterations: 1   initial residual: 0.1956 (0.108269 0.14837 0.0817202) 0.195315
+ExecutionTime = 2.10394 s
+
+Time = 8
+Pseudo Courant No: 0.298598
+  GMRES iterations: 1   initial residual: 0.188178 (0.102585 0.14269 0.0778094) 0.187759
+ExecutionTime = 2.3123 s
+
+Time = 9
+Pseudo Courant No: 0.358318
+  GMRES iterations: 1   initial residual: 0.158684 (0.0871594 0.123567 0.0667561) 0.158139
+ExecutionTime = 2.52058 s
+
+Time = 10
+Pseudo Courant No: 0.429982
+  GMRES iterations: 1   initial residual: 0.167706 (0.0878437 0.128577 0.0683663) 0.167036
+ExecutionTime = 2.73005 s
+
+profile: 10 outer iterations, mean wall time per iteration 0.209342 s
+  flux 0.00241305  residual 0.00209945  pseudoTime 9.56389e-05  jacobian 0.00245851  gmres 0.195198  update 0.000938896  turbulence 0.0061382
+  gmres parts per iteration (GNC_PROFILE_GMRES=1): precondition 0 s (90 calls)  matrixMul 0 s (100)  reductions 0 s (200 batches)
+End

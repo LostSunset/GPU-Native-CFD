@@ -1,0 +1,32 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N6-L3/aerofoilNACA0012/ref/dump/0.init.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N6-L3/aerofoilNACA0012/gpu1/dump/0.init.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="0" test="0"
+p.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+p.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+T.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+U.i                            f64        16000    3           0    0.000e+00    0.000e+00            0  BITWISE
+U.b                            f64          480    3           0    0.000e+00    0.000e+00            0  BITWISE
+e.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+e.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+h.missing                      text  ref="h" test="h"
+thermo:psi.i                   f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:psi.b                   f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:alpha.i                 f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:alpha.b                 f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.i                    f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+thermo:mu.b                    f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.i                          f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+rho.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64        31760    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.i                            f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.b                        f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64        16000    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64          480    1           0    0.000e+00    0.000e+00            0  BITWISE
+result: ALL BITWISE IDENTICAL

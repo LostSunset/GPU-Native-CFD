@@ -1,0 +1,63 @@
+gncHisa (GPU-Native-CFD; algorithm after HiSA, not an official HiSA build)
+device: NVIDIA L40 (sm_89)
+multicolor ordering (GNC_LUSGS=color GNC_SGS=color): 2 colors; levels 175/175
+mesh: 294912 cells; analysis: RAS SpalartAllmaras; endTime 10
+
+Starting pseudotime iteration loop
+
+Time = 1
+Pseudo Courant No: 0.1
+  GMRES iterations: 1   initial residual: 1 (0.998472 0.0535785 0.000180329) 1
+ExecutionTime = 0.634194 s
+
+Time = 2
+Pseudo Courant No: 0.1
+  GMRES iterations: 1   initial residual: 0.49427 (0.237973 0.299319 0.163837) 0.494665
+ExecutionTime = 0.656634 s
+
+Time = 3
+Pseudo Courant No: 0.12
+  GMRES iterations: 1   initial residual: 0.365506 (0.194002 0.259553 0.142925) 0.36581
+ExecutionTime = 0.679026 s
+
+Time = 4
+Pseudo Courant No: 0.144
+  GMRES iterations: 1   initial residual: 0.2995 (0.16011 0.217287 0.119998) 0.299716
+ExecutionTime = 0.701423 s
+
+Time = 5
+Pseudo Courant No: 0.1728
+  GMRES iterations: 1   initial residual: 0.259916 (0.139262 0.18931 0.104692) 0.260009
+ExecutionTime = 0.723786 s
+
+Time = 6
+Pseudo Courant No: 0.20736
+  GMRES iterations: 1   initial residual: 0.225603 (0.123098 0.167431 0.0926793) 0.225504
+ExecutionTime = 0.747201 s
+
+Time = 7
+Pseudo Courant No: 0.248832
+  GMRES iterations: 1   initial residual: 0.1956 (0.108269 0.14837 0.0817202) 0.195315
+ExecutionTime = 0.769623 s
+
+Time = 8
+Pseudo Courant No: 0.298598
+  GMRES iterations: 1   initial residual: 0.188178 (0.102585 0.14269 0.0778094) 0.187759
+ExecutionTime = 0.79202 s
+
+Time = 9
+Pseudo Courant No: 0.358318
+  GMRES iterations: 1   initial residual: 0.158684 (0.0871594 0.123567 0.0667561) 0.158139
+ExecutionTime = 0.814428 s
+
+Time = 10
+Pseudo Courant No: 0.429982
+  GMRES iterations: 1   initial residual: 0.167706 (0.0878437 0.128577 0.0683663) 0.167036
+ExecutionTime = 0.836817 s
+
+End
+Collecting data...
+Generating '/tmp/nsys-report-e229.qdstrm'
+[1/1] [0%                          ] prof.nsys-rep[1/1] [0%                          ] prof.nsys-rep[1/1] [9%                          ] prof.nsys-rep[1/1] [==18%                       ] prof.nsys-rep[1/1] [====25%                     ] prof.nsys-rep[1/1] [======33%                   ] prof.nsys-rep[1/1] [==============63%           ] prof.nsys-rep[1/1] [===============66%          ] prof.nsys-rep[1/1] [========================100%] prof.nsys-rep[1/1] [========================100%] prof.nsys-rep
+Generated:
+	/ssd/sclin/gpu-native-cfd/runs/P1-nsys/m6-n010/prof.nsys-rep

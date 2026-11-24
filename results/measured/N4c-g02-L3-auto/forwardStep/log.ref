@@ -1,0 +1,686 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 03:42:39
+Host   : g02
+PID    : 1838153
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-auto/forwardStep/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 0.005 (0.005 0.005 0.005) 0.005 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Inviscid analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 2 Mean: 2 Max: 2
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 2
+Damped pseudo Courant No: Min: 2 Mean: 2 Max: 2
+Pseudo deltaT: Min: 0.0010415 Mean: 0.00414028 Max: 0.00416675
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (1 8.26384e-18 0) 1 
+  GMRES iteration: 6   Residual: 4.41951e-13 (5.55402e-13 6.77599e-14 0) 4.48388e-13 
+ExecutionTime = 0.73 s  ExecutionStepTime = 0.58 s  ClockTime = 1 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-auto/forwardStep/ref/state/1.gnc"
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 2
+Damped pseudo Courant No: Min: 1 Mean: 1.99772 Max: 2
+Pseudo deltaT: Min: 0.000319008 Mean: 0.00413602 Max: 0.00417007
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.543865 (0.335369 0.0054244 0) 0.244696 
+  GMRES iteration: 1   Residual: 0.00047798 (0.000360341 7.52224e-05 0) 0.000323053 
+ExecutionTime = 0.86 s  ExecutionStepTime = 0.13 s  ClockTime = 1 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-auto/forwardStep/ref/state/2.gnc"
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 2.4
+Damped pseudo Courant No: Min: 0.6 Mean: 2.3969 Max: 2.4
+Pseudo deltaT: Min: 0.000173707 Mean: 0.00496307 Max: 0.0050005
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.536274 (0.201707 0.00338862 0) 0.133135 
+  GMRES iteration: 1   Residual: 0.000133047 (6.18664e-05 1.2051e-05 0) 5.80906e-05 
+ExecutionTime = 1.03 s  ExecutionStepTime = 0.17 s  ClockTime = 1 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 2.88
+Damped pseudo Courant No: Min: 0.36 Mean: 2.87591 Max: 2.88
+Pseudo deltaT: Min: 0.000100476 Mean: 0.0059552 Max: 0.00600012
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.489132 (0.122005 0.00203728 0) 0.0781013 
+  GMRES iteration: 1   Residual: 0.00014645 (4.03642e-05 8.27694e-06 0) 1.97192e-05 
+ExecutionTime = 1.2 s  ExecutionStepTime = 0.17 s  ClockTime = 1 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 3.456
+Damped pseudo Courant No: Min: 0.216 Mean: 3.45069 Max: 3.456
+Pseudo deltaT: Min: 5.98361e-05 Mean: 0.00714584 Max: 0.00720016
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.319767 (0.0676264 0.00113716 0) 0.0434302 
+  GMRES iteration: 1   Residual: 0.000120796 (3.56392e-05 5.95512e-06 0) 1.65657e-05 
+ExecutionTime = 1.39 s  ExecutionStepTime = 0.19 s  ClockTime = 1 s
+
+Time = 6
+
+pseudoTime: iteration 6
+Pseudo Courant No: 4.1472
+Damped pseudo Courant No: Min: 0.1296 Mean: 4.14052 Max: 4.1472
+Pseudo deltaT: Min: 3.62949e-05 Mean: 0.0085747 Max: 0.00864019
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.1814 (0.036111 0.00060864 0) 0.0239845 
+  GMRES iteration: 1   Residual: 7.26677e-05 (1.96779e-05 3.61371e-06 0) 9.79864e-06 
+ExecutionTime = 1.54 s  ExecutionStepTime = 0.15 s  ClockTime = 2 s
+
+Time = 7
+
+pseudoTime: iteration 7
+Pseudo Courant No: 4.97664
+Damped pseudo Courant No: Min: 0.12 Mean: 4.96842 Max: 4.97664
+Pseudo deltaT: Min: 3.42043e-05 Mean: 0.0102894 Max: 0.0103683
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.142012 (0.0294589 0.000465094 0) 0.0205238 
+  GMRES iteration: 1   Residual: 5.46713e-05 (1.18322e-05 2.90168e-06 0) 7.08965e-06 
+ExecutionTime = 1.77 s  ExecutionStepTime = 0.23 s  ClockTime = 2 s
+
+Time = 8
+
+pseudoTime: iteration 8
+Pseudo Courant No: 5.97197
+Damped pseudo Courant No: Min: 0.12 Mean: 5.96193 Max: 5.97197
+Pseudo deltaT: Min: 3.47225e-05 Mean: 0.0123471 Max: 0.0124421
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.123886 (0.0269662 0.000362899 0) 0.0196769 
+  GMRES iteration: 1   Residual: 8.07689e-05 (2.24958e-05 3.46753e-06 0) 7.78251e-06 
+ExecutionTime = 1.93 s  ExecutionStepTime = 0.16 s  ClockTime = 2 s
+
+Time = 9
+
+pseudoTime: iteration 9
+Pseudo Courant No: 7.16636
+Damped pseudo Courant No: Min: 0.12 Mean: 7.15415 Max: 7.16636
+Pseudo deltaT: Min: 3.52204e-05 Mean: 0.0148163 Max: 0.0149316
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.110746 (0.0252007 0.000330284 0) 0.0192952 
+  GMRES iteration: 1   Residual: 9.43935e-05 (2.59367e-05 3.25558e-06 0) 9.26468e-06 
+ExecutionTime = 2.13 s  ExecutionStepTime = 0.2 s  ClockTime = 2 s
+
+Time = 10
+
+pseudoTime: iteration 10
+Pseudo Courant No: 8.59963
+Damped pseudo Courant No: Min: 0.12 Mean: 8.58483 Max: 8.59963
+Pseudo deltaT: Min: 3.57011e-05 Mean: 0.0177794 Max: 0.0179212
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.100611 (0.0237666 0.000346837 0) 0.0191162 
+  GMRES iteration: 1   Residual: 6.83898e-05 (1.76871e-05 3.05609e-06 0) 8.53041e-06 
+ExecutionTime = 2.35 s  ExecutionStepTime = 0.22 s  ClockTime = 2 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-auto/forwardStep/ref/state/10.gnc"
+Time = 11
+
+pseudoTime: iteration 11
+Pseudo Courant No: 10.3196
+Damped pseudo Courant No: Min: 0.12 Mean: 10.3017 Max: 10.3196
+Pseudo deltaT: Min: 3.61668e-05 Mean: 0.021335 Max: 0.0215105
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0924117 (0.0224519 0.000375321 0) 0.0190137 
+  GMRES iteration: 1   Residual: 7.27529e-05 (2.20852e-05 4.14795e-06 0) 1.09844e-05 
+ExecutionTime = 2.53 s  ExecutionStepTime = 0.18 s  ClockTime = 3 s
+
+Time = 12
+
+pseudoTime: iteration 12
+Pseudo Courant No: 12.3835
+Damped pseudo Courant No: Min: 0.12 Mean: 12.3619 Max: 12.3835
+Pseudo deltaT: Min: 3.66198e-05 Mean: 0.0256017 Max: 0.0258189
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0855433 (0.0211732 0.000411687 0) 0.0189418 
+  GMRES iteration: 1   Residual: 8.73152e-05 (2.84348e-05 5.75352e-06 0) 1.45075e-05 
+ExecutionTime = 2.73 s  ExecutionStepTime = 0.2 s  ClockTime = 3 s
+
+Time = 13
+
+pseudoTime: iteration 13
+Pseudo Courant No: 14.8602
+Damped pseudo Courant No: Min: 0.12 Mean: 14.8341 Max: 14.8602
+Pseudo deltaT: Min: 3.70621e-05 Mean: 0.0307218 Max: 0.030989
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0796747 (0.0198959 0.000455651 0) 0.0188736 
+  GMRES iteration: 1   Residual: 0.00012077 (3.93388e-05 8.26235e-06 0) 2.02829e-05 
+ExecutionTime = 2.91 s  ExecutionStepTime = 0.18 s  ClockTime = 3 s
+
+Time = 14
+
+pseudoTime: iteration 14
+Pseudo Courant No: 17.8322
+Damped pseudo Courant No: Min: 0.12 Mean: 17.8009 Max: 17.8322
+Pseudo deltaT: Min: 3.74955e-05 Mean: 0.0368658 Max: 0.0371898
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0746869 (0.0186252 0.000506806 0) 0.0188121 
+  GMRES iteration: 1   Residual: 0.000164614 (5.47738e-05 1.16891e-05 0) 2.91595e-05 
+ExecutionTime = 3.05 s  ExecutionStepTime = 0.14 s  ClockTime = 3 s
+
+Time = 15
+
+pseudoTime: iteration 15
+Pseudo Courant No: 21.3986
+Damped pseudo Courant No: Min: 0.12 Mean: 21.361 Max: 21.3986
+Pseudo deltaT: Min: 3.79216e-05 Mean: 0.0442386 Max: 0.0446272
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0703809 (0.0173368 0.000561855 0) 0.0187505 
+  GMRES iteration: 1   Residual: 0.000187316 (6.08746e-05 1.4481e-05 0) 3.72775e-05 
+ExecutionTime = 3.24 s  ExecutionStepTime = 0.19 s  ClockTime = 3 s
+
+Time = 16
+
+pseudoTime: iteration 16
+Pseudo Courant No: 25.6784
+Damped pseudo Courant No: Min: 0.12 Mean: 25.6333 Max: 25.6784
+Pseudo deltaT: Min: 3.83416e-05 Mean: 0.0530858 Max: 0.053547
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0666056 (0.0160308 0.000631524 0) 0.0186891 
+  GMRES iteration: 1   Residual: 0.000222063 (7.26377e-05 1.77634e-05 0) 4.818e-05 
+ExecutionTime = 3.42 s  ExecutionStepTime = 0.18 s  ClockTime = 4 s
+
+Time = 17
+
+pseudoTime: iteration 17
+Pseudo Courant No: 30.814
+Damped pseudo Courant No: Min: 0.12 Mean: 30.7601 Max: 30.814
+Pseudo deltaT: Min: 3.87571e-05 Mean: 0.0637024 Max: 0.0642478
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0632417 (0.0146687 0.00070191 0) 0.0186124 
+  GMRES iteration: 1   Residual: 0.00027865 (9.24214e-05 2.23319e-05 0) 6.43389e-05 
+ExecutionTime = 3.59 s  ExecutionStepTime = 0.17 s  ClockTime = 4 s
+
+Time = 18
+
+pseudoTime: iteration 18
+Pseudo Courant No: 36.9769
+Damped pseudo Courant No: Min: 0.12 Mean: 36.9128 Max: 36.9769
+Pseudo deltaT: Min: 3.91699e-05 Mean: 0.0764425 Max: 0.0770945
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0602295 (0.0132382 0.00077287 0) 0.0185254 
+  GMRES iteration: 1   Residual: 0.000340363 (0.000112548 2.74181e-05 0) 8.35439e-05 
+ExecutionTime = 3.83 s  ExecutionStepTime = 0.24 s  ClockTime = 4 s
+
+Time = 19
+
+pseudoTime: iteration 19
+Pseudo Courant No: 44.3722
+Damped pseudo Courant No: Min: 0.12 Mean: 44.296 Max: 44.3722
+Pseudo deltaT: Min: 3.95817e-05 Mean: 0.0917303 Max: 0.0925159
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0575602 (0.011774 0.000846809 0) 0.0184644 
+  GMRES iteration: 1   Residual: 0.000409058 (0.000131607 3.32887e-05 0) 0.000107593 
+ExecutionTime = 4.02 s  ExecutionStepTime = 0.19 s  ClockTime = 4 s
+
+Time = 20
+
+pseudoTime: iteration 20
+Pseudo Courant No: 53.2467
+Damped pseudo Courant No: Min: 0.12 Mean: 53.1552 Max: 53.2467
+Pseudo deltaT: Min: 3.99944e-05 Mean: 0.110074 Max: 0.111023
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.055288 (0.0102513 0.000925429 0) 0.0184458 
+  GMRES iteration: 1   Residual: 0.000397816 (0.000170106 5.53307e-05 0) 0.000120592 
+ExecutionTime = 4.22 s  ExecutionStepTime = 0.2 s  ClockTime = 4 s
+
+Time = 21
+
+pseudoTime: iteration 21
+Pseudo Courant No: 58.5293
+Damped pseudo Courant No: Min: 0.109921 Mean: 58.4288 Max: 58.5293
+Pseudo deltaT: Min: 3.70117e-05 Mean: 0.120993 Max: 0.122045
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0507276 (0.00846522 0.000970827 0) 0.0174789 
+  GMRES iteration: 2   Residual: 0.000178296 (8.33039e-05 2.55845e-05 0) 4.40164e-05 
+ExecutionTime = 4.47 s  ExecutionStepTime = 0.25 s  ClockTime = 5 s
+
+Time = 22
+
+pseudoTime: iteration 22
+Pseudo Courant No: 63.7642
+Damped pseudo Courant No: Min: 0.108944 Mean: 63.6508 Max: 63.7642
+Pseudo deltaT: Min: 3.70126e-05 Mean: 0.131809 Max: 0.132939
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0698706 (0.0107028 0.00155146 0) 0.0252886 
+  GMRES iteration: 1   Residual: 0.00104466 (0.000297441 0.000102922 0) 0.000334494 
+ExecutionTime = 4.7 s  ExecutionStepTime = 0.23 s  ClockTime = 5 s
+
+Time = 23
+
+pseudoTime: iteration 23
+Pseudo Courant No: 46.1333
+Damped pseudo Courant No: Min: 0.0723498 Mean: 46.0541 Max: 46.1333
+Pseudo deltaT: Min: 2.48072e-05 Mean: 0.0953631 Max: 0.0962008
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0366286 (0.00484622 0.000865821 0) 0.0137352 
+  GMRES iteration: 2   Residual: 0.000232045 (6.06766e-05 1.8827e-05 0) 7.37215e-05 
+ExecutionTime = 4.93 s  ExecutionStepTime = 0.23 s  ClockTime = 5 s
+
+Time = 24
+
+pseudoTime: iteration 24
+Pseudo Courant No: 55.3599
+Damped pseudo Courant No: Min: 0.12 Mean: 55.2609 Max: 55.3599
+Pseudo deltaT: Min: 4.38288e-05 Mean: 0.114432 Max: 0.115479
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0685998 (0.00743623 0.00179915 0) 0.0270042 
+  GMRES iteration: 1   Residual: 0.00145882 (0.000378283 0.00012793 0) 0.000527155 
+ExecutionTime = 5.1 s  ExecutionStepTime = 0.17 s  ClockTime = 5 s
+
+Time = 25
+
+pseudoTime: iteration 25
+Pseudo Courant No: 46.7367
+Damped pseudo Courant No: Min: 0.0844234 Mean: 46.6564 Max: 46.7367
+Pseudo deltaT: Min: 2.96793e-05 Mean: 0.0966068 Max: 0.0975394
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0358887 (0.0037357 0.00105954 0) 0.0145996 
+  GMRES iteration: 2   Residual: 0.000237714 (8.29248e-05 2.45948e-05 0) 7.86728e-05 
+ExecutionTime = 5.35 s  ExecutionStepTime = 0.25 s  ClockTime = 5 s
+
+Time = 26
+
+pseudoTime: iteration 26
+Pseudo Courant No: 56.0841
+Damped pseudo Courant No: Min: 0.12 Mean: 55.9814 Max: 56.0841
+Pseudo deltaT: Min: 4.50062e-05 Mean: 0.115923 Max: 0.117072
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0699245 (0.00979767 0.00230436 0) 0.0299053 
+  GMRES iteration: 1   Residual: 0.00112936 (0.000476813 0.000160293 0) 0.000427946 
+ExecutionTime = 5.5 s  ExecutionStepTime = 0.15 s  ClockTime = 6 s
+
+Time = 27
+
+pseudoTime: iteration 27
+Pseudo Courant No: 45.1559
+Damped pseudo Courant No: Min: 0.0805148 Mean: 45.0691 Max: 45.1559
+Pseudo deltaT: Min: 2.95855e-05 Mean: 0.0933252 Max: 0.0942907
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.032989 (0.00617846 0.0012483 0) 0.0145365 
+  GMRES iteration: 2   Residual: 0.000131 (7.82739e-05 2.43818e-05 0) 3.96734e-05 
+ExecutionTime = 5.84 s  ExecutionStepTime = 0.34 s  ClockTime = 6 s
+
+Time = 28
+
+pseudoTime: iteration 28
+Pseudo Courant No: 54.1871
+Damped pseudo Courant No: Min: 0.183179 Mean: 54.0861 Max: 54.1871
+Pseudo deltaT: Min: 7.15941e-05 Mean: 0.111997 Max: 0.113176
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0682184 (0.0174308 0.00290405 0) 0.0315497 
+  GMRES iteration: 1   Residual: 0.000825471 (0.000602305 0.000199263 0) 0.000314309 
+ExecutionTime = 6.02 s  ExecutionStepTime = 0.18 s  ClockTime = 6 s
+
+Time = 29
+
+pseudoTime: iteration 29
+Pseudo Courant No: 44.8659
+Damped pseudo Courant No: Min: 0.0827981 Mean: 44.7734 Max: 44.8659
+Pseudo deltaT: Min: 3.10042e-05 Mean: 0.0927131 Max: 0.0937465
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0310742 (0.0104376 0.00154329 0) 0.0145463 
+  GMRES iteration: 1   Residual: 0.000415082 (0.000278289 7.65237e-05 0) 0.000166686 
+ExecutionTime = 6.28 s  ExecutionStepTime = 0.26 s  ClockTime = 6 s
+
+Time = 30
+
+pseudoTime: iteration 30
+Pseudo Courant No: 53.8391
+Damped pseudo Courant No: Min: 0.198715 Mean: 53.7428 Max: 53.8391
+Pseudo deltaT: Min: 7.51137e-05 Mean: 0.111274 Max: 0.11254
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0662001 (0.0280553 0.00353904 0) 0.0324608 
+  GMRES iteration: 1   Residual: 0.00105354 (0.00096569 0.000305177 0) 0.000436104 
+ExecutionTime = 6.57 s  ExecutionStepTime = 0.29 s  ClockTime = 7 s
+
+Time = 31
+
+pseudoTime: iteration 31
+Pseudo Courant No: 43.8677
+Damped pseudo Courant No: Min: 0.0814794 Mean: 43.7795 Max: 43.8677
+Pseudo deltaT: Min: 3.16023e-05 Mean: 0.0906473 Max: 0.0917341
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0294816 (0.0158495 0.00191972 0) 0.0144983 
+  GMRES iteration: 1   Residual: 0.000386253 (0.000378652 0.000116824 0) 0.000157146 
+ExecutionTime = 6.8 s  ExecutionStepTime = 0.23 s  ClockTime = 7 s
+
+Time = 32
+
+pseudoTime: iteration 32
+Pseudo Courant No: 52.6413
+Damped pseudo Courant No: Min: 0.195551 Mean: 52.5488 Max: 52.6413
+Pseudo deltaT: Min: 7.66442e-05 Mean: 0.108794 Max: 0.110098
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0624372 (0.0404738 0.00444713 0) 0.0325351 
+  GMRES iteration: 1   Residual: 0.00134485 (0.00141437 0.000443591 0) 0.000645953 
+ExecutionTime = 6.99 s  ExecutionStepTime = 0.19 s  ClockTime = 7 s
+
+Time = 33
+
+pseudoTime: iteration 33
+Pseudo Courant No: 42.5923
+Damped pseudo Courant No: Min: 0.0809104 Mean: 42.5002 Max: 42.5923
+Pseudo deltaT: Min: 3.26019e-05 Mean: 0.0880041 Max: 0.0890723
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0290305 (0.0234577 0.00263414 0) 0.0149651 
+  GMRES iteration: 1   Residual: 0.000342347 (0.000433989 0.000123224 0) 0.000144845 
+ExecutionTime = 7.12 s  ExecutionStepTime = 0.13 s  ClockTime = 7 s
+
+Time = 34
+
+pseudoTime: iteration 34
+Pseudo Courant No: 51.1107
+Damped pseudo Courant No: Min: 0.194185 Mean: 51.0187 Max: 51.1107
+Pseudo deltaT: Min: 7.91821e-05 Mean: 0.105625 Max: 0.106931
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0614099 (0.0578373 0.00593906 0) 0.0335863 
+  GMRES iteration: 1   Residual: 0.00145801 (0.00171236 0.000561734 0) 0.000743702 
+ExecutionTime = 7.28 s  ExecutionStepTime = 0.16 s  ClockTime = 7 s
+
+Time = 35
+
+pseudoTime: iteration 35
+Pseudo Courant No: 38.0702
+Damped pseudo Courant No: Min: 0.0744856 Mean: 37.9849 Max: 38.0702
+Pseudo deltaT: Min: 3.13046e-05 Mean: 0.0786541 Max: 0.0796783
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0319619 (0.039291 0.00412033 0) 0.0171729 
+  GMRES iteration: 1   Residual: 0.000425031 (0.000642067 0.000167186 0) 0.000221007 
+ExecutionTime = 7.42 s  ExecutionStepTime = 0.14 s  ClockTime = 8 s
+
+Time = 36
+
+pseudoTime: iteration 36
+Pseudo Courant No: 45.6842
+Damped pseudo Courant No: Min: 0.12 Mean: 45.5817 Max: 45.6842
+Pseudo deltaT: Min: 5.49837e-05 Mean: 0.0943873 Max: 0.0956863
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.06267 (0.0898838 0.00819243 0) 0.035951 
+  GMRES iteration: 1   Residual: 0.00138111 (0.00183171 0.000641953 0) 0.000718541 
+ExecutionTime = 7.55 s  ExecutionStepTime = 0.13 s  ClockTime = 8 s
+
+Time = 37
+
+pseudoTime: iteration 37
+Pseudo Courant No: 29.9631
+Damped pseudo Courant No: Min: 0.0655874 Mean: 29.8831 Max: 29.9631
+Pseudo deltaT: Min: 3.04164e-05 Mean: 0.0618821 Max: 0.0627692
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0299841 (0.0579346 0.00539722 0) 0.0176665 
+  GMRES iteration: 1   Residual: 0.000411578 (0.000806208 0.00018087 0) 0.000221121 
+ExecutionTime = 7.68 s  ExecutionStepTime = 0.13 s  ClockTime = 8 s
+
+Time = 38
+
+pseudoTime: iteration 38
+Pseudo Courant No: 35.9557
+Damped pseudo Courant No: Min: 0.128276 Mean: 35.8558 Max: 35.9557
+Pseudo deltaT: Min: 7.36347e-05 Mean: 0.0742452 Max: 0.0753735
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.062371 (0.134345 0.0112501 0) 0.0382429 
+  GMRES iteration: 1   Residual: 0.00127943 (0.00209229 0.000724054 0) 0.000667838 
+ExecutionTime = 7.81 s  ExecutionStepTime = 0.13 s  ClockTime = 8 s
+
+Time = 39
+
+pseudoTime: iteration 39
+Pseudo Courant No: 22.5839
+Damped pseudo Courant No: Min: 0.0628104 Mean: 22.5234 Max: 22.5839
+Pseudo deltaT: Min: 3.01129e-05 Mean: 0.0466418 Max: 0.0473603
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0324464 (0.0931303 0.00879884 0) 0.0210407 
+  GMRES iteration: 1   Residual: 0.000367566 (0.000832246 0.000189953 0) 0.000197856 
+ExecutionTime = 7.96 s  ExecutionStepTime = 0.15 s  ClockTime = 8 s
+
+Time = 40
+
+pseudoTime: iteration 40
+Pseudo Courant No: 27.1007
+Damped pseudo Courant No: Min: 0.12 Mean: 27.0297 Max: 27.1007
+Pseudo deltaT: Min: 6.4507e-05 Mean: 0.0559732 Max: 0.0568755
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0633803 (0.188105 0.0165876 0) 0.0419839 
+  GMRES iteration: 1   Residual: 0.00106628 (0.00229796 0.000735665 0) 0.000617224 
+ExecutionTime = 8.1 s  ExecutionStepTime = 0.14 s  ClockTime = 8 s
+
+Time = 41
+
+pseudoTime: iteration 41
+Pseudo Courant No: 17.0173
+Damped pseudo Courant No: Min: 0.0627926 Mean: 16.9729 Max: 17.0173
+Pseudo deltaT: Min: 3.10046e-05 Mean: 0.0351454 Max: 0.0357274
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0328521 (0.142077 0.0132771 0) 0.0230674 
+  GMRES iteration: 1   Residual: 0.000377321 (0.00156917 0.000391327 0) 0.000286686 
+ExecutionTime = 8.25 s  ExecutionStepTime = 0.15 s  ClockTime = 8 s
+
+Time = 42
+
+pseudoTime: iteration 42
+Pseudo Courant No: 20.4207
+Damped pseudo Courant No: Min: 0.12 Mean: 20.3736 Max: 20.4207
+Pseudo deltaT: Min: 7.42247e-05 Mean: 0.042183 Max: 0.0429017
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0651146 (0.237344 0.0231615 0) 0.0462708 
+  GMRES iteration: 1   Residual: 0.000806192 (0.00213648 0.000697674 0) 0.000542653 
+ExecutionTime = 8.42 s  ExecutionStepTime = 0.17 s  ClockTime = 9 s
+
+Time = 43
+
+pseudoTime: iteration 43
+Pseudo Courant No: 13.7741
+Damped pseudo Courant No: Min: 0.0674515 Mean: 13.7405 Max: 13.7741
+Pseudo deltaT: Min: 3.4631e-05 Mean: 0.0284503 Max: 0.028953
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.034268 (0.179676 0.0193584 0) 0.0256739 
+  GMRES iteration: 1   Residual: 0.000254165 (0.00104272 0.000316358 0) 0.000201514 
+ExecutionTime = 8.54 s  ExecutionStepTime = 0.12 s  ClockTime = 9 s
+
+Time = 44
+
+pseudoTime: iteration 44
+Pseudo Courant No: 16.5289
+Damped pseudo Courant No: Min: 0.12 Mean: 16.492 Max: 16.5289
+Pseudo deltaT: Min: 6.42176e-05 Mean: 0.0341442 Max: 0.0347614
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0674758 (0.254125 0.0305069 0) 0.0495338 
+  GMRES iteration: 1   Residual: 0.000887721 (0.002436 0.000885595 0) 0.000618429 
+ExecutionTime = 8.71 s  ExecutionStepTime = 0.17 s  ClockTime = 9 s
+
+Time = 45
+
+pseudoTime: iteration 45
+Pseudo Courant No: 12.8639
+Damped pseudo Courant No: Min: 0.0778267 Mean: 12.8313 Max: 12.8639
+Pseudo deltaT: Min: 4.08081e-05 Mean: 0.0265669 Max: 0.0270684
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0404004 (0.173364 0.0245353 0) 0.0306121 
+  GMRES iteration: 1   Residual: 0.000488328 (0.00159988 0.000586793 0) 0.000358317 
+ExecutionTime = 8.85 s  ExecutionStepTime = 0.14 s  ClockTime = 9 s
+
+Time = 46
+
+pseudoTime: iteration 46
+Pseudo Courant No: 15.4367
+Damped pseudo Courant No: Min: 0.12 Mean: 15.4028 Max: 15.4367
+Pseudo deltaT: Min: 6.48554e-05 Mean: 0.0318874 Max: 0.0325035
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0676798 (0.18975 0.0339382 0) 0.0512478 
+  GMRES iteration: 1   Residual: 0.00122644 (0.00269432 0.00120326 0) 0.000894596 
+ExecutionTime = 9.01 s  ExecutionStepTime = 0.16 s  ClockTime = 9 s
+
+Time = 47
+
+pseudoTime: iteration 47
+Pseudo Courant No: 16.4466
+Damped pseudo Courant No: Min: 0.106543 Mean: 16.3989 Max: 16.4466
+Pseudo deltaT: Min: 5.60472e-05 Mean: 0.0339595 Max: 0.0346507
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0561949 (0.145627 0.0312563 0) 0.0456246 
+  GMRES iteration: 1   Residual: 0.000765461 (0.0017359 0.000771258 0) 0.00060111 
+ExecutionTime = 9.16 s  ExecutionStepTime = 0.15 s  ClockTime = 9 s
+
+Time = 48
+
+pseudoTime: iteration 48
+Pseudo Courant No: 19.7359
+Damped pseudo Courant No: Min: 0.12 Mean: 19.6704 Max: 19.7359
+Pseudo deltaT: Min: 6.34348e-05 Mean: 0.040744 Max: 0.0415959
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0565242 (0.114983 0.0320726 0) 0.0451919 
+  GMRES iteration: 1   Residual: 0.000737942 (0.00152027 0.000585246 0) 0.000580425 
+ExecutionTime = 9.29 s  ExecutionStepTime = 0.13 s  ClockTime = 9 s
+
+Time = 49
+
+pseudoTime: iteration 49
+Pseudo Courant No: 23.6831
+Damped pseudo Courant No: Min: 0.12 Mean: 23.5997 Max: 23.6831
+Pseudo deltaT: Min: 6.38078e-05 Mean: 0.0488867 Max: 0.0499182
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0546883 (0.106639 0.0318598 0) 0.0446205 
+  GMRES iteration: 1   Residual: 0.000755821 (0.00156139 0.000643323 0) 0.000578107 
+ExecutionTime = 9.44 s  ExecutionStepTime = 0.15 s  ClockTime = 10 s
+
+Time = 50
+
+pseudoTime: iteration 50
+Pseudo Courant No: 26.2849
+Damped pseudo Courant No: Min: 0.110986 Mean: 26.1968 Max: 26.2849
+Pseudo deltaT: Min: 5.94842e-05 Mean: 0.0542606 Max: 0.0553947
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.0492312 (0.0916152 0.0288868 0) 0.0405453 
+  GMRES iteration: 1   Residual: 0.000572568 (0.00117932 0.000410635 0) 0.000420379 
+ExecutionTime = 9.55 s  ExecutionStepTime = 0.11 s  ClockTime = 10 s
+
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-auto/forwardStep/ref/state/50.gnc"
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nuTilda not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field nut not found
+--> FOAM Warning : 
+    From void Foam::functionObjects::gncHisaDump::dump(const Foam::fileName&) const
+    in file gncHisaDump.C at line 170
+    field alphat not found
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-auto/forwardStep/ref/state/end.gnc"
+End
+

@@ -1,0 +1,142 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoSimpleFoam
+Date   : Oct 26 2026
+Time   : 02:10:48
+Host   : g02
+PID    : 1249677
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N6e-perf-r32/r32/of1
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 0.0001
+    field "(k|omega|e)"	 tolerance 0.0001
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.84999999999999998;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.85599999999999998;
+    gamma1          0.55555555555555558;
+    gamma2          0.44;
+    beta1           0.074999999999999997;
+    beta2           0.082799999999999999;
+    betaStar        0.089999999999999997;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+No MRF models present
+
+Creating finite-volume options from "system/fvOptions"
+
+Selecting finite volume options type limitTemperature
+    Source: limitT
+    State: active
+    - selecting all cells
+    - selected 16384000 cell(s) with volume 2.1001474673339144
+
+Starting time loop
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.99999999884705582, Final residual = 0.048743634016285481, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.04158215510463234, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99841259907688795, Final residual = 0.092464337117556472, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=298
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298
+GAMG:  Solving for p, Initial residual = 0.99999999999348888, Final residual = 0.0099959113977241328, No Iterations 963
+time step continuity errors : sum local = 0.033313808355807974, global = -0.0041669957821878611, cumulative = -0.0041669957821878611
+pressureControl: p max 81356528.305054352
+pressureControl: p min -12820961.690915534
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.013811530313368276, Final residual = 0.00020267018626740079, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.99999998225275155, Final residual = 0.016885341335029835, No Iterations 1
+ExecutionTime = 1481.3599999999999 s  ClockTime = 1482 s
+
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.028172092622673284, Final residual = 4.7662727225823104e-05, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.019747766765685393, Final residual = 1.0972632582545749e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99976931354477272, Final residual = 0.022294319610796226, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=297.61394439215479
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298.06065950372255
+GAMG:  Solving for p, Initial residual = 0.15397079514365247, Final residual = 0.0015219355695808966, No Iterations 617
+time step continuity errors : sum local = 0.085728832119079112, global = 0.012025373836244488, cumulative = 0.0078583780540566264
+pressureControl: p max 8570273.6740804799
+pressureControl: p min -1265674.2623069494
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00025770333342206667, Final residual = 1.2840750905249566e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.1689348920480242, Final residual = 0.0021985687783966754, No Iterations 1
+ExecutionTime = 2385.1300000000001 s  ClockTime = 2386 s
+
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.019325424302623805, Final residual = 5.4068489148482696e-05, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.019279947178300491, Final residual = 4.758318715243293e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.30612095259173561, Final residual = 0.011164134577825276, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=291.92182918538998
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=371.50390380727754
+GAMG:  Solving for p, Initial residual = 0.077006645600593587, Final residual = 0.00076253583899188904, No Iterations 475
+time step continuity errors : sum local = 0.070155449137048173, global = -0.0091345389114467976, cumulative = -0.0012761608573901712
+pressureControl: p max 2853315.7676296188
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00028640391430484062, Final residual = 1.2748688347636192e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.14291133124562544, Final residual = 0.001352743418909199, No Iterations 1
+ExecutionTime = 3102.1900000000001 s  ClockTime = 3103 s
+
+End
+

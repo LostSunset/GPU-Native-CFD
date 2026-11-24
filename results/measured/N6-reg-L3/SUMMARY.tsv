@@ -1,0 +1,4 @@
+case	nCells	endTime	ref	gpu	end_ref	end_gpu	compared	bitwise	gpu1_vs_gpu2
+shockTube	200	200	0	0/0	200	200	7	7	identical
+forwardStep	36576	200	0	0/0	200	200	7	7	identical
+nacaAirfoilLaminar	40000	150	0	0/0	150	150	6	6	identical

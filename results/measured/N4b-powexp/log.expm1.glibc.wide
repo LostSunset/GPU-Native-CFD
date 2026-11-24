@@ -1,0 +1,1 @@
+func expm1 impl glibc mode wide: 50000000 samples, 0 differ from host libm (0.000e+00), max 0 ulp (x = 0, y = 0)

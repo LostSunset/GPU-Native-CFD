@@ -1,0 +1,5 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: /home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation/constant/polyMesh (ascii) nPoints 16362 nCells 8000 nFaces 32180 nInternalFaces 15820 patches 6 fvBoundaryFaces 360
+time_s: read 0.009 gather 0.000 upload 0.135 geometry 0.001157 (informational; not a recorded measurement)
+sum(V): sequential 0.11767718400000017 tree 0.11767718399999999
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L0/flatPlate/gpu2.gnc

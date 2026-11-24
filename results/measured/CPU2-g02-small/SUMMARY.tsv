@@ -1,0 +1,9 @@
+case	nCells	run	exit	cpu_s	wall_s	wall_per_step_s
+flatPlateSA	-	hisa-np1	0	15.23	16	0.08
+flatPlateSA	-	hisa-np8	0	2.78	3	0.015
+flatPlateSA	-	hisa-np32	0	1.33	1	0.005
+flatPlateSA	8000	gncHisa	0	-	10.5315	0.0526575
+rae2822SA	-	hisa-np1	0	34.43	34	0.17
+rae2822SA	-	hisa-np8	0	4.55	5	0.025
+rae2822SA	-	hisa-np32	0	1.82	2	0.01
+rae2822SA	23552	gncHisa	0	-	8.00174	0.0400087

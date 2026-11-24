@@ -1,0 +1,7 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         1;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;

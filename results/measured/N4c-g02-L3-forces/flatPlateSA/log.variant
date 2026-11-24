@@ -1,0 +1,36 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         800;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            ( "libforces.so" );
+        patches         ( viscousWall );
+        rhoName         rho;
+        UName           U;
+        log             off;
+        writeControl    timeStep;
+        writeInterval   1;
+        CofR            ( 0 0 0 );
+    }
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4c-g02-L3-forces/flatPlateSA/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda nut alphat force moment );
+        timeIndices     ( 1 2 10 100 400 800 );
+        atEnd           true;
+        forceObjects    ( forces );
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+log             off;
+forces=forces

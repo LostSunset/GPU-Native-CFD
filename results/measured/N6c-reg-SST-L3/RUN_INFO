@@ -1,0 +1,7 @@
+label=N6c-reg-SST-L3
+started_utc=2026-10-23T17:22:37Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime= 01:22:37 up 11 days, 15:58,  9 users,  load average: 104.17, 103.86, 104.01
+finished_utc=2026-10-23T17:24:29Z
+overall_exit=0

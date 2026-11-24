@@ -1,0 +1,23 @@
+run	cells	rc	peak MiB	bytes per cell
+basicFinnerLaminar-fast	2179881	0	9164	4408
+basicFinnerLaminar-ref	2179881	0	7820	3762
+basicFinnerSST-fast	2179881	0	9708	4670
+basicFinnerSST-ref	2179881	0	8364	4023
+flatPlate-fast	8000	0	460	60293
+flatPlate-ref	8000	0	460	60293
+nacaAirfoil-fast	40000	0	492	12897
+nacaAirfoil-ref	40000	0	588	15414
+oneraM6-fast	294912	0	1708	6073
+oneraM6-ref	294912	0	1516	5390
+rae2822-fast	23552	0	492	21905
+rae2822-ref	23552	0	524	23329
+rho-r1-fast	16000	0	458	30015
+rho-r1-ref	16000	0	460	30147
+rho-r2-fast	64000	0	524	8585
+rho-r2-ref	64000	0	556	9110
+rho-r4-fast	256000	0	908	3719
+rho-r4-ref	256000	0	844	3457
+rho-r8-fast	1024000	0	2316	2372
+rho-r8-ref	1024000	0	2092	2142
+gncRhoSimple fast fit			422 (intercept)	1942
+gncRhoSimple ref fit			440 (intercept)	1690

@@ -1,0 +1,86 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 00:45:17
+Host   : g02
+PID    : 1219153
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/forwardStep/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 0.005 (0.005 0.005 0.005) 0.005 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Inviscid analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 2 Mean: 2 Max: 2
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 2
+Damped pseudo Courant No: Min: 2 Mean: 2 Max: 2
+Pseudo deltaT: Min: 0.0010415 Mean: 0.00414028 Max: 0.00416675
+gncLUSGSDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/forwardStep/ref/1.jacobian.gnc"
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (1 8.26384e-18 0) 1 
+gncLUSGSDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/forwardStep/ref/1.precondition.gnc"
+  GMRES iteration: 6   Residual: 4.41951e-13 (5.55402e-13 6.77599e-14 0) 4.48388e-13 
+gncLUSGSDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/forwardStep/ref/1.solve.gnc"
+ExecutionTime = 0.67 s  ExecutionStepTime = 0.52 s  ClockTime = 1 s
+
+gncHisaDump: wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/forwardStep/ref/state/1.gnc"
+End
+

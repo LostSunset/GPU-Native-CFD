@@ -1,0 +1,3 @@
+gncOpsRef.C
+
+EXE = $(GNC_REF_BIN)/gncOpsRef

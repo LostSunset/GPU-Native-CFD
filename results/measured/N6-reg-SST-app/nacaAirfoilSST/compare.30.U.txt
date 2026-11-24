@@ -1,0 +1,8 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-app/nacaAirfoilSST/ref/30/U
+test: /ssd/sclin/gpu-native-cfd/runs/N6-reg-SST-app/nacaAirfoilSST/gnc/30/U
+internalField                        120000  BITWISE
+patch inlet_1                          1200  BITWISE
+patch outlet_2                          600  BITWISE
+patch symplane_3                          -  (no value: empty / empty)
+patch wall_4                            780  BITWISE
+result: ALL BITWISE IDENTICAL

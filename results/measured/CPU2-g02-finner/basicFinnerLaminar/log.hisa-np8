@@ -1,0 +1,174 @@
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa -parallel
+Date   : Oct 23 2026
+Time   : 14:12:33
+Host   : g02
+PID    : 2665266
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/CPU2-g02-finner/basicFinnerLaminar/hisa-np8
+nProcs : 8
+Hosts  :
+(
+    (g02 8)
+)
+Pstream initialized with:
+    node communication : off [type=host] (8 ranks, 1 nodes)
+    topology controls  : none
+    consensus exchange : 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.5721188e-10 Mean: 1.4305044e-06 Max: 7.4587219e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 1 (0.99929038 0.00046874683 0.034769132) 1 
+  GMRES iteration: 1   Residual: 2.7050376e-07 (3.540737e-07 3.7957169e-08 4.4184269e-08) 2.9905553e-07 
+ExecutionTime = 8.66 s  ExecutionStepTime = 7.42 s  ClockTime = 8 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.9856046 Max: 1
+Pseudo deltaT: Min: 7.7791926e-11 Mean: 1.4304972e-06 Max: 7.4587219e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.54617254 (0.35328689 0.021519275 0.029955447) 0.31502895 
+  GMRES iteration: 1   Residual: 5.4142254e-09 (4.3979819e-09 6.8777478e-10 7.7512263e-10) 2.9103993e-09 
+ExecutionTime = 15.57 s  ExecutionStepTime = 6.91 s  ClockTime = 15 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2217914 Max: 1.25
+Pseudo deltaT: Min: 4.8602724e-11 Mean: 1.7881161e-06 Max: 9.3234023e-05
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.32965149 (0.18947331 0.014733079 0.019163498) 0.17218475 
+  GMRES iteration: 1   Residual: 3.5724069e-09 (1.9608965e-09 1.7401817e-10 2.9094392e-10) 1.820709e-09 
+ExecutionTime = 22.32 s  ExecutionStepTime = 6.75 s  ClockTime = 22 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.5625
+Damped pseudo Courant No: Min: 0.1953125 Mean: 1.527673 Max: 1.5625
+Pseudo deltaT: Min: 3.0501995e-11 Mean: 2.235146e-06 Max: 0.00011654253
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.20538 (0.11760434 0.010745509 0.013321578) 0.1067772 
+  GMRES iteration: 1   Residual: 4.4002209e-09 (2.8341863e-09 4.8480684e-10 5.9508843e-10) 2.2518248e-09 
+ExecutionTime = 29.04 s  ExecutionStepTime = 6.72 s  ClockTime = 29 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.953125
+Damped pseudo Courant No: Min: 0.125 Mean: 1.9111952 Max: 1.953125
+Pseudo deltaT: Min: 1.9535585e-11 Mean: 2.7939318e-06 Max: 0.00014567816
+Solving for (rho rhoU rhoE)
+  GMRES iteration: 0   Residual: 0.18658301 (0.093174293 0.0095765393 0.011570152) 0.084497499 
+  GMRES iteration: 1   Residual: 8.9312243e-09 (4.4388162e-09 5.4668102e-10 5.8508663e-10) 3.9720494e-09 
+ExecutionTime = 37.01 s  ExecutionStepTime = 7.97 s  ClockTime = 37 s
+
+End
+
+Finalising parallel run

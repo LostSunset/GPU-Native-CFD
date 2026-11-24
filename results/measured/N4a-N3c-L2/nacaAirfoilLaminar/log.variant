@@ -1,0 +1,26 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         1;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+simulationType  laminar;
+laminar=1
+libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaJacobianDump.so" );
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping );
+    }
+}
+solver=GMRES
+preconditioner  gncLUSGSDump;
+gncLUSGSDump
+{
+    outputDir       "/ssd/sclin/gpu-native-cfd/runs/N4a-N3c-L2/nacaAirfoilLaminar/ref";
+}

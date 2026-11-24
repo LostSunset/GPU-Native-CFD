@@ -1,0 +1,1019 @@
+gncRhoSimple (GPU-Native-CFD; algorithm after rhoSimpleFoam, not an official OpenFOAM build)
+device: NVIDIA L40 (sm_89)
+performance options: GNC_ILU=color GNC_REDUCE=tree GNC_GAMG=amg GNC_PCG_PRECOND=- (not bitwise to rhoSimpleFoam)
+mesh: 64000 cells; RAS kOmegaSST; endTime 100
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Starting time loop
+
+Time = 1
+
+PBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.00719504, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.00651585, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 1, Final residual = 0.0379292, No Iterations 3
+limitTemperature: lower 0, upper 0
+AMG hierarchy: 7 levels (mergeLevels 2, FP32, omega 1.6, sweeps 2, Jacobi 1 from level 1, block from level 3): 64000/2c 15979/6c 3964/6c 975/6c 234/6c 53/5c 12/5c
+pressureControl: p max 4.63414e+06
+pressureControl: p min -591733
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.00923254, No Iterations 29
+PBiCGStab:  Solving for omega, Initial residual = 0.00213703, Final residual = 0.00012935, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 1, Final residual = 0.0843265, No Iterations 1
+
+Time = 2
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.216001, Final residual = 0.0136578, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.174867, Final residual = 0.0110412, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.999903, Final residual = 0.0907472, No Iterations 1
+limitTemperature: lower 0, upper 0
+pressureControl: p max 641155
+pressureControl: p min -12436.3
+GAMG:  Solving for p, Initial residual = 0.258483, Final residual = 0.00244475, No Iterations 24
+PBiCGStab:  Solving for omega, Initial residual = 0.00204136, Final residual = 0.000168212, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.28432, Final residual = 0.025009, No Iterations 1
+
+Time = 3
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.117247, Final residual = 0.00737565, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.109946, Final residual = 0.00689554, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.302906, Final residual = 0.011694, No Iterations 2
+limitTemperature: lower 0, upper 0
+pressureControl: p max 244905
+GAMG:  Solving for p, Initial residual = 0.0934741, Final residual = 0.000706222, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00246477, Final residual = 0.000192708, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.141284, Final residual = 0.0124092, No Iterations 1
+
+Time = 4
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.119934, Final residual = 0.00752604, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0832228, Final residual = 0.00520866, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.24375, Final residual = 0.00919948, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0466089, Final residual = 0.000361742, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.00257211, Final residual = 0.000134407, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0861341, Final residual = 0.00718219, No Iterations 1
+
+Time = 5
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.111921, Final residual = 0.00696467, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0741373, Final residual = 0.00463095, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.190152, Final residual = 0.007262, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.468089, Final residual = 0.00373461, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00251659, Final residual = 0.000120542, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.057685, Final residual = 0.00481998, No Iterations 1
+
+Time = 6
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0958796, Final residual = 0.00595935, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0505225, Final residual = 0.00315035, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.181762, Final residual = 0.00780049, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0427402, Final residual = 0.000337046, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00246632, Final residual = 0.000108692, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0450932, Final residual = 0.00357723, No Iterations 1
+
+Time = 7
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0741845, Final residual = 0.00461574, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0471939, Final residual = 0.0029462, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.173422, Final residual = 0.00788327, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.122438, Final residual = 0.00111126, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00254199, Final residual = 0.000112186, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0371251, Final residual = 0.00281662, No Iterations 1
+
+Time = 8
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0558495, Final residual = 0.00346754, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0376314, Final residual = 0.00234517, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.145248, Final residual = 0.0055536, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0359703, Final residual = 0.000343033, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00257955, Final residual = 0.000113058, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0304897, Final residual = 0.00225716, No Iterations 1
+
+Time = 9
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0504641, Final residual = 0.00313712, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0303889, Final residual = 0.0018988, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.131983, Final residual = 0.0121318, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0356059, Final residual = 0.000232822, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00254705, Final residual = 0.000107248, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0255296, Final residual = 0.00187234, No Iterations 1
+
+Time = 10
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0416189, Final residual = 0.00257818, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0239744, Final residual = 0.00149916, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.100606, Final residual = 0.00896644, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0991208, Final residual = 0.000894452, No Iterations 27
+PBiCGStab:  Solving for omega, Initial residual = 0.0024301, Final residual = 0.000100791, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0222996, Final residual = 0.00162793, No Iterations 1
+
+Time = 11
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0333085, Final residual = 0.00207069, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0154675, Final residual = 0.000968531, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0750898, Final residual = 0.0035648, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0375399, Final residual = 0.000321379, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00231962, Final residual = 8.90651e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0203672, Final residual = 0.00142706, No Iterations 1
+
+Time = 12
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0297614, Final residual = 0.0018533, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0184453, Final residual = 0.00115265, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0641579, Final residual = 0.0033182, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.116918, Final residual = 0.00105084, No Iterations 27
+PBiCGStab:  Solving for omega, Initial residual = 0.00222859, Final residual = 8.3223e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0191381, Final residual = 0.00130127, No Iterations 1
+
+Time = 13
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.024737, Final residual = 0.00153884, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0153346, Final residual = 0.000960097, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0766922, Final residual = 0.00699273, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0257641, Final residual = 0.00024904, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00213792, Final residual = 7.94173e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0183711, Final residual = 0.00119214, No Iterations 1
+
+Time = 14
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0216404, Final residual = 0.00134728, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0132521, Final residual = 0.0008295, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0816976, Final residual = 0.00689733, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0354803, Final residual = 0.000304029, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00206074, Final residual = 8.40598e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.01805, Final residual = 0.00120566, No Iterations 1
+
+Time = 15
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0148974, Final residual = 0.000923091, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00819156, Final residual = 0.00051348, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0651216, Final residual = 0.00593005, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0642804, Final residual = 0.000606899, No Iterations 27
+PBiCGStab:  Solving for omega, Initial residual = 0.00195234, Final residual = 8.779e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0184246, Final residual = 0.00121087, No Iterations 1
+
+Time = 16
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.012843, Final residual = 0.000801154, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00623813, Final residual = 0.00039284, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0490093, Final residual = 0.00256524, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0480291, Final residual = 0.000450056, No Iterations 24
+PBiCGStab:  Solving for omega, Initial residual = 0.00187858, Final residual = 0.000150965, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0195108, Final residual = 0.0013122, No Iterations 1
+
+Time = 17
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0130431, Final residual = 0.000812286, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00866807, Final residual = 0.000544701, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0452186, Final residual = 0.00248622, No Iterations 2
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0362497, Final residual = 0.00034098, No Iterations 27
+PBiCGStab:  Solving for omega, Initial residual = 0.0017717, Final residual = 9.58291e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0215874, Final residual = 0.00142344, No Iterations 1
+
+Time = 18
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0120965, Final residual = 0.000755754, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00796309, Final residual = 0.000500678, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0558428, Final residual = 0.00514174, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0202686, Final residual = 0.000167196, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00171186, Final residual = 3.65888e-05, No Iterations 3
+PBiCGStab:  Solving for k, Initial residual = 0.0253459, Final residual = 0.00168886, No Iterations 1
+
+Time = 19
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0100502, Final residual = 0.000628019, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00654126, Final residual = 0.000410229, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0600047, Final residual = 0.00519747, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0293342, Final residual = 0.000265979, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00169221, Final residual = 8.88713e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0320279, Final residual = 0.00217144, No Iterations 1
+
+Time = 20
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00596309, Final residual = 0.000372846, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00311918, Final residual = 0.000196926, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0529166, Final residual = 0.00472624, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0601431, Final residual = 0.000533474, No Iterations 27
+PBiCGStab:  Solving for omega, Initial residual = 0.00174942, Final residual = 2.47893e-05, No Iterations 3
+PBiCGStab:  Solving for k, Initial residual = 0.040917, Final residual = 0.00237571, No Iterations 1
+
+Time = 21
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00598924, Final residual = 0.000374155, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00361909, Final residual = 0.000228427, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.045817, Final residual = 0.0043607, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0414148, Final residual = 0.000357437, No Iterations 24
+PBiCGStab:  Solving for omega, Initial residual = 0.00185909, Final residual = 0.000110217, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0456989, Final residual = 0.00238415, No Iterations 1
+
+Time = 22
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00707572, Final residual = 0.000441663, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0050064, Final residual = 0.000316087, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0444716, Final residual = 0.00420826, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.018679, Final residual = 0.000171593, No Iterations 27
+PBiCGStab:  Solving for omega, Initial residual = 0.00203342, Final residual = 0.000136139, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0436133, Final residual = 0.00209961, No Iterations 1
+
+Time = 23
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00707442, Final residual = 0.000443561, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00512243, Final residual = 0.000322931, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0487166, Final residual = 0.00433754, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0158774, Final residual = 0.000141322, No Iterations 24
+PBiCGStab:  Solving for omega, Initial residual = 0.00230611, Final residual = 0.00015913, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0387265, Final residual = 0.00172932, No Iterations 1
+
+Time = 24
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00591949, Final residual = 0.000371218, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0039568, Final residual = 0.000249212, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0501539, Final residual = 0.00434998, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0206942, Final residual = 0.000202195, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00261557, Final residual = 0.000126202, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0330877, Final residual = 0.00137165, No Iterations 1
+
+Time = 25
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00425971, Final residual = 0.000268022, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0024956, Final residual = 0.000158723, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0474134, Final residual = 0.00419041, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0242382, Final residual = 0.0001852, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.0028341, Final residual = 8.85464e-05, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.0276229, Final residual = 0.00106626, No Iterations 1
+
+Time = 26
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0045937, Final residual = 0.000288033, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00304718, Final residual = 0.000193542, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.044456, Final residual = 0.00403414, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0183655, Final residual = 0.000150402, No Iterations 24
+PBiCGStab:  Solving for omega, Initial residual = 0.00290461, Final residual = 0.000246398, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0227461, Final residual = 0.000823649, No Iterations 1
+
+Time = 27
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00501464, Final residual = 0.000314661, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00385034, Final residual = 0.000243759, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0433232, Final residual = 0.00393485, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0132829, Final residual = 0.000122413, No Iterations 25
+PBiCGStab:  Solving for omega, Initial residual = 0.00286918, Final residual = 0.000215511, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.018555, Final residual = 0.000637766, No Iterations 1
+
+Time = 28
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0051137, Final residual = 0.000320714, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00382832, Final residual = 0.000242152, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0442034, Final residual = 0.00393387, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0135646, Final residual = 0.000120665, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.002662, Final residual = 0.000187822, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0150574, Final residual = 0.000495354, No Iterations 1
+
+Time = 29
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00479613, Final residual = 0.000300619, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00314549, Final residual = 0.000199367, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0444932, Final residual = 0.00391465, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0151615, Final residual = 0.000130489, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.00236061, Final residual = 0.000160628, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0122109, Final residual = 0.000389037, No Iterations 1
+
+Time = 30
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00434889, Final residual = 0.000272723, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0027471, Final residual = 0.000174702, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0436606, Final residual = 0.00385276, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0148686, Final residual = 0.000126092, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.00205003, Final residual = 0.000136747, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00992373, Final residual = 0.000310792, No Iterations 1
+
+Time = 31
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0043896, Final residual = 0.000275179, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00305009, Final residual = 0.000193795, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0425016, Final residual = 0.00378049, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0124169, Final residual = 0.000105792, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.00177064, Final residual = 0.000117078, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00808334, Final residual = 0.000251576, No Iterations 1
+
+Time = 32
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00448432, Final residual = 0.000281316, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00334153, Final residual = 0.000211887, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.041816, Final residual = 0.00372926, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0109843, Final residual = 0.0001004, No Iterations 22
+PBiCGStab:  Solving for omega, Initial residual = 0.00153903, Final residual = 0.000101173, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00660159, Final residual = 0.000207275, No Iterations 1
+
+Time = 33
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00463895, Final residual = 0.000290799, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00322207, Final residual = 0.000204315, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0418609, Final residual = 0.00371563, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0114385, Final residual = 0.000105227, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.00134807, Final residual = 8.94688e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00540411, Final residual = 0.00017284, No Iterations 1
+
+Time = 34
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00466199, Final residual = 0.000292252, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00291307, Final residual = 0.000185002, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0419383, Final residual = 0.00370798, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0116978, Final residual = 0.000116867, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.001189, Final residual = 8.05603e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00443922, Final residual = 0.000145936, No Iterations 1
+
+Time = 35
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00453508, Final residual = 0.000284384, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00283448, Final residual = 0.000180097, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0417436, Final residual = 0.00368688, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0110401, Final residual = 0.000102947, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.00105221, Final residual = 7.30989e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00366694, Final residual = 0.000125297, No Iterations 1
+
+Time = 36
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00449083, Final residual = 0.000281669, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0029854, Final residual = 0.000189482, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.041337, Final residual = 0.00365176, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00994575, Final residual = 9.09114e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000939834, Final residual = 6.71798e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00311404, Final residual = 0.000109681, No Iterations 1
+
+Time = 37
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0045627, Final residual = 0.000286162, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00306961, Final residual = 0.00019463, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0409968, Final residual = 0.00361224, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0096792, Final residual = 9.60476e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000846661, Final residual = 6.1975e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00274005, Final residual = 9.79747e-05, No Iterations 1
+
+Time = 38
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00470658, Final residual = 0.000295111, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00297997, Final residual = 0.000188915, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0409356, Final residual = 0.00358665, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0100271, Final residual = 8.90111e-05, No Iterations 17
+PBiCGStab:  Solving for omega, Initial residual = 0.000772435, Final residual = 5.78405e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00247319, Final residual = 8.88553e-05, No Iterations 1
+
+Time = 39
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00477469, Final residual = 0.000299472, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00286448, Final residual = 0.000181659, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0409706, Final residual = 0.00357195, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00995723, Final residual = 9.79887e-05, No Iterations 16
+PBiCGStab:  Solving for omega, Initial residual = 0.000711762, Final residual = 5.41865e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00227088, Final residual = 8.14419e-05, No Iterations 1
+
+Time = 40
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00474913, Final residual = 0.000297925, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0028718, Final residual = 0.000182073, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0409518, Final residual = 0.00356113, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00954772, Final residual = 8.32168e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.000661914, Final residual = 5.11336e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00211122, Final residual = 7.54079e-05, No Iterations 1
+
+Time = 41
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00473274, Final residual = 0.000296863, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00293549, Final residual = 0.000185988, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0407918, Final residual = 0.0035479, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0091194, Final residual = 8.51324e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000621106, Final residual = 4.84894e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00198049, Final residual = 7.05065e-05, No Iterations 1
+
+Time = 42
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0047872, Final residual = 0.000300188, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00294799, Final residual = 0.000186763, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0406067, Final residual = 0.00354359, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00916437, Final residual = 8.44552e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000588361, Final residual = 4.61122e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00186996, Final residual = 6.65647e-05, No Iterations 1
+
+Time = 43
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00487925, Final residual = 0.000305811, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00290586, Final residual = 0.000184117, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0405517, Final residual = 0.00355368, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0093868, Final residual = 7.55964e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.000561525, Final residual = 4.39769e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00177606, Final residual = 6.33337e-05, No Iterations 1
+
+Time = 44
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00493384, Final residual = 0.000309089, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00287916, Final residual = 0.000182464, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0405995, Final residual = 0.00356852, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00933253, Final residual = 8.0537e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.000536018, Final residual = 4.20116e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0016943, Final residual = 6.06533e-05, No Iterations 1
+
+Time = 45
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00494003, Final residual = 0.000309344, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00289781, Final residual = 0.000183616, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0407074, Final residual = 0.0035921, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00912838, Final residual = 8.80167e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000511792, Final residual = 4.03463e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00162522, Final residual = 5.86148e-05, No Iterations 1
+
+Time = 46
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00493866, Final residual = 0.000309096, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00292195, Final residual = 0.000185105, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0408052, Final residual = 0.00362098, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00896722, Final residual = 7.64315e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000495674, Final residual = 3.91567e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00156965, Final residual = 5.71524e-05, No Iterations 1
+
+Time = 47
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00496321, Final residual = 0.000310486, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00291933, Final residual = 0.00018494, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0409686, Final residual = 0.00365495, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00902436, Final residual = 7.45317e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000483235, Final residual = 3.8301e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00152366, Final residual = 5.6268e-05, No Iterations 1
+
+Time = 48
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00500648, Final residual = 0.000313052, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00290347, Final residual = 0.000183948, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0412787, Final residual = 0.0036938, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00910883, Final residual = 7.40721e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000472113, Final residual = 3.7339e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0014871, Final residual = 5.5875e-05, No Iterations 1
+
+Time = 49
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00503487, Final residual = 0.000314698, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00289997, Final residual = 0.000183728, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0417301, Final residual = 0.00374072, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00907228, Final residual = 9.01916e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000462155, Final residual = 3.62396e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00146085, Final residual = 5.59517e-05, No Iterations 1
+
+Time = 50
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00503733, Final residual = 0.000314732, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00290774, Final residual = 0.000184199, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0422982, Final residual = 0.00380176, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00897562, Final residual = 8.89835e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.00045161, Final residual = 3.52861e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00144482, Final residual = 5.66449e-05, No Iterations 1
+
+Time = 51
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00503118, Final residual = 0.000314206, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00291031, Final residual = 0.000184333, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0429265, Final residual = 0.00386554, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00892077, Final residual = 8.47396e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000440817, Final residual = 3.50735e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00143444, Final residual = 5.76562e-05, No Iterations 1
+
+Time = 52
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00503507, Final residual = 0.000314298, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00290392, Final residual = 0.000183904, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0436567, Final residual = 0.00392739, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00895715, Final residual = 7.99088e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000429135, Final residual = 3.43044e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00142693, Final residual = 5.86858e-05, No Iterations 1
+
+Time = 53
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00504452, Final residual = 0.000314704, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00289791, Final residual = 0.000183497, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.044499, Final residual = 0.00399213, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00900077, Final residual = 8.53052e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000415128, Final residual = 3.3046e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0014273, Final residual = 5.997e-05, No Iterations 1
+
+Time = 54
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00504266, Final residual = 0.000314419, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00289872, Final residual = 0.000183479, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0454313, Final residual = 0.00406912, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00899665, Final residual = 8.62254e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000398621, Final residual = 3.19785e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00143871, Final residual = 6.16289e-05, No Iterations 1
+
+Time = 55
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00502395, Final residual = 0.000313045, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0029007, Final residual = 0.000183554, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0464599, Final residual = 0.00415783, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00895682, Final residual = 7.62855e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000380847, Final residual = 3.09618e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00145357, Final residual = 6.33205e-05, No Iterations 1
+
+Time = 56
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00499662, Final residual = 0.000311124, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00289929, Final residual = 0.000183371, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0475086, Final residual = 0.00423597, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00893643, Final residual = 8.67207e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000370477, Final residual = 2.99612e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00146928, Final residual = 6.50474e-05, No Iterations 1
+
+Time = 57
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00497166, Final residual = 0.000309315, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00289449, Final residual = 0.000182979, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0485813, Final residual = 0.00431583, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00894769, Final residual = 6.66013e-05, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.000367136, Final residual = 2.93862e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00149061, Final residual = 6.68316e-05, No Iterations 1
+
+Time = 58
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00494511, Final residual = 0.00030739, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00288885, Final residual = 0.000182504, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0496469, Final residual = 0.00440397, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00895916, Final residual = 7.23399e-05, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.000366785, Final residual = 2.89437e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00151687, Final residual = 6.88571e-05, No Iterations 1
+
+Time = 59
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00490907, Final residual = 0.000304875, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00288176, Final residual = 0.000181948, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0506651, Final residual = 0.0044816, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00891412, Final residual = 7.57112e-05, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.000367573, Final residual = 2.8592e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00154365, Final residual = 7.09971e-05, No Iterations 1
+
+Time = 60
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0048608, Final residual = 0.000301568, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0028695, Final residual = 0.000181055, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0515818, Final residual = 0.00454845, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00883677, Final residual = 7.7468e-05, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.000367972, Final residual = 2.8266e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00156441, Final residual = 7.28918e-05, No Iterations 1
+
+Time = 61
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00480508, Final residual = 0.000297811, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00285166, Final residual = 0.000179826, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0522757, Final residual = 0.00459389, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00876697, Final residual = 7.82662e-05, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.000367637, Final residual = 2.78363e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00157836, Final residual = 7.45342e-05, No Iterations 1
+
+Time = 62
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00474634, Final residual = 0.000293898, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00283057, Final residual = 0.000178372, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.052252, Final residual = 0.00456433, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00868211, Final residual = 7.75719e-05, No Iterations 23
+PBiCGStab:  Solving for omega, Initial residual = 0.00036559, Final residual = 2.7217e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00157827, Final residual = 7.57261e-05, No Iterations 1
+
+Time = 63
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00468347, Final residual = 0.000289763, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0028079, Final residual = 0.000176821, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0516444, Final residual = 0.00445533, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00860533, Final residual = 8.02399e-05, No Iterations 22
+PBiCGStab:  Solving for omega, Initial residual = 0.000362443, Final residual = 2.64812e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00156152, Final residual = 7.61948e-05, No Iterations 1
+
+Time = 64
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00461256, Final residual = 0.000285208, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00278278, Final residual = 0.000175107, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0507645, Final residual = 0.00429921, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00850746, Final residual = 8.22273e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000359084, Final residual = 2.56286e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0015324, Final residual = 7.57072e-05, No Iterations 1
+
+Time = 65
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00453336, Final residual = 0.000280219, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00275388, Final residual = 0.000173149, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0496458, Final residual = 0.00411347, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0084037, Final residual = 7.70434e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000357775, Final residual = 2.53398e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00149518, Final residual = 7.46761e-05, No Iterations 1
+
+Time = 66
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00444951, Final residual = 0.000275024, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00272159, Final residual = 0.00017098, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0482884, Final residual = 0.00390224, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00835524, Final residual = 8.03461e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000354422, Final residual = 2.48243e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00145353, Final residual = 7.3363e-05, No Iterations 1
+
+Time = 67
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00436385, Final residual = 0.000269835, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00268809, Final residual = 0.000168724, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0466571, Final residual = 0.00366514, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00832103, Final residual = 7.84461e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000347187, Final residual = 2.45014e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00140898, Final residual = 7.18108e-05, No Iterations 1
+
+Time = 68
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0042765, Final residual = 0.000264664, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00265375, Final residual = 0.000166444, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0447838, Final residual = 0.00346324, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0083367, Final residual = 7.81513e-05, No Iterations 22
+PBiCGStab:  Solving for omega, Initial residual = 0.000335748, Final residual = 2.3642e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00136208, Final residual = 7.0081e-05, No Iterations 1
+
+Time = 69
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00418787, Final residual = 0.000259535, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00261946, Final residual = 0.000164166, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0427106, Final residual = 0.00328886, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00834379, Final residual = 7.55883e-05, No Iterations 22
+PBiCGStab:  Solving for omega, Initial residual = 0.000323029, Final residual = 2.29524e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00131459, Final residual = 6.82815e-05, No Iterations 1
+
+Time = 70
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00409997, Final residual = 0.000254567, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00258528, Final residual = 0.00016191, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.04054, Final residual = 0.0031201, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00843226, Final residual = 7.53771e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000310036, Final residual = 2.22573e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00126833, Final residual = 6.65017e-05, No Iterations 1
+
+Time = 71
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00401612, Final residual = 0.000249909, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00255245, Final residual = 0.000159778, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0383264, Final residual = 0.00295438, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00848038, Final residual = 7.27845e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000297246, Final residual = 2.12294e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00122495, Final residual = 6.48238e-05, No Iterations 1
+
+Time = 72
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00393798, Final residual = 0.000245804, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00252198, Final residual = 0.000157812, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.036128, Final residual = 0.00281609, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00849772, Final residual = 6.81063e-05, No Iterations 21
+PBiCGStab:  Solving for omega, Initial residual = 0.000286334, Final residual = 2.05585e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00118468, Final residual = 6.32274e-05, No Iterations 1
+
+Time = 73
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00386607, Final residual = 0.000242067, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00249405, Final residual = 0.000156035, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0340335, Final residual = 0.00270189, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0084864, Final residual = 8.12817e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000276739, Final residual = 1.99963e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00114784, Final residual = 6.17686e-05, No Iterations 1
+
+Time = 74
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00380305, Final residual = 0.000238603, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00246804, Final residual = 0.000154442, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0320859, Final residual = 0.00259871, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00836456, Final residual = 6.7956e-05, No Iterations 20
+PBiCGStab:  Solving for omega, Initial residual = 0.000268341, Final residual = 1.95522e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00111374, Final residual = 6.03967e-05, No Iterations 1
+
+Time = 75
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0037511, Final residual = 0.000235389, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00244384, Final residual = 0.000152992, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0303684, Final residual = 0.00250038, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00823999, Final residual = 7.64137e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.00026036, Final residual = 1.88277e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.0010834, Final residual = 5.91731e-05, No Iterations 1
+
+Time = 76
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00370079, Final residual = 0.000232138, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00242081, Final residual = 0.00015163, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0289155, Final residual = 0.00243957, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00807033, Final residual = 6.74081e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000254114, Final residual = 1.84096e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00105583, Final residual = 5.79987e-05, No Iterations 1
+
+Time = 77
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00365265, Final residual = 0.000228869, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0023976, Final residual = 0.000150279, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0277583, Final residual = 0.00239557, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00785663, Final residual = 5.94401e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000249048, Final residual = 1.81408e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00103156, Final residual = 5.69459e-05, No Iterations 1
+
+Time = 78
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00360821, Final residual = 0.000225652, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00237304, Final residual = 0.000148852, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0269328, Final residual = 0.00234289, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00762182, Final residual = 7.50779e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.0002448, Final residual = 1.78537e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00101007, Final residual = 5.59786e-05, No Iterations 1
+
+Time = 79
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00356295, Final residual = 0.000222385, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00234672, Final residual = 0.000147322, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0264125, Final residual = 0.00229547, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00737213, Final residual = 7.07198e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.00024068, Final residual = 1.75316e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000991032, Final residual = 5.51184e-05, No Iterations 1
+
+Time = 80
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00351554, Final residual = 0.000219058, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00231847, Final residual = 0.000145678, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.026176, Final residual = 0.00227868, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00711538, Final residual = 6.60246e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.00023637, Final residual = 1.73177e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000973739, Final residual = 5.43443e-05, No Iterations 1
+
+Time = 81
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00346772, Final residual = 0.00021579, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00228886, Final residual = 0.00014395, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0261946, Final residual = 0.00226787, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00685674, Final residual = 6.63757e-05, No Iterations 18
+PBiCGStab:  Solving for omega, Initial residual = 0.000231668, Final residual = 1.69285e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000957122, Final residual = 5.35259e-05, No Iterations 1
+
+Time = 82
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00342188, Final residual = 0.000212718, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00225826, Final residual = 0.000142154, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0264591, Final residual = 0.0022614, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00660127, Final residual = 4.62649e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000226348, Final residual = 1.64902e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000941481, Final residual = 5.27953e-05, No Iterations 1
+
+Time = 83
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00337667, Final residual = 0.000209746, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00222713, Final residual = 0.000140335, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0269163, Final residual = 0.00228327, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00632731, Final residual = 4.63126e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000221253, Final residual = 1.60801e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000926592, Final residual = 5.20293e-05, No Iterations 1
+
+Time = 84
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00333009, Final residual = 0.000206738, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00219539, Final residual = 0.000138486, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0275628, Final residual = 0.00233805, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00607195, Final residual = 4.75048e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.00021649, Final residual = 1.57358e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000912579, Final residual = 5.13067e-05, No Iterations 1
+
+Time = 85
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00328231, Final residual = 0.000203704, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00216316, Final residual = 0.000136585, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0283628, Final residual = 0.00239669, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00585671, Final residual = 4.88672e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000211863, Final residual = 1.53557e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000898681, Final residual = 5.05543e-05, No Iterations 1
+
+Time = 86
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00323376, Final residual = 0.000200655, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00213014, Final residual = 0.000134614, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0292239, Final residual = 0.0024462, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00566249, Final residual = 4.99478e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000207266, Final residual = 1.49431e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00088527, Final residual = 4.9845e-05, No Iterations 1
+
+Time = 87
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00318457, Final residual = 0.000197604, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00209678, Final residual = 0.000132602, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0301319, Final residual = 0.00250341, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00548995, Final residual = 5.01913e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000202942, Final residual = 1.46129e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000872217, Final residual = 4.91741e-05, No Iterations 1
+
+Time = 88
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00313504, Final residual = 0.00019456, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00206323, Final residual = 0.00013055, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0310572, Final residual = 0.00255313, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00532396, Final residual = 4.97659e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000198731, Final residual = 1.42758e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000859025, Final residual = 4.84917e-05, No Iterations 1
+
+Time = 89
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00308516, Final residual = 0.00019153, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00202969, Final residual = 0.000128496, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0319843, Final residual = 0.00259789, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00516531, Final residual = 4.89695e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000194427, Final residual = 1.39431e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000845432, Final residual = 4.78092e-05, No Iterations 1
+
+Time = 90
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00303541, Final residual = 0.000188531, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00199645, Final residual = 0.000126444, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0329226, Final residual = 0.00267194, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00500082, Final residual = 4.77938e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000189983, Final residual = 1.36129e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000831192, Final residual = 4.71003e-05, No Iterations 1
+
+Time = 91
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00298617, Final residual = 0.00018559, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00196377, Final residual = 0.000124418, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0338786, Final residual = 0.00276885, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00484771, Final residual = 4.63445e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000185913, Final residual = 1.33458e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000816901, Final residual = 4.63824e-05, No Iterations 1
+
+Time = 92
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00293798, Final residual = 0.000182738, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00193189, Final residual = 0.00012242, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0348581, Final residual = 0.00284822, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00470793, Final residual = 4.47961e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000182103, Final residual = 1.30631e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000802256, Final residual = 4.56199e-05, No Iterations 1
+
+Time = 93
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00289112, Final residual = 0.000179997, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00190083, Final residual = 0.000120463, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0358118, Final residual = 0.00289819, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00457132, Final residual = 4.27444e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000178674, Final residual = 1.27945e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000787678, Final residual = 4.48671e-05, No Iterations 1
+
+Time = 94
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00284622, Final residual = 0.00017738, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0018714, Final residual = 0.000118599, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0366782, Final residual = 0.00293882, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00446253, Final residual = 4.09101e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000176045, Final residual = 1.25808e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000773848, Final residual = 4.41287e-05, No Iterations 1
+
+Time = 95
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00280381, Final residual = 0.000174905, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00184363, Final residual = 0.000116822, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0374213, Final residual = 0.00297446, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.0043699, Final residual = 3.96756e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000173493, Final residual = 1.23685e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.00076052, Final residual = 4.34041e-05, No Iterations 1
+
+Time = 96
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00276391, Final residual = 0.000172568, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00181753, Final residual = 0.000115142, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0380136, Final residual = 0.00300171, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00427431, Final residual = 3.89675e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000170884, Final residual = 1.21823e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000747455, Final residual = 4.26861e-05, No Iterations 1
+
+Time = 97
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00272661, Final residual = 0.000170357, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.0017933, Final residual = 0.00011358, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0384042, Final residual = 0.00303231, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00418988, Final residual = 3.88342e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000168374, Final residual = 1.2007e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000734788, Final residual = 4.20073e-05, No Iterations 1
+
+Time = 98
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00269154, Final residual = 0.00016826, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00177162, Final residual = 0.000112186, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0385586, Final residual = 0.00304961, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00410043, Final residual = 3.82068e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000165745, Final residual = 1.1818e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000722527, Final residual = 4.13495e-05, No Iterations 1
+
+Time = 99
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.0026589, Final residual = 0.000166279, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00175394, Final residual = 0.000111054, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0384448, Final residual = 0.00303657, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00401278, Final residual = 3.69603e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.00016301, Final residual = 1.16006e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000710576, Final residual = 4.07271e-05, No Iterations 1
+
+Time = 100
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.00262827, Final residual = 0.000164403, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.00173953, Final residual = 0.000110114, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.0380511, Final residual = 0.00301374, No Iterations 1
+limitTemperature: lower 0, upper 0
+GAMG:  Solving for p, Initial residual = 0.00392749, Final residual = 3.5284e-05, No Iterations 19
+PBiCGStab:  Solving for omega, Initial residual = 0.000160217, Final residual = 1.14016e-05, No Iterations 1
+PBiCGStab:  Solving for k, Initial residual = 0.000698917, Final residual = 4.01224e-05, No Iterations 1
+
+iterations 100; setup 0.249 s; loop 0.569 s (0.005694 s/iteration)
+End
+profile (s): momentum 0.057 energy 0.052 pressure 0.350 (p solve 0.320) turbulence 0.107

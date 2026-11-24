@@ -1,0 +1,6 @@
+label=N6d-ablB-r4
+started_utc=2026-10-25T02:27:03Z
+host=g02 profile=g02-l40 gpu_device=3
+iters=50 variants=gncamg core=157
+uptime= 10:27:03 up 13 days,  1:03,  7 users,  load average: 100.76, 100.72, 100.76
+finished_utc=2026-10-25T02:27:10Z

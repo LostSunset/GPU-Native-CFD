@@ -1,0 +1,10 @@
+A=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/ref/2000
+B=/ssd/sclin/gpu-native-cfd/runs/N7-g02-conv/rae2822SA/lusgsColor/2000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p               23552           1.999789e+03           1.277937e-02           1.816571e-04
+T               23552           2.777745e+00           9.321302e-03           5.800269e-04
+U               70656           8.104235e+00           2.287972e-02           6.301472e-04
+rho             23552           1.718815e-02           8.922092e-03           4.749130e-04
+nuTilda         23552           1.439189e-05           1.675231e-03           8.086467e-04
+nut             23552           1.439221e-05           1.675271e-03           8.118149e-04
+alphat          23552           2.141174e-05           1.707780e-03           8.576670e-04

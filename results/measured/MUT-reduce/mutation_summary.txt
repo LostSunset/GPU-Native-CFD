@@ -1,0 +1,90 @@
+## MUT-reduce
+first mismatch: 1.U; L3 fields bitwise: n/a
+  0.init      26 records, all bitwise
+  1.U         32 records, 2 differ: U.i(16000/48000, 4.3e-18, 14 ulp), U.b(360/1440, 1.3e-27, 15 ulp)
+  1.E         26 records, 2 differ: U.i(16000/48000, 4.3e-18, 14 ulp), U.b(360/1440, 1.3e-27, 15 ulp)
+  1.p         34 records, 12 differ: p.i(10196/16000, 1.6e-09, 784 ulp), p.b(165/480, 1.4e-09, 340 ulp), U.i(32867/48000, 7.3e-12, >1e6 ulp), U.b(536/1440, 3.4e-12, >1e6 ulp), rho.i(1239/16000, 2.2e-16, 1 ulp), rho.b(11/480, 2.2e-16, 1 ulp) +6 more
+  1.turb      26 records, 16 differ: p.i(10196/16000, 1.6e-09, 784 ulp), p.b(165/480, 1.4e-09, 340 ulp), U.i(32867/48000, 7.3e-12, >1e6 ulp), U.b(536/1440, 3.4e-12, >1e6 ulp), rho.i(1239/16000, 2.2e-16, 1 ulp), rho.b(11/480, 2.2e-16, 1 ulp) +10 more
+  2.U         32 records, 22 differ: p.i(10196/16000, 1.6e-09, 784 ulp), p.b(165/480, 1.4e-09, 340 ulp), U.i(36893/48000, 1.2e-11, >1e6 ulp), U.b(677/1440, 6.1e-12, >1e6 ulp), rho.i(1239/16000, 2.2e-16, 1 ulp), rho.b(11/480, 2.2e-16, 1 ulp) +16 more
+  2.E         26 records, 22 differ: p.i(10196/16000, 1.6e-09, 784 ulp), p.b(165/480, 1.4e-09, 340 ulp), T.i(10941/16000, 6.5e-12, 115 ulp), T.b(101/480, 2.6e-12, 45 ulp), U.i(36893/48000, 1.2e-11, >1e6 ulp), U.b(677/1440, 6.1e-12, >1e6 ulp) +16 more
+  2.p         34 records, 30 differ: p.i(14246/16000, 1.1e-08, 1030 ulp), p.b(266/480, 8.2e-09, 1030 ulp), T.i(10941/16000, 6.5e-12, 115 ulp), T.b(101/480, 2.6e-12, 45 ulp), U.i(38298/48000, 5.7e-11, >1e6 ulp), U.b(699/1440, 2.0e-11, >1e6 ulp) +24 more
+  2.turb      26 records, 22 differ: p.i(14246/16000, 1.1e-08, 1030 ulp), p.b(266/480, 8.2e-09, 1030 ulp), T.i(10941/16000, 6.5e-12, 115 ulp), T.b(101/480, 2.6e-12, 45 ulp), U.i(38298/48000, 5.7e-11, >1e6 ulp), U.b(699/1440, 2.0e-11, >1e6 ulp) +16 more
+  10.U        32 records, 28 differ: p.i(15979/16000, 1.8e-08, 1216 ulp), p.b(318/480, 1.2e-08, 847 ulp), T.i(15285/16000, 2.5e-11, 445 ulp), T.b(356/480, 1.3e-11, 222 ulp), U.i(39355/48000, 4.5e-10, >1e6 ulp), U.b(774/1440, 3.0e-10, >1e6 ulp) +22 more
+  10.E        26 records, 22 differ: p.i(15979/16000, 1.8e-08, 1216 ulp), p.b(318/480, 1.2e-08, 847 ulp), T.i(15347/16000, 6.2e-11, 1097 ulp), T.b(361/480, 1.6e-11, 282 ulp), U.i(39355/48000, 4.5e-10, >1e6 ulp), U.b(774/1440, 3.0e-10, >1e6 ulp) +16 more
+  10.p        34 records, 30 differ: p.i(15981/16000, 2.2e-08, 1482 ulp), p.b(322/480, 1.6e-08, 1069 ulp), T.i(15347/16000, 6.2e-11, 1097 ulp), T.b(361/480, 1.6e-11, 282 ulp), U.i(38995/48000, 4.4e-10, >1e6 ulp), U.b(762/1440, 2.1e-11, >1e6 ulp) +24 more
+  10.turb     26 records, 22 differ: p.i(15981/16000, 2.2e-08, 1482 ulp), p.b(322/480, 1.6e-08, 1069 ulp), T.i(15347/16000, 6.2e-11, 1097 ulp), T.b(361/480, 1.6e-11, 282 ulp), U.i(38995/48000, 4.4e-10, >1e6 ulp), U.b(762/1440, 2.1e-11, >1e6 ulp) +16 more
+## MUT-ilu
+first mismatch: 1.U; L3 fields bitwise: n/a
+  0.init      26 records, all bitwise
+  1.U         32 records, 2 differ: U.i(17592/48000, 5.0e-03, >1e6 ulp), U.b(360/1440, 8.2e-15, >1e6 ulp)
+  1.E         26 records, 8 differ: T.i(4454/16000, 3.6e-03, >1e6 ulp), T.b(120/480, 3.6e-03, >1e6 ulp), U.i(17592/48000, 5.0e-03, >1e6 ulp), U.b(360/1440, 8.2e-15, >1e6 ulp), e.i(7280/16000, 2.6e+00, >1e6 ulp), e.b(120/480, 2.6e+00, >1e6 ulp) +2 more
+  1.p         34 records, 18 differ: p.i(10706/16000, 2.2e+02, >1e6 ulp), p.b(376/480, 2.2e+02, >1e6 ulp), T.i(4454/16000, 3.6e-03, >1e6 ulp), T.b(120/480, 3.6e-03, >1e6 ulp), U.i(39869/48000, 3.8e-02, >1e6 ulp), U.b(815/1440, 1.8e-02, >1e6 ulp) +12 more
+  1.turb      26 records, 22 differ: p.i(10706/16000, 2.2e+02, >1e6 ulp), p.b(376/480, 2.2e+02, >1e6 ulp), T.i(4454/16000, 3.6e-03, >1e6 ulp), T.b(120/480, 3.6e-03, >1e6 ulp), U.i(39869/48000, 3.8e-02, >1e6 ulp), U.b(815/1440, 1.8e-02, >1e6 ulp) +16 more
+  2.U         32 records, 28 differ: p.i(10706/16000, 2.2e+02, >1e6 ulp), p.b(376/480, 2.2e+02, >1e6 ulp), T.i(4454/16000, 3.6e-03, >1e6 ulp), T.b(120/480, 3.6e-03, >1e6 ulp), U.i(39869/48000, 3.1e+00, >1e6 ulp), U.b(815/1440, 8.7e-02, >1e6 ulp) +22 more
+  2.E         26 records, 22 differ: p.i(10706/16000, 2.2e+02, >1e6 ulp), p.b(376/480, 2.2e+02, >1e6 ulp), T.i(16000/16000, 1.3e+01, >1e6 ulp), T.b(157/480, 6.2e+00, >1e6 ulp), U.i(39869/48000, 3.1e+00, >1e6 ulp), U.b(815/1440, 8.7e-02, >1e6 ulp) +16 more
+  2.p         34 records, 30 differ: p.i(14248/16000, 1.4e+03, >1e6 ulp), p.b(426/480, 1.4e+03, >1e6 ulp), T.i(16000/16000, 1.3e+01, >1e6 ulp), T.b(157/480, 6.2e+00, >1e6 ulp), U.i(39869/48000, 6.1e-01, >1e6 ulp), U.b(815/1440, 6.8e-02, >1e6 ulp) +24 more
+  2.turb      26 records, 22 differ: p.i(14248/16000, 1.4e+03, >1e6 ulp), p.b(426/480, 1.4e+03, >1e6 ulp), T.i(16000/16000, 1.3e+01, >1e6 ulp), T.b(157/480, 6.2e+00, >1e6 ulp), U.i(39869/48000, 6.1e-01, >1e6 ulp), U.b(815/1440, 6.8e-02, >1e6 ulp) +16 more
+  10.U        32 records, 28 differ: p.i(16000/16000, 1.8e+02, >1e6 ulp), p.b(480/480, 1.8e+02, >1e6 ulp), T.i(16000/16000, 5.6e+00, >1e6 ulp), T.b(366/480, 5.6e+00, >1e6 ulp), U.i(39869/48000, 6.5e-01, >1e6 ulp), U.b(815/1440, 1.4e-02, >1e6 ulp) +22 more
+  10.E        26 records, 22 differ: p.i(16000/16000, 1.8e+02, >1e6 ulp), p.b(480/480, 1.8e+02, >1e6 ulp), T.i(16000/16000, 5.7e+00, >1e6 ulp), T.b(368/480, 5.7e+00, >1e6 ulp), U.i(39869/48000, 6.5e-01, >1e6 ulp), U.b(815/1440, 1.4e-02, >1e6 ulp) +16 more
+  10.p        34 records, 30 differ: p.i(16000/16000, 1.1e+02, >1e6 ulp), p.b(479/480, 1.0e+02, >1e6 ulp), T.i(16000/16000, 5.7e+00, >1e6 ulp), T.b(368/480, 5.7e+00, >1e6 ulp), U.i(39869/48000, 6.5e-01, >1e6 ulp), U.b(815/1440, 1.7e-02, >1e6 ulp) +24 more
+  10.turb     26 records, 22 differ: p.i(16000/16000, 1.1e+02, >1e6 ulp), p.b(479/480, 1.0e+02, >1e6 ulp), T.i(16000/16000, 5.7e+00, >1e6 ulp), T.b(368/480, 5.7e+00, >1e6 ulp), U.i(39869/48000, 6.5e-01, >1e6 ulp), U.b(815/1440, 1.7e-02, >1e6 ulp) +16 more
+## MUT-tanh
+first mismatch: 2.turb; L3 fields bitwise: n/a
+  0.init      26 records, all bitwise
+  1.U         32 records, all bitwise
+  1.E         26 records, all bitwise
+  1.p         34 records, all bitwise
+  1.turb      26 records, all bitwise
+  2.U         32 records, all bitwise
+  2.E         26 records, all bitwise
+  2.p         34 records, all bitwise
+  2.turb      26 records, 1 differ: omega.i(2/16000, 1.8e-15, 1 ulp)
+  10.U        32 records, 5 differ: omega.i(69/16000, 7.1e-15, 2 ulp), nut.i(16/16000, 5.4e-20, 4 ulp), alphat.i(15/16000, 6.8e-20, 5 ulp), UEqn.upper(14/31760, 5.1e-21, 3 ulp), UEqn.lower(20/31760, 6.8e-21, 2 ulp)
+  10.E        26 records, 3 differ: omega.i(69/16000, 7.1e-15, 2 ulp), nut.i(16/16000, 5.4e-20, 4 ulp), alphat.i(15/16000, 6.8e-20, 5 ulp)
+  10.p        34 records, 3 differ: omega.i(69/16000, 7.1e-15, 2 ulp), nut.i(16/16000, 5.4e-20, 4 ulp), alphat.i(15/16000, 6.8e-20, 5 ulp)
+  10.turb     26 records, 3 differ: omega.i(80/16000, 2.8e-14, 3 ulp), nut.i(34/16000, 1.6e-19, 5 ulp), alphat.i(33/16000, 2.2e-19, 6 ulp)
+## MUT-assoc
+first mismatch: 1.E; L3 fields bitwise: n/a
+  0.init      26 records, all bitwise
+  1.U         32 records, all bitwise
+  1.E         26 records, 6 differ: T.i(75/16000, 5.7e-14, 1 ulp), T.b(1/480, 5.7e-14, 1 ulp), e.i(215/16000, 2.9e-11, 2 ulp), e.b(10/480, 1.5e-11, 1 ulp), thermo:psi.i(75/16000, 5.1e-21, 3 ulp), thermo:psi.b(1/480, 3.4e-21, 2 ulp)
+  1.p         34 records, 14 differ: p.i(10704/16000, 3.7e-01, >1e6 ulp), p.b(368/480, 2.8e-01, >1e6 ulp), T.i(75/16000, 5.7e-14, 1 ulp), T.b(1/480, 5.7e-14, 1 ulp), U.i(39869/48000, 2.4e-02, >1e6 ulp), U.b(815/1440, 2.4e-02, >1e6 ulp) +8 more
+  1.turb      26 records, 22 differ: p.i(10704/16000, 3.7e-01, >1e6 ulp), p.b(368/480, 2.8e-01, >1e6 ulp), T.i(75/16000, 5.7e-14, 1 ulp), T.b(1/480, 5.7e-14, 1 ulp), U.i(39869/48000, 2.4e-02, >1e6 ulp), U.b(815/1440, 2.4e-02, >1e6 ulp) +16 more
+  2.U         32 records, 28 differ: p.i(10704/16000, 3.7e-01, >1e6 ulp), p.b(368/480, 2.8e-01, >1e6 ulp), T.i(75/16000, 5.7e-14, 1 ulp), T.b(1/480, 5.7e-14, 1 ulp), U.i(39869/48000, 3.5e-02, >1e6 ulp), U.b(815/1440, 3.3e-02, >1e6 ulp) +22 more
+  2.E         26 records, 22 differ: p.i(10704/16000, 3.7e-01, >1e6 ulp), p.b(368/480, 2.8e-01, >1e6 ulp), T.i(16000/16000, 9.4e-03, >1e6 ulp), T.b(122/480, 3.0e-04, >1e6 ulp), U.i(39869/48000, 3.5e-02, >1e6 ulp), U.b(815/1440, 3.3e-02, >1e6 ulp) +16 more
+  2.p         34 records, 30 differ: p.i(14248/16000, 1.7e+00, >1e6 ulp), p.b(426/480, 3.5e-01, >1e6 ulp), T.i(16000/16000, 9.4e-03, >1e6 ulp), T.b(122/480, 3.0e-04, >1e6 ulp), U.i(39869/48000, 8.5e-02, >1e6 ulp), U.b(815/1440, 5.0e-02, >1e6 ulp) +24 more
+  2.turb      26 records, 22 differ: p.i(14248/16000, 1.7e+00, >1e6 ulp), p.b(426/480, 3.5e-01, >1e6 ulp), T.i(16000/16000, 9.4e-03, >1e6 ulp), T.b(122/480, 3.0e-04, >1e6 ulp), U.i(39869/48000, 8.5e-02, >1e6 ulp), U.b(815/1440, 5.0e-02, >1e6 ulp) +16 more
+  10.U        32 records, 28 differ: p.i(16000/16000, 4.9e-01, >1e6 ulp), p.b(478/480, 4.8e-01, >1e6 ulp), T.i(16000/16000, 3.8e-03, >1e6 ulp), T.b(366/480, 1.3e-03, >1e6 ulp), U.i(39869/48000, 1.6e-02, >1e6 ulp), U.b(815/1440, 1.6e-03, >1e6 ulp) +22 more
+  10.E        26 records, 22 differ: p.i(16000/16000, 4.9e-01, >1e6 ulp), p.b(478/480, 4.8e-01, >1e6 ulp), T.i(16000/16000, 2.7e-03, >1e6 ulp), T.b(368/480, 2.3e-03, >1e6 ulp), U.i(39869/48000, 1.6e-02, >1e6 ulp), U.b(815/1440, 1.6e-03, >1e6 ulp) +16 more
+  10.p        34 records, 30 differ: p.i(16000/16000, 4.1e+00, >1e6 ulp), p.b(480/480, 4.1e+00, >1e6 ulp), T.i(16000/16000, 2.7e-03, >1e6 ulp), T.b(368/480, 2.3e-03, >1e6 ulp), U.i(39869/48000, 8.3e-03, >1e6 ulp), U.b(815/1440, 1.3e-03, >1e6 ulp) +24 more
+  10.turb     26 records, 22 differ: p.i(16000/16000, 4.1e+00, >1e6 ulp), p.b(480/480, 4.1e+00, >1e6 ulp), T.i(16000/16000, 2.7e-03, >1e6 ulp), T.b(368/480, 2.3e-03, >1e6 ulp), U.i(39869/48000, 8.3e-03, >1e6 ulp), U.b(815/1440, 1.3e-03, >1e6 ulp) +16 more
+## MUT-gather
+first mismatch: 1.U; L3 fields bitwise: n/a
+  0.init      26 records, all bitwise
+  1.U         32 records, 4 differ: U.i(1703/48000, 8.5e-14, 160 ulp), U.b(14/1440, 3.9e-31, 3 ulp), UEqn.diag(574/16000, 3.6e-15, 4 ulp), UEqn.source(1373/48000, 9.1e-13, 2048 ulp)
+  1.E         26 records, 8 differ: T.i(1401/16000, 1.1e-13, 2 ulp), T.b(34/480, 1.1e-13, 2 ulp), U.i(1703/48000, 8.5e-14, 160 ulp), U.b(14/1440, 3.9e-31, 3 ulp), e.i(4138/16000, 8.7e-11, 6 ulp), e.b(68/480, 8.7e-11, 6 ulp) +2 more
+  1.p         34 records, 21 differ: p.i(10704/16000, 5.2e-05, >1e6 ulp), p.b(262/480, 1.7e-05, >1e6 ulp), T.i(1401/16000, 1.1e-13, 2 ulp), T.b(34/480, 1.1e-13, 2 ulp), U.i(39868/48000, 2.0e-06, >1e6 ulp), U.b(814/1440, 1.5e-06, >1e6 ulp) +15 more
+  1.turb      26 records, 22 differ: p.i(10704/16000, 5.2e-05, >1e6 ulp), p.b(262/480, 1.7e-05, >1e6 ulp), T.i(1401/16000, 1.1e-13, 2 ulp), T.b(34/480, 1.1e-13, 2 ulp), U.i(39868/48000, 2.0e-06, >1e6 ulp), U.b(814/1440, 1.5e-06, >1e6 ulp) +16 more
+  2.U         32 records, 28 differ: p.i(10704/16000, 5.2e-05, >1e6 ulp), p.b(262/480, 1.7e-05, >1e6 ulp), T.i(1401/16000, 1.1e-13, 2 ulp), T.b(34/480, 1.1e-13, 2 ulp), U.i(39869/48000, 3.3e-06, >1e6 ulp), U.b(815/1440, 1.8e-06, >1e6 ulp) +22 more
+  2.E         26 records, 22 differ: p.i(10704/16000, 5.2e-05, >1e6 ulp), p.b(262/480, 1.7e-05, >1e6 ulp), T.i(16000/16000, 1.6e-06, >1e6 ulp), T.b(123/480, 1.8e-08, 320589 ulp), U.i(39869/48000, 3.3e-06, >1e6 ulp), U.b(815/1440, 1.8e-06, >1e6 ulp) +16 more
+  2.p         34 records, 30 differ: p.i(14248/16000, 1.0e-03, >1e6 ulp), p.b(324/480, 7.9e-04, >1e6 ulp), T.i(16000/16000, 1.6e-06, >1e6 ulp), T.b(123/480, 1.8e-08, 320589 ulp), U.i(39869/48000, 3.1e-05, >1e6 ulp), U.b(815/1440, 2.0e-05, >1e6 ulp) +24 more
+  2.turb      26 records, 22 differ: p.i(14248/16000, 1.0e-03, >1e6 ulp), p.b(324/480, 7.9e-04, >1e6 ulp), T.i(16000/16000, 1.6e-06, >1e6 ulp), T.b(123/480, 1.8e-08, 320589 ulp), U.i(39869/48000, 3.1e-05, >1e6 ulp), U.b(815/1440, 2.0e-05, >1e6 ulp) +16 more
+  10.U        32 records, 28 differ: p.i(16000/16000, 5.7e-03, >1e6 ulp), p.b(396/480, 5.5e-03, >1e6 ulp), T.i(16000/16000, 1.8e-05, >1e6 ulp), T.b(366/480, 3.9e-06, >1e6 ulp), U.i(39869/48000, 3.1e-04, >1e6 ulp), U.b(815/1440, 1.5e-04, >1e6 ulp) +22 more
+  10.E        26 records, 22 differ: p.i(16000/16000, 5.7e-03, >1e6 ulp), p.b(396/480, 5.5e-03, >1e6 ulp), T.i(16000/16000, 3.2e-05, >1e6 ulp), T.b(368/480, 6.8e-06, >1e6 ulp), U.i(39869/48000, 3.1e-04, >1e6 ulp), U.b(815/1440, 1.5e-04, >1e6 ulp) +16 more
+  10.p        34 records, 30 differ: p.i(16000/16000, 4.9e-03, >1e6 ulp), p.b(415/480, 3.4e-03, >1e6 ulp), T.i(16000/16000, 3.2e-05, >1e6 ulp), T.b(368/480, 6.8e-06, >1e6 ulp), U.i(39869/48000, 2.5e-04, >1e6 ulp), U.b(815/1440, 1.5e-05, >1e6 ulp) +24 more
+  10.turb     26 records, 22 differ: p.i(16000/16000, 4.9e-03, >1e6 ulp), p.b(415/480, 3.4e-03, >1e6 ulp), T.i(16000/16000, 3.2e-05, >1e6 ulp), T.b(368/480, 6.8e-06, >1e6 ulp), U.i(39869/48000, 2.5e-04, >1e6 ulp), U.b(815/1440, 1.5e-05, >1e6 ulp) +16 more
+## MUT-fmad
+first mismatch: 0.init; L3 fields bitwise: n/a
+  0.init      26 records, 1 differ: phi.b(16/480, 0.0e+00, 0 ulp)
+  1.U         32 records, 9 differ: U.i(20795/48000, 8.5e-14, >1e6 ulp), U.b(439/1440, 5.7e-14, >1e6 ulp), phi.b(16/480, 0.0e+00, 0 ulp), UEqn.diag(902/16000, 3.6e-15, 5 ulp), UEqn.upper(13628/31760, 4.4e-16, 295 ulp), UEqn.lower(17488/31760, 2.2e-16, 315 ulp) +3 more
+  1.E         26 records, 9 differ: T.i(2141/16000, 1.1e-13, 2 ulp), T.b(33/480, 1.1e-13, 2 ulp), U.i(20795/48000, 8.5e-14, >1e6 ulp), U.b(439/1440, 5.7e-14, >1e6 ulp), e.i(6755/16000, 5.8e-11, 4 ulp), e.b(85/480, 5.8e-11, 4 ulp) +3 more
+  1.p         34 records, 22 differ: p.i(10704/16000, 1.2e+00, >1e6 ulp), p.b(371/480, 6.5e-01, >1e6 ulp), T.i(2141/16000, 1.1e-13, 2 ulp), T.b(33/480, 1.1e-13, 2 ulp), U.i(41680/48000, 5.4e-02, >1e6 ulp), U.b(842/1440, 8.1e-03, >1e6 ulp) +16 more
+  1.turb      26 records, 22 differ: p.i(10704/16000, 1.2e+00, >1e6 ulp), p.b(371/480, 6.5e-01, >1e6 ulp), T.i(2141/16000, 1.1e-13, 2 ulp), T.b(33/480, 1.1e-13, 2 ulp), U.i(41680/48000, 5.4e-02, >1e6 ulp), U.b(842/1440, 8.1e-03, >1e6 ulp) +16 more
+  2.U         32 records, 28 differ: p.i(10704/16000, 1.2e+00, >1e6 ulp), p.b(371/480, 6.5e-01, >1e6 ulp), T.i(2141/16000, 1.1e-13, 2 ulp), T.b(33/480, 1.1e-13, 2 ulp), U.i(41680/48000, 9.7e-02, >1e6 ulp), U.b(842/1440, 8.9e-03, >1e6 ulp) +22 more
+  2.E         26 records, 22 differ: p.i(10704/16000, 1.2e+00, >1e6 ulp), p.b(371/480, 6.5e-01, >1e6 ulp), T.i(16000/16000, 2.9e-02, >1e6 ulp), T.b(136/480, 6.7e-04, >1e6 ulp), U.i(41680/48000, 9.7e-02, >1e6 ulp), U.b(842/1440, 8.9e-03, >1e6 ulp) +16 more
+  2.p         34 records, 30 differ: p.i(14248/16000, 2.4e+00, >1e6 ulp), p.b(426/480, 1.6e+00, >1e6 ulp), T.i(16000/16000, 2.9e-02, >1e6 ulp), T.b(136/480, 6.7e-04, >1e6 ulp), U.i(41680/48000, 1.0e-01, >1e6 ulp), U.b(842/1440, 1.0e-01, >1e6 ulp) +24 more
+  2.turb      26 records, 22 differ: p.i(14248/16000, 2.4e+00, >1e6 ulp), p.b(426/480, 1.6e+00, >1e6 ulp), T.i(16000/16000, 2.9e-02, >1e6 ulp), T.b(136/480, 6.7e-04, >1e6 ulp), U.i(41680/48000, 1.0e-01, >1e6 ulp), U.b(842/1440, 1.0e-01, >1e6 ulp) +16 more
+  10.U        32 records, 28 differ: p.i(16000/16000, 7.8e-01, >1e6 ulp), p.b(477/480, 3.4e-01, >1e6 ulp), T.i(16000/16000, 7.8e-03, >1e6 ulp), T.b(366/480, 2.5e-03, >1e6 ulp), U.i(41680/48000, 1.6e-02, >1e6 ulp), U.b(842/1440, 2.7e-03, >1e6 ulp) +22 more
+  10.E        26 records, 22 differ: p.i(16000/16000, 7.8e-01, >1e6 ulp), p.b(477/480, 3.4e-01, >1e6 ulp), T.i(16000/16000, 7.5e-03, >1e6 ulp), T.b(368/480, 1.9e-03, >1e6 ulp), U.i(41680/48000, 1.6e-02, >1e6 ulp), U.b(842/1440, 2.7e-03, >1e6 ulp) +16 more
+  10.p        34 records, 30 differ: p.i(16000/16000, 4.9e-01, >1e6 ulp), p.b(474/480, 1.6e-01, >1e6 ulp), T.i(16000/16000, 7.5e-03, >1e6 ulp), T.b(368/480, 1.9e-03, >1e6 ulp), U.i(41680/48000, 7.6e-03, >1e6 ulp), U.b(842/1440, 1.1e-03, >1e6 ulp) +24 more
+  10.turb     26 records, 22 differ: p.i(16000/16000, 4.9e-01, >1e6 ulp), p.b(474/480, 1.6e-01, >1e6 ulp), T.i(16000/16000, 7.5e-03, >1e6 ulp), T.b(368/480, 1.9e-03, >1e6 ulp), U.i(41680/48000, 7.6e-03, >1e6 ulp), U.b(842/1440, 1.1e-03, >1e6 ulp) +16 more

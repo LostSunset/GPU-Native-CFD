@@ -1,0 +1,11 @@
+A=/ssd/sclin/gpu-native-cfd/runs/MF-g02-conv/modifiedFinnerSST/ref/1000
+B=/ssd/sclin/gpu-native-cfd/runs/MF-g02-conv/modifiedFinnerSST/fast/1000
+field               n               max|a-b|        max|a-b|/max|a|          L2(a-b)/L2(a)
+p             3940188           9.402541e+03           1.269043e-02           6.494284e-04
+T             3940188           5.135466e+01           3.765078e-02           3.498038e-03
+U            11820564           9.427126e+01           9.811560e-02           8.165192e-04
+rho           3940188           8.432870e-02           2.134049e-02           1.147992e-03
+k             3940188           6.652648e+02           1.789314e-02           4.176998e-03
+omega         3940188           1.973402e+11           5.839683e-03           5.233330e-03
+nut           3940188           5.053054e-03           3.727190e-02           3.983459e-03
+alphat        3940188           6.431057e-03           8.050542e-02           5.839415e-03

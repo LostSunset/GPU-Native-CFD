@@ -1,0 +1,15 @@
+=== 2026-10-25T17:19:51Z waiting for pid 1027954
+=== 2026-10-26T00:50:52Z GPU3 free
+=== 2026-10-26T00:50:52Z build
+=== 2026-10-26T00:51:44Z P1-energylong
+rho-r8-fast-n30 rc=0
+rho-r8-fast-n330 rc=0
+rho-r8-ref-n5 rc=0
+rho-r8-ref-n25 rc=0
+m6-fast-n50 rc=0
+m6-fast-n1050 rc=0
+m6-ref-n10 rc=0
+m6-ref-n110 rc=0
+finnerSST-fast-n5 rc=0
+finnerSST-fast-n65 rc=0
+=== 2026-10-26T00:59:50Z done

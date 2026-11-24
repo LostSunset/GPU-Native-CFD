@@ -1,0 +1,13 @@
+run	operation	count per iteration	bytes per iteration	us per iteration
+gncRhoSimple -fast, 16,000 cells	memcpy Device-to-Device	9.0	645760.0	9.36
+gncRhoSimple -fast, 16,000 cells	memcpy Device-to-Host	2.0	20.0	2.50
+gncRhoSimple -fast, 16,000 cells	memcpy Host-to-Device	0.0	0.0	-0.37
+gncRhoSimple -fast, 16,000 cells	memset	2.0	20.0	0.78
+gncRhoSimple -fast, 1,024,000 cells	memcpy Device-to-Device	9.0	41006100.0	39.49
+gncRhoSimple -fast, 1,024,000 cells	memcpy Device-to-Host	3.2	0.0	20.25
+gncRhoSimple -fast, 1,024,000 cells	memcpy Host-to-Device	0.0	0.0	189.85
+gncRhoSimple -fast, 1,024,000 cells	memset	2.0	0.0	0.71
+gncHisa -fast, ONERA M6	memcpy Device-to-Device	2.0	147500.0	2.13
+gncHisa -fast, ONERA M6	memcpy Device-to-Host	12.0	3587400.0	564.01
+gncHisa -fast, ONERA M6	memcpy Host-to-Device	3.0	1202800.0	101.28
+gncHisa -fast, ONERA M6	memset	10.0	70000.0	6.45

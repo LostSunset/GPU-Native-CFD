@@ -1,0 +1,6 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 40000 fvBoundaryFaces 860
+analysis: laminar
+foamCompat: transposeAliasing on
+schemes: flux AUSMPlusUp lowMachAusm (default true) reconstruct(U) 'wVanLeer' reconstruct(T) 'wVanLeer' reconstruct(rho) 'wVanLeer'
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-N3b-L2/nacaAirfoilLaminar/gpu2.gnc

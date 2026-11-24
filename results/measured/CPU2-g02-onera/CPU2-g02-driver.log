@@ -1,0 +1,59 @@
+=== 2026-10-23T06:03:35Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label CPU2-g02-small --end 200 --np-list 8,32 --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=200
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=200
+case         nCells  run        exit  cpu_s  wall_s   wall_per_step_s
+flatPlateSA  -       hisa-np1   0     15.23  16       0.08
+flatPlateSA  -       hisa-np8   0     2.78   3        0.015
+flatPlateSA  -       hisa-np32  0     1.33   1        0.005
+flatPlateSA  8000    gncHisa    0     -      10.5315  0.0526575
+rae2822SA    -       hisa-np1   0     34.43  34       0.17
+rae2822SA    -       hisa-np8   0     4.55   5        0.025
+rae2822SA    -       hisa-np32  0     1.82   2        0.01
+rae2822SA    23552   gncHisa    0     -      8.00174  0.0400087
+-- /ssd/sclin/gpu-native-cfd/runs/CPU2-g02-small/flatPlateSA/profile.txt
+profile: 200 outer iterations, mean wall time per iteration 0.0510929 s
+  flux 0.000457815  residual 0.000652642  pseudoTime 4.32627e-05  jacobian 0.000438661  gmres 0.0468886  update 0.000412022  turbulence 0.00219994
+-- /ssd/sclin/gpu-native-cfd/runs/CPU2-g02-small/rae2822SA/profile.txt
+profile: 200 outer iterations, mean wall time per iteration 0.0383053 s
+  flux 0.000430118  residual 0.000578281  pseudoTime 3.97488e-05  jacobian 0.000487739  gmres 0.0331494  update 0.000378389  turbulence 0.00324163
+=== exit=0
+=== 2026-10-23T06:05:37Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label CPU2-g02-onera --end 20 --np-list 8,32 --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=20
+case       nCells  run        exit  cpu_s  wall_s   wall_per_step_s
+oneraM6SA  -       hisa-np1   0     76.88  77       3.85
+oneraM6SA  -       hisa-np8   0     12.74  13       0.65
+oneraM6SA  -       hisa-np32  0     3.63   4        0.2
+oneraM6SA  294912  gncHisa    0     -      5.47298  0.273649
+-- /ssd/sclin/gpu-native-cfd/runs/CPU2-g02-onera/oneraM6SA/profile.txt
+profile: 20 outer iterations, mean wall time per iteration 0.231655 s
+  flux 0.00252292  residual 0.0022537  pseudoTime 0.000102612  jacobian 0.00252128  gmres 0.195259  update 0.000972192  turbulence 0.0280235
+=== exit=0
+=== 2026-10-23T06:07:46Z bash scripts/perf_compare.sh --host-env configs/hosts/g02-l40.env --label CPU2-g02-finner --end 5 --np-list 8,32 --case basicFinnerLaminar=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation --laminar basicFinnerLaminar
+== basicFinnerLaminar (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation) endTime=5
+case                nCells   run        exit  cpu_s   wall_s   wall_per_step_s
+basicFinnerLaminar  -        hisa-np1   0     252.93  253      50.6
+basicFinnerLaminar  -        hisa-np8   0     37.01   37       7.4
+basicFinnerLaminar  -        hisa-np32  0     13.19   13       2.6
+basicFinnerLaminar  2179881  gncHisa    0     -       10.2246  2.04492
+-- /ssd/sclin/gpu-native-cfd/runs/CPU2-g02-finner/basicFinnerLaminar/profile.txt
+profile: 5 outer iterations, mean wall time per iteration 1.50213 s
+  flux 0.0193285  residual 0.0192304  pseudoTime 0.000857225  jacobian 0.0166474  gmres 1.44148  update 0.00458519  turbulence 5.562e-07
+=== exit=0
+=== 2026-10-23T06:14:06Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label CPU2-g02-gncfast-small --end 200 --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case flatPlateSA=/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation --case rae2822SA=/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation
+== flatPlateSA (/home/sclin/hisa-gpu-research-cases/flatPlate-g2000/simulation) endTime=200
+== rae2822SA (/home/sclin/hisa-gpu-research-cases/rae2822-prepared/simulation) endTime=200
+case         nCells  variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+flatPlateSA  8000    fast     0     1.88544  0.0094272        959               0.00110497     0.00770341
+rae2822SA    23552   fast     0     1.36798  0.0068399        385               0.00832218     0.00470517
+=== exit=0
+=== 2026-10-23T06:14:27Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label CPU2-g02-gncfast-onera --end 20 --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case oneraM6SA=/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation
+== oneraM6SA (/home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation) endTime=20
+case       nCells  variant  exit  wall_s  wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+oneraM6SA  294912  fast     0     1.9825  0.099125         20                0.0865071      0.0228169
+=== exit=0
+=== 2026-10-23T06:14:38Z bash scripts/variant_compare.sh --host-env configs/hosts/g02-l40.env --label CPU2-g02-gncfast-finner --end 5 --variant fast=GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree GNC_JAC=auto --case basicFinnerLaminar=/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation --laminar basicFinnerLaminar
+== basicFinnerLaminar (/home/sclin/hisa-gpu-research-cases/basicFinner-seq5/simulation) endTime=5
+case                nCells   variant  exit  wall_s   wall_per_step_s  gmres_iter_total  final_res_rho  profile_mean_s
+basicFinnerLaminar  2179881  fast     0     7.87825  1.57565          5                 0.186542       0.265856
+=== exit=0
+=== done 2026-10-23T06:14:55Z

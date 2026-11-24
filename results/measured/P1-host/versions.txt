@@ -1,0 +1,10 @@
+uname=Linux 7.0.0-38-generic x86_64
+glibc=ldd (Ubuntu GLIBC 2.39-0ubuntu8.9) 2.39
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+gxx=g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+cmake=cmake version 3.28.3
+nsys=NVIDIA Nsight Systems version 2025.6.3.541-256337736014v0
+driver=595.91.07
+mpirun=mpirun (Open MPI) 4.1.6
+openfoam=v2606 linux64GccDPInt32Opt
+uptime= 21:39:33 up 13 days, 12:15, 12 users,  load average: 122.68, 121.20, 120.98

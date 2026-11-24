@@ -1,0 +1,73 @@
+=== 2026-10-25T02:26:14Z env GNC_COLOR_BIPARTITE=0 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablA-r1 --iters 200 --variants gncamg --case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation --gamg-case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation
+== r1 gncamg (200 iterations)
+   rc=0 iterations=200 per_iter=0.004227 s clock=- s wall=1.16 s p_iters=11.0
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r1    gncamg   16000   200         0.004227    -                 1.16    11.0
+=== exit=0
+=== 2026-10-25T02:26:21Z env GNC_COLOR_BIPARTITE=0 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablA-r2 --iters 100 --variants gncamg --case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2-pcg/simulation --gamg-case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2/simulation
+== r2 gncamg (100 iterations)
+   rc=0 iterations=100 per_iter=0.007678 s clock=- s wall=1.23 s p_iters=18.9
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r2    gncamg   64000   100         0.007678    -                 1.23    18.9
+=== exit=0
+=== 2026-10-25T02:26:29Z env GNC_COLOR_BIPARTITE=0 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablA-r4 --iters 50 --variants gncamg --case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4-pcg/simulation --gamg-case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4/simulation
+== r4 gncamg (50 iterations)
+   rc=0 iterations=50 per_iter=0.018152 s clock=- s wall=1.72 s p_iters=31.7
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r4    gncamg   256000  50          0.018152    -                 1.72    31.7
+=== exit=0
+=== 2026-10-25T02:26:37Z env GNC_COLOR_BIPARTITE=0 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablA-r8 --iters 30 --variants gncamg --case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8-pcg/simulation --gamg-case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8/simulation
+== r8 gncamg (30 iterations)
+   rc=0 iterations=30 per_iter=0.075056 s clock=- s wall=4.92 s p_iters=44.7
+case  variant  nCells   iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r8    gncamg   1024000  30          0.075056    -                 4.92    44.7
+=== exit=0
+=== 2026-10-25T02:26:48Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablB-r1 --iters 200 --variants gncamg --case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation --gamg-case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation
+== r1 gncamg (200 iterations)
+   rc=0 iterations=200 per_iter=0.004267 s clock=- s wall=1.2 s p_iters=11.0
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r1    gncamg   16000   200         0.004267    -                 1.2     11.0
+=== exit=0
+=== 2026-10-25T02:26:55Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablB-r2 --iters 100 --variants gncamg --case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2-pcg/simulation --gamg-case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2/simulation
+== r2 gncamg (100 iterations)
+   rc=0 iterations=100 per_iter=0.007385 s clock=- s wall=1.13 s p_iters=18.8
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r2    gncamg   64000   100         0.007385    -                 1.13    18.8
+=== exit=0
+=== 2026-10-25T02:27:03Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablB-r4 --iters 50 --variants gncamg --case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4-pcg/simulation --gamg-case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4/simulation
+== r4 gncamg (50 iterations)
+   rc=0 iterations=50 per_iter=0.018029 s clock=- s wall=1.7 s p_iters=31.7
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r4    gncamg   256000  50          0.018029    -                 1.7     31.7
+=== exit=0
+=== 2026-10-25T02:27:10Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_JAC=0 GNC_AMG_OMEGA=1.8 GNC_AMG_BLOCK=4096 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablB-r8 --iters 30 --variants gncamg --case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8-pcg/simulation --gamg-case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8/simulation
+== r8 gncamg (30 iterations)
+   rc=0 iterations=30 per_iter=0.075245 s clock=- s wall=4.93 s p_iters=44.6
+case  variant  nCells   iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r8    gncamg   1024000  30          0.075245    -                 4.93    44.6
+=== exit=0
+=== 2026-10-25T02:27:21Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablC-r1 --iters 200 --variants gncamg --case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-pcg/simulation --gamg-case r1=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012/simulation
+== r1 gncamg (200 iterations)
+   rc=0 iterations=200 per_iter=0.003554 s clock=- s wall=1.01 s p_iters=12.2
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r1    gncamg   16000   200         0.003554    -                 1.01    12.2
+=== exit=0
+=== 2026-10-25T02:27:28Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablC-r2 --iters 100 --variants gncamg --case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2-pcg/simulation --gamg-case r2=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r2/simulation
+== r2 gncamg (100 iterations)
+   rc=0 iterations=100 per_iter=0.005731 s clock=- s wall=0.97 s p_iters=21.4
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r2    gncamg   64000   100         0.005731    -                 0.97    21.4
+=== exit=0
+=== 2026-10-25T02:27:35Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablC-r4 --iters 50 --variants gncamg --case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4-pcg/simulation --gamg-case r4=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r4/simulation
+== r4 gncamg (50 iterations)
+   rc=0 iterations=50 per_iter=0.013896 s clock=- s wall=1.5 s p_iters=37.4
+case  variant  nCells  iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r4    gncamg   256000  50          0.013896    -                 1.5     37.4
+=== exit=0
+=== 2026-10-25T02:27:43Z env GNC_COLOR_BIPARTITE=1 GNC_AMG_WP=0 bash scripts/rhosimple_perf.sh --host-env configs/hosts/g02-l40.env --label N6d-ablC-r8 --iters 30 --variants gncamg --case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8-pcg/simulation --gamg-case r8=/ssd/sclin/gpu-native-cfd/cases/aerofoilNACA0012-r8/simulation
+== r8 gncamg (30 iterations)
+   rc=0 iterations=30 per_iter=0.069350 s clock=- s wall=4.9 s p_iters=53.4
+case  variant  nCells   iterations  per_iter_s  per_iter_clock_s  wall_s  p_iters_mean
+r8    gncamg   1024000  30          0.069350    -                 4.9     53.4
+=== exit=0
+=== done 2026-10-25T02:27:54Z

@@ -1,0 +1,386 @@
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+Authorization required, but no authorization protocol specified
+
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+Authorization required, but no authorization protocol specified
+
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoSimpleFoam -parallel
+Date   : Oct 25 2026
+Time   : 23:53:02
+Host   : g02
+PID    : 858905
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/P1-ofprof/r8-np32
+nProcs : 32
+Hosts  :
+(
+    (g02 32)
+)
+Pstream initialized with:
+    node communication : off [type=host] (32 ranks, 1 nodes)
+    topology controls  : none
+    consensus exchange : 0 (tuning: 0)
+    exchange algorithm : 0
+    commsType          : nonBlocking
+    polling iterations : 0
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+profiling initialized
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 0.0001
+    field "(k|omega|e)"	 tolerance 0.0001
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.84999999999999998;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.85599999999999998;
+    gamma1          0.55555555555555558;
+    gamma2          0.44;
+    beta1           0.074999999999999997;
+    beta2           0.082799999999999999;
+    betaStar        0.089999999999999997;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+No MRF models present
+
+Creating finite-volume options from "system/fvOptions"
+
+Selecting finite volume options type limitTemperature
+    Source: limitT
+    State: active
+    - selecting all cells
+    - selected 1024000 cell(s) with volume 2.1001404462494531
+
+Starting time loop
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.99999999891709135, Final residual = 0.072019756955963785, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.06238061822760331, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.9999981300131493, Final residual = 0.067334312559536438, No Iterations 2
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=298
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298
+GAMG:  Solving for p, Initial residual = 0.99999999999211675, Final residual = 0.0098313627669187244, No Iterations 397
+time step continuity errors : sum local = 0.032765572616566499, global = -0.0044201718501427944, cumulative = -0.0044201718501427944
+pressureControl: p max 18792496.611525822
+pressureControl: p min -2776673.4794647773
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0039262457016513187, Final residual = 0.00035015018612846201, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.9999999973061019, Final residual = 0.083635279694541348, No Iterations 1
+ExecutionTime = 1.76 s  ClockTime = 2 s
+
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.091137173535584648, Final residual = 0.00033170266387973712, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.068549482082217811, Final residual = 0.00017569345792380764, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99979784471014732, Final residual = 0.033790130162642949, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=297.71179696979397
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298.02670026952984
+GAMG:  Solving for p, Initial residual = 0.17394453512445185, Final residual = 0.00172218927574228, No Iterations 233
+time step continuity errors : sum local = 0.081012346374520622, global = 0.01143875771639952, cumulative = 0.007018585866256726
+pressureControl: p max 2216945.7630403829
+pressureControl: p min -267336.2142836994
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00090102528148629886, Final residual = 1.2710923055848852e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.16952288915516525, Final residual = 0.0079959816895642868, No Iterations 1
+ExecutionTime = 2.7999999999999998 s  ClockTime = 3 s
+
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.055154197883320322, Final residual = 0.00027016071115593566, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.056752559494529495, Final residual = 0.0003249830433996388, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.30380155630884448, Final residual = 0.012819385315766043, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=291.635903540188
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=365.09712432501516
+GAMG:  Solving for p, Initial residual = 0.086851780018540659, Final residual = 0.00085203899836129398, No Iterations 281
+time step continuity errors : sum local = 0.063707063547148987, global = 0.0082849543139663188, cumulative = 0.015303540180223046
+pressureControl: p max 779049.24879829457
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00087635011369551733, Final residual = 8.3195092745876943e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.089292238803177729, Final residual = 0.0045290639383098533, No Iterations 1
+ExecutionTime = 3.8300000000000001 s  ClockTime = 4 s
+
+Time = 4
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.051082836301452647, Final residual = 0.00019293098478224266, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.04301129058609672, Final residual = 0.00021006910260047609, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.23524796637461645, Final residual = 0.0072837262847276164, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=288.20696196437552
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=359.22311611839854
+GAMG:  Solving for p, Initial residual = 0.033663044898098654, Final residual = 0.00033333845019905775, No Iterations 219
+time step continuity errors : sum local = 0.053418713750401588, global = -0.0068446872294440231, cumulative = 0.0084588529507790226
+pressureControl: p min -49035.175283916789
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0010903586109514342, Final residual = 5.9073848781001316e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.061378112026353113, Final residual = 0.0033988417140964648, No Iterations 1
+ExecutionTime = 4.6699999999999999 s  ClockTime = 5 s
+
+Time = 5
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.078015649650169591, Final residual = 0.00029298074829770866, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.059879369128949922, Final residual = 0.00024519096059155547, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.31732865257094806, Final residual = 0.010606643054378712, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=285.30152625801259
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=353.69396851604796
+GAMG:  Solving for p, Initial residual = 0.10146516799540879, Final residual = 0.0010135639569429737, No Iterations 333
+time step continuity errors : sum local = 0.044248393339507579, global = -0.0057745555785147003, cumulative = 0.0026842973722643222
+pressureControl: p min -351173.77644565108
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00070677940123988565, Final residual = 6.6159262706347278e-06, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.049532020746923776, Final residual = 0.0029675653895003535, No Iterations 1
+ExecutionTime = 5.9400000000000004 s  ClockTime = 6 s
+
+Time = 6
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.059418244660206315, Final residual = 0.00021818179835265638, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.040610863975364606, Final residual = 0.00021401994126172289, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.2820749570532316, Final residual = 0.0087996068034903157, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=276.15477119546625
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=353.31881122484157
+GAMG:  Solving for p, Initial residual = 0.032877629938494871, Final residual = 0.00032857222370192754, No Iterations 289
+time step continuity errors : sum local = 0.045675183122541846, global = -0.0057352018881135763, cumulative = -0.0030509045158492541
+pressureControl: p max 228005.99784298596
+pressureControl: p min -47770.03863846809
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00060457510351718006, Final residual = 4.996674284629266e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.045077658569269687, Final residual = 0.0027019603370374758, No Iterations 1
+ExecutionTime = 7.0899999999999999 s  ClockTime = 7 s
+
+Time = 7
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.07691078092576413, Final residual = 0.00026325569102319076, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.055125388133123593, Final residual = 0.00016182330836132089, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.3770293562214353, Final residual = 0.010636237956721905, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=272.59857589854539
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=348.6968515644956
+GAMG:  Solving for p, Initial residual = 0.044914772212514366, Final residual = 0.00044559414660471692, No Iterations 287
+time step continuity errors : sum local = 0.047734805521798526, global = 0.00622877453576977, cumulative = 0.0031778700199205159
+pressureControl: p max 606410.35767254012
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00056100447522125822, Final residual = 2.8466990520861941e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.045343053556295913, Final residual = 0.0027304466003062315, No Iterations 1
+ExecutionTime = 8.1999999999999993 s  ClockTime = 9 s
+
+Time = 8
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.054295969061195451, Final residual = 0.00019360414269034977, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.038964980793951602, Final residual = 0.00015330643107629689, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.26855586311645441, Final residual = 0.0087483388967379699, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=272.5083893420757
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.11903448438528
+GAMG:  Solving for p, Initial residual = 0.036499011961641722, Final residual = 0.00036306881371654047, No Iterations 335
+time step continuity errors : sum local = 0.046182447292319261, global = 0.0059687194274396851, cumulative = 0.0091465894473602011
+pressureControl: p max 344668.98220264266
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00052875104191331434, Final residual = 3.4018187348576104e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.048881028102994245, Final residual = 0.0029621272641524119, No Iterations 1
+ExecutionTime = 9.4700000000000006 s  ClockTime = 10 s
+
+Time = 9
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.049969587343647419, Final residual = 0.00016921447395106329, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.041961516282444107, Final residual = 0.00018799327397568403, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.22912242566659075, Final residual = 0.0064654075079674913, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=269.50655617000592
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=339.03788517883419
+GAMG:  Solving for p, Initial residual = 0.029134924715732258, Final residual = 0.00029045619744577812, No Iterations 243
+time step continuity errors : sum local = 0.046917209710720637, global = -0.005936568229981772, cumulative = 0.003210021217378429
+pressureControl: p min -50197.400974514458
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00055051873284009628, Final residual = 4.062852421985959e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.05593689202285556, Final residual = 0.0030095948296844782, No Iterations 1
+ExecutionTime = 10.390000000000001 s  ClockTime = 11 s
+
+Time = 10
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.073569428180667779, Final residual = 0.00029224521717408417, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.045019788366826317, Final residual = 0.00014321497861127179, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.29255098200924201, Final residual = 0.010206063083693399, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=266.6817717571505
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=336.11494341335879
+GAMG:  Solving for p, Initial residual = 0.13010911724066879, Final residual = 0.0012775635236539746, No Iterations 361
+time step continuity errors : sum local = 0.041729280397300943, global = -0.0053573740529391217, cumulative = -0.0021473528355606926
+pressureControl: p min -271643.35210939066
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00059045009241648881, Final residual = 3.8404912861985266e-06, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.066599611388775209, Final residual = 0.0029935161748148717, No Iterations 1
+ExecutionTime = 11.890000000000001 s  ClockTime = 12 s
+
+End
+
+Finalising parallel run

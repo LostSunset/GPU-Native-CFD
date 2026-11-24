@@ -1,0 +1,2 @@
+case	nCells	variant	exit	wall_s	wall_per_step_s	gmres_iter_total	final_res_rho	profile_mean_s
+basicFinnerSST	2179881	fast	0	13.4345	2.6869	5	0.185693	0.315985

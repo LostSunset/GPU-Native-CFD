@@ -1,0 +1,7 @@
+label=N6d-reg-SA-L3
+started_utc=2026-10-25T02:14:23Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime= 10:14:23 up 13 days, 50 min,  7 users,  load average: 101.53, 101.16, 100.56
+finished_utc=2026-10-25T02:15:27Z
+overall_exit=0

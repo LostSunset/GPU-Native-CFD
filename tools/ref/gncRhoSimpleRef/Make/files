@@ -1,0 +1,3 @@
+gncRhoSimpleRef.C
+
+EXE = $(GNC_REF_BIN)/gncRhoSimpleRef

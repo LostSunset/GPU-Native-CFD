@@ -1,0 +1,87 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+//
+// "0/p"
+//
+FoamFile
+{
+    version         2;
+    format          ascii;
+    class           volScalarField;
+    object          p;
+}
+
+pOut            100000;
+
+dimensions      [ 1 -1 -2 0 0 0 0 ];
+
+internalField   uniform 100000;
+
+boundaryField
+{
+    freestream
+    {
+        type            freestreamPressure;
+        freestreamValue uniform 100000;
+    }
+    wall
+    {
+        type            zeroGradient;
+    }
+    cyclic
+    {
+        type            cyclic;
+    }
+    cyclicAMI
+    {
+        type            cyclicAMI;
+        value           uniform 100000;
+    }
+    cyclicACMI
+    {
+        type            cyclicACMI;
+        value           uniform 100000;
+    }
+    cyclicSlip
+    {
+        type            cyclicSlip;
+    }
+    empty
+    {
+        type            empty;
+    }
+    nonuniformTransformCyclic
+    {
+        type            nonuniformTransformCyclic;
+    }
+    processor
+    {
+        type            processor;
+    }
+    processorCyclic
+    {
+        type            processorCyclic;
+    }
+    symmetryPlane
+    {
+        type            symmetryPlane;
+    }
+    symmetry
+    {
+        type            symmetry;
+    }
+    wedge
+    {
+        type            wedge;
+    }
+    overset
+    {
+        type            overset;
+    }
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //

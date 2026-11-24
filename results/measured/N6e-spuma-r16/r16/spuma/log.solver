@@ -1,0 +1,151 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2512                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5916a466-20260728 OPENFOAM=2512 version=v2512
+Arch   : "LSB;label=32;scalar=64"
+Exec   : rhoSimpleFoam -pool fixedSizeMemoryPool -poolSize 16
+Date   : Oct 26 2026
+Time   : 09:45:43
+Host   : g02
+PID    : 1463169
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N6e-spuma-r16/r16/spuma
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Initializing CUDA devices
+
+CUDA Driver Version / Runtime Version:  13.2 / 13.3
+Number of threads per block: 128
+
+Create fixedSizeMemoryPool
+ 
+Create time
+
+Create mesh for time = 0
+
+
+SIMPLE: convergence criteria
+    field p	 tolerance 0.0001
+    field U	 tolerance 0.0001
+    field "(k|omega|e)"	 tolerance 0.0001
+
+Reading thermophysical properties
+
+Selecting device version of : hePsiThermo
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+Reading field U
+
+Reading/calculating face flux field phi
+
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Creating turbulence model
+
+Selecting turbulence model type RAS
+Selecting RAS turbulence model kOmegaSST
+Selecting patchDistMethod meshWave
+RAS
+{
+    RASModel        kOmegaSST;
+    turbulence      on;
+    printCoeffs     on;
+    alphaK1         0.84999999999999998;
+    alphaK2         1;
+    alphaOmega1     0.5;
+    alphaOmega2     0.85599999999999998;
+    gamma1          0.55555555555555558;
+    gamma2          0.44;
+    beta1           0.074999999999999997;
+    beta2           0.082799999999999999;
+    betaStar        0.089999999999999997;
+    a1              0.31;
+    b1              1;
+    c1              10;
+    F3              false;
+    decayControl    false;
+    kInf            0;
+    omegaInf        0;
+}
+
+Creating thermal turbulence model
+
+Selecting default thermal turbulence model type RAS
+Selecting default thermal RAS turbulence model constant
+No MRF models present
+
+Creating finite-volume options from "system/fvOptions"
+
+Selecting finite volume options type limitTemperature
+    Source: limitT
+    State: active
+    - selecting all cells
+    - selected 4096000 cell(s) with volume 2.1001460653987465
+
+Starting time loop
+
+Time = 1
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.99999999888104796, Final residual = 0.059513998278982273, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.99999999999999989, Final residual = 0.051902959422667164, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99999993773025653, Final residual = 0.042747589055159713, No Iterations 2
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=298
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298
+GAMG:  Solving for p, Initial residual = 0.99999999998998013, Final residual = 0.0098751669470958023, No Iterations 493
+time step continuity errors : sum local = 0.032911444798560771, global = -0.0043971305940726148, cumulative = -0.0043971305940726148
+pressureControl: p max 38598736.960530132
+pressureControl: p min -5898030.4748921869
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.0073610327973944482, Final residual = 0.00070106360163625712, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.99999999999288613, Final residual = 0.011207617818283279, No Iterations 1
+ExecutionTime = 682.55999999999995 s  ClockTime = 1637 s
+
+Time = 2
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.052113051802145573, Final residual = 8.9022376685043552e-05, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.037693290613115875, Final residual = 2.3400790401929836e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.99972476524448661, Final residual = 0.019384834729054914, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=297.62519448311122
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=298.04303382313526
+GAMG:  Solving for p, Initial residual = 0.16010141211275095, Final residual = 0.0015808778498330291, No Iterations 305
+time step continuity errors : sum local = 0.083419531693491547, global = 0.01154517404891342, cumulative = 0.0071480434548408054
+pressureControl: p max 4328917.8599529127
+pressureControl: p min -592110.63105799293
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00041722197831019881, Final residual = 2.6449482936140755e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.14985433073111146, Final residual = 0.0026199145036287009, No Iterations 1
+ExecutionTime = 1079.1300000000001 s  ClockTime = 2629 s
+
+Time = 3
+
+DILUPBiCGStab:  Solving for Ux, Initial residual = 0.032371087778326924, Final residual = 7.2375245904369361e-05, No Iterations 1
+DILUPBiCGStab:  Solving for Uz, Initial residual = 0.034092082094891035, Final residual = 7.9329431982943352e-05, No Iterations 1
+DILUPBiCGStab:  Solving for e, Initial residual = 0.29814904918841467, Final residual = 0.0082616540911131364, No Iterations 1
+limitTemperature=limitT, Type=Lower, LimitedCells=0, CellsPercent=0, Tmin=101, UnlimitedTmin=292.51127868128913
+limitTemperature=limitT, Type=Upper, LimitedCells=0, CellsPercent=0, Tmax=1000, UnlimitedTmax=343.21345961902904
+GAMG:  Solving for p, Initial residual = 0.080557842939211644, Final residual = 0.00080184247928110014, No Iterations 269
+time step continuity errors : sum local = 0.067113891906182555, global = -0.0089594906791043687, cumulative = -0.0018114472242635633
+pressureControl: p max 1481172.1069636254
+DILUPBiCGStab:  Solving for omega, Initial residual = 0.00030229580389953917, Final residual = 1.8086461803500777e-05, No Iterations 1
+DILUPBiCGStab:  Solving for k, Initial residual = 0.099754666597467137, Final residual = 0.0013478669446075463, No Iterations 1
+ExecutionTime = 1435.3499999999999 s  ClockTime = 3518 s
+
+End
+

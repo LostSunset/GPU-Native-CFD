@@ -1,0 +1,4 @@
+__ieee754_pow_fma in section .text of /lib/x86_64-linux-gnu/libm.so.6
+__ieee754_exp_fma + 4 in section .text of /lib/x86_64-linux-gnu/libm.so.6
+__expm1_fma + 40 in section .text of /lib/x86_64-linux-gnu/libm.so.6
+__ieee754_log_fma + 19 in section .text of /lib/x86_64-linux-gnu/libm.so.6

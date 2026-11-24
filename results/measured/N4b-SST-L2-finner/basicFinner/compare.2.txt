@@ -1,0 +1,29 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2-finner/basicFinner/gpu1/2.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4b-SST-L2-finner/basicFinner/ref/state/2.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+timeIndex                      text  ref="2" test="2"
+omega.solve                    text  ref="initial 0.00045395074133984894 final 1.5925355699479762e-06 iterations 1 bounded 1" test="(none)"
+k.solve                        text  ref="initial 0.19871225067399534 final 0.00080608124359630464 iterations 1 bounded 0" test="(none)"
+k.i                            f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+k.b                            f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.i                        f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+omega.b                        f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.i                          f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+nut.b                          f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.i                       f64      2179881    1           0    0.000e+00    0.000e+00            0  BITWISE
+alphat.b                       f64        41029    1           0    0.000e+00    0.000e+00            0  BITWISE
+producer                       text  test only: "gncHisaDump"
+time                           text  test only: "2"
+RR                             f64            1    1  test only
+Tstd                           f64            1    1  test only
+U.i                            f64      2179881    3  test only
+U.b                            f64        41029    3  test only
+rho.i                          f64      2179881    1  test only
+rho.b                          f64        41029    1  test only
+mu.i                           f64      2179881    1  test only
+mu.b                           f64        41029    1  test only
+phi.i                          f64      6347350    1  test only
+phi.b                          f64        41029    1  test only
+rPseudoDeltaT.i                f64      2179881    1  test only
+rPseudoDeltaT.b                f64        41029    1  test only
+result: ALL BITWISE IDENTICAL

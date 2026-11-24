@@ -1,0 +1,94 @@
+=== 2026-10-23T06:57:59Z bash /ssd/sclin/gpu-platform/scripts/p1_runs.sh /ssd/sclin/gpu-native-cfd/runs/SPUMA-g02/oneraM6SA /home/sclin/hisa-gpu-research-cases/oneraM6-prepared/simulation 10 8
+ref (v2606 CPU) exit 0 	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:38.12  	Maximum resident set size (kbytes): 1558908
+spgpu (SPUMA GPU3) exit 0 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:45.13  	Maximum resident set size (kbytes): 1258264  nvidia-smi: 2718690, .venv/bin/python, 12454 MiB 2560567, .venv/bin/python, 12454 MiB 2548648, .venv/bin/python, 13528 MiB 2786903, /home/sclin/OpenFOAM/sclin-v2512/platforms/linux64NvidiaDPInt32Opt/bin/hisa, 506 MiB 
+== ref: ExecutionTime per step
+  step 1 (incl. setup): 4.9800000000000004
+  step 2: 3.49 s
+  step 3: 3.33 s
+  step 4: 3.31 s
+  step 5: 3.39 s
+  step 6: 3.45 s
+  step 7: 3.44 s
+  step 8: 3.38 s
+  step 9: 3.52 s
+  step 10: 5.26 s
+20
+== spgpu: ExecutionTime per step
+  step 1 (incl. setup): 9.1899999999999995
+  step 2: 12.88 s
+  step 3: 13.51 s
+  step 4: 13.22 s
+  step 5: 13.24 s
+  step 6: 14.77 s
+  step 7: 14.87 s
+  step 8: 14.61 s
+  step 9: 14.75 s
+  step 10: 16.04 s
+20
+== GMRES lines: first difference
+2,3c2,3
+<   GMRES iteration: 0   Residual: 0.99999999915730731 (0.99847193480385266 0.053578531394635809 0.00018032942363593106) 0.99999999631942627 
+<   GMRES iteration: 1   Residual: 2.3595632424465024e-14 (2.8116531322810444e-14 1.6660260075696804e-14 5.2421522168229043e-15) 1.6629345869011939e-14 
+---
+>   GMRES iteration: 0   Residual: 0.99999999999911748 (0.99846314033745609 0.053587317151106255 0.00018035899379674871) 0.99999999999920908 
+>   GMRES iteration: 1   Residual: 2.354901640448591e-14 (2.815519291249245e-14 1.6665903904305116e-14 5.2397484341610648e-15) 1.659246508422358e-14 
+5,6c5,6
+<   GMRES iteration: 0   Residual: 0.49426954914712573 (0.23797312011689761 0.2993187564608028 0.16383657901066573) 0.49466490257868645 
+<   GMRES iteration: 1   Residual: 7.7080637509133425e-15 (8.9575623902174439e-15 4.5657637394595384e-15 1.184918503946908e-15) 6.0866465448013477e-15 
+---
+>   GMRES iteration: 0   Residual: 0.49426988465273808 (0.2380035057238668 0.29934233885732658 0.16384950339749502) 0.49467458780057505 
+>   GMRES iteration: 1   Residual: 7.724461291078323e-15 (8.9625043452577461e-15 4.5415222268186834e-15 1.1926792163338017e-15) 6.093610509436164e-15 
+fields at the latest common time 10 (ref latest 10.0, cmp latest 10.0)
+  T            n=294912  max|d| 6.167e-03  max|d|/max|a| 1.875e-05  rms(d)/rms(a) 3.849e-07  identical False
+  U            n=294912  max|d| 6.095e-02  max|d|/max|a| 2.263e-04  rms(d)/rms(a) 5.282e-06  identical False
+  alphat       n=294912  max|d| 2.253e-09  max|d|/max|a| 9.054e-05  rms(d)/rms(a) 4.614e-06  identical False
+  nuTilda      n=294912  max|d| 4.259e-10  max|d|/max|a| 6.804e-06  rms(d)/rms(a) 7.028e-08  identical False
+  nut          n=294912  max|d| 1.119e-09  max|d|/max|a| 7.268e-05  rms(d)/rms(a) 2.578e-06  identical False
+  p            n=294912  max|d| 2.912e+00  max|d|/max|a| 1.859e-05  rms(d)/rms(a) 8.082e-07  identical False
+  pseudoCoField n=294912  max|d| 0.000e+00  max|d|/max|a| 0.000e+00  rms(d)/rms(a) 0.000e+00  identical True
+  rho          n=294912  max|d| 4.480e-05  max|d|/max|a| 2.699e-05  rms(d)/rms(a) 8.390e-07  identical False
+smoothSolver:  Solving for nuTilda, Initial residual = 0.004304050017367487, Final residual = 1.2424168894547532e-07, No Iterations 1
+ExecutionTime = 137.08000000000001 s  ExecutionStepTime = 16.040000000000006 s  ClockTime = 164 s
+
+End
+
+=== exit=0
+=== 2026-10-23T07:01:27Z bash /ssd/sclin/gpu-platform/scripts/p1_runs.sh /ssd/sclin/gpu-native-cfd/runs/SPUMA-g02/basicFinnerLaminar /ssd/sclin/gpu-native-cfd/cases/basicFinner-laminar/simulation 3 16
+ref (v2606 CPU) exit 0 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:37.00  	Maximum resident set size (kbytes): 8964464
+spgpu (SPUMA GPU3) exit 0 	Elapsed (wall clock) time (h:mm:ss or m:ss): 2:48.19  	Maximum resident set size (kbytes): 5196680  nvidia-smi: 2718690, .venv/bin/python, 12454 MiB 2560567, .venv/bin/python, 12454 MiB 2548648, .venv/bin/python, 13528 MiB 2792076, /home/sclin/OpenFOAM/sclin-v2512/platforms/linux64NvidiaDPInt32Opt/bin/hisa, 506 MiB 
+== ref: ExecutionTime per step
+  step 1 (incl. setup): 54.899999999999999
+  step 2: 47.06 s
+  step 3: 53.32 s
+6
+== spgpu: ExecutionTime per step
+  step 1 (incl. setup): 48.439999999999998
+  step 2: 51.89 s
+  step 3: 61.32 s
+6
+== GMRES lines: first difference
+2,3c2,3
+<   GMRES iteration: 0   Residual: 0.99999999895810454 (0.99929003831660546 0.00046877859086781983 0.034771540526663591) 0.9999999982775406 
+<   GMRES iteration: 1   Residual: 2.6996284438087833e-07 (3.5343410650789427e-07 3.8067062916355334e-08 4.4300811577317325e-08) 2.9872187295666122e-07 
+---
+>   GMRES iteration: 0   Residual: 0.99999999999983513 (0.99921769801707394 0.00047169235372307238 0.034987679836221065) 0.99999999999982148 
+>   GMRES iteration: 1   Residual: 2.6827945653425291e-07 (3.5743885557463481e-07 3.9504989949480347e-08 4.5015691287463019e-08) 3.0579448347757671e-07 
+5,6c5,6
+<   GMRES iteration: 0   Residual: 0.54617249919713551 (0.3532811708946223 0.021520044873654613 0.029956811754751539) 0.31507157439026212 
+<   GMRES iteration: 1   Residual: 2.0074344198827403e-09 (1.7316565630440269e-09 2.9062327009563926e-10 3.8539479456468458e-10) 1.1468407601015025e-09 
+---
+>   GMRES iteration: 0   Residual: 0.54620530659804722 (0.35251899697876377 0.021587582547074373 0.030049283894586679) 0.31228457659771064 
+>   GMRES iteration: 1   Residual: 1.9861874333681633e-09 (1.7204053614094561e-09 2.9474098014484592e-10 3.9101712170083911e-10) 1.1389072186019677e-09 
+fields at the latest common time 3 (ref latest 3.0, cmp latest 3.0)
+  T            n=2179881 max|d| 5.707e+00  max|d|/max|a| 1.682e-02  rms(d)/rms(a) 7.365e-05  identical False
+  U            n=2179881 max|d| 2.160e+01  max|d|/max|a| 7.991e-03  rms(d)/rms(a) 4.926e-04  identical False
+  p            n=2179881 max|d| 2.183e+03  max|d|/max|a| 1.608e-02  rms(d)/rms(a) 7.676e-05  identical False
+  pseudoCoField n=2179881 max|d| 2.344e-01  max|d|/max|a| 1.875e-01  rms(d)/rms(a) 3.648e-04  identical False
+  rho          n=2179881 max|d| 2.472e-03  max|d|/max|a| 1.773e-03  rms(d)/rms(a) 1.816e-05  identical False
+  GMRES iteration: 1   Residual: 4.9864678866111276e-11 (3.9608126629165681e-11 6.8731015252788996e-12 9.2646643025162672e-12) 2.5503969472859383e-11 
+ExecutionTime = 161.65000000000001 s  ExecutionStepTime = 61.320000000000007 s  ClockTime = 165 s
+
+End
+
+=== exit=0
+=== done 2026-10-23T07:07:18Z

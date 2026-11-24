@@ -1,0 +1,2 @@
+case	nCells	run	exit	cpu_s	wall_s	wall_per_step_s	shell_wall_s	loop_per_step_s
+oneraM6Hybrid	-	hisa-np1	0	39.96	40	0.8	41.2153	0.752245

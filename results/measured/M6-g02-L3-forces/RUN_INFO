@@ -1,0 +1,7 @@
+label=M6-g02-L3-forces
+started_utc=2026-10-23T06:19:57Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime= 14:19:57 up 11 days,  4:55,  9 users,  load average: 103.25, 104.53, 104.56
+finished_utc=2026-10-23T06:21:00Z
+overall_exit=0

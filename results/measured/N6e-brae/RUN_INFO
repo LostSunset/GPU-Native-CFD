@@ -1,0 +1,9 @@
+date_utc=2026-10-25T19:12:13Z
+brae_commit=8ecfc74a89292f5838d488cab9b552d7e0e1078a
+brae_commit_date=2026-10-08T18:53:26+02:00
+brae_build=CMAKE_BUILD_TYPE:STRING=Release
+brae_cuda_archs=CMAKE_CUDA_ARCHITECTURES:UNINITIALIZED=89
+nvcc=Build cuda_13.2.r13.2/compiler.37953736_0
+sha256_brae_rhoSimpleFoam=77f548db909d39ae2c7a67120d308926990059870768224ff5f9a30c3355992d
+gpu=NVIDIA L40, 595.91.07
+host_load=135.21 125.17 113.63

@@ -1,0 +1,10 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-app/forwardStep/ref/10/p
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-app/forwardStep/gnc/10/p
+internalField                         36576  BITWISE
+patch inlet                             120  BITWISE
+patch outlet                              -  (no value: zeroGradient / zeroGradient)
+patch bottom                              -  (no value: symmetryPlane / symmetryPlane)
+patch top                                 -  (no value: symmetryPlane / symmetryPlane)
+patch obstacle                          328  BITWISE
+patch defaultFaces                        -  (no value: empty / empty)
+result: ALL BITWISE IDENTICAL

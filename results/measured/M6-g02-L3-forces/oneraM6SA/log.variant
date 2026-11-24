@@ -1,0 +1,46 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         10;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+functions
+{
+    forceCoeffsWing
+    {
+        type            forceCoeffs;
+        libs            ( "libforces.so" );
+        patches         ( wing );
+        p               p;
+        U               U;
+        rho             rhoInf;
+        rhoInf          1.09753;
+        magUInf         269.038;
+        lRef            0.64607;
+        Aref            0.7532;
+        CofR            ( 0 0 0 );
+        liftDir         ( -0.0533829 0.998574 0 );
+        dragDir         ( 0.998574 0.0533829 0 );
+        pitchAxis       ( 0 0 1 );
+        writeControl    timeStep;
+        writeInterval   1;
+        executeControl  timeStep;
+        executeInterval 1;
+        log             off;
+    }
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/M6-g02-L3-forces/oneraM6SA/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda nut alphat force moment );
+        timeIndices     ( 1 2 10 );
+        atEnd           true;
+        forceObjects    ( forceCoeffsWing );
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+log             off;
+forces=forceCoeffsWing

@@ -1,0 +1,38 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         20;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1000000;
+simulationType  laminar;
+laminar=1
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            ( "libforces.so" );
+        patches         ( viscousWall );
+        rhoName         rho;
+        UName           U;
+        log             off;
+        writeControl    timeStep;
+        writeInterval   1;
+        CofR            ( 0 0 0 );
+    }
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/home/satoshi/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/home/satoshi/gpu-native-cfd/runs/N4c-wsl-dev3/flatPlateLaminar/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda nut alphat force moment );
+        timeIndices     ( 1 2 10 20 );
+        atEnd           true;
+        forceObjects    ( forces );
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+log             off;
+forces=forces

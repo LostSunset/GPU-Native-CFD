@@ -1,0 +1,132 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : hisa
+Date   : Oct 23 2026
+Time   : 15:09:30
+Host   : g02
+PID    : 2806621
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/HYB-g02-finner/basicFinnerLaminarHybrid/hisa-np1
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0, region region0
+Creating static mesh
+
+Steady-state analysis detected
+
+pseudoTime: tolerance = 1e-06 (1e-06 1e-06 1e-06) 1e-06 , relTol = 0 (0 0 0) 0 
+
+Local timestepping selected
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       sutherland;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+
+Viscous analysis detected
+
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+Selecting laminar stress model Stokes
+
+Creating flux scheme
+
+Selecting flux scheme AUSMPlusUp
+
+No finite volume options present
+Initial pseudo Courant No: Min: 1 Mean: 1 Max: 1
+
+
+Starting pseudotime iteration loop
+
+Time = 1
+
+pseudoTime: iteration 1
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 1 Mean: 1 Max: 1
+Pseudo deltaT: Min: 1.5721183e-10 Mean: 1.4305044e-06 Max: 7.4587218e-05
+GMRESGPU: device 0 NVIDIA L40 (sm_89), libhisaGpuKernels API 11, fmad 0
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 1 (0.99929004 0.00046877859 0.034771541) 1 
+  GMRES iteration: 1   Residual: 1.5927189e-07 (1.6407245e-07 1.9800575e-10 5.9397827e-09) 1.4815115e-07 
+  GMRESGPU timing: pack_s 0.059325089 upload_s 0.21294296 setup_s 0.22096993 begin_s 0.0103753 solve_s 0.14883746 download_s 0.060613725 cycles 1 colours 7 h2d_MB 389.81289 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.21862998 normFactor gpu assembly gpu-whole lf_s 1.4276819 lf_kernel_s 0.12650589
+ExecutionTime = 21.74 s  ExecutionStepTime = 13.3 s  ClockTime = 22 s
+
+Time = 2
+
+pseudoTime: iteration 2
+Pseudo Courant No: 1
+Damped pseudo Courant No: Min: 0.5 Mean: 0.98560116 Max: 1
+Pseudo deltaT: Min: 7.7777667e-11 Mean: 1.4304972e-06 Max: 7.4587218e-05
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.5461726 (0.35328121 0.021520046 0.029956815) 0.3150716 
+  GMRES iteration: 1   Residual: 3.2828448e-08 (2.6838879e-08 4.214679e-11 8.5287387e-10) 2.3939462e-08 
+  GMRESGPU timing: pack_s 0.009267536 upload_s 0.14130055 setup_s 0.005496527 begin_s 0.055860414 solve_s 0.1486234 download_s 0.005126249 cycles 1 colours 7 h2d_MB 312.87551 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.1441195 normFactor gpu assembly gpu-whole lf_s 0.23248986 lf_kernel_s 0.12659795
+ExecutionTime = 34.37 s  ExecutionStepTime = 12.63 s  ClockTime = 34 s
+
+Time = 3
+
+pseudoTime: iteration 3
+Pseudo Courant No: 1.25
+Damped pseudo Courant No: Min: 0.3125 Mean: 1.2217898 Max: 1.25
+Pseudo deltaT: Min: 4.8594383e-11 Mean: 1.7881161e-06 Max: 9.3234022e-05
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.32965214 (0.18947042 0.01473372 0.01916422) 0.17222245 
+  GMRES iteration: 1   Residual: 8.3478033e-08 (6.4578055e-08 1.3722464e-10 2.0204565e-09) 5.99844e-08 
+  GMRESGPU timing: pack_s 0.009145274 upload_s 0.14252448 setup_s 0.005501446 begin_s 0.019597385 solve_s 0.14835253 download_s 0.005103838 cycles 1 colours 7 h2d_MB 312.87551 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.21953611 normFactor gpu assembly gpu-whole lf_s 0.23114245 lf_kernel_s 0.12627481
+ExecutionTime = 45.62 s  ExecutionStepTime = 11.25 s  ClockTime = 46 s
+
+Time = 4
+
+pseudoTime: iteration 4
+Pseudo Courant No: 1.5625
+Damped pseudo Courant No: Min: 0.1953125 Mean: 1.527643 Max: 1.5625
+Pseudo deltaT: Min: 3.049682e-11 Mean: 2.235146e-06 Max: 0.00011654253
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.205343 (0.11758828 0.010744525 0.013320211) 0.10679491 
+  GMRES iteration: 1   Residual: 2.4956648e-07 (1.9271327e-07 4.7424674e-10 6.1277345e-09) 1.8039482e-07 
+  GMRESGPU timing: pack_s 0.04485881 upload_s 0.23964081 setup_s 0.005473156 begin_s 0.008320896 solve_s 0.14831261 download_s 0.005103628 cycles 1 colours 7 h2d_MB 312.87551 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.17622922 normFactor gpu assembly gpu-whole lf_s 0.23339086 lf_kernel_s 0.1262176
+ExecutionTime = 56.12 s  ExecutionStepTime = 10.5 s  ClockTime = 56 s
+
+Time = 5
+
+pseudoTime: iteration 5
+Pseudo Courant No: 1.953125
+Damped pseudo Courant No: Min: 0.125 Mean: 1.9111929 Max: 1.953125
+Pseudo deltaT: Min: 1.9532289e-11 Mean: 2.7939318e-06 Max: 0.00014567816
+Solving for (rho rhoU rhoE) with GMRESGPU (MCBSGS)
+  GMRES iteration: 0   Residual: 0.18654232 (0.093162771 0.0095757274 0.011568245) 0.084510516 
+  GMRES iteration: 1   Residual: 8.4440694e-07 (5.6394701e-07 6.6106247e-09 2.2736964e-08) 5.23784e-07 
+  GMRESGPU timing: pack_s 0.041371066 upload_s 0.12438796 setup_s 0.005472046 begin_s 0.021457474 solve_s 0.14824909 download_s 0.004837672 cycles 1 colours 7 h2d_MB 312.87551 pack_kernel_s 0 packing gpu precision double precond MCBSGS norm_s 0.18474554 normFactor gpu assembly gpu-whole lf_s 0.27648734 lf_kernel_s 0.12628451
+ExecutionTime = 68.86 s  ExecutionStepTime = 12.74 s  ClockTime = 69 s
+
+End
+

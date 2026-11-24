@@ -1,0 +1,101 @@
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+default         bounded dualTime rPseudoDeltaT steadyState;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forces
+--> FOAM Warning : 
+    From static bool Foam::functionObjectList::readFunctionObject(const Foam::string&, Foam::dictionary&, Foam::HashSet<Foam::wordRe>&, const Foam::word&)
+    in file db/functionObjects/functionObjectList/functionObjectList.C at line 277
+    Cannot find functionObject file forcesNormAxial
+startFrom       startTime;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+startTime       0;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+endTime         10;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+deltaT          1;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+writeControl    timeStep;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+writeInterval   1000000;
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+simulationType  laminar;
+laminar=1
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+--> FOAM Warning : 
+    From Foam::fileName Foam::cwd_L()
+    in file POSIX.C at line 558
+    PWD is not the cwd() - reverting to physical description
+functions
+{
+    gncState
+    {
+        type            gncHisaDump;
+        libs            ( "/ssd/sclin/gpu-native-cfd/build/lib/libgncHisaDump.so" );
+        outputDir       "/ssd/sclin/gpu-native-cfd/runs/MF-g02-L3/modifiedFinnerLaminar/ref/state";
+        fields          ( p T U e thermo:psi thermo:mu thermo:alpha rho rhoU rhoE phi pseudoCoDamping pseudoCoNum nuTilda k omega nut alphat );
+        timeIndices     ( 1 2 10 );
+        atEnd           true;
+    }
+}

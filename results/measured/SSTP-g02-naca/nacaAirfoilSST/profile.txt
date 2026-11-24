@@ -1,0 +1,2 @@
+profile: 200 outer iterations, mean wall time per iteration 0.109205 s
+  flux 0.000558789  residual 0.000707087  pseudoTime 5.73586e-05  jacobian 0.000618906  gmres 0.0770748  update 0.000480411  turbulence 0.0297076

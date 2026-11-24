@@ -1,0 +1,2 @@
+case	nCells	ref	gpu	compared	bitwise	gpu1_vs_gpu2
+nacaAirfoil	40000	0	0	7	7	same

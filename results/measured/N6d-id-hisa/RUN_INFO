@@ -1,0 +1,5 @@
+solver=gncHisa end=20
+bin_a=/ssd/sclin/gpu-native-cfd/build-N6c/bin sha256=f80b614d5a097277709ab170a33705aef27c91933abc828727959b337fc79115
+bin_b=/ssd/sclin/gpu-native-cfd/build/bin sha256=ec3b4068c26781e1f6fb808bd087e529b3924d4489d30824fbfbb7c8d2aea731
+bin_a_source_sha256=587a0b4fbd34b91a834ca913771c2f7c68bc791bdb25757e31496640ffd6e399
+bin_b_source_sha256=1bf4bc6daf538373ee5ce3d15a39c75667f81e22cec9d754db00c7edde099372

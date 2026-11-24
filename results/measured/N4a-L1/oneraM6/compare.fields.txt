@@ -1,0 +1,11 @@
+ref:  /ssd/sclin/gpu-native-cfd/runs/N4a-L1/oneraM6/fields.ref.gnc
+test: /ssd/sclin/gpu-native-cfd/runs/N4a-L1/oneraM6/fields.gpu.gnc
+record                         type           n comp    mismatch       maxAbs       maxRel       maxUlp  status
+producer                       text  ref="gncOpsRef -dump-fields gncL1" test="gncOpsRef -dump-fields gncL1out"
+s.i                            f64       294912    1           0    0.000e+00    0.000e+00            0  BITWISE
+s.b                            f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+v.i                            f64       294912    3           0    0.000e+00    0.000e+00            0  BITWISE
+v.b                            f64        23040    3           0    0.000e+00    0.000e+00            0  BITWISE
+phi.i                          f64       873216    1           0    0.000e+00    0.000e+00            0  BITWISE
+phi.b                          f64        23040    1           0    0.000e+00    0.000e+00            0  BITWISE
+result: ALL BITWISE IDENTICAL

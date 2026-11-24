@@ -1,0 +1,5 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: /home/sclin/hisa-gpu-research-cases/forwardStep-prepared/simulation/constant/polyMesh (ascii) nPoints 74178 nCells 36576 nFaces 146816 nInternalFaces 72688 patches 6 fvBoundaryFaces 976
+time_s: read 0.035 gather 0.001 upload 0.111 geometry 0.004350 (informational; not a recorded measurement)
+sum(V): sequential 0.25200000000004275 tree 0.252
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L0/forwardStep/gpu2.gnc

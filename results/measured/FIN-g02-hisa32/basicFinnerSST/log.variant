@@ -1,0 +1,27 @@
+default         bounded dualTime rPseudoDeltaT steadyState;
+startFrom       startTime;
+startTime       0;
+endTime         1000;
+deltaT          1;
+writeControl    timeStep;
+writeInterval   1001;
+functions
+{
+    forces
+    {
+        type            forces;
+        libs            ( "libforces.so" );
+        patches         ( body fin1 fin2 );
+        rho             rho;
+        log             off;
+        writeControl    timeStep;
+        writeInterval   10;
+        CofR            ( -0.165 0 0 );
+    }
+}
+executeControl  timeStep;
+executeInterval 1;
+writeControl    timeStep;
+writeInterval   1;
+log             off;
+forces=forces

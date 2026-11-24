@@ -1,0 +1,11 @@
+label=N7-g02-conv
+started_utc=2026-10-22T18:50:02Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 02:50:02 up 10 days, 17:26, 11 users,  load average: 112.45, 112.52, 112.09
+endTime=2000
+variant ref: 
+variant lusgsColor: GNC_LUSGS=color
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree
+uptime_after= 02:55:59 up 10 days, 17:31, 11 users,  load average: 113.28, 112.88, 112.36
+finished_utc=2026-10-22T18:55:59Z

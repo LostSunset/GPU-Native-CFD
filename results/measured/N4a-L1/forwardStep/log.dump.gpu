@@ -1,0 +1,30 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2606                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : v2606 OPENFOAM=2606 version=v2606
+Arch   : "LSB;label=32;scalar=64"
+Exec   : /ssd/sclin/gpu-native-cfd/build/bin/gncOpsRef -case /ssd/sclin/gpu-native-cfd/runs/N4a-L1/forwardStep/case -dump-fields gncL1out -out /ssd/sclin/gpu-native-cfd/runs/N4a-L1/forwardStep/fields.gpu.gnc
+Date   : Oct 23 2026
+Time   : 00:39:26
+Host   : g02
+PID    : 1138793
+I/O    : uncollated
+Case   : /ssd/sclin/gpu-native-cfd/runs/N4a-L1/forwardStep/case
+nProcs : 1
+memory pool : not available
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+
+--> FOAM Warning : allowSystemOperations : Allowing user-supplied system call operations.
+                   This can be a security risk if running untrusted cases
+                   through e.g. 'coded' on-the-fly-compilation functionality.
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Wrote "/ssd/sclin/gpu-native-cfd/runs/N4a-L1/forwardStep/fields.gpu.gnc"
+End
+

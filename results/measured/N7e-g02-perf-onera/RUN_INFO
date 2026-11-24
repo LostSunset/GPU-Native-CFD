@@ -1,0 +1,10 @@
+label=N7e-g02-perf-onera
+started_utc=2026-10-22T20:13:25Z
+host=g02 profile=g02-l40
+gpu_device=3 uuid=GPU-510f5db7-6301-9c64-77c0-8e39bfee6e8d
+uptime_before= 04:13:25 up 10 days, 18:49, 10 users,  load average: 104.26, 104.12, 104.14
+endTime=30
+variant ref: 
+variant fast: GNC_LUSGS=color GNC_SGS=color GNC_REDUCE=tree
+uptime_after= 04:13:49 up 10 days, 18:49, 10 users,  load average: 104.54, 104.21, 104.17
+finished_utc=2026-10-22T20:13:49Z

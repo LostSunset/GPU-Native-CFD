@@ -1,0 +1,2 @@
+case	nCells	endTime	ref	gpu	end_ref	end_gpu	compared	bitwise	gpu1_vs_gpu2
+oneraM6SA	294912	10	0	0/0	10	10	4	4	identical

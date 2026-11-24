@@ -1,0 +1,10 @@
+device: NVIDIA L40 (sm_89, PCI 0000:C3:00.0)
+mesh: nCells 200 nFaces 1001 nInternalFaces 199 fvBoundaryFaces 2 nSolutionD 1
+reader: s ascii vs binary: 0 values differ
+reader: v ascii vs binary: 0 values differ
+reader: gamma ascii vs binary: 0 values differ
+reader: phi ascii vs binary: 0 values differ
+grad schemes: s 'faceLeastSquares linear', v 'faceLeastSquares linear'
+boundary conditions: side1[s fixedValue, v slip, gamma fixedValue] side2[s zeroGradient, v inletOutlet, gamma zeroGradient] empty[s empty, v empty, gamma empty]
+wrote /ssd/sclin/gpu-native-cfd/runs/N4a-L1/shockTube/gpu2.gnc
+wrote fields to /ssd/sclin/gpu-native-cfd/runs/N4a-L1/shockTube/case/gncL1out2

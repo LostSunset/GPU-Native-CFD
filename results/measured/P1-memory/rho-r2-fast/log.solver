@@ -1,0 +1,48 @@
+gncRhoSimple (GPU-Native-CFD; algorithm after rhoSimpleFoam, not an official OpenFOAM build)
+device: NVIDIA L40 (sm_89)
+performance options: GNC_ILU=color GNC_REDUCE=tree GNC_GAMG=amg GNC_PCG_PRECOND=- (not bitwise to rhoSimpleFoam)
+mesh: 64000 cells; RAS kOmegaSST; endTime 3
+pressureControl
+    pMax 200000
+    pMin 10000
+
+Starting time loop
+
+Time = 1
+
+PBiCGStab:  Solving for Ux, Initial residual = 1, Final residual = 0.00719504, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 1, Final residual = 0.00651585, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 1, Final residual = 0.0379292, No Iterations 3
+limitTemperature: lower 0, upper 0
+AMG hierarchy: 7 levels (mergeLevels 2, FP32, omega 1.6, sweeps 2, Jacobi 1 from level 1, block from level 3): 64000/2c 15979/6c 3964/6c 975/6c 234/6c 53/5c 12/5c
+pressureControl: p max 4.63414e+06
+pressureControl: p min -591733
+GAMG:  Solving for p, Initial residual = 1, Final residual = 0.00923254, No Iterations 29
+PBiCGStab:  Solving for omega, Initial residual = 0.00213703, Final residual = 0.00012935, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 1, Final residual = 0.0843265, No Iterations 1
+
+Time = 2
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.216001, Final residual = 0.0136578, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.174867, Final residual = 0.0110412, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.999903, Final residual = 0.0907472, No Iterations 1
+limitTemperature: lower 0, upper 0
+pressureControl: p max 641155
+pressureControl: p min -12436.3
+GAMG:  Solving for p, Initial residual = 0.258483, Final residual = 0.00244475, No Iterations 24
+PBiCGStab:  Solving for omega, Initial residual = 0.00204136, Final residual = 0.000168212, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.28432, Final residual = 0.025009, No Iterations 1
+
+Time = 3
+
+PBiCGStab:  Solving for Ux, Initial residual = 0.117247, Final residual = 0.00737565, No Iterations 1
+PBiCGStab:  Solving for Uz, Initial residual = 0.109946, Final residual = 0.00689554, No Iterations 1
+PBiCGStab:  Solving for e, Initial residual = 0.302906, Final residual = 0.011694, No Iterations 2
+limitTemperature: lower 0, upper 0
+pressureControl: p max 244905
+GAMG:  Solving for p, Initial residual = 0.0934741, Final residual = 0.000706222, No Iterations 26
+PBiCGStab:  Solving for omega, Initial residual = 0.00246477, Final residual = 0.000192708, No Iterations 2
+PBiCGStab:  Solving for k, Initial residual = 0.141284, Final residual = 0.0124092, No Iterations 1
+
+iterations 3; setup 0.252 s; loop 0.040 s (0.013378 s/iteration)
+End
