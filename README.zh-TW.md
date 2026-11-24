@@ -169,7 +169,9 @@ GPL-3.0-or-later（`LICENSE`）。由 OpenFOAM、HiSA 與 GNU C Library 衍生�
 
 ## 引用
 
-請以 `CITATION.cff` 引用本軟體（GitHub 的「Cite this repository」；封存版本在 Zenodo 上有 DOI）。描述方法與這些結果的論文：
+請以 `CITATION.cff` 引用本軟體（GitHub 的「Cite this repository」）。論文使用的 1.0.0 版封存於 Zenodo：
+[10.5281/zenodo.24486251](https://doi.org/10.5281/zenodo.24486251)（所有版本：
+[10.5281/zenodo.24486250](https://doi.org/10.5281/zenodo.24486250)）。描述方法與這些結果的論文：
 
 > S.-C. Lin, R.-B. Chen, C.-Y. Wu, Bitwise-reproducible GPU-native rewrites of OpenFOAM solvers: a verification
 > baseline and a comparison of GPU porting routes (submitted to Computer Physics Communications).

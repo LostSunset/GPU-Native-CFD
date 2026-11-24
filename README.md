@@ -188,8 +188,9 @@ marks.
 
 ## Citation
 
-Please cite this software through `CITATION.cff` (GitHub: "Cite this repository"; the archived version has a DOI
-on Zenodo). The paper describing the method and these results:
+Please cite this software through `CITATION.cff` (GitHub: "Cite this repository"). Release 1.0.0, the version of the
+paper, is archived at Zenodo: [10.5281/zenodo.24486251](https://doi.org/10.5281/zenodo.24486251) (all versions:
+[10.5281/zenodo.24486250](https://doi.org/10.5281/zenodo.24486250)). The paper describing the method and these results:
 
 > S.-C. Lin, R.-B. Chen, C.-Y. Wu, Bitwise-reproducible GPU-native rewrites of OpenFOAM solvers: a verification
 > baseline and a comparison of GPU porting routes (submitted to Computer Physics Communications).
